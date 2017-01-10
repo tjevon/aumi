@@ -1,0 +1,59 @@
+; BESTLINK
+; 2
+; 56
+ST|ST04422|Tot cr yr aff naic 1
+ST|ST04423|Tot cr yr aff naic 2
+ST|ST04424|Tot cr yr aff naic 3
+ST|ST04425|Tot cr yr aff naic 4
+ST|ST04426|Tot cr yr aff naic 5
+ST|ST04427|Tot cr yr aff naic 6
+ST|ST04428|Tot cr yr aff total
+ST|ST07163|Tot cr yr us gov naic 1
+ST|ST07164|Tot cr yr us gov naic 2
+ST|ST07165|Tot cr yr us gov naic 3
+ST|ST07166|Tot cr yr us gov naic 4
+ST|ST07167|Tot cr yr us gov naic 5
+ST|ST07168|Tot cr yr us gov naic 6
+ST|ST07169|Tot cr yr us gov total
+ST|ST18057|Tot cr yrs oth gov naic 1
+ST|ST18058|Tot cr yrs oth gov naic 2
+ST|ST18059|Tot cr yrs oth gov naic 3
+ST|ST18060|Tot cr yrs oth gov naic 4
+ST|ST18061|Tot cr yrs oth gov naic 5
+ST|ST18062|Tot cr yrs oth gov naic 6
+ST|ST18063|Tot cr yrs oth gov total
+ST|ST18064|Tot cr yrs us st & ter naic 1
+ST|ST18065|Tot cr yrs us st & ter naic 2
+ST|ST18066|Tot cr yrs us st & ter naic 3
+ST|ST18067|Tot cr yrs us st & ter naic 4
+ST|ST18068|Tot cr yrs us st & ter naic 5
+ST|ST18069|Tot cr yrs us st & ter naic 6
+ST|ST18070|Tot cr yrs us st & ter total
+ST|ST18071|Tot cr yrs us pol sub naic 1
+ST|ST18072|Tot cr yrs us pol sub naic 2
+ST|ST18073|Tot cr yrs us pol sub naic 3
+ST|ST18074|Tot cr yrs us pol sub naic 4
+ST|ST18075|Tot cr yrs us pol sub naic 5
+ST|ST18076|Tot cr yrs us pol sub naic 6
+ST|ST18077|Tot cr yrs us pol sub total
+ST|ST18078|Tot cr yrs us sp rev naic 1
+ST|ST18079|Tot cr yrs us sp rev naic 2
+ST|ST18080|Tot cr yrs us sp rev naic 3
+ST|ST18081|Tot cr yrs us sp rev naic 4
+ST|ST18082|Tot cr yrs us sp rev naic 5
+ST|ST18083|Tot cr yrs us sp rev naic 6
+ST|ST18084|Tot cr yrs us sp rev total
+ST|ST18085|Tot cr yrs ind & mis naic 1
+ST|ST18086|Tot cr yrs ind & mis naic 2
+ST|ST18087|Tot cr yrs ind & mis naic 3
+ST|ST18088|Tot cr yrs ind & mis naic 4
+ST|ST18089|Tot cr yrs ind & mis naic 5
+ST|ST18090|Tot cr yrs ind & mis naic 6
+ST|ST18091|Tot cr yrs ind & mis total
+ST|ST18092|Tot cr yrs hybrid secur naic 1
+ST|ST18093|Tot cr yrs hybrid secur naic 2
+ST|ST18094|Tot cr yrs hybrid secur naic 3
+ST|ST18095|Tot cr yrs hybrid secur naic 4
+ST|ST18096|Tot cr yrs hybrid secur naic 5
+ST|ST18097|Tot cr yrs hybrid secur naic 6
+ST|ST18098|Tot cr yrs hybrid secur total

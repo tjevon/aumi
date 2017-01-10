@@ -1,0 +1,50 @@
+; BESTLINK
+; 2
+; 47
+HS|HS00029|Netadmit net deferred tax asset
+BH|HS00085|Bal Sheet - Long Term Bonds
+HS|HS00085|Netadmit asts bonds
+BH|HS00086|Bal Sheet - Preferred Stock
+HS|HS00086|Netadmit preferred stocks
+BH|HS00087|Bal Sheet - Common Stock
+HS|HS00087|Netadmit common stocks
+HS|HS00088|Netadmit mtg loan on r e frst lein
+HS|HS00089|Netadmit mtg loan on r e other
+HS|HS00090|Netadmit real est prop occ by co
+HS|HS00091|Netadmit real est prop held prod
+HS|HS00092|Netadmit real est prop held sale
+BH|HS00093|Bal Sheet - Cash & Short Term
+HS|HS00093|Netadmit cash,equiv shrt trm inv
+HS|HS00094|Netadmit other long trm inv asts
+HS|HS00095|Netadmit receivable for security
+HS|HS00096|Netadmit agg write-in inv asts
+HS|HS00097|Netadmit subt c & i a
+HS|HS00099|Netadmit health care receivables
+HS|HS00100|Netadmit amts recov fr reinsurers
+HS|HS00101|Netadmit net adj a&l due for exch
+BH|HS00102|Bal Sheet - Investment Income
+HS|HS00102|Netadmit invest income due & accrue
+HS|HS00103|Netadmit amt due fr p s & a
+HS|HS00104|Netadmit amt rec unins a & h plans
+HS|HS00105|Netadmit furn & equip
+HS|HS00108|Netadmit elec data process equip
+HS|HS00110|Netadmit agg write-in other
+HS|HS00111|Netadmit total assets
+BH|HS06142|Bal Sheet - Contract Loans
+HS|HS06142|Netadmit asts contract loans
+HS|HS06143|Netadmit asts prem & bal course col
+HS|HS06144|Netadmit asts prem, bal & install d
+HS|HS06145|Netadmit asts accrued retro premium
+HS|HS06146|Netadmit asts fnd held\dep w\ rein
+HS|HS06147|Netadmit asts oth amt rec und rein
+HS|HS06148|Netadmit asts fed & fit recoverable
+HS|HS06149|Netadmit asts guar funds recvbl\dep
+BH|HS06150|Bal Sheet - General Account Assets
+HS|HS06150|Netadmit asts tot ast excl s,s & pc
+BH|HS06151|Bal Sheet - Separate Account Assets
+HS|HS06151|Netadmit asts frm sep, seg & pc acc
+HS|HS07857|Netadmit title plants
+BH|HS12695|Bal Sheet - Derivative Assets
+HS|HS12695|Netadmit asts derivatives
+BH|HS12696|Bal Sheet - Securities Lending-Assets
+HS|HS12696|Netadmit asts secur lend reinvest collateral asset

@@ -1,0 +1,21 @@
+; BESTLINK
+; 2
+; 18
+BP|SF00025|Bal Sheet - Total Invest Assets
+SF|SF00025|Net - subtotals-cash & inv assets
+SF|SF00031|Net - amount recov from reinsurers
+BP|SF00039|Total Admitted Assets
+SF|SF00039|Net - total assets
+SF|SF00043|Reins payable on paid loss & lae
+BP|SF00053|Bal Sheet - Unearned Premiums
+SF|SF00053|Unearned premiums
+BP|SF00075|Bal Sheet - Total Liabilities
+SF|SF00075|Total liabilities
+SF|SF00135|Surplus as regards polhldrs end cy
+SF|SF00139|Premiums collected net of reins
+SF|SF00146|Dividends paid to policyholders
+SF|SF00147|Fed&frgn inc tax pd/rcv net tax g/l
+SF|SF00148|Net cash from operations
+SF|SF04764|Net - cash,equiv & s-term invest
+SF|SF07654|Benefit and loss related payments
+SF|SF07656|Commiss,exps & agg w-ins for deduct

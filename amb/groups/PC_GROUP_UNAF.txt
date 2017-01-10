@@ -1,0 +1,160 @@
+; BESTLINK
+; 2
+; 157
+018680  Accident Fund Group (G)
+000468  Acuity A Mutual Insurance Company
+000106  Alfa Insurance Group (G)
+018640  Alleghany Insurance Holdings Group (G)
+018429  Allianz of America Companies (G)
+018591  Allied World Assurance Group (G)
+000008  Allstate Insurance Group (G)
+018431  Ally Insurance Group (G)
+018449  Ambac Financial Group (G)
+003133  American Agricultural Insurance Company
+000124  American Family Insurance Group (G)
+018540  American International Group (G)
+018565  American National P&C Group (G)
+004009  Ameriprise P&C Companies (G)
+018211  Amerisafe Insurance Group (G)
+004071  Amerisure Companies (G)
+018522  Amica Mutual Group (G)
+018533  AmTrust Group (G)
+000166  Andover Companies Pool (G)
+018220  Arbella Insurance Group (G)
+018484  Arch Insurance Group (G)
+004019  Argo Group (G)
+018371  Arrowpoint Capital Group (G)
+018523  Assurant P&C Group (G)
+004017  Assured Guaranty Group (G)
+012007  Attorneys' Liability Assr Society RRG
+018515  Auto Club Enterprises Insurance Group (G)
+000312  Auto Club Group (G)
+004354  Auto-Owners Insurance Group (G)
+018603  AXIS Insurance Group (G)
+000811  Berkshire Hathaway Insurance Group (G)
+018822  BrickStreet Mutual Insurance Group (G)
+012534  California Earthquake Authority
+000246  Central Insurance Companies (G)
+012335  Chesapeake Employers' Insurance Company
+018498  Chubb INA Group (G)
+018887  Church Mutual Insurance Group (G)
+011712  Citizens Property Insurance Corporation
+018890  CM International Insurance Group (G)
+018313  CNA Insurance Companies (G)
+003479  CompSource Mutual Insurance Company
+018724  CopperPoint Mutual Group (G)
+000302  COUNTRY Financial Property Casualty Grp (G)
+018359  Coverys Companies (G)
+018460  CSAA Insurance Group (G)
+018704  CUMIS Insurance Society Group (G)
+018083  Doctors Company Insurance Group (G)
+003168  Donegal Insurance Group (G)
+003771  Dorinco Reinsurance Company
+002146  Electric Insurance Company
+000346  EMC Insurance Companies (G)
+018602  Employers Insurance Group (G)
+018620  Endurance Specialty Group (G)
+018802  Enstar Insurance Group (G)
+004283  Erie Insurance Group (G)
+018805  Essent Guaranty Group (G)
+005696  Everest Re U.S. Group (G)
+003116  Fairfax Financial (USA) Group (G)
+004233  Farm Bureau Property & Casualty Group (G)
+000032  Farmers Insurance Group (G)
+018290  FCCI Insurance Group (G)
+004284  Federated Mutual Group (G)
+001859  Financial Guaranty Insurance Company
+018502  FM Global Group (G)
+018892  Fosun US Group (G)
+018496  Frankenmuth Insurance Group (G)
+018694  Genworth PC Group (G)
+003917  Grange Mutual Casualty Pool (G)
+004835  Great American P & C Insurance Grp (G)
+003918  GuideOne Insurance Companies (G)
+004861  Hanover Insurance Grp Prop & Cas Cos (G)
+000048  Hartford Insurance Group (G)
+000157  Hospitals Insurance Company, Inc.
+018567  IAT Insurance Group (G)
+018860  ICW Group (G)
+012362  Indiana Old National Insurance Company
+018584  Infinity Property & Casualty Group (G)
+018644  ISMIE Mutual Group (G)
+000914  Kemper P&C Group (G)
+003281  Kentucky Farm Bureau Group (G)
+000060  Liberty Mutual Insurance Companies (G)
+011339  Louisiana Workers' Compensation Corp
+018635  MAG Mutual Group (G)
+013979  Maiden Reinsurance North America, Inc.
+018355  Main Street America Group (G)
+018801  MAPFRE North America Group (G)
+018468  Markel Corporation Group (G)
+003166  MBIA Group (G)
+012014  MCIC Vermont Inc Risk Retention Group
+003667  Medical Liability Mutual Insurance Co
+004524  Mercury General Group (G)
+003933  MetLife Auto & Home Group (G)
+000358  Michigan Farm Bureau Group (G)
+003475  Montana State Fund
+003014  Mortgage Guaranty Group (G)
+018236  Motorists Insurance Pool (G)
+018782  MS&AD US Insurance Group (G)
+018753  Munich-American Holding Corp Companies (G)
+018863  National General Companies (G)
+005987  Nationwide Group (G)
+018081  Navigators Insurance Group (G)
+003985  NJM Insurance Group (G)
+018539  NORCAL Group (G)
+018279  North Carolina FB Insurance Grp (G)
+011284  Nuclear Electric Insurance Limited
+000734  Old Republic Insurance Group (G)
+018426  Palisades Group (G)
+018470  PartnerRe U.S. Group (G)
+000754  Pekin Insurance Group (G)
+000766  Penn National Insurance Companies (G)
+002888  Physicians Reciprocal Insurers
+003471  Pinnacol Assurance
+003267  PMI Mortgage Group (G)
+018830  ProAssurance Insurance Group (G)
+000780  Progressive Insurance Group (G)
+000419  ProSight Specialty Group (G)
+018713  QBE Americas Group (G)
+075149  Queen City Assurance Inc
+018437  Quincy Mutual Group (G)
+018150  Radian Group (G)
+011795  Renaissance Reinsurance US Inc
+003883  RLI Group (G)
+018080  Safety Group (G)
+003480  SAIF Corporation
+003873  SCOR U.S. Group (G)
+003926  Selective Insurance Group (G)
+000086  Sentry Insurance Group (G)
+000598  Shelter Insurance Companies (G)
+018878  Sompo/Canopius Companies (G)
+004237  Southern Farm Bureau Casualty Group (G)
+018756  Starr International Group (G)
+000856  State Auto Insurance Companies (G)
+004028  State Compensation Insurance Fund of CA
+000088  State Farm Group (G)
+004029  State Insurance Fund WC Fund
+003706  State Volunteer Mutual Insurance Company
+003481  State Workers' Insurance Fund
+003262  Swiss Reinsurance Group (G)
+018773  Syncora Holdings US Group (G)
+018154  Tennessee Farmers Insurance Companies (G)
+018754  Texas Farm Bureau Group (G)
+011453  Texas Mutual Insurance Company
+004294  The Cincinnati Insurance Companies (G)
+001730  Toa Reinsurance Company of America
+018733  Tokio Marine US PC Group (G)
+018674  Travelers Group (G)
+003875  United Fire & Casualty Group (G)
+004080  USAA Group (G)
+004202  Utica National Insurance Group (G)
+002314  Virginia Surety Company, Inc.
+018252  W. R. Berkley Insurance Group (G)
+018894  WCF Insurance Group (G)
+000964  West Bend Mutual Insurance Company
+000730  Westfield Group (G)
+018490  White Mountains Insurance Group (G)
+018874  XL CatlinAmerica Group (G)
+018549  Zurich Financial Services NA Group (G)

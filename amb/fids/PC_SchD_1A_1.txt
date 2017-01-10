@@ -1,0 +1,59 @@
+; BESTLINK
+; 2
+; 56
+SF|SF02189|Tot cr yrs parent/sub/affil class 1
+SF|SF02190|Tot cr yrs parent/sub/affil class 2
+SF|SF02191|Tot cr yrs parent/sub/affil class 3
+SF|SF02192|Tot cr yrs parent/sub/affil class 4
+SF|SF02193|Tot cr yrs parent/sub/affil class 5
+SF|SF02194|Tot cr yrs parent/sub/affil class 6
+SF|SF02195|Tot cr yrs parent/sub/affil total
+SF|SF04565|Tot cr yr us gov class 1
+SF|SF04566|Tot cr yr us gov class 2
+SF|SF04567|Tot cr yr us gov class 3
+SF|SF04568|Tot cr yr us gov class 4
+SF|SF04569|Tot cr yr us gov class 5
+SF|SF04570|Tot cr yr us gov class 6
+SF|SF04571|Tot cr yr us gov total
+SF|SF10297|Tot cr yrs oth gov class 1
+SF|SF10298|Tot cr yrs oth gov class 2
+SF|SF10299|Tot cr yrs oth gov class 3
+SF|SF10300|Tot cr yrs oth gov class 4
+SF|SF10301|Tot cr yrs oth gov class 5
+SF|SF10302|Tot cr yrs oth gov class 6
+SF|SF10303|Tot cr yrs oth gov total
+SF|SF10304|Tot cr yrs us st & ter class 1
+SF|SF10305|Tot cr yrs us st & ter class 2
+SF|SF10306|Tot cr yrs us st & ter class 3
+SF|SF10307|Tot cr yrs us st & ter class 4
+SF|SF10308|Tot cr yrs us st & ter class 5
+SF|SF10309|Tot cr yrs us st & ter class 6
+SF|SF10310|Tot cr yrs us st & ter total
+SF|SF10311|Tot cr yrs us pol sub class 1
+SF|SF10312|Tot cr yrs us pol sub class 2
+SF|SF10313|Tot cr yrs us pol sub class 3
+SF|SF10314|Tot cr yrs us pol sub class 4
+SF|SF10315|Tot cr yrs us pol sub class 5
+SF|SF10316|Tot cr yrs us pol sub class 6
+SF|SF10317|Tot cr yrs us pol sub total
+SF|SF10318|Tot cr yrs us sp rev class 1
+SF|SF10319|Tot cr yrs us sp rev class 2
+SF|SF10320|Tot cr yrs us sp rev class 3
+SF|SF10321|Tot cr yrs us sp rev class 4
+SF|SF10322|Tot cr yrs us sp rev class 5
+SF|SF10323|Tot cr yrs us sp rev class 6
+SF|SF10324|Tot cr yrs us sp rev total
+SF|SF10325|Tot cr yrs ind & mis class 1
+SF|SF10326|Tot cr yrs ind & mis class 2
+SF|SF10327|Tot cr yrs ind & mis class 3
+SF|SF10328|Tot cr yrs ind & mis class 4
+SF|SF10329|Tot cr yrs ind & mis class 5
+SF|SF10330|Tot cr yrs ind & mis class 6
+SF|SF10331|Tot cr yrs ind & mis total
+SF|SF10332|Tot cr yrs hybrid securities class 1
+SF|SF10333|Tot cr yrs hybrid securities class 2
+SF|SF10334|Tot cr yrs hybrid securities class 3
+SF|SF10335|Tot cr yrs hybrid securities class 4
+SF|SF10336|Tot cr yrs hybrid securities class 5
+SF|SF10337|Tot cr yrs hybrid securities class 6
+SF|SF10338|Tot cr yrs hybrid securities total

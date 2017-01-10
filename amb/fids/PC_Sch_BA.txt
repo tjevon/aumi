@@ -1,0 +1,48 @@
+; BESTLINK
+; 2
+; 45
+SF|SF21373|Schd ba,p1-lt invest ownd-oil/gas unaf-actual cost
+SF|SF21374|Schd ba,p1-lt invest ownd-oil/gas affil-act cost
+SF|SF21375|Schd ba,p1-lt invest ownd-trans equip-unaf-act cst
+SF|SF21376|Schd ba,p1-lt invest ownd-trans equip aff-act cost
+SF|SF21377|Schd ba,p1-lt invest ownd-min rights-unafil-actual
+SF|SF21378|Schd ba,p1-lt invest ownd-min rights-aff-act cost
+SF|SF21379|Schd ba,p1-lt invest ownd-fixed bonds-unafil-act
+SF|SF21380|Schd ba,p1-lt invest ownd-fixed bonds-affil-actual
+SF|SF21381|Schd ba,p1-lt invest ownd-fixed mtge-unafil actual
+SF|SF21382|Schd ba,p1-lt invest ownd-fixed mtge-affil-actual
+SF|SF21383|Schd ba,p1-lt invest ownd-othr fixed inc-unaf act
+SF|SF21384|Schd ba,p1-lt invest ownd-othr fixed inc-affil act
+SF|SF21385|Schd ba,p1-lt invest ownd-joint fixed inc-unaf act
+SF|SF21386|Schd ba,p1-lt invest ownd-joint fixed inc-aff act
+SF|SF21387|Schd ba,p1-lt invest ownd-joint fixed comm-unaf
+SF|SF21388|Schd ba,p1-lt invest ownd-joint fixed comm-affi
+SF|SF21389|Schd ba,p1-lt invest ownd-joint re-unafil act cost
+SF|SF21390|Schd ba,p1-lt invest ownd-joint re-affil actual
+SF|SF21391|Schd ba,p1-lt invest ownd-joint mtge loans-unafil
+SF|SF21392|Schd ba,p1-lt invest ownd-joint mtge loans-affil
+SF|SF21393|Schd ba,p1-lt invest ownd-joint other-unafil act
+SF|SF21394|Schd ba,p1-lt invest ownd-joint other-affil act
+SF|SF21395|Schd ba,p1-lt invest ownd-surplus debent-unafil
+SF|SF21396|Schd ba,p1-lt invest ownd-surplus debent-affil
+SF|SF21397|Schd ba,p1-lt invest ownd-collateral lns-unafil
+SF|SF21398|Schd ba,p1-lt invest ownd-collateral lns-affil
+SF|SF21399|Schd ba,p1-lt invest ownd-n-coll lns-unafil actual
+SF|SF21400|Schd ba,p1-lt invest ownd-n-coll lns-affil actual
+SF|SF21401|Schd ba,p1-lt invest ownd-cap notes-unafil actual
+SF|SF21402|Schd ba,p1-lt invest ownd-cap notes-affil actual
+SF|SF21403|Schd ba,p1-lt invest ownd-guar fed lih-unafil act
+SF|SF21404|Schd ba,p1-lt invest ownd-guar fed lih-affil act
+SF|SF21405|Schd ba,p1-lt invest ownd-n-guar fed lih-unafil
+SF|SF21406|Schd ba,p1-lt invest ownd-n-guar fed lih-affil
+SF|SF21407|Schd ba,p1-lt invest ownd-guar state lih-unafil
+SF|SF21408|Schd ba,p1-lt invest ownd-guar state lih-affil
+SF|SF21409|Schd ba,p1-lt invest ownd-n-guar state lih-unafil
+SF|SF21410|Schd ba,p1-lt invest ownd-n-guar state lih-affil
+SF|SF21411|Schd ba,p1-lt invest ownd-all othr lih-unafil act
+SF|SF21412|Schd ba,p1-lt invest ownd-all othr lih-afil actual
+SF|SF21413|Schd ba,p1-lt invest ownd-workg cap fin invst-unaf
+SF|SF21414|Schd ba,p1-lt invest ownd-any othr cl assets-uafil
+SF|SF21415|Schd ba,p1-lt invest ownd-any othr cl assets-affil
+SF|SF21416|Schd ba,p1-lt invest ownd-subtotals-unafil
+SF|SF21417|Schd ba,p1-lt invest ownd-subtotals-affil

@@ -22,6 +22,7 @@ ts      = "Tear_Sheet"
 
 years = []
 companies = set()
+company_map = {}
 
 needed_sheets = [sch_d, sch_ba, fin, sg_d]
 
@@ -109,6 +110,14 @@ def get_col_label(year_idx, fid):
         col_label = "%s.%d" % (fid, year_idx)
     return col_label
 
+def read_sg_d(entity_id, csv_filename):
+    logger.info("Enter: %s", csv_filename)
+    global companies
+    the_df = None
+    the_df = pd.read_csv(csv_filename, header=2, index_col=0, dtype='unicode')
+    logger.info("Leave")
+    return the_df
+
 def read_vert(entity_id, csv_filename):
     logger.info("Enter: %s", csv_filename)
     global years
@@ -138,13 +147,24 @@ def read_vert(entity_id, csv_filename):
 
     logger.info("Leave")
     return the_df
+    csv_filename = data_dir + "\\" + file_name
+
+def read_csv_all(xl_wb, entity_id, file_names):
+    logger.info("Enter")
+    global sg_d_df
+    for file_name in file_names:
+        csv_filename = data_dir + "\\" + file_name
+        if file_name.find(sg_d) != 1:
+            sg_d_df = read_sg_d(entity_id, csv_filename)
+
+    logger.info("Leave")
+    return
 
 def read_csvs( xl_wb, entity_id, file_names ):
     logger.info("Enter")
     global sch_ba_df
     global sch_d_df
     global fin_df
-    global sg_d_df
 
     for file_name in file_names:
         csv_filename = data_dir + "\\" + file_name
@@ -211,6 +231,42 @@ def fill_section(section, year_idx, the_df, the_mat, mat_line_idx, mat_col_idx, 
 
     return mat_line_idx
 
+def fill_section_sum(section, year_idx, the_df, the_mat, mat_line_idx, mat_col_idx, row_label, subtotals):
+    col_label = None
+    ig_tot = 0.0
+    hy_tot = 0.0
+    for fid, class_id in zip(section, range(0, len(section))):
+        if type(fid) == str:
+            if fid == '':
+                mat_line_idx += 1
+                continue
+            col_label = get_col_label(year_idx, fid)
+            # now have labels needed to lookup data in df_sch_df
+            the_mat[mat_line_idx][mat_col_idx] += float(the_df.loc[row_label, col_label])
+            if subtotals:
+                if (class_id < 2):
+                    ig_tot += the_mat[mat_line_idx][mat_col_idx]
+                else:
+                    hy_tot += the_mat[mat_line_idx][mat_col_idx]
+            mat_line_idx += 1
+        elif type(fid) == list:
+            for sub_fid in fid:
+                col_label = get_col_label(year_idx, sub_fid)
+                the_mat[mat_line_idx][mat_col_idx] += float(the_df.loc[row_label, col_label])
+            pass
+        else:
+            logger.error("Unknown type in List: %s", row_label)
+
+    if subtotals:
+        the_mat[mat_line_idx][mat_col_idx] = ig_tot
+        mat_line_idx += 1
+        the_mat[mat_line_idx][mat_col_idx] = hy_tot
+        mat_line_idx += 1
+        the_mat[mat_line_idx][mat_col_idx] = ig_tot + hy_tot
+        mat_line_idx += 1
+
+    return mat_line_idx
+
 def excel_print_sheet(xl_sheet, r1, r2, r3, co, column_heading, the_mat):
     # push it out to the spreadsheet
     attempt = 0
@@ -230,6 +286,40 @@ def excel_print_sheet(xl_sheet, r1, r2, r3, co, column_heading, the_mat):
             attempt += 1
             if attempt > 5:
                 return
+    logger.info("Leave")
+    return
+
+def excel_reset_sheets(xl_wb):
+    logger.info("Enter")
+    attempt = 0
+    while True:
+        try:
+            sch_d_sheet = xl_wb.sheets(sch_d)
+            sch_d_range = sch_d_sheet.range('D6:P108')
+            sch_d_range.clear_contents()
+
+            fin_sheet = xl_wb.sheets(fin)
+            fin_range = fin_sheet.range('E4:Q67')
+            fin_range.clear_contents()
+
+            sch_ba_sheet = xl_wb.sheets(sch_ba)
+            sch_ba_range = sch_ba_sheet.range('D4:P29')
+            sch_ba_range.clear_contents()
+            sch_ba_range = sch_ba_sheet.range('R4:AD29')
+            sch_ba_range.clear_contents()
+            sch_ba_range = sch_ba_sheet.range('AF4:AQ29')
+            sch_ba_range.clear_contents()
+
+            sg_d_sheet = xl_wb.sheets(sg_d)
+            sg_d_range = sg_d_sheet.range('D6:E26')
+            sg_d_range.clear_contents()
+            break
+        except:
+            logger.error("Unable to write to excel workbook: %d", attempt)
+            attempt += 1
+            if attempt > 5:
+                return
+
     logger.info("Leave")
     return
 
@@ -253,7 +343,7 @@ def build_fin(xl_sheet, co, fin_sub_tots):
             continue
         mat_line_idx = 0
         for subset in fin_sub_tots:
-            mat_line_idx = fill_section(subset, year_idx, fin_df, fin_mat, mat_line_idx, mat_col_idx, row_label, False)
+            mat_line_idx = fill_section_sum(subset, year_idx, fin_df, fin_mat, mat_line_idx, mat_col_idx, row_label, False)
             mat_line_idx += 1
         mat_col_idx += 1
         year_idx += 1
@@ -286,10 +376,10 @@ def build_sch_d_vert(xl_sheet, co, accet_class_tots, combo_asset_classes):
                 tmp_mat_line_idx = mat_line_idx
                 for component_asset_class in asset_class:
                     mat_line_idx = tmp_mat_line_idx
-                    mat_line_idx = fill_section(component_asset_class, year_idx, sch_d_df, sch_d_mat, mat_line_idx, mat_col_idx, row_label, True)
+                    mat_line_idx = fill_section_sum(component_asset_class, year_idx, sch_d_df, sch_d_mat, mat_line_idx, mat_col_idx, row_label, True)
                 mat_line_idx += 1
             else:
-                mat_line_idx = fill_section(asset_class, year_idx, sch_d_df, sch_d_mat, mat_line_idx, mat_col_idx, row_label, True)
+                mat_line_idx = fill_section_sum(asset_class, year_idx, sch_d_df, sch_d_mat, mat_line_idx, mat_col_idx, row_label, True)
                 mat_line_idx += 1
         mat_col_idx += 1
 
@@ -318,9 +408,9 @@ def build_sch_ba(xl_sheet, co, sch_ba_subcat):
             mat_col_idx += 1
             continue
         mat_line_idx = 0
-        fill_section(sch_ba_subcat[0], year_idx, sch_ba_df, sch_ba_mat_unaff, mat_line_idx, mat_col_idx, row_label, False)
+        fill_section_sum(sch_ba_subcat[0], year_idx, sch_ba_df, sch_ba_mat_unaff, mat_line_idx, mat_col_idx, row_label, False)
         mat_line_idx = 0
-        fill_section(sch_ba_subcat[0], year_idx, sch_ba_df, sch_ba_mat_aff, mat_line_idx, mat_col_idx, row_label, False)
+        fill_section_sum(sch_ba_subcat[0], year_idx, sch_ba_df, sch_ba_mat_aff, mat_line_idx, mat_col_idx, row_label, False)
         mat_col_idx += 1
         year_idx += 1
 
@@ -331,43 +421,74 @@ def build_sch_ba(xl_sheet, co, sch_ba_subcat):
     logger.info("Leave")
     return
 
+def build_sg_d(xl_sheet, co, all_single_data):
+    logger.info("Enter")
+    row_label = co
+    num_years = len(years)
+    num_cols = 2
+    num_rows = len(best.ALL_Single_Data) + 1
+    sg_d_mat = [["" for x in range(num_cols)] for y in range(num_rows)]
+    # fill_section will not work for this sheet - no years and multiple columns  required
+
+    column_heading = ["Col 1", "Col 2"]
+    mat_line_idx = 0
+    for fid in all_single_data:
+        if type(fid) == str:
+            if fid == '':
+                mat_line_idx += 1
+                continue
+        col_label = get_col_label(0, fid)
+        sg_d_mat[mat_line_idx][0] = ""
+        sg_d_mat[mat_line_idx][1] =  str(sg_d_df.loc[row_label, col_label])
+        if col_label == "CO0010":
+            sg_d_mat[mat_line_idx][0] = str(sg_d_df.loc[row_label, "CO00011"])
+        if col_label == "CO00231":
+            company_map[row_label] = str(sg_d_df.loc[row_label, "CO00231"])
+        mat_line_idx += 1
+
+    excel_print_sheet(xl_sheet, 'B1', 'D5', 'D6', co, column_heading, sg_d_mat)
+    logger.info("Leave")
+    return
+
 def build_4_sheets(xl_wb, entity_id):
     logger.info("Enter")
-    sch_d_sheet = xl_wb.sheets(sch_d)
-    sch_d_range = sch_d_sheet.range('D6:P108')
-    sch_d_range.clear_contents()
 
-    fin_sheet = xl_wb.sheets(fin)
-    fin_range = fin_sheet.range('E4:Q67')
-    fin_range.clear_contents()
-
-    sch_ba_sheet = xl_wb.sheets(sch_ba)
-    sch_ba_range = sch_ba_sheet.range('D4:P29')
-    sch_ba_range.clear_contents()
-    sch_ba_range = sch_ba_sheet.range('R4:AD29')
-    sch_ba_range.clear_contents()
-    sch_ba_range = sch_ba_sheet.range('AF4:AQ29')
-    sch_ba_range.clear_contents()
-
+    excel_reset_sheets(xl_wb)
     company_count = 0
+    fin_sheet = xl_wb.sheets(fin)
+    sch_d_sheet = xl_wb.sheets(sch_d)
+    sch_ba_sheet = xl_wb.sheets(sch_ba)
+    sg_d_sheet = xl_wb.sheets(sg_d)
     for co in companies:
+        attempt = 0
         if entity_id == 'PC':
             build_sch_d_vert(sch_d_sheet, co, best.PC_Asset_Class_Tots, best.PC_Combo_Asset_Classes)
             build_sch_ba(sch_ba_sheet, co, best.PC_Subcat)
             build_fin(fin_sheet, co, best.PC_Fin_Sub_Tots)
+            build_sg_d(sg_d_sheet, co, best.ALL_Single_Data)
         if entity_id == 'LIFE':
             build_sch_d_vert(sch_d_sheet, co, best.LIFE_Asset_Class_Tots, best.LIFE_Combo_Asset_Classes)
             build_sch_ba(sch_ba_sheet, co, best.LIFE_Subcat)
             build_fin(fin_sheet, co, best.LIFE_Fin_Sub_Tots)
+            pass
         if entity_id == 'HEALTH':
             build_sch_d_vert(sch_d_sheet, co, best.HEALTH_Asset_Class_Tots, best.HEALTH_Combo_Asset_Classes)
             build_sch_ba(sch_ba_sheet, co, best.HEALTH_Subcat)
-        #    build_fin(fin_sheet, co, best.HEALTH_Fin_Sub_Tots)
-        xl_mac = xl_wb.macro('CalcSheet')
-        xl_mac(ts, co)
-#        ts_sheet = xl_wb.sheets(ts)
-#        tmp_sheet = xl_wb.sheets(co)
-#        tmp_sheet.range('A1').value = ts_sheet.cells.value
+            build_fin(fin_sheet, co, best.HEALTH_Fin_Sub_Tots)
+            pass
+        while True:
+            try:
+                xl_mac = xl_wb.macro('CalcSheet')
+                xl_mac(ts, company_map[co])
+                #        ts_sheet = xl_wb.sheets(ts)
+                #        tmp_sheet = xl_wb.sheets(co)
+                #        tmp_sheet.range('A1').value = ts_sheet.cells.value
+                break
+            except:
+                logger.error("Unable to write to excel workbook: %d", attempt)
+                attempt += 1
+                if attempt > 5:
+                    return
         company_count += 1
     logger.info("Leave: company_count = %d", company_count)
     return
@@ -393,6 +514,9 @@ def create_tearsheets():
 
     # get a dictionary of the files {PC:[sch_d, sch_ba, fin], LIFE:[sch_d, sch_ba_fin], etc...}
     file_info = get_file_dict()
+
+    files_with_all = "ALL"
+    read_csv_all(xl_wb, files_with_all, file_info[files_with_all])
 
     # for each grouping, read the csv's into a DataFrame and build the 4 xl_sheets
     for entity_id in file_info:

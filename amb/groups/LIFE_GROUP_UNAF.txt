@@ -1,0 +1,148 @@
+; BESTLINK
+; 2
+; 145
+070388  AAA Life Group (G)
+070486  Advantage Capital Life Group (G)
+069707  Aegon USA Group (G)
+070202  Aetna Life Group (G)
+069824  Aflac Incorporated Group (G)
+070342  AIG Life & Retirement Group (G)
+006293  Alfa Life Insurance Corporation
+070187  Allianz Life Insurance Group (G)
+070106  Allstate Financial Companies (G)
+070406  American Equity Investment Group (G)
+006052  American Family Life Insurance Company
+069640  American Fidelity Group (G)
+070166  American National Group (G)
+069676  Americo Life Group (G)
+069689  Ameriprise Financial Group (G)
+069790  Ameritas Life Group (G)
+007464  Amica Life Insurance Company
+070135  Assurant Inc Group (G)
+070511  Assurity Life Insurance Group (G)
+070478  Athene Life Group (G)
+006140  Auto-Owners Life Insurance Company
+070194  AXA Financial Group (G)
+006143  Baltimore Life Insurance Company
+006162  Beneficial Life Insurance Company
+070158  Berkshire Hathaway Group (G)
+070031  Blue Cross & Blue Shield of KS Group (G)
+069993  Boston Mutual Group (G)
+008188  Catholic Financial Life
+008827  Catholic Life Insurance
+006191  Catholic Order of Foresters
+007367  Centre Life Insurance Company
+006276  Centurion Life Insurance Company
+070173  CIGNA Group (G)
+006568  Cincinnati Life Insurance Company
+069688  Citizens Inc Group (G)
+070262  CMFG Life Group (G)
+069862  CNO Group (G)
+069961  Columbian Financial Group (G)
+070178  Combined A&H Group (G)
+070142  COUNTRY Financial Life Group (G)
+069637  Dearborn National Life Insurance Group (G)
+069798  Delaware Life Insurance Group (G)
+060315  EquiTrust Life Insurance Company
+070421  ERAC Group (G)
+007276  Erie Family Life Insurance Company
+070472  Farm Bureau Life Group (G)
+006363  Farm Bureau Life Insurance Company of MI
+006373  Farmers New World Life Insurance Company
+006381  Federated Life Insurance Company
+070403  Fidelity & Guaranty Life Group (G)
+070016  Funeral Directors Group (G)
+008161  GBU Financial Life
+069555  Genworth Financial Group (G)
+007299  Gerber Life Insurance Company
+006459  Gleaner Life Insurance Society
+069786  Global Atlantic Group (G)
+069545  Great American Life Group (G)
+070384  Great Western Group (G)
+070366  Great-West Life Group (G)
+009807  Greek Catholic Union of the USA
+069685  Guardian Life Group (G)
+070464  Guggenheim Life Group (G)
+068031  Hannover Life Reassurance Co of America
+070479  Hartford Life Insurance Group (G)
+070496  HC2 Holdings Group (G)
+060720  Heritage Life Insurance Company
+006534  Homesteaders Life Company
+069919  Horace Mann Life Group (G)
+069866  Humana Group (G)
+006542  Illinois Mutual Life Insurance Company
+006551  Independent Order of Foresters USB
+070368  Indiana Farm Bureau Group (G)
+069578  Jackson National Group (G)
+069542  John Hancock Life Insurance Group (G)
+069692  Kansas City Life Group (G)
+070340  Kemper Life & Health Group (G)
+006616  Knights of Columbus
+069539  Legal & General America Group (G)
+070410  Liberty Bankers Group (G)
+006627  Liberty Life Assurance Company of Boston
+009200  LifeCare Assurance Company
+070054  Lifetime Healthcare Group (G)
+006657  Lincoln Benefit Life Company
+070351  Lincoln Financial Group (G)
+070357  Manhattan Insurance Group (G)
+069702  MassMutual Financial Group (G)
+070499  Meiji Yasuda US Life Group (G)
+070192  Metropolitan Life and Affiliated Cos (G)
+069565  Minnesota Life Insurance Group (G)
+006737  Modern Woodmen of America
+006746  Munich American Reassurance Company
+008851  Mutual of America Life Insurance Company
+070203  Mutual of Omaha Group (G)
+070510  Nassau Reinsurance Group (G)
+069953  National Life Group (G)
+006811  National Western Life Insurance Company
+070822  Nationwide Mutual Life Group (G)
+069714  New York Life Group (G)
+070358  NGL Insurance Group (G)
+069515  Northwestern Mutual Group (G)
+069717  Ohio National Life Group (G)
+070399  OneAmerica Group (G)
+070506  OneMain Holdings Life Group (G)
+070367  Oxford Group (G)
+069720  Pacific Life Group (G)
+069617  Pan-American Life Ins Group (G)
+069573  Pavonia Life Insurance Group (G)
+070155  Pekin Life Insurance Group (G)
+069722  Penn Mutual Group (G)
+069724  Physicians Mutual Group (G)
+070183  Primerica Group (G)
+020516  Principal Financial Group (G)
+070471  Prosperity Life Group (G)
+069728  Protective Life Group (G)
+070189  Prudential of America Group (G)
+069611  RGA Group (G)
+006057  Sagicor Life Insurance Company
+069731  Sammons Financial Group (G)
+006696  Savings Bank Life Insurance Co of MA
+070253  SCOR Life US Group (G)
+008785  Scottish Re (US) Inc
+069882  Security Benefit Group (G)
+007034  Security Mutual Life Insurance Co of NY
+007910  Senior Health Insurance Co of PA
+070125  Sentry Life Insurance Group (G)
+006675  Shelter Life Insurance Company
+007053  Southern Farm Bureau Life Insurance Co
+070126  State Farm Life Group (G)
+069740  Sun Life Financial Group (G)
+070469  Swiss Re Life Group (G)
+070123  Symetra Life Group (G)
+008443  Tennessee Farmers Life Insurance Company
+069600  Thrivent Financial for Lutherans Group (G)
+070362  TIAA Group (G)
+069195  Tokio Marine US Life Group (G)
+070265  Torchmark Companies (G)
+069845  Trustmark Insurance Group (G)
+007178  United Life Insurance Company
+069973  UnitedHealth Group (G)
+069743  Unum Insurance Group (G)
+070364  USAA Life Group (G)
+070153  Voya Financial Group (G)
+069754  Western & Southern Financial Group (G)
+070435  Wilton Re US Group (G)
+007259  Woodmen of World Life Insurance Soc

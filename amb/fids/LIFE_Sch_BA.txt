@@ -1,0 +1,48 @@
+; BESTLINK
+; 2
+; 45
+ST|ST13332|Act cst oil & gas production-unaff
+ST|ST13333|Act cst oil & gas production-aff
+ST|ST13334|Act cst transport equipment-unaff
+ST|ST13335|Act cst transport equipment-aff
+ST|ST13336|Act cst mineral rights-unaff
+ST|ST13337|Act cst mineral rights-aff
+ST|ST13338|Act cst fix\var rate bonds-unaff
+ST|ST13339|Act cst fix\var rate bonds-aff
+ST|ST13340|Act cst fix\var rate mtg loan-unaff
+ST|ST13341|Act cst fix\var rate mtg loan-aff
+ST|ST13342|Act cst fix\var rate oth instr-unaf
+ST|ST13343|Act cst fix\var rate oth instr-aff
+ST|ST13344|Act cst jnt\ptnr fix inc scty-unaff
+ST|ST13345|Act cst jnt\ptnr fix inc scty-aff
+ST|ST13346|Act cst jnt\ptnr common stock-unaff
+ST|ST13347|Act cst jnt\ptnr common stock-aff
+ST|ST13348|Act cst jnt\ptnr real estate-unaff
+ST|ST13349|Act cst jnt\ptnr real estate-aff
+ST|ST13350|Act cst jnt\ptnr other-unaff
+ST|ST13351|Act cst jnt\ptnr other-aff
+ST|ST13352|Act cst surplus debentures-unaff
+ST|ST13353|Act cst surplus debentures-aff
+ST|ST13354|Act cst collateral loans-unaff
+ST|ST13355|Act cst collateral loans-aff
+ST|ST13356|Act cst capital notes-unaff
+ST|ST13357|Act cst capital notes-aff
+ST|ST13360|Act cst other class of assets-unaff
+ST|ST13361|Act cst other class of assets-aff
+ST|ST13362|Act cst subtotal-unaff
+ST|ST13363|Act cst subtotal-aff
+ST|ST15400|Act cst guar-fed lo inc tax cr unfl
+ST|ST15401|Act cst guar-fed lo inc tax cr affl
+ST|ST15402|Act cst non-guar lo inc tax cr unfl
+ST|ST15403|Act cst non-guar lo inc tax cr affl
+ST|ST15406|Act cst all othr inc tax cr unfl
+ST|ST15407|Act cst all othr inc tax cr affl
+ST|ST16031|Act cst noncollateral loans-unaff
+ST|ST16032|Act cst noncollateral loans-aff
+ST|ST25939|Act cst jnt\ptnr mtg loans-unaff
+ST|ST25940|Act cst jnt\ptnr mtg loans-aff
+ST|ST25941|Act cst guar state lo inc tax cr unfl
+ST|ST25942|Act cst guar state lo inc tax cr affl
+ST|ST25943|Act cst non-guar state lo inc tax cr unfl
+ST|ST25944|Act cst non-guar state lo inc tax cr affl
+ST|ST25945|Act cst wrk cap fin invest - unaff

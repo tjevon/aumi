@@ -1,0 +1,17 @@
+; BESTLINK
+; 2
+; 14
+BH|HS00093|Bal Sheet - Cash & Short Term
+HS|HS00093|Netadmit cash,equiv shrt trm inv
+HS|HS00100|Netadmit amts recov fr reinsurers
+HS|HS00111|Netadmit total assets
+BH|HS00178|Bal Sheet - Total Liabilities
+HS|HS00178|Liab tot total liabilities
+BH|HS00187|Total Capital & Surplus
+HS|HS00187|Total capital and surplus
+HS|HS00263|Cash prem & rev coll net of reinsur
+HS|HS00270|Cash fed & foreign inc tax recov
+HS|HS00271|Cash net cash from operations
+HS|HS06177|Cash beneft & loss related payments
+HS|HS06179|Cash comm, exp pd & agg w-i deduct
+HS|HS06180|Cash dividends paid to policyholder

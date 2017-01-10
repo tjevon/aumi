@@ -1,0 +1,59 @@
+; BESTLINK
+; 2
+; 56
+HS|HS02710|Qual ratng us govt naic 1 tot curr yr
+HS|HS02711|Qual ratng us govt naic 2 tot curr yr
+HS|HS02712|Qual ratng us govt naic 3 tot curr yr
+HS|HS02713|Qual ratng us govt naic 4 tot curr yr
+HS|HS02714|Qual ratng us govt naic 5 tot curr yr
+HS|HS02715|Qual ratng us govt naic 6 tot curr yr
+HS|HS02716|Qual ratng us gov totals tot cur yr
+HS|HS03011|Qual ratng parent naicass 1 tot cur y
+HS|HS03012|Qual ratng parent naicass 2 tot cur y
+HS|HS03013|Qual ratng parent naicass 3 tot cur y
+HS|HS03014|Qual ratng parent naicass 4 tot cur y
+HS|HS03015|Qual ratng parent naicass 5 tot cur y
+HS|HS03016|Qual ratng parent naicass 6 tot cur y
+HS|HS03017|Qual ratng parent totals tot cur y
+HS|HS10291|Qual ratng all oth gov naic1 ttl cur yr
+HS|HS10292|Qual ratng all oth gov naic2 ttl cur yr
+HS|HS10293|Qual ratng all oth gov naic3 ttl cur yr
+HS|HS10294|Qual ratng all oth gov naic4 ttl cur yr
+HS|HS10295|Qual ratng all oth gov naic5 ttl cur yr
+HS|HS10296|Qual ratng all oth gov naic6 ttl cur yr
+HS|HS10297|Qual ratng all oth gov totals ttl cur yr
+HS|HS10298|Qual ratng us st terr & poss naic1 ttl cur yr
+HS|HS10299|Qual ratng us st terr & poss naic2 ttl cur yr
+HS|HS10300|Qual ratng us st terr & poss naic3 ttl cur yr
+HS|HS10301|Qual ratng us st terr & poss naic4 ttl cur yr
+HS|HS10302|Qual ratng us st terr & poss naic5 ttl cur yr
+HS|HS10303|Qual ratng us st terr & poss naic6 ttl cur yr
+HS|HS10304|Qual ratng us st terr & poss totals ttl cur yr
+HS|HS10305|Qual ratng us pol sub naic1 ttl cur yr
+HS|HS10306|Qual ratng us pol sub naic2 ttl cur yr
+HS|HS10307|Qual ratng us pol sub naic3 ttl cur yr
+HS|HS10308|Qual ratng us pol sub naic4 ttl cur yr
+HS|HS10309|Qual ratng us pol sub naic5 ttl cur yr
+HS|HS10310|Qual ratng us pol sub naic6 ttl cur yr
+HS|HS10311|Qual ratng us pol sub totals ttl cur yr
+HS|HS10312|Qual ratng us spe rev naic1 ttl cur yr
+HS|HS10313|Qual ratng us spe rev naic2 ttl cur yr
+HS|HS10314|Qual ratng us spe rev naic3 ttl cur yr
+HS|HS10315|Qual ratng us spe rev naic4 ttl cur yr
+HS|HS10316|Qual ratng us spe rev naic5 ttl cur yr
+HS|HS10317|Qual ratng us spe rev naic6 ttl cur yr
+HS|HS10318|Qual ratng spec rev totals ttl cur yr
+HS|HS10319|Qual ratng industr naic1 ttl cur yr
+HS|HS10320|Qual ratng industr naic2 ttl cur yr
+HS|HS10321|Qual ratng industr naic3 ttl cur yr
+HS|HS10322|Qual ratng industr naic4 ttl cur yr
+HS|HS10323|Qual ratng industr naic5 ttl cur yr
+HS|HS10324|Qual ratng industr naic6 ttl cur yr
+HS|HS10325|Qual ratng industr totals ttl cur yr
+HS|HS10326|Qual ratng hybrid secur naic1 ttl cur yr
+HS|HS10327|Qual ratng hybrid secur naic2 ttl cur yr
+HS|HS10328|Qual ratng hybrid secur naic3 ttl cur yr
+HS|HS10329|Qual ratng hybrid secur naic4 ttl cur yr
+HS|HS10330|Qual ratng hybrid secur naic5 ttl cur yr
+HS|HS10331|Qual ratng hybrid secur naic6 ttl cur yr
+HS|HS10332|Qual ratng hybrid secur totals ttl cur yr

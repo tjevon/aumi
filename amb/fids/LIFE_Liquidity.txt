@@ -1,0 +1,24 @@
+; BESTLINK
+; 2
+; 21
+SG|SG24756|Capital and surplus (as reported)
+ST|ST00030|Net subtot cash & invested ast
+ST|ST00031|Net rein ced amts recoverable
+BL|ST00047|Total Admitted Assets
+ST|ST00047|Net total admitted assets
+ST|ST00068|Aggregate reserves for a & h contr
+BL|ST00114|Bal Sheet - Total Liabilities
+ST|ST00114|Total liabilities
+ST|ST00191|Capital & surplus current year
+ST|ST00194|Prems collected net of reinsurance
+ST|ST00208|Dividends paid to policyholders
+ST|ST00209|Fed & fgn income taxes paid (recov)
+ST|ST00213|Net cash from operations
+ST|ST05266|Total a&h unearned premiums
+ST|ST05295|Group a&h unearned premiums
+ST|ST07422|Net cash, equivs & shrt trm inv
+ST|ST12180|Benefit & loss related payments
+ST|ST12181|Comm, exp & agg wr-ins for deduct
+BL|ST15552|Bal Sheet - Cash & Short Term
+ST|ST15552|Cash & short-term
+ST|ST22423|Total amts recov from reinsr dec 31 cy

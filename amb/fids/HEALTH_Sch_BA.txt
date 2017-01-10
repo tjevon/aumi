@@ -1,0 +1,49 @@
+; BESTLINK
+; 2
+; 46
+HS|HS05018|Act cst total l-term assets owned
+HS|HS08250|Act cst oil & gas production unaffl
+HS|HS08251|Act cst oil & gas production affl
+HS|HS08252|Act cst transportation equpt unaffl
+HS|HS08253|Act cst transportation equpt affl
+HS|HS08254|Act cst mineral rights unaffl
+HS|HS08255|Act cst mineral rights affl
+HS|HS08256|Act cst bonds unaffl
+HS|HS08257|Act cst bonds affl
+HS|HS08258|Act cst mortgage loans unaffl
+HS|HS08259|Act cst mortgage loans affl
+HS|HS08260|Act cst othr fixed inc instr unaffl
+HS|HS08261|Act cst othr fixed inc instr affl
+HS|HS08262|Act cst fixed income instr unaffl
+HS|HS08263|Act cst fixed income instr affl
+HS|HS08264|Act cst common stocks unaffl
+HS|HS08265|Act cst common stocks affl
+HS|HS08266|Act cst real estate unaffl
+HS|HS08267|Act cst real estate affl
+HS|HS08268|Act cst other unaffl
+HS|HS08269|Act cst other affl
+HS|HS08270|Act cst surplus debentures unaffl
+HS|HS08271|Act cst surplus debentures affl
+HS|HS08272|Act cst collateral loans unaffl
+HS|HS08273|Act cst collateral loans affl
+HS|HS08274|Act cst capital notes unaffl
+HS|HS08275|Act cst capital notes affl
+HS|HS08278|Act cst othr class admt asts unaffl
+HS|HS08279|Act cst othr class admt asts affl
+HS|HS08280|Act cst subtotal unaffiliated
+HS|HS08281|Act cst subtotal affiliated
+HS|HS08809|Act cst guar-fed lo inc tax cr unfl
+HS|HS08810|Act cst guar-fed lo inc tax cr affl
+HS|HS08811|Act cst non-guar lo inc tax cr unfl
+HS|HS08812|Act cst non-guar lo inc tax cr affl
+HS|HS08815|Act cst all othr inc tax cr unfl
+HS|HS08816|Act cst all othr inc tax cr affl
+HS|HS09299|Act cst non-collat loans unaffl
+HS|HS09300|Act cst non-collat loans affl
+HS|HS17035|Act cst joint mortgage loans unaffl
+HS|HS17036|Act cst joint mortgage loans affl
+HS|HS17037|Act cst guar-state lo inc tax cr unfl
+HS|HS17038|Act cst guar-state lo inc tax cr affl
+HS|HS17039|Act cst non-guar state lo inc tax cr unfl
+HS|HS17040|Act cst non-guar state lo inc tax cr affl
+HS|HS17041|Act cst working cap fin invest unaffl

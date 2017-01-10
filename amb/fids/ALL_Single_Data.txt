@@ -1,0 +1,83 @@
+; BESTLINK
+; 2
+; 80
+SF|CO00001|AMB Company Name
+SF|CO00231|AMB Company Name (Communications)
+SF|CO00295|AMB Company Name (Full)
+SF|CO00172|AMB Entity Name
+SF|CO00168|AMB Entity Number
+D8|CO00016|AMB Group Lead Company Indicator
+SF|CO00476|AMB Group Lead Company Number
+SF|CO00024|AMB Group Name
+SF|CO00023|AMB Group Number
+SF|CO00002|AMB Number
+SF|CO00027|AMB Parent Name
+SF|CO00169|AMB Parent Number
+SF|CO00069|AMB Rating Unit Name
+SF|CO00068|AMB Rating Unit Number
+SF|CO00318|AMB Trade Name
+SF|CO00173|AMB Ultimate Parent Name
+SF|CO00170|AMB Ultimate Parent Number
+SF|CO00004|Federal Employer ID Number
+SF|CO00692|Legal Entity Identifier
+SF|CO00003|NAIC Company Number
+SF|CO00025|NAIC Group Number
+SF|CO00210|Parent Company (Percent Owned)
+SF|CO00033|City
+SF|CO00036|Country
+SF|CO00006|Country of Domicile
+SF|CO00136|Email Address
+SF|CO00022|Fax Number
+SF|CO00035|Postal Code
+SF|CO00034|State
+SF|CO00005|State of Domicile
+SF|CO00030|Street Address 1
+SF|CO00031|Street Address 2
+SF|CO00032|Street Address 3
+SF|CO00020|Telephone Number
+SF|CO00010|Top Officer
+SF|CO00011|Top Officer's Title
+SF|CO00117|Web Site
+SF|CO00184|Business Status
+SF|CO00185|Business Status Reason
+SF|CO00179|Business Type
+SF|CO00192|Business Type Descriptor
+SF|CO00171|Consolidation Type
+SF|CO00180|Entity Type
+GA|CO00194|Entity Type Descriptor
+SF|CO00174|Industry Type
+SF|CO00015|Marketing Type
+SF|CO00181|Operating Company Type
+SF|CO00014|Organization Type
+SF|CO00195|Organization Type Descriptor
+SF|CO00008|Year Commenced Business
+SF|CO00007|Year of Incorporation
+SF|CO00320|Accounting Officer
+SF|CO00321|Actuary
+SF|CO00322|Administration
+SF|CO00323|Auditor Officer
+SF|CO00324|Chairman
+SF|CO00325|Chief Compliance Officer
+SF|CO00326|Chief Executive Officer
+SF|CO00327|Chief Financial Officer
+SF|CO00328|Chief Information Officer
+SF|CO00329|Chief Investment Officer
+SF|CO00330|Comptroller
+SF|CO00331|Controller
+SF|CO00348|Director
+SF|CO00347|Directors List
+SF|CO00332|Executive Vice President
+SF|CO00333|General Counsel
+SF|CO00334|General Manager
+SF|CO00335|Manager
+SF|CO00336|Managing Director
+SF|CO00337|Marketing Officer
+SF|CO00338|Office Manager
+SF|CO00339|Operations Officer
+SF|CO00340|Other
+SF|CO00341|President
+SF|CO00342|Secretary
+SF|CO00343|Senior Vice President
+SF|CO00344|Treasurer
+SF|CO00345|Underwriting Officer
+SF|CO00346|Vice President

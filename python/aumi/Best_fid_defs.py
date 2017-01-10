@@ -5,7 +5,7 @@ PC_Unaffiliated =   ['SF21373', 'SF21375', 'SF21377', 'SF21379', 'SF21381', 'SF2
 PC_Affiliated =     ['SF21374', 'SF21376', 'SF21378', 'SF21380', 'SF21382', 'SF21384', 'SF21386', 'SF21388',
                      'SF21390', 'SF21392', 'SF21394', 'SF21396', 'SF21398', 'SF21400', 'SF21402', 'SF21404',
                      'SF21406', 'SF21408', 'SF21410', '', 'SF21412', '', 'SF21415', '']
-PC_Subcat =       [PC_Unaffiliated, PC_Affiliated]
+PC_Subcat =         [PC_Unaffiliated, PC_Affiliated]
 
 LIFE_Unaffiliated = ['ST13332', 'ST13334', 'ST13336', 'ST13338', 'ST13340', 'ST13342', 'ST13344', 'ST13346',
                      'ST13348', 'ST25939', 'ST13350', 'ST13352', 'ST13354', 'ST16031', 'ST13356', 'ST15400',
@@ -16,17 +16,17 @@ LIFE_Affiliated =   ['ST13333', 'ST13335', 'ST13337', 'ST13339', 'ST13341', 'ST1
 LIFE_Subcat =       [LIFE_Unaffiliated, LIFE_Affiliated]
 
 HEALTH_Unaffiliated =['HS08250', 'HS08252', 'HS08254', 'HS08256', 'HS08258', 'HS08260', 'HS08262', 'HS08264',
-                     'HS08266', 'HS17035', 'HS08268', 'HS08270', 'HS08272', 'HS09299', 'HS08274', 'HS08809',
-                     'HS08811', 'HS17037', 'HS17039', '', 'HS08815', 'HS17041', 'HS08278', '']
-HEALTH_Affiliated =   ['HS08251', 'HS08253', 'HS08255', 'HS08257', 'HS08259', 'HS08261', 'HS08263', 'HS08265',
-                     'HS08267', 'HS17036', 'HS08269', 'HS08271', 'HS08273', 'HS09300', 'HS08275', 'HS08810',
-                     'HS08812', 'HS17038', 'HS17040', '', 'HS08816', '', 'HS08279', '']
-HEALTH_Subcat =       [HEALTH_Unaffiliated, HEALTH_Affiliated]
+                      'HS08266', 'HS17035', 'HS08268', 'HS08270', 'HS08272', 'HS09299', 'HS08274', 'HS08809',
+                      'HS08811', 'HS17037', 'HS17039', '', 'HS08815', 'HS17041', 'HS08278', '']
+HEALTH_Affiliated =  ['HS08251', 'HS08253', 'HS08255', 'HS08257', 'HS08259', 'HS08261', 'HS08263', 'HS08265',
+                      'HS08267', 'HS17036', 'HS08269', 'HS08271', 'HS08273', 'HS09300', 'HS08275', 'HS08810',
+                      'HS08812', 'HS17038', 'HS17040', '', 'HS08816', '', 'HS08279', '']
+HEALTH_Subcat =      [HEALTH_Unaffiliated, HEALTH_Affiliated]
 
 #### FINANCIALS
 PC_Iris_Ratios =    ['SF05352', 'SF05354', 'SF05356', 'SF05358', 'SF05360', 'SF05362', 'SF08471', 'SF08473',
                      'SF05366', 'SF05368', 'SF05370', 'SF05372', 'SF05374','','','','','','','','','','','','']
-PC_Liquidity =      ['','CalcS80050', '','','CalcS80031', 'SF00025', 'SF00031', 'SF08536', 'SF00053', 'SF00139',
+PC_Liquidity =      ['','', '','','', 'SF00025', 'SF00031', 'SF00043', 'SF00053', 'SF00139',
                      'SF07654', 'SF07656', 'SF00148', 'SF00147', 'SF00146']
 PC_Net_Pos =        ['SF13840', 'SF00011', '', 'SF00013', 'SF00014', '', 'SF04762', 'SF04763', 'SF00016', 'SF06017',
                      'SF06018', 'SF04764', 'SF00023', 'SF00025','', 'SF00031', '', '', '']
@@ -34,11 +34,19 @@ PC_Fin_Sub_Tots =   [PC_Iris_Ratios, PC_Liquidity, PC_Net_Pos]
 
 LIFE_Iris_Ratios =  ['','','','','','','','','','','','','','ST08607', 'ST08609', 'ST08611', 'ST08613',
                      'ST08615', 'ST08617', 'ST08619', 'ST08621', 'ST08623', 'ST08625', 'ST08627', 'ST08629']
-LIFE_Liquidity =    ['','CalcS80050', '','','CalcS80031', 'ST00030', 'ST00031', '', 'ST05266', 'ST00194',
+LIFE_Liquidity =    ['','', '','','', 'ST00030', 'ST00031', 'ST00068', 'ST05266', 'ST00194',
                      'ST12180', 'ST12181', 'ST00213', 'ST00209', 'ST00208']
 LIFE_Net_Pos =      ['ST19574', 'ST00016', '', 'ST00017', 'ST00018', '', 'ST07420', 'ST07421', 'ST00020', 'ST10039',
                      'ST10040', 'ST07422', 'ST00028', 'ST00030','ST12167', 'ST00031', 'ST00028', 'ST00043', 'ST00047']
 LIFE_Fin_Sub_Tots =   [LIFE_Iris_Ratios, LIFE_Liquidity, LIFE_Net_Pos]
+
+HEALTH_Iris_Ratios =  ['','','','','','','','','','','','','','', '', '', '',
+                       '', '', '', '', '', '', '', '']
+HEALTH_Liquidity =    ['','', '','','', 'HS00097', 'HS00100', '', '', 'HS00263',
+                       'HS06177', 'HS06179', 'HS00271', 'HS00270', 'HS06180']
+HEALTH_Net_Pos =      ['HS12695', 'HS00085', '', 'HS00086', 'HS00087', '', 'HS00088', 'HS00089','HS00090', 'HS00091', 'HS00092',
+                       'HS00093', 'HS00094', 'HS00097','HS06143', 'HS00100', '', 'HS06151', 'HS00111']
+HEALTH_Fin_Sub_Tots = [HEALTH_Iris_Ratios, HEALTH_Liquidity, HEALTH_Net_Pos]
 
 ### SCHEDULE D 1A 1
 PC_US_Fed_Tot =     ['SF04565', 'SF04566', 'SF04567', 'SF04568', 'SF04569', 'SF04570']
@@ -90,3 +98,7 @@ HEALTH_Asset_Class_Tots =    [HEALTH_US_Fed_Tot, HEALTH_Oth_Gov_Tot, HEALTH_US_S
                               HEALTH_Par_Sub_Aff_Tot, HEALTH_Muni_Tot]
 
 LINES_PER_ASSET_CLASS = 10
+
+ALL_Single_Data =['CO00231', '', 'CO00003', 'CO00179', '', 'CO00014', 'CO00030', 'CO00031',
+                   'CO00033', 'CO00034', 'CO00035', '', 'CO00036', 'CO00020', 'CO00010',
+                   'CO00327', 'CO00341', 'CO00324', 'CO00117', 'CO00022']

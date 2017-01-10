@@ -1,0 +1,49 @@
+; BESTLINK
+; 2
+; 46
+BL|ST00016|Bal Sheet - Long Term Bonds
+ST|ST00016|Net bonds
+BL|ST00017|Bal Sheet - Preferred Stock
+ST|ST00017|Net preferred stocks
+BL|ST00018|Bal Sheet - Common Stock
+ST|ST00018|Net common stocks
+ST|ST00020|Net real estate occ by co l encumb
+BL|ST00023|Bal Sheet - Contract Loans
+ST|ST00023|Net contract loans
+ST|ST00028|Net other invested assets
+ST|ST00029|Net agg wr-ins for inv assets
+ST|ST00030|Net subtot cash & invested ast
+ST|ST00031|Net rein ced amts recoverable
+ST|ST00034|Net edp equipment
+BL|ST00038|Bal Sheet - Investment Income
+ST|ST00038|Net investment income due & accrued
+ST|ST00039|Net adj asts due frgn exch rates
+ST|ST00040|Net rcvble fr parent subsid & aff
+ST|ST00041|Net amts rcvbl unins a&h plan
+ST|ST00042|Net agg wr-ins oth than inv assets
+ST|ST00043|Net tot asts excl sep & seg acct
+BL|ST00046|Bal Sheet - Separate Account Assets
+ST|ST00046|Net from sep, seg, prot cell accts
+BL|ST00047|Total Admitted Assets
+ST|ST00047|Net total admitted assets
+ST|ST07420|Net mtg first liens
+ST|ST07421|Net mtg other than frst liens
+ST|ST07422|Net cash, equivs & shrt trm inv
+ST|ST07503|Net receivables for securities
+ST|ST07504|Net oth amts rcvble under reins
+ST|ST07505|Net guaranty fnds rcvble on dep
+ST|ST10039|Net rl est held prod of income
+ST|ST10040|Net rl est held for sale
+ST|ST10044|Net net deferred tax asset
+ST|ST12167|Net uncollected prems & agents bal
+ST|ST12168|Net prem, bal, install not yet due
+ST|ST12169|Net accrued retrospective premiums
+ST|ST12170|Net funds held\deposit w/ rein cos
+ST|ST12171|Net curr fed & fit recoverbl & int
+ST|ST12172|Net furniture and equipment
+ST|ST12173|Net healthcare & other receivables
+ST|ST12814|Net title plants less $ chrge off
+BL|ST19574|Bal Sheet - Derivative Assets
+ST|ST19574|Net derivatives
+BL|ST19575|Bal Sheet - Securities Lending-Assets
+ST|ST19575|Net secur lend reinvest collateral asset

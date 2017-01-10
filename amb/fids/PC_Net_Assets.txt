@@ -1,0 +1,18 @@
+; BESTLINK
+; 2
+; 15
+SF|SF00011|Net - bonds
+SF|SF00013|Net - preferred stocks
+SF|SF00014|Net - common stocks
+BP|SF00016|Bal Sheet - Real Estate,Offices
+SF|SF00016|Net - properties occupied by comp
+SF|SF00023|Net - other invested assets
+BP|SF00025|Bal Sheet - Total Invest Assets
+SF|SF00025|Net - subtotals-cash & inv assets
+SF|SF04762|Net - mort loans-first liens
+SF|SF04763|Net - mort loans-other than first
+SF|SF04764|Net - cash,equiv & s-term invest
+SF|SF06017|Net - prop for prod of income
+SF|SF06018|Net - properties held for sale
+BP|SF13840|Bal Sheet - Derivatives - Assets
+SF|SF13840|Net - derivatives( schedule db )

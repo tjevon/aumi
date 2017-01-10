@@ -1,0 +1,47 @@
+; BESTLINK
+; 2
+; 44
+070972  Aetna Health Group (G)
+070964  Anthem Health Companies (G)
+070971  Arkansas BC/BS Group (G)
+070909  Blue Cross & Blue Shield of Florida Grp (G)
+070914  Blue Cross & Blue Shield of NC Group (G)
+070894  Blue Cross & Blue Shield of SC Group (G)
+070915  Blue Cross & Blue Shield of TN Group (G)
+060080  Blue Cross and Blue Shield of Alabama
+020455  Blue Cross and Blue Shield of MA Group (G)
+064465  Blue Cross Blue Shield of Arizona Inc
+020262  Blue Cross Blue Shield of Michigan Group (G)
+070913  Blue Cross Blue Shield of Minnesota Grp (G)
+061788  California Physicians' Service Group (G)
+020393  Capital Blue Cross Companies (G)
+070916  CareFirst Inc Group (G)
+070853  CareSource Group (G)
+070918  Centene Corporation Companies (G)
+070892  Delta Dental of California Group (G)
+020434  EmblemHealth Group (G)
+060082  Excellus Health Plan Inc
+070960  Group Health Cooperative of Puget Sound (G)
+070929  Health Care Service Corp Health Group (G)
+070930  HealthPartners Inc Group (G)
+070895  Highmark Health Companies (G)
+070932  Horizon Healthcare Services Companies (G)
+070970  Humana Health Companies (G)
+070982  Independence Blue Cross Group (G)
+070936  Kaiser Foundation Group of Health Plans (G)
+064652  Local Initiative Health Authority of LA
+070997  Louisiana Health Services Group (G)
+070102  Medco Containment Group (G)
+070902  Medica Holding Companies (G)
+020468  Medical Mutual of Ohio Group (G)
+020326  Molina Healthcare Group (G)
+064713  Orange Prevention & Trtmt Int Med Assist
+070993  Premera Companies (G)
+020353  Regence Group (G)
+064877  Solano-Napa-Yolo Commission on Med Care
+070897  TheWellCare Group of Companies (G)
+070875  Tufts Associated Health Plans Group (G)
+070852  UCare Group (G)
+070980  UnitedHealth Group Incorporated (G)
+070966  Vision Service Plan Group (G)
+064437  Wellmark Group (G)
