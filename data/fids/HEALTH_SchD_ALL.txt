@@ -1,0 +1,2468 @@
+; BESTLINK
+; 2
+; 2465
+HS|HS02535|Qual ratng us govts naic1 1yr or less
+HS|HS02536|Qual ratng us govts naic2 1yr or less
+HS|HS02537|Qual ratng us govts naic3 1yr or less
+HS|HS02538|Qual ratng us govts naic4 1yr or less
+HS|HS02539|Qual ratng us govts naic5 1yr or less
+HS|HS02540|Qual ratng us govts naic6 1yr or less
+HS|HS02541|Qual ratng us govts totals 1yr or less
+HS|HS10081|Qual ratng all oth gov naic1 1yr or less
+HS|HS10082|Qual ratng all oth gov naic2 1yr or less
+HS|HS10083|Qual ratng all oth gov naic3 1yr or less
+HS|HS10084|Qual ratng all oth gov naic4 1yr or less
+HS|HS10085|Qual ratng all oth gov naic5 1yr or less
+HS|HS10086|Qual ratng all oth gov naic6 1yr or less
+HS|HS10087|Qual ratng all oth gov totals 1yr or less
+HS|HS10088|Qual ratng us st terr & poss naic1 1yr or less
+HS|HS10089|Qual ratng us st terr & poss naic2 1yr or less
+HS|HS10090|Qual ratng us st terr & poss naic3 1yr or less
+HS|HS10091|Qual ratng us st terr & poss naic4 1yr or less
+HS|HS10092|Qual ratng us st terr & poss naic5 1yr or less
+HS|HS10093|Qual ratng us st terr & poss naic6 1yr or less
+HS|HS10094|Qual ratng us st terr & poss totals 1yr or less
+HS|HS10095|Qual ratng us pol sub naic1 1yr or less
+HS|HS10096|Qual ratng us pol sub naic2 1yr or less
+HS|HS10097|Qual ratng us pol sub naic3 1yr or less
+HS|HS10098|Qual ratng us pol sub naic4 1yr or less
+HS|HS10099|Qual ratng us pol sub naic5 1yr or less
+HS|HS10100|Qual ratng us pol sub naic6 1yr or less
+HS|HS10101|Qual ratng us pol sub totals 1yr or less
+HS|HS10102|Qual ratng us spe rev naic1 1yr or less
+HS|HS10103|Qual ratng us spe rev naic2 1yr or less
+HS|HS10104|Qual ratng us spe rev naic3 1yr or less
+HS|HS10105|Qual ratng us spe rev naic4 1yr or less
+HS|HS10106|Qual ratng us spe rev naic5 1yr or less
+HS|HS10107|Qual ratng us spe rev naic6 1yr or less
+HS|HS10108|Qual ratng us spe rev totals 1y or less
+HS|HS02570|Qual ratng us govts naicass 1 1-5 yrs
+HS|HS02571|Qual ratng us govts naicass 2 1-5 yrs
+HS|HS02572|Qual ratng us govts naicass 3 1-5 yrs
+HS|HS02573|Qual ratng us govts naicass 4 1-5 yrs
+HS|HS02574|Qual ratng us govts naicass 5 1-5 yrs
+HS|HS02575|Qual ratng us govts naicass 6 1-5 yrs
+HS|HS02576|Qual ratng us govts totals 1-5 yrs
+HS|HS10123|Qual ratng all oth gov naic1 1-5 yrs
+HS|HS10124|Qual ratng all oth gov naic2 1-5 yrs
+HS|HS10125|Qual ratng all oth gov naic3 1-5 yrs
+HS|HS10126|Qual ratng all oth gov naic4 1-5 yrs
+HS|HS10127|Qual ratng all oth gov naic5 1-5 yrs
+HS|HS10128|Qual ratng all oth gov naic6 1-5 yrs
+HS|HS10129|Qual ratng all oth gov totals 1-5 yrs
+HS|HS10130|Qual ratng us st terr & poss naic1 1-5 yrs
+HS|HS10131|Qual ratng us st terr & poss naic2 1-5 yrs
+HS|HS10132|Qual ratng us st terr & poss naic3 1-5 yrs
+HS|HS10133|Qual ratng us st terr & poss naic4 1-5 yrs
+HS|HS10134|Qual ratng us st terr & poss naic5 1-5 yrs
+HS|HS10135|Qual ratng us st terr & poss naic6 1-5 yrs
+HS|HS10136|Qual ratng us st terr & poss totals 1-5 yrs
+HS|HS10137|Qual ratng us pol sub naic1 1-5 yrs
+HS|HS10138|Qual ratng us pol sub naic2 1-5 yrs
+HS|HS10139|Qual ratng us pol sub naic3 1-5 yrs
+HS|HS10140|Qual ratng us pol sub naic4 1-5 yrs
+HS|HS10141|Qual ratng us pol sub naic5 1-5 yrs
+HS|HS10142|Qual ratng us pol sub naic6 1-5 yrs
+HS|HS10143|Qual ratng us pol sub totals 1-5 yrs
+HS|HS10144|Qual ratng us spe rev naic1 1-5 yrs
+HS|HS10145|Qual ratng us spe rev naic2 1-5 yrs
+HS|HS10146|Qual ratng us spe rev naic3 1-5 yrs
+HS|HS10147|Qual ratng us spe rev naic4 1-5 yrs
+HS|HS10148|Qual ratng us spe rev naic5 1-5 yrs
+HS|HS10149|Qual ratng us spe rev naic6 1-5 yrs
+HS|HS10150|Qual ratng us spe rev totals 1-5 yrs
+HS|HS02605|Qual ratng us govts naicass 1 5-10yrs
+HS|HS02606|Qual ratng us govts naicass 2 5-10yrs
+HS|HS02607|Qual ratng us govts naicass 3 5-10yrs
+HS|HS02608|Qual ratng us govts naicass 4 5-10yrs
+HS|HS02609|Qual ratng us govts naicass 5 5-10yrs
+HS|HS02610|Qual ratng us govts naicass 6 5-10yrs
+HS|HS02611|Qual ratng us govts totals 5-10yrs
+HS|HS10165|Qual ratng all oth gov naic1 5-10 yrs
+HS|HS10166|Qual ratng all oth gov naic2 5-10 yrs
+HS|HS10167|Qual ratng all oth gov naic3 5-10 yrs
+HS|HS10168|Qual ratng all oth gov naic4 5-10 yrs
+HS|HS10169|Qual ratng all oth gov naic5 5-10 yrs
+HS|HS10170|Qual ratng all oth gov naic6 5-10 yrs
+HS|HS10171|Qual ratng all oth gov totals 5-10 yrs
+HS|HS10172|Qual ratng us st terr & poss naic1 5-10 yrs
+HS|HS10173|Qual ratng us st terr & poss naic2 5-10 yrs
+HS|HS10174|Qual ratng us st terr & poss naic3 5-10 yrs
+HS|HS10175|Qual ratng us st terr & poss naic4 5-10 yrs
+HS|HS10176|Qual ratng us st terr & poss naic5 5-10 yrs
+HS|HS10177|Qual ratng us st terr & poss naic6 5-10 yrs
+HS|HS10178|Qual ratng us st terr & poss totals 5-10 yrs
+HS|HS10179|Qual ratng us pol sub naic1 5-10 yrs
+HS|HS10180|Qual ratng us pol sub naic2 5-10 yrs
+HS|HS10181|Qual ratng us pol sub naic3 5-10 yrs
+HS|HS10182|Qual ratng us pol sub naic4 5-10 yrs
+HS|HS10183|Qual ratng us pol sub naic5 5-10 yrs
+HS|HS10184|Qual ratng us pol sub naic6 5-10 yrs
+HS|HS10185|Qual ratng us pol sub totals 5-10 yrs
+HS|HS10186|Qual ratng us spe rev naic1 5-10 yrs
+HS|HS10187|Qual ratng us spe rev naic2 5-10 yrs
+HS|HS10188|Qual ratng us spe rev naic3 5-10 yrs
+HS|HS10189|Qual ratng us spe rev naic4 5-10 yrs
+HS|HS10190|Qual ratng us spe rev naic5 5-10 yrs
+HS|HS10191|Qual ratng us spe rev naic6 5-10 yrs
+HS|HS10192|Qual ratng us spe rev totals 5-10 yrs
+HS|HS02640|Qual ratng us govts naicass 1 10-20yr
+HS|HS02641|Qual ratng us govts naicass 2 10-20yr
+HS|HS02642|Qual ratng us govts naicass 3 10-20yr
+HS|HS02643|Qual ratng us govts naicass 4 10-20yr
+HS|HS02644|Qual ratng us govts naicass 5 10-20yr
+HS|HS02645|Qual ratng us govts naicass 6 10-20yr
+HS|HS02646|Qual ratng us govts totals 10-20yr
+HS|HS10207|Qual ratng all oth gov naic1 10-20 yrs
+HS|HS10208|Qual ratng all oth gov naic2 10-20 yrs
+HS|HS10209|Qual ratng all oth gov naic3 10-20 yrs
+HS|HS10210|Qual ratng all oth gov naic4 10-20 yrs
+HS|HS10211|Qual ratng all oth gov naic5 10-20 yrs
+HS|HS10212|Qual ratng all oth gov naic6 10-20 yrs
+HS|HS10213|Qual ratng all oth gov totals 10-20 yrs
+HS|HS10214|Qual ratng us st terr & poss naic1 10-20 yrs
+HS|HS10215|Qual ratng us st terr & poss naic2 10-20 yrs
+HS|HS10216|Qual ratng us st terr & poss naic3 10-20 yrs
+HS|HS10217|Qual ratng us st terr & poss naic4 10-20 yrs
+HS|HS10218|Qual ratng us st terr & poss naic5 10-20 yrs
+HS|HS10219|Qual ratng us st terr & poss naic6 10-20 yrs
+HS|HS10220|Qual ratng us st terr & poss totals 10-20 yrs
+HS|HS10221|Qual ratng us pol sub naic1 10-20 yrs
+HS|HS10222|Qual ratng us pol sub naic2 10-20 yrs
+HS|HS10223|Qual ratng us pol sub naic3 10-20 yrs
+HS|HS10224|Qual ratng us pol sub naic4 10-20 yrs
+HS|HS10225|Qual ratng us pol sub naic5 10-20 yrs
+HS|HS10226|Qual ratng us pol sub naic6 10-20 yrs
+HS|HS10227|Qual ratng us pol sub totals 10-20 yrs
+HS|HS10228|Qual ratng us spe rev naic1 10-20 yrs
+HS|HS10229|Qual ratng us spe rev naic2 10-20 yrs
+HS|HS10230|Qual ratng us spe rev naic3 10-20 yrs
+HS|HS10231|Qual ratng us spe rev naic4 10-20 yrs
+HS|HS10232|Qual ratng us spe rev naic5 10-20 yrs
+HS|HS10233|Qual ratng us spe rev naic6 10-20 yrs
+HS|HS10234|Qual ratng us spe rev totals 10-20 yrs
+HS|HS02675|Qual ratng us govts naicass 1 over20y
+HS|HS02676|Qual ratng us govts naicass 2 over20y
+HS|HS02677|Qual ratng us govts naicass 3 over20y
+HS|HS02678|Qual ratng us govts naicass 4 over20y
+HS|HS02679|Qual ratng us govts naicass 5 over20y
+HS|HS02680|Qual ratng us govts naicass 6 over20y
+HS|HS02681|Qual ratng us govts totals over20y
+HS|HS10249|Qual ratng all oth gov naic1 20+yrs
+HS|HS10250|Qual ratng all oth gov naic2 20+yrs
+HS|HS10251|Qual ratng all oth gov naic3 20+yrs
+HS|HS10252|Qual ratng all oth gov naic4 20+yrs
+HS|HS10253|Qual ratng all oth gov naic5 20+yrs
+HS|HS10254|Qual ratng all oth gov naic6 20+yrs
+HS|HS10255|Qual ratng all oth gov totals 20+yrs
+HS|HS10256|Qual ratng us st terr & poss naic1 20+yrs
+HS|HS10257|Qual ratng us st terr & poss naic2 20+yrs
+HS|HS10258|Qual ratng us st terr & poss naic3 20+yrs
+HS|HS10259|Qual ratng us st terr & poss naic4 20+yrs
+HS|HS10260|Qual ratng us st terr & poss naic5 20+yrs
+HS|HS10261|Qual ratng us st terr & poss naic6 20+yrs
+HS|HS10262|Qual ratng us st terr & poss totals 20+yrs
+HS|HS10263|Qual ratng us pol sub naic1 20+yrs
+HS|HS10264|Qual ratng us pol sub naic2 20+yrs
+HS|HS10265|Qual ratng us pol sub naic3 20+yrs
+HS|HS10266|Qual ratng us pol sub naic4 20+yrs
+HS|HS10267|Qual ratng us pol sub naic5 20+yrs
+HS|HS10268|Qual ratng us pol sub naic6 20+yrs
+HS|HS10269|Qual ratng us pol sub totals 20+yrs
+HS|HS10270|Qual ratng us spe rev naic1 20+yrs
+HS|HS10271|Qual ratng us spe rev naic2 20+yrs
+HS|HS10272|Qual ratng us spe rev naic3 20+yrs
+HS|HS10273|Qual ratng us spe rev naic4 20+yrs
+HS|HS10274|Qual ratng us spe rev naic5 20+yrs
+HS|HS10275|Qual ratng us spe rev naic6 20+yrs
+HS|HS10276|Qual ratng spec rev totals 20+yrs
+HS|HS02710|Qual ratng us govt naic 1 tot curr yr
+HS|HS02711|Qual ratng us govt naic 2 tot curr yr
+HS|HS02712|Qual ratng us govt naic 3 tot curr yr
+HS|HS02713|Qual ratng us govt naic 4 tot curr yr
+HS|HS02714|Qual ratng us govt naic 5 tot curr yr
+HS|HS02715|Qual ratng us govt naic 6 tot curr yr
+HS|HS02716|Qual ratng us gov totals tot cur yr
+HS|HS10291|Qual ratng all oth gov naic1 ttl cur yr
+HS|HS10292|Qual ratng all oth gov naic2 ttl cur yr
+HS|HS10293|Qual ratng all oth gov naic3 ttl cur yr
+HS|HS10294|Qual ratng all oth gov naic4 ttl cur yr
+HS|HS10295|Qual ratng all oth gov naic5 ttl cur yr
+HS|HS10296|Qual ratng all oth gov naic6 ttl cur yr
+HS|HS10297|Qual ratng all oth gov totals ttl cur yr
+HS|HS10298|Qual ratng us st terr & poss naic1 ttl cur yr
+HS|HS10299|Qual ratng us st terr & poss naic2 ttl cur yr
+HS|HS10300|Qual ratng us st terr & poss naic3 ttl cur yr
+HS|HS10301|Qual ratng us st terr & poss naic4 ttl cur yr
+HS|HS10302|Qual ratng us st terr & poss naic5 ttl cur yr
+HS|HS10303|Qual ratng us st terr & poss naic6 ttl cur yr
+HS|HS10304|Qual ratng us st terr & poss totals ttl cur yr
+HS|HS10305|Qual ratng us pol sub naic1 ttl cur yr
+HS|HS10306|Qual ratng us pol sub naic2 ttl cur yr
+HS|HS10307|Qual ratng us pol sub naic3 ttl cur yr
+HS|HS10308|Qual ratng us pol sub naic4 ttl cur yr
+HS|HS10309|Qual ratng us pol sub naic5 ttl cur yr
+HS|HS10310|Qual ratng us pol sub naic6 ttl cur yr
+HS|HS10311|Qual ratng us pol sub totals ttl cur yr
+HS|HS10312|Qual ratng us spe rev naic1 ttl cur yr
+HS|HS10313|Qual ratng us spe rev naic2 ttl cur yr
+HS|HS10314|Qual ratng us spe rev naic3 ttl cur yr
+HS|HS10315|Qual ratng us spe rev naic4 ttl cur yr
+HS|HS10316|Qual ratng us spe rev naic5 ttl cur yr
+HS|HS10317|Qual ratng us spe rev naic6 ttl cur yr
+HS|HS10318|Qual ratng spec rev totals ttl cur yr
+HS|HS06569|Qual ratng us govts class 1 % cr yr
+HS|HS06570|Qual ratng us govts class 2 % cr yr
+HS|HS06571|Qual ratng us govts class 3 % cr yr
+HS|HS06572|Qual ratng us govts class 4 % cr yr
+HS|HS06573|Qual ratng us govts class 5 % cr yr
+HS|HS06574|Qual ratng us govts class 6 % cr yr
+HS|HS06575|Qual ratng us govts totals % cr yr
+HS|HS11878|Qual ratng all oth gov naic1 % cur yr
+HS|HS11879|Qual ratng all oth gov naic2 % cur yr
+HS|HS11880|Qual ratng all oth gov naic3 % cur yr
+HS|HS11881|Qual ratng all oth gov naic4 % cur yr
+HS|HS11882|Qual ratng all oth gov naic5 % cur yr
+HS|HS11883|Qual ratng all oth gov naic6 % cur yr
+HS|HS11884|Qual ratng all oth gov totals % cur yr
+HS|HS11885|Qual ratng us st terr & poss naic1 % cur yr
+HS|HS11886|Qual ratng us st terr & poss naic2 % cur yr
+HS|HS11887|Qual ratng us st terr & poss naic3 % cur yr
+HS|HS11888|Qual ratng us st terr & poss naic4 % cur yr
+HS|HS11889|Qual ratng us st terr & poss naic5 % cur yr
+HS|HS11890|Qual ratng us st terr & poss naic6 % cur yr
+HS|HS11891|Qual ratng us st terr & poss totals % cur yr
+HS|HS11892|Qual ratng us pol sub naic1 % cur yr
+HS|HS11893|Qual ratng us pol sub naic2 % cur yr
+HS|HS11894|Qual ratng us pol sub naic3 % cur yr
+HS|HS11895|Qual ratng us pol sub naic4 % cur yr
+HS|HS11896|Qual ratng us pol sub naic5 % cur yr
+HS|HS11897|Qual ratng us pol sub naic6 % cur yr
+HS|HS11898|Qual ratng us pol sub totals % cur yr
+HS|HS11899|Qual ratng us spe rev naic1 % cur yr
+HS|HS11900|Qual ratng us spe rev naic2 % cur yr
+HS|HS11901|Qual ratng us spe rev naic3 % cur yr
+HS|HS11902|Qual ratng us spe rev naic4 % cur yr
+HS|HS11903|Qual ratng us spe rev naic5 % cur yr
+HS|HS11904|Qual ratng us spe rev naic6 % cur yr
+HS|HS11905|Qual ratng us spe rev totals % cur yr
+HS|HS02745|Qual ratng us govt naic 1 tot fr col6
+HS|HS02746|Qual ratng us govt naic 2 tot fr col6
+HS|HS02747|Qual ratng us govt naic 3 tot fr col6
+HS|HS02748|Qual ratng us govt naic 4 tot fr col6
+HS|HS02749|Qual ratng us govt naic 5 tot fr col6
+HS|HS02750|Qual ratng us govt naic 6 tot fr col6
+HS|HS02751|Qual ratng us gov totals tot col 6
+HS|HS10333|Qual ratng all oth gov naic1 col6 pry
+HS|HS10334|Qual ratng all oth gov naic2 col6 pry
+HS|HS10335|Qual ratng all oth gov naic3 col6 pry
+HS|HS10336|Qual ratng all oth gov naic4 col6 pry
+HS|HS10337|Qual ratng all oth gov naic5 col6 pry
+HS|HS10338|Qual ratng all oth gov naic6 col6 pry
+HS|HS10339|Qual ratng all oth gov totals col6 pry
+HS|HS10340|Qual ratng us st terr & poss naic1 col6 pry
+HS|HS10341|Qual ratng us st terr & poss naic2 col6 pry
+HS|HS10342|Qual ratng us st terr & poss naic3 col6 pry
+HS|HS10343|Qual ratng us st terr & poss naic4 col6 pry
+HS|HS10344|Qual ratng us st terr & poss naic5 col6 pry
+HS|HS10345|Qual ratng us st terr & poss naic6 col6 pry
+HS|HS10346|Qual ratng us st terr & poss totals col6 pry
+HS|HS10347|Qual ratng us pol sub naic1 col6 pry
+HS|HS10348|Qual ratng us pol sub naic2 col6 pry
+HS|HS10349|Qual ratng us pol sub naic3 col6 pry
+HS|HS10350|Qual ratng us pol sub naic4 col6 pry
+HS|HS10351|Qual ratng us pol sub naic5 col6 pry
+HS|HS10352|Qual ratng us pol sub naic6 col6 pry
+HS|HS10353|Qual ratng us pol sub totals col6 pry
+HS|HS10354|Qual ratng us spe rev naic1 col6 pry
+HS|HS10355|Qual ratng us spe rev naic2 col6 pry
+HS|HS10356|Qual ratng us spe rev naic3 col6 pry
+HS|HS10357|Qual ratng us spe rev naic4 col6 pry
+HS|HS10358|Qual ratng us spe rev naic5 col6 pry
+HS|HS10359|Qual ratng us spe rev naic6 col6 pry
+HS|HS10360|Qual ratng us spe rev totals col6 pry
+HS|HS06604|Qual ratng us govts class 1 % pr yr
+HS|HS06605|Qual ratng us govts class 2 % pr yr
+HS|HS06606|Qual ratng us govts class 3 % pr yr
+HS|HS06607|Qual ratng us govts class 4 % pr yr
+HS|HS06608|Qual ratng us govts class 5 % pr yr
+HS|HS06609|Qual ratng us govts class 6 % pr yr
+HS|HS06610|Qual ratng us govts totals % pr yr
+HS|HS11920|Qual ratng all oth gov naic1 % col7 pry
+HS|HS11921|Qual ratng all oth gov naic2 % col7 pry
+HS|HS11922|Qual ratng all oth gov naic3 % col7 pry
+HS|HS11923|Qual ratng all oth gov naic4 % col7 pry
+HS|HS11924|Qual ratng all oth gov naic5 % col7 pry
+HS|HS11925|Qual ratng all oth gov naic6 % col7 pry
+HS|HS11926|Qual ratng all oth gov totals % col7 pry
+HS|HS11927|Qual ratng us st terr & poss naic1 % col7 pry
+HS|HS11928|Qual ratng us st terr & poss naic2 % col7 pry
+HS|HS11929|Qual ratng us st terr & poss naic3 % col7 pry
+HS|HS11930|Qual ratng us st terr & poss naic4 % col7 pry
+HS|HS11931|Qual ratng us st terr & poss naic5 % col7 pry
+HS|HS11932|Qual ratng us st terr & poss naic6 % col7 pry
+HS|HS11933|Qual ratng us st terr & poss totals % col7 pry
+HS|HS11934|Qual ratng us pol sub naic1 % col7 pry
+HS|HS11935|Qual ratng us pol sub naic2 % col7 pry
+HS|HS11936|Qual ratng us pol sub naic3 % col7 pry
+HS|HS11937|Qual ratng us pol sub naic4 % col7 pry
+HS|HS11938|Qual ratng us pol sub naic5 % col7 pry
+HS|HS11939|Qual ratng us pol sub naic6 % col7 pry
+HS|HS11940|Qual ratng us pol sub totals % col7 pry
+HS|HS11941|Qual ratng us spe rev naic1 % col7 pry
+HS|HS11942|Qual ratng us spe rev naic2 % col7 pry
+HS|HS11943|Qual ratng us spe rev naic3 % col7 pry
+HS|HS11944|Qual ratng us spe rev naic4 % col7 pry
+HS|HS11945|Qual ratng us spe rev naic5 % col7 pry
+HS|HS11946|Qual ratng us spe rev naic6 % col7 pry
+HS|HS11947|Qual ratng us spe rev totals % col7 pry
+HS|HS02780|Qual ratng us govt naic 1 tot pub tra
+HS|HS02781|Qual ratng us govt naic 2 tot pub tra
+HS|HS02782|Qual ratng us govt naic 3 tot pub tra
+HS|HS02783|Qual ratng us govt naic 4 tot pub tra
+HS|HS02784|Qual ratng us govt naic 5 tot pub tra
+HS|HS02785|Qual ratng us govt naic 6 tot pub tra
+HS|HS02786|Qual ratng us gov totals tot pub tr
+HS|HS10375|Qual ratng all oth gov naic1 publ trad
+HS|HS10376|Qual ratng all oth gov naic2 publ trad
+HS|HS10377|Qual ratng all oth gov naic3 publ trad
+HS|HS10378|Qual ratng all oth gov naic4 publ trad
+HS|HS10379|Qual ratng all oth gov naic5 publ trad
+HS|HS10380|Qual ratng all oth gov naic6 publ trad
+HS|HS10381|Qual ratng all oth gov totals pub trad
+HS|HS10382|Qual ratng us st terr & poss naic1 publ trad
+HS|HS10383|Qual ratng us st terr & poss naic2 publ trad
+HS|HS10384|Qual ratng us st terr & poss naic3 publ trad
+HS|HS10385|Qual ratng us st terr & poss naic4 publ trad
+HS|HS10386|Qual ratng us st terr & poss naic5 publ trad
+HS|HS10387|Qual ratng us st terr & poss naic6 publ trad
+HS|HS10388|Qual ratng us st terr & poss totals pub trad
+HS|HS10389|Qual ratng us pol sub naic1 publ trad
+HS|HS10390|Qual ratng us pol sub naic2 publ trad
+HS|HS10391|Qual ratng us pol sub naic3 publ trad
+HS|HS10392|Qual ratng us pol sub naic4 publ trad
+HS|HS10393|Qual ratng us pol sub naic5 publ trad
+HS|HS10394|Qual ratng us pol sub naic6 publ trad
+HS|HS10395|Qual ratng us pol sub totals publ trad
+HS|HS10396|Qual ratng us spe rev naic1 publ trad
+HS|HS10397|Qual ratng us spe rev naic2 publ trad
+HS|HS10398|Qual ratng us spe rev naic3 publ trad
+HS|HS10399|Qual ratng us spe rev naic4 publ trad
+HS|HS10400|Qual ratng us spe rev naic5 publ trad
+HS|HS10401|Qual ratng us spe rev naic6 publ trad
+HS|HS10402|Qual ratng us spe rev totals pub trad
+HS|HS02815|Qual ratng us govt naic 1 privat plac
+HS|HS02816|Qual ratng us govt naic 2 privat plac
+HS|HS02817|Qual ratng us govt naic 3 privat plac
+HS|HS02818|Qual ratng us govt naic 4 privat plac
+HS|HS02819|Qual ratng us govt naic 5 privat plac
+HS|HS02820|Qual ratng us govt naic 6 privat plac
+HS|HS02821|Qual ratng us gov totals privat plac
+HS|HS10417|Qual ratng all oth gov naic1 priv place
+HS|HS10418|Qual ratng all oth gov naic2 priv place
+HS|HS10419|Qual ratng all oth gov naic3 priv place
+HS|HS10420|Qual ratng all oth gov naic4 priv place
+HS|HS10421|Qual ratng all oth gov naic5 priv place
+HS|HS10422|Qual ratng all oth gov naic6 priv place
+HS|HS10423|Qual ratng all oth gov totals priv place
+HS|HS10424|Qual ratng us st terr & poss naic1 priv place
+HS|HS10425|Qual ratng us st terr & poss naic2 priv place
+HS|HS10426|Qual ratng us st terr & poss naic3 priv place
+HS|HS10427|Qual ratng us st terr & poss naic4 priv place
+HS|HS10428|Qual ratng us st terr & poss naic5 priv place
+HS|HS10429|Qual ratng us st terr & poss naic6 priv place
+HS|HS10430|Qual ratng us st terr & poss totals priv place
+HS|HS10431|Qual ratng us pol sub naic1 priv place
+HS|HS10432|Qual ratng us pol sub naic2 priv place
+HS|HS10433|Qual ratng us pol sub naic3 priv place
+HS|HS10434|Qual ratng us pol sub naic4 priv place
+HS|HS10435|Qual ratng us pol sub naic5 priv place
+HS|HS10436|Qual ratng us pol sub naic6 priv place
+HS|HS10437|Qual ratng us pol sub totals priv place
+HS|HS10438|Qual ratng us spe rev naic1 priv place
+HS|HS10439|Qual ratng us spe rev naic2 priv place
+HS|HS10440|Qual ratng us spe rev naic3 priv place
+HS|HS10441|Qual ratng us spe rev naic4 priv place
+HS|HS10442|Qual ratng us spe rev naic5 priv place
+HS|HS10443|Qual ratng us spe rev naic6 priv place
+HS|HS10444|Qual ratng spec rev totals priv place
+HS|HS10109|Qual ratng industr naic1 1yr or less
+HS|HS10110|Qual ratng industr naic2 1yr or less
+HS|HS10111|Qual ratng industr naic3 1yr or less
+HS|HS10112|Qual ratng industr naic4 1yr or less
+HS|HS10113|Qual ratng industr naic5 1yr or less
+HS|HS10114|Qual ratng industr naic6 1yr or less
+HS|HS10115|Qual ratng industr totals 1y or less
+HS|HS10116|Qual ratng hybrid secur naic1 1yr or less
+HS|HS10117|Qual ratng hybrid secur naic2 1yr or less
+HS|HS10118|Qual ratng hybrid secur naic3 1yr or less
+HS|HS10119|Qual ratng hybrid secur naic4 1yr or less
+HS|HS10120|Qual ratng hybrid secur naic5 1yr or less
+HS|HS10121|Qual ratng hybrid secur naic6 1yr or less
+HS|HS10122|Qual ratng hybrid secur totals 1y or less
+HS|HS02871|Qual ratng parent naicass 1 1yr or ls
+HS|HS02872|Qual ratng parent naicass 2 1yr or ls
+HS|HS02873|Qual ratng parent naicass 3 1yr or ls
+HS|HS02874|Qual ratng parent naicass 4 1yr or ls
+HS|HS02875|Qual ratng parent naicass 5 1yr or ls
+HS|HS02876|Qual ratng parent naicass 6 1yr or ls
+HS|HS02877|Qual ratng parent totals 1yr or les
+HS|HS10151|Qual ratng industr naic1 1-5 yrs
+HS|HS10152|Qual ratng industr naic2 1-5 yrs
+HS|HS10153|Qual ratng industr naic3 1-5 yrs
+HS|HS10154|Qual ratng industr naic4 1-5 yrs
+HS|HS10155|Qual ratng industr naic5 1-5 yrs
+HS|HS10156|Qual ratng industr naic6 1-5 yrs
+HS|HS10157|Qual ratng industr totals cl6 1-5 yrs
+HS|HS10158|Qual ratng hybrid secur naic1 1-5 yrs
+HS|HS10159|Qual ratng hybrid secur naic2 1-5 yrs
+HS|HS10160|Qual ratng hybrid secur naic3 1-5 yrs
+HS|HS10161|Qual ratng hybrid secur naic4 1-5 yrs
+HS|HS10162|Qual ratng hybrid secur naic5 1-5 yrs
+HS|HS10163|Qual ratng hybrid secur naic6 1-5 yrs
+HS|HS10164|Qual ratng hybrid secur totals 1-5 yrs
+HS|HS02899|Qual ratng parent naicass 1 1-5 yrs
+HS|HS02900|Qual ratng parent naicass 2 1-5 yrs
+HS|HS02901|Qual ratng parent naicass 3 1-5 yrs
+HS|HS02902|Qual ratng parent naicass 4 1-5 yrs
+HS|HS02903|Qual ratng parent naicass 5 1-5 yrs
+HS|HS02904|Qual ratng parent naicass 6 1-5 yrs
+HS|HS02905|Qual ratng parent totals 1-5 yrs
+HS|HS10193|Qual ratng industr naic1 5-10 yrs
+HS|HS10194|Qual ratng industr naic2 5-10 yrs
+HS|HS10195|Qual ratng industr naic3 5-10 yrs
+HS|HS10196|Qual ratng industr naic4 5-10 yrs
+HS|HS10197|Qual ratng industr naic5 5-10 yrs
+HS|HS10198|Qual ratng industr naic6 5-10 yrs
+HS|HS10199|Qual ratng industr totals 5-10 yrs
+HS|HS10200|Qual ratng hybrid secur naic1 5-10 yrs
+HS|HS10201|Qual ratng hybrid secur naic2 5-10 yrs
+HS|HS10202|Qual ratng hybrid secur naic3 5-10 yrs
+HS|HS10203|Qual ratng hybrid secur naic4 5-10 yrs
+HS|HS10204|Qual ratng hybrid secur naic5 5-10 yrs
+HS|HS10205|Qual ratng hybrid secur naic6 5-10 yrs
+HS|HS10206|Qual ratng hybrid secur totals 5-10 yrs
+HS|HS02927|Qual ratng parent naicass 1 5-10 yrs
+HS|HS02928|Qual ratng parent naicass 2 5-10 yrs
+HS|HS02929|Qual ratng parent naicass 3 5-10 yrs
+HS|HS02930|Qual ratng parent naicass 4 5-10 yrs
+HS|HS02931|Qual ratng parent naicass 5 5-10 yrs
+HS|HS02932|Qual ratng parent naicass 6 5-10 yrs
+HS|HS02933|Qual ratng parent totals 5-10 yrs
+HS|HS10235|Qual ratng pub industr naic1 10-20 yrs
+HS|HS10236|Qual ratng pub industr naic2 10-20 yrs
+HS|HS10237|Qual ratng pub industr naic3 10-20 yrs
+HS|HS10238|Qual ratng pub industr naic4 10-20 yrs
+HS|HS10239|Qual ratng pub industr naic5 10-20 yrs
+HS|HS10240|Qual ratng pub industr naic6 10-20 yrs
+HS|HS10241|Qual ratng pub industr totals 10-20 yrs
+HS|HS10242|Qual ratng ind hybrid secur naic1 10-20 yrs
+HS|HS10243|Qual ratng ind hybrid secur naic2 10-20 yrs
+HS|HS10244|Qual ratng ind hybrid secur naic3 10-20 yrs
+HS|HS10245|Qual ratng ind hybrid secur naic4 10-20 yrs
+HS|HS10246|Qual ratng ind hybrid secur naic5 10-20 yrs
+HS|HS10247|Qual ratng ind hybrid secur naic6 10-20 yrs
+HS|HS10248|Qual ratng ind hybrid secur totals 10-20 yrs
+HS|HS02955|Qual ratng parent naicass 1 10-20 yrs
+HS|HS02956|Qual ratng parent naicass 2 10-20 yrs
+HS|HS02957|Qual ratng parent naicass 3 10-20 yrs
+HS|HS02958|Qual ratng parent naicass 4 10-20 yrs
+HS|HS02959|Qual ratng parent naicass 5 10-20 yrs
+HS|HS02960|Qual ratng parent naicass 6 10-20 yrs
+HS|HS02961|Qual ratng parent totals 10-20 yrs
+HS|HS10277|Qual ratng industr naic1 20+yrs
+HS|HS10278|Qual ratng industr naic2 20+yrs
+HS|HS10279|Qual ratng industr naic3 20+yrs
+HS|HS10280|Qual ratng industr naic4 20+yrs
+HS|HS10281|Qual ratng industr naic5 20+yrs
+HS|HS10282|Qual ratng industr naic6 20+yrs
+HS|HS10283|Qual ratng industr totals 20+yrs
+HS|HS10284|Qual ratng hybrid secur naic1 20+yrs
+HS|HS10285|Qual ratng hybrid secur naic2 20+yrs
+HS|HS10286|Qual ratng hybrid secur naic3 20+yrs
+HS|HS10287|Qual ratng hybrid secur naic4 20+yrs
+HS|HS10288|Qual ratng hybrid secur naic5 20+yrs
+HS|HS10289|Qual ratng hybrid secur naic6 20+yrs
+HS|HS10290|Qual ratng hybrid secur totals 20+yrs
+HS|HS02983|Qual ratng parent naicass 1 over 20yr
+HS|HS02984|Qual ratng parent naicass 2 over 20yr
+HS|HS02985|Qual ratng parent naicass 3 over 20yr
+HS|HS02986|Qual ratng parent naicass 4 over 20yr
+HS|HS02987|Qual ratng parent naicass 5 over 20yr
+HS|HS02988|Qual ratng parent naicass 6 over 20yr
+HS|HS02989|Qual ratng parent totals over 20yr
+HS|HS10319|Qual ratng industr naic1 ttl cur yr
+HS|HS10320|Qual ratng industr naic2 ttl cur yr
+HS|HS10321|Qual ratng industr naic3 ttl cur yr
+HS|HS10322|Qual ratng industr naic4 ttl cur yr
+HS|HS10323|Qual ratng industr naic5 ttl cur yr
+HS|HS10324|Qual ratng industr naic6 ttl cur yr
+HS|HS10325|Qual ratng industr totals ttl cur yr
+HS|HS10326|Qual ratng hybrid secur naic1 ttl cur yr
+HS|HS10327|Qual ratng hybrid secur naic2 ttl cur yr
+HS|HS10328|Qual ratng hybrid secur naic3 ttl cur yr
+HS|HS10329|Qual ratng hybrid secur naic4 ttl cur yr
+HS|HS10330|Qual ratng hybrid secur naic5 ttl cur yr
+HS|HS10331|Qual ratng hybrid secur naic6 ttl cur yr
+HS|HS10332|Qual ratng hybrid secur totals ttl cur yr
+HS|HS03011|Qual ratng parent naicass 1 tot cur y
+HS|HS03012|Qual ratng parent naicass 2 tot cur y
+HS|HS03013|Qual ratng parent naicass 3 tot cur y
+HS|HS03014|Qual ratng parent naicass 4 tot cur y
+HS|HS03015|Qual ratng parent naicass 5 tot cur y
+HS|HS03016|Qual ratng parent naicass 6 tot cur y
+HS|HS03017|Qual ratng parent totals tot cur y
+HS|HS11906|Qual ratng industr naic1 % cur yr
+HS|HS11907|Qual ratng industr naic2 % cur yr
+HS|HS11908|Qual ratng industr naic3 % cur yr
+HS|HS11909|Qual ratng industr naic4 % cur yr
+HS|HS11910|Qual ratng industr naic5 % cur yr
+HS|HS11911|Qual ratng industr naic6 % cur yr
+HS|HS11912|Qual ratng industr totals % cur yr
+HS|HS11913|Qual ratng hybrid secur naic1 % cur yr
+HS|HS11914|Qual ratng hybrid secur naic2 % cur yr
+HS|HS11915|Qual ratng hybrid secur naic3 % cur yr
+HS|HS11916|Qual ratng hybrid secur naic4 % cur yr
+HS|HS11917|Qual ratng hybrid secur naic5 % cur yr
+HS|HS11918|Qual ratng hybrid secur naic6 % cur yr
+HS|HS11919|Qual ratng hybrid secur totals % cur yr
+HS|HS06660|Qual ratng parent class 1 % cr yr
+HS|HS06661|Qual ratng parent class 2 % cr yr
+HS|HS06662|Qual ratng parent class 3 % cr yr
+HS|HS06663|Qual ratng parent class 4 % cr yr
+HS|HS06664|Qual ratng parent class 5 % cr yr
+HS|HS06665|Qual ratng parent class 6 % cr yr
+HS|HS06666|Qual ratng parent totals % cr yr
+HS|HS10361|Qual ratng industr naic1 col6 pry
+HS|HS10362|Qual ratng industr naic2 col6 pry
+HS|HS10363|Qual ratng industr naic3 col6 pry
+HS|HS10364|Qual ratng industr naic4 col6 pry
+HS|HS10365|Qual ratng industr naic5 col6 pry
+HS|HS10366|Qual ratng industr naic6 col6 pry
+HS|HS10367|Qual ratng industr totals col6 pry
+HS|HS10368|Qual ratng hybrid secur naic1 col6 pry
+HS|HS10369|Qual ratng hybrid secur naic2 col6 pry
+HS|HS10370|Qual ratng hybrid secur naic3 col6 pry
+HS|HS10371|Qual ratng hybrid secur naic4 col6 pry
+HS|HS10372|Qual ratng hybrid secur naic5 col6 pry
+HS|HS10373|Qual ratng hybrid secur naic6 col6 pry
+HS|HS10374|Qual ratng hybrid secur totals col6 pry
+HS|HS03039|Qual ratng parent naicass 1 col 6 pry
+HS|HS03040|Qual ratng parent naicass 2 col 6 pry
+HS|HS03041|Qual ratng parent naicass 3 col 6 pry
+HS|HS03042|Qual ratng parent naicass 4 col 6 pry
+HS|HS03043|Qual ratng parent naicass 5 col 6 pry
+HS|HS03044|Qual ratng parent naicass 6 col 6 pry
+HS|HS03045|Qual ratng parent totals col 6 pry
+HS|HS11948|Qual ratng industr naic1 % col7 pry
+HS|HS11949|Qual ratng industr naic2 % col7 pry
+HS|HS11950|Qual ratng industr naic3 % col7 pry
+HS|HS11951|Qual ratng industr naic4 % col7 pry
+HS|HS11952|Qual ratng industr naic5 % col7 pry
+HS|HS11953|Qual ratng industr naic6 % col7 pry
+HS|HS11954|Qual ratng industr totals % col7 pry
+HS|HS11955|Qual ratng hybrid secur naic1 % col7 pry
+HS|HS11956|Qual ratng hybrid secur naic2 % col7 pry
+HS|HS11957|Qual ratng hybrid secur naic3 % col7 pry
+HS|HS11958|Qual ratng hybrid secur naic4 % col7 pry
+HS|HS11959|Qual ratng hybrid secur naic5 % col7 pry
+HS|HS11960|Qual ratng hybrid secur naic6 % col7 pry
+HS|HS11961|Qual ratng hybrid secur totals % col7 pry
+HS|HS06688|Qual ratng parent class 1 % pr yr
+HS|HS06689|Qual ratng parent class 2 % pr yr
+HS|HS06690|Qual ratng parent class 3 % pr yr
+HS|HS06691|Qual ratng parent class 4 % pr yr
+HS|HS06692|Qual ratng parent class 5 % pr yr
+HS|HS06693|Qual ratng parent class 6 % pr yr
+HS|HS06694|Qual ratng parent totals % pr yr
+HS|HS10403|Qual ratng industr naic1 publ trad
+HS|HS10404|Qual ratng industr naic2 publ trad
+HS|HS10405|Qual ratng industr naic3 publ trad
+HS|HS10406|Qual ratng industr naic4 publ trad
+HS|HS10407|Qual ratng industr naic5 publ trad
+HS|HS10408|Qual ratng industr naic6 publ trad
+HS|HS10409|Qual ratng industr totals pub trad
+HS|HS10410|Qual ratng hybrid secur naic1 publ trad
+HS|HS10411|Qual ratng hybrid secur naic2 publ trad
+HS|HS10412|Qual ratng hybrid secur naic3 publ trad
+HS|HS10413|Qual ratng hybrid secur naic4 publ trad
+HS|HS10414|Qual ratng hybrid secur naic5 publ trad
+HS|HS10415|Qual ratng hybrid secur naic6 publ trad
+HS|HS10416|Qual ratng hybrid secur totals publ trad
+HS|HS03067|Qual ratng parent naicass 1 publ trad
+HS|HS03068|Qual ratng parent naicass 2 publ trad
+HS|HS03069|Qual ratng parent naicass 3 publ trad
+HS|HS03070|Qual ratng parent naicass 4 publ trad
+HS|HS03071|Qual ratng parent naicass 5 publ trad
+HS|HS03072|Qual ratng parent naicass 6 publ trad
+HS|HS03073|Qual ratng parent totals publ trad
+HS|HS10445|Qual ratng industr naic1 priv place
+HS|HS10446|Qual ratng industr naic2 priv place
+HS|HS10447|Qual ratng industr naic3 priv place
+HS|HS10448|Qual ratng industr naic4 priv place
+HS|HS10449|Qual ratng industr naic5 priv place
+HS|HS10450|Qual ratng industr naic6 priv place
+HS|HS10451|Qual ratng industr totals priv place
+HS|HS10452|Qual ratng hybrid secur naic1 priv place
+HS|HS10453|Qual ratng hybrid secur naic2 priv place
+HS|HS10454|Qual ratng hybrid secur naic3 priv place
+HS|HS10455|Qual ratng hybrid secur naic4 priv place
+HS|HS10456|Qual ratng hybrid secur naic5 priv place
+HS|HS10457|Qual ratng hybrid secur naic6 priv place
+HS|HS10458|Qual ratng hybrid secur totals priv place
+HS|HS03095|Qual ratng parent naicass 1 privt pla
+HS|HS03096|Qual ratng parent naicass 2 privt pla
+HS|HS03097|Qual ratng parent naicass 3 privt pla
+HS|HS03098|Qual ratng parent naicass 4 privt pla
+HS|HS03099|Qual ratng parent naicass 5 privt pla
+HS|HS03100|Qual ratng parent naicass 6 privt pla
+HS|HS03101|Qual ratng parent totals privt pla
+HS|HS02864|Qual ratng credit ten class 1 -1 yr
+HS|HS02865|Qual ratng credit ten class 2 -1 yr
+HS|HS02866|Qual ratng credit ten class 3 -1 yr
+HS|HS02867|Qual ratng credit ten class 4 -1 yr
+HS|HS02868|Qual ratng credit ten class 5 -1 yr
+HS|HS02869|Qual ratng credit ten class 6 -1 yr
+HS|HS02870|Qual ratng credit ten totals -1 yr
+HS|HS02892|Qual ratng credit ten class 1 1-5yr
+HS|HS02893|Qual ratng credit ten class 2 1-5yr
+HS|HS02894|Qual ratng credit ten class 3 1-5yr
+HS|HS02895|Qual ratng credit ten class 4 1-5yr
+HS|HS02896|Qual ratng credit ten class 5 1-5yr
+HS|HS02897|Qual ratng credit ten class 6 1-5yr
+HS|HS02898|Qual ratng credit ten totals 1-5yr
+HS|HS02920|Qual ratng credit ten class 1 5-10y
+HS|HS02921|Qual ratng credit ten class 2 5-10y
+HS|HS02922|Qual ratng credit ten class 3 5-10y
+HS|HS02923|Qual ratng credit ten class 4 5-10y
+HS|HS02924|Qual ratng credit ten class 5 5-10y
+HS|HS02925|Qual ratng credit ten class 6 5-10y
+HS|HS02926|Qual ratng credit ten totals 5-10y
+HS|HS02948|Qual ratng credit ten class 1 -20yr
+HS|HS02949|Qual ratng credit ten class 2 -20yr
+HS|HS02950|Qual ratng credit ten class 3 -20yr
+HS|HS02951|Qual ratng credit ten class 4 -20yr
+HS|HS02952|Qual ratng credit ten class 5 -20yr
+HS|HS02953|Qual ratng credit ten class 6 -20yr
+HS|HS02954|Qual ratng credit ten totals -20yr
+HS|HS02976|Qual ratng credit ten class 1 +20yr
+HS|HS02977|Qual ratng credit ten class 2 +20yr
+HS|HS02978|Qual ratng credit ten class 3 +20yr
+HS|HS02979|Qual ratng credit ten class 4 +20yr
+HS|HS02980|Qual ratng credit ten class 5 +20yr
+HS|HS02981|Qual ratng credit ten class 6 +20yr
+HS|HS02982|Qual ratng credit ten total over20y
+HS|HS03004|Qual ratng credit ten cl 1 tt cur y
+HS|HS03005|Qual ratng credit ten cl 2 tt cur y
+HS|HS03006|Qual ratng credit ten cl 3 tt cur y
+HS|HS03007|Qual ratng credit ten cl 4 tt cur y
+HS|HS03008|Qual ratng credit ten cl 5 tt cur y
+HS|HS03009|Qual ratng credit ten cl 6 tt cur y
+HS|HS03010|Qual ratng credit totals tot cur y
+HS|HS06653|Qual ratng credit ten class 1-% cy
+HS|HS06654|Qual ratng credit ten class 2-% cy
+HS|HS06655|Qual ratng credit ten class 3-% cy
+HS|HS06656|Qual ratng credit ten class 4-% cy
+HS|HS06657|Qual ratng credit ten class 5-% cy
+HS|HS06658|Qual ratng credit ten class 6-% cy
+HS|HS06659|Qual ratng credit ten totals-% cy
+HS|HS03032|Qual ratng credit ten cl 1 col6 pry
+HS|HS03033|Qual ratng credit ten cl 2 col6 pry
+HS|HS03034|Qual ratng credit ten cl 3 col6 pry
+HS|HS03035|Qual ratng credit ten cl 4 col6 pry
+HS|HS03036|Qual ratng credit ten cl 5 col6 pry
+HS|HS03037|Qual ratng credit ten cl 6 col6 pry
+HS|HS03038|Qual ratng credit ten tot col6 pry
+HS|HS06681|Qual ratng credit ten class 1-% py
+HS|HS06682|Qual ratng credit ten class 2-% py
+HS|HS06683|Qual ratng credit ten class 3-% py
+HS|HS06684|Qual ratng credit ten class 4-% py
+HS|HS06685|Qual ratng credit ten class 5-% py
+HS|HS06686|Qual ratng credit ten class 6-% py
+HS|HS06687|Qual ratng credit ten totals-% py
+HS|HS03060|Qual ratng credit ten cl 1 pub trad
+HS|HS03061|Qual ratng credit ten cl 2 pub trad
+HS|HS03062|Qual ratng credit ten cl 3 pub trad
+HS|HS03063|Qual ratng credit ten cl 4 pub trad
+HS|HS03064|Qual ratng credit ten cl 5 pub trad
+HS|HS03065|Qual ratng credit ten cl 6 pub trad
+HS|HS03066|Qual ratng credit ten tot pub trad
+HS|HS03088|Qual ratng credit ten cl 1 priv pla
+HS|HS03089|Qual ratng credit ten cl 2 priv pla
+HS|HS03090|Qual ratng credit ten cl 3 priv pla
+HS|HS03091|Qual ratng credit ten cl 4 priv pla
+HS|HS03092|Qual ratng credit ten cl 5 priv pla
+HS|HS03093|Qual ratng credit ten cl 6 priv pla
+HS|HS03094|Qual ratng credit ten totl priv pla
+HS|HS02850|Qual ratng pub util class 1 1yr les
+HS|HS02851|Qual ratng pub util class 2 1yr les
+HS|HS02852|Qual ratng pub util class 3 1yr les
+HS|HS02853|Qual ratng pub util class 4 1yr les
+HS|HS02854|Qual ratng pub util class 5 1yr les
+HS|HS02855|Qual ratng pub util class 6 1yr les
+HS|HS02856|Qual rating pub util totals 1yr les
+HS|HS02878|Qual ratng pub util class 1 1-5 yrs
+HS|HS02879|Qual ratng pub util class 2 1-5 yrs
+HS|HS02880|Qual ratng pub util class 3 1-5 yrs
+HS|HS02881|Qual ratng pub util class 4 1-5 yrs
+HS|HS02882|Qual ratng pub util class 5 1-5 yrs
+HS|HS02883|Qual ratng pub util class 6 1-5 yrs
+HS|HS02884|Qual rating pub util totals 1-5 yrs
+HS|HS02906|Qual ratng pub util class 1 5-10yrs
+HS|HS02907|Qual ratng pub util class 2 5-10yrs
+HS|HS02908|Qual ratng pub util class 3 5-10yrs
+HS|HS02909|Qual ratng pub util class 4 5-10yrs
+HS|HS02910|Qual ratng pub util class 5 5-10yrs
+HS|HS02911|Qual ratng pub util class 6 5-10yrs
+HS|HS02912|Qual rating pub util totals 5-10yrs
+HS|HS02934|Qual ratng pub util class 1 10-20yr
+HS|HS02935|Qual ratng pub util class 2 10-20yr
+HS|HS02936|Qual ratng pub util class 3 10-20yr
+HS|HS02937|Qual ratng pub util class 4 10-20yr
+HS|HS02938|Qual ratng pub util class 5 10-20yr
+HS|HS02939|Qual ratng pub util class 6 10-20yr
+HS|HS02940|Qual rating pub util totals 10-20yr
+HS|HS02962|Qual ratng pub util class 1 over20y
+HS|HS02963|Qual ratng pub util class 2 over20y
+HS|HS02964|Qual ratng pub util class 3 over20y
+HS|HS02965|Qual ratng pub util class 4 over20y
+HS|HS02966|Qual ratng pub util class 5 over20y
+HS|HS02967|Qual ratng pub util class 6 over20y
+HS|HS02968|Qual rating pub util totals over20y
+HS|HS02990|Qual ratng pub util cl 1 tot cur yr
+HS|HS02991|Qual ratng pub util cl 2 tot cur yr
+HS|HS02992|Qual ratng pub util cl 3 tot cur yr
+HS|HS02993|Qual ratng pub util cl 4 tot cur yr
+HS|HS02994|Qual ratng pub util cl 5 tot cur yr
+HS|HS02995|Qual ratng pub util cl 6 tot cur yr
+HS|HS02996|Qual ratng pub util totals t cur yr
+HS|HS06639|Qual ratng pub util class 1 % cr yr
+HS|HS06640|Qual ratng pub util class 2 % cr yr
+HS|HS06641|Qual ratng pub util class 3 % cr yr
+HS|HS06642|Qual ratng pub util class 4 % cr yr
+HS|HS06643|Qual ratng pub util class 5 % cr yr
+HS|HS06644|Qual ratng pub util class 6 % cr yr
+HS|HS06645|Qual rating pub util totals % cr yr
+HS|HS03018|Qual ratng pub util cl1 tot fr col6
+HS|HS03019|Qual ratng pub util cl2 tot fr col6
+HS|HS03020|Qual ratng pub util cl3 tot fr col6
+HS|HS03021|Qual ratng pub util cl4 tot fr col6
+HS|HS03022|Qual ratng pub util cl5 tot fr col6
+HS|HS03023|Qual ratng pub util cl6 tot fr col6
+HS|HS03024|Qual ratng pub util totals tot col6
+HS|HS06667|Qual ratng pub util class 1 % pr yr
+HS|HS06668|Qual ratng pub util class 2 % pr yr
+HS|HS06669|Qual ratng pub util class 3 % pr yr
+HS|HS06670|Qual ratng pub util class 4 % pr yr
+HS|HS06671|Qual ratng pub util class 5 % pr yr
+HS|HS06672|Qual ratng pub util class 6 % pr yr
+HS|HS06673|Qual rating pub util totals % pr yr
+HS|HS03046|Qual ratng pub util cl1 tot pub tra
+HS|HS03047|Qual ratng pub util cl2 tot pub tra
+HS|HS03048|Qual ratng pub util cl3 tot pub tra
+HS|HS03049|Qual ratng pub util cl4 tot pub tra
+HS|HS03050|Qual ratng pub util cl5 tot pub tra
+HS|HS03051|Qual ratng pub util cl6 tot pub tra
+HS|HS03052|Qual ratng pub util totals publ tra
+HS|HS03074|Qual ratng pub util class 1 priv pl
+HS|HS03075|Qual ratng pub util class 2 priv pl
+HS|HS03076|Qual ratng pub util class 3 priv pl
+HS|HS03077|Qual ratng pub util class 4 priv pl
+HS|HS03078|Qual ratng pub util class 5 priv pl
+HS|HS03079|Qual ratng pub util class 6 priv pl
+HS|HS03080|Qual ratng pub util totals privt pl
+HS|HS03111|Qual tot bond cur yr naicass 1 1yr ls
+HS|HS03112|Qual tot bond cur yr naicass 2 1yr ls
+HS|HS03113|Qual tot bond cur yr naicass 3 1yr ls
+HS|HS03114|Qual tot bond cur yr naicass 4 1yr ls
+HS|HS03115|Qual tot bond cur yr naicass 5 1yr ls
+HS|HS03116|Qual tot bond cur yr naicass 6 1yr ls
+HS|HS03117|Qual tot bond cur yr totals 1yr les
+HS|HS06695|Qual tot bond cur yr tot %c 1yr les
+HS|HS03118|Qual tot bond pri yr naicass 1 1yr ls
+HS|HS03119|Qual tot bond pri yr naicass 2 1yr ls
+HS|HS03120|Qual tot bond pri yr naicass 3 1yr ls
+HS|HS03121|Qual tot bond pri yr naicass 4 1yr ls
+HS|HS03122|Qual tot bond pri yr naicass 5 1yr ls
+HS|HS03123|Qual tot bond pri yr naicass 6 1yr ls
+HS|HS03124|Qual tot bond pri yr totals 1yr les
+HS|HS06696|Qual tot bond pri yr tot %p 1yr les
+HS|HS03125|Qual tot pub tr bnds naicass 1 1yr ls
+HS|HS03126|Qual tot pub tr bnds naicass 2 1yr ls
+HS|HS03127|Qual tot pub tr bnds naicass 3 1yr ls
+HS|HS03128|Qual tot pub tr bnds naicass 4 1yr ls
+HS|HS03129|Qual tot pub tr bnds naicass 5 1yr ls
+HS|HS03130|Qual tot pub tr bnds naicass 6 1yr ls
+HS|HS03131|Qual tot pub tr bnds totals 1yr les
+HS|HS06697|Qual tot pub tr bnds tot %c 1yr les
+HS|HS06698|Qual tot pub tr bnd tot %cy 1yr les
+HS|HS03132|Qual tot priv pl bnd naicass 1 1yr ls
+HS|HS03133|Qual tot priv pl bnd naicass 2 1yr ls
+HS|HS03134|Qual tot priv pl bnd naicass 3 1yr ls
+HS|HS03135|Qual tot priv pl bnd naicass 4 1yr ls
+HS|HS03136|Qual tot priv pl bnd naicass 5 1yr ls
+HS|HS03137|Qual tot priv pl bnd naicass 6 1yr ls
+HS|HS03138|Qual tot priv pl bnd totals 1yr les
+HS|HS06699|Qual tot priv pl bnd tot %c 1yr les
+HS|HS06700|Qual tot prv pl bnd tot %cy 1yr les
+HS|HS03139|Qual tot bond cur yr naicass 1 1-5yrs
+HS|HS03140|Qual tot bond cur yr naicass 2 1-5yrs
+HS|HS03141|Qual tot bond cur yr naicass 3 1-5yrs
+HS|HS03142|Qual tot bond cur yr naicass 4 1-5yrs
+HS|HS03143|Qual tot bond cur yr naicass 5 1-5yrs
+HS|HS03144|Qual tot bond cur yr naicass 6 1-5yrs
+HS|HS03145|Qual tot bond cur yr totals 1-5yrs
+HS|HS06701|Qual tot bond cur yr tot %c 1-5yrs
+HS|HS03146|Qual tot bond pri yr naicass 1 1-5yrs
+HS|HS03147|Qual tot bond pri yr naicass 2 1-5yrs
+HS|HS03148|Qual tot bond pri yr naicass 3 1-5yrs
+HS|HS03149|Qual tot bond pri yr naicass 4 1-5yrs
+HS|HS03150|Qual tot bond pri yr naicass 5 1-5yrs
+HS|HS03151|Qual tot bond pri yr naicass 6 1-5yrs
+HS|HS03152|Qual tot bond pri yr totals 1-5yrs
+HS|HS06702|Qual tot bond pri yr tot %p 1-5yrs
+HS|HS03153|Qual tot pub tr bnds naicass 1 1-5yrs
+HS|HS03154|Qual tot pub tr bnds naicass 2 1-5yrs
+HS|HS03155|Qual tot pub tr bnds naicass 3 1-5yrs
+HS|HS03156|Qual tot pub tr bnds naicass 4 1-5yrs
+HS|HS03157|Qual tot pub tr bnds naicass 5 1-5yrs
+HS|HS03158|Qual tot pub tr bnds naicass 6 1-5yrs
+HS|HS03159|Qual tot pub tr bnds totals 1-5yrs
+HS|HS06703|Qual tot pub tr bnds tot %c 1-5yrs
+HS|HS06704|Qual tot pub tr bnd tot %cy 1-5yrs
+HS|HS03160|Qual tot priv pl bnd naicass 1 1-5yrs
+HS|HS03161|Qual tot priv pl bnd naicass 2 1-5yrs
+HS|HS03162|Qual tot priv pl bnd naicass 3 1-5yrs
+HS|HS03163|Qual tot priv pl bnd naicass 4 1-5yrs
+HS|HS03164|Qual tot priv pl bnd naicass 5 1-5yrs
+HS|HS03165|Qual tot priv pl bnd naicass 6 1-5yrs
+HS|HS03166|Qual tot priv pl bond totals 1-5yrs
+HS|HS06705|Qual tot priv pl bond tot %c 1-5yrs
+HS|HS06706|Qual tot prv pl bond tot %cy 1-5yrs
+HS|HS03167|Qual tot bond cur yr naicass 1 5-10yr
+HS|HS03168|Qual tot bond cur yr naicass 2 5-10yr
+HS|HS03169|Qual tot bond cur yr naicass 3 5-10yr
+HS|HS03170|Qual tot bond cur yr naicass 4 5-10yr
+HS|HS03171|Qual tot bond cur yr naicass 5 5-10yr
+HS|HS03172|Qual tot bond cur yr naicass 6 5-10yr
+HS|HS03173|Qual tot bond cur yr totals 5-10yrs
+HS|HS06707|Qual tot bond cur yr tot %c 5-10yrs
+HS|HS03174|Qual tot bond pri yr naicass 1 5-10yr
+HS|HS03175|Qual tot bond pri yr naicass 2 5-10yr
+HS|HS03176|Qual tot bond pri yr naicass 3 5-10yr
+HS|HS03177|Qual tot bond pri yr naicass 4 5-10yr
+HS|HS03178|Qual tot bond pri yr naicass 5 5-10yr
+HS|HS03179|Qual tot bond pri yr naicass 6 5-10yr
+HS|HS03180|Qual tot bond pri yr totals 5-10yrs
+HS|HS06708|Qual tot bond pri yr tot %p 5-10yrs
+HS|HS03181|Qual tot pub tr bnds naicass 1 5-10yr
+HS|HS03182|Qual tot pub tr bnds naicass 2 5-10yr
+HS|HS03183|Qual tot pub tr bnds naicass 3 5-10yr
+HS|HS03184|Qual tot pub tr bnds naicass 4 5-10yr
+HS|HS03185|Qual tot pub tr bnds naicass 5 5-10yr
+HS|HS03186|Qual tot pub tr bnds naicass 6 5-10yr
+HS|HS03187|Qual tot pub tr bnds totals 5-10yrs
+HS|HS06709|Qual tot pub tr bnds tot %c 5-10yrs
+HS|HS06710|Qual tot pub tr bnd tot %cy 5-10yrs
+HS|HS03188|Qual tot priv pl bnd naicass 1 5-10yr
+HS|HS03189|Qual tot priv pl bnd naicass 2 5-10yr
+HS|HS03190|Qual tot priv pl bnd naicass 3 5-10yr
+HS|HS03191|Qual tot priv pl bnd naicass 4 5-10yr
+HS|HS03192|Qual tot priv pl bnd naicass 5 5-10yr
+HS|HS03193|Qual tot priv pl bnd naicass 6 5-10yr
+HS|HS03194|Qual tot priv pl bnd totals 5-10yrs
+HS|HS06711|Qual tot priv pl bnd tot %c 5-10yrs
+HS|HS06712|Qual tot prv pl bnd tot %cy 5-10yrs
+HS|HS03195|Qual tot bond currn naicass 1 10-20yr
+HS|HS03196|Qual tot bond currn naicass 2 10-20yr
+HS|HS03197|Qual tot bond currn naicass 3 10-20yr
+HS|HS03198|Qual tot bond currn naicass 4 10-20yr
+HS|HS03199|Qual tot bond currn naicass 5 10-20yr
+HS|HS03200|Qual tot bond currn naicass 6 10-20yr
+HS|HS03201|Qual tot bond cur yr totals 10-20yr
+HS|HS06713|Qual tot bond cur yr tot %c 10-20yr
+HS|HS03202|Qual tot bond prior naicass 1 10-20yr
+HS|HS03203|Qual tot bond prior naicass 2 10-20yr
+HS|HS03204|Qual tot bond prior naicass 3 10-20yr
+HS|HS03205|Qual tot bond prior naicass 4 10-20yr
+HS|HS03206|Qual tot bond prior naicass 5 10-20yr
+HS|HS03207|Qual tot bond prior naicass 6 10-20yr
+HS|HS03208|Qual tot bond pri yr totals 10-20yr
+HS|HS06714|Qual tot bond pri yr tot %p 10-20yr
+HS|HS03209|Qual tot pub tr bnd naicass 1 10-20yr
+HS|HS03210|Qual tot pub tr bnd naicass 2 10-20yr
+HS|HS03211|Qual tot pub tr bnd naicass 3 10-20yr
+HS|HS03212|Qual tot pub tr bnd naicass 4 10-20yr
+HS|HS03213|Qual tot pub tr bnd naicass 5 10-20yr
+HS|HS03214|Qual tot pub tr bnd naicass 6 10-20yr
+HS|HS03215|Qual tot pub tr bnds totals 10-20yr
+HS|HS06715|Qual tot pub tr bnds tot %c 10-20yr
+HS|HS06716|Qual tot pub tr bnd tot %cy 10-20yr
+HS|HS03216|Qual tot pri pl bnd naicass 1 10-20yr
+HS|HS03217|Qual tot pri pl bnd naicass 2 10-20yr
+HS|HS03218|Qual tot pri pl bnd naicass 3 10-20yr
+HS|HS03219|Qual tot pri pl bnd naicass 4 10-20yr
+HS|HS03220|Qual tot pri pl bnd naicass 5 10-20yr
+HS|HS03221|Qual tot pri pl bnd naicass 6 10-20yr
+HS|HS03222|Qual tot priv pl bnd totals 10-20yr
+HS|HS06717|Qual tot priv pl bnd tot %c 10-20yr
+HS|HS06718|Qual tot prv pl bnd tot %cy 10-20yr
+HS|HS03223|Qual tot bond currn naicass 1 over 20
+HS|HS03224|Qual tot bond currn naicass 2 over 20
+HS|HS03225|Qual tot bond currn naicass 3 over 20
+HS|HS03226|Qual tot bond currn naicass 4 over 20
+HS|HS03227|Qual tot bond currn naicass 5 over 20
+HS|HS03228|Qual tot bond currn naicass 6 over 20
+HS|HS03229|Qual tot bond cur yr totals over 20
+HS|HS06719|Qual tot bond cur yr tot %c over 20
+HS|HS03230|Qual tot bond prior naicass 1 over 20
+HS|HS03231|Qual tot bond prior naicass 2 over 20
+HS|HS03232|Qual tot bond prior naicass 3 over 20
+HS|HS03233|Qual tot bond prior naicass 4 over 20
+HS|HS03234|Qual tot bond prior naicass 5 over 20
+HS|HS03235|Qual tot bond prior naicass 6 over 20
+HS|HS03236|Qual tot bond pri yr totals over 20
+HS|HS06720|Qual tot bond pri yr tot %p over 20
+HS|HS03237|Qual tot pub tr bnd naicass 1 over 20
+HS|HS03238|Qual tot pub tr bnd naicass 2 over 20
+HS|HS03239|Qual tot pub tr bnd naicass 3 over 20
+HS|HS03240|Qual tot pub tr bnd naicass 4 over 20
+HS|HS03241|Qual tot pub tr bnd naicass 5 over 20
+HS|HS03242|Qual tot pub tr bnd naicass 6 over 20
+HS|HS03243|Qual tot pub tr bnds totals over 20
+HS|HS06721|Qual tot pub tr bnds tot %c over 20
+HS|HS06722|Qual tot pub tr bnd tot %cy over 20
+HS|HS03244|Qual tot pri pl bnd naicass 1 over 20
+HS|HS03245|Qual tot pri pl bnd naicass 2 over 20
+HS|HS03246|Qual tot pri pl bnd naicass 3 over 20
+HS|HS03247|Qual tot pri pl bnd naicass 4 over 20
+HS|HS03248|Qual tot pri pl bnd naicass 5 over 20
+HS|HS03249|Qual tot pri pl bnd naicass 6 over 20
+HS|HS03250|Qual tot priv pl bnd totals over 20
+HS|HS06723|Qual tot priv pl bnd tot %c over 20
+HS|HS06724|Qual tot prv pl bnd tot %cy over 20
+HS|HS03251|Qual tot bond currn naicass 1 t cur y
+HS|HS03252|Qual tot bond currn naicass 2 t cur y
+HS|HS03253|Qual tot bond currn naicass 3 t cur y
+HS|HS03254|Qual tot bond currn naicass 4 t cur y
+HS|HS03255|Qual tot bond currn naicass 5 t cur y
+HS|HS03256|Qual tot bond currn naicass 6 t cur y
+HS|HS03257|Qual tot bond cur yr totals t cur y
+HS|HS06725|Qual tot bond cur yr tot %c t cur y
+HS|HS03258|Qual tot pub tr bnd naicass 1 t cur y
+HS|HS03259|Qual tot pub tr bnd naicass 2 t cur y
+HS|HS03260|Qual tot pub tr bnd naicass 3 t cur y
+HS|HS03261|Qual tot pub tr bnd naicass 4 t cur y
+HS|HS03262|Qual tot pub tr bnd naicass 5 t cur y
+HS|HS03263|Qual tot pub tr bnd naicass 6 t cur y
+HS|HS03264|Qual tot pub tr bnds totals t cur y
+HS|HS06726|Qual tot pub tr bnds tot %c t cur y
+HS|HS06727|Qual tot pub tr bnd tot %cy t cur y
+HS|HS03265|Qual tot pri pl bnd naicass 1 t cur y
+HS|HS03266|Qual tot pri pl bnd naicass 2 t cur y
+HS|HS03267|Qual tot pri pl bnd naicass 3 t cur y
+HS|HS03268|Qual tot pri pl bnd naicass 4 t cur y
+HS|HS03269|Qual tot pri pl bnd naicass 5 t cur y
+HS|HS03270|Qual tot pri pl bnd naicass 6 t cur y
+HS|HS03271|Qual tot priv pl bnd totals t cur y
+HS|HS06728|Qual tot priv pl bnd tot %c t cur y
+HS|HS06729|Qual tot prv pl bnd tot %cy t cur y
+HS|HS06730|Qual tot bond cur yr clas 1 % cr yr
+HS|HS06731|Qual tot bond cur yr clas 2 % cr yr
+HS|HS06732|Qual tot bond cur yr clas 3 % cr yr
+HS|HS06733|Qual tot bond cur yr clas 4 % cr yr
+HS|HS06734|Qual tot bond cur yr clas 5 % cr yr
+HS|HS06735|Qual tot bond cur yr clas 6 % cr yr
+HS|HS06736|Qual tot bond cur yr totals % cr yr
+HS|HS06737|Qual tot pub tr bnds clas 1 % cr yr
+HS|HS06738|Qual tot pub tr bnds clas 2 % cr yr
+HS|HS06739|Qual tot pub tr bnds clas 3 % cr yr
+HS|HS06740|Qual tot pub tr bnds clas 4 % cr yr
+HS|HS06741|Qual tot pub tr bnds clas 5 % cr yr
+HS|HS06742|Qual tot pub tr bnds clas 6 % cr yr
+HS|HS06743|Qual tot pub tr bnds totals % cr yr
+HS|HS06744|Qual tot priv pl bnd clas 1 % cr yr
+HS|HS06745|Qual tot priv pl bnd clas 2 % cr yr
+HS|HS06746|Qual tot priv pl bnd clas 3 % cr yr
+HS|HS06747|Qual tot priv pl bnd clas 4 % cr yr
+HS|HS06748|Qual tot priv pl bnd clas 5 % cr yr
+HS|HS06749|Qual tot priv pl bnd clas 6 % cr yr
+HS|HS06750|Qual tot priv pl bnd totals % cr yr
+HS|HS03272|Qual tot bond prior naicass 1 col7 pr
+HS|HS03273|Qual tot bond prior naicass 2 col7 pr
+HS|HS03274|Qual tot bond prior naicass 3 col7 pr
+HS|HS03275|Qual tot bond prior naicass 4 col7 pr
+HS|HS03276|Qual tot bond prior naicass 5 col7 pr
+HS|HS03277|Qual tot bond prior naicass 6 col7 pr
+HS|HS03278|Qual tot bond pri yr totals col7 pr
+HS|HS06751|Qual tot bond pri yr tot %p col7 pr
+HS|HS03279|Qual tot pub tr bnd naicass 1 col7 pr
+HS|HS03280|Qual tot pub tr bnd naicass 2 col7 pr
+HS|HS03281|Qual tot pub tr bnd naicass 3 col7 pr
+HS|HS03282|Qual tot pub tr bnd naicass 4 col7 pr
+HS|HS03283|Qual tot pub tr bnd naicass 5 col7 pr
+HS|HS03284|Qual tot pub tr bnd naicass 6 col7 pr
+HS|HS03285|Qual tot pub tr bnds totals col7 pr
+HS|HS03286|Qual tot pri pl bnd naicass 1 col7 pr
+HS|HS03287|Qual tot pri pl bnd naicass 2 col7 pr
+HS|HS03288|Qual tot pri pl bnd naicass 3 col7 pr
+HS|HS03289|Qual tot pri pl bnd naicass 4 col7 pr
+HS|HS03290|Qual tot pri pl bnd naicass 5 col7 pr
+HS|HS03291|Qual tot pri pl bnd naicass 6 col7 pr
+HS|HS03292|Qual tot priv pl bnd totals col7 pr
+HS|HS06752|Qual tot bond pri yr clas 1 % pr yr
+HS|HS06753|Qual tot bond pri yr clas 2 % pr yr
+HS|HS06754|Qual tot bond pri yr clas 3 % pr yr
+HS|HS06755|Qual tot bond pri yr clas 4 % pr yr
+HS|HS06756|Qual tot bond pri yr clas 5 % pr yr
+HS|HS06757|Qual tot bond pri yr clas 6 % pr yr
+HS|HS06758|Qual tot bond pri yr totals % pr yr
+HS|HS06759|Qual tot pub tr bnds clas 1 % pr yr
+HS|HS06760|Qual tot pub tr bnds clas 2 % pr yr
+HS|HS06761|Qual tot pub tr bnds clas 3 % pr yr
+HS|HS06762|Qual tot pub tr bnds clas 4 % pr yr
+HS|HS06763|Qual tot pub tr bnds clas 5 % pr yr
+HS|HS06764|Qual tot pub tr bnds clas 6 % pr yr
+HS|HS06765|Qual tot pub tr bnds totals % pr yr
+HS|HS06766|Qual tot priv pl bnd clas 1 % pr yr
+HS|HS06767|Qual tot priv pl bnd clas 2 % pr yr
+HS|HS06768|Qual tot priv pl bnd clas 3 % pr yr
+HS|HS06769|Qual tot priv pl bnd clas 4 % pr yr
+HS|HS06770|Qual tot priv pl bnd clas 5 % pr yr
+HS|HS06771|Qual tot priv pl bnd clas 6 % pr yr
+HS|HS06772|Qual tot priv pl bnd totals % pr yr
+HS|HS03293|Qual tot bond currn naicass 1 pub tra
+HS|HS03294|Qual tot bond currn naicass 2 pub tra
+HS|HS03295|Qual tot bond currn naicass 3 pub tra
+HS|HS03296|Qual tot bond currn naicass 4 pub tra
+HS|HS03297|Qual tot bond currn naicass 5 pub tra
+HS|HS03298|Qual tot bond currn naicass 6 pub tra
+HS|HS03299|Qual tot bond cur yr totals pub tra
+HS|HS06773|Qual tot bond cur yr tot %c pub tra
+HS|HS03300|Qual tot bond prior naicass 1 pub tra
+HS|HS03301|Qual tot bond prior naicass 2 pub tra
+HS|HS03302|Qual tot bond prior naicass 3 pub tra
+HS|HS03303|Qual tot bond prior naicass 4 pub tra
+HS|HS03304|Qual tot bond prior naicass 5 pub tra
+HS|HS03305|Qual tot bond prior naicass 6 pub tra
+HS|HS03306|Qual tot bond pri yr totals pub tra
+HS|HS06774|Qual tot bond pri yr tot %p pub tra
+HS|HS03307|Qual tot pub tr bnd naicass 1 pub tra
+HS|HS03308|Qual tot pub tr bnd naicass 2 pub tra
+HS|HS03309|Qual tot pub tr bnd naicass 3 pub tra
+HS|HS03310|Qual tot pub tr bnd naicass 4 pub tra
+HS|HS03311|Qual tot pub tr bnd naicass 5 pub tra
+HS|HS03312|Qual tot pub tr bnd naicass 6 pub tra
+HS|HS03313|Qual tot pub tr bnds totals pub tra
+HS|HS06775|Qual tot pub tr bnds tot %c pub tra
+HS|HS06776|Qual tot pub tr bnd tot %cy pub tra
+HS|HS03314|Qual tot bond currn naicass 1 priv pl
+HS|HS03315|Qual tot bond currn naicass 2 priv pl
+HS|HS03316|Qual tot bond currn naicass 3 priv pl
+HS|HS03317|Qual tot bond currn naicass 4 priv pl
+HS|HS03318|Qual tot bond currn naicass 5 priv pl
+HS|HS03319|Qual tot bond currn naicass 6 priv pl
+HS|HS03320|Qual tot bond cur yr totals priv pl
+HS|HS06777|Qual tot bond cur yr tot %p priv pl
+HS|HS03321|Qual tot bond prior naicass 1 priv pl
+HS|HS03322|Qual tot bond prior naicass 2 priv pl
+HS|HS03323|Qual tot bond prior naicass 3 priv pl
+HS|HS03324|Qual tot bond prior naicass 4 priv pl
+HS|HS03325|Qual tot bond prior naicass 5 priv pl
+HS|HS03326|Qual tot bond prior naicass 6 priv pl
+HS|HS03327|Qual tot bond pri yr totals priv pl
+HS|HS06778|Qual tot bond pri yr tot %p priv pl
+HS|HS03328|Qual tot pri pl bnd naicass 1 priv pl
+HS|HS03329|Qual tot pri pl bnd naicass 2 priv pl
+HS|HS03330|Qual tot pri pl bnd naicass 3 priv pl
+HS|HS03331|Qual tot pri pl bnd naicass 4 priv pl
+HS|HS03332|Qual tot pri pl bnd naicass 5 priv pl
+HS|HS03333|Qual tot pri pl bnd naicass 6 priv pl
+HS|HS03334|Qual tot priv pl bnd totals priv pl
+HS|HS06779|Qual tot priv pl bnd tot %c priv pl
+HS|HS06780|Qual tot prv pl bnd tot %cy priv pl
+HS|HS03102|(a) incl freely tradable under sec
+HS|HS03103|(b) incl cur yr (bonds) z designat
+HS|HS03104|(b) incl prior yr (bonds) z designa
+HS|HS03105|(b) incl cur yr (bonds) z* designat
+HS|HS03106|(b) incl prior yr (bonds) z* design
+HS|HS03107|(c) incl cur yr bonds 5* designatio
+HS|HS03108|(c) incl prior yr bonds 5* designat
+HS|HS03109|(c) incl cur yr bonds 6* designatio
+HS|HS03110|(c) incl prior yr bonds 6* designat
+HS|HS09409|(d) incl non-rated s-t & c naic 1
+HS|HS09410|(d) incl non-rated s-t & c naic 2
+HS|HS09411|(d) incl non-rated s-t & c naic 3
+HS|HS09412|(d) incl non-rated s-t & c naic 4
+HS|HS09413|(d) incl non-rated s-t & c naic 5
+HS|HS09414|(d) incl non-rated s-t & c naic 6
+HS|HS03335|Mat 1y or ls us gov issuer obligations
+HS|HS14326|Mat 1y or ls us gov residential mtg-bk secur
+HS|HS14327|Mat 1y or ls us gov commercial mtg-bk secur
+HS|HS14328|Mat 1y or ls us gov oth loan-bk struc secur
+HS|HS03337|Mat 1y or less us gov totals
+HS|HS10459|Mat 1y or less oth gov issuer obligations
+HS|HS14329|Mat 1y or ls oth gov residential mtg-bk secur
+HS|HS14330|Mat 1y or ls oth gov commercial mtg-bk secur
+HS|HS14331|Mat 1y or ls oth gov oth loan-bk struc secur
+HS|HS10465|Mat 1y or less oth gov totals
+HS|HS10466|Mat 1y or less us st ter issuer obligations
+HS|HS14332|Mat 1y or ls us st ter residential mtg-bk secur
+HS|HS14333|Mat 1y or ls us st ter commercial mtg-bk secur
+HS|HS14334|Mat 1y or ls us st ter oth loan-bk struc secur
+HS|HS10472|Mat 1y or less us st ter totals
+HS|HS10473|Mat 1y or less us pol sub issuer obligations
+HS|HS14335|Mat 1y or ls us pol sub residential mtg-bk secur
+HS|HS14336|Mat 1y or ls us pol sub commercial mtg-bk secur
+HS|HS14337|Mat 1y or ls us pol sub oth loan-bk struc secur
+HS|HS10479|Mat 1y or less us pol sub totals
+HS|HS10480|Mat 1y or less us sp rev issuer obligations
+HS|HS14338|Mat 1y or ls us sp rev residential mtg-bk secur
+HS|HS14339|Mat 1y or ls us sp rev commercial mtg-bk secur
+HS|HS14340|Mat 1y or ls us sp rev oth loan-bk struc secur
+HS|HS10486|Mat 1y or less us sp rev totals
+HS|HS10487|Mat 1y or less ind&misc issuer obligations
+HS|HS14341|Mat 1y or ls ind&misc residential mtg-bk secur
+HS|HS14342|Mat 1y or ls ind&misc commercial mtg-bk secur
+HS|HS14343|Mat 1y or ls ind&misc oth loan-bk struc secur
+HS|HS10493|Mat 1y or less ind&misc totals
+HS|HS10495|Mat 1y or ls hybrid secur issuer obligation
+HS|HS14344|Mat 1y or ls hybrid sec residential mtg-bk secur
+HS|HS14345|Mat 1y or ls hybrid sec commercial mtg-bk secur
+HS|HS14346|Mat 1y or ls hybrid sec oth loan-bk struc secur
+HS|HS10501|Mat 1y or less hybrid secur totals
+HS|HS03630|Mat 1y or ls aff issuer obligations
+HS|HS14347|Mat 1y or ls affl residential mtg-bk secur
+HS|HS14348|Mat 1y or ls affl commercial mtg-bk secur
+HS|HS14349|Mat 1y or ls affl oth loan-bk struc secur
+HS|HS03636|Mat 1y or ls aff totals
+HS|HS03366|Mat 1-5 yrs us gov issuer obligations
+HS|HS14362|Mat 1-5 yrs us gov residential mtg-bk secur
+HS|HS14363|Mat 1-5 yrs us gov commercial mtg-bk secur
+HS|HS14364|Mat 1-5 yrs us gov oth loan-bk struc secur
+HS|HS03368|Mat 1-5 yrs us gov totals
+HS|HS10502|Mat 1-5 yrs oth gov issuer obligations
+HS|HS14365|Mat 1-5 yrs oth gov residential mtg-bk secur
+HS|HS14366|Mat 1-5 yrs oth gov commercial mtg-bk secur
+HS|HS14367|Mat 1-5 yrs oth gov oth loan-bk struc secur
+HS|HS10508|Mat 1-5 yrs oth gov totals
+HS|HS10509|Mat 1-5 yrs us st ter issuer obligations
+HS|HS14368|Mat 1-5 yrs us st ter residential mtg-bk secur
+HS|HS14369|Mat 1-5 yrs us st ter commercial mtg-bk secur
+HS|HS14370|Mat 1-5 yrs us st ter oth loan-bk struc secur
+HS|HS10515|Mat 1-5 yrs us st ter totals
+HS|HS10516|Mat 1-5 yrs us pol sub issuer obligations
+HS|HS14371|Mat 1-5 yrs us pol sub residential mtg-bk secur
+HS|HS14372|Mat 1-5 yrs us pol sub commercial mtg-bk secur
+HS|HS14373|Mat 1-5 yrs us pol sub oth loan-bk struc secur
+HS|HS10522|Mat 1-5 yrs us pol sub totals
+HS|HS10523|Mat 1-5 yrs us sp rev issuer obligations
+HS|HS14374|Mat 1-5 yrs us sp rev residential mtg-bk secur
+HS|HS14375|Mat 1-5 yrs us sp rev commercial mtg-bk secur
+HS|HS14376|Mat 1-5 yrs us sp rev oth loan-bk struc secur
+HS|HS10529|Mat 1-5 yrs us sp rev totals
+HS|HS10530|Mat 1-5 yrs ind&misc issuer obligations
+HS|HS14377|Mat 1-5 yrs ind&misc residential mtg-bk secur
+HS|HS14378|Mat 1-5 yrs ind&misc commercial mtg-bk secur
+HS|HS14379|Mat 1-5 yrs ind&misc oth loan-bk struc secur
+HS|HS10536|Mat 1-5 yrs ind&misc totals
+HS|HS10538|Mat 1-5 yrs hybrid secur issuer obligation
+HS|HS14380|Mat 1-5 yrs hybrid sec residential mtg-bk secur
+HS|HS14381|Mat 1-5 yrs hybrid sec commercial mtg-bk secur
+HS|HS14382|Mat 1-5 yrs hybrid sec oth loan-bk struc secur
+HS|HS10544|Mat 1-5 yrs hybrid secur totals
+HS|HS03653|Mat 1-5 yrs aff issuer obligations
+HS|HS14383|Mat 1-5 yrs affl residential mtg-bk secur
+HS|HS14384|Mat 1-5 yrs affl commercial mtg-bk secur
+HS|HS14385|Mat 1-5 yrs affl oth loan-bk struc secur
+HS|HS03659|Mat 1-5 yrs aff totals
+HS|HS03397|Mat 5-10 yrs us gov issuer obligations
+HS|HS14398|Mat 5-10 yrs us gov residential mtg-bk secur
+HS|HS14399|Mat 5-10 yrs us gov commercial mtg-bk secur
+HS|HS14400|Mat 5-10 yrs us gov oth loan-bk struc secur
+HS|HS03399|Mat 5-10 yrs us gov totals
+HS|HS10545|Mat 5-10 yrs oth gov issuer obligations
+HS|HS14401|Mat 5-10 yrs oth gov residential mtg-bk secur
+HS|HS14402|Mat 5-10 yrs oth gov commercial mtg-bk secur
+HS|HS14403|Mat 5-10 yrs oth gov oth loan-bk struc secur
+HS|HS10551|Mat 5-10 yrs oth gov totals
+HS|HS10552|Mat 5-10 yrs us st ter issuer obligations
+HS|HS14404|Mat 5-10 yrs us st ter residential mtg-bk secur
+HS|HS14405|Mat 5-10 yrs us st ter commercial mtg-bk secur
+HS|HS14406|Mat 5-10 yrs us st ter oth loan-bk struc secur
+HS|HS10558|Mat 5-10 yrs us st ter totals
+HS|HS10559|Mat 5-10 yrs us pol sub issuer obligations
+HS|HS14407|Mat 5-10 yrs us pol sub residential mtg-bk secur
+HS|HS14408|Mat 5-10 yrs us pol sub commercial mtg-bk secur
+HS|HS14409|Mat 5-10 yrs us pol sub oth loan-bk struc secur
+HS|HS10565|Mat 5-10 yrs us pol sub totals
+HS|HS10566|Mat 5-10 yrs us sp rev issuer obligations
+HS|HS14410|Mat 5-10 yrs us sp rev residential mtg-bk secur
+HS|HS14411|Mat 5-10 yrs us sp rev commercial mtg-bk secur
+HS|HS14412|Mat 5-10 yrs us sp rev oth loan-bk struc secur
+HS|HS10572|Mat 5-10 yrs us sp rev totals
+HS|HS10573|Mat 5-10 yrs ind&misc issuer obligations
+HS|HS14413|Mat 5-10 yrs ind&misc residential mtg-bk secur
+HS|HS14414|Mat 5-10 yrs ind&misc commercial mtg-bk secur
+HS|HS14415|Mat 5-10 yrs ind&misc oth loan-bk struc secur
+HS|HS10579|Mat 5-10 yrs ind&misc totals
+HS|HS10581|Mat 5-10 yrs hybrid secur issuer obligation
+HS|HS14416|Mat 5-10 yrs hybrid sec residential mtg-bk secur
+HS|HS14417|Mat 5-10 yrs hybrid sec commercial mtg-bk secur
+HS|HS14418|Mat 5-10 yrs hybrid sec oth loan-bk struc secur
+HS|HS10587|Mat 5-10 yrs hybrid secur totals
+HS|HS03676|Mat 5-10 yrs aff issuer obligations
+HS|HS14419|Mat 5-10 yrs affl residential mtg-bk secur
+HS|HS14420|Mat 5-10 yrs affl commercial mtg-bk secur
+HS|HS14421|Mat 5-10 yrs affl oth loan-bk struc secur
+HS|HS03682|Mat 5-10 yrs aff totals
+HS|HS03428|Mat 10-20 yrs us gov issuer obligations
+HS|HS14434|Mat 10-20 yrs us gov residential mtg-bk secur
+HS|HS14435|Mat 10-20 yrs us gov commercial mtg-bk secur
+HS|HS14436|Mat 10-20 yrs us gov oth loan-bk struc secur
+HS|HS03430|Mat 10-20 yrs us gov totals
+HS|HS10588|Mat 10-20 yrs oth gov issuer obligations
+HS|HS14437|Mat 10-20 yrs oth gov residential mtg-bk secur
+HS|HS14438|Mat 10-20 yrs oth gov commercial mtg-bk secur
+HS|HS14439|Mat 10-20 yrs oth gov oth loan-bk struc secur
+HS|HS10594|Mat 10-20 yrs oth gov totals
+HS|HS10595|Mat 10-20 yrs us st ter issuer obligations
+HS|HS14440|Mat 10-20 yrs us st ter residential mtg-bk secur
+HS|HS14441|Mat 10-20 yrs us st ter commercial mtg-bk secur
+HS|HS14442|Mat 10-20 yrs us st ter oth loan-bk struc secur
+HS|HS10601|Mat 10-20 yrs us st ter totals
+HS|HS10602|Mat 10-20 yrs us pol sub issuer obligations
+HS|HS14443|Mat 10-20 yrs us pol sub residential mtg-bk secur
+HS|HS14444|Mat 10-20 yrs us pol sub commercial mtg-bk secur
+HS|HS14445|Mat 10-20 yrs us pol sub oth loan-bk struc secur
+HS|HS10608|Mat 10-20 yrs us pol sub totals
+HS|HS10609|Mat 10-20 yrs us sp rev issuer obligations
+HS|HS14446|Mat 10-20 yrs us sp rev residential mtg-bk secur
+HS|HS14447|Mat 10-20 yrs us sp rev commercial mtg-bk secur
+HS|HS14448|Mat 10-20 yrs us sp rev oth loan-bk struc secur
+HS|HS10615|Mat 10-20 yrs us sp rev totals
+HS|HS10616|Mat 10-20 yrs ind&misc issuer obligations
+HS|HS14449|Mat 10-20 yrs ind&misc residential mtg-bk secur
+HS|HS14450|Mat 10-20 yrs ind&misc commercial mtg-bk secur
+HS|HS14451|Mat 10-20 yrs ind&misc oth loan-bk struc secur
+HS|HS10622|Mat 10-20 yrs ind&misc totals
+HS|HS10624|Mat 10-20 yrs hybrid secur issuer obligation
+HS|HS14452|Mat 10-20 yrs hybrid sec residential mtg-bk secur
+HS|HS14453|Mat 10-20 yrs hybrid sec commercial mtg-bk secur
+HS|HS14454|Mat 10-20 yrs hybrid sec oth loan-bk struc secur
+HS|HS10630|Mat 10-20 yrs hybrid secur totals
+HS|HS03699|Mat 10-20 yrs aff issuer obligations
+HS|HS14455|Mat 10-20 yrs affl residential mtg-bk secur
+HS|HS14456|Mat 10-20 yrs affl commercial mtg-bk secur
+HS|HS14457|Mat 10-20 yrs affl oth loan-bk struc secur
+HS|HS03705|Mat 10-20 yrs aff totals
+HS|HS03459|Mat ov 20 yrs us gov issuer obligations
+HS|HS14470|Mat ov 20 yrs us gov residential mtg-bk secur
+HS|HS14471|Mat ov 20 yrs us gov commercial mtg-bk secur
+HS|HS14472|Mat ov 20 yrs us gov oth loan-bk struc secur
+HS|HS03461|Mat ov 20 yrs us gov totals
+HS|HS10631|Mat ov 20 yrs oth gov issuer obligations
+HS|HS14473|Mat ov 20 yrs oth gov residential mtg-bk secur
+HS|HS14474|Mat ov 20 yrs oth gov commercial mtg-bk secur
+HS|HS14475|Mat ov 20 yrs oth gov oth loan-bk struc secur
+HS|HS10637|Mat ov 20 yrs oth gov totals
+HS|HS10638|Mat ov 20 yrs us st ter issuer obligations
+HS|HS14476|Mat ov 20 yrs us st ter residential mtg-bk secur
+HS|HS14477|Mat ov 20 yrs us st ter commercial mtg-bk secur
+HS|HS14478|Mat ov 20 yrs us st ter oth loan-bk struc secur
+HS|HS10644|Mat ov 20 yrs us st ter totals
+HS|HS10645|Mat ov 20 yrs us pol sub issuer obligations
+HS|HS14479|Mat ov 20 yrs us pol sub residential mtg-bk secur
+HS|HS14480|Mat ov 20 yrs us pol sub commercial mtg-bk secur
+HS|HS14481|Mat ov 20 yrs us pol sub oth loan-bk struc secur
+HS|HS10651|Mat ov 20 yrs us pol sub totals
+HS|HS10652|Mat ov 20 yrs us sp rev issuer obligations
+HS|HS14482|Mat ov 20 yrs us sp rev residential mtg-bk secur
+HS|HS14483|Mat ov 20 yrs us sp rev commercial mtg-bk secur
+HS|HS14484|Mat ov 20 yrs us sp rev oth loan-bk struc secur
+HS|HS10658|Mat ov 20 yrs us sp rev totals
+HS|HS10659|Mat ov 20 yrs ind&misc issuer obligations
+HS|HS14485|Mat ov 20 yrs ind&misc residential mtg-bk secur
+HS|HS14486|Mat ov 20 yrs ind&misc commercial mtg-bk secur
+HS|HS14487|Mat ov 20 yrs ind&misc oth loan-bk struc secur
+HS|HS10665|Mat ov 20 yrs ind&misc totals
+HS|HS10667|Mat ov 20 yrs hybrid secur issuer obligation
+HS|HS14488|Mat ov 20 yrs hybrid sec residential mtg-bk secur
+HS|HS14489|Mat ov 20 yrs hybrid sec commercial mtg-bk secur
+HS|HS14490|Mat ov 20 yrs hybrid sec oth loan-bk struc secur
+HS|HS10673|Mat ov 20 yrs hybrid secur totals
+HS|HS03722|Mat ov 20 yrs aff issuer obligations
+HS|HS14491|Mat ov 20 yrs affl residential mtg-bk secur
+HS|HS14492|Mat ov 20 yrs affl commercial mtg-bk secur
+HS|HS14493|Mat ov 20 yrs affl oth loan-bk struc secur
+HS|HS03728|Mat ov 20 yrs aff totals
+HS|HS03490|Tot cy us gov issuer obligations
+HS|HS14506|Tot cy us gov residential mtg-bk secur
+HS|HS14507|Tot cy us gov commercial mtg-bk secur
+HS|HS14508|Tot cy us gov oth loan-bk struc secur
+HS|HS03492|Tot cy us gov totals
+HS|HS10674|Tot cy oth gov issuer obligations
+HS|HS14509|Tot cy oth gov residential mtg-bk secur
+HS|HS14510|Tot cy oth gov commercial mtg-bk secur
+HS|HS14511|Tot cy oth gov oth loan-bk struc secur
+HS|HS10680|Tot cy oth gov totals
+HS|HS10681|Tot cy us st ter issuer obligations
+HS|HS14512|Tot cy us st ter residential mtg-bk secur
+HS|HS14513|Tot cy us st ter commercial mtg-bk secur
+HS|HS14514|Tot cy us st ter oth loan-bk struc secur
+HS|HS10687|Tot cy us st ter totals
+HS|HS10688|Tot cy us pol sub issuer obligations
+HS|HS14515|Tot cy us pol sub residential mtg-bk secur
+HS|HS14516|Tot cy us pol sub commercial mtg-bk secur
+HS|HS14517|Tot cy us pol sub oth loan-bk struc secur
+HS|HS10694|Tot cy us pol sub totals
+HS|HS10695|Tot cy us sp rev issuer obligations
+HS|HS14518|Tot cy us sp rev residential mtg-bk secur
+HS|HS14519|Tot cy us sp rev commercial mtg-bk secur
+HS|HS14520|Tot cy us sp rev oth loan-bk struc secur
+HS|HS10701|Tot cy us sp rev totals
+HS|HS10702|Tot cy ind&misc issuer obligations
+HS|HS14521|Tot cy ind&misc residential mtg-bk secur
+HS|HS14522|Tot cy ind&misc commercial mtg-bk secur
+HS|HS14523|Tot cy ind&misc oth loan-bk struc secur
+HS|HS10708|Tot cy ind&misc totals
+HS|HS10710|Tot cy hybrid secur issuer obligation
+HS|HS14524|Tot cy hybrid sec residential mtg-bk secur
+HS|HS14525|Tot cy hybrid sec commercial mtg-bk secur
+HS|HS14526|Tot cy hybrid sec oth loan-bk struc secur
+HS|HS10716|Tot cy hybrid secur totals
+HS|HS03745|Tot cy aff issuer obligations
+HS|HS14527|Tot cy affl residential mtg-bk secur
+HS|HS14528|Tot cy affl commercial mtg-bk secur
+HS|HS14529|Tot cy affl oth loan-bk struc secur
+HS|HS03751|Tot cy aff totals
+HS|HS06781|Pct cy us gov issuer obligations
+HS|HS14539|Pct cy us gov residential mtg-bk secur
+HS|HS14540|Pct cy us gov commercial mtg-bk secur
+HS|HS14541|Pct cy us gov oth loan-bk struc secur
+HS|HS06783|Pct cy us gov totals
+HS|HS11962|Pct cy othr gov issuer obligations
+HS|HS14542|Pct cy othr gov residential mtg-bk secur
+HS|HS14543|Pct cy othr gov commercial mtg-bk secur
+HS|HS14544|Pct cy othr gov oth loan-bk struc secur
+HS|HS11968|Pct cy othr gov totals
+HS|HS11969|Pct cy us st ter issuer obligations
+HS|HS14545|Pct cy us st ter residential mtg-bk secur
+HS|HS14546|Pct cy us st ter commercial mtg-bk secur
+HS|HS14547|Pct cy us st ter oth loan-bk struc secur
+HS|HS11975|Pct cy us st ter totals
+HS|HS11976|Pct cy us pol sub issuer obligations
+HS|HS14548|Pct cy us pol sub residential mtg-bk secur
+HS|HS14549|Pct cy us pol sub commercial mtg-bk secur
+HS|HS14550|Pct cy us pol sub oth loan-bk struc secur
+HS|HS11982|Pct cy us pol sub totals
+HS|HS11983|Pct cy us sp rev issuer obligations
+HS|HS14551|Pct cy us sp rev residential mtg-bk secur
+HS|HS14552|Pct cy us sp rev commercial mtg-bk secur
+HS|HS14553|Pct cy us sp rev oth loan-bk struc secur
+HS|HS11989|Pct cy us sp rev totals
+HS|HS11990|Pct cy indst&misc issuer obligations
+HS|HS14554|Pct cy indst&misc residential mtg-bk secur
+HS|HS14555|Pct cy indst&misc commercial mtg-bk secur
+HS|HS14556|Pct cy indst&misc oth loan-bk struc secur
+HS|HS11996|Pct cy indst&misc totals
+HS|HS11998|Pct cy hybrid secur issuer obligation
+HS|HS14557|Pct cy hybrid secur residential mtg-bk secur
+HS|HS14558|Pct cy hybrid secur commercial mtg-bk secur
+HS|HS14559|Pct cy hybrid secur oth loan-bk struc secur
+HS|HS12004|Pct cy hybrid secur totals
+HS|HS06859|Pct cy aff issuer obligations
+HS|HS14560|Pct cy aff residential mtg-bk secur
+HS|HS14561|Pct cy aff commercial mtg-bk secur
+HS|HS14562|Pct cy aff oth loan-bk struc secur
+HS|HS06865|Pct cy aff totals
+HS|HS03521|Tot py us gov issuer obligations
+HS|HS14572|Tot py us gov residential mtg-bk secur
+HS|HS14573|Tot py us gov commercial mtg-bk secur
+HS|HS14574|Tot py us gov oth loan-bk struc secur
+HS|HS03523|Tot py us gov totals
+HS|HS10717|Tot py oth gov issuer obligations
+HS|HS14575|Tot py oth gov residential mtg-bk secur
+HS|HS14576|Tot py oth gov commercial mtg-bk secur
+HS|HS14577|Tot py oth gov oth loan-bk struc secur
+HS|HS10723|Tot py oth gov totals
+HS|HS10724|Tot py us st ter issuer obligations
+HS|HS14578|Tot py us st ter residential mtg-bk secur
+HS|HS14579|Tot py us st ter commercial mtg-bk secur
+HS|HS14580|Tot py us st ter oth loan-bk struc secur
+HS|HS10730|Tot py us st ter totals
+HS|HS10731|Tot py us pol sub issuer obligations
+HS|HS14581|Tot py us pol sub residential mtg-bk secur
+HS|HS14582|Tot py us pol sub commercial mtg-bk secur
+HS|HS14583|Tot py us pol sub oth loan-bk struc secur
+HS|HS10737|Tot py us pol sub totals
+HS|HS10738|Tot py us sp rev issuer obligations
+HS|HS14584|Tot py us sp rev residential mtg-bk secur
+HS|HS14585|Tot py us sp rev commercial mtg-bk secur
+HS|HS14586|Tot py us sp rev oth loan-bk struc secur
+HS|HS10744|Tot py us sp rev totals
+HS|HS10745|Tot py ind&misc issuer obligations
+HS|HS14587|Tot py ind&misc residential mtg-bk secur
+HS|HS14588|Tot py ind&misc commercial mtg-bk secur
+HS|HS14589|Tot py ind&misc oth loan-bk struc secur
+HS|HS10751|Tot py ind&misc totals
+HS|HS10753|Tot py hybrid secur issuer obligation
+HS|HS14590|Tot py hybrid sec residential mtg-bk secur
+HS|HS14591|Tot py hybrid sec commercial mtg-bk secur
+HS|HS14592|Tot py hybrid sec oth loan-bk struc secur
+HS|HS10759|Tot py hybrid secur totals
+HS|HS03768|Tot py aff issuer obligations
+HS|HS14593|Tot py affl residential mtg-bk secur
+HS|HS14594|Tot py affl commercial mtg-bk secur
+HS|HS14595|Tot py affl oth loan-bk struc secur
+HS|HS03774|Tot py aff totals
+HS|HS06812|Pct py us gov issuer obligations
+HS|HS14605|Pct py us gov issuer residential mtg-bk secur
+HS|HS14606|Pct py us gov issuer commercial mtg-bk secur
+HS|HS14607|Pct py us gov issuer oth loan-bk struc secur
+HS|HS06814|Pct py us gov totals
+HS|HS12005|Pct py othr gov issuer obligations
+HS|HS14608|Pct py othr gov residential mtg-bk secur
+HS|HS14609|Pct py othr gov commercial mtg-bk secur
+HS|HS14610|Pct py othr gov oth loan-bk struc secur
+HS|HS12011|Pct py othr gov totals
+HS|HS12012|Pct py us st ter issuer obligations
+HS|HS14611|Pct py us st ter residential mtg-bk secur
+HS|HS14612|Pct py us st ter commercial mtg-bk secur
+HS|HS14613|Pct py us st ter oth loan-bk struc secur
+HS|HS12018|Pct py us st ter totals
+HS|HS12019|Pct py us pol sub issuer obligations
+HS|HS14614|Pct py us pol sub residential mtg-bk secur
+HS|HS14615|Pct py us pol sub commercial mtg-bk secur
+HS|HS14616|Pct py us pol sub oth loan-bk struc secur
+HS|HS12025|Pct py us pol sub totals
+HS|HS12026|Pct py us sp rev issuer obligations
+HS|HS14617|Pct py us sp rev residential mtg-bk secur
+HS|HS14618|Pct py us sp rev commercial mtg-bk secur
+HS|HS14619|Pct py us sp rev oth loan-bk struc secur
+HS|HS12032|Pct py us sp rev totals
+HS|HS12033|Pct py indust&misc issuer obligations unafl
+HS|HS14620|Pct py indust&misc residential mtg-bk secur
+HS|HS14621|Pct py indust&misc commercial mtg-bk secur
+HS|HS14622|Pct py indust&misc oth loan-bk struc secur
+HS|HS12039|Pct py indust&misc totals unafl
+HS|HS12041|Pct py hybrid secur issuer obligation
+HS|HS14623|Pct py hybrid secur residential mtg-bk secur
+HS|HS14624|Pct py hybrid secur commercial mtg-bk secur
+HS|HS14625|Pct py hybrid secur oth loan-bk struc secur
+HS|HS12047|Pct py hybrid secur totals
+HS|HS06882|Pct py aff issuer obligations
+HS|HS14626|Pct py aff residential mtg-bk secur
+HS|HS14627|Pct py aff commercial mtg-bk secur
+HS|HS14629|Pct py aff oth loan-bk struc secur
+HS|HS06888|Pct py aff totals
+HS|HS03552|Tot pub trad us gov issuer obligations
+HS|HS14639|Tot pub trad us gov residential mtg-bk secur
+HS|HS14640|Tot pub trad us gov commercial mtg-bk secur
+HS|HS14641|Tot pub trad us gov oth loan-bk struc secur
+HS|HS03554|Tot pub trad us gov totals
+HS|HS10760|Tot pub trad other gov issuer obligations
+HS|HS14642|Tot pub trad oth gov residential mtg-bk secur
+HS|HS14643|Tot pub trad oth gov commercial mtg-bk secur
+HS|HS14644|Tot pub trad oth gov oth loan-bk struc secur
+HS|HS10766|Tot pub trad other gov totals
+HS|HS10767|Tot pub trad us st ter issuer obligations
+HS|HS14645|Tot pub trad us st ter residential mtg-bk secur
+HS|HS14646|Tot pub trad us st ter commercial mtg-bk secur
+HS|HS14647|Tot pub trad us st ter oth loan-bk struc secur
+HS|HS10773|Tot pub trad us st ter totals
+HS|HS10774|Tot pub trad us pol sub issuer obligations
+HS|HS14648|Tot pub trad us pol sub residential mtg-bk secur
+HS|HS14649|Tot pub trad us pol sub commercial mtg-bk secur
+HS|HS14650|Tot pub trad us pol sub oth loan-bk struc secur
+HS|HS10780|Tot pub trad us pol sub totals
+HS|HS10781|Tot pub trad us sp rev issuer obligations
+HS|HS14651|Tot pub trad us sp rev residential mtg-bk secur
+HS|HS14652|Tot pub trad us sp rev commercial mtg-bk secur
+HS|HS14653|Tot pub trad us sp rev oth loan-bk struc secur
+HS|HS10787|Tot pub trad us sp rev totals
+HS|HS10788|Tot pub trad indst&misc issuer obligations
+HS|HS14654|Tot pub trad ind&misc residential mtg-bk secur
+HS|HS14655|Tot pub trad ind&misc commercial mtg-bk secur
+HS|HS14656|Tot pub trad ind&misc oth loan-bk struc secur
+HS|HS10794|Tot pub trad indst&misc total
+HS|HS10796|Tot pub trad hybrid secur issuer obligation st
+HS|HS14657|Tot pub trad hybrid sec residential mtg-bk secur
+HS|HS14658|Tot pub trad hybrid sec commercial mtg-bk secur
+HS|HS14659|Tot pub trad hybrid sec oth loan-bk struc secur
+HS|HS10802|Tot pub trad hybrid secur totals
+HS|HS03791|Tot pub trad aff issuer obligations
+HS|HS14660|Tot pub trad affl residential mtg-bk secur
+HS|HS14661|Tot pub trad affl commercial mtg-bk secur
+HS|HS14662|Tot pub trad affl oth loan-bk struc secur
+HS|HS03797|Tot pub trad aff totals
+HS|HS03583|Tot priv plac us gov issuer obligations
+HS|HS14672|Tot priv plac us gov residential mtg-bk secur
+HS|HS14673|Tot priv plac us gov commercial mtg-bk secur
+HS|HS14674|Tot priv plac us gov oth loan-bk struc secur
+HS|HS03585|Tot priv plac us gov totals
+HS|HS10803|Tot priv placed oth gov issuer obligations
+HS|HS14675|Tot priv plac oth gov residential mtg-bk secur
+HS|HS14676|Tot priv plac oth gov commercial mtg-bk secur
+HS|HS14677|Tot priv plac oth gov oth loan-bk struc secur
+HS|HS10809|Tot priv placed oth gov totals
+HS|HS10810|Tot priv placed us st ter issuer obligations
+HS|HS14678|Tot priv plac us st ter residential mtg-bk secur
+HS|HS14679|Tot priv plac us st ter commercial mtg-bk secur
+HS|HS14680|Tot priv plac us st ter oth loan-bk struc secur
+HS|HS10816|Tot priv placed us st ter totals
+HS|HS10817|Tot priv placed us pol sub issuer obligations
+HS|HS14681|Tot priv plac us pol sub residential mtg-bk secur
+HS|HS14682|Tot priv plac us pol sub commercial mtg-bk secur
+HS|HS14683|Tot priv plac us pol sub oth loan-bk struc secur
+HS|HS10823|Tot priv placed us pol sub totals
+HS|HS10824|Tot priv placed us sp rev issuer obligations
+HS|HS14684|Tot priv plac us sp rev residential mtg-bk secur
+HS|HS14685|Tot priv plac us sp rev commercial mtg-bk secur
+HS|HS14686|Tot priv plac us sp rev oth loan-bk struc secur
+HS|HS10830|Tot priv placed us sp rev totals
+HS|HS10831|Tot priv placed ind&misc issuer obligations
+HS|HS14687|Tot priv plac ind&misc residential mtg-bk secur
+HS|HS14688|Tot priv plac ind&misc commercial mtg-bk secur
+HS|HS14689|Tot priv plac ind&misc oth loan-bk struc secur
+HS|HS10837|Tot priv placed ind&misc totals
+HS|HS10839|Tot priv placed hybrid secur issuer obligation
+HS|HS14690|Tot priv plac hybrid sec residential mtg-bk secur
+HS|HS14691|Tot priv plac hybrid sec commercial mtg-bk secur
+HS|HS14692|Tot priv plac hybrid sec oth loan-bk struc secur
+HS|HS10845|Tot priv placed hybrid secur totals
+HS|HS03814|Tot priv plac aff issuer obligations
+HS|HS14693|Tot priv plac affl residential mtg-bk secur
+HS|HS14694|Tot priv plac affl commercial mtg-bk secur
+HS|HS14695|Tot priv plac affl oth loan-bk struc secur
+HS|HS03820|Tot priv plac aff totals
+HS|HS03336|Us govt sngle cl mtg bckd 1yr or ls
+HS|HS10460|Othr gov sngle cl mtg bckd 1yr or less
+HS|HS10461|Othr gov defined resid mtg 1yr or less
+HS|HS10462|Othr gov other residen mtg 1yr or less
+HS|HS10463|Othr gov defined comrcl mtg 1yr or less
+HS|HS10464|Othr gov other comercl mtg 1yr or less
+HS|HS10467|U.s., s t & p sngle cl mtg bckd 1yr or less
+HS|HS10468|U.s., s t & p defined resid mtg 1yr or less
+HS|HS10469|U.s., s t & p other residen mtg 1yr or less
+HS|HS10470|U.s., s t & p defined comrcl mtg 1yr or less
+HS|HS10471|U.s., s t & p other comercl mtg 1yr or less
+HS|HS10474|U.s., pol sub sngle cl mtg bckd 1yr or less
+HS|HS10475|U.s., pol sub defined resid mtg 1yr or less
+HS|HS10476|U.s., pol sub other residen mtg 1yr or less
+HS|HS10477|U.s., pol sub defined comrcl mtg 1yr or less
+HS|HS10478|U.s., pol sub other comercl mtg 1yr or less
+HS|HS10481|U.s., special sngle cl mtg bckd 1yr or less
+HS|HS10482|U.s., special defined resid mtg 1yr or less
+HS|HS10483|U.s., special other residen mtg 1yr or less
+HS|HS10484|U.s., special defined comrcl mtg 1yr or less
+HS|HS10485|U.s., special other comercl mtg 1yr or less
+HS|HS10488|Industrial sngl cl mtg back ast -1yr
+HS|HS10489|Industrial defined multi-cl resi -1yr
+HS|HS10490|Industrial other multi-cl resid -1yr
+HS|HS10491|Industrial defined multi-cl comm -1yr
+HS|HS10492|Industrial other multi-cl comm -1yr
+HS|HS03628|Cred tennt loan iss obligation -1yr
+HS|HS10494|Credit tenant loans sngle cl mtg bckd -1yr
+HS|HS03629|Credit tenant loans totals less 1yr
+HS|HS10496|Hybrid secur sngl cl mtg back ast -1yr
+HS|HS10497|Hybrid secur defined multi-cl resi -1yr
+HS|HS10498|Hybrid secur other multi-cl resid -1yr
+HS|HS10499|Hybrid secur defined multi-cl comm -1yr
+HS|HS10500|Hybrid secur other multi-cl comm -1yr
+HS|HS03367|Us govt sngle cl mtg bckd 1-5 yrs
+HS|HS10503|Othr gov sngle cl mtg bckd 1-5 yrs
+HS|HS10504|Othr gov defined resid mtg 1-5 yrs
+HS|HS10505|Othr gov other residen mtg 1-5 yrs
+HS|HS10506|Othr gov defined comrcl mtg1-5 yrs
+HS|HS10507|Othr gov other comercl mtg 1-5 yrs
+HS|HS10510|U.s., s t & p sngle cl mtg bckd 1-5 yrs
+HS|HS10511|U.s., s t & p defined resid mtg 1-5 yrs
+HS|HS10512|U.s., s t & p other residen mtg 1-5 yrs
+HS|HS10513|U.s., s t & p defined comrcl mtg 1-5 yrs
+HS|HS10514|U.s., s t & p other comercl mtg 1-5 yrs
+HS|HS10517|U.s., pol sub sngle cl mtg bckd 1-5 yrs
+HS|HS10518|U.s., pol sub defined resid mtg 1-5 yrs
+HS|HS10519|U.s., pol sub other residen mtg 1-5 yrs
+HS|HS10520|U.s., pol sub defined comrcl mtg 1-5 yrs
+HS|HS10521|U.s., pol sub other comercl mtg 1-5 yrs
+HS|HS10524|U.s., special sngle cl mtg bckd 1-5 yrs
+HS|HS10525|U.s., special defined resid mtg 1-5 yrs
+HS|HS10526|U.s., special other residen mtg 1-5 yrs
+HS|HS10527|U.s., special defined comrcl mtg 1-5 yrs
+HS|HS10528|U.s., special other comercl mtg 1-5 yrs
+HS|HS10531|Industrial sngl cl mtg back ast 1-5yrs
+HS|HS10532|Industrial defined multi-cl resi 1-5yrs
+HS|HS10533|Industrial other multi-cl resid 1-5yrs
+HS|HS10534|Industrial defined multi-cl comm 1-5yrs
+HS|HS10535|Industrial other multi-cl comm 1-5yr
+HS|HS03651|Cred tennt loan iss obligation 1-5y
+HS|HS10537|Cred tennt loan sngle cl mtg bckd 1-5 yrs
+HS|HS03652|Credit tenant loans totals 1-5 yrs
+HS|HS10539|Hybrid secur sngl cl mtg back ast 1-5yrs
+HS|HS10540|Hybrid secur defined multi-cl resi 1-5yrs
+HS|HS10541|Hybrid secur other multi-cl resid 1-5yrs
+HS|HS10542|Hybrid secur defined multi-cl comm 1-5yrs
+HS|HS10543|Hybrid secur other multi-cl comm 1-5yrs
+HS|HS03398|Us govt sngle cl mtg bckd 5-10 yrs
+HS|HS10546|Othr gov sngle cl mtg bckd 5-10 yrs
+HS|HS10547|Othr gov defined resid mtg 5-10 yrs
+HS|HS10548|Othr gov other residen mtg 5-10 yrs
+HS|HS10549|Othr gov defined comrcl mtg 5-10 yrs
+HS|HS10550|Othr gov other comercl mtg 5-10 yrs
+HS|HS10553|U.s., s t & p sngle cl mtg bckd 5-10 yrs
+HS|HS10554|U.s., s t & p defined resid mtg 5-10 yrs
+HS|HS10555|U.s., s t & p other residen mtg 5-10 yrs
+HS|HS10556|U.s., s t & p defined comrcl mtg 5-10 yrs
+HS|HS10557|U.s., s t & p other comercl mtg 5-10 yrs
+HS|HS10560|U.s., pol sub sngle cl mtg bckd 5-10 yrs
+HS|HS10561|U.s., pol sub defined resid mtg 5-10 yrs
+HS|HS10562|U.s., pol sub other residen mtg 5-10 yrs
+HS|HS10563|U.s., pol sub defined comrcl mtg 5-10 yrs
+HS|HS10564|U.s., pol sub other comercl mtg 5-10 yrs
+HS|HS10567|U.s., special sngle cl mtg bckd 5-10 yrs
+HS|HS10568|U.s., special defined resid mtg 5-10 yrs
+HS|HS10569|U.s., special other residen mtg 5-10 yrs
+HS|HS10570|U.s., special defined comrcl mtg 5-10 yrs
+HS|HS10571|U.s., special other comercl mtg 5-10 yrs
+HS|HS10574|Industrial sngl cl mtg back ast 5-10 yrs
+HS|HS10575|Industrial defined multi-cl resi 5-10 yrs
+HS|HS10576|Industrial other multi-cl resid 5-10 yrs
+HS|HS10577|Industrial defined multi-cl comm 5-10 yrs
+HS|HS10578|Industrial other multi-cl comm 5-10 yrs
+HS|HS03674|Cred tennt loan iss obligation 5-10
+HS|HS10580|Credit tenant loans sngl cl mtg back 5-10 yrs
+HS|HS03675|Credit tenant loans totals 5-10 yrs
+HS|HS10582|Hybrid secur sngl cl mtg back ast 5-10 yrs
+HS|HS10583|Hybrid secur defined multi-cl resi 5-10 yrs
+HS|HS10584|Hybrid secur other multi-cl resid 5-10 yrs
+HS|HS10585|Hybrid secur defined multi-cl comm 5-10 yrs
+HS|HS10586|Hybrid secur other multi-cl comm 5-10 yrs
+HS|HS03429|Us govt sngle cl mtg bckd 10-20yrs
+HS|HS10589|Othr gov sngle cl mtg bckd 10-20yrs
+HS|HS10590|Othr gov defined resid mtg 10-20yrs
+HS|HS10591|Othr gov other residen mtg 10-20yrs
+HS|HS10592|Othr gov defined comrcl mtg 10-20yrs
+HS|HS10593|Othr gov other comercl mtg 10-20yrs
+HS|HS10596|U.s., s t & p sngle cl mtg bckd 10-20yrs
+HS|HS10597|U.s., s t & p defined resid mtg 10-20yrs
+HS|HS10598|U.s., s t & p other residen mtg 10-20yrs
+HS|HS10599|U.s., s t & p defined comrcl mtg 10-20yrs
+HS|HS10600|U.s., s t & p other comercl mtg 10-20yrs
+HS|HS10603|U.s., pol sub sngle cl mtg bckd 10-20yrs
+HS|HS10604|U.s., pol sub defined resid mtg 10-20yrs
+HS|HS10605|U.s., pol sub other residen mtg 10-20yrs
+HS|HS10606|U.s., pol sub defined comrcl mtg 10-20yrs
+HS|HS10607|U.s., pol sub other comercl mtg 10-20yrs
+HS|HS10610|U.s., special sngle cl mtg bckd 10-20yrs
+HS|HS10611|U.s., special defined resid mtg 10-20yrs
+HS|HS10612|U.s., special other residen mtg 10-20yrs
+HS|HS10613|U.s., special defined comrcl mtg 10-20yrs
+HS|HS10614|U.s., special other comercl mtg 10-20yrs
+HS|HS10617|Industrial sngl cl mtg back ast -20yr
+HS|HS10618|Industrial defined multi-cl resi -20yr
+HS|HS10619|Industrial other multi-cl resid -20yr
+HS|HS10620|Industrial defined multi-cl comm -20yr
+HS|HS10621|Industrial other multi-cl comm -20yr
+HS|HS03697|Cred tennt loan iss obligation -20y
+HS|HS10623|Credit tenant loans sngl cl mtg back ast -20yr
+HS|HS03698|Credit tenant loans totals 10-20yrs
+HS|HS10625|Hybrid secur sngl cl mtg back ast -20yr
+HS|HS10626|Hybrid secur defined multi-cl resi -20tr
+HS|HS10627|Hybrid secur other multi-cl resid -20yr
+HS|HS10628|Hybrid secur defined multi-cl comm -20yr
+HS|HS10629|Hybrid secur other multi-cl comm -20yr
+HS|HS03460|Us govt sngle cl mtg bckd over 20yr
+HS|HS10632|Othr gov sngle cl mtg bckd over 20yr
+HS|HS10633|Othr gov defined resid mtg over 20yr
+HS|HS10634|Othr gov other residen mtg over 20yr
+HS|HS10635|Othr gov defined comrcl mtg over 20yr
+HS|HS10636|Othr gov other comercl mtg over 20yr
+HS|HS10639|U.s., s t & p sngle cl mtg bckd over 20yr
+HS|HS10640|U.s., s t & p defined resid mtg over 20yr
+HS|HS10641|U.s., s t & p other residen mtg over 20yr
+HS|HS10642|U.s., s t & p defined comrcl mtg over 20yr
+HS|HS10643|U.s., s t & p other comercl mtg over 20yr
+HS|HS10646|U.s., pol sub sngle cl mtg bckd over 20yr
+HS|HS10647|U.s., pol sub defined resid mtg over 20yr
+HS|HS10648|U.s., pol sub other residen mtg over 20yr
+HS|HS10649|U.s., pol sub defined comrcl mtg over 20yr
+HS|HS10650|U.s., pol sub other comercl mtg over 20yr
+HS|HS10653|U.s., special sngle cl mtg bckd over 20yr
+HS|HS10654|U.s., special defined resid mtg over 20yr
+HS|HS10655|U.s., special other residen mtg over 20yr
+HS|HS10656|U.s., special defined comrcl mtg over 20yr
+HS|HS10657|U.s., special other comercl mtg over 20yr
+HS|HS10660|Industrial sngl cl mtg back ast +20yr
+HS|HS10661|Industrial defined multi-cl resi +20yr
+HS|HS10662|Industrial other multi-cl resid +20yr
+HS|HS10663|Industrial defined multi-cl comm +20yr
+HS|HS10664|Industrial other multi-cl comm +20yr
+HS|HS03720|Cred tennt loan iss obligation +20y
+HS|HS10666|Credit tenant loans sngl cl mtg back ast +20yr
+HS|HS03721|Credit tenant loans totals over20yr
+HS|HS10668|Hybrid secur sngl cl mtg back ast +20yr
+HS|HS10669|Hybrid secur defined multi-cl resi +20yr
+HS|HS10670|Hybrid secur other multi-cl resid +20yr
+HS|HS10671|Hybrid secur defined multi-cl comm +20yr
+HS|HS10672|Hybrid secur other multi-cl comm +20yr
+HS|HS03491|Us govt sngle cl mtg bckd tot cur y
+HS|HS10675|Othr gov sngle cl mtg bckd tot cur yr
+HS|HS10676|Othr gov defined resid mtg tot cur yr
+HS|HS10677|Othr gov other residen mtg tot cur yr
+HS|HS10678|Othr gov defined comrcl mtg t cur yr
+HS|HS10679|Othr gov other comercl mtg tot cur yr
+HS|HS10682|U.s., s t & p sngle cl mtg bckd tot cur yr
+HS|HS10683|U.s., s t & p defined resid mtg tot cur yr
+HS|HS10684|U.s., s t & p other residen mtg tot cur yr
+HS|HS10685|U.s., s t & p defined comrcl mtg t cur yr
+HS|HS10686|U.s., s t & p other comercl mtg tot cur yr
+HS|HS10689|U.s., pol sub sngle cl mtg bckd tot cur yr
+HS|HS10690|U.s., pol sub defined resid mtg tot cur yr
+HS|HS10691|U.s., pol sub other residen mtg tot cur yr
+HS|HS10692|U.s., pol sub defined comrcl mtg t cur yr
+HS|HS10693|U.s., pol sub other comercl mtg tot cur yr
+HS|HS10696|U.s., special sngle cl mtg bckd tot cur yr
+HS|HS10697|U.s., special defined resid mtg tot cur yr
+HS|HS10698|U.s., special other residen mtg tot cur yr
+HS|HS10699|U.s., special defined comrcl mtg tot cur
+HS|HS10700|U.s., special other comercl mtg tot cur yr
+HS|HS10703|Industrial sngl cl mtg back ast tcy
+HS|HS10704|Industrial defined multi-cl resi tcy
+HS|HS10705|Industrial other multi-cl resid tcy
+HS|HS10706|Industrial defined multi-cl comm tcy
+HS|HS10707|Industrial other multi-cl comm tcy
+HS|HS03743|Cred tennt loan iss obligation tcy
+HS|HS10709|Credit tenant loans sngl cl mtg back ast tcy
+HS|HS03744|Credit tenant loans totals t cur y
+HS|HS10711|Hybrid secur sngl cl mtg back ast tcy
+HS|HS10712|Hybrid secur defined multi-cl resi tcy
+HS|HS10713|Hybrid secur other multi-cl resid tcy
+HS|HS10714|Hybrid secur defined multi-cl comm tcy
+HS|HS10715|Hybrid secur other multi-cl comm tcy
+HS|HS06782|Us govt sngle cl mtg bckd % cr yr
+HS|HS11963|Othr gov sngle cl mtg bckd % cr yr
+HS|HS11964|Othr gov defined resid mtg % cr yr
+HS|HS11965|Othr gov other residen mtg % cr yr
+HS|HS11966|Othr gov defined comrcl mtg % cr yr
+HS|HS11967|Othr gov other comercl mtg % cr yr
+HS|HS11970|U.s., s t & p sngle cl mtg bckd % cr yr
+HS|HS11971|U.s., s t & p defined resid mtg % cr yr
+HS|HS11972|U.s., s t & p other residen mtg % cr yr
+HS|HS11973|U.s., s t & p defined comrcl mtg % cr yr
+HS|HS11974|U.s., s t & p other comercl mtg % cr yr
+HS|HS11977|U.s., pol sub sngle cl mtg bckd % cr yr
+HS|HS11978|U.s., pol sub defined resid mtg % cr yr
+HS|HS11979|U.s., pol sub other residen mtg % cr yr
+HS|HS11980|U.s., pol sub defined comrcl mtg % cr yr
+HS|HS11981|U.s., pol sub other comercl mtg % cr yr
+HS|HS11984|U.s., special sngle cl mtg bckd % cr yr
+HS|HS11985|U.s., special defined resid mtg % cr yr
+HS|HS11986|U.s., special other residen mtg % cr yr
+HS|HS11987|U.s., special defined comrcl mtg % cr yr
+HS|HS11988|U.s., special other comercl mtg % cr yr
+HS|HS11991|Industrial sngl cl mtg back ast % cy
+HS|HS11992|Industrial defined multi-cl resi %cy
+HS|HS11993|Industrial other multi-cl resid % cy
+HS|HS11994|Industrial defined multi-cl comm %cy
+HS|HS11995|Industrial other multi-cl comm % cy
+HS|HS06857|Cred tennt loan iss obligation % cy
+HS|HS11997|Credit tenant loans sngl cl mtg back ast % cy
+HS|HS06858|Credit tenant loans totals % cr yr
+HS|HS11999|Hybrid secur sngl cl mtg back ast % cy
+HS|HS12000|Hybrid secur defined multi-cl resi %cy
+HS|HS12001|Hybrid secur other multi-cl resid % cy
+HS|HS12002|Hybrid secur defined multi-cl comm %cy
+HS|HS12003|Hybrid secur other multi-cl comm % cy
+HS|HS03522|Us govt sngle cl mtg bckd col6 pr y
+HS|HS10718|Othr gov sngle cl mtg bckd col6 pry
+HS|HS10719|Othr gov defined resid mtg col6 pry
+HS|HS10720|Othr gov other residen mtg col6 pry
+HS|HS10721|Othr gov defined comrcl mtg t col6 pry
+HS|HS10722|Othr gov other comercl mtg col6 pry
+HS|HS10725|U.s., s t & p sngle cl mtg bckd col6 pry
+HS|HS10726|U.s., s t & p defined resid mtg col6 pry
+HS|HS10727|U.s., s t & p other residen mtg col6 pry
+HS|HS10728|U.s., s t & p defined comrcl mtg t c6 pry
+HS|HS10729|U.s., s t & p other comercl mtg col6 pry
+HS|HS10732|U.s., pol sub sngle cl mtg bckd col6 pry
+HS|HS10733|U.s., pol sub defined resid mtg col6 pry
+HS|HS10734|U.s., pol sub other residen mtg col6 pry
+HS|HS10735|U.s., pol sub defined comrcl mtg col6 pr
+HS|HS10736|U.s., pol sub other comercl mtg col6 pry
+HS|HS10739|U.s., special sngle cl mtg bckd col6 pry
+HS|HS10740|U.s., special defined resid mtg col6 pry
+HS|HS10741|U.s., special other residen mtg col6 pry
+HS|HS10742|U.s., special defined comrcl mtg col6 pry
+HS|HS10743|U.s., special other comercl mtg col6 pry
+HS|HS10746|Industrial sngl cl mtg back ast col6
+HS|HS10747|Industrial defined multi-cl resi  col6
+HS|HS10748|Industrial other multi-cl resid col6
+HS|HS10749|Industrial defined multi-cl comm  col6
+HS|HS10750|Industrial other multi-cl comm col6
+HS|HS03766|Cred tennt loan iss obligation col6
+HS|HS10752|Credit tenant loans sngl cl mtg back ast col6
+HS|HS03767|Credit tenant loans totals col6
+HS|HS10754|Hybrid secur sngl cl mtg back ast col6
+HS|HS10755|Hybrid secur defined multi-cl resi col6
+HS|HS10756|Hybrid secur other multi-cl resid col6
+HS|HS10757|Hybrid secur defined multi-cl comm col6
+HS|HS10758|Hybrid secur other multi-cl comm col6
+HS|HS06813|Us govt sngle cl mtg bckd % pr yr
+HS|HS12006|Othr gov sngle cl mtg bckd % pry
+HS|HS12007|Othr gov defined resid mtg % pry
+HS|HS12008|Othr gov other residen mtg % pry
+HS|HS12009|Othr gov defined comrcl mtg % pry
+HS|HS12010|Othr gov other comercl mtg % pry
+HS|HS12013|U.s., s t & p sngle cl mtg bckd % pry
+HS|HS12014|U.s., s t & p defined resid mtg % pry
+HS|HS12015|U.s., s t & p other residen mtg % pry
+HS|HS12016|U.s., s t & p defined comrcl mtg % pry
+HS|HS12017|U.s., s t & p other comercl mtg % pry
+HS|HS12020|U.s., pol sub sngle cl mtg bckd % pry
+HS|HS12021|U.s., pol sub defined resid mtg % pry
+HS|HS12022|U.s., pol sub other residen mtg % pry
+HS|HS12023|U.s., pol sub defined comrcl mtg % pry
+HS|HS12024|U.s., pol sub other comercl mtg % pry
+HS|HS12027|U.s., special sngle cl mtg bckd % pry
+HS|HS12028|U.s., special defined resid mtg % pry
+HS|HS12029|U.s., special other residen mtg % pry
+HS|HS12030|U.s., special defined comrcl mtg % pry
+HS|HS12031|U.s., special other comercl mtg % pry
+HS|HS12034|Industrial sngl cl mtg back ast % pry
+HS|HS12035|Industrial defined multi-cl resi % pry
+HS|HS12036|Industrial other multi-cl resid % pry
+HS|HS12037|Industrial defined multi-cl comm % pry
+HS|HS12038|Industrial other multi-cl comm % pry
+HS|HS06880|Cred tennt loan iss obligation % py
+HS|HS12040|Credit tenant loans sngl cl mtg back ast % pry
+HS|HS06881|Credit tenant loans totals % pr yr
+HS|HS12042|Hybrid secur sngl cl mtg back ast % pry
+HS|HS12043|Hybrid secur defined multi-cl resi % pry
+HS|HS12044|Hybrid secur other multi-cl resid % pry
+HS|HS12045|Hybrid secur defined multi-cl comm % pry
+HS|HS12046|Hybrid secur other multi-cl comm % pry
+HS|HS03553|Us govt sngle cl mtg bckd pub trade
+HS|HS10761|Othr gov sngle cl mtg bckd pub trade
+HS|HS10762|Othr gov defined resid mtg pub trade
+HS|HS10763|Othr gov other residen mtg pub trade
+HS|HS10764|Othr gov defined comrcl mtg t pub trade
+HS|HS10765|Othr gov other comercl mtg pub trade
+HS|HS10768|U.s., s t & p sngle cl mtg bckd pub trade
+HS|HS10769|U.s., s t & p defined resid mtg pub trade
+HS|HS10770|U.s., s t & p other residen mtg pub trade
+HS|HS10771|U.s., s t & p defined comrcl mtg t pub trade
+HS|HS10772|U.s., s t & p other comercl mtg pub trade
+HS|HS10775|U.s., pol sub sngle cl mtg bckd pub trade
+HS|HS10776|U.s., pol sub defined resid mtg pub trade
+HS|HS10777|U.s., pol sub other residen mtg pub trade
+HS|HS10778|U.s., pol sub defined comrcl mtg pub trade
+HS|HS10779|U.s., pol sub other comercl mtg pub trade
+HS|HS10782|U.s., special sngle cl mtg bckd pub trade
+HS|HS10783|U.s., special defined resid mtg pub trade
+HS|HS10784|U.s., special other residen mtg pub trade
+HS|HS10785|U.s., special defined comrcl mtg pub trade
+HS|HS10786|U.s., special other comercl mtg pub trade
+HS|HS10789|Industrial sngl cl mtg back ast pub trade
+HS|HS10790|Industrial defined multi-cl resi pub trade
+HS|HS10791|Industrial other multi-cl resid pub trade
+HS|HS10792|Industrial defined multi-cl comm pub trade
+HS|HS10793|Industrial other multi-cl comm pub trade
+HS|HS03789|Cred tennt loan iss obligation trad
+HS|HS10795|Credit tenant loans sngl cl mtg back ast trade
+HS|HS03790|Credit tenant loans totals publ tra
+HS|HS10797|Hybrid secur sngl cl mtg back ast pub trade
+HS|HS10798|Hybrid secur defined multi-cl resi pub trade
+HS|HS10799|Hybrid secur other multi-cl resid pub trade
+HS|HS10800|Hybrid secur defined multi-cl comm pub trade
+HS|HS10801|Hybrid secur other multi-cl comm pub trade
+HS|HS03584|Us govt sngle cl mtg bckd priv plac
+HS|HS10804|Othr gov sngle cl mtg bckd priv place
+HS|HS10805|Othr gov defined resid mtg priv place
+HS|HS10806|Othr gov other residen mtg priv place
+HS|HS10807|Othr gov defined comrcl mtg priv place
+HS|HS10808|Othr gov other comercl mtg priv place
+HS|HS10811|U.s., s t & p sngle cl mtg bckd priv place
+HS|HS10812|U.s., s t & p defined resid mtg priv place
+HS|HS10813|U.s., s t & p other residen mtg priv place
+HS|HS10814|U.s., s t & p defined comrcl mtg priv pla
+HS|HS10815|U.s., s t & p other comercl mtg priv place
+HS|HS10818|U.s., pol sub sngle cl mtg bckd priv place
+HS|HS10819|U.s., pol sub defined resid mtg priv place
+HS|HS10820|U.s., pol sub other residen mtg priv place
+HS|HS10821|U.s., pol sub defined comrcl mtg priv place
+HS|HS10822|U.s., pol sub other comercl mtg priv place
+HS|HS10825|U.s., special sngle cl mtg bckd priv place
+HS|HS10826|U.s., special defined resid mtg priv place
+HS|HS10827|U.s., special other residen mtg priv place
+HS|HS10828|U.s., special defined comrcl mtg priv place
+HS|HS10829|U.s., special other comercl mtg priv place
+HS|HS10832|Industrial sngl cl mtg back ast priv place
+HS|HS10833|Industrial defined multi-cl resi priv place
+HS|HS10834|Industrial other multi-cl resid priv place
+HS|HS10835|Industrial defined multi-cl comm priv place
+HS|HS10836|Industrial other multi-cl comm priv place
+HS|HS03812|Cred tennt loan iss obligation priv
+HS|HS10838|Credit tenant loans sngle cl mtg bckd priv place
+HS|HS03813|Credit tenant loans totals priv pla
+HS|HS10840|Hybrid secur sngl cl mtg back ast priv place
+HS|HS10841|Hybrid secur defined multi-cl resi priv place
+HS|HS10842|Hybrid secur other multi-cl resid priv place
+HS|HS10843|Hybrid secur defined multi-cl comm priv place
+HS|HS10844|Hybrid secur other multi-cl comm priv place
+HS|HS03821|Mat 1y or ls tot issuer obligations
+HS|HS14350|Mat 1y or ls tot residential mtg-bk secur
+HS|HS14351|Mat 1y or ls tot commercial mtg-bk secur
+HS|HS14352|Mat 1y or ls tot oth loan-bk struc secur
+HS|HS03827|Mat 1y or ls tot totals
+HS|HS06889|Mat 1y or ls totals as % of cy
+HS|HS03828|Mat 1y or ls tot py issuer obligations
+HS|HS14353|Mat 1y or ls tot py residential mtg-bk secur
+HS|HS14354|Mat 1y or ls tot py commercial mtg-bk secur
+HS|HS14355|Mat 1y or ls tot py oth loan-bk struc secur
+HS|HS03834|Mat 1y or ls tot py totals
+HS|HS06890|Mat 1y or ls tot as % of py total
+HS|HS03835|Mat 1y or ls pub trad issuer obligations
+HS|HS14356|Mat 1y or ls pub trad residential mtg-bk secur
+HS|HS14357|Mat 1y or ls pub trad commercial mtg-bk secur
+HS|HS14358|Mat 1y or ls pub trad oth loan-bk struc secur
+HS|HS03841|Mat 1y or ls pub trad totals
+HS|HS06891|Mat 1y or ls pub trad tot % tot cy
+HS|HS06892|Mat 1y or ls pub trad tot % bnd cy
+HS|HS03842|Mat 1y or ls priv plac issuer obligations
+HS|HS14359|Mat 1y or ls priv plac residential mtg-bk secur
+HS|HS14360|Mat 1y or ls priv plac commercial mtg-bk secur
+HS|HS14361|Mat 1y or ls priv plac oth loan-bk struc secur
+HS|HS03848|Mat 1y or ls priv plac totals
+HS|HS06893|Mat 1y or ls priv plac tot % tot cy
+HS|HS06894|Mat 1y or ls priv plac tot % bnd cy
+HS|HS03849|Mat 1-5 yrs tot issuer obligations
+HS|HS14386|Mat 1-5 yrs tot residential mtg-bk secur
+HS|HS14387|Mat 1-5 yrs tot commercial mtg-bk secur
+HS|HS14388|Mat 1-5 yrs tot oth loan-bk struc secur
+HS|HS03855|Mat 1-5 yrs tot totals
+HS|HS06895|Mat 1-5 yrs totals as % of cy
+HS|HS03856|Mat 1-5 yrs tot py issuer obligations
+HS|HS14389|Mat 1-5 yrs tot py residential mtg-bk secur
+HS|HS14390|Mat 1-5 yrs tot py commercial mtg-bk secur
+HS|HS14391|Mat 1-5 yrs tot py oth loan-bk struc secur
+HS|HS03862|Mat 1-5 yrs tot py totals
+HS|HS06896|Mat 1-5 yrs tot as % of py total
+HS|HS03863|Mat 1-5 yrs pub trad issuer obligations
+HS|HS14392|Mat 1-5 yrs pub trad residential mtg-bk secur
+HS|HS14393|Mat 1-5 yrs pub trad commercial mtg-bk secur
+HS|HS14394|Mat 1-5 yrs pub trad oth loan-bk struc secur
+HS|HS03869|Mat 1-5 yrs pub trad totals
+HS|HS06897|Mat 1-5 yrs pub trad tot % tot cy
+HS|HS06898|Mat 1-5 yrs pub trad tot % bnd cy
+HS|HS03870|Mat 1-5 yrs priv plac issuer obligations
+HS|HS14395|Mat 1-5 yrs priv plac residential mtg-bk secur
+HS|HS14396|Mat 1-5 yrs priv plac commercial mtg-bk secur
+HS|HS14397|Mat 1-5 yrs priv plac oth loan-bk struc secur
+HS|HS03876|Mat 1-5 yrs priv plac totals
+HS|HS06899|Mat 1-5 yrs priv plac tot % tot cy
+HS|HS06900|Mat 1-5 yrs priv plac tot % bnd cy
+HS|HS03877|Mat 5-10 yrs tot issuer obligations
+HS|HS14422|Mat 5-10 yrs tot residential mtg-bk secur
+HS|HS14423|Mat 5-10 yrs tot commercial mtg-bk secur
+HS|HS14424|Mat 5-10 yrs tot oth loan-bk struc secur
+HS|HS03883|Mat 5-10 yrs tot totals
+HS|HS06901|Mat 5-10 yrs totals as % of cy
+HS|HS03884|Mat 5-10 yrs tot py issuer obligations
+HS|HS14425|Mat 5-10 yrs tot py residential mtg-bk secur
+HS|HS14426|Mat 5-10 yrs tot py commercial mtg-bk secur
+HS|HS14427|Mat 5-10 yrs tot py oth loan-bk struc secur
+HS|HS03890|Mat 5-10 yrs tot py totals
+HS|HS06902|Mat 5-10 yrs tot as % of py total
+HS|HS03891|Mat 5-10 yrs pub trad issuer obligations
+HS|HS14428|Mat 5-10 yrs pub trad residential mtg-bk secur
+HS|HS14429|Mat 5-10 yrs pub trad commercial mtg-bk secur
+HS|HS14430|Mat 5-10 yrs pub trad oth loan-bk struc secur
+HS|HS03897|Mat 5-10 yrs pub trad totals
+HS|HS06903|Mat 5-10 yrs pub trad tot % tot cy
+HS|HS06904|Mat 5-10 yrs pub trad tot % bnd cy
+HS|HS03898|Mat 5-10 yrs priv plac issuer obligations
+HS|HS14431|Mat 5-10 yrs priv plac residential mtg-bk secur
+HS|HS14432|Mat 5-10 yrs priv plac commercial mtg-bk secur
+HS|HS14433|Mat 5-10 yrs priv plac oth loan-bk struc secur
+HS|HS03904|Mat 5-10 yrs priv plac totals
+HS|HS06905|Mat 5-10 yrs priv plac tot % tot cy
+HS|HS06906|Mat 5-10 yrs priv plac tot % bnd cy
+HS|HS03905|Mat 10-20 yrs tot issuer obligations
+HS|HS14458|Mat 10-20 yrs tot residential mtg-bk secur
+HS|HS14459|Mat 10-20 yrs tot commercial mtg-bk secur
+HS|HS14460|Mat 10-20 yrs tot oth loan-bk struc secur
+HS|HS03911|Mat 10-20 yrs tot totals
+HS|HS06907|Mat 10-20 yrs totals as % of cy
+HS|HS03912|Mat 10-20 yrs tot py issuer obligations
+HS|HS14461|Mat 10-20 yrs tot py residential mtg-bk secur
+HS|HS14462|Mat 10-20 yrs tot py commercial mtg-bk secur
+HS|HS14463|Mat 10-20 yrs tot py oth loan-bk struc secur
+HS|HS03918|Mat 10-20 yrs tot py totals
+HS|HS06908|Mat 10-20 yrs tot as % of py total
+HS|HS03919|Mat 10-20 yrs pub trad issuer obligations
+HS|HS14464|Mat 10-20 yrs pub trad residential mtg-bk secur
+HS|HS14465|Mat 10-20 yrs pub trad commercial mtg-bk secur
+HS|HS14466|Mat 10-20 yrs pub trad oth loan-bk struc secur
+HS|HS03925|Mat 10-20 yrs pub trad totals
+HS|HS06909|Mat 10-20 yrs pub trad tot % tot cy
+HS|HS06910|Mat 10-20 yrs pub trad tot % bnd cy
+HS|HS03926|Mat 10-20 yrs priv plac issuer obligations
+HS|HS14467|Mat 10-20 yrs priv plac residential mtg-bk secur
+HS|HS14468|Mat 10-20 yrs priv plac commercial mtg-bk secur
+HS|HS14469|Mat 10-20 yrs priv plac oth loan-bk struc secur
+HS|HS03932|Mat 10-20 yrs priv plac totals
+HS|HS06911|Mat 10-20 yrs priv plac tot % tot cy
+HS|HS06912|Mat 10-20 yrs priv plac tot % bnd cy
+HS|HS03933|Mat ov 20 yrs tot issuer obligations
+HS|HS14494|Mat ov 20 yrs tot residential mtg-bk secur
+HS|HS14495|Mat ov 20 yrs tot commercial mtg-bk secur
+HS|HS14496|Mat ov 20 yrs tot oth loan-bk struc secur
+HS|HS03939|Mat ov 20 yrs tot totals
+HS|HS06913|Mat ov 20 yrs totals as % of cy
+HS|HS03940|Mat ov 20 yrs tot py issuer obligations
+HS|HS14497|Mat ov 20 yrs tot py residential mtg-bk secur
+HS|HS14498|Mat ov 20 yrs tot py commercial mtg-bk secur
+HS|HS14499|Mat ov 20 yrs tot py oth loan-bk struc secur
+HS|HS03946|Mat ov 20 yrs tot py totals
+HS|HS06914|Mat ov 20 yrs tot as % of py total
+HS|HS03947|Mat ov 20 yrs pub trad issuer obligations
+HS|HS14500|Mat ov 20 yrs pub trad residential mtg-bk secur
+HS|HS14501|Mat ov 20 yrs pub trad commercial mtg-bk secur
+HS|HS14502|Mat ov 20 yrs pub trad oth loan-bk struc secur
+HS|HS03953|Mat ov 20 yrs pub trad totals
+HS|HS06915|Mat ov 20 yrs pub trad tot % tot cy
+HS|HS06916|Mat ov 20 yrs pub trad tot % bnd cy
+HS|HS03954|Mat ov 20 yrs priv plac issuer obligations
+HS|HS14503|Mat ov 20 yrs priv plac residential mtg-bk secur
+HS|HS14504|Mat ov 20 yrs priv plac commercial mtg-bk secur
+HS|HS14505|Mat ov 20 yrs priv plac oth loan-bk struc secur
+HS|HS03960|Mat ov 20 yrs priv plac totals
+HS|HS06917|Mat ov 20 yrs priv plac tot % tot cy
+HS|HS06918|Mat ov 20 yrs priv plac tot % bnd cy
+HS|HS03961|Tot cy tot issuer obligations
+HS|HS14530|Tot cy tot residential mtg-bk secur
+HS|HS14531|Tot cy tot commercial mtg-bk secur
+HS|HS14532|Tot cy tot oth loan-bk struc secur
+HS|HS03967|Tot cy tot totals
+HS|HS06919|Tot cy totals as % of cy
+HS|HS03968|Tot cy pub trad issuer obligations
+HS|HS14533|Tot cy pub trad residential mtg-bk secur
+HS|HS14534|Tot cy pub trad commercial mtg-bk secur
+HS|HS14535|Tot cy pub trad oth loan-bk struc secur
+HS|HS03974|Tot cy pub trad totals
+HS|HS06920|Tot cy pub trad tot % tot cy
+HS|HS06921|Tot cy pub trad tot % bnd cy
+HS|HS03975|Tot cy priv plac issuer obligations
+HS|HS14536|Tot cy priv plac residential mtg-bk secur
+HS|HS14537|Tot cy priv plac commercial mtg-bk secur
+HS|HS14538|Tot cy priv plac oth loan-bk struc secur
+HS|HS03981|Tot cy priv plac totals
+HS|HS06922|Tot cy priv plac tot % tot cy
+HS|HS06923|Tot cy priv plac tot % bnd cy
+HS|HS06924|Pct cy tot issuer obligations
+HS|HS14563|Pct cy tot residential mtg-bk secur
+HS|HS14564|Pct cy tot commercial mtg-bk secur
+HS|HS14565|Pct cy tot oth loan-bk struc secur
+HS|HS06930|Pct cy tot totals
+HS|HS06931|Pct cy pub trad issuer obligations
+HS|HS14566|Pct cy pub trad residential mtg-bk secur
+HS|HS14567|Pct cy pub trad commercial mtg-bk secur
+HS|HS14568|Pct cy pub trad oth loan-bk struc secur
+HS|HS06937|Pct cy pub trad totals
+HS|HS06938|Pct cy priv plac issuer obligations
+HS|HS14569|Pct cy priv plac residential mtg-bk secur
+HS|HS14570|Pct cy priv plac commercial mtg-bk secur
+HS|HS14571|Pct cy priv plac oth loan-bk struc secur
+HS|HS06944|Pct cy priv plac totals
+HS|HS03982|Tot py tot py issuer obligations
+HS|HS14596|Tot py tot py residential mtg-bk secur
+HS|HS14597|Tot py tot py commercial mtg-bk secur
+HS|HS14598|Tot py tot py oth loan-bk struc secur
+HS|HS03988|Tot py tot py totals
+HS|HS06945|Tot py tot as % of py total
+HS|HS03989|Tot py pub trad issuer obligations
+HS|HS14599|Tot py pub trad residential mtg-bk secur
+HS|HS14600|Tot py pub trad commercial mtg-bk secur
+HS|HS14601|Tot py pub trad oth loan-bk struc secur
+HS|HS03995|Tot py pub trad totals
+HS|HS03996|Tot py priv plac issuer obligations
+HS|HS14602|Tot py priv plac residential mtg-bk secur
+HS|HS14603|Tot py priv plac commercial mtg-bk secur
+HS|HS14604|Tot py priv plac oth loan-bk struc secur
+HS|HS04002|Tot py priv plac totals
+HS|HS06946|Pct py tot py issuer obligations
+HS|HS14630|Pct py tot py residential mtg-bk secur
+HS|HS14631|Pct py tot py commercial mtg-bk secur
+HS|HS14632|Pct py tot py oth loan-bk struc secur
+HS|HS06952|Pct py tot py totals
+HS|HS06953|Pct py pub trad issuer obligations
+HS|HS14633|Pct py pub trad residential mtg-bk secur
+HS|HS14634|Pct py pub trad commercial mtg-bk secur
+HS|HS14635|Pct py pub trad oth loan-bk struc secur
+HS|HS06959|Pct py pub trad totals
+HS|HS06960|Pct py priv plac issuer obligations
+HS|HS14636|Pct py priv plac residential mtg-bk secur
+HS|HS14637|Pct py priv plac commercial mtg-bk secur
+HS|HS14638|Pct py priv plac oth loan-bk struc secur
+HS|HS06966|Pct py priv plac totals
+HS|HS04003|Tot pub trad tot issuer obligations
+HS|HS14663|Tot pub trad tot residential mtg-bk secur
+HS|HS14664|Tot pub trad tot commercial mtg-bk secur
+HS|HS14665|Tot pub trad tot oth loan-bk struc secur
+HS|HS04009|Tot pub trad tot totals
+HS|HS06967|Tot pub trad totals as % of cy
+HS|HS04010|Tot pub trad tot py issuer obligations
+HS|HS14666|Tot pub trad tot py residential mtg-bk secur
+HS|HS14667|Tot pub trad tot py commercial mtg-bk secur
+HS|HS14668|Tot pub trad tot py oth loan-bk struc secur
+HS|HS04016|Tot pub trad tot py totals
+HS|HS06968|Tot pub trad tot as % of py total
+HS|HS04017|Tot pub trad pub trad issuer obligations
+HS|HS14669|Tot pub trad pub trad residential mtg-bk secur
+HS|HS14670|Tot pub trad pub trad commercial mtg-bk secur
+HS|HS14671|Tot pub trad pub trad oth loan-bk struc secur
+HS|HS04023|Tot pub trad pub trad totals
+HS|HS06969|Tot pub trad pub trad tot % tot cy
+HS|HS06970|Tot pub trad pub trad tot % bnd cy
+HS|HS04024|Tot priv plac tot issuer obligations
+HS|HS14696|Tot priv plac tot residential mtg-bk secur
+HS|HS14697|Tot priv plac tot commercial mtg-bk secur
+HS|HS14698|Tot priv plac tot oth loan-bk struc secur
+HS|HS04030|Tot priv plac tot totals
+HS|HS06971|Tot priv plac totals as % of cy
+HS|HS04031|Tot priv plac tot py issuer obligations
+HS|HS14699|Tot priv plac tot py residential mtg-bk secur
+HS|HS14700|Tot priv plac tot py commercial mtg-bk secur
+HS|HS14701|Tot priv plac tot py oth loan-bk struc secur
+HS|HS04037|Tot priv plac tot py totals
+HS|HS06972|Tot priv plac tot as % of py total
+HS|HS04038|Tot priv plac priv plc issuer obligations
+HS|HS14702|Tot priv plac priv plac residential mtg-bk secur
+HS|HS14703|Tot priv plac priv plac commercial mtg-bk secur
+HS|HS14704|Tot priv plac priv plac oth loan-bk struc secur
+HS|HS04044|Tot priv plac priv plc totals
+HS|HS06973|Tot priv plac priv plc tot % tot cy
+HS|HS06974|Tot priv plac priv plc tot % bnd cy
+HS|HS03631|Parent sb sngl cl mtg back ast -1yr
+HS|HS03632|Parent sb defined multi-cl resi -1y
+HS|HS03633|Parent sb other multi-cl resid -1yr
+HS|HS03634|Parent sb defined multi-cl comm -1y
+HS|HS03635|Parent sb other multi-cl comm -1yr
+HS|HS03822|Bnd cur yr sng cl mtg back 1yr or l
+HS|HS03823|Bnd cur yr defined multi resi -1yr
+HS|HS03824|Bnd cur yr other multi resi 1yr les
+HS|HS03825|Bnd cur yr defined multi comm -1yr
+HS|HS03826|Bnd cur yr other multi comm 1yr les
+HS|HS03829|Bnd pri yr sng cl mtg back 1yr or l
+HS|HS03830|Bnd pri yr defined multi resi -1yr
+HS|HS03831|Bnd pri yr other multi resi 1yr les
+HS|HS03832|Bnd pri yr defined multi comm -1yr
+HS|HS03833|Bnd pri yr other multi comm 1yr les
+HS|HS03836|Pub tr bnd sng cl mtg back 1yr or l
+HS|HS03837|Pub tr bnd defined multi resi -1yr
+HS|HS03838|Pub tr bnd other multi resi 1yr les
+HS|HS03839|Pub tr bnd defined multi comm -1yr
+HS|HS03840|Pub tr bnd other multi comm 1yr les
+HS|HS03843|Prv pl bnd sng cl mtg back 1yr or l
+HS|HS03844|Prv pl bnd defined multi resi -1yr
+HS|HS03845|Prv pl bnd other multi resi 1yr les
+HS|HS03846|Prv pl bnd defined multi comm -1yr
+HS|HS03847|Prv pl bnd other multi comm 1yr les
+HS|HS03654|Parent sb sngl cl mtg back ast 1-5y
+HS|HS03655|Parent sb defined multi-cl resi 1-5
+HS|HS03656|Parent sb other multi-cl resid 1-5y
+HS|HS03657|Parent sb defined multi-cl comm 1-5
+HS|HS03658|Parent sb other multi-cl comm 1-5yr
+HS|HS03850|Bnd cur yr sng cl mtg back 1-5 yrs
+HS|HS03851|Bnd cur yr defined multi resi 1-5yr
+HS|HS03852|Bnd cur yr other multi resi 1-5 yrs
+HS|HS03853|Bnd cur yr defined multi comm 1-5yr
+HS|HS03854|Bnd cur yr other multi comm 1-5 yrs
+HS|HS03857|Bnd pri yr sng cl mtg back 1-5 yrs
+HS|HS03858|Bnd pri yr defined multi resi 1-5yr
+HS|HS03859|Bnd pri yr other multi resi 1-5 yrs
+HS|HS03860|Bnd pri yr defined multi comm 1-5yr
+HS|HS03861|Bnd pri yr other multi comm 1-5 yrs
+HS|HS03864|Pub tr bnd sng cl mtg back 1-5 yrs
+HS|HS03865|Pub tr bnd defined multi resi 1-5yr
+HS|HS03866|Pub tr bnd other multi resi 1-5 yrs
+HS|HS03867|Pub tr bnd defined multi comm 1-5yr
+HS|HS03868|Pub tr bnd other multi comm 1-5 yrs
+HS|HS03871|Prv pl bnd sng cl mtg back 1-5 yrs
+HS|HS03872|Prv pl bnd defined multi resi 1-5yr
+HS|HS03873|Prv pl bnd other multi resi 1-5 yrs
+HS|HS03874|Prv pl bnd defined multi comm 1-5yr
+HS|HS03875|Prv pl bnd other multi comm 1-5 yrs
+HS|HS03677|Parent sb sngl cl mtg back ast 5-10
+HS|HS03678|Parent sb defined multi-cl resi -10
+HS|HS03679|Parent sb other multi-cl resid 5-10
+HS|HS03680|Parent sb defined multi-cl comm -10
+HS|HS03681|Parent sb other multi-cl comm 5-10y
+HS|HS03878|Bnd cur yr sng cl mtg back 5-10yrs
+HS|HS03879|Bnd cur yr defined multi resi 5-10y
+HS|HS03880|Bnd cur yr other multi resi 5-10yrs
+HS|HS03881|Bnd cur yr defined multi comm 5-10y
+HS|HS03882|Bnd cur yr other multi comm 5-10yrs
+HS|HS03885|Bnd pri yr sng cl mtg back 5-10yrs
+HS|HS03886|Bnd pri yr defined multi resi 5-10y
+HS|HS03887|Bnd pri yr other multi resi 5-10yrs
+HS|HS03888|Bnd pri yr defined multi comm 5-10y
+HS|HS03889|Bnd pri yr other multi comm 5-10yrs
+HS|HS03892|Pub tr bnd sng cl mtg back 5-10yrs
+HS|HS03893|Pub tr bnd defined multi resi 5-10y
+HS|HS03894|Pub tr bnd other multi resi 5-10yrs
+HS|HS03895|Pub tr bnd defined multi comm 5-10y
+HS|HS03896|Pub tr bnd other multi comm 5-10yrs
+HS|HS03899|Prv pl bnd sng cl mtg back 5-10yrs
+HS|HS03900|Prv pl bnd defined multi resi 5-10y
+HS|HS03901|Prv pl bnd other multi resi 5-10yrs
+HS|HS03902|Prv pl bnd defined multi comm 5-10y
+HS|HS03903|Prv pl bnd other multi comm 5-10yrs
+HS|HS03700|Parent sb sngl cl mtg back ast -20y
+HS|HS03701|Parent sb defined multi-cl resi -20
+HS|HS03702|Parent sb other multi-cl resid -20y
+HS|HS03703|Parent sb defined multi-cl comm -20
+HS|HS03704|Parent sb other multi-cl comm -20yr
+HS|HS03906|Bnd cur yr sng cl mtg back 10-20yrs
+HS|HS03907|Bnd cur yr defined multi resi 10-20
+HS|HS03908|Bnd cur yr other multi resi 10-20yr
+HS|HS03909|Bnd cur yr defined multi comm 10-20
+HS|HS03910|Bnd cur yr other multi comm 10-20yr
+HS|HS03913|Bnd pri yr sng cl mtg back 10-20yrs
+HS|HS03914|Bnd pri yr defined multi resi 10-20
+HS|HS03915|Bnd pri yr other multi resi 10-20yr
+HS|HS03916|Bnd pri yr defined multi comm 10-20
+HS|HS03917|Bnd pri yr other multi comm 10-20yr
+HS|HS03920|Pub tr bnd sng cl mtg back 10-20yrs
+HS|HS03921|Pub tr bnd defined multi resi 10-20
+HS|HS03922|Pub tr bnd other multi resi 10-20yr
+HS|HS03923|Pub tr bnd defined multi comm 10-20
+HS|HS03924|Pub tr bnd other multi comm 10-20yr
+HS|HS03927|Prv pl bnd sng cl mtg back 10-20yrs
+HS|HS03928|Prv pl bnd defined multi resi 10-20
+HS|HS03929|Prv pl bnd other multi resi 10-20yr
+HS|HS03930|Prv pl bnd defined multi comm 10-20
+HS|HS03931|Prv pl bnd other multi comm 10-20yr
+HS|HS03723|Parent sb sngl cl mtg back ast +20y
+HS|HS03724|Parent sb defined multi-cl resi +20
+HS|HS03725|Parent sb other multi-cl resid +20y
+HS|HS03726|Parent sb defined multi-cl comm +20
+HS|HS03727|Parent sb other multi-cl comm +20yr
+HS|HS03934|Bnd cur yr sng cl mtg back over 20y
+HS|HS03935|Bnd cur yr defined multi resi 20+yr
+HS|HS03936|Bnd cur yr other multi resi 20+yrs
+HS|HS03937|Bnd cur yr defined multi comm 20+yr
+HS|HS03938|Bnd cur yr other multi comm 20+yrs
+HS|HS03941|Bnd pri yr sng cl mtg back 20+yrs
+HS|HS03942|Bnd pri yr defined multi resi 20+yr
+HS|HS03943|Bnd pri yr other multi resi 20+yrs
+HS|HS03944|Bnd pri yr defined multi comm 20+yr
+HS|HS03945|Bnd pri yr other multi comm 20+yrs
+HS|HS03948|Pub tr bnd sng cl mtg back 20+yrs
+HS|HS03949|Pub tr bnd defined multi resi 20+yr
+HS|HS03950|Pub tr bnd other multi resi 20+yrs
+HS|HS03951|Pub tr bnd defined multi comm 20+yr
+HS|HS03952|Pub tr bnd other multi comm 20+yrs
+HS|HS03955|Prv pl bnd sng cl mtg back 20+yrs
+HS|HS03956|Prv pl bnd defined multi resi 20+yr
+HS|HS03957|Prv pl bnd other multi resi 20+yrs
+HS|HS03958|Prv pl bnd defined multi comm 20+yr
+HS|HS03959|Prv pl bnd other multi comm 20+yrs
+HS|HS03746|Parent sb sngl cl mtg back ast tcy
+HS|HS03747|Parent sb defined multi-cl resi tcy
+HS|HS03748|Parent sb other multi-cl resid tcy
+HS|HS03749|Parent sb defined multi-cl comm tcy
+HS|HS03750|Parent sb other multi-cl comm tcy
+HS|HS03962|Bnd cur yr sng cl mtg back t cur yr
+HS|HS03963|Bnd cur yr defined multi resi t c y
+HS|HS03964|Bnd cur yr other multi resi t c y
+HS|HS03965|Bnd cur yr defined multi comm t c y
+HS|HS03966|Bnd cur yr other multi comm t c y
+HS|HS03969|Pub tr bnd sng cl mtg back t cur yr
+HS|HS03970|Pub tr bnd defined multi resi t c y
+HS|HS03971|Pub tr bnd other multi resi t c y
+HS|HS03972|Pub tr bnd defined multi comm t c y
+HS|HS03973|Pub tr bnd other multi comm t c y
+HS|HS03976|Prv pl bnd sng cl mtg back t c y
+HS|HS03977|Prv pl bnd defined multi resi t c y
+HS|HS03978|Prv pl bnd other multi resi t c y
+HS|HS03979|Prv pl bnd defined multi comm t c y
+HS|HS03980|Prv pl bnd other multi comm t c y
+HS|HS06860|Parent sb sngl cl mtg back ast % cy
+HS|HS06861|Parent sb defined multi-cl resi %cy
+HS|HS06862|Parent sb other multi-cl resid % cy
+HS|HS06863|Parent sb defined multi-cl comm %cy
+HS|HS06864|Parent sb other multi-cl comm % cy
+HS|HS06925|Bnd cur yr sng cl mtg back % cr yr
+HS|HS06926|Bnd cur yr defined multi resi % cy
+HS|HS06927|Bnd cur yr other multi resi % cr yr
+HS|HS06928|Bnd cur yr defined multi comm % cy
+HS|HS06929|Bnd cur yr other multi comm % cr yr
+HS|HS06932|Pub tr bnd sng cl mtg back % cr yr
+HS|HS06933|Pub tr bnd defined multi resi % cy
+HS|HS06934|Pub tr bnd other multi resi % cr yr
+HS|HS06935|Pub tr bnd defined multi comm % cy
+HS|HS06936|Pub tr bnd other multi comm % cr yr
+HS|HS06939|Prv pl bnd sng cl mtg back % cr yr
+HS|HS06940|Prv pl bnd defined multi resi % cy
+HS|HS06941|Prv pl bnd other multi resi % cr yr
+HS|HS06942|Prv pl bnd defined multi comm % cy
+HS|HS06943|Prv pl bnd other multi comm % cr yr
+HS|HS03769|Parent sb sngl cl mtg back ast col6
+HS|HS03770|Parent sb defined multi-cl resi c6
+HS|HS03771|Parent sb other multi-cl resid col6
+HS|HS03772|Parent sb defined multi-cl comm c6
+HS|HS03773|Parent sb other multi-cl comm col6
+HS|HS03983|Bnd pri yr sng cl mtg back col.7
+HS|HS03984|Bnd pri yr defined multi resi col.7
+HS|HS03985|Bnd pri yr other multi resi col.7
+HS|HS03986|Bnd pri yr defined multi comm col.7
+HS|HS03987|Bnd pri yr other multi comm col.7
+HS|HS03990|Pub tr bnd sng cl mtg back col.7
+HS|HS03991|Pub tr bnd defined multi resi col.7
+HS|HS03992|Pub tr bnd other multi resi col.7
+HS|HS03993|Pub tr bnd defined multi comm col.7
+HS|HS03994|Pub tr bnd other multi comm col.7
+HS|HS03997|Prv pl bnd sng cl mtg back col.7
+HS|HS03998|Prv pl bnd defined multi resi col.7
+HS|HS03999|Prv pl bnd other multi resi col.7
+HS|HS04000|Prv pl bnd defined multi comm col.7
+HS|HS04001|Prv pl bnd other multi comm col.7
+HS|HS06883|Parent sb sngl cl mtg back ast % py
+HS|HS06884|Parent sb defined multi-cl resi %py
+HS|HS06885|Parent sb other multi-cl resid % py
+HS|HS06886|Parent sb defined multi-cl comm %py
+HS|HS06887|Parent sb other multi-cl comm % py
+HS|HS06947|Bnd pri yr sng cl mtg back % pr yr
+HS|HS06948|Bnd pri yr defined multi resi % py
+HS|HS06949|Bnd pri yr other multi resi % pr yr
+HS|HS06950|Bnd pri yr defined multi comm % py
+HS|HS06951|Bnd pri yr other multi comm % pr yr
+HS|HS06954|Pub tr bnd sng cl mtg back % pr yr
+HS|HS06955|Pub tr bnd defined multi resi % py
+HS|HS06956|Pub tr bnd other multi resi % pr yr
+HS|HS06957|Pub tr bnd defined multi comm % py
+HS|HS06958|Pub tr bnd other multi comm % pr yr
+HS|HS06961|Prv pl bnd sng cl mtg back % pr yr
+HS|HS06962|Prv pl bnd defined multi resi % py
+HS|HS06963|Prv pl bnd other multi resi % pr yr
+HS|HS06964|Prv pl bnd defined multi comm % py
+HS|HS06965|Prv pl bnd other multi comm % pr yr
+HS|HS03792|Parent sb sngl cl mtg back ast trad
+HS|HS03793|Parent sb defined multi-cl resi tra
+HS|HS03794|Parent sb other multi-cl resid trad
+HS|HS03795|Parent sb defined multi-cl comm tra
+HS|HS03796|Parent sb other multi-cl comm trade
+HS|HS04004|Bnd cur yr sng cl mtg back publ tra
+HS|HS04005|Bnd cur yr defined multi resi publc
+HS|HS04006|Bnd cur yr other multi resi public
+HS|HS04007|Bnd cur yr defined multi comm publ
+HS|HS04008|Bnd cur yr other multi comm pub tra
+HS|HS04011|Bnd pri yr sng cl mtg back publ tra
+HS|HS04012|Bnd pri yr defined multi resi publc
+HS|HS04013|Bnd pri yr other multi resi pub tra
+HS|HS04014|Bnd pri yr defined multi comm pub t
+HS|HS04015|Bnd pri yr other multi comm pub tra
+HS|HS04018|Pub tr bnd sng cl mtg back publ tra
+HS|HS04019|Pub tr bnd defined multi resi publc
+HS|HS04020|Pub tr bnd other multi resi pub tra
+HS|HS04021|Pub tr bnd defined multi comm publc
+HS|HS04022|Pub tr bnd other multi comm pub tra
+HS|HS03815|Parent sb sngl cl mtg back ast priv
+HS|HS03816|Parent sb defined multi-cl resi pri
+HS|HS03817|Parent sb other multi-cl resid priv
+HS|HS03818|Parent sb defined multi-cl comm pri
+HS|HS03819|Parent sb other multi-cl comm privt
+HS|HS04025|Bnd cur yr sng cl mtg back priv pla
+HS|HS04026|Bnd cur yr defined multi privat pla
+HS|HS04027|Bnd cur yr other multi resi priv pl
+HS|HS04028|Bnd cur yr defined multi resi privt
+HS|HS04029|Bnd cur yr other multi comm priv pl
+HS|HS04032|Bnd pri yr sng cl mtg back priv pla
+HS|HS04033|Bnd pri yr defined multi resi privt
+HS|HS04034|Bnd pri yr other multi resi priv pl
+HS|HS04035|Bnd pri yr defined multi comm privt
+HS|HS04036|Bnd pri yr other multi comm priv pl
+HS|HS04039|Prv pl bnd sng cl mtg back priv pla
+HS|HS04040|Prv pl bnd defined multi resi privt
+HS|HS04041|Prv pl bnd other multi resi priv pl
+HS|HS04042|Prv pl bnd defined multi comm privt
+HS|HS04043|Prv pl bnd other multi comm priv pl
+HS|HS03614|Pub utils issuer obligation -1yr
+HS|HS03615|Pub utils sngl cl mtg back ast -1yr
+HS|HS03616|Pub utils defined multi-cl resi -1y
+HS|HS03617|Pub utils other multi-cl resid -1yr
+HS|HS03618|Pub utils defined multi-cl comm -1y
+HS|HS03619|Pub utils other multi-cl comm -1yr
+HS|HS03620|Pub utils totals multi-cl comm -1yr
+HS|HS03637|Pub utils issuer obligation 1-5 yrs
+HS|HS03638|Pub utils sngl cl mtg back ast 1-5y
+HS|HS03639|Pub utils defined multi-cl resi 1-5
+HS|HS03640|Pub utils other multi-cl resid 1-5y
+HS|HS03641|Pub utils defined multi-cl comm 1-5
+HS|HS03642|Pub utils other multi-cl comm 1-5yr
+HS|HS03643|Pub utils totals multi-cl comm 1-5y
+HS|HS03660|Pub utils issuer obligation 5-10yrs
+HS|HS03661|Pub utils sngl cl mtg back ast 5-10
+HS|HS03662|Pub utils defined multi-cl resi -10
+HS|HS03663|Pub utils other multi-cl resid 5-10
+HS|HS03664|Pub utils defined multi-cl comm -10
+HS|HS03665|Pub utils other multi-cl comm 5-10y
+HS|HS03666|Pub utils totals multi-cl comm 5-10
+HS|HS03683|Pub utils issuer obligation 10-20yr
+HS|HS03684|Pub utils sngl cl mtg back ast -20y
+HS|HS03685|Pub utils defined multi-cl resi -20
+HS|HS03686|Pub utils other multi-cl resid -20y
+HS|HS03687|Pub utils defined multi-cl comm -20
+HS|HS03688|Pub utils other multi-cl comm -20yr
+HS|HS03689|Pub utils totals multi-cl comm -20y
+HS|HS03706|Pub utils issuer obligation over20y
+HS|HS03707|Pub utils sngl cl mtg back ast +20y
+HS|HS03708|Pub utils defined multi-cl resi +20
+HS|HS03709|Pub utils other multi-cl resid +20y
+HS|HS03710|Pub utils defined multi-cl comm +20
+HS|HS03711|Pub utils other multi-cl comm +20yr
+HS|HS03712|Pub utils totals multi-cl comm +20y
+HS|HS03729|Pub utils issuer obligation t cur y
+HS|HS03730|Pub utils sngl cl mtg back ast tcy
+HS|HS03731|Pub utils defined multi-cl resi tcy
+HS|HS03732|Pub utils other multi-cl resid tcy
+HS|HS03733|Pub utils defined multi-cl comm tcy
+HS|HS03734|Pub utils other multi-cl comm tcy
+HS|HS03735|Pub utils totals multi-cl comm tcy
+HS|HS06843|Pub utils issuer obligation % cy
+HS|HS06844|Pub utils sngl cl mtg back ast % cy
+HS|HS06845|Pub utils defined multi-cl resi %cy
+HS|HS06846|Pub utils other multi-cl resid % cy
+HS|HS06847|Pub utils defined multi-cl comm %cy
+HS|HS06848|Pub utils other multi-cl comm % cy
+HS|HS06849|Pub utils totals multi-cl comm % cy
+HS|HS03752|Pub utils issuer obligation col 6
+HS|HS03753|Pub utils sngl cl mtg back ast col6
+HS|HS03754|Pub utils defined multi-cl resi c6
+HS|HS03755|Pub utils other multi-cl resid col6
+HS|HS03756|Pub utils defined multi-cl comm c6
+HS|HS03757|Pub utils other multi-cl comm col6
+HS|HS03758|Pub utils totals multi-cl comm col6
+HS|HS06866|Pub utils issuer obligation % py
+HS|HS06867|Pub utils sngl cl mtg back ast % py
+HS|HS06868|Pub utils defined multi-cl resi %py
+HS|HS06869|Pub utils other multi-cl resid % py
+HS|HS06870|Pub utils defined multi-cl comm %py
+HS|HS06871|Pub utils other multi-cl comm % py
+HS|HS06872|Pub utils totals multi-cl comm % py
+HS|HS03775|Pub utils issuer obligation pub tra
+HS|HS03776|Pub utils sngl cl mtg back ast trad
+HS|HS03777|Pub utils defined multi-cl resi tra
+HS|HS03778|Pub utils other multi-cl resid trad
+HS|HS03779|Pub utils defined multi-cl comm tra
+HS|HS03780|Pub utils other multi-cl comm pub t
+HS|HS03781|Pub utils totals multi-cl comm trad
+HS|HS03798|Pub utils issuer obligation priv pl
+HS|HS03799|Pub utils sngl cl mtg back ast priv
+HS|HS03800|Pub utils defined multi-cl resi pri
+HS|HS03801|Pub utils other multi-cl resid priv
+HS|HS03802|Pub utils defined multi-cl comm pri
+HS|HS03803|Pub utils other multi-cl comm privt
+HS|HS03804|Pub utils totals multi-cl comm priv

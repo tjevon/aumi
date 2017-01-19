@@ -1,0 +1,2468 @@
+; BESTLINK
+; 2
+; 2465
+SF|SF04495|Mat 1y or ls us gov class 1
+SF|SF04496|Mat 1y or ls us gov class 2
+SF|SF04497|Mat 1y or ls us gov class 3
+SF|SF04498|Mat 1y or ls us gov class 4
+SF|SF04499|Mat 1y or ls us gov class 5
+SF|SF04500|Mat 1y or ls us gov class 6
+SF|SF04501|Mat 1y or ls us gov total
+SF|SF10087|Mat 1yr or less oth gov class 1
+SF|SF10088|Mat 1yr or less oth gov class 2
+SF|SF10089|Mat 1yr or less oth gov class 3
+SF|SF10090|Mat 1yr or less oth gov class 4
+SF|SF10091|Mat 1yr or less oth gov class 5
+SF|SF10092|Mat 1yr or less oth gov class 6
+SF|SF10093|Mat 1yr or less oth gov total
+SF|SF10094|Mat 1yr or less us st & ter class 1
+SF|SF10095|Mat 1yr or less us st & ter class 2
+SF|SF10096|Mat 1yr or less us st & ter class 3
+SF|SF10097|Mat 1yr or less us st & ter class 4
+SF|SF10098|Mat 1yr or less us st & ter class 5
+SF|SF10099|Mat 1yr or less us st & ter class 6
+SF|SF10100|Mat 1yr or less us st & ter total
+SF|SF10101|Mat 1yr or less us pol sub class 1
+SF|SF10102|Mat 1yr or less us pol sub class 2
+SF|SF10103|Mat 1yr or less us pol sub class 3
+SF|SF10104|Mat 1yr or less us pol sub class 4
+SF|SF10105|Mat 1yr or less us pol sub class 5
+SF|SF10106|Mat 1yr or less us pol sub class 6
+SF|SF10107|Mat 1yr or less us pol sub total
+SF|SF10108|Mat 1yr or less us sp rev class 1
+SF|SF10109|Mat 1yr or less us sp rev class 2
+SF|SF10110|Mat 1yr or less us sp rev class 3
+SF|SF10111|Mat 1yr or less us sp rev class 4
+SF|SF10112|Mat 1yr or less us sp rev class 5
+SF|SF10113|Mat 1yr or less us sp rev class 6
+SF|SF10114|Mat 1yr or less us sp rev total
+SF|SF04509|Mat 1-5 yr us gov class 1
+SF|SF04510|Mat 1-5 yr us gov class 2
+SF|SF04511|Mat 1-5 yr us gov class 3
+SF|SF04512|Mat 1-5 yr us gov class 4
+SF|SF04513|Mat 1-5 yr us gov class 5
+SF|SF04514|Mat 1-5 yr us gov class 6
+SF|SF04515|Mat 1-5 yr us gov total
+SF|SF10129|Mat 1-5 yrs oth gov class 1
+SF|SF10130|Mat 1-5 yrs oth gov class 2
+SF|SF10131|Mat 1-5 yrs oth gov class 3
+SF|SF10132|Mat 1-5 yrs oth gov class 4
+SF|SF10133|Mat 1-5 yrs oth gov class 5
+SF|SF10134|Mat 1-5 yrs oth gov class 6
+SF|SF10135|Mat 1-5 yrs oth gov total
+SF|SF10136|Mat 1-5 yrs us st & ter class 1
+SF|SF10137|Mat 1-5 yrs us st & ter class 2
+SF|SF10138|Mat 1-5 yrs us st & ter class 3
+SF|SF10139|Mat 1-5 yrs us st & ter class 4
+SF|SF10140|Mat 1-5 yrs us st & ter class 5
+SF|SF10141|Mat 1-5 yrs us st & ter class 6
+SF|SF10142|Mat 1-5 yrs us st & ter total
+SF|SF10143|Mat 1-5 yrs us pol sub class 1
+SF|SF10144|Mat 1-5 yrs us pol sub class 2
+SF|SF10145|Mat 1-5 yrs us pol sub class 3
+SF|SF10146|Mat 1-5 yrs us pol sub class 4
+SF|SF10147|Mat 1-5 yrs us pol sub class 5
+SF|SF10148|Mat 1-5 yrs us pol sub class 6
+SF|SF10149|Mat 1-5 yrs us pol sub total
+SF|SF10150|Mat 1-5 yrs us sp rev class 1
+SF|SF10151|Mat 1-5 yrs us sp rev class 2
+SF|SF10152|Mat 1-5 yrs us sp rev class 3
+SF|SF10153|Mat 1-5 yrs us sp rev class 4
+SF|SF10154|Mat 1-5 yrs us sp rev class 5
+SF|SF10155|Mat 1-5 yrs us sp rev class 6
+SF|SF10156|Mat 1-5 yrs us sp rev total
+SF|SF04523|Mat 5-10 yr us gov class 1
+SF|SF04524|Mat 5-10 yr us gov class 2
+SF|SF04525|Mat 5-10 yr us gov class 3
+SF|SF04526|Mat 5-10 yr us gov class 4
+SF|SF04527|Mat 5-10 yr us gov class 5
+SF|SF04528|Mat 5-10 yr us gov class 6
+SF|SF04529|Mat 5-10 yr us gov total
+SF|SF10171|Mat 5-10 yrs oth gov class 1
+SF|SF10172|Mat 5-10 yrs oth gov class 2
+SF|SF10173|Mat 5-10 yrs oth gov class 3
+SF|SF10174|Mat 5-10 yrs oth gov class 4
+SF|SF10175|Mat 5-10 yrs oth gov class 5
+SF|SF10176|Mat 5-10 yrs oth gov class 6
+SF|SF10177|Mat 5-10 yrs oth gov total
+SF|SF10178|Mat 5-10 yrs us st & ter class 1
+SF|SF10179|Mat 5-10 yrs us st & ter class 2
+SF|SF10180|Mat 5-10 yrs us st & ter class 3
+SF|SF10181|Mat 5-10 yrs us st & ter class 4
+SF|SF10182|Mat 5-10 yrs us st & ter class 5
+SF|SF10183|Mat 5-10 yrs us st & ter class 6
+SF|SF10184|Mat 5-10 yrs us st & ter total
+SF|SF10185|Mat 5-10 yrs us pol sub class 1
+SF|SF10186|Mat 5-10 yrs us pol sub class 2
+SF|SF10187|Mat 5-10 yrs us pol sub class 3
+SF|SF10188|Mat 5-10 yrs us pol sub class 4
+SF|SF10189|Mat 5-10 yrs us pol sub class 5
+SF|SF10190|Mat 5-10 yrs us pol sub class 6
+SF|SF10191|Mat 5-10 yrs us pol sub total
+SF|SF10192|Mat 5-10 yrs us sp rev class 1
+SF|SF10193|Mat 5-10 yrs us sp rev class 2
+SF|SF10194|Mat 5-10 yrs us sp rev class 3
+SF|SF10195|Mat 5-10 yrs us sp rev class 4
+SF|SF10196|Mat 5-10 yrs us sp rev class 5
+SF|SF10197|Mat 5-10 yrs us sp rev class 6
+SF|SF10198|Mat 5-10 yrs us sp rev total
+SF|SF04537|Mat 10-20 yrs us gov class 1
+SF|SF04538|Mat 10-20 yrs us gov class 2
+SF|SF04539|Mat 10-20 yrs us gov class 3
+SF|SF04540|Mat 10-20 yrs us gov class 4
+SF|SF04541|Mat 10-20 yrs us gov class 5
+SF|SF04542|Mat 10-20 yrs us gov class 6
+SF|SF04543|Mat 10-20 yrs us gov total
+SF|SF10213|Mat 10-20 yrs oth gov class 1
+SF|SF10214|Mat 10-20 yrs oth gov class 2
+SF|SF10215|Mat 10-20 yrs oth gov class 3
+SF|SF10216|Mat 10-20 yrs oth gov class 4
+SF|SF10217|Mat 10-20 yrs oth gov class 5
+SF|SF10218|Mat 10-20 yrs oth gov class 6
+SF|SF10219|Mat 10-20 yrs oth gov total
+SF|SF10220|Mat 10-20 yrs us st & ter class 1
+SF|SF10221|Mat 10-20 yrs us st & ter class 2
+SF|SF10222|Mat 10-20 yrs us st & ter class 3
+SF|SF10223|Mat 10-20 yrs us st & ter class 4
+SF|SF10224|Mat 10-20 yrs us st & ter class 5
+SF|SF10225|Mat 10-20 yrs us st & ter class 6
+SF|SF10226|Mat 10-20 yrs us st & ter total
+SF|SF10227|Mat 10-20 yrs us pol sub class 1
+SF|SF10228|Mat 10-20 yrs us pol sub class 2
+SF|SF10229|Mat 10-20 yrs us pol sub class 3
+SF|SF10230|Mat 10-20 yrs us pol sub class 4
+SF|SF10231|Mat 10-20 yrs us pol sub class 5
+SF|SF10232|Mat 10-20 yrs us pol sub class 6
+SF|SF10233|Mat 10-20 yrs us pol sub total
+SF|SF10234|Mat 10-20 yrs us sp rev class 1
+SF|SF10235|Mat 10-20 yrs us sp rev class 2
+SF|SF10236|Mat 10-20 yrs us sp rev class 3
+SF|SF10237|Mat 10-20 yrs us sp rev class 4
+SF|SF10238|Mat 10-20 yrs us sp rev class 5
+SF|SF10239|Mat 10-20 yrs us sp rev class 6
+SF|SF10240|Mat 10-20 yrs us sp rev total
+SF|SF04551|Mat ov 20 yr us gov class 1
+SF|SF04552|Mat ov 20 yr us gov class 2
+SF|SF04553|Mat ov 20 yr us gov class 3
+SF|SF04554|Mat ov 20 yr us gov class 4
+SF|SF04555|Mat ov 20 yr us gov class 5
+SF|SF04556|Mat ov 20 yr us gov class 6
+SF|SF04557|Mat ov 20 yr us gov total
+SF|SF10255|Mat ov 20 yrs oth gov class 1
+SF|SF10256|Mat ov 20 yrs oth gov class 2
+SF|SF10257|Mat ov 20 yrs oth gov class 3
+SF|SF10258|Mat ov 20 yrs oth gov class 4
+SF|SF10259|Mat ov 20 yrs oth gov class 5
+SF|SF10260|Mat ov 20 yrs oth gov class 6
+SF|SF10261|Mat ov 20 yrs oth gov total
+SF|SF10262|Mat ov 20 yrs us st & ter class 1
+SF|SF10263|Mat ov 20 yrs us st & ter class 2
+SF|SF10264|Mat ov 20 yrs us st & ter class 3
+SF|SF10265|Mat ov 20 yrs us st & ter class 4
+SF|SF10266|Mat ov 20 yrs us st & ter class 5
+SF|SF10267|Mat ov 20 yrs us st & ter class 6
+SF|SF10268|Mat ov 20 yrs us st & ter total
+SF|SF10269|Mat ov 20 yrs us pol sub class 1
+SF|SF10270|Mat ov 20 yrs us pol sub class 2
+SF|SF10271|Mat ov 20 yrs us pol sub class 3
+SF|SF10272|Mat ov 20 yrs us pol sub class 4
+SF|SF10273|Mat ov 20 yrs us pol sub class 5
+SF|SF10274|Mat ov 20 yrs us pol sub class 6
+SF|SF10275|Mat ov 20 yrs pol us sub total
+SF|SF10276|Mat ov 20 yrs us sp rev class 1
+SF|SF10277|Mat ov 20 yrs us sp rev class 2
+SF|SF10278|Mat ov 20 yrs us sp rev class 3
+SF|SF10279|Mat ov 20 yrs us sp rev class 4
+SF|SF10280|Mat ov 20 yrs us sp rev class 5
+SF|SF10281|Mat ov 20 yrs us sp rev class 6
+SF|SF10282|Mat ov 20 yrs us sp rev total
+SF|SF04565|Tot cr yr us gov class 1
+SF|SF04566|Tot cr yr us gov class 2
+SF|SF04567|Tot cr yr us gov class 3
+SF|SF04568|Tot cr yr us gov class 4
+SF|SF04569|Tot cr yr us gov class 5
+SF|SF04570|Tot cr yr us gov class 6
+SF|SF04571|Tot cr yr us gov total
+SF|SF10297|Tot cr yrs oth gov class 1
+SF|SF10298|Tot cr yrs oth gov class 2
+SF|SF10299|Tot cr yrs oth gov class 3
+SF|SF10300|Tot cr yrs oth gov class 4
+SF|SF10301|Tot cr yrs oth gov class 5
+SF|SF10302|Tot cr yrs oth gov class 6
+SF|SF10303|Tot cr yrs oth gov total
+SF|SF10304|Tot cr yrs us st & ter class 1
+SF|SF10305|Tot cr yrs us st & ter class 2
+SF|SF10306|Tot cr yrs us st & ter class 3
+SF|SF10307|Tot cr yrs us st & ter class 4
+SF|SF10308|Tot cr yrs us st & ter class 5
+SF|SF10309|Tot cr yrs us st & ter class 6
+SF|SF10310|Tot cr yrs us st & ter total
+SF|SF10311|Tot cr yrs us pol sub class 1
+SF|SF10312|Tot cr yrs us pol sub class 2
+SF|SF10313|Tot cr yrs us pol sub class 3
+SF|SF10314|Tot cr yrs us pol sub class 4
+SF|SF10315|Tot cr yrs us pol sub class 5
+SF|SF10316|Tot cr yrs us pol sub class 6
+SF|SF10317|Tot cr yrs us pol sub total
+SF|SF10318|Tot cr yrs us sp rev class 1
+SF|SF10319|Tot cr yrs us sp rev class 2
+SF|SF10320|Tot cr yrs us sp rev class 3
+SF|SF10321|Tot cr yrs us sp rev class 4
+SF|SF10322|Tot cr yrs us sp rev class 5
+SF|SF10323|Tot cr yrs us sp rev class 6
+SF|SF10324|Tot cr yrs us sp rev total
+SF|SF04579|Pct cr yr us gov class 1
+SF|SF04580|Pct cr yr us gov class 2
+SF|SF04581|Pct cr yr us gov class 3
+SF|SF04582|Pct cr yr us gov class 4
+SF|SF04583|Pct cr yr us gov class 5
+SF|SF04584|Pct cr yr us gov class 6
+SF|SF04585|Pct cr yr us gov total
+SF|SF10339|Pct cr yr othr gov class 1
+SF|SF10340|Pct cr yr othr gov class 2
+SF|SF10341|Pct cr yr othr gov class 3
+SF|SF10342|Pct cr yr othr gov class 4
+SF|SF10343|Pct cr yr othr gov class 5
+SF|SF10344|Pct cr yr othr gov class 6
+SF|SF10345|Pct cr yr othr gov total
+SF|SF10346|Pct cr yr us st & ter class 1
+SF|SF10347|Pct cr yr us st & ter class 2
+SF|SF10348|Pct cr yr us st & ter class 3
+SF|SF10349|Pct cr yr us st & ter class 4
+SF|SF10350|Pct cr yr us st & ter class 5
+SF|SF10351|Pct cr yr us st & ter class 6
+SF|SF10352|Pct cr yr us st & ter totral
+SF|SF10353|Pct cr yr us pol sub class 1
+SF|SF10354|Pct cr yr us pol sub class 2
+SF|SF10355|Pct cr yr us pol sub class 3
+SF|SF10356|Pct cr yr us pol sub class 4
+SF|SF10357|Pct cr yr us pol sub class 5
+SF|SF10358|Pct cr yr us pol sub class 6
+SF|SF10359|Pct cr yr us pol sub totral
+SF|SF10360|Pct cr yr us sp rev class 1
+SF|SF10361|Pct cr yr us sp rev class 2
+SF|SF10362|Pct cr yr us sp rev class 3
+SF|SF10363|Pct cr yr us sp rev class 4
+SF|SF10364|Pct cr yr us sp rev class 5
+SF|SF10365|Pct cr yr us sp rev class 6
+SF|SF10366|Pct cr yr us sp rev totrals
+SF|SF04593|Tot pr yr us gov class 1
+SF|SF04594|Tot pr yr us gov class 2
+SF|SF04595|Tot pr yr us gov class 3
+SF|SF04596|Tot pr yr us gov class 4
+SF|SF04597|Tot pr yr us gov class 5
+SF|SF04598|Tot pr yr us gov class 6
+SF|SF04599|Tot pr yr us gov total
+SF|SF10381|Tot pr yrs oth gov class 1
+SF|SF10382|Tot pr yrs oth gov class 2
+SF|SF10383|Tot pr yrs oth gov class 3
+SF|SF10384|Tot pr yrs oth gov class 4
+SF|SF10385|Tot pr yrs oth gov class 5
+SF|SF10386|Tot pr yrs oth gov class 6
+SF|SF10387|Tot pr yrs oth gov total
+SF|SF10388|Tot pr yrs us st & ter class 1
+SF|SF10389|Tot pr yrs us st & ter class 2
+SF|SF10390|Tot pr yrs us st & ter class 3
+SF|SF10391|Tot pr yrs us st & ter class 4
+SF|SF10392|Tot pr yrs us st & ter class 5
+SF|SF10393|Tot pr yrs us st & ter class 6
+SF|SF10394|Tot pr yrs us st & ter total
+SF|SF10395|Tot pr yrs us pol sub class 1
+SF|SF10396|Tot pr yrs us pol sub class 2
+SF|SF10397|Tot pr yrs us pol sub class 3
+SF|SF10398|Tot pr yrs us pol sub class 4
+SF|SF10399|Tot pr yrs us pol sub class 5
+SF|SF10400|Tot pr yrs us pol sub class 6
+SF|SF10401|Tot pr yrs us pol sub total
+SF|SF10402|Tot pr yrs us sp rev class 1
+SF|SF10403|Tot pr yrs us sp rev class 2
+SF|SF10404|Tot pr yrs us sp rev class 3
+SF|SF10405|Tot pr yrs us sp rev class 4
+SF|SF10406|Tot pr yrs us sp rev class 5
+SF|SF10407|Tot pr yrs us sp rev class 6
+SF|SF10408|Tot pr yrs us sp rev total
+SF|SF04607|Pct pr yr us gov class 1
+SF|SF04608|Pct pr yr us gov class 2
+SF|SF04609|Pct pr yr us gov class 3
+SF|SF04610|Pct pr yr us gov class 4
+SF|SF04611|Pct pr yr us gov class 5
+SF|SF04612|Pct pr yr us gov class 6
+SF|SF04613|Pct pr yr us gov total
+SF|SF10423|Pct pr yr othr gov class 1
+SF|SF10424|Pct pr yr othr gov class 2
+SF|SF10425|Pct pr yr othr gov class 3
+SF|SF10426|Pct pr yr othr gov class 4
+SF|SF10427|Pct pr yr othr gov class 5
+SF|SF10428|Pct pr yr othr gov class 6
+SF|SF10429|Pct pr yr othr gov total
+SF|SF10430|Pct pr yr us st & ter class 1
+SF|SF10431|Pct pr yr us st & ter class 2
+SF|SF10432|Pct pr yr us st & ter class 3
+SF|SF10433|Pct pr yr us st & ter class 4
+SF|SF10434|Pct pr yr us st & ter class 5
+SF|SF10435|Pct pr yr us st & ter class 6
+SF|SF10436|Pct pr yr us st & ter total
+SF|SF10437|Pct pr yr us pol sub class 1
+SF|SF10438|Pct pr yr us pol sub class 2
+SF|SF10439|Pct pr yr us pol sub class 3
+SF|SF10440|Pct pr yr us pol sub class 4
+SF|SF10441|Pct pr yr us pol sub class 5
+SF|SF10442|Pct pr yr us pol sub class 6
+SF|SF10443|Pct pr yr us pol sub total
+SF|SF10444|Pct pr yr us sp rev class 1
+SF|SF10445|Pct pr yr us sp rev class 2
+SF|SF10446|Pct pr yr us sp rev class 3
+SF|SF10447|Pct pr yr us sp rev class 4
+SF|SF10448|Pct pr yr us sp rev class 5
+SF|SF10449|Pct pr yr us sp rev class 6
+SF|SF10450|Pct pr yr us sp rev total
+SF|SF04621|Tot pub trad us gov class 1
+SF|SF04622|Tot pub trad us gov class 2
+SF|SF04623|Tot pub trad us gov class 3
+SF|SF04624|Tot pub trad us gov class 4
+SF|SF04625|Tot pub trad us gov class 5
+SF|SF04626|Tot pub trad us gov class 6
+SF|SF04627|Tot pub trad us gov total
+SF|SF10465|Tot pub trad othr gov class 1
+SF|SF10466|Tot pub trad othr gov class 2
+SF|SF10467|Tot pub trad othr gov class 3
+SF|SF10468|Tot pub trad othr gov class 4
+SF|SF10469|Tot pub trad othr gov class 5
+SF|SF10470|Tot pub trad othr gov class 6
+SF|SF10471|Tot pub trad othr gov total
+SF|SF10472|Tot pub trad us st & ter class 1
+SF|SF10473|Tot pub trad us st & ter class 2
+SF|SF10474|Tot pub trad us st & ter class 3
+SF|SF10475|Tot pub trad us st & ter class 4
+SF|SF10476|Tot pub trad us st & ter class 5
+SF|SF10477|Tot pub trad us st & ter class 6
+SF|SF10478|Tot pub trad us st & ter total
+SF|SF10479|Tot pub trad us pol sub class 1
+SF|SF10480|Tot pub trad us pol sub class 2
+SF|SF10481|Tot pub trad us pol sub class 3
+SF|SF10482|Tot pub trad us pol sub class 4
+SF|SF10483|Tot pub trad us pol sub class 5
+SF|SF10484|Tot pub trad us pol sub class 6
+SF|SF10485|Tot pub trad us pol sub total
+SF|SF10486|Tot pub trad us sp rev class 1
+SF|SF10487|Tot pub trad us sp rev class 2
+SF|SF10488|Tot pub trad us sp rev class 3
+SF|SF10489|Tot pub trad us sp rev class 4
+SF|SF10490|Tot pub trad us sp rev class 5
+SF|SF10491|Tot pub trad us sp rev class 6
+SF|SF10492|Tot pub trad us sp rev total
+SF|SF04635|Tot priv plac us gov class 1
+SF|SF04636|Tot priv plac us gov class 2
+SF|SF04637|Tot priv plac us gov class 3
+SF|SF04638|Tot priv plac us gov class 4
+SF|SF04639|Tot priv plac us gov class 5
+SF|SF04640|Tot priv plac us gov class 6
+SF|SF04641|Tot priv plac us gov total
+SF|SF10507|Tot priv placed oth gov class 1
+SF|SF10508|Tot priv placed oth gov class 2
+SF|SF10509|Tot priv placed oth gov class 3
+SF|SF10510|Tot priv placed oth gov class 4
+SF|SF10511|Tot priv placed oth gov class 5
+SF|SF10512|Tot priv placed oth gov class 6
+SF|SF10513|Tot priv placed oth gov total
+SF|SF10514|Tot priv placed us st & ter class 1
+SF|SF10515|Tot priv placed us st & ter class 2
+SF|SF10516|Tot priv placed us st & ter class 3
+SF|SF10517|Tot priv placed us st & ter class 4
+SF|SF10518|Tot priv placed us st & ter class 5
+SF|SF10519|Tot priv placed us st & ter class 6
+SF|SF10520|Tot priv placed us st & ter total
+SF|SF10521|Tot priv placed us pol sub class 1
+SF|SF10522|Tot priv placed us pol sub class 2
+SF|SF10523|Tot priv placed us pol sub class 3
+SF|SF10524|Tot priv placed us pol sub class 4
+SF|SF10525|Tot priv placed us pol sub class 5
+SF|SF10526|Tot priv placed us pol sub class 6
+SF|SF10527|Tot priv placed us pol sub total
+SF|SF10528|Tot priv placed us sp rev class 1
+SF|SF10529|Tot priv placed us sp rev class 2
+SF|SF10530|Tot priv placed us sp rev class 3
+SF|SF10531|Tot priv placed us sp rev class 4
+SF|SF10532|Tot priv placed us sp rev class 5
+SF|SF10533|Tot priv placed us sp rev class 6
+SF|SF10534|Tot priv placed us sp rev total
+SF|SF10115|Mat 1yr or less ind & mis class 1
+SF|SF10116|Mat 1yr or less ind & mis class 2
+SF|SF10117|Mat 1yr or less ind & mis class 3
+SF|SF10118|Mat 1yr or less ind & mis class 4
+SF|SF10119|Mat 1yr or less ind & mis class 5
+SF|SF10120|Mat 1yr or less ind & mis class 6
+SF|SF10121|Mat 1yr or less ind & mis total
+SF|SF10122|Mat 1yr or less hybrid secur cl1
+SF|SF10123|Mat 1yr or less hybrid secur cl2
+SF|SF10124|Mat 1yr or less hybrid secur cl3
+SF|SF10125|Mat 1yr or less hybrid secur cl4
+SF|SF10126|Mat 1yr or less hybrid secur cl5
+SF|SF10127|Mat 1yr or less hybrid secur cl6
+SF|SF10128|Mat 1yr or less hybrid secur total
+SF|SF01809|Mat 1y or ls parent/sub/affil class 1
+SF|SF01810|Mat 1y or ls parent/sub/affil class 2
+SF|SF01811|Mat 1y or ls parent/sub/affil class 3
+SF|SF01812|Mat 1y or ls parent/sub/affil class 4
+SF|SF01813|Mat 1y or ls parent/sub/affil class 5
+SF|SF01814|Mat 1y or ls parent/sub/affil class 6
+SF|SF01815|Mat 1y or ls parent/sub/affil totals
+SF|SF10157|Mat 1-5 yrs ind & mis class 1
+SF|SF10158|Mat 1-5 yrs ind & mis class 2
+SF|SF10159|Mat 1-5 yrs ind & mis class 3
+SF|SF10160|Mat 1-5 yrs ind & mis class 4
+SF|SF10161|Mat 1-5 yrs ind & mis class 5
+SF|SF10162|Mat 1-5 yrs ind & mis class 6
+SF|SF10163|Mat 1-5 yrs ind & mis total
+SF|SF10164|Mat 1-5 yrs hybrid securities class 1
+SF|SF10165|Mat 1-5 yrs hybrid securities class 2
+SF|SF10166|Mat 1-5 yrs hybrid securities class 3
+SF|SF10167|Mat 1-5 yrs hybrid securities class 4
+SF|SF10168|Mat 1-5 yrs hybrid securities class 5
+SF|SF10169|Mat 1-5 yrs hybrid securities class 6
+SF|SF10170|Mat 1-5 yrs hybrid securities total
+SF|SF01885|Mat 1-5 yr parent/sub/affil class 1
+SF|SF01886|Mat 1-5 yr parent/sub/affil class 2
+SF|SF01887|Mat 1-5 yr parent/sub/affil class 3
+SF|SF01888|Mat 1-5 yr parent/sub/affil class 4
+SF|SF01889|Mat 1-5 yr parent/sub/affil class 5
+SF|SF01890|Mat 1-5 yr parent/sub/affil class 6
+SF|SF01891|Mat 1-5 yr parent/sub/affil totals
+SF|SF10199|Mat 5-10 yrs ind & mis class 1
+SF|SF10200|Mat 5-10 yrs ind & mis class 2
+SF|SF10201|Mat 5-10 yrs ind & mis class 3
+SF|SF10202|Mat 5-10 yrs ind & mis class 4
+SF|SF10203|Mat 5-10 yrs ind & mis class 5
+SF|SF10204|Mat 5-10 yrs ind & mis class 6
+SF|SF10205|Mat 5-10 yrs ind & mis total
+SF|SF10206|Mat 5-10 yrs hybrid securities class 1
+SF|SF10207|Mat 5-10 yrs hybrid securities class 2
+SF|SF10208|Mat 5-10 yrs hybrid securities class 3
+SF|SF10209|Mat 5-10 yrs hybrid securities class 4
+SF|SF10210|Mat 5-10 yrs hybrid securities class 5
+SF|SF10211|Mat 5-10 yrs hybrid securities class 6
+SF|SF10212|Mat 5-10 yrs hybrid securities total
+SF|SF01961|Mat 5-10 yrs parent/sub/affil class 1
+SF|SF01962|Mat 5-10 yrs parent/sub/affil class 2
+SF|SF01963|Mat 5-10 yrs parent/sub/affil class 3
+SF|SF01964|Mat 5-10 yrs parent/sub/affil class 4
+SF|SF01965|Mat 5-10 yrs parent/sub/affil class 5
+SF|SF01966|Mat 5-10 yrs parent/sub/affil class 6
+SF|SF01967|Mat 5-10 yrs parent/sub/affil totals
+SF|SF10241|Mat 10-20 yrs ind & mis class 1
+SF|SF10242|Mat 10-20 yrs ind & mis class 2
+SF|SF10243|Mat 10-20 yrs ind & mis class 3
+SF|SF10244|Mat 10-20 yrs ind & mis class 4
+SF|SF10245|Mat 10-20 yrs ind & mis class 5
+SF|SF10246|Mat 10-20 yrs ind & mis class 6
+SF|SF10247|Mat 10-20 yrs ind & mis total
+SF|SF10248|Mat 10-20 yrs hybrid securities class 1
+SF|SF10249|Mat 10-20 yrs hybrid securities class 2
+SF|SF10250|Mat 10-20 yrs hybrid securities class 3
+SF|SF10251|Mat 10-20 yrs hybrid securities class 4
+SF|SF10252|Mat 10-20 yrs hybrid securities class 5
+SF|SF10253|Mat 10-20 yrs hybrid securities class 6
+SF|SF10254|Mat 10-20 yrs hybrid securities total
+SF|SF02037|Mat 10-20 yrs parent/sub/affil class 1
+SF|SF02038|Mat 10-20 yrs parent/sub/affil class 2
+SF|SF02039|Mat 10-20 yrs parent/sub/affil class 3
+SF|SF02040|Mat 10-20 yrs parent/sub/affil class 4
+SF|SF02041|Mat 10-20 yrs parent/sub/affil class 5
+SF|SF02042|Mat 10-20 yrs parent/sub/affil class 6
+SF|SF02043|Mat 10-20 yrs parent/sub/affil total
+SF|SF10283|Mat ov 20 yrs ind & mis class 1
+SF|SF10284|Mat ov 20 yrs ind & mis class 2
+SF|SF10285|Mat ov 20 yrs ind & mis class 3
+SF|SF10286|Mat ov 20 yrs ind & mis class 4
+SF|SF10287|Mat ov 20 yrs ind & mis class 5
+SF|SF10288|Mat ov 20 yrs ind & mis class 6
+SF|SF10289|Mat ov 20 yrs ind & mis total
+SF|SF10290|Mat ov 20 yrs hybrid securities class 1
+SF|SF10291|Mat ov 20 yrs hybrid securities class 2
+SF|SF10292|Mat ov 20 yrs hybrid securities class 3
+SF|SF10293|Mat ov 20 yrs hybrid securities class 4
+SF|SF10294|Mat ov 20 yrs hybrid securities class 5
+SF|SF10295|Mat ov 20 yrs hybrid securities class 6
+SF|SF10296|Mat ov 20 yrs hybrid securities total
+SF|SF02113|Mat ov 20 yrs parent/sub/affil class 1
+SF|SF02114|Mat ov 20 yrs parent/sub/affil class 2
+SF|SF02115|Mat ov 20 yrs parent/sub/affil class 3
+SF|SF02116|Mat ov 20 yrs parent/sub/affil class 4
+SF|SF02117|Mat ov 20 yrs parent/sub/affil class 5
+SF|SF02118|Mat ov 20 yrs parent/sub/affil class 6
+SF|SF02119|Mat ov 20 yrs parent/sub/affil total
+SF|SF10325|Tot cr yrs ind & mis class 1
+SF|SF10326|Tot cr yrs ind & mis class 2
+SF|SF10327|Tot cr yrs ind & mis class 3
+SF|SF10328|Tot cr yrs ind & mis class 4
+SF|SF10329|Tot cr yrs ind & mis class 5
+SF|SF10330|Tot cr yrs ind & mis class 6
+SF|SF10331|Tot cr yrs ind & mis total
+SF|SF10332|Tot cr yrs hybrid securities class 1
+SF|SF10333|Tot cr yrs hybrid securities class 2
+SF|SF10334|Tot cr yrs hybrid securities class 3
+SF|SF10335|Tot cr yrs hybrid securities class 4
+SF|SF10336|Tot cr yrs hybrid securities class 5
+SF|SF10337|Tot cr yrs hybrid securities class 6
+SF|SF10338|Tot cr yrs hybrid securities total
+SF|SF02189|Tot cr yrs parent/sub/affil class 1
+SF|SF02190|Tot cr yrs parent/sub/affil class 2
+SF|SF02191|Tot cr yrs parent/sub/affil class 3
+SF|SF02192|Tot cr yrs parent/sub/affil class 4
+SF|SF02193|Tot cr yrs parent/sub/affil class 5
+SF|SF02194|Tot cr yrs parent/sub/affil class 6
+SF|SF02195|Tot cr yrs parent/sub/affil total
+SF|SF10367|Pct cr yr ind & misc class 1
+SF|SF10368|Pct cr yr ind & misc class 2
+SF|SF10369|Pct cr yr ind & misc class 3
+SF|SF10370|Pct cr yr ind & misc class 4
+SF|SF10371|Pct cr yr ind & misc class 5
+SF|SF10372|Pct cr yr ind & misc class 6
+SF|SF10373|Pct cr yr ind & misc total
+SF|SF10374|Pct cr yr hybrid securities class 1
+SF|SF10375|Pct cr yr hybrid securities class 2
+SF|SF10376|Pct cr yr hybrid securities class 3
+SF|SF10377|Pct cr yr hybrid securities class 4
+SF|SF10378|Pct cr yr hybrid securities class 5
+SF|SF10379|Pct cr yr hybrid securities class 6
+SF|SF10380|Pct cr yr hybrid securities totals
+SF|SF02257|Pct cr yrs parent/sub/affil class 1
+SF|SF02258|Pct cr yrs parent/sub/affil class 2
+SF|SF02259|Pct cr yrs parent/sub/affil class 3
+SF|SF02260|Pct cr yrs parent/sub/affil class 4
+SF|SF02261|Pct cr yrs parent/sub/affil class 5
+SF|SF02262|Pct cr yrs parent/sub/affil class 6
+SF|SF02263|Pct cr yrs parent/sub/affil total
+SF|SF10409|Tot pr yrs ind & mis class 1
+SF|SF10410|Tot pr yrs ind & mis class 2
+SF|SF10411|Tot pr yrs ind & mis class 3
+SF|SF10412|Tot pr yrs ind & mis class 4
+SF|SF10413|Tot pr yrs ind & mis class 5
+SF|SF10414|Tot pr yrs ind & mis class 6
+SF|SF10415|Tot pr yrs ind & mis total
+SF|SF10416|Tot pr yrs hybrid securities class 1
+SF|SF10417|Tot pr yrs hybrid securities class 2
+SF|SF10418|Tot pr yrs hybrid securities class 3
+SF|SF10419|Tot pr yrs hybrid securities class 4
+SF|SF10420|Tot pr yrs hybrid securities class 5
+SF|SF10421|Tot pr yrs hybrid securities class 6
+SF|SF10422|Tot pr yrs hybrid securities total
+SF|SF02320|Tot pr yrs parent/sub/affil class 1
+SF|SF02321|Tot pr yrs parent/sub/affil class 2
+SF|SF02322|Tot pr yrs parent/sub/affil class 3
+SF|SF02323|Tot pr yrs parent/sub/affil class 4
+SF|SF02324|Tot pr yrs parent/sub/affil class 5
+SF|SF02325|Tot pr yrs parent/sub/affil class 6
+SF|SF02326|Tot pr yrs parent/sub/affil total
+SF|SF10451|Pct pr yr ind & misc class 1
+SF|SF10452|Pct pr yr ind & misc class 2
+SF|SF10453|Pct pr yr ind & misc class 3
+SF|SF10454|Pct pr yr ind & misc class 4
+SF|SF10455|Pct pr yr ind & misc class 5
+SF|SF10456|Pct pr yr ind & misc class 6
+SF|SF10457|Pct pr yr ind & misc total
+SF|SF10458|Pct pr yr hybrid secur class 1
+SF|SF10459|Pct pr yr hybrid secur class 2
+SF|SF10460|Pct pr yr hybrid secur class 3
+SF|SF10461|Pct pr yr hybrid secur class 4
+SF|SF10462|Pct pr yr hybrid secur class 5
+SF|SF10463|Pct pr yr hybrid secur class 6
+SF|SF10464|Pct pr yr hybrid secur ttls
+SF|SF02388|Pct pr yrs parent/sub/affil class 1
+SF|SF02389|Pct pr yrs parent/sub/affil class 2
+SF|SF02390|Pct pr yrs parent/sub/affil class 3
+SF|SF02391|Pct pr yrs parent/sub/affil class 4
+SF|SF02392|Pct pr yrs parent/sub/affil class 5
+SF|SF02393|Pct pr yrs parent/sub/affil class 6
+SF|SF02394|Pct pr yrs parent/sub/affil total
+SF|SF10493|Tot pub trad ind & misc class 1
+SF|SF10494|Tot pub trad ind & misc class 2
+SF|SF10495|Tot pub trad ind & misc class 3
+SF|SF10496|Tot pub trad ind & misc class 4
+SF|SF10497|Tot pub trad ind & misc class 5
+SF|SF10498|Tot pub trad ind & misc class 6
+SF|SF10499|Tot pub trad ind & misc total
+SF|SF10500|Tot pub trad hybrid secur class 1
+SF|SF10501|Tot pub trad hybrid secur class 2
+SF|SF10502|Tot pub trad hybrid secur class 3
+SF|SF10503|Tot pub trad hybrid secur class 4
+SF|SF10504|Tot pub trad hybrid secur class 5
+SF|SF10505|Tot pub trad hybrid secur class 6
+SF|SF10506|Tot pub trad hybrid secur total
+SF|SF02451|Tot pub trad parent/sub/affil class 1
+SF|SF02452|Tot pub trad parent/sub/affil class 2
+SF|SF02453|Tot pub trad parent/sub/affil class 3
+SF|SF02454|Tot pub trad parent/sub/affil class 4
+SF|SF02455|Tot pub trad parent/sub/affil class 5
+SF|SF02456|Tot pub trad parent/sub/affil class 6
+SF|SF02457|Tot pub trad parent/sub/affil total
+SF|SF10535|Tot priv placed ind & mis class 1
+SF|SF10536|Tot priv placed ind & mis class 2
+SF|SF10537|Tot priv placed ind & mis class 3
+SF|SF10538|Tot priv placed ind & mis class 4
+SF|SF10539|Tot priv placed ind & mis class 5
+SF|SF10540|Tot priv placed ind & mis class 6
+SF|SF10541|Tot priv placed ind & mis total
+SF|SF10542|Tot priv placed hybrid secur class 1
+SF|SF10543|Tot priv placed hybrid secur class 2
+SF|SF10544|Tot priv placed hybrid secur class 3
+SF|SF10545|Tot priv placed hybrid secur class 4
+SF|SF10546|Tot priv placed hybrid secur class 5
+SF|SF10547|Tot priv placed hybrid secur class 6
+SF|SF10548|Tot priv placed hybrid secur total
+SF|SF02518|Tot priv plac parent/sub/affil class 1
+SF|SF02519|Tot priv plac parent/sub/affil class 2
+SF|SF02520|Tot priv plac parent/sub/affil class 3
+SF|SF02521|Tot priv plac parent/sub/affil class 4
+SF|SF02522|Tot priv plac parent/sub/affil class 5
+SF|SF02523|Tot priv plac parent/sub/affil class 6
+SF|SF02524|Tot priv plac parent/sub/affil total
+SF|SF01795|Mat 1y or ls pub util class 1
+SF|SF01796|Mat 1y or ls pub util class 2
+SF|SF01797|Mat 1y or ls pub util class 3
+SF|SF01798|Mat 1y or ls pub util class 4
+SF|SF01799|Mat 1y or ls pub util class 5
+SF|SF01800|Mat 1y or ls pub util class 6
+SF|SF01801|Mat 1y or ls pub util total
+SF|SF04963|Mat 1y or ls cred loans class 1
+SF|SF04964|Mat 1y or ls cred loans class 2
+SF|SF04965|Mat 1y or ls cred loans class 3
+SF|SF04966|Mat 1y or ls cred loans class 4
+SF|SF04967|Mat 1y or ls cred loans class 5
+SF|SF04968|Mat 1y or ls cred loans class 6
+SF|SF04969|Mat 1y or ls cred loans total
+SF|SF01871|Mat 1-5 yr pub util class 1
+SF|SF01872|Mat 1-5 yr pub util class 2
+SF|SF01873|Mat 1-5 yr pub util class 3
+SF|SF01874|Mat 1-5 yr pub util class 4
+SF|SF01875|Mat 1-5 yr pub util class 5
+SF|SF01876|Mat 1-5 yr pub util class 6
+SF|SF01877|Mat 1-5 yr pub util total
+SF|SF04977|Mat 1-5 yr cred loans class 1
+SF|SF04978|Mat 1-5 yr cred loans class 2
+SF|SF04979|Mat 1-5 yr cred loans class 3
+SF|SF04980|Mat 1-5 yr cred loans class 4
+SF|SF04981|Mat 1-5 yr cred loans class 5
+SF|SF04982|Mat 1-5 yr cred loans class 6
+SF|SF04983|Mat 1-5 yr cred loans total
+SF|SF01947|Mat 5-10 yr pub util class 1
+SF|SF01948|Mat 5-10 yr pub util class 2
+SF|SF01949|Mat 5-10 yr pub util class 3
+SF|SF01950|Mat 5-10 yr pub util class 4
+SF|SF01951|Mat 5-10 yr pub util class 5
+SF|SF01952|Mat 5-10 yr pub util class 6
+SF|SF01953|Mat 5-10 yr pub util total
+SF|SF04991|Mat 5-10 yr cred loans class 1
+SF|SF04992|Mat 5-10 yr cred loans class 2
+SF|SF04993|Mat 5-10 yr cred loans class 3
+SF|SF04994|Mat 5-10 yr cred loans class 4
+SF|SF04995|Mat 5-10 yr cred loans class 5
+SF|SF04996|Mat 5-10 yr cred loans class 6
+SF|SF04997|Mat 5-10 yr cred loans total
+SF|SF02023|Mat 10-20 yr pub util class 1
+SF|SF02024|Mat 10-20 yr pub util class 2
+SF|SF02025|Mat 10-20 yr pub util class 3
+SF|SF02026|Mat 10-20 yr pub util class 4
+SF|SF02027|Mat 10-20 yr pub util class 5
+SF|SF02028|Mat 10-20 yr pub util class 6
+SF|SF02029|Mat 10-20 yr pub util total
+SF|SF05005|Mat 10-20 yr cred loans class 1
+SF|SF05006|Mat 10-20 yr cred loans class 2
+SF|SF05007|Mat 10-20 yr cred loans class 3
+SF|SF05008|Mat 10-20 yr cred loans class 4
+SF|SF05009|Mat 10-20 yr cred loans class 5
+SF|SF05010|Mat 10-20 yr cred loans class 6
+SF|SF05011|Mat 10-20 yr cred loans total
+SF|SF02099|Mat ov 20 yr pub util class 1
+SF|SF02100|Mat ov 20 yr pub util class 2
+SF|SF02101|Mat ov 20 yr pub util class 3
+SF|SF02102|Mat ov 20 yr pub util class 4
+SF|SF02103|Mat ov 20 yr pub util class 5
+SF|SF02104|Mat ov 20 yr pub util class 6
+SF|SF02105|Mat ov 20 yr pub util total
+SF|SF05019|Mat ov 20 yr cred loans class 1
+SF|SF05020|Mat ov 20 yr cred loans class 2
+SF|SF05021|Mat ov 20 yr cred loans class 3
+SF|SF05022|Mat ov 20 yr cred loans class 4
+SF|SF05023|Mat ov 20 yr cred loans class 5
+SF|SF05024|Mat ov 20 yr cred loans class 6
+SF|SF05025|Mat ov 20 yr cred loans total
+SF|SF02175|Tot cr yr pub util class 1
+SF|SF02176|Tot cr yr pub util class 2
+SF|SF02177|Tot cr yr pub util class 3
+SF|SF02178|Tot cr yr pub util class 4
+SF|SF02179|Tot cr yr pub util class 5
+SF|SF02180|Tot cr yr pub util class 6
+SF|SF02181|Tot cr yr pub util total
+SF|SF05033|Tot cr yr cred loans class 1
+SF|SF05034|Tot cr yr cred loans class 2
+SF|SF05035|Tot cr yr cred loans class 3
+SF|SF05036|Tot cr yr cred loans class 4
+SF|SF05037|Tot cr yr cred loans class 5
+SF|SF05038|Tot cr yr cred loans class 6
+SF|SF05039|Tot cr yr cred loans total
+SF|SF02243|Pct cr yr pub util class 1
+SF|SF02244|Pct cr yr pub util class 2
+SF|SF02245|Pct cr yr pub util class 3
+SF|SF02246|Pct cr yr pub util class 4
+SF|SF02247|Pct cr yr pub util class 5
+SF|SF02248|Pct cr yr pub util class 6
+SF|SF02249|Pct cr yr pub util total
+SF|SF05047|Pct cr yr cred loans class 1
+SF|SF05048|Pct cr yr cred loans class 2
+SF|SF05049|Pct cr yr cred loans class 3
+SF|SF05050|Pct cr yr cred loans class 4
+SF|SF05051|Pct cr yr cred loans class 5
+SF|SF05052|Pct cr yr cred loans class 6
+SF|SF05053|Pct cr yr cred loans total
+SF|SF02306|Tot pr yr pub util class 1
+SF|SF02307|Tot pr yr pub util class 2
+SF|SF02308|Tot pr yr pub util class 3
+SF|SF02309|Tot pr yr pub util class 4
+SF|SF02310|Tot pr yr pub util class 5
+SF|SF02311|Tot pr yr pub util class 6
+SF|SF02312|Tot pr yr pub util total
+SF|SF05061|Tot pr yr cred loans class 1
+SF|SF05062|Tot pr yr cred loans class 2
+SF|SF05063|Tot pr yr cred loans class 3
+SF|SF05064|Tot pr yr cred loans class 4
+SF|SF05065|Tot pr yr cred loans class 5
+SF|SF05066|Tot pr yr cred loans class 6
+SF|SF05067|Tot pr yr cred loans total
+SF|SF02374|Pct pr yr pub util class 1
+SF|SF02375|Pct pr yr pub util class 2
+SF|SF02376|Pct pr yr pub util class 3
+SF|SF02377|Pct pr yr pub util class 4
+SF|SF02378|Pct pr yr pub util class 5
+SF|SF02379|Pct pr yr pub util class 6
+SF|SF02380|Pct pr yr pub util total
+SF|SF05075|Pct pr yr cred loans class 1
+SF|SF05076|Pct pr yr cred loans class 2
+SF|SF05077|Pct pr yr cred loans class 3
+SF|SF05078|Pct pr yr cred loans class 4
+SF|SF05079|Pct pr yr cred loans class 5
+SF|SF05080|Pct pr yr cred loans class 6
+SF|SF05081|Pct pr yr cred loans total
+SF|SF02437|Tot pub trad pub util class 1
+SF|SF02438|Tot pub trad pub util class 2
+SF|SF02439|Tot pub trad pub util class 3
+SF|SF02440|Tot pub trad pub util class 4
+SF|SF02441|Tot pub trad pub util class 5
+SF|SF02442|Tot pub trad pub util class 6
+SF|SF02443|Tot pub trad pub util total
+SF|SF05089|Tot pub trad cred loans class 1
+SF|SF05090|Tot pub trad cred loans class 2
+SF|SF05091|Tot pub trad cred loans class 3
+SF|SF05092|Tot pub trad cred loans class 4
+SF|SF05093|Tot pub trad cred loans class 5
+SF|SF05094|Tot pub trad cred loans class 6
+SF|SF05095|Tot pub trad cred loans total
+SF|SF02504|Tot priv plac pub util class 1
+SF|SF02505|Tot priv plac pub util class 2
+SF|SF02506|Tot priv plac pub util class 3
+SF|SF02507|Tot priv plac pub util class 4
+SF|SF02508|Tot priv plac pub util class 5
+SF|SF02509|Tot priv plac pub util class 6
+SF|SF02510|Tot priv plac pub util total
+SF|SF05103|Tot priv plac cred loans class 1
+SF|SF05104|Tot priv plac cred loans class 2
+SF|SF05105|Tot priv plac cred loans class 3
+SF|SF05106|Tot priv plac cred loans class 4
+SF|SF05107|Tot priv plac cred loans class 5
+SF|SF05108|Tot priv plac cred loans class 6
+SF|SF05109|Tot priv plac cred loans total
+SF|SF01816|Mat 1y or ls tot bonds cy class 1
+SF|SF01817|Mat 1y or ls tot bonds cy class 2
+SF|SF01818|Mat 1y or ls tot bonds cy class 3
+SF|SF01819|Mat 1y or ls tot bonds cy class 4
+SF|SF01820|Mat 1y or ls tot bonds cy class 5
+SF|SF01821|Mat 1y or ls tot bonds cy class 6
+SF|SF01822|Mat 1y or ls tot bonds cy totals
+SF|SF01823|Mat 1y or ls tot bonds total % cy
+SF|SF01824|Mat 1y or ls tot bonds py class 1
+SF|SF01825|Mat 1y or ls tot bonds py class 2
+SF|SF01826|Mat 1y or ls tot bonds py class 3
+SF|SF01827|Mat 1y or ls tot bonds py class 4
+SF|SF01828|Mat 1y or ls tot bonds py class 5
+SF|SF01829|Mat 1y or ls tot bonds py class 6
+SF|SF01830|Mat 1y or ls tot bonds py totals
+SF|SF01831|Mat 1y or ls tot bonds py % py
+SF|SF01832|Mat 1y or ls tl publicly traded bonds class 1
+SF|SF01833|Mat 1y or ls tl publicly traded bonds class 2
+SF|SF01834|Mat 1y or ls tl publicly traded bonds class 3
+SF|SF01835|Mat 1y or ls tl publicly traded bonds class 4
+SF|SF01836|Mat 1y or ls tl publicly traded bonds class 5
+SF|SF01837|Mat 1y or ls tl publicly traded bonds class 6
+SF|SF01838|Mat 1y or ls tl publicly traded bonds total
+SF|SF01839|Mat 1y or ls tl publicly traded bonds % tot pt
+SF|SF01840|Mat 1y or ls tl publicly traded bonds % tot cy
+SF|SF01841|Mat 1y or ls privately placed bonds class 1
+SF|SF01842|Mat 1y or ls privately placed bonds class 2
+SF|SF01843|Mat 1y or ls privately placed bonds class 3
+SF|SF01844|Mat 1y or ls privately placed bonds class 4
+SF|SF01845|Mat 1y or ls privately placed bonds class 5
+SF|SF01846|Mat 1y or ls privately placed bonds class 6
+SF|SF01847|Mat 1y or ls privately placed bonds total
+SF|SF01848|Mat 1y or ls privately placed bonds % tot pp
+SF|SF01849|Mat 1y or ls privately placed bonds % tot cy
+SF|SF01892|Mat 1-5 yr tot bonds cy class 1
+SF|SF01893|Mat 1-5 yr tot bonds cy class 2
+SF|SF01894|Mat 1-5 yr tot bonds cy class 3
+SF|SF01895|Mat 1-5 yr tot bonds cy class 4
+SF|SF01896|Mat 1-5 yr tot bonds cy class 5
+SF|SF01897|Mat 1-5 yr tot bonds cy class 6
+SF|SF01898|Mat 1-5 yr bonds cy totals
+SF|SF01899|Mat 1-5 yr total % cy
+SF|SF01900|Mat 1-5 yr tot bonds py class 1
+SF|SF01901|Mat 1-5 yr tot bonds py class 2
+SF|SF01902|Mat 1-5 yr tot bonds py class 3
+SF|SF01903|Mat 1-5 yr tot bonds py class 4
+SF|SF01904|Mat 1-5 yr tot bonds py class 5
+SF|SF01905|Mat 1-5 yr tot bonds py class 6
+SF|SF01906|Mat 1-5 yr tot bonds py totals
+SF|SF01907|Mat 1-5 yr tot bonds % py
+SF|SF01908|Mat 1-5 yr publicly traded bonds class 1
+SF|SF01909|Mat 1-5 yr publicly traded bonds class 2
+SF|SF01910|Mat 1-5 yr publicly traded bonds class 3
+SF|SF01911|Mat 1-5 yr publicly traded bonds class 4
+SF|SF01912|Mat 1-5 yr publicly traded bonds class 5
+SF|SF01913|Mat 1-5 yr publicly traded bonds class 6
+SF|SF01914|Mat 1-5 yr publicly traded total
+SF|SF01915|Mat 1-5 yr publicly traded % total pt
+SF|SF01916|Mat 1-5 yr publicly traded % tot cy
+SF|SF01917|Mat 1-5 yr privately placed class 1
+SF|SF01918|Mat 1-5 yr privately placed class 2
+SF|SF01919|Mat 1-5 yr privately placed class 3
+SF|SF01920|Mat 1-5 yr privately placed class 4
+SF|SF01921|Mat 1-5 yr privately placed class 5
+SF|SF01922|Mat 1-5 yr privately placed class 6
+SF|SF01923|Mat 1-5 yr privately placed total
+SF|SF01924|Mat 1-5 yr privately placed % tot pp
+SF|SF01925|Mat 1-5 yr privately placed % tot cy
+SF|SF01968|Mat 5-10 yrs total bonds cy class 1
+SF|SF01969|Mat 5-10 yrs total bonds cy class 2
+SF|SF01970|Mat 5-10 yrs total bonds cy class 3
+SF|SF01971|Mat 5-10 yrs total bonds cy class 4
+SF|SF01972|Mat 5-10 yrs total bonds cy class 5
+SF|SF01973|Mat 5-10 yrs total bonds cy class 6
+SF|SF01974|Mat 5-10 yrs total bonds cy totals
+SF|SF01975|Mat 5-10 yrs total bonds totals % cy
+SF|SF01976|Mat 5-10 yrs total bonds py class 1
+SF|SF01977|Mat 5-10 yrs total bonds py class 2
+SF|SF01978|Mat 5-10 yrs total bonds py class 3
+SF|SF01979|Mat 5-10 yrs total bonds py class 4
+SF|SF01980|Mat 5-10 yrs total bonds py class 5
+SF|SF01981|Mat 5-10 yrs total bonds py class 6
+SF|SF01982|Mat 5-10 yrs total bonds py total
+SF|SF01983|Mat 5-10 yrs total bonds py % py
+SF|SF01984|Mat 5-10 yrs publicly traded bonds class 1
+SF|SF01985|Mat 5-10 yrs publicly traded bonds class 2
+SF|SF01986|Mat 5-10 yrs publicly traded bonds class 3
+SF|SF01987|Mat 5-10 yrs publicly traded bonds class 4
+SF|SF01988|Mat 5-10 yrs publicly traded bonds class 5
+SF|SF01989|Mat 5-10 yrs publicly traded bonds class 6
+SF|SF01990|Mat 5-10 yrs publicly traded bonds totals
+SF|SF01991|Mat 5-10 yrs publicly traded bonds % tot pt
+SF|SF01992|Mat 5-10 yrs publicly traded bonds % tot cy
+SF|SF01993|Mat 5-10 yrs total privately placed class 1
+SF|SF01994|Mat 5-10 yrs total privately placed class 2
+SF|SF01995|Mat 5-10 yrs total privately placed class 3
+SF|SF01996|Mat 5-10 yrs total privately placed class 4
+SF|SF01997|Mat 5-10 yrs total privately placed class 5
+SF|SF01998|Mat 5-10 yrs total privately placed class 6
+SF|SF01999|Mat 5-10 yrs yrs total privately placed totals
+SF|SF02000|Mat 5-10 yrs privately placed % total pp
+SF|SF02001|Mat 5-10 yrs privately placed % total cy
+SF|SF02044|Mat 10-20 yrs total bonds cy class 1
+SF|SF02045|Mat 10-20 yrs total bonds cy class 2
+SF|SF02046|Mat 10-20 yrs total bonds cy class 3
+SF|SF02047|Mat 10-20 yrs total bonds cy class 4
+SF|SF02048|Mat 10-20 yrs total bonds cy class 5
+SF|SF02049|Mat 10-20 yrs total bonds cy class 6
+SF|SF02050|Mat 10-20 yrs total bonds cy total
+SF|SF02051|Mat 10-20 yrs total bonds % cy
+SF|SF02052|Mat 10-20 yrs total bonds py class 1
+SF|SF02053|Mat 10-20 yrs total bonds py class 2
+SF|SF02054|Mat 10-20 yrs total bonds py class 3
+SF|SF02055|Mat 10-20 yrs total bonds py class 4
+SF|SF02056|Mat 10-20 yrs total bonds py class 5
+SF|SF02057|Mat 10-20 yrs total bonds py class 6
+SF|SF02058|Mat 10-20 yrs total bonds py total
+SF|SF02059|Mat 10-20 yrs total bonds % py
+SF|SF02060|Mat 10-20 yrs publicly traded bonds class 1
+SF|SF02061|Mat 10-20 yrs publicly traded bonds class 2
+SF|SF02062|Mat 10-20 yrs publicly traded bonds class 3
+SF|SF02063|Mat 10-20 yrs publicly traded bonds class 4
+SF|SF02064|Mat 10-20 yrs publicly traded bonds class 5
+SF|SF02065|Mat 10-20 yrs publicly traded bonds class 6
+SF|SF02066|Mat 10-20 yrs publicly traded bonds total
+SF|SF02067|Mat 10-20 yrs publicly traded bonds % tot pt
+SF|SF02068|Mat 10-20 yrs publicly traded bonds % tot cy
+SF|SF02069|Mat 10-20 yrs privately placed bonds class 1
+SF|SF02070|Mat 10-20 yrs privately placed bonds class 2
+SF|SF02071|Mat 10-20 yrs privately placed bonds class 3
+SF|SF02072|Mat 10-20 yrs privately placed bonds class 4
+SF|SF02073|Mat 10-20 yrs privately placed bonds class 5
+SF|SF02074|Mat 10-20 yrs privately placed bonds class 6
+SF|SF02075|Mat 10-20 yrs privately placed bonds totals
+SF|SF02076|Mat 10-20 yrs privately placed bonds % tot pp
+SF|SF02077|Mat 10-20 yrs privately placed bonds % tot cy
+SF|SF02120|Mat ov 20 yrs total bonds cy class 1
+SF|SF02121|Mat ov 20 yrs total bonds cy class 2
+SF|SF02122|Mat ov 20 yrs total bonds cy class 3
+SF|SF02123|Mat ov 20 yrs total bonds cy class 4
+SF|SF02124|Mat ov 20 yrs total bonds cy class 5
+SF|SF02125|Mat ov 20 yrs total bonds cy class 6
+SF|SF02126|Mat ov 20 yrs total bonds cy totals
+SF|SF02127|Mat ov 20 yrs total bonds % cy
+SF|SF02128|Mat ov 20 yrs total bonds py class 1
+SF|SF02129|Mat ov 20 yrs total bonds py class 2
+SF|SF02130|Mat ov 20 yrs total bonds py class 3
+SF|SF02131|Mat ov 20 yrs total bonds py class 4
+SF|SF02132|Mat ov 20 yrs total bonds py class 5
+SF|SF02133|Mat ov 20 yrs total bonds py class 6
+SF|SF02134|Mat ov 20 yrs total bonds py totals
+SF|SF02135|Mat ov 20 yrs total bonds % py
+SF|SF02136|Mat ov 20 yrs publicly traded bonds class 1
+SF|SF02137|Mat ov 20 yrs publicly traded bonds class 2
+SF|SF02138|Mat ov 20 yrs publicly traded bonds class 3
+SF|SF02139|Mat ov 20 yrs publicly traded bonds class 4
+SF|SF02140|Mat ov 20 yrs publicly traded bonds class 5
+SF|SF02141|Mat ov 20 yrs publicly traded bonds class 6
+SF|SF02142|Mat ov 20 yrs publicly traded bonds total
+SF|SF02143|Mat ov 20 yrs publicly traded bonds % tot pt
+SF|SF02144|Mat ov 20 yrs publicly traded bonds % tot cy
+SF|SF02145|Mat ov 20 yrs privately placed bonds class 1
+SF|SF02146|Mat ov 20 yrs privately placed bonds class 2
+SF|SF02147|Mat ov 20 yrs privately placed bonds class 3
+SF|SF02148|Mat ov 20 yrs privately placed bonds class 4
+SF|SF02149|Mat ov 20 yrs privately placed bonds class 5
+SF|SF02150|Mat ov 20 yrs privately placed bonds class 6
+SF|SF02151|Mat ov 20 yrs privately placed bonds totals
+SF|SF02152|Mat ov 20 yrs privately placed bonds % tot pp
+SF|SF02153|Mat ov 20 yrs privately placed bonds % tot cy
+SF|SF02196|Tot cr yrs total bonds current year class 1
+SF|SF02197|Tot cr yrs total bonds current year class 2
+SF|SF02198|Tot cr yrs total bonds current year class 3
+SF|SF02199|Tot cr yrs total bonds current year class 4
+SF|SF02200|Tot cr yrs total bonds current year class 5
+SF|SF02201|Tot cr yrs total bonds current year class 6
+SF|SF02202|Tot cr yrs total bonds current year total
+SF|SF02203|Tot cr yrs total bonds current year % cy
+SF|SF02204|Tot cr yrs publicly traded bonds class 1
+SF|SF02205|Tot cr yrs publicly traded bonds class 2
+SF|SF02206|Tot cr yrs publicly traded bonds class 3
+SF|SF02207|Tot cr yrs publicly traded bonds class 4
+SF|SF02208|Tot cr yrs publicly traded bonds class 5
+SF|SF02209|Tot cr yrs publicly traded bonds class 6
+SF|SF02210|Tot cr yrs publicly traded bonds total
+SF|SF02211|Tot cr yrs publicly traded bonds % tot pt
+SF|SF02212|Tot cr yrs publicly traded bonds % tot cy
+SF|SF02213|Tot cr yrs privately placed bonds class 1
+SF|SF02214|Tot cr yrs privately placed bonds class 2
+SF|SF02215|Tot cr yrs privately placed bonds class 3
+SF|SF02216|Tot cr yrs privately placed bonds class 4
+SF|SF02217|Tot cr yrs privately placed bonds class 5
+SF|SF02218|Tot cr yrs privately placed bonds class 6
+SF|SF02219|Tot cr yrs privately placed bonds total
+SF|SF02220|Tot cr yrs privately placed bonds % tot pp
+SF|SF02221|Tot cr yrs privately placed bonds % tot cy
+SF|SF02264|Pct cr yrs total bonds cy class 1
+SF|SF02265|Pct cr yrs total bonds cy class 2
+SF|SF02266|Pct cr yrs total bonds cy class 3
+SF|SF02267|Pct cr yrs total bonds cy class 4
+SF|SF02268|Pct cr yrs total bonds cy class 5
+SF|SF02269|Pct cr yrs total bonds cy class 6
+SF|SF02270|Pct cr yrs total bonds cy total
+SF|SF02271|Pct cr yrs publicly traded bonds class 1
+SF|SF02272|Pct cr yrs publicly traded bonds class 2
+SF|SF02273|Pct cr yrs publicly traded bonds class 3
+SF|SF02274|Pct cr yrs publicly traded bonds class 4
+SF|SF02275|Pct cr yrs publicly traded bonds class 5
+SF|SF02276|Pct cr yrs publicly traded bonds class 6
+SF|SF02277|Pct cr yrs publicly traded bonds total
+SF|SF02278|Pct cr yrs privately placed bonds class 1
+SF|SF02279|Pct cr yrs privately placed bonds class 2
+SF|SF02280|Pct cr yrs privately placed bonds class 3
+SF|SF02281|Pct cr yrs privately placed bonds class 4
+SF|SF02282|Pct cr yrs privately placed bonds class 5
+SF|SF02283|Pct cr yrs privately placed bonds class 6
+SF|SF02284|Pct cr yrs privately placed bonds total
+SF|SF02327|Tot pr yrs total bonds py class 1
+SF|SF02328|Tot pr yrs total bonds py class 2
+SF|SF02329|Tot pr yrs total bonds py class 3
+SF|SF02330|Tot pr yrs total bonds py class 4
+SF|SF02331|Tot pr yrs total bonds py class 5
+SF|SF02332|Tot pr yrs total bonds py class 6
+SF|SF02333|Tot pr yrs total bonds py total
+SF|SF02334|Tot pr yrs total bonds py % py
+SF|SF02335|Tot pr yrs publicly traded bonds class 1
+SF|SF02336|Tot pr yrs publicly traded bonds class 2
+SF|SF02337|Tot pr yrs publicly traded bonds class 3
+SF|SF02338|Tot pr yrs publicly traded bonds class 4
+SF|SF02339|Tot pr yrs publicly traded bonds class 5
+SF|SF02340|Tot pr yrs publicly traded bonds class 6
+SF|SF02341|Tot pr yrs publicly traded bonds total
+SF|SF02344|Tot pr yrs privately placed bonds class 1
+SF|SF02345|Tot pr yrs privately placed bonds class 2
+SF|SF02346|Tot pr yrs privately placed bonds class 3
+SF|SF02347|Tot pr yrs privately placed bonds class 4
+SF|SF02348|Tot pr yrs privately placed bonds class 5
+SF|SF02349|Tot pr yrs privately placed bonds class 6
+SF|SF02350|Tot pr yrs privately placed bonds total
+SF|SF02395|Pct pr yrs total bonds py class 1
+SF|SF02396|Pct pr yrs total bonds py class 2
+SF|SF02397|Pct pr yrs total bonds py class 3
+SF|SF02398|Pct pr yrs total bonds py class 4
+SF|SF02399|Pct pr yrs total bonds py class 5
+SF|SF02400|Pct pr yrs total bonds py class 6
+SF|SF02401|Pct pr yrs total bonds py total
+SF|SF02402|Pct pr yrs publicly traded bonds class 1
+SF|SF02403|Pct pr yrs publicly traded bonds class 2
+SF|SF02404|Pct pr yrs publicly traded bonds class 3
+SF|SF02405|Pct pr yrs publicly traded bonds class 4
+SF|SF02406|Pct pr yrs publicly traded bonds class 5
+SF|SF02407|Pct pr yrs publicly traded bonds class 6
+SF|SF02408|Pct pr yrs publicly traded bonds total
+SF|SF02409|Pct pr yrs privately placed bonds class 1
+SF|SF02410|Pct pr yrs privately placed bonds class 2
+SF|SF02411|Pct pr yrs privately placed bonds class 3
+SF|SF02412|Pct pr yrs privately placed bonds class 4
+SF|SF02413|Pct pr yrs privately placed bonds class 5
+SF|SF02414|Pct pr yrs privately placed bonds class 6
+SF|SF02415|Pct pr yrs privately placed bonds total
+SF|SF02458|Tot pub trad total bonds cy class 1
+SF|SF02459|Tot pub trad total bonds cy class 2
+SF|SF02460|Tot pub trad total bonds cy class 3
+SF|SF02461|Tot pub trad total bonds cy class 4
+SF|SF02462|Tot pub trad total bonds cy class 5
+SF|SF02463|Tot pub trad total bonds cy class 6
+SF|SF02464|Tot pub trad total bonds cy total
+SF|SF02465|Tot pub trad total bonds % cy
+SF|SF02466|Tot pub trad total bonds py class 1
+SF|SF02467|Tot pub trad total bonds py class 2
+SF|SF02468|Tot pub trad total bonds py class 3
+SF|SF02469|Tot pub trad total bonds py class 4
+SF|SF02470|Tot pub trad total bonds py class 5
+SF|SF02471|Tot pub trad total bonds py class 6
+SF|SF02472|Tot pub trad total bonds py total
+SF|SF02473|Tot pub trad total bonds % py
+SF|SF02474|Tot pub trad total publicly traded bonds class 1
+SF|SF02475|Tot pub trad total publicly traded bonds class 2
+SF|SF02476|Tot pub trad total publicly traded bonds class 3
+SF|SF02477|Tot pub trad total publicly traded bonds class 4
+SF|SF02478|Tot pub trad total publicly traded bonds class 5
+SF|SF02479|Tot pub trad total publicly traded bonds class 6
+SF|SF02480|Tot pub trad total publicly traded bonds total
+SF|SF02481|Tot pub trad total publicly traded bonds % tot pt
+SF|SF02482|Tot pub trad total publicly traded bonds % tot cy
+SF|SF02525|Tot priv plac total bonds cy class 1
+SF|SF02526|Tot priv plac total bonds cy class 2
+SF|SF02527|Tot priv plac total bonds cy class 3
+SF|SF02528|Tot priv plac total bonds cy class 4
+SF|SF02529|Tot priv plac total bonds cy class 5
+SF|SF02530|Tot priv plac total bonds cy class 6
+SF|SF02531|Tot priv plac total bonds cy total
+SF|SF02532|Tot priv plac total bonds % cy
+SF|SF02533|Tot priv plac total bonds py class 1
+SF|SF02534|Tot priv plac total bonds py class 2
+SF|SF02535|Tot priv plac total bonds py class 3
+SF|SF02536|Tot priv plac total bonds py class 4
+SF|SF02537|Tot priv plac total bonds py class 5
+SF|SF02538|Tot priv plac total bonds py class 6
+SF|SF02539|Tot priv plac total bonds py total
+SF|SF02540|Tot priv plac total bonds py % py
+SF|SF02541|Tot priv plac tl privately placed bonds class 1
+SF|SF02542|Tot priv plac tl privately placed bonds class 2
+SF|SF02543|Tot priv plac tl privately placed bonds class 3
+SF|SF02544|Tot priv plac tl privately placed bonds class 4
+SF|SF02545|Tot priv plac tl privately placed bonds class 5
+SF|SF02546|Tot priv plac tl privately placed bonds class 6
+SF|SF02547|Tot priv plac tl privately placed bonds total
+SF|SF02548|Tot priv plac tl privately placed bonds % tot pp
+SF|SF02549|Tot priv plac tl privately placed bonds % tot cy
+SF|SF03317|Tot priv plac freely tradable (n)
+SF|SF02550|Tot cy bonds w z designations (n)
+SF|SF02551|Tot py bonds w z designations (n)
+SF|SF05384|Tot cy bonds w z* designations (n)
+SF|SF05385|Tot py bonds w z* designations (n)
+SF|SF05386|Tot cy bonds w 5* designations (n)
+SF|SF05387|Tot py bonds w 5* designations (n)
+SF|SF05388|Tot cy bonds w 6* designations (n)
+SF|SF05389|Tot py bonds w 6* designations (n)
+SF|SF09334|Naic n/r s/t and cash equil bds
+SF|SF09335|Naic n/r s/t and csh  equil bonds
+SF|SF09336|Naic n/r s/term & cash equ  bonds
+SF|SF09337|Naic n/r short term& cash equil
+SF|SF09338|Naic n/r s/t and cash eq bonds
+SF|SF09339|Naic n/r s/t and cash equi bond
+SF|SF05110|Mat 1y or ls us gov issuer obligations
+SF|SF14551|Mat 1y or ls us gov residential mtg-bk secur
+SF|SF14552|Mat 1y or ls us gov commercial mtg-bk secur
+SF|SF14553|Mat 1y or ls us gov oth loan-bk struc secur
+SF|SF07449|Mat 1y or less us gov totals
+SF|SF10549|Mat 1y or less oth gov issuer obligations
+SF|SF14554|Mat 1y or ls oth gov residential mtg-bk secur
+SF|SF14555|Mat 1y or ls oth gov commercial mtg-bk secur
+SF|SF14556|Mat 1y or ls oth gov oth loan-bk struc secur
+SF|SF10555|Mat 1y or less oth gov totals
+SF|SF10556|Mat 1y or less us st ter issuer obligations
+SF|SF14557|Mat 1y or ls us st ter residential mtg-bk secur
+SF|SF14558|Mat 1y or ls us st ter commercial mtg-bk secur
+SF|SF14559|Mat 1y or ls us st ter oth loan-bk struc secur
+SF|SF10562|Mat 1y or less us st ter totals
+SF|SF10563|Mat 1y or less us pol sub issuer obligations
+SF|SF14560|Mat 1y or ls us pol sub residential mtg-bk secur
+SF|SF14561|Mat 1y or ls us pol sub commercial mtg-bk secur
+SF|SF14562|Mat 1y or ls us pol sub oth loan-bk struc secur
+SF|SF10569|Mat 1y or less us pol sub totals
+SF|SF10570|Mat 1y or less us sp rev issuer obligations
+SF|SF14563|Mat 1y or ls us sp rev residential mtg-bk secur
+SF|SF14564|Mat 1y or ls us sp rev commercial mtg-bk secur
+SF|SF14565|Mat 1y or ls us sp rev oth loan-bk struc secur
+SF|SF10576|Mat 1y or less us sp rev totals
+SF|SF10577|Mat 1y or less ind&misc issuer obligations
+SF|SF14566|Mat 1y or ls ind&misc residential mtg-bk secur
+SF|SF14567|Mat 1y or ls ind&misc commercial mtg-bk secur
+SF|SF14568|Mat 1y or ls ind&misc oth loan-bk struc secur
+SF|SF10583|Mat 1y or less ind&misc totals
+SF|SF10585|Mat 1y or ls hybrid secur issuer obligation
+SF|SF14569|Mat 1y or ls hybrid sec residential mtg-bk secur
+SF|SF14570|Mat 1y or ls hybrid sec commercial mtg-bk secur
+SF|SF14571|Mat 1y or ls hybrid sec oth loan-bk struc secur
+SF|SF10591|Mat 1y or less hybrid secur totals
+SF|SF03338|Mat 1y or ls aff issuer obligations
+SF|SF14572|Mat 1y or ls affl residential mtg-bk secur
+SF|SF14573|Mat 1y or ls affl commercial mtg-bk secur
+SF|SF14574|Mat 1y or ls affl oth loan-bk struc secur
+SF|SF07457|Mat 1y or ls aff totals
+SF|SF05124|Mat 1-5 yrs us gov issuer obligations
+SF|SF14587|Mat 1-5 yrs us gov residential mtg-bk secur
+SF|SF14588|Mat 1-5 yrs us gov commercial mtg-bk secur
+SF|SF14589|Mat 1-5 yrs us gov oth loan-bk struc secur
+SF|SF07468|Mat 1-5 yrs us gov totals
+SF|SF10592|Mat 1-5 yrs oth gov issuer obligations
+SF|SF14590|Mat 1-5 yrs oth gov residential mtg-bk secur
+SF|SF14591|Mat 1-5 yrs oth gov commercial mtg-bk secur
+SF|SF14592|Mat 1-5 yrs oth gov oth loan-bk struc secur
+SF|SF10598|Mat 1-5 yrs oth gov totals
+SF|SF10599|Mat 1-5 yrs us st ter issuer obligations
+SF|SF14593|Mat 1-5 yrs us st ter residential mtg-bk secur
+SF|SF14594|Mat 1-5 yrs us st ter commercial mtg-bk secur
+SF|SF14595|Mat 1-5 yrs us st ter oth loan-bk struc secur
+SF|SF10605|Mat 1-5 yrs us st ter totals
+SF|SF10606|Mat 1-5 yrs us pol sub issuer obligations
+SF|SF14596|Mat 1-5 yrs us pol sub residential mtg-bk secur
+SF|SF14597|Mat 1-5 yrs us pol sub commercial mtg-bk secur
+SF|SF14598|Mat 1-5 yrs us pol sub oth loan-bk struc secur
+SF|SF10612|Mat 1-5 yrs us pol sub totals
+SF|SF10613|Mat 1-5 yrs us sp rev issuer obligations
+SF|SF14599|Mat 1-5 yrs us sp rev residential mtg-bk secur
+SF|SF14600|Mat 1-5 yrs us sp rev commercial mtg-bk secur
+SF|SF14601|Mat 1-5 yrs us sp rev oth loan-bk struc secur
+SF|SF10619|Mat 1-5 yrs us sp rev totals
+SF|SF10620|Mat 1-5 yrs ind&misc issuer obligations
+SF|SF14602|Mat 1-5 yrs ind&misc residential mtg-bk secur
+SF|SF14603|Mat 1-5 yrs ind&misc commercial mtg-bk secur
+SF|SF14604|Mat 1-5 yrs ind&misc oth loan-bk struc secur
+SF|SF10626|Mat 1-5 yrs ind&misc totals
+SF|SF10628|Mat 1-5 yrs hybrid secur issuer obligation
+SF|SF14605|Mat 1-5 yrs hybrid sec residential mtg-bk secur
+SF|SF14606|Mat 1-5 yrs hybrid sec commercial mtg-bk secur
+SF|SF14607|Mat 1-5 yrs hybrid sec oth loan-bk struc secur
+SF|SF10634|Mat 1-5 yrs hybrid secur totals
+SF|SF03378|Mat 1-5 yrs aff issuer obligations
+SF|SF14608|Mat 1-5 yrs affl residential mtg-bk secur
+SF|SF14609|Mat 1-5 yrs affl commercial mtg-bk secur
+SF|SF14610|Mat 1-5 yrs affl oth loan-bk struc secur
+SF|SF07476|Mat 1-5 yrs aff totals
+SF|SF05138|Mat 5-10 yrs us gov issuer obligations
+SF|SF14623|Mat 5-10 yrs us gov residential mtg-bk secur
+SF|SF14624|Mat 5-10 yrs us gov commercial mtg-bk secur
+SF|SF14625|Mat 5-10 yrs us gov oth loan-bk struc secur
+SF|SF07487|Mat 5-10 yrs us gov totals
+SF|SF10635|Mat 5-10 yrs oth gov issuer obligations
+SF|SF14626|Mat 5-10 yrs oth gov residential mtg-bk secur
+SF|SF14627|Mat 5-10 yrs oth gov commercial mtg-bk secur
+SF|SF14628|Mat 5-10 yrs oth gov oth loan-bk struc secur
+SF|SF10641|Mat 5-10 yrs oth gov totals
+SF|SF10642|Mat 5-10 yrs us st ter issuer obligations
+SF|SF14629|Mat 5-10 yrs us st ter residential mtg-bk secur
+SF|SF14630|Mat 5-10 yrs us st ter commercial mtg-bk secur
+SF|SF14631|Mat 5-10 yrs us st ter oth loan-bk struc secur
+SF|SF10648|Mat 5-10 yrs us st ter totals
+SF|SF10649|Mat 5-10 yrs us pol sub issuer obligations
+SF|SF14632|Mat 5-10 yrs us pol sub residential mtg-bk secur
+SF|SF14633|Mat 5-10 yrs us pol sub commercial mtg-bk secur
+SF|SF14634|Mat 5-10 yrs us pol sub oth loan-bk struc secur
+SF|SF10655|Mat 5-10 yrs us pol sub totals
+SF|SF10656|Mat 5-10 yrs us sp rev issuer obligations
+SF|SF14635|Mat 5-10 yrs us sp rev residential mtg-bk secur
+SF|SF14636|Mat 5-10 yrs us sp rev commercial mtg-bk secur
+SF|SF14637|Mat 5-10 yrs us sp rev oth loan-bk struc secur
+SF|SF10662|Mat 5-10 yrs us sp rev totals
+SF|SF10663|Mat 5-10 yrs ind&misc issuer obligations
+SF|SF14638|Mat 5-10 yrs ind&misc residential mtg-bk secur
+SF|SF14639|Mat 5-10 yrs ind&misc commercial mtg-bk secur
+SF|SF14640|Mat 5-10 yrs ind&misc oth loan-bk struc secur
+SF|SF10669|Mat 5-10 yrs ind&misc totals
+SF|SF10671|Mat 5-10 yrs hybrid secur issuer obligation
+SF|SF14641|Mat 5-10 yrs hybrid sec residential mtg-bk secur
+SF|SF14642|Mat 5-10 yrs hybrid sec commercial mtg-bk secur
+SF|SF14643|Mat 5-10 yrs hybrid sec oth loan-bk struc secur
+SF|SF10677|Mat 5-10 yrs hybrid secur totals
+SF|SF03418|Mat 5-10 yrs aff issuer obligations
+SF|SF14644|Mat 5-10 yrs affl residential mtg-bk secur
+SF|SF14645|Mat 5-10 yrs affl commercial mtg-bk secur
+SF|SF14646|Mat 5-10 yrs affl oth loan-bk struc secur
+SF|SF07495|Mat 5-10 yrs aff totals
+SF|SF05152|Mat 10-20 yrs us gov issuer obligations
+SF|SF14659|Mat 10-20 yrs us gov residential mtg-bk secur
+SF|SF14660|Mat 10-20 yrs us gov commercial mtg-bk secur
+SF|SF14661|Mat 10-20 yrs us gov oth loan-bk struc secur
+SF|SF07506|Mat 10-20 yrs us gov totals
+SF|SF10678|Mat 10-20 yrs oth gov issuer obligations
+SF|SF14662|Mat 10-20 yrs oth gov residential mtg-bk secur
+SF|SF14663|Mat 10-20 yrs oth gov commercial mtg-bk secur
+SF|SF14664|Mat 10-20 yrs oth gov oth loan-bk struc secur
+SF|SF10684|Mat 10-20 yrs oth gov totals
+SF|SF10685|Mat 10-20 yrs us st ter issuer obligations
+SF|SF14665|Mat 10-20 yrs us st ter residential mtg-bk secur
+SF|SF14666|Mat 10-20 yrs us st ter commercial mtg-bk secur
+SF|SF14667|Mat 10-20 yrs us st ter oth loan-bk struc secur
+SF|SF10691|Mat 10-20 yrs us st ter totals
+SF|SF10692|Mat 10-20 yrs us pol sub issuer obligations
+SF|SF14668|Mat 10-20 yrs us pol sub residential mtg-bk secur
+SF|SF14669|Mat 10-20 yrs us pol sub commercial mtg-bk secur
+SF|SF14670|Mat 10-20 yrs us pol sub oth loan-bk struc secur
+SF|SF10698|Mat 10-20 yrs us pol sub totals
+SF|SF10699|Mat 10-20 yrs us sp rev issuer obligations
+SF|SF14671|Mat 10-20 yrs us sp rev residential mtg-bk secur
+SF|SF14672|Mat 10-20 yrs us sp rev commercial mtg-bk secur
+SF|SF14673|Mat 10-20 yrs us sp rev oth loan-bk struc secur
+SF|SF10705|Mat 10-20 yrs us sp rev totals
+SF|SF10706|Mat 10-20 yrs ind&misc issuer obligations
+SF|SF14674|Mat 10-20 yrs ind&misc residential mtg-bk secur
+SF|SF14675|Mat 10-20 yrs ind&misc commercial mtg-bk secur
+SF|SF14676|Mat 10-20 yrs ind&misc oth loan-bk struc secur
+SF|SF10712|Mat 10-20 yrs ind&misc totals
+SF|SF10714|Mat 10-20 yrs hybrid secur issuer obligation
+SF|SF14677|Mat 10-20 yrs hybrid sec residential mtg-bk secur
+SF|SF14678|Mat 10-20 yrs hybrid sec commercial mtg-bk secur
+SF|SF14679|Mat 10-20 yrs hybrid sec oth loan-bk struc secur
+SF|SF10720|Mat 10-20 yrs hybrid secur totals
+SF|SF03458|Mat 10-20 yrs aff issuer obligations
+SF|SF14680|Mat 10-20 yrs affl residential mtg-bk secur
+SF|SF14681|Mat 10-20 yrs affl commercial mtg-bk secur
+SF|SF14682|Mat 10-20 yrs affl oth loan-bk struc secur
+SF|SF07514|Mat 10-20 yrs aff totals
+SF|SF05166|Mat ov 20 yrs us gov issuer obligations
+SF|SF14695|Mat ov 20 yrs us gov residential mtg-bk secur
+SF|SF14696|Mat ov 20 yrs us gov commercial mtg-bk secur
+SF|SF14697|Mat ov 20 yrs us gov oth loan-bk struc secur
+SF|SF07525|Mat ov 20 yrs us gov totals
+SF|SF10721|Mat ov 20 yrs oth gov issuer obligations
+SF|SF14698|Mat ov 20 yrs oth gov residential mtg-bk secur
+SF|SF14699|Mat ov 20 yrs oth gov commercial mtg-bk secur
+SF|SF14700|Mat ov 20 yrs oth gov oth loan-bk struc secur
+SF|SF10727|Mat ov 20 yrs oth gov totals
+SF|SF10728|Mat ov 20 yrs us st ter issuer obligations
+SF|SF14701|Mat ov 20 yrs us st ter residential mtg-bk secur
+SF|SF14702|Mat ov 20 yrs us st ter commercial mtg-bk secur
+SF|SF14703|Mat ov 20 yrs us st ter oth loan-bk struc secur
+SF|SF10734|Mat ov 20 yrs us st ter totals
+SF|SF10735|Mat ov 20 yrs us pol sub issuer obligations
+SF|SF14704|Mat ov 20 yrs us pol sub residential mtg-bk secur
+SF|SF14705|Mat ov 20 yrs us pol sub commercial mtg-bk secur
+SF|SF14706|Mat ov 20 yrs us pol sub oth loan-bk struc secur
+SF|SF10741|Mat ov 20 yrs us pol sub totals
+SF|SF10742|Mat ov 20 yrs us sp rev issuer obligations
+SF|SF14707|Mat ov 20 yrs us sp rev residential mtg-bk secur
+SF|SF14708|Mat ov 20 yrs us sp rev commercial mtg-bk secur
+SF|SF14709|Mat ov 20 yrs us sp rev oth loan-bk struc secur
+SF|SF10748|Mat ov 20 yrs us sp rev totals
+SF|SF10749|Mat ov 20 yrs ind&misc issuer obligations
+SF|SF14710|Mat ov 20 yrs ind&misc residential mtg-bk secur
+SF|SF14711|Mat ov 20 yrs ind&misc commercial mtg-bk secur
+SF|SF14712|Mat ov 20 yrs ind&misc oth loan-bk struc secur
+SF|SF10755|Mat ov 20 yrs ind&misc totals
+SF|SF10757|Mat ov 20 yrs hybrid secur issuer obligation
+SF|SF14713|Mat ov 20 yrs hybrid sec residential mtg-bk secur
+SF|SF14714|Mat ov 20 yrs hybrid sec commercial mtg-bk secur
+SF|SF14715|Mat ov 20 yrs hybrid sec oth loan-bk struc secur
+SF|SF10763|Mat ov 20 yrs hybrid secur totals
+SF|SF03498|Mat ov 20 yrs aff issuer obligations
+SF|SF14716|Mat ov 20 yrs affl residential mtg-bk secur
+SF|SF14717|Mat ov 20 yrs affl commercial mtg-bk secur
+SF|SF14718|Mat ov 20 yrs affl oth loan-bk struc secur
+SF|SF07533|Mat ov 20 yrs aff totals
+SF|SF05180|Tot cy us gov issuer obligations
+SF|SF14731|Tot cy us gov residential mtg-bk secur
+SF|SF14732|Tot cy us gov commercial mtg-bk secur
+SF|SF14733|Tot cy us gov oth loan-bk struc secur
+SF|SF07544|Tot cy us gov totals
+SF|SF10764|Tot cy oth gov issuer obligations
+SF|SF14734|Tot cy oth gov residential mtg-bk secur
+SF|SF14735|Tot cy oth gov commercial mtg-bk secur
+SF|SF14736|Tot cy oth gov oth loan-bk struc secur
+SF|SF10770|Tot cy oth gov totals
+SF|SF10771|Tot cy us st ter issuer obligations
+SF|SF14737|Tot cy us st ter residential mtg-bk secur
+SF|SF14738|Tot cy us st ter commercial mtg-bk secur
+SF|SF14739|Tot cy us st ter oth loan-bk struc secur
+SF|SF10777|Tot cy us st ter totals
+SF|SF10778|Tot cy us pol sub issuer obligations
+SF|SF14740|Tot cy us pol sub residential mtg-bk secur
+SF|SF14741|Tot cy us pol sub commercial mtg-bk secur
+SF|SF14742|Tot cy us pol sub oth loan-bk struc secur
+SF|SF10784|Tot cy us pol sub totals
+SF|SF10785|Tot cy us sp rev issuer obligations
+SF|SF14743|Tot cy us sp rev residential mtg-bk secur
+SF|SF14744|Tot cy us sp rev commercial mtg-bk secur
+SF|SF14745|Tot cy us sp rev oth loan-bk struc secur
+SF|SF10791|Tot cy us sp rev totals
+SF|SF10792|Tot cy ind&misc issuer obligations
+SF|SF14746|Tot cy ind&misc residential mtg-bk secur
+SF|SF14747|Tot cy ind&misc commercial mtg-bk secur
+SF|SF14748|Tot cy ind&misc oth loan-bk struc secur
+SF|SF10798|Tot cy ind&misc totals
+SF|SF10800|Tot cy hybrid secur issuer obligation
+SF|SF14749|Tot cy hybrid sec residential mtg-bk secur
+SF|SF14750|Tot cy hybrid sec commercial mtg-bk secur
+SF|SF14751|Tot cy hybrid sec oth loan-bk struc secur
+SF|SF10806|Tot cy hybrid secur totals
+SF|SF03538|Tot cy aff issuer obligations
+SF|SF14752|Tot cy affl residential mtg-bk secur
+SF|SF14753|Tot cy affl commercial mtg-bk secur
+SF|SF14754|Tot cy affl oth loan-bk struc secur
+SF|SF07552|Tot cy aff totals
+SF|SF05194|Pct cy us gov issuer obligations
+SF|SF14764|Pct cy us gov residential mtg-bk secur
+SF|SF14765|Pct cy us gov commercial mtg-bk secur
+SF|SF14766|Pct cy us gov oth loan-bk struc secur
+SF|SF07561|Pct cy us gov totals
+SF|SF10807|Pct cy othr gov issuer obligations
+SF|SF14767|Pct cy othr gov residential mtg-bk secur
+SF|SF14768|Pct cy othr gov commercial mtg-bk secur
+SF|SF14769|Pct cy othr gov oth loan-bk struc secur
+SF|SF10813|Pct cy othr gov totals
+SF|SF10814|Pct cy us st ter issuer obligations
+SF|SF14770|Pct cy us st ter residential mtg-bk secur
+SF|SF14771|Pct cy us st ter commercial mtg-bk secur
+SF|SF14772|Pct cy us st ter oth loan-bk struc secur
+SF|SF10820|Pct cy us st ter totals
+SF|SF10821|Pct cy us pol sub issuer obligations
+SF|SF14773|Pct cy us pol sub residential mtg-bk secur
+SF|SF14774|Pct cy us pol sub commercial mtg-bk secur
+SF|SF14775|Pct cy us pol sub oth loan-bk struc secur
+SF|SF10827|Pct cy us pol sub totals
+SF|SF10828|Pct cy us sp rev issuer obligations
+SF|SF14776|Pct cy us sp rev residential mtg-bk secur
+SF|SF14777|Pct cy us sp rev commercial mtg-bk secur
+SF|SF14778|Pct cy us sp rev oth loan-bk struc secur
+SF|SF10834|Pct cy us sp rev totals
+SF|SF10835|Pct cy indst&misc issuer obligations
+SF|SF14779|Pct cy indst&misc residential mtg-bk secur
+SF|SF14780|Pct cy indst&misc commercial mtg-bk secur
+SF|SF14781|Pct cy indst&misc oth loan-bk struc secur
+SF|SF10841|Pct cy indst&misc totals
+SF|SF10843|Pct cy hybrid secur issuer obligation
+SF|SF14782|Pct cy hybrid secur residential mtg-bk secur
+SF|SF14783|Pct cy hybrid secur commercial mtg-bk secur
+SF|SF14784|Pct cy hybrid secur oth loan-bk struc secur
+SF|SF10849|Pct cy hybrid secur totals
+SF|SF03574|Pct cy aff issuer obligations
+SF|SF14785|Pct cy aff residential mtg-bk secur
+SF|SF14786|Pct cy aff commercial mtg-bk secur
+SF|SF14787|Pct cy aff oth loan-bk struc secur
+SF|SF07569|Pct cy aff totals
+SF|SF05208|Tot py us gov issuer obligations
+SF|SF14797|Tot py us gov residential mtg-bk secur
+SF|SF14798|Tot py us gov commercial mtg-bk secur
+SF|SF14799|Tot py us gov oth loan-bk struc secur
+SF|SF07573|Tot py us gov totals
+SF|SF10850|Tot py oth gov issuer obligations
+SF|SF14800|Tot py oth gov residential mtg-bk secur
+SF|SF14801|Tot py oth gov commercial mtg-bk secur
+SF|SF14802|Tot py oth gov oth loan-bk struc secur
+SF|SF10856|Tot py oth gov totals
+SF|SF10857|Tot py us st ter issuer obligations
+SF|SF14803|Tot py us st ter residential mtg-bk secur
+SF|SF14804|Tot py us st ter commercial mtg-bk secur
+SF|SF14805|Tot py us st ter oth loan-bk struc secur
+SF|SF10863|Tot py us st ter totals
+SF|SF10864|Tot py us pol sub issuer obligations
+SF|SF14806|Tot py us pol sub residential mtg-bk secur
+SF|SF14807|Tot py us pol sub commercial mtg-bk secur
+SF|SF14808|Tot py us pol sub oth loan-bk struc secur
+SF|SF10870|Tot py us pol sub totals
+SF|SF10871|Tot py us sp rev issuer obligations
+SF|SF14809|Tot py us sp rev residential mtg-bk secur
+SF|SF14810|Tot py us sp rev commercial mtg-bk secur
+SF|SF14811|Tot py us sp rev oth loan-bk struc secur
+SF|SF10877|Tot py us sp rev totals
+SF|SF10878|Tot py ind&misc issuer obligations
+SF|SF14812|Tot py ind&misc residential mtg-bk secur
+SF|SF14813|Tot py ind&misc commercial mtg-bk secur
+SF|SF14814|Tot py ind&misc oth loan-bk struc secur
+SF|SF10884|Tot py ind&misc totals
+SF|SF10886|Tot py hybrid secur issuer obligation
+SF|SF14815|Tot py hybrid sec residential mtg-bk secur
+SF|SF14816|Tot py hybrid sec commercial mtg-bk secur
+SF|SF14817|Tot py hybrid sec oth loan-bk struc secur
+SF|SF10892|Tot py hybrid secur totals
+SF|SF03610|Tot py aff issuer obligations
+SF|SF14818|Tot py affl residential mtg-bk secur
+SF|SF14819|Tot py affl commercial mtg-bk secur
+SF|SF14820|Tot py affl oth loan-bk struc secur
+SF|SF07581|Tot py aff totals
+SF|SF05222|Pct py us gov issuer obligations
+SF|SF14829|Pct py us gov issuer residential mtg-bk secur
+SF|SF14830|Pct py us gov issuer commercial mtg-bk secur
+SF|SF14831|Pct py us gov issuer oth loan-bk struc secur
+SF|SF07586|Pct py us gov totals
+SF|SF10893|Pct py othr gov issuer obligations
+SF|SF14832|Pct py othr gov residential mtg-bk secur
+SF|SF14833|Pct py othr gov commercial mtg-bk secur
+SF|SF14834|Pct py othr gov oth loan-bk struc secur
+SF|SF10899|Pct py othr gov totals
+SF|SF10900|Pct py us st ter issuer obligations
+SF|SF14835|Pct py us st ter residential mtg-bk secur
+SF|SF14836|Pct py us st ter commercial mtg-bk secur
+SF|SF14837|Pct py us st ter oth loan-bk struc secur
+SF|SF10906|Pct py us st ter totals
+SF|SF10907|Pct py us pol sub issuer obligations
+SF|SF14838|Pct py us pol sub residential mtg-bk secur
+SF|SF14839|Pct py us pol sub commercial mtg-bk secur
+SF|SF14840|Pct py us pol sub oth loan-bk struc secur
+SF|SF10913|Pct py us pol sub totals
+SF|SF10914|Pct py us sp rev issuer obligations
+SF|SF14841|Pct py us sp rev residential mtg-bk secur
+SF|SF14842|Pct py us sp rev commercial mtg-bk secur
+SF|SF14843|Pct py us sp rev oth loan-bk struc secur
+SF|SF10920|Pct py us sp rev totals
+SF|SF10921|Pct py indust&misc issuer obligations unafl
+SF|SF14844|Pct py indust&misc residential mtg-bk secur
+SF|SF14845|Pct py indust&misc commercial mtg-bk secur
+SF|SF14846|Pct py indust&misc oth loan-bk struc secur
+SF|SF10927|Pct py indust&misc totals unafl
+SF|SF10929|Pct py hybrid secur issuer obligation
+SF|SF14847|Pct py hybrid secur residential mtg-bk secur
+SF|SF14848|Pct py hybrid secur commercial mtg-bk secur
+SF|SF14849|Pct py hybrid secur oth loan-bk struc secur
+SF|SF10935|Pct py hybrid secur totals
+SF|SF03646|Pct py aff issuer obligations
+SF|SF14850|Pct py aff residential mtg-bk secur
+SF|SF14851|Pct py aff commercial mtg-bk secur
+SF|SF14852|Pct py aff oth loan-bk struc secur
+SF|SF07594|Pct py aff totals
+SF|SF05236|Tot pub trad us gov issuer obligations
+SF|SF14862|Tot pub trad us gov residential mtg-bk secur
+SF|SF14863|Tot pub trad us gov commercial mtg-bk secur
+SF|SF14864|Tot pub trad us gov oth loan-bk struc secur
+SF|SF07598|Tot pub trad us gov totals
+SF|SF10936|Tot pub trad other gov issuer obligations
+SF|SF14865|Tot pub trad oth gov residential mtg-bk secur
+SF|SF14866|Tot pub trad oth gov commercial mtg-bk secur
+SF|SF14867|Tot pub trad oth gov oth loan-bk struc secur
+SF|SF10942|Tot pub trad other gov totals
+SF|SF10943|Tot pub trad us st ter issuer obligations
+SF|SF14868|Tot pub trad us st ter residential mtg-bk secur
+SF|SF14869|Tot pub trad us st ter commercial mtg-bk secur
+SF|SF14870|Tot pub trad us st ter oth loan-bk struc secur
+SF|SF10949|Tot pub trad us st ter totals
+SF|SF10950|Tot pub trad us pol sub issuer obligations
+SF|SF14871|Tot pub trad us pol sub residential mtg-bk secur
+SF|SF14872|Tot pub trad us pol sub commercial mtg-bk secur
+SF|SF14873|Tot pub trad us pol sub oth loan-bk struc secur
+SF|SF10956|Tot pub trad us pol sub totals
+SF|SF10957|Tot pub trad us sp rev issuer obligations
+SF|SF14874|Tot pub trad us sp rev residential mtg-bk secur
+SF|SF14875|Tot pub trad us sp rev commercial mtg-bk secur
+SF|SF14876|Tot pub trad us sp rev oth loan-bk struc secur
+SF|SF10963|Tot pub trad us sp rev totals
+SF|SF10964|Tot pub trad indst&misc issuer obligations
+SF|SF14877|Tot pub trad ind&misc residential mtg-bk secur
+SF|SF14878|Tot pub trad ind&misc commercial mtg-bk secur
+SF|SF14879|Tot pub trad ind&misc oth loan-bk struc secur
+SF|SF10970|Tot pub trad indst&misc total
+SF|SF10972|Tot pub trad hybrid secur issuer obligation st
+SF|SF14880|Tot pub trad hybrid sec residential mtg-bk secur
+SF|SF14881|Tot pub trad hybrid sec commercial mtg-bk secur
+SF|SF14882|Tot pub trad hybrid sec oth loan-bk struc secur
+SF|SF10978|Tot pub trad hybrid secur totals multi-cl co
+SF|SF03682|Tot pub trad aff issuer obligations
+SF|SF14883|Tot pub trad affl residential mtg-bk secur
+SF|SF14884|Tot pub trad affl commercial mtg-bk secur
+SF|SF14885|Tot pub trad affl oth loan-bk struc secur
+SF|SF07606|Tot pub trad aff totals
+SF|SF05250|Tot priv plac us gov issuer obligations
+SF|SF14895|Tot priv plac us gov residential mtg-bk secur
+SF|SF14896|Tot priv plac us gov commercial mtg-bk secur
+SF|SF14897|Tot priv plac us gov oth loan-bk struc secur
+SF|SF07614|Tot priv plac us gov totals
+SF|SF10979|Tot priv placed oth gov issuer obligations
+SF|SF14898|Tot priv plac oth gov residential mtg-bk secur
+SF|SF14899|Tot priv plac oth gov commercial mtg-bk secur
+SF|SF14900|Tot priv plac oth gov oth loan-bk struc secur
+SF|SF10985|Tot priv placed oth gov totals
+SF|SF10986|Tot priv placed us st ter issuer obligations
+SF|SF14901|Tot priv plac us st ter residential mtg-bk secur
+SF|SF14902|Tot priv plac us st ter commercial mtg-bk secur
+SF|SF14903|Tot priv plac us st ter oth loan-bk struc secur
+SF|SF10992|Tot priv placed us st ter totals
+SF|SF10993|Tot priv placed us pol sub issuer obligations
+SF|SF14904|Tot priv plac us pol sub residential mtg-bk secur
+SF|SF14905|Tot priv plac us pol sub commercial mtg-bk secur
+SF|SF14906|Tot priv plac us pol sub oth loan-bk struc secur
+SF|SF10999|Tot priv placed us pol sub totals
+SF|SF11000|Tot priv placed us sp rev issuer obligations
+SF|SF14907|Tot priv plac us sp rev residential mtg-bk secur
+SF|SF14908|Tot priv plac us sp rev commercial mtg-bk secur
+SF|SF14909|Tot priv plac us sp rev oth loan-bk struc secur
+SF|SF11006|Tot priv placed us sp rev totals
+SF|SF11007|Tot priv placed ind&misc issuer obligations
+SF|SF14910|Tot priv plac ind&misc residential mtg-bk secur
+SF|SF14911|Tot priv plac ind&misc commercial mtg-bk secur
+SF|SF14912|Tot priv plac ind&misc oth loan-bk struc secur
+SF|SF11013|Tot priv placed ind&misc totals
+SF|SF11015|Tot priv placed hybrid secur issuer obligation
+SF|SF14913|Tot priv plac hybrid sec residential mtg-bk secur
+SF|SF14914|Tot priv plac hybrid sec commercial mtg-bk secur
+SF|SF14915|Tot priv plac hybrid sec oth loan-bk struc secur
+SF|SF11021|Tot priv placed hybrid secur totals
+SF|SF03718|Tot priv plac aff issuer obligations
+SF|SF14916|Tot priv plac affl residential mtg-bk secur
+SF|SF14917|Tot priv plac affl commercial mtg-bk secur
+SF|SF14918|Tot priv plac affl oth loan-bk struc secur
+SF|SF07622|Tot priv plac aff totals
+SF|SF05111|Mat 1y or ls us gov single class
+SF|SF10550|Mat 1y or less oth gov single class
+SF|SF10551|Mat 1y or less oth gov res defined
+SF|SF10552|Mat 1y or less oth gov res other
+SF|SF10553|Mat 1y or less oth gov comm defined
+SF|SF10554|Mat 1y or less oth gov comm other
+SF|SF10557|Mat 1y or less us st ter single class
+SF|SF10558|Mat 1y or less us st ter res defined
+SF|SF10559|Mat 1y or less us st ter res other
+SF|SF10560|Mat 1y or less us st ter comm defined
+SF|SF10561|Mat 1y or less us st ter comm other
+SF|SF10564|Mat 1y or less us pol sub single class
+SF|SF10565|Mat 1y or less us pol sub res defined
+SF|SF10566|Mat 1y or less us pol sub res other
+SF|SF10567|Mat 1y or less us pol sub comm defined
+SF|SF10568|Mat 1y or less us pol sub comm other
+SF|SF10571|Mat 1y or less us sp rev single class
+SF|SF10572|Mat 1y or less us sp rev res defined
+SF|SF10573|Mat 1y or less us sp rev res other
+SF|SF10574|Mat 1y or less us sp rev comm defined
+SF|SF10575|Mat 1y or less us sp rev comm other
+SF|SF10578|Mat 1y or less ind&misc single class
+SF|SF10579|Mat 1y or less indust res defined
+SF|SF10580|Mat 1y or less indust res other
+SF|SF10581|Mat 1y or less indust comm defined
+SF|SF10582|Mat 1y or less indust comm other
+SF|SF05268|Mat 1y or ls cr loan issuer oblgs
+SF|SF10584|Mat 1y or less cr loans single cl mtg bckd
+SF|SF07456|Mat 1y or ls cr loan totals
+SF|SF10586|Mat 1y or less hybrid sec sngl cl mtg back-ast
+SF|SF10587|Mat 1y or less hybrid sec defined multi-cl resi
+SF|SF10588|Mat 1y or less hybrid sec other multi-cl resid
+SF|SF10589|Mat 1y or less hybrid sec defined multi-cl comm
+SF|SF10590|Mat 1y or less hybrid sec other multi-cl comm
+SF|SF03339|Mat 1y or ls aff single class
+SF|SF05414|Mat 1y or ls aff res defined
+SF|SF05415|Mat 1y or ls aff res other
+SF|SF05416|Mat 1y or ls aff comm defined
+SF|SF05417|Mat 1y or ls aff comm other
+SF|SF05125|Mat 1-5 yr us gov single class
+SF|SF10593|Mat 1-5 yrs oth gov single class
+SF|SF10594|Mat 1-5 yrs oth gov res defined
+SF|SF10595|Mat 1-5 yrs oth gov res other
+SF|SF10596|Mat 1-5 yrs oth gov comm defined
+SF|SF10597|Mat 1-5 yrs oth gov comm other
+SF|SF10600|Mat 1-5 yrs us st ter single class
+SF|SF10601|Mat 1-5 yrs us st ter res defined
+SF|SF10602|Mat 1-5 yrs us st ter res other
+SF|SF10603|Mat 1-5 yrs us st ter comm defined
+SF|SF10604|Mat 1-5 yrs us st ter comm other
+SF|SF10607|Mat 1-5 yrs us pol sub single class
+SF|SF10608|Mat 1-5 yrs us pol sub res defined
+SF|SF10609|Mat 1-5 yrs us pol sub res other
+SF|SF10610|Mat 1-5 yrs us pol sub comm defined
+SF|SF10611|Mat 1-5 yrs us pol sub comm other
+SF|SF10614|Mat 1-5 yrs us sp rev single class
+SF|SF10615|Mat 1-5 yrs us sp rev res defined
+SF|SF10616|Mat 1-5 yrs us sp rev res other
+SF|SF10617|Mat 1-5 yrs us sp rev comm defined
+SF|SF10618|Mat 1-5 yrs us sp rev comm other
+SF|SF10621|Mat 1-5 yrs ind&misc single class
+SF|SF10622|Mat 1-5 yrs indust res defined
+SF|SF10623|Mat 1-5 yrs indust res other
+SF|SF10624|Mat 1-5 yrs indust comm defined
+SF|SF10625|Mat 1-5 yrs indust comm other
+SF|SF05276|Mat 1-5 yr cr loan issuer oblgs
+SF|SF10627|Mat 1-5 yrs cr loan sngle cl mtg bckd
+SF|SF07475|Mat 1-5 yr cr loan totals
+SF|SF10629|Mat 1-5 yrs hybrid secur sngl cl mtg back ast
+SF|SF10630|Mat 1-5 yrs hybrid secur defined multi-cl res
+SF|SF10631|Mat 1-5 yrs hybrid secur other multi-cl resid
+SF|SF10632|Mat 1-5 yrs hybrid secur defined multi-cl com
+SF|SF10633|Mat 1-5 yrs hybrid secur other multi-cl comm
+SF|SF03379|Mat 1-5 yr aff single class
+SF|SF05458|Mat 1-5 yr aff res defined
+SF|SF05459|Mat 1-5 yr aff res other
+SF|SF05460|Mat 1-5 yr aff comm defined
+SF|SF05461|Mat 1-5 yr aff comm other
+SF|SF05139|Mat 5-10 yr us gov single class
+SF|SF10636|Mat 5-10 yrs oth gov single class
+SF|SF10637|Mat 5-10 yrs oth gov res defined
+SF|SF10638|Mat 5-10 yrs oth gov res other
+SF|SF10639|Mat 5-10 yrs oth gov comm defined
+SF|SF10640|Mat 5-10 yrs oth gov comm other
+SF|SF10643|Mat 5-10 yrs us st ter single class
+SF|SF10644|Mat 5-10 yrs us st ter res defined
+SF|SF10645|Mat 5-10 yrs us st ter res other
+SF|SF10646|Mat 5-10 yrs us st ter comm defined
+SF|SF10647|Mat 5-10 yrs us st ter comm other
+SF|SF10650|Mat 5-10 yrs us pol sub single class
+SF|SF10651|Mat 5-10 yrs us pol sub res defined
+SF|SF10652|Mat 5-10 yrs us pol sub res other
+SF|SF10653|Mat 5-10 yrs us pol sub comm defined
+SF|SF10654|Mat 5-10 yrs us pol sub comm other
+SF|SF10657|Mat 5-10 yrs us sp rev single class
+SF|SF10658|Mat 5-10 yrs us sp rev res defined
+SF|SF10659|Mat 5-10 yrs us sp rev res other
+SF|SF10660|Mat 5-10 yrs us sp rev comm defined
+SF|SF10661|Mat 5-10 yrs us sp rev comm other
+SF|SF10664|Mat 5-10 yrs ind&misc single class
+SF|SF10665|Mat 5-10 yrs indust res defined
+SF|SF10666|Mat 5-10 yrs indust res other
+SF|SF10667|Mat 5-10 yrs indust comm defined
+SF|SF10668|Mat 5-10 yrs indust comm other
+SF|SF05284|Mat 5-10 yr cr loan issuer oblgs
+SF|SF10670|Mat 5-10 yrs cr loan sngl cl mtg back
+SF|SF07494|Mat 5-10 yr cr loan totals
+SF|SF10672|Mat 5-10 yrs hybrid secur sngl cl mtg back ast
+SF|SF10673|Mat 5-10 yrs hybrid secur defined multi-cl resi
+SF|SF10674|Mat 5-10 yrs hybrid secur other multi-cl resid
+SF|SF10675|Mat 5-10 yrs hybrid secur defined multi-cl comm
+SF|SF10676|Mat 5-10 yrs hybrid secur other multi-cl comm
+SF|SF03419|Mat 5-10 yr aff single class
+SF|SF05502|Mat 5-10 yr aff res defined
+SF|SF05503|Mat 5-10 yr aff res other
+SF|SF05504|Mat 5-10 yr aff comm defined
+SF|SF05505|Mat 5-10 yr aff comm other
+SF|SF05153|Mat 10-20 yr us gov single class
+SF|SF10679|Mat 10-20 yrs oth gov single class
+SF|SF10680|Mat 10-20 yrs oth gov res defined
+SF|SF10681|Mat 10-20 yrs oth gov res other
+SF|SF10682|Mat 10-20 yrs oth gov comm defined
+SF|SF10683|Mat 10-20 yrs oth gov comm other
+SF|SF10686|Mat 10-20 yrs us st ter single class
+SF|SF10687|Mat 10-20 yrs us st ter res defined
+SF|SF10688|Mat 10-20 yrs us st ter res other
+SF|SF10689|Mat 10-20 yrs us st ter comm defined
+SF|SF10690|Mat 10-20 yrs us st ter comm other
+SF|SF10693|Mat 10-20 yrs us pol sub single class
+SF|SF10694|Mat 10-20 yrs us pol sub res defined
+SF|SF10695|Mat 10-20 yrs us pol sub res other
+SF|SF10696|Mat 10-20 yrs us pol sub comm defined
+SF|SF10697|Mat 10-20 yrs us pol sub comm other
+SF|SF10700|Mat 10-20 yrs us sp rev single class
+SF|SF10701|Mat 10-20 yrs us sp rev res defined
+SF|SF10702|Mat 10-20 yrs us sp rev res other
+SF|SF10703|Mat 10-20 yrs us sp rev comm defined
+SF|SF10704|Mat 10-20 yrs us sp rev comm other
+SF|SF10707|Mat 10-20 yrs ind&misc single class
+SF|SF10708|Mat 10-20 yrs indust res defined
+SF|SF10709|Mat 10-20 yrs indust res other
+SF|SF10710|Mat 10-20 yrs indust comm defined
+SF|SF10711|Mat 10-20 yrs indust comm other
+SF|SF05292|Mat 10-20 yr cr loan issuer oblgs
+SF|SF10713|Mat 10-20 yrs cr loan sngl cl mtg back ast
+SF|SF07513|Mat 10-20 yr cr loan totals
+SF|SF10715|Mat 10-20 yrs hybrid secur sngl cl mtg back ast
+SF|SF10716|Mat 10-20 yrs hybrid secur defined multi-cl resi
+SF|SF10717|Mat 10-20 yrs hybrid secur other multi-cl resid
+SF|SF10718|Mat 10-20 yrs hybrid secur defined multi-cl comm
+SF|SF10719|Mat 10-20 yrs hybrid secur other multi-cl comm
+SF|SF03459|Mat 10-20 yr aff single class
+SF|SF05546|Mat 10-20 yr aff res defined
+SF|SF05547|Mat 10-20 yr aff res other
+SF|SF05548|Mat 10-20 yr aff comm defined
+SF|SF05549|Mat 10-20 yr aff comm other
+SF|SF05167|Mat ov 20 yr us gov single class
+SF|SF10722|Mat ov 20 yrs oth gov single class
+SF|SF10723|Mat ov 20 yrs oth gov res defined
+SF|SF10724|Mat ov 20 yrs oth gov res other
+SF|SF10725|Mat ov 20 yrs oth gov comm defined
+SF|SF10726|Mat ov 20 yrs oth gov comm other
+SF|SF10729|Mat ov 20 yrs us st ter single class
+SF|SF10730|Mat ov 20 yrs us st ter res defined
+SF|SF10731|Mat ov 20 yrs us st ter res other
+SF|SF10732|Mat ov 20 yrs us st ter comm defined
+SF|SF10733|Mat ov 20 yrs us st ter comm other
+SF|SF10736|Mat ov 20 yrs us pol sub single class
+SF|SF10737|Mat ov 20 yrs us pol sub res defined
+SF|SF10738|Mat ov 20 yrs us pol sub res other
+SF|SF10739|Mat ov 20 yrs us pol sub comm defined
+SF|SF10740|Mat ov 20 yrs us pol sub comm other
+SF|SF10743|Mat ov 20 yrs us sp rev single class
+SF|SF10744|Mat ov 20 yrs us sp rev res defined
+SF|SF10745|Mat ov 20 yrs us sp rev res other
+SF|SF10746|Mat ov 20 yrs us sp rev comm defined
+SF|SF10747|Mat ov 20 yrs us sp rev comm other
+SF|SF10750|Mat ov 20 yrs ind&misc single class
+SF|SF10751|Mat ov 20 yrs indust res defined
+SF|SF10752|Mat ov 20 yrs indust res other
+SF|SF10753|Mat ov 20 yrs indust comm defined
+SF|SF10754|Mat ov 20 yrs indust comm other
+SF|SF05300|Mat ov 20 yr cr loan issuer oblgs
+SF|SF10756|Mat ov 20 yrs cr loan sngl cl mtg back-ast
+SF|SF07532|Mat ov 20 yr cr loan totals
+SF|SF10758|Mat ov 20 yrs hybrid secur sngl cl mtg back ast
+SF|SF10759|Mat ov 20 yrs hybrid secur defined multi-cl resi
+SF|SF10760|Mat ov 20 yrs hybrid secur other multi-cl resid
+SF|SF10761|Mat ov 20 yrs hybrid secur defined multi-cl comm
+SF|SF10762|Mat ov 20 yrs hybrid secur other multi-cl comm
+SF|SF03499|Mat ov 20 yr aff single class
+SF|SF05590|Mat ov 20 yr aff res defined
+SF|SF05591|Mat ov 20 yr aff res other
+SF|SF05592|Mat ov 20 yr aff comm defined
+SF|SF05593|Mat ov 20 yr aff comm other
+SF|SF05181|Tot cr yr us gov single class
+SF|SF10765|Tot cr yrs oth gov single class
+SF|SF10766|Tot cr yrs oth gov res defined
+SF|SF10767|Tot cr yrs oth gov res other
+SF|SF10768|Tot cr yrs oth gov comm defined
+SF|SF10769|Tot cr yrs oth gov comm other
+SF|SF10772|Tot cr yrs us st ter single class
+SF|SF10773|Tot cr yrs us st ter res defined
+SF|SF10774|Tot cr yrs us st ter res other
+SF|SF10775|Tot cr yrs us st ter comm defined
+SF|SF10776|Tot cr yrs us st ter comm other
+SF|SF10779|Tot cr yrs us pol sub single class
+SF|SF10780|Tot cr yrs us pol sub res defined
+SF|SF10781|Tot cr yrs us pol sub res other
+SF|SF10782|Tot cr yrs us pol sub comm defined
+SF|SF10783|Tot cr yrs us pol sub comm other
+SF|SF10786|Tot cr yrs us sp rev single class
+SF|SF10787|Tot cr yrs us sp rev res defined
+SF|SF10788|Tot cr yrs us sp rev res other
+SF|SF10789|Tot cr yrs us sp rev comm defined
+SF|SF10790|Tot cr yrs us sp rev comm other
+SF|SF10793|Tot cr yrs ind&misc single class
+SF|SF10794|Tot cr yrs indust res defined
+SF|SF10795|Tot cr yrs indust res other
+SF|SF10796|Tot cr yrs indust comm defined
+SF|SF10797|Tot cr yrs indust comm other
+SF|SF05308|Tot cr yr cr loan issuer oblgs
+SF|SF10799|Tot cr yrs cr loan sngl cl mtg back-ast
+SF|SF07551|Tot cr yr cr loan totals
+SF|SF10801|Tot cr yrs hybrid secur sngl cl mtg back ast
+SF|SF10802|Tot cr yrs hybrid secur defined multi-cl resi
+SF|SF10803|Tot cr yrs hybrid secur other multi-cl resid
+SF|SF10804|Tot cr yrs hybrid secur defined multi-cl comm
+SF|SF10805|Tot cr yrs hybrid secur other multi-cl comm
+SF|SF03539|Tot cr yr aff single class
+SF|SF05634|Tot cr yr aff res defined
+SF|SF05635|Tot cr yr aff res other
+SF|SF05636|Tot cr yr aff comm defined
+SF|SF05637|Tot cr yr aff comm other
+SF|SF05195|Pct cr yr us gov single class
+SF|SF10808|Pct cr yr othr gov single class
+SF|SF10809|Pct cr yr othr gov res defined
+SF|SF10810|Pct cr yr othr gov res other
+SF|SF10811|Pct cr yr othr gov comm defined
+SF|SF10812|Pct cr yr othr gov comm other
+SF|SF10815|Pct cr yr us st ter single class
+SF|SF10816|Pct cr yr us st ter res defined
+SF|SF10817|Pct cr yr us st ter res other
+SF|SF10818|Pct cr yr us st ter comm defined
+SF|SF10819|Pct cr yr us st ter comm other
+SF|SF10822|Pct cr yr us pol sub single class
+SF|SF10823|Pct cr yr us pol sub res defined
+SF|SF10824|Pct cr yr us pol sub res other
+SF|SF10825|Pct cr yr us pol sub comm defined
+SF|SF10826|Pct cr yr us pol sub comm other
+SF|SF10829|Pct cr yr us sp rev single class
+SF|SF10830|Pct cr yr us sp rev res defined
+SF|SF10831|Pct cr yr us sp rev res other
+SF|SF10832|Pct cr yr us sp rev comm defined
+SF|SF10833|Pct cr yr us sp rev comm other
+SF|SF10836|Pct cr yr indst&misc single class
+SF|SF10837|Pct cr yr indst&misc res defined
+SF|SF10838|Pct cr yr indst&misc res other
+SF|SF10839|Pct cr yr indst&misc comm defined
+SF|SF10840|Pct cr yr indst&misc comm other
+SF|SF05316|Pct cr yr cr loan issuer oblgs
+SF|SF10842|Pct cr yr cred tenant loans sngl cl mtg back-ast
+SF|SF07568|Pct cr yr cr loan totals
+SF|SF10844|Pct cr yr hybrid secur sngl cl mtg back ast
+SF|SF10845|Pct cr yr hybrid secur defined multi-cl resi
+SF|SF10846|Pct cr yr hybrid secur other multi-cl resid
+SF|SF10847|Pct cr yr hybrid secur defined multi-cl comm
+SF|SF10848|Pct cr yr hybrid secur other multi-cl comm
+SF|SF03575|Pct cr yr aff single class
+SF|SF05674|Pct cr yr aff res defined
+SF|SF05675|Pct cr yr aff res other
+SF|SF05676|Pct cr yr aff comm defined
+SF|SF05677|Pct cr yr aff comm other
+SF|SF05209|Tot pr yr us gov single class
+SF|SF10851|Tot pr yrs oth gov single class
+SF|SF10852|Tot pr yrs oth gov res defined
+SF|SF10853|Tot pr yrs oth gov res other
+SF|SF10854|Tot pr yrs oth gov comm defined
+SF|SF10855|Tot pr yrs oth gov comm other
+SF|SF10858|Tot pr yrs us st ter single class
+SF|SF10859|Tot pr yrs us st ter res defined
+SF|SF10860|Tot pr yrs us st ter res other
+SF|SF10861|Tot pr yrs us st ter comm defined
+SF|SF10862|Tot pr yrs us st ter comm other
+SF|SF10865|Tot pr yrs us pol sub single class
+SF|SF10866|Tot pr yrs us pol sub res defined
+SF|SF10867|Tot pr yrs us pol sub res other
+SF|SF10868|Tot pr yrs us pol sub comm defined
+SF|SF10869|Tot pr yrs us pol sub comm other
+SF|SF10872|Tot pr yrs us sp rev single class
+SF|SF10873|Tot pr yrs us sp rev res defined
+SF|SF10874|Tot pr yrs us sp rev res other
+SF|SF10875|Tot pr yrs us sp rev comm defined
+SF|SF10876|Tot pr yrs us sp rev comm other
+SF|SF10879|Tot pr yrs ind&misc single class
+SF|SF10880|Tot pr yrs indust res defined
+SF|SF10881|Tot pr yrs indust res other
+SF|SF10882|Tot pr yrs indust comm defined
+SF|SF10883|Tot pr yrs indust comm other
+SF|SF05324|Tot pr yr cr loan issuer oblgs
+SF|SF10885|Tot pr yrs cr loanns sngl cl mtg back-ast
+SF|SF07580|Tot pr yr cr loan totals
+SF|SF10887|Tot pr yrs hybrid secur sngl cl mtg back ast
+SF|SF10888|Tot pr yrs hybrid secur defined multi-cl resi
+SF|SF10889|Tot pr yrs hybrid secur other multi-cl resid
+SF|SF10890|Tot pr yrs hybrid secur defined multi-cl comm
+SF|SF10891|Tot pr yrs hybrid secur other multi-cl comm
+SF|SF03611|Tot pr yr aff single class
+SF|SF05714|Tot pr yr aff res defined
+SF|SF05715|Tot pr yr aff res other
+SF|SF05716|Tot pr yr aff comm defined
+SF|SF05717|Tot pr yr aff comm other
+SF|SF05223|Pct pr yr us gov single class
+SF|SF10894|Pct pr yr othr gov single class
+SF|SF10895|Pct pr yr othr gov res defined
+SF|SF10896|Pct pr yr othr gov res other
+SF|SF10897|Pct pr yr othr gov comm defined
+SF|SF10898|Pct pr yr othr gov comm other
+SF|SF10901|Pct pr yr us st ter single class
+SF|SF10902|Pct pr yr us st ter res defined
+SF|SF10903|Pct pr yr us st ter res other
+SF|SF10904|Pct pr yr us st ter comm defined
+SF|SF10905|Pct pr yr us st ter comm other
+SF|SF10908|Pct pr yr us pol sub single class
+SF|SF10909|Pct pr yr us pol sub res defined
+SF|SF10910|Pct pr yr us pol sub res other
+SF|SF10911|Pct pr yr us pol sub comm defined
+SF|SF10912|Pct pr yr us pol sub comm other
+SF|SF10915|Pct pr yr us sp rev single class
+SF|SF10916|Pct pr yr us sp rev res defined
+SF|SF10917|Pct pr yr us sp rev res other
+SF|SF10918|Pct pr yr us sp rev comm defined
+SF|SF10919|Pct pr yr us sp rev comm other
+SF|SF10922|Pct pr yr indust&misc single class unafl
+SF|SF10923|Pct pr yr indust&misc res defined unafl
+SF|SF10924|Pct pr yr indust&misc res other unafl
+SF|SF10925|Pct pr yr indust&misc comm defined unafl
+SF|SF10926|Pct pr yr indust&misc comm other unafl
+SF|SF05332|Pct pr yr cr loan issuer oblgs
+SF|SF10928|Pct pr yr cred tenant loans sngl cl mtg back-ast
+SF|SF07593|Pct pr yr cr loan totals
+SF|SF10930|Pct pr yr hybrid secur sngl cl mtg back ast
+SF|SF10931|Pct pr yr hybrid secur defined multi-cl resi
+SF|SF10932|Pct pr yr hybrid secur other multi-cl resid
+SF|SF10933|Pct pr yr hybrid secur defined multi-cl comm
+SF|SF10934|Pct pr yr hybrid secur other multi-cl comm
+SF|SF03647|Pct pr yr aff single class
+SF|SF05754|Pct pr yr aff res defined
+SF|SF05755|Pct pr yr aff res other
+SF|SF05756|Pct pr yr aff comm defined
+SF|SF05757|Pct pr yr aff comm other
+SF|SF05237|Tot pub trad us gov single class
+SF|SF10937|Tot pub trad other gov single class
+SF|SF10938|Tot pub trad other gov res defined
+SF|SF10939|Tot pub trad other gov res other
+SF|SF10940|Tot pub trad other gov comm defined
+SF|SF10941|Tot pub trad other gov comm other
+SF|SF10944|Tot pub trad us st ter single class
+SF|SF10945|Tot pub trad us st ter res defined
+SF|SF10946|Tot pub trad us st ter res otherer
+SF|SF10947|Tot pub trad us st ter comm defined
+SF|SF10948|Tot pub trad us st ter comm otherer
+SF|SF10951|Tot pub trad us pol sub single class
+SF|SF10952|Tot pub trad us pol sub res defined
+SF|SF10953|Tot pub trad us pol sub res otherer
+SF|SF10954|Tot pub trad us pol sub comm defined
+SF|SF10955|Tot pub trad us pol sub comm otherer
+SF|SF10958|Tot pub trad us sp rev single class
+SF|SF10959|Tot pub trad us sp rev res defined
+SF|SF10960|Tot pub trad us sp rev res otherer
+SF|SF10961|Tot pub trad us sp rev comm defined
+SF|SF10962|Tot pub trad us sp rev comm otherer
+SF|SF10965|Tot pub trad indst&miscsingle class
+SF|SF10966|Tot pub trad indst&misc res defined
+SF|SF10967|Tot pub trad indst&misc res other
+SF|SF10968|Tot pub trad indst&misc comm defined
+SF|SF10969|Tot pub trad indst&misc comm other
+SF|SF05340|Tot pub trad cr loan issuer oblgs
+SF|SF10971|Tot pub trad hybrid secur issuer obligation
+SF|SF07605|Tot pub trad cr loan totals
+SF|SF10973|Tot pub trad hybrid secur defined multi-cl resi
+SF|SF10974|Tot pub trad hybrid secur other multi-cl resid
+SF|SF10975|Tot pub trad hybrid secur defined multi-cl comm
+SF|SF10976|Tot pub trad hybrid secur other multi-cl comm
+SF|SF10977|Tot pub trad hybrid secur totals
+SF|SF03683|Tot pub trad aff single class
+SF|SF05794|Tot pub trad aff res defined
+SF|SF05795|Tot pub trad aff res other
+SF|SF05796|Tot pub trad aff comm defined
+SF|SF05797|Tot pub trad aff comm other
+SF|SF05251|Tot priv plac us gov single class
+SF|SF10980|Tot priv placed oth gov single class
+SF|SF10981|Tot priv placed oth gov res defined
+SF|SF10982|Tot priv placed oth gov res other
+SF|SF10983|Tot priv placed oth gov comm defined
+SF|SF10984|Tot priv placed oth gov comm other
+SF|SF10987|Tot priv placed us st ter single class
+SF|SF10988|Tot priv placed us st ter res defined
+SF|SF10989|Tot priv placed us st ter res other
+SF|SF10990|Tot priv placed us st ter comm defined
+SF|SF10991|Tot priv placed us st ter comm other
+SF|SF10994|Tot priv placed us pol sub single class
+SF|SF10995|Tot priv placed us pol sub res defined
+SF|SF10996|Tot priv placed us pol sub res other
+SF|SF10997|Tot priv placed us pol sub comm defined
+SF|SF10998|Tot priv placed us pol sub comm other
+SF|SF11001|Tot priv placed us sp rev single class
+SF|SF11002|Tot priv placed us sp rev res defined
+SF|SF11003|Tot priv placed us sp rev res other
+SF|SF11004|Tot priv placed us sp rev comm defined
+SF|SF11005|Tot priv placed us sp rev comm other
+SF|SF11008|Tot priv placed ind&misc single class
+SF|SF11009|Tot priv placed indust res defined
+SF|SF11010|Tot priv placed indust res other
+SF|SF11011|Tot priv placed indust comm defined
+SF|SF11012|Tot priv placed indust comm other
+SF|SF05348|Tot priv plac cr loan issuer oblgs
+SF|SF11014|Tot priv placed cr loan sngle cl mtg-bckd
+SF|SF07621|Tot priv plac cr loan totals
+SF|SF11016|Tot priv placed hybrid secur sngl cl mtg back ast
+SF|SF11017|Tot priv placed hybrid secur defined multi-cl resi
+SF|SF11018|Tot priv placed hybrid secur other multi-cl resid
+SF|SF11019|Tot priv placed hybrid secur defined multi-cl comm
+SF|SF11020|Tot priv placed hybrid secur other multi-cl comm
+SF|SF03719|Tot priv plac aff single class
+SF|SF05834|Tot priv plac aff res defined
+SF|SF05835|Tot priv plac aff res other
+SF|SF05836|Tot priv plac aff comm defined
+SF|SF05837|Tot priv plac aff comm other
+SF|SF03342|Mat 1y or ls tot issuer obligations
+SF|SF14575|Mat 1y or ls tot residential mtg-bk secur
+SF|SF14576|Mat 1y or ls tot commercial mtg-bk secur
+SF|SF14577|Mat 1y or ls tot oth loan-bk struc secur
+SF|SF07458|Mat 1y or ls tot totals
+SF|SF07459|Mat 1y or ls totals as % of cy
+SF|SF03346|Mat 1y or ls tot py issuer obligations
+SF|SF14578|Mat 1y or ls tot py residential mtg-bk secur
+SF|SF14579|Mat 1y or ls tot py commercial mtg-bk secur
+SF|SF14580|Mat 1y or ls tot py oth loan-bk struc secur
+SF|SF07460|Mat 1y or ls tot py totals
+SF|SF07461|Mat 1y or ls tot as % of py total
+SF|SF03350|Mat 1y or ls pub trad issuer obligations
+SF|SF14581|Mat 1y or ls pub trad residential mtg-bk secur
+SF|SF14582|Mat 1y or ls pub trad commercial mtg-bk secur
+SF|SF14583|Mat 1y or ls pub trad oth loan-bk struc secur
+SF|SF07462|Mat 1y or ls pub trad totals
+SF|SF07463|Mat 1y or ls pub trad tot % tot cy
+SF|SF07464|Mat 1y or ls pub trad tot % bnd cy
+SF|SF03354|Mat 1y or ls priv plac issuer obligations
+SF|SF14584|Mat 1y or ls priv plac residential mtg-bk secur
+SF|SF14585|Mat 1y or ls priv plac commercial mtg-bk secur
+SF|SF14586|Mat 1y or ls priv plac oth loan-bk struc secur
+SF|SF07465|Mat 1y or ls priv plac totals
+SF|SF07466|Mat 1y or ls priv plac tot % tot cy
+SF|SF07467|Mat 1y or ls priv plac tot % bnd cy
+SF|SF03382|Mat 1-5 yrs tot issuer obligations
+SF|SF14611|Mat 1-5 yrs tot residential mtg-bk secur
+SF|SF14612|Mat 1-5 yrs tot commercial mtg-bk secur
+SF|SF14613|Mat 1-5 yrs tot oth loan-bk struc secur
+SF|SF07477|Mat 1-5 yrs tot totals
+SF|SF07478|Mat 1-5 yrs totals as % of cy
+SF|SF03386|Mat 1-5 yrs tot py issuer obligations
+SF|SF14614|Mat 1-5 yrs tot py residential mtg-bk secur
+SF|SF14615|Mat 1-5 yrs tot py commercial mtg-bk secur
+SF|SF14616|Mat 1-5 yrs tot py oth loan-bk struc secur
+SF|SF07479|Mat 1-5 yrs tot py totals
+SF|SF07480|Mat 1-5 yrs tot as % of py total
+SF|SF03390|Mat 1-5 yrs pub trad issuer obligations
+SF|SF14617|Mat 1-5 yrs pub trad residential mtg-bk secur
+SF|SF14618|Mat 1-5 yrs pub trad commercial mtg-bk secur
+SF|SF14619|Mat 1-5 yrs pub trad oth loan-bk struc secur
+SF|SF07481|Mat 1-5 yrs pub trad totals
+SF|SF07482|Mat 1-5 yrs pub trad tot % tot cy
+SF|SF07483|Mat 1-5 yrs pub trad tot % bnd cy
+SF|SF03394|Mat 1-5 yrs priv plac issuer obligations
+SF|SF14620|Mat 1-5 yrs priv plac residential mtg-bk secur
+SF|SF14621|Mat 1-5 yrs priv plac commercial mtg-bk secur
+SF|SF14622|Mat 1-5 yrs priv plac oth loan-bk struc secur
+SF|SF07484|Mat 1-5 yrs priv plac totals
+SF|SF07485|Mat 1-5 yrs priv plac tot % tot cy
+SF|SF07486|Mat 1-5 yrs priv plac tot % bnd cy
+SF|SF03422|Mat 5-10 yrs tot issuer obligations
+SF|SF14647|Mat 5-10 yrs tot residential mtg-bk secur
+SF|SF14648|Mat 5-10 yrs tot commercial mtg-bk secur
+SF|SF14649|Mat 5-10 yrs tot oth loan-bk struc secur
+SF|SF07496|Mat 5-10 yrs tot totals
+SF|SF07497|Mat 5-10 yrs totals as % of cy
+SF|SF03426|Mat 5-10 yrs tot py issuer obligations
+SF|SF14650|Mat 5-10 yrs tot py residential mtg-bk secur
+SF|SF14651|Mat 5-10 yrs tot py commercial mtg-bk secur
+SF|SF14652|Mat 5-10 yrs tot py oth loan-bk struc secur
+SF|SF07498|Mat 5-10 yrs tot py totals
+SF|SF07499|Mat 5-10 yrs tot as % of py total
+SF|SF03430|Mat 5-10 yrs pub trad issuer obligations
+SF|SF14653|Mat 5-10 yrs pub trad residential mtg-bk secur
+SF|SF14654|Mat 5-10 yrs pub trad commercial mtg-bk secur
+SF|SF14655|Mat 5-10 yrs pub trad oth loan-bk struc secur
+SF|SF07500|Mat 5-10 yrs pub trad totals
+SF|SF07501|Mat 5-10 yrs pub trad tot % tot cy
+SF|SF07502|Mat 5-10 yrs pub trad tot % bnd cy
+SF|SF03434|Mat 5-10 yrs priv plac issuer obligations
+SF|SF14656|Mat 5-10 yrs priv plac residential mtg-bk secur
+SF|SF14657|Mat 5-10 yrs priv plac commercial mtg-bk secur
+SF|SF14658|Mat 5-10 yrs priv plac oth loan-bk struc secur
+SF|SF07503|Mat 5-10 yrs priv plac totals
+SF|SF07504|Mat 5-10 yrs priv plac tot % tot cy
+SF|SF07505|Mat 5-10 yrs priv plac tot % bnd cy
+SF|SF03462|Mat 10-20 yrs tot issuer obligations
+SF|SF14683|Mat 10-20 yrs tot residential mtg-bk secur
+SF|SF14684|Mat 10-20 yrs tot commercial mtg-bk secur
+SF|SF14685|Mat 10-20 yrs tot oth loan-bk struc secur
+SF|SF07515|Mat 10-20 yrs tot totals
+SF|SF07516|Mat 10-20 yrs totals as % of cy
+SF|SF03466|Mat 10-20 yrs tot py issuer obligations
+SF|SF14686|Mat 10-20 yrs tot py residential mtg-bk secur
+SF|SF14687|Mat 10-20 yrs tot py commercial mtg-bk secur
+SF|SF14688|Mat 10-20 yrs tot py oth loan-bk struc secur
+SF|SF07517|Mat 10-20 yrs tot py totals
+SF|SF07518|Mat 10-20 yrs tot as % of py total
+SF|SF03470|Mat 10-20 yrs pub trad issuer obligations
+SF|SF14689|Mat 10-20 yrs pub trad residential mtg-bk secur
+SF|SF14690|Mat 10-20 yrs pub trad commercial mtg-bk secur
+SF|SF14691|Mat 10-20 yrs pub trad oth loan-bk struc secur
+SF|SF07519|Mat 10-20 yrs pub trad totals
+SF|SF07520|Mat 10-20 yrs pub trad tot % tot cy
+SF|SF07521|Mat 10-20 yrs pub trad tot % bnd cy
+SF|SF03474|Mat 10-20 yrs priv plac issuer obligations
+SF|SF14692|Mat 10-20 yrs priv plac residential mtg-bk secur
+SF|SF14693|Mat 10-20 yrs priv plac commercial mtg-bk secur
+SF|SF14694|Mat 10-20 yrs priv plac oth loan-bk struc secur
+SF|SF07522|Mat 10-20 yrs priv plac totals
+SF|SF07523|Mat 10-20 yrs priv plac tot % tot cy
+SF|SF07524|Mat 10-20 yrs priv plac tot % bnd cy
+SF|SF03502|Mat ov 20 yrs tot tot issuer obligations
+SF|SF14719|Mat ov 20 yrs tot residential mtg-bk secur
+SF|SF14720|Mat ov 20 yrs tot commercial mtg-bk secur
+SF|SF14721|Mat ov 20 yrs tot oth loan-bk struc secur
+SF|SF07534|Mat ov 20 yrs tot totals
+SF|SF07535|Mat ov 20 yrs totals as % of cy
+SF|SF03506|Mat ov 20 yrs tot py issuer obligations
+SF|SF14722|Mat ov 20 yrs tot py residential mtg-bk secur
+SF|SF14723|Mat ov 20 yrs tot py commercial mtg-bk secur
+SF|SF14724|Mat ov 20 yrs tot py oth loan-bk struc secur
+SF|SF07536|Mat ov 20 yrs tot py totals
+SF|SF07537|Mat ov 20 yrs tot as % of py total
+SF|SF03510|Mat ov 20 yrs pub trad issuer obligations
+SF|SF14725|Mat ov 20 yrs pub trad residential mtg-bk secur
+SF|SF14726|Mat ov 20 yrs pub trad commercial mtg-bk secur
+SF|SF14727|Mat ov 20 yrs pub trad oth loan-bk struc secur
+SF|SF07538|Mat ov 20 yrs pub trad totals
+SF|SF07539|Mat ov 20 yrs pub trad tot % tot cy
+SF|SF07540|Mat ov 20 yrs pub trad tot % bnd cy
+SF|SF03514|Mat ov 20 yrs priv plac issuer obligations
+SF|SF14728|Mat ov 20 yrs priv plac residential mtg-bk secur
+SF|SF14729|Mat ov 20 yrs priv plac commercial mtg-bk secur
+SF|SF14730|Mat ov 20 yrs priv plac oth loan-bk struc secur
+SF|SF07541|Mat ov 20 yrs priv plac totals
+SF|SF07542|Mat ov 20 yrs priv plac tot % tot cy
+SF|SF07543|Mat ov 20 yrs priv plac tot % bnd cy
+SF|SF03542|Tot cy tot issuer obligations
+SF|SF14755|Tot cy tot residential mtg-bk secur
+SF|SF14756|Tot cy tot commercial mtg-bk secur
+SF|SF14757|Tot cy tot oth loan-bk struc secur
+SF|SF07553|Tot cy tot totals
+SF|SF07554|Tot cy totals as % of cy
+SF|SF03546|Tot cy pub trad issuer obligations
+SF|SF14758|Tot cy pub trad residential mtg-bk secur
+SF|SF14759|Tot cy pub trad commercial mtg-bk secur
+SF|SF14760|Tot cy pub trad oth loan-bk struc secur
+SF|SF07555|Tot cy pub trad totals
+SF|SF07556|Tot cy pub trad tot % tot cy
+SF|SF07557|Tot cy pub trad tot % bnd cy
+SF|SF03550|Tot cy priv plac issuer obligations
+SF|SF14761|Tot cy priv plac residential mtg-bk secur
+SF|SF14762|Tot cy priv plac commercial mtg-bk secur
+SF|SF14763|Tot cy priv plac oth loan-bk struc secur
+SF|SF07558|Tot cy priv plac totals
+SF|SF07559|Tot cy priv plac tot % tot cy
+SF|SF07560|Tot cy priv plac tot % bnd cy
+SF|SF03578|Pct cy tot issuer obligations
+SF|SF14788|Pct cy tot residential mtg-bk secur
+SF|SF14789|Pct cy tot commercial mtg-bk secur
+SF|SF14790|Pct cy tot oth loan-bk struc secur
+SF|SF07570|Pct cy tot totals
+SF|SF03582|Pct cy pub trad issuer obligations
+SF|SF14791|Pct cy pub trad residential mtg-bk secur
+SF|SF14792|Pct cy pub trad commercial mtg-bk secur
+SF|SF14793|Pct cy pub trad oth loan-bk struc secur
+SF|SF07571|Pct cy pub trad totals
+SF|SF03586|Pct cy priv plac issuer obligations
+SF|SF14794|Pct cy priv plac residential mtg-bk secur
+SF|SF14795|Pct cy priv plac commercial mtg-bk secur
+SF|SF14796|Pct cy priv plac oth loan-bk struc secur
+SF|SF07572|Pct cy priv plac totals
+SF|SF03614|Tot py tot py issuer obligations
+SF|SF14928|Tot py tot py residential mtg-bk secur
+SF|SF14821|Tot py tot py commercial mtg-bk secur
+SF|SF14822|Tot py tot py oth loan-bk struc secur
+SF|SF07582|Tot py tot py totals
+SF|SF07583|Tot py tot as % of py total
+SF|SF03618|Tot py pub trad issuer obligations
+SF|SF14823|Tot py pub trad residential mtg-bk secur
+SF|SF14824|Tot py pub trad commercial mtg-bk secur
+SF|SF14825|Tot py pub trad oth loan-bk struc secur
+SF|SF07584|Tot py pub trad totals
+SF|SF03622|Tot py priv plac issuer obligations
+SF|SF14826|Tot py priv plac residential mtg-bk secur
+SF|SF14827|Tot py priv plac commercial mtg-bk secur
+SF|SF14828|Tot py priv plac oth loan-bk struc secur
+SF|SF07585|Tot py priv plac totals
+SF|SF03650|Pct py tot py issuer obligations
+SF|SF14853|Pct py tot py residential mtg-bk secur
+SF|SF14854|Pct py tot py commercial mtg-bk secur
+SF|SF14855|Pct py tot py oth loan-bk struc secur
+SF|SF07595|Pct py tot py totals
+SF|SF03654|Pct py pub trad issuer obligations
+SF|SF14856|Pct py pub trad residential mtg-bk secur
+SF|SF14857|Pct py pub trad commercial mtg-bk secur
+SF|SF14858|Pct py pub trad oth loan-bk struc secur
+SF|SF07596|Pct py pub trad totals
+SF|SF03658|Pct py priv plac issuer obligations
+SF|SF14859|Pct py priv plac residential mtg-bk secur
+SF|SF14860|Pct py priv plac commercial mtg-bk secur
+SF|SF14861|Pct py priv plac oth loan-bk struc secur
+SF|SF07597|Pct py priv plac totals
+SF|SF03686|Tot pub trad tot issuer obligations
+SF|SF14886|Tot pub trad tot residential mtg-bk secur
+SF|SF14887|Tot pub trad tot commercial mtg-bk secur
+SF|SF14888|Tot pub trad tot oth loan-bk struc secur
+SF|SF07607|Tot pub trad tot totals
+SF|SF07608|Tot pub trad totals as % of cy
+SF|SF03690|Tot pub trad tot py issuer obligations
+SF|SF14889|Tot pub trad tot py residential mtg-bk secur
+SF|SF14890|Tot pub trad tot py commercial mtg-bk secur
+SF|SF14891|Tot pub trad tot py oth loan-bk struc secur
+SF|SF07609|Tot pub trad tot py totals
+SF|SF07610|Tot pub trad tot as % of py total
+SF|SF03694|Tot pub trad pub trad issuer obligations
+SF|SF14892|Tot pub trad pub trad residential mtg-bk secur
+SF|SF14893|Tot pub trad pub trad commercial mtg-bk secur
+SF|SF14894|Tot pub trad pub trad oth loan-bk struc secur
+SF|SF07611|Tot pub trad pub trad totals
+SF|SF07612|Tot pub trad pub trad tot % tot cy
+SF|SF07613|Tot pub trad pub trad tot % bnd cy
+SF|SF03722|Tot priv plac tot issuer obligations
+SF|SF14919|Tot priv plac tot residential mtg-bk secur
+SF|SF14920|Tot priv plac tot commercial mtg-bk secur
+SF|SF14921|Tot priv plac tot oth loan-bk struc secur
+SF|SF07623|Tot priv plac tot totals
+SF|SF07624|Tot priv plac totals as % of cy
+SF|SF03726|Tot priv plac tot py issuer obligations
+SF|SF14922|Tot priv plac tot py residential mtg-bk secur
+SF|SF14923|Tot priv plac tot py commercial mtg-bk secur
+SF|SF14924|Tot priv plac tot py oth loan-bk struc secur
+SF|SF07625|Tot priv plac tot py totals
+SF|SF07626|Tot priv plac tot as % of py total
+SF|SF03730|Tot priv plac priv plc issuer obligations
+SF|SF14925|Tot priv plac priv plac residential mtg-bk secur
+SF|SF14926|Tot priv plac priv plac commercial mtg-bk secur
+SF|SF14927|Tot priv plac priv plac oth loan-bk struc secur
+SF|SF07627|Tot priv plac priv plc totals
+SF|SF07628|Tot priv plac priv plc tot % tot cy
+SF|SF07629|Tot priv plac priv plc tot % bnd cy
+SF|SF03343|Mat 1y or ls tot single class
+SF|SF05418|Mat 1y or ls tot res defined
+SF|SF05419|Mat 1y or ls tot res other
+SF|SF05420|Mat 1y or ls tot comm defined
+SF|SF05421|Mat 1y or ls tot comm other
+SF|SF03347|Mat 1y or ls tot py single class
+SF|SF05422|Mat 1y or ls tot py res defined
+SF|SF05423|Mat 1y or ls tot py res other
+SF|SF05424|Mat 1y or ls tot py comm defined
+SF|SF05425|Mat 1y or ls tot py comm other
+SF|SF03351|Mat 1y or ls pub trad single class
+SF|SF05426|Mat 1y or ls pub trad res defined
+SF|SF05427|Mat 1y or ls pub trad res other
+SF|SF05428|Mat 1y or ls pub trad comm defined
+SF|SF05429|Mat 1y or ls pub trad comm other
+SF|SF03355|Mat 1y or ls priv plac single class
+SF|SF05430|Mat 1y or ls priv plac res defined
+SF|SF05431|Mat 1y or ls priv plac res other
+SF|SF05432|Mat 1y or ls priv plac comm defined
+SF|SF05433|Mat 1y or ls priv plac comm other
+SF|SF03383|Mat 1-5 yr tot single class
+SF|SF05462|Mat 1-5 yr tot res defined
+SF|SF05463|Mat 1-5 yr tot res other
+SF|SF05464|Mat 1-5 yr tot comm defined
+SF|SF05465|Mat 1-5 yr tot comm other
+SF|SF03387|Mat 1-5 yr tot py single class
+SF|SF05466|Mat 1-5 yr tot py res defined
+SF|SF05467|Mat 1-5 yr tot py res other
+SF|SF05468|Mat 1-5 yr tot py comm defined
+SF|SF05469|Mat 1-5 yr tot py comm other
+SF|SF03391|Mat 1-5 yr pub trad single class
+SF|SF05470|Mat 1-5 yr pub trad res defined
+SF|SF05471|Mat 1-5 yr pub trad res other
+SF|SF05472|Mat 1-5 yr pub trad comm defined
+SF|SF05473|Mat 1-5 yr pub trad comm other
+SF|SF03395|Mat 1-5 yr priv plac single class
+SF|SF05474|Mat 1-5 yr priv plac res defined
+SF|SF05475|Mat 1-5 yr priv plac res other
+SF|SF05476|Mat 1-5 yr priv plac comm defined
+SF|SF05477|Mat 1-5 yr priv plac comm other
+SF|SF03423|Mat 5-10 yr tot single class
+SF|SF05506|Mat 5-10 yr tot res defined
+SF|SF05507|Mat 5-10 yr tot res other
+SF|SF05508|Mat 5-10 yr tot comm defined
+SF|SF05509|Mat 5-10 yr tot comm other
+SF|SF03427|Mat 5-10 yr tot py single class
+SF|SF05510|Mat 5-10 yr tot py res defined
+SF|SF05511|Mat 5-10 yr tot py res other
+SF|SF05512|Mat 5-10 yr tot py comm defined
+SF|SF05513|Mat 5-10 yr tot py comm other
+SF|SF03431|Mat 5-10 yr pub trad single class
+SF|SF05514|Mat 5-10 yr pub trad res defined
+SF|SF05515|Mat 5-10 yr pub trad res other
+SF|SF05516|Mat 5-10 yr pub trad comm defined
+SF|SF05517|Mat 5-10 yr pub trad comm other
+SF|SF03435|Mat 5-10 yr priv plac single class
+SF|SF05518|Mat 5-10 yr priv plac res defined
+SF|SF05519|Mat 5-10 yr priv plac res other
+SF|SF05520|Mat 5-10 yr priv plac comm defined
+SF|SF05521|Mat 5-10 yr priv plac comm other
+SF|SF03463|Mat 10-20 yr tot single class
+SF|SF05550|Mat 10-20 yr tot res defined
+SF|SF05551|Mat 10-20 yr tot res other
+SF|SF05552|Mat 10-20 yr tot comm defined
+SF|SF05553|Mat 10-20 yr tot comm other
+SF|SF03467|Mat 10-20 yr tot py single class
+SF|SF05554|Mat 10-20 yr tot py res defined
+SF|SF05555|Mat 10-20 yr tot py res other
+SF|SF05556|Mat 10-20 yr tot py comm defined
+SF|SF05557|Mat 10-20 yr tot py comm other
+SF|SF03471|Mat 10-20 yr pub trad single class
+SF|SF05558|Mat 10-20 yr pub trad res defined
+SF|SF05559|Mat 10-20 yr pub trad res other
+SF|SF05560|Mat 10-20 yr pub trad comm defined
+SF|SF05561|Mat 10-20 yr pub trad comm other
+SF|SF03475|Mat 10-20 yr priv plac single class
+SF|SF05562|Mat 10-20 yr priv plac res defined
+SF|SF05563|Mat 10-20 yr priv plac res other
+SF|SF05564|Mat 10-20 yr priv plac comm defined
+SF|SF05565|Mat 10-20 yr priv plac comm other
+SF|SF03503|Mat ov 20 yr tot single class
+SF|SF05594|Mat ov 20 yr tot res defined
+SF|SF05595|Mat ov 20 yr tot res other
+SF|SF05596|Mat ov 20 yr tot comm defined
+SF|SF05597|Mat ov 20 yr tot comm other
+SF|SF03507|Mat ov 20 yr tot py single class
+SF|SF05598|Mat ov 20 yr tot py res defined
+SF|SF05599|Mat ov 20 yr tot py res other
+SF|SF05600|Mat ov 20 yr tot py comm defined
+SF|SF05601|Mat ov 20 yr tot py comm other
+SF|SF03511|Mat ov 20 yr pub trad single class
+SF|SF05602|Mat ov 20 yr pub trad res defined
+SF|SF05603|Mat ov 20 yr pub trad res other
+SF|SF05604|Mat ov 20 yr pub trad comm defined
+SF|SF05605|Mat ov 20 yr pub trad comm other
+SF|SF03515|Mat ov 20 yr priv plac single class
+SF|SF05606|Mat ov 20 yr priv plac res defined
+SF|SF05607|Mat ov 20 yr priv plac res other
+SF|SF05608|Mat ov 20 yr priv plac comm defined
+SF|SF05609|Mat ov 20 yr priv plac comm other
+SF|SF03543|Tot cr yr tot single class
+SF|SF05638|Tot cr yr tot res defined
+SF|SF05639|Tot cr yr tot res other
+SF|SF05640|Tot cr yr tot comm defined
+SF|SF05641|Tot cr yr tot comm other
+SF|SF03547|Tot cr yr pub trad single class
+SF|SF05642|Tot cr yr pub trad res defined
+SF|SF05643|Tot cr yr pub trad res other
+SF|SF05644|Tot cr yr pub trad comm defined
+SF|SF05645|Tot cr yr pub trad comm other
+SF|SF03551|Tot cr yr priv plac single class
+SF|SF05646|Tot cr yr priv plac res defined
+SF|SF05647|Tot cr yr priv plac res other
+SF|SF05648|Tot cr yr priv plac comm defined
+SF|SF05649|Tot cr yr priv plac comm other
+SF|SF03579|Pct cr yr tot single class
+SF|SF05678|Pct cr yr tot res defined
+SF|SF05679|Pct cr yr tot res other
+SF|SF05680|Pct cr yr tot comm defined
+SF|SF05681|Pct cr yr tot comm other
+SF|SF03583|Pct cr yr pub trad single class
+SF|SF05682|Pct cr yr pub trad res defined
+SF|SF05683|Pct cr yr pub trad res other
+SF|SF05684|Pct cr yr pub trad comm defined
+SF|SF05685|Pct cr yr pub trad comm other
+SF|SF03587|Pct cr yr priv plac single class
+SF|SF05686|Pct cr yr priv plac res defined
+SF|SF05687|Pct cr yr priv plac res other
+SF|SF05688|Pct cr yr priv plac comm defined
+SF|SF05689|Pct cr yr priv plac comm other
+SF|SF03615|Tot pr yr tot py single class
+SF|SF05718|Tot pr yr tot py res defined
+SF|SF05719|Tot pr yr tot py res other
+SF|SF05720|Tot pr yr tot py comm defined
+SF|SF05721|Tot pr yr tot py comm other
+SF|SF03619|Tot pr yr pub trad single class
+SF|SF05722|Tot pr yr pub trad res defined
+SF|SF05723|Tot pr yr pub trad res other
+SF|SF05724|Tot pr yr pub trad comm defined
+SF|SF05725|Tot pr yr pub trad comm other
+SF|SF03623|Tot pr yr priv plac single class
+SF|SF05726|Tot pr yr priv plac res defined
+SF|SF05727|Tot pr yr priv plac res other
+SF|SF05728|Tot pr yr priv plac comm defined
+SF|SF05729|Tot pr yr priv plac comm other
+SF|SF03651|Pct pr yr tot py single class
+SF|SF05758|Pct pr yr tot py res defined
+SF|SF05759|Pct pr yr tot py res other
+SF|SF05760|Pct pr yr tot py comm defined
+SF|SF05761|Pct pr yr tot py comm other
+SF|SF03655|Pct pr yr pub trad single class
+SF|SF05762|Pct pr yr pub trad res defined
+SF|SF05763|Pct pr yr pub trad res other
+SF|SF05764|Pct pr yr pub trad comm defined
+SF|SF05765|Pct pr yr pub trad comm other
+SF|SF03659|Pct pr yr priv plac single class
+SF|SF05766|Pct pr yr priv plac res defined
+SF|SF05767|Pct pr yr priv plac res other
+SF|SF05768|Pct pr yr priv plac comm defined
+SF|SF05769|Pct pr yr priv plac comm other
+SF|SF03687|Tot pub trad tot single class
+SF|SF05798|Tot pub trad tot res defined
+SF|SF05799|Tot pub trad tot res other
+SF|SF05800|Tot pub trad tot comm defined
+SF|SF05801|Tot pub trad tot comm other
+SF|SF03691|Tot pub trad tot py single class
+SF|SF05802|Tot pub trad tot py res defined
+SF|SF05803|Tot pub trad tot py res other
+SF|SF05804|Tot pub trad tot py comm defined
+SF|SF05805|Tot pub trad tot py comm other
+SF|SF03695|Tot pub trad pub trad single class
+SF|SF05806|Tot pub trad pub trad res defined
+SF|SF05807|Tot pub trad pub trad res other
+SF|SF05808|Tot pub trad pub trad comm defined
+SF|SF05809|Tot pub trad pub trad comm other
+SF|SF03723|Tot priv plac tot single class
+SF|SF05838|Tot priv plac tot res defined
+SF|SF05839|Tot priv plac tot res other
+SF|SF05840|Tot priv plac tot comm defined
+SF|SF05841|Tot priv plac tot comm other
+SF|SF03727|Tot priv plac tot py single class
+SF|SF05842|Tot priv plac tot py res defined
+SF|SF05843|Tot priv plac tot py res other
+SF|SF05844|Tot priv plac tot py comm defined
+SF|SF05845|Tot priv plac tot py comm other
+SF|SF03731|Tot priv plac priv plc single class
+SF|SF05846|Tot priv plac priv plc res defined
+SF|SF05847|Tot priv plac priv plc res other
+SF|SF05848|Tot priv plac priv plc comm defined
+SF|SF05849|Tot priv plac priv plc comm other
+SF|SF03330|Mat 1y or ls pub util issuer oblgs
+SF|SF03331|Mat 1y or ls pub util single class
+SF|SF05406|Mat 1y or ls pub util res defined
+SF|SF05407|Mat 1y or ls pub util res other
+SF|SF05408|Mat 1y or ls pub util comm defined
+SF|SF05409|Mat 1y or ls pub util comm other
+SF|SF07454|Mat 1y or ls pub util totals
+SF|SF03370|Mat 1-5 yr pub util issuer oblgs
+SF|SF03371|Mat 1-5 yr pub util single class
+SF|SF05450|Mat 1-5 yr pub util res defined
+SF|SF05451|Mat 1-5 yr pub util res other
+SF|SF05452|Mat 1-5 yr pub util comm defined
+SF|SF05453|Mat 1-5 yr pub util comm other
+SF|SF07473|Mat 1-5 yr pub util totals
+SF|SF03410|Mat 5-10 yr pub util issuer oblgs
+SF|SF03411|Mat 5-10 yr pub util single class
+SF|SF05494|Mat 5-10 yr pub util res defined
+SF|SF05495|Mat 5-10 yr pub util res other
+SF|SF05496|Mat 5-10 yr pub util comm defined
+SF|SF05497|Mat 5-10 yr pub util comm other
+SF|SF07492|Mat 5-10 yr pub util totals
+SF|SF03450|Mat 10-20 yr pub util issuer oblgs
+SF|SF03451|Mat 10-20 yr pub util single class
+SF|SF05538|Mat 10-20 yr pub util res defined
+SF|SF05539|Mat 10-20 yr pub util res other
+SF|SF05540|Mat 10-20 yr pub util comm defined
+SF|SF05541|Mat 10-20 yr pub util comm other
+SF|SF07511|Mat 10-20 yr pub util totals
+SF|SF03490|Mat ov 20 yr pub util issuer oblgs
+SF|SF03491|Mat ov 20 yr pub util single class
+SF|SF05582|Mat ov 20 yr pub util res defined
+SF|SF05583|Mat ov 20 yr pub util res other
+SF|SF05584|Mat ov 20 yr pub util comm defined
+SF|SF05585|Mat ov 20 yr pub util comm other
+SF|SF07530|Mat ov 20 yr pub util totals
+SF|SF03530|Tot cr yr pub util issuer oblgs
+SF|SF03531|Tot cr yr pub util single class
+SF|SF05626|Tot cr yr pub util res defined
+SF|SF05627|Tot cr yr pub util res other
+SF|SF05628|Tot cr yr pub util comm defined
+SF|SF05629|Tot cr yr pub util comm other
+SF|SF07549|Tot cr yr pub util totals
+SF|SF03566|Pct cr yr pub util issuer oblgs
+SF|SF03567|Pct cr yr pub util single class
+SF|SF05666|Pct cr yr pub util res defined
+SF|SF05667|Pct cr yr pub util res other
+SF|SF05668|Pct cr yr pub util comm defined
+SF|SF05669|Pct cr yr pub util comm other
+SF|SF07566|Pct cr yr pub util totals
+SF|SF03602|Tot pr yr pub util issuer oblgs
+SF|SF03603|Tot pr yr pub util single class
+SF|SF05706|Tot pr yr pub util res defined
+SF|SF05707|Tot pr yr pub util res other
+SF|SF05708|Tot pr yr pub util comm defined
+SF|SF05709|Tot pr yr pub util comm other
+SF|SF07578|Tot pr yr pub util totals
+SF|SF03638|Pct pr yr pub util issuer oblgs
+SF|SF03639|Pct pr yr pub util single class
+SF|SF05746|Pct pr yr pub util res defined
+SF|SF05747|Pct pr yr pub util res other
+SF|SF05748|Pct pr yr pub util comm defined
+SF|SF05749|Pct pr yr pub util comm other
+SF|SF07591|Pct pr yr pub util totals
+SF|SF03674|Tot pub trad pub util issuer oblgs
+SF|SF03675|Tot pub trad pub util single class
+SF|SF05786|Tot pub trad pub util res defined
+SF|SF05787|Tot pub trad pub util res other
+SF|SF05788|Tot pub trad pub util comm defined
+SF|SF05789|Tot pub trad pub util comm other
+SF|SF07603|Tot pub trad pub util totals
+SF|SF03710|Tot priv plac pub util issuer oblgs
+SF|SF03711|Tot priv plac pub util single class
+SF|SF05826|Tot priv plac pub util res defined
+SF|SF05827|Tot priv plac pub util res other
+SF|SF05828|Tot priv plac pub util comm defined
+SF|SF05829|Tot priv plac pub util comm other
+SF|SF07619|Tot priv plac pub util totals

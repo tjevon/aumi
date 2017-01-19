@@ -1,0 +1,42 @@
+; BESTLINK
+; 2
+; 39
+SF|SF07664|Net tax on capital gains/losses (i)
+SF|SF00139|Premiums collected net of reins
+SF|SF00144|Net investment income
+SF|SF07652|Miscellaneous income
+SF|SF07653|Total (lines 1 through 3)
+SF|SF07654|Benefit and loss related payments
+SF|SF07655|Net transfer to sep,seg & prot cell
+SF|SF07656|Commiss,exps & agg w-ins for deduct
+SF|SF00146|Dividends paid to policyholders
+SF|SF00147|Fed&frgn inc tax pd/rcv net tax g/l
+SF|SF07657|Total (lines 5 through 9)
+SF|SF00148|Net cash from operations
+SF|SF00149|Proceeds-bonds
+SF|SF00150|Proceeds-stocks
+SF|SF00151|Proceeds-mortgage loans
+SF|SF00152|Proceeds-real estate
+SF|SF00154|Proceeds-other invested assets
+SF|SF00155|Proceeds-net g/l on cash,equiv& s-t
+SF|SF00156|Proceeds-miscellaneous proceeds
+SF|SF00157|Proceeds-total investment proceeds
+SF|SF00165|Cost of inv acq - bonds
+SF|SF00166|Cost of inv acq - stocks
+SF|SF00167|Cost of inv acq - mortgage loans
+SF|SF00168|Cost of inv acq - real estate
+SF|SF00170|Cost of inv acq - other inv assets
+SF|SF00171|Cost of inv acq - misc application
+SF|SF00172|Cost of inv acq - tot investmt acq
+SF|SF07658|Net incr(decr) contr ln & prem note
+SF|SF04771|Net cash from investments
+SF|SF07659|Cash prov/app - surp note&cap note
+SF|SF07660|Cash prov/app - cap & paid in surp
+SF|SF07661|Cash prov/app - borrowed funds
+SF|SF07662|Cash prov/app - net dep contr & oth
+SF|SF00173|Cash prov/app - dividend to stkhldr
+SF|SF07663|Cash prov/app - oth cash prov(appl)
+SF|SF04773|Net cash from finan & misc sources
+SF|SF00179|Net change in cash & short-term inv
+SF|SF00180|Cash,equiv&s-term inv - beg of year
+SF|SF00181|Cash,equiv&s-term inv - end of year

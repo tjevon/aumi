@@ -1,0 +1,2468 @@
+; BESTLINK
+; 2
+; 2465
+ST|ST07093|Mat 1y or ls us gov naic 1
+ST|ST07094|Mat 1y or ls us gov naic 2
+ST|ST07095|Mat 1y or ls us gov naic 3
+ST|ST07096|Mat 1y or ls us gov naic 4
+ST|ST07097|Mat 1y or ls us gov naic 5
+ST|ST07098|Mat 1y or ls us gov naic 6
+ST|ST07099|Mat 1y or ls us gov total
+ST|ST17847|Mat 1yr or less oth gov naic 1
+ST|ST17848|Mat 1yr or less oth gov naic 2
+ST|ST17849|Mat 1yr or less oth gov naic 3
+ST|ST17850|Mat 1yr or less oth gov naic 4
+ST|ST17851|Mat 1yr or less oth gov naic 5
+ST|ST17852|Mat 1yr or less oth gov naic 6
+ST|ST17853|Mat 1yr or less oth gov total
+ST|ST17854|Mat 1yr or less us st & ter naic 1
+ST|ST17855|Mat 1yr or less us st & ter naic 2
+ST|ST17856|Mat 1yr or less us st & ter naic 3
+ST|ST17857|Mat 1yr or less us st & ter naic 4
+ST|ST17858|Mat 1yr or less us st & ter naic 5
+ST|ST17859|Mat 1yr or less us st & ter naic 6
+ST|ST17860|Mat 1yr or less us st & ter total
+ST|ST17861|Mat 1yr or less us pol sub naic 1
+ST|ST17862|Mat 1yr or less us pol sub naic 2
+ST|ST17863|Mat 1yr or less us pol sub naic 3
+ST|ST17864|Mat 1yr or less us pol sub naic 4
+ST|ST17865|Mat 1yr or less us pol sub naic 5
+ST|ST17866|Mat 1yr or less us pol sub naic 6
+ST|ST17867|Mat 1yr or less us pol sub total
+ST|ST17868|Mat 1yr or less us sp rev naic 1
+ST|ST17869|Mat 1yr or less us sp rev naic 2
+ST|ST17870|Mat 1yr or less us sp rev naic 3
+ST|ST17871|Mat 1yr or less us sp rev naic 4
+ST|ST17872|Mat 1yr or less us sp rev naic 5
+ST|ST17873|Mat 1yr or less us sp rev naic 6
+ST|ST17874|Mat 1yr or less us sp rev total
+ST|ST07107|Mat 1-5 yr us gov naic 1
+ST|ST07108|Mat 1-5 yr us gov naic 2
+ST|ST07109|Mat 1-5 yr us gov naic 3
+ST|ST07110|Mat 1-5 yr us gov naic 4
+ST|ST07111|Mat 1-5 yr us gov naic 5
+ST|ST07112|Mat 1-5 yr us gov naic 6
+ST|ST07113|Mat 1-5 yr us gov total
+ST|ST17889|Mat 1-5 yrs oth gov naic 1
+ST|ST17890|Mat 1-5 yrs oth gov naic 2
+ST|ST17891|Mat 1-5 yrs oth gov naic 3
+ST|ST17892|Mat 1-5 yrs oth gov naic 4
+ST|ST17893|Mat 1-5 yrs oth gov naic 5
+ST|ST17894|Mat 1-5 yrs oth gov naic 6
+ST|ST17895|Mat 1-5 yrs oth gov total
+ST|ST17896|Mat 1-5 yrs us st & ter naic 1
+ST|ST17897|Mat 1-5 yrs us st & ter naic 2
+ST|ST17898|Mat 1-5 yrs us st & ter naic 3
+ST|ST17899|Mat 1-5 yrs us st & ter naic 4
+ST|ST17900|Mat 1-5 yrs us st & ter naic 5
+ST|ST17901|Mat 1-5 yrs us st & ter naic 6
+ST|ST17902|Mat 1-5 yrs us st & ter total
+ST|ST17903|Mat 1-5 yrs us pol sub naic 1
+ST|ST17904|Mat 1-5 yrs us pol sub naic 2
+ST|ST17905|Mat 1-5 yrs us pol sub naic 3
+ST|ST17906|Mat 1-5 yrs us pol sub naic 4
+ST|ST17907|Mat 1-5 yrs us pol sub naic 5
+ST|ST17908|Mat 1-5 yrs us pol sub naic 6
+ST|ST17909|Mat 1-5 yrs us pol sub total
+ST|ST17910|Mat 1-5 yrs us sp rev naic 1
+ST|ST17911|Mat 1-5 yrs us sp rev naic 2
+ST|ST17912|Mat 1-5 yrs us sp rev naic 3
+ST|ST17913|Mat 1-5 yrs us sp rev naic 4
+ST|ST17914|Mat 1-5 yrs us sp rev naic 5
+ST|ST17915|Mat 1-5 yrs us sp rev naic 6
+ST|ST17916|Mat 1-5 yrs us sp rev total
+ST|ST07121|Mat 5-10 yr us gov naic 1
+ST|ST07122|Mat 5-10 yr us gov naic 2
+ST|ST07123|Mat 5-10 yr us gov naic 3
+ST|ST07124|Mat 5-10 yr us gov naic 4
+ST|ST07125|Mat 5-10 yr us gov naic 5
+ST|ST07126|Mat 5-10 yr us gov naic 6
+ST|ST07127|Mat 5-10 yr us gov total
+ST|ST17931|Mat 5-10 yrs oth gov naic 1
+ST|ST17932|Mat 5-10 yrs oth gov naic 2
+ST|ST17933|Mat 5-10 yrs oth gov naic 3
+ST|ST17934|Mat 5-10 yrs oth gov naic 4
+ST|ST17935|Mat 5-10 yrs oth gov naic 5
+ST|ST17936|Mat 5-10 yrs oth gov naic 6
+ST|ST17937|Mat 5-10 yrs oth gov total
+ST|ST17938|Mat 5-10 yrs us st & ter naic 1
+ST|ST17939|Mat 5-10 yrs us st & ter naic 2
+ST|ST17940|Mat 5-10 yrs us st & ter naic 3
+ST|ST17941|Mat 5-10 yrs us st & ter naic 4
+ST|ST17942|Mat 5-10 yrs us st & ter naic 5
+ST|ST17943|Mat 5-10 yrs us st & ter naic 6
+ST|ST17944|Mat 5-10 yrs us st & ter total
+ST|ST17945|Mat 5-10 yrs us pol sub naic 1
+ST|ST17946|Mat 5-10 yrs us pol sub naic 2
+ST|ST17947|Mat 5-10 yrs us pol sub naic 3
+ST|ST17948|Mat 5-10 yrs us pol sub naic 4
+ST|ST17949|Mat 5-10 yrs us pol sub naic 5
+ST|ST17950|Mat 5-10 yrs us pol sub naic 6
+ST|ST17951|Mat 5-10 yrs us pol sub total
+ST|ST17952|Mat 5-10 yrs us sp rev naic 1
+ST|ST17953|Mat 5-10 yrs us sp rev naic 2
+ST|ST17954|Mat 5-10 yrs us sp rev naic 3
+ST|ST17955|Mat 5-10 yrs us sp rev naic 4
+ST|ST17956|Mat 5-10 yrs us sp rev naic 5
+ST|ST17957|Mat 5-10 yrs us sp rev naic 6
+ST|ST17958|Mat 5-10 yrs us sp rev total
+ST|ST07135|Mat 10-20 yr us gov naic 1
+ST|ST07136|Mat 10-20 yr us gov naic 2
+ST|ST07137|Mat 10-20 yr us gov naic 3
+ST|ST07138|Mat 10-20 yr us gov naic 4
+ST|ST07139|Mat 10-20 yr us gov naic 5
+ST|ST07140|Mat 10-20 yr us gov naic 6
+ST|ST07141|Mat 10-20 yr us gov total
+ST|ST17973|Mat 10-20 yrs oth gov naic 1
+ST|ST17974|Mat 10-20 yrs oth gov naic 2
+ST|ST17975|Mat 10-20 yrs oth gov naic 3
+ST|ST17976|Mat 10-20 yrs oth gov naic 4
+ST|ST17977|Mat 10-20 yrs oth gov naic 5
+ST|ST17978|Mat 10-20 yrs oth gov naic 6
+ST|ST17979|Mat 10-20 yrs oth gov total
+ST|ST17980|Mat 10-20 yrs us st & ter naic 1
+ST|ST17981|Mat 10-20 yrs us st & ter naic 2
+ST|ST17982|Mat 10-20 yrs us st & ter naic 3
+ST|ST17983|Mat 10-20 yrs us st & ter naic 4
+ST|ST17984|Mat 10-20 yrs us st & ter naic 5
+ST|ST17985|Mat 10-20 yrs us st & ter naic 6
+ST|ST17986|Mat 10-20 yrs us st & ter total
+ST|ST17987|Mat 10-20 yrs us pol sub naic 1
+ST|ST17988|Mat 10-20 yrs us pol sub naic 2
+ST|ST17989|Mat 10-20 yrs us pol sub naic 3
+ST|ST17990|Mat 10-20 yrs us pol sub naic 4
+ST|ST17991|Mat 10-20 yrs us pol sub naic 5
+ST|ST17992|Mat 10-20 yrs us pol sub naic 6
+ST|ST17993|Mat 10-20 yrs us pol sub total
+ST|ST17994|Mat 10-20 yrs us sp rev naic 1
+ST|ST17995|Mat 10-20 yrs us sp rev naic 2
+ST|ST17996|Mat 10-20 yrs us sp rev naic 3
+ST|ST17997|Mat 10-20 yrs us sp rev naic 4
+ST|ST17998|Mat 10-20 yrs us sp rev naic 5
+ST|ST17999|Mat 10-20 yrs us sp rev naic 6
+ST|ST18000|Mat 10-20 yrs us sp rev total
+ST|ST07149|Mat ov 20 yr us gov naic 1
+ST|ST07150|Mat ov 20 yr us gov naic 2
+ST|ST07151|Mat ov 20 yr us gov naic 3
+ST|ST07152|Mat ov 20 yr us gov naic 4
+ST|ST07153|Mat ov 20 yr us gov naic 5
+ST|ST07154|Mat ov 20 yr us gov naic 6
+ST|ST07155|Mat ov 2/ yr us gov total
+ST|ST18015|Mat ov 20 yrs oth gov naic 1
+ST|ST18016|Mat ov 20 yrs oth gov naic 2
+ST|ST18017|Mat ov 20 yrs oth gov naic 3
+ST|ST18018|Mat ov 20 yrs oth gov naic 4
+ST|ST18019|Mat ov 20 yrs oth gov naic 5
+ST|ST18020|Mat ov 20 yrs oth gov naic 6
+ST|ST18021|Mat ov 20 yrs oth gov total
+ST|ST18022|Mat ov 20 yrs us st & ter naic 1
+ST|ST18023|Mat ov 20 yrs us st & ter naic 2
+ST|ST18024|Mat ov 20 yrs us st & ter naic 3
+ST|ST18025|Mat ov 20 yrs us st & ter naic 4
+ST|ST18026|Mat ov 20 yrs us st & ter naic 5
+ST|ST18027|Mat ov 20 yrs us st & ter naic 6
+ST|ST18028|Mat ov 20 yrs us st & ter total
+ST|ST18029|Mat ov 20 yrs us pol sub naic 1
+ST|ST18030|Mat ov 20 yrs us pol sub naic 2
+ST|ST18031|Mat ov 20 yrs us pol sub naic 3
+ST|ST18032|Mat ov 20 yrs us pol sub naic 4
+ST|ST18033|Mat ov 20 yrs us pol sub naic 5
+ST|ST18034|Mat ov 20 yrs us pol sub naic 6
+ST|ST18035|Mat ov 20 yrs pol us sub total
+ST|ST18036|Mat ov 20 yrs us sp rev naic 1
+ST|ST18037|Mat ov 20 yrs us sp rev naic 2
+ST|ST18038|Mat ov 20 yrs us sp rev naic 3
+ST|ST18039|Mat ov 20 yrs us sp rev naic 4
+ST|ST18040|Mat ov 20 yrs us sp rev naic 5
+ST|ST18041|Mat ov 20 yrs us sp rev naic 6
+ST|ST18042|Mat ov 20 yrs us sp rev total
+ST|ST07163|Tot cr yr us gov naic 1
+ST|ST07164|Tot cr yr us gov naic 2
+ST|ST07165|Tot cr yr us gov naic 3
+ST|ST07166|Tot cr yr us gov naic 4
+ST|ST07167|Tot cr yr us gov naic 5
+ST|ST07168|Tot cr yr us gov naic 6
+ST|ST07169|Tot cr yr us gov total
+ST|ST18057|Tot cr yrs oth gov naic 1
+ST|ST18058|Tot cr yrs oth gov naic 2
+ST|ST18059|Tot cr yrs oth gov naic 3
+ST|ST18060|Tot cr yrs oth gov naic 4
+ST|ST18061|Tot cr yrs oth gov naic 5
+ST|ST18062|Tot cr yrs oth gov naic 6
+ST|ST18063|Tot cr yrs oth gov total
+ST|ST18064|Tot cr yrs us st & ter naic 1
+ST|ST18065|Tot cr yrs us st & ter naic 2
+ST|ST18066|Tot cr yrs us st & ter naic 3
+ST|ST18067|Tot cr yrs us st & ter naic 4
+ST|ST18068|Tot cr yrs us st & ter naic 5
+ST|ST18069|Tot cr yrs us st & ter naic 6
+ST|ST18070|Tot cr yrs us st & ter total
+ST|ST18071|Tot cr yrs us pol sub naic 1
+ST|ST18072|Tot cr yrs us pol sub naic 2
+ST|ST18073|Tot cr yrs us pol sub naic 3
+ST|ST18074|Tot cr yrs us pol sub naic 4
+ST|ST18075|Tot cr yrs us pol sub naic 5
+ST|ST18076|Tot cr yrs us pol sub naic 6
+ST|ST18077|Tot cr yrs us pol sub total
+ST|ST18078|Tot cr yrs us sp rev naic 1
+ST|ST18079|Tot cr yrs us sp rev naic 2
+ST|ST18080|Tot cr yrs us sp rev naic 3
+ST|ST18081|Tot cr yrs us sp rev naic 4
+ST|ST18082|Tot cr yrs us sp rev naic 5
+ST|ST18083|Tot cr yrs us sp rev naic 6
+ST|ST18084|Tot cr yrs us sp rev total
+ST|ST07177|Pct cr yr us gov naic 1
+ST|ST07178|Pct cr yr us gov naic 2
+ST|ST07179|Pct cr yr us gov naic 3
+ST|ST07180|Pct cr yr us gov naic 4
+ST|ST07181|Pct cr yr us gov naic 5
+ST|ST07182|Pct cr yr us gov naic 6
+ST|ST07183|Pct cr yr us gov total
+ST|ST18099|Pct cr yr othr gov naic 1
+ST|ST18100|Pct cr yr othr gov naic 2
+ST|ST18101|Pct cr yr othr gov naic 3
+ST|ST18102|Pct cr yr othr gov naic 4
+ST|ST18103|Pct cr yr othr gov naic 5
+ST|ST18104|Pct cr yr othr gov naic 6
+ST|ST18105|Pct cr yr othr gov total
+ST|ST18106|Pct cr yr us st & ter naic 1
+ST|ST18107|Pct cr yr us st & ter naic 2
+ST|ST18108|Pct cr yr us st & ter naic 3
+ST|ST18109|Pct cr yr us st & ter naic 4
+ST|ST18110|Pct cr yr us st & ter naic 5
+ST|ST18111|Pct cr yr us st & ter naic 6
+ST|ST18112|Pct cr yr us st & ter total
+ST|ST18113|Pct cr yr us pol sub naic 1
+ST|ST18114|Pct cr yr us pol sub naic 2
+ST|ST18115|Pct cr yr us pol sub naic 3
+ST|ST18116|Pct cr yr us pol sub naic 4
+ST|ST18117|Pct cr yr us pol sub naic 5
+ST|ST18118|Pct cr yr us pol sub naic 6
+ST|ST18119|Pct cr yr us pol sub total
+ST|ST18120|Pct cr yr us sp rev naic 1
+ST|ST18121|Pct cr yr us sp rev naic 2
+ST|ST18122|Pct cr yr us sp rev naic 3
+ST|ST18123|Pct cr yr us sp rev naic 4
+ST|ST18124|Pct cr yr us sp rev naic 5
+ST|ST18125|Pct cr yr us sp rev naic 6
+ST|ST18126|Pct cr yr us sp rev totals
+ST|ST07191|Tot pr yr us gov naic 1
+ST|ST07192|Tot pr yr us gov naic 2
+ST|ST07193|Tot pr yr us gov naic 3
+ST|ST07194|Tot pr yr us gov naic 4
+ST|ST07195|Tot pr yr us gov naic 5
+ST|ST07196|Tot pr yr us gov naic 6
+ST|ST07197|Tot pr yr us gov total
+ST|ST18141|Tot pr yrs oth gov naic 1
+ST|ST18142|Tot pr yrs oth gov naic 2
+ST|ST18143|Tot pr yrs oth gov naic 3
+ST|ST18144|Tot pr yrs oth gov naic 4
+ST|ST18145|Tot pr yrs oth gov naic 5
+ST|ST18146|Tot pr yrs oth gov naic 6
+ST|ST18147|Tot pr yrs oth gov total
+ST|ST18148|Tot pr yrs us st & ter naic 1
+ST|ST18149|Tot pr yrs us st & ter naic 2
+ST|ST18150|Tot pr yrs us st & ter naic 3
+ST|ST18151|Tot pr yrs us st & ter naic 4
+ST|ST18152|Tot pr yrs us st & ter naic 5
+ST|ST18153|Tot pr yrs us st & ter naic 6
+ST|ST18154|Tot pr yrs us st & ter total
+ST|ST18155|Tot pr yrs us pol sub naic 1
+ST|ST18156|Tot pr yrs us pol sub naic 2
+ST|ST18157|Tot pr yrs us pol sub naic 3
+ST|ST18158|Tot pr yrs us pol sub naic 4
+ST|ST18159|Tot pr yrs us pol sub naic 5
+ST|ST18160|Tot pr yrs us pol sub naic 6
+ST|ST18161|Tot pr yrs us pol sub total
+ST|ST18162|Tot pr yrs us sp rev naic 1
+ST|ST18163|Tot pr yrs us sp rev naic 2
+ST|ST18164|Tot pr yrs us sp rev naic 3
+ST|ST18165|Tot pr yrs us sp rev naic 4
+ST|ST18166|Tot pr yrs us sp rev naic 5
+ST|ST18167|Tot pr yrs us sp rev naic 6
+ST|ST18168|Tot pr yrs us sp rev total
+ST|ST07205|Pct pr yr us gov naic 1
+ST|ST07206|Pct pr yr us gov naic 2
+ST|ST07207|Pct pr yr us gov naic 3
+ST|ST07208|Pct pr yr us gov naic 4
+ST|ST07209|Pct pr yr us gov naic 5
+ST|ST07210|Pct pr yr us gov naic 6
+ST|ST07211|Pct pr yr us gov total
+ST|ST18183|Pct pr yr othr gov naic 1
+ST|ST18184|Pct pr yr othr gov naic 2
+ST|ST18185|Pct pr yr othr gov naic 3
+ST|ST18186|Pct pr yr othr gov naic 4
+ST|ST18187|Pct pr yr othr gov naic 5
+ST|ST18188|Pct pr yr othr gov naic 6
+ST|ST18189|Pct pr yr othr gov total
+ST|ST18190|Pct pr yr us st & ter naic 1
+ST|ST18191|Pct pr yr us st & ter naic 2
+ST|ST18192|Pct pr yr us st & ter naic 3
+ST|ST18193|Pct pr yr us st & ter naic 4
+ST|ST18194|Pct pr yr us st & ter naic 5
+ST|ST18195|Pct pr yr us st & ter naic 6
+ST|ST18196|Pct pr yr us st & ter total
+ST|ST18197|Pct pr yr us pol sub naic 1
+ST|ST18198|Pct pr yr us pol sub naic 2
+ST|ST18199|Pct pr yr us pol sub naic 3
+ST|ST18200|Pct pr yr us pol sub naic 4
+ST|ST18201|Pct pr yr us pol sub naic 5
+ST|ST18202|Pct pr yr us pol sub naic 6
+ST|ST18203|Pct pr yr us pol sub total
+ST|ST18204|Pct pr yr us sp rev naic 1
+ST|ST18205|Pct pr yr us sp rev naic 2
+ST|ST18206|Pct pr yr us sp rev naic 3
+ST|ST18207|Pct pr yr us sp rev naic 4
+ST|ST18208|Pct pr yr us sp rev naic 5
+ST|ST18209|Pct pr yr us sp rev naic 6
+ST|ST18210|Pct pr yr us sp rev total
+ST|ST07219|Tot pub trad us gov naic 1
+ST|ST07220|Tot pub trad us gov naic 2
+ST|ST07221|Tot pub trad us gov naic 3
+ST|ST07222|Tot pub trad us gov naic 4
+ST|ST07223|Tot pub trad us gov naic 5
+ST|ST07224|Tot pub trad us gov naic 6
+ST|ST07225|Tot pub trad us gov total
+ST|ST18225|Tot pub trad other gov naic 1
+ST|ST18226|Tot pub trad other gov naic 2
+ST|ST18227|Tot pub trad other gov naic 3
+ST|ST18228|Tot pub trad other gov naic 4
+ST|ST18229|Tot pub trad other gov naic 5
+ST|ST18230|Tot pub trad other gov naic 6
+ST|ST18231|Tot pub trad other gov total
+ST|ST18232|Tot pub trad us st & ter naic 1
+ST|ST18233|Tot pub trad us st & ter naic 2
+ST|ST18234|Tot pub trad us st & ter naic 3
+ST|ST18235|Tot pub trad us st & ter naic 4
+ST|ST18236|Tot pub trad us st & ter naic 5
+ST|ST18237|Tot pub trad us st & ter naic 6
+ST|ST18238|Tot pub trad us st & ter total
+ST|ST18239|Tot pub trad us pol sub naic 1
+ST|ST18240|Tot pub trad us pol sub naic 2
+ST|ST18241|Tot pub trad us pol sub naic 3
+ST|ST18242|Tot pub trad us pol sub naic 4
+ST|ST18243|Tot pub trad us pol sub naic 5
+ST|ST18244|Tot pub trad us pol sub naic 6
+ST|ST18245|Tot pub trad us pol sub total
+ST|ST18246|Tot pub trad us sp rev naic 1
+ST|ST18247|Tot pub trad us sp rev naic 2
+ST|ST18248|Tot pub trad us sp rev naic 3
+ST|ST18249|Tot pub trad us sp rev naic 4
+ST|ST18250|Tot pub trad us sp rev naic 5
+ST|ST18251|Tot pub trad us sp rev naic 6
+ST|ST18252|Tot pub trad us sp rev total
+ST|ST07233|Tot priv plac us gov naic 1
+ST|ST07234|Tot priv plac us gov naic 2
+ST|ST07235|Tot priv plac us gov naic 3
+ST|ST07236|Tot priv plac us gov naic 4
+ST|ST07237|Tot priv plac us gov naic 5
+ST|ST07238|Tot priv plac us gov naic 6
+ST|ST07239|Tot priv plac us gov total
+ST|ST18267|Tot priv placed oth gov naic 1
+ST|ST18268|Tot priv placed oth gov naic 2
+ST|ST18269|Tot priv placed oth gov naic 3
+ST|ST18270|Tot priv placed oth gov naic 4
+ST|ST18271|Tot priv placed oth gov naic 5
+ST|ST18272|Tot priv placed oth gov naic 6
+ST|ST18273|Tot priv placed oth gov total
+ST|ST18274|Tot priv placed us st & ter naic 1
+ST|ST18275|Tot priv placed us st & ter naic 2
+ST|ST18276|Tot priv placed us st & ter naic 3
+ST|ST18277|Tot priv placed us st & ter naic 4
+ST|ST18278|Tot priv placed us st & ter naic 5
+ST|ST18279|Tot priv placed us st & ter naic 6
+ST|ST18280|Tot priv placed us st & ter total
+ST|ST18281|Tot priv placed us pol sub naic 1
+ST|ST18282|Tot priv placed us pol sub naic 2
+ST|ST18283|Tot priv placed us pol sub naic 3
+ST|ST18284|Tot priv placed us pol sub naic 4
+ST|ST18285|Tot priv placed us pol sub naic 5
+ST|ST18286|Tot priv placed us pol sub naic 6
+ST|ST18287|Tot priv placed us pol sub total
+ST|ST18288|Tot priv placed us sp rev naic 1
+ST|ST18289|Tot priv placed us sp rev naic 2
+ST|ST18290|Tot priv placed us sp rev naic 3
+ST|ST18291|Tot priv placed us sp rev naic 4
+ST|ST18292|Tot priv placed us sp rev naic 5
+ST|ST18293|Tot priv placed us sp rev naic 6
+ST|ST18294|Tot priv placed us sp rev total
+ST|ST17875|Mat 1yr or less ind & mis naic 1
+ST|ST17876|Mat 1yr or less ind & mis naic 2
+ST|ST17877|Mat 1yr or less ind & mis naic 3
+ST|ST17878|Mat 1yr or less ind & mis naic 4
+ST|ST17879|Mat 1yr or less ind & mis naic 5
+ST|ST17880|Mat 1yr or less ind & mis naic 6
+ST|ST17881|Mat 1yr or less ind & mis total
+ST|ST17882|Mat 1yr or less hybrid secur naic 1
+ST|ST17883|Mat 1yr or less hybrid secur naic 2
+ST|ST17884|Mat 1yr or less hybrid secur naic 3
+ST|ST17885|Mat 1yr or less hybrid secur naic 4
+ST|ST17886|Mat 1yr or less hybrid secur naic 5
+ST|ST17887|Mat 1yr or less hybrid secur naic 6
+ST|ST17888|Mat 1yr or less hybrid secur total
+ST|ST04042|Mat 1y or ls aff naic 1
+ST|ST04043|Mat 1y or ls aff naic 2
+ST|ST04044|Mat 1y or ls aff naic 3
+ST|ST04045|Mat 1y or ls aff naic 4
+ST|ST04046|Mat 1y or ls aff naic 5
+ST|ST04047|Mat 1y or ls aff naic 6
+ST|ST04048|Mat 1y or ls aff total
+ST|ST17917|Mat 1-5 yrs ind & mis naic 1
+ST|ST17918|Mat 1-5 yrs ind & mis naic 2
+ST|ST17919|Mat 1-5 yrs ind & mis naic 3
+ST|ST17920|Mat 1-5 yrs ind & mis naic 4
+ST|ST17921|Mat 1-5 yrs ind & mis naic 5
+ST|ST17922|Mat 1-5 yrs ind & mis naic 6
+ST|ST17923|Mat 1-5 yrs ind & mis total
+ST|ST17924|Mat 1-5 yrs hybrid secur naic 1
+ST|ST17925|Mat 1-5 yrs hybrid secur naic 2
+ST|ST17926|Mat 1-5 yrs hybrid secur naic 3
+ST|ST17927|Mat 1-5 yrs hybrid secur naic 4
+ST|ST17928|Mat 1-5 yrs hybrid secur naic 5
+ST|ST17929|Mat 1-5 yrs hybrid secur naic 6
+ST|ST17930|Mat 1-5 yrs hybrid secur total
+ST|ST04118|Mat 1-5 yr aff naic 1
+ST|ST04119|Mat 1-5 yr aff naic 2
+ST|ST04120|Mat 1-5 yr aff naic 3
+ST|ST04121|Mat 1-5 yr aff naic 4
+ST|ST04122|Mat 1-5 yr aff naic 5
+ST|ST04123|Mat 1-5 yr aff naic 6
+ST|ST04124|Mat 1-5 yr aff total
+ST|ST17959|Mat 5-10 yrs ind & mis naic 1
+ST|ST17960|Mat 5-10 yrs ind & mis naic 2
+ST|ST17961|Mat 5-10 yrs ind & mis naic 3
+ST|ST17962|Mat 5-10 yrs ind & mis naic 4
+ST|ST17963|Mat 5-10 yrs ind & mis naic 5
+ST|ST17964|Mat 5-10 yrs ind & mis naic 6
+ST|ST17965|Mat 5-10 yrs ind & mis total
+ST|ST17966|Mat 5-10 yrs hybrid secur naic 1
+ST|ST17967|Mat 5-10 yrs hybrid secur naic 2
+ST|ST17968|Mat 5-10 yrs hybrid secur naic 3
+ST|ST17969|Mat 5-10 yrs hybrid secur naic 4
+ST|ST17970|Mat 5-10 yrs hybrid secur naic 5
+ST|ST17971|Mat 5-10 yrs hybrid secur naic 6
+ST|ST17972|Mat 5-10 yrs hybrid secur total
+ST|ST04194|Mat 5-10 yr aff naic 1
+ST|ST04195|Mat 5-10 yr aff naic 2
+ST|ST04196|Mat 5-10 yr aff naic 3
+ST|ST04197|Mat 5-10 yr aff naic 4
+ST|ST04198|Mat 5-10 yr aff naic 5
+ST|ST04199|Mat 5-10 yr aff naic 6
+ST|ST04200|Mat 5-10 yr aff total
+ST|ST18001|Mat 10-20 yrs ind & mis naic 1
+ST|ST18002|Mat 10-20 yrs ind & mis naic 2
+ST|ST18003|Mat 10-20 yrs ind & mis naic 3
+ST|ST18004|Mat 10-20 yrs ind & mis naic 4
+ST|ST18005|Mat 10-20 yrs ind & mis naic 5
+ST|ST18006|Mat 10-20 yrs ind & mis naic 6
+ST|ST18007|Mat 10-20 yrs ind & mis total
+ST|ST18008|Mat 10-20 yrs hybrid secur naic 1
+ST|ST18009|Mat 10-20 yrs hybrid secur naic 2
+ST|ST18010|Mat 10-20 yrs hybrid secur naic 3
+ST|ST18011|Mat 10-20 yrs hybrid secur naic 4
+ST|ST18012|Mat 10-20 yrs hybrid secur naic 5
+ST|ST18013|Mat 10-20 yrs hybrid secur naic 6
+ST|ST18014|Mat 10-20 yrs hybrid secur total
+ST|ST04270|Mat 10-20 yr aff naic 1
+ST|ST04271|Mat 10-20 yr aff naic 2
+ST|ST04272|Mat 10-20 yr aff naic 3
+ST|ST04273|Mat 10-20 yr aff naic 4
+ST|ST04274|Mat 10-20 yr aff naic 5
+ST|ST04275|Mat 10-20 yr aff naic 6
+ST|ST04276|Mat 10-20 yr aff total
+ST|ST18043|Mat ov 20 yrs ind & mis naic 1
+ST|ST18044|Mat ov 20 yrs ind & mis naic 2
+ST|ST18045|Mat ov 20 yrs ind & mis naic 3
+ST|ST18046|Mat ov 20 yrs ind & mis naic 4
+ST|ST18047|Mat ov 20 yrs ind & mis naic 5
+ST|ST18048|Mat ov 20 yrs ind & mis naic 6
+ST|ST18049|Mat ov 20 yrs ind & mis total
+ST|ST18050|Mat ov 20 yrs hybrid secur naic 1
+ST|ST18051|Mat ov 20 yrs hybrid secur naic 2
+ST|ST18052|Mat ov 20 yrs hybrid secur naic 3
+ST|ST18053|Mat ov 20 yrs hybrid secur naic 4
+ST|ST18054|Mat ov 20 yrs hybrid secur naic 5
+ST|ST18055|Mat ov 20 yrs hybrid secur naic 6
+ST|ST18056|Mat ov 20 yrs hybrid secur total
+ST|ST04346|Mat ov 20 yr aff naic 1
+ST|ST04347|Mat ov 20 yr aff naic 2
+ST|ST04348|Mat ov 20 yr aff naic 3
+ST|ST04349|Mat ov 20 yr aff naic 4
+ST|ST04350|Mat ov 20 yr aff naic 5
+ST|ST04351|Mat ov 20 yr aff naic 6
+ST|ST04352|Mat ov 20 yr aff total
+ST|ST18085|Tot cr yrs ind & mis naic 1
+ST|ST18086|Tot cr yrs ind & mis naic 2
+ST|ST18087|Tot cr yrs ind & mis naic 3
+ST|ST18088|Tot cr yrs ind & mis naic 4
+ST|ST18089|Tot cr yrs ind & mis naic 5
+ST|ST18090|Tot cr yrs ind & mis naic 6
+ST|ST18091|Tot cr yrs ind & mis total
+ST|ST18092|Tot cr yrs hybrid secur naic 1
+ST|ST18093|Tot cr yrs hybrid secur naic 2
+ST|ST18094|Tot cr yrs hybrid secur naic 3
+ST|ST18095|Tot cr yrs hybrid secur naic 4
+ST|ST18096|Tot cr yrs hybrid secur naic 5
+ST|ST18097|Tot cr yrs hybrid secur naic 6
+ST|ST18098|Tot cr yrs hybrid secur total
+ST|ST04422|Tot cr yr aff naic 1
+ST|ST04423|Tot cr yr aff naic 2
+ST|ST04424|Tot cr yr aff naic 3
+ST|ST04425|Tot cr yr aff naic 4
+ST|ST04426|Tot cr yr aff naic 5
+ST|ST04427|Tot cr yr aff naic 6
+ST|ST04428|Tot cr yr aff total
+ST|ST18127|Pct cr yr ind & misc naic 1
+ST|ST18128|Pct cr yr ind & misc naic 2
+ST|ST18129|Pct cr yr ind & misc naic 3
+ST|ST18130|Pct cr yr ind & misc naic 4
+ST|ST18131|Pct cr yr ind & misc naic 5
+ST|ST18132|Pct cr yr ind & misc naic 6
+ST|ST18133|Pct cr yr ind & misc total
+ST|ST18134|Pct cr yr hybrid secur naic 1
+ST|ST18135|Pct cr yr hybrid secur naic 2
+ST|ST18136|Pct cr yr hybrid secur naic 3
+ST|ST18137|Pct cr yr hybrid secur naic 4
+ST|ST18138|Pct cr yr hybrid secur naic 5
+ST|ST18139|Pct cr yr hybrid secur naic 6
+ST|ST18140|Pct cr yr hybrid secur ttls
+ST|ST04490|Pct cr yr aff naic 1
+ST|ST04491|Pct cr yr aff naic 2
+ST|ST04492|Pct cr yr aff naic 3
+ST|ST04493|Pct cr yr aff naic 4
+ST|ST04494|Pct cr yr aff naic 5
+ST|ST04495|Pct cr yr aff naic 6
+ST|ST04496|Pct cr yr aff total
+ST|ST18169|Tot pr yrs ind & mis naic 1
+ST|ST18170|Tot pr yrs ind & mis naic 2
+ST|ST18171|Tot pr yrs ind & mis naic 3
+ST|ST18172|Tot pr yrs ind & mis naic 4
+ST|ST18173|Tot pr yrs ind & mis naic 5
+ST|ST18174|Tot pr yrs ind & mis naic 6
+ST|ST18175|Tot pr yrs ind & mis total
+ST|ST18176|Tot pr yrs hybrid secur naic 1
+ST|ST18177|Tot pr yrs hybrid secur naic 2
+ST|ST18178|Tot pr yrs hybrid secur naic 3
+ST|ST18179|Tot pr yrs hybrid secur naic 4
+ST|ST18180|Tot pr yrs hybrid secur naic 5
+ST|ST18181|Tot pr yrs hybrid secur naic 6
+ST|ST18182|Tot pr yrs hybrid secur total
+ST|ST04553|Tot pr yr aff naic 1
+ST|ST04554|Tot pr yr aff naic 2
+ST|ST04555|Tot pr yr aff naic 3
+ST|ST04556|Tot pr yr aff naic 4
+ST|ST04557|Tot pr yr aff naic 5
+ST|ST04558|Tot pr yr aff naic 6
+ST|ST04559|Tot pr yr aff total
+ST|ST18211|Pct pr yr ind & misc naic 1
+ST|ST18212|Pct pr yr ind & misc naic 2
+ST|ST18213|Pct pr yr ind & misc naic 3
+ST|ST18214|Pct pr yr ind & misc naic 4
+ST|ST18215|Pct pr yr ind & misc naic 5
+ST|ST18216|Pct pr yr ind & misc naic 6
+ST|ST18217|Pct pr yr ind & misc total
+ST|ST18218|Pct pr yr hybrid secur naic 1
+ST|ST18219|Pct pr yr hybrid secur naic 2
+ST|ST18220|Pct pr yr hybrid secur naic 3
+ST|ST18221|Pct pr yr hybrid secur naic 4
+ST|ST18222|Pct pr yr hybrid secur naic 5
+ST|ST18223|Pct pr yr hybrid secur naic 6
+ST|ST18224|Pct pr yr hybrid secur ttls
+ST|ST04621|Pct pr yr aff naic 1
+ST|ST04622|Pct pr yr aff naic 2
+ST|ST04623|Pct pr yr aff naic 3
+ST|ST04624|Pct pr yr aff naic 4
+ST|ST04625|Pct pr yr aff naic 5
+ST|ST04626|Pct pr yr aff naic 6
+ST|ST04627|Pct pr yr aff total
+ST|ST18253|Tot pub trad ind & misc naic 1
+ST|ST18254|Tot pub trad ind & misc naic 2
+ST|ST18255|Tot pub trad ind & misc naic 3
+ST|ST18256|Tot pub trad ind & misc naic 4
+ST|ST18257|Tot pub trad ind & misc naic 5
+ST|ST18258|Tot pub trad ind & misc naic 6
+ST|ST18259|Tot pub trad ind & misc total
+ST|ST18260|Tot pub trad hybrid secur naic 1
+ST|ST18261|Tot pub trad hybrid secur naic 2
+ST|ST18262|Tot pub trad hybrid secur naic 3
+ST|ST18263|Tot pub trad hybrid secur naic 4
+ST|ST18264|Tot pub trad hybrid secur naic 5
+ST|ST18265|Tot pub trad hybrid secur naic 6
+ST|ST18266|Tot pub trad hybrid secur total
+ST|ST04684|Tot pub trad aff naic 1
+ST|ST04685|Tot pub trad aff naic 2
+ST|ST04686|Tot pub trad aff naic 3
+ST|ST04687|Tot pub trad aff naic 4
+ST|ST04688|Tot pub trad aff naic 5
+ST|ST04689|Tot pub trad aff naic 6
+ST|ST04690|Tot pub trad aff total
+ST|ST18295|Tot priv placed ind & mis naic 1
+ST|ST18296|Tot priv placed ind & mis naic 2
+ST|ST18297|Tot priv placed ind & mis naic 3
+ST|ST18298|Tot priv placed ind & mis naic 4
+ST|ST18299|Tot priv placed ind & mis naic 5
+ST|ST18300|Tot priv placed ind & mis naic 6
+ST|ST18301|Tot priv placed ind & mis total
+ST|ST18302|Tot priv placed hybrid secur naic 1
+ST|ST18303|Tot priv placed hybrid secur naic 2
+ST|ST18304|Tot priv placed hybrid secur naic 3
+ST|ST18305|Tot priv placed hybrid secur naic 4
+ST|ST18306|Tot priv placed hybrid secur naic 5
+ST|ST18307|Tot priv placed hybrid secur naic 6
+ST|ST18308|Tot priv placed hybrid secur total
+ST|ST04751|Tot priv plac aff naic 1
+ST|ST04752|Tot priv plac aff naic 2
+ST|ST04753|Tot priv plac aff naic 3
+ST|ST04754|Tot priv plac aff naic 4
+ST|ST04755|Tot priv plac aff naic 5
+ST|ST04756|Tot priv plac aff naic 6
+ST|ST04757|Tot priv plac aff total
+ST|ST08014|Mat 1y or ls cred loans class 1
+ST|ST08015|Mat 1y or ls cred loans class 2
+ST|ST08016|Mat 1y or ls cred loans class 3
+ST|ST08017|Mat 1y or ls cred loans class 4
+ST|ST08018|Mat 1y or ls cred loans class 5
+ST|ST08019|Mat 1y or ls cred loans class 6
+ST|ST08020|Mat 1y or ls cred loans total
+ST|ST08042|Mat 1-5 yr cred loans class 1
+ST|ST08043|Mat 1-5 yr cred loans class 2
+ST|ST08044|Mat 1-5 yr cred loans class 3
+ST|ST08045|Mat 1-5 yr cred loans class 4
+ST|ST08046|Mat 1-5 yr cred loans class 5
+ST|ST08047|Mat 1-5 yr cred loans class 6
+ST|ST08048|Mat 1-5 yr cred loans total
+ST|ST08070|Mat 5-10 yr cred loans class 1
+ST|ST08071|Mat 5-10 yr cred loans class 2
+ST|ST08072|Mat 5-10 yr cred loans class 3
+ST|ST08073|Mat 5-10 yr cred loans class 4
+ST|ST08074|Mat 5-10 yr cred loans class 5
+ST|ST08075|Mat 5-10 yr cred loans class 6
+ST|ST08076|Mat 5-10 yr cred loans total
+ST|ST08098|Mat 10-20 yr cred loan class 1
+ST|ST08099|Mat 10-20 yr cred loan class 2
+ST|ST08100|Mat 10-20 yr cred loan class 3
+ST|ST08101|Mat 10-20 yr cred loan class 4
+ST|ST08102|Mat 10-20 yr cred loan class 5
+ST|ST08103|Mat 10-20 yr cred loan class 6
+ST|ST08104|Mat 10-20 yr cred loan total
+ST|ST08126|Mat ov 20 yr cred loans class 1
+ST|ST08127|Mat ov 20 yr cred loans class 2
+ST|ST08128|Mat ov 20 yr cred loans class 3
+ST|ST08129|Mat ov 20 yr cred loans class 4
+ST|ST08130|Mat ov 20 yr cred loans class 5
+ST|ST08131|Mat ov 20 yr cred loans class 6
+ST|ST08132|Mat ov 20 yr cred loans total
+ST|ST08154|Tot cr yr cred loans class 1
+ST|ST08155|Tot cr yr cred loans class 2
+ST|ST08156|Tot cr yr cred loans class 3
+ST|ST08157|Tot cr yr cred loans class 4
+ST|ST08158|Tot cr yr cred loans class 5
+ST|ST08159|Tot cr yr cred loans class 6
+ST|ST08160|Tot cr yr cred loans total
+ST|ST08182|Pct cr yr cred loans class 1
+ST|ST08183|Pct cr yr cred loans class 2
+ST|ST08184|Pct cr yr cred loans class 3
+ST|ST08185|Pct cr yr cred loans class 4
+ST|ST08186|Pct cr yr cred loans class 5
+ST|ST08187|Pct cr yr cred loans class 6
+ST|ST08188|Pct cr yr cred loans total
+ST|ST08210|Tot pr yr cred loans class 1
+ST|ST08211|Tot pr yr cred loans class 2
+ST|ST08212|Tot pr yr cred loans class 3
+ST|ST08213|Tot pr yr cred loans class 4
+ST|ST08214|Tot pr yr cred loans class 5
+ST|ST08215|Tot pr yr cred loans class 6
+ST|ST08216|Tot pr yr cred loans total
+ST|ST08238|Pct pr yr cred loan class 1
+ST|ST08239|Pct pr yr cred loan class 2
+ST|ST08240|Pct pr yr cred loan class 3
+ST|ST08241|Pct pr yr cred loan class 4
+ST|ST08242|Pct pr yr cred loan class 5
+ST|ST08243|Pct pr yr cred loan class 6
+ST|ST08244|Pct pr yr cred loan total
+ST|ST08266|Tot pub trad cred loans class 1
+ST|ST08267|Tot pub trad cred loans class 2
+ST|ST08268|Tot pub trad cred loans class 3
+ST|ST08269|Tot pub trad cred loans class 4
+ST|ST08270|Tot pub trad cred loans class 5
+ST|ST08271|Tot pub trad cred loans class 6
+ST|ST08272|Tot pub trad cred loans total
+ST|ST08294|Tot priv plac cred loans class 1
+ST|ST08295|Tot priv plac cred loans class 2
+ST|ST08296|Tot priv plac cred loans class 3
+ST|ST08297|Tot priv plac cred loans class 4
+ST|ST08298|Tot priv plac cred loans class 5
+ST|ST08299|Tot priv plac cred loans class 6
+ST|ST08300|Tot priv plac cred loans total
+ST|ST04028|Mat 1y or ls pub util class 1
+ST|ST04029|Mat 1y or ls pub util class 2
+ST|ST04030|Mat 1y or ls pub util class 3
+ST|ST04031|Mat 1y or ls pub util class 4
+ST|ST04032|Mat 1y or ls pub util class 5
+ST|ST04033|Mat 1y or ls pub util class 6
+ST|ST04034|Mat 1y or ls pub util total
+ST|ST04104|Mat 1-5 yr pub util class 1
+ST|ST04105|Mat 1-5 yr pub util class 2
+ST|ST04106|Mat 1-5 yr pub util class 3
+ST|ST04107|Mat 1-5 yr pub util class 4
+ST|ST04108|Mat 1-5 yr pub util class 5
+ST|ST04109|Mat 1-5 yr pub util class 6
+ST|ST04110|Mat 1-5 yr pub util total
+ST|ST04180|Mat 5-10 yr pub util class 1
+ST|ST04181|Mat 5-10 yr pub util class 2
+ST|ST04182|Mat 5-10 yr pub util class 3
+ST|ST04183|Mat 5-10 yr pub util class 4
+ST|ST04184|Mat 5-10 yr pub util class 5
+ST|ST04185|Mat 5-10 yr pub util class 6
+ST|ST04186|Mat 5-10 yr pub util total
+ST|ST04256|Mat 10-20 yr pub util class 1
+ST|ST04257|Mat 10-20 yr pub util class 2
+ST|ST04258|Mat 10-20 yr pub util class 3
+ST|ST04259|Mat 10-20 yr pub util class 4
+ST|ST04260|Mat 10-20 yr pub util class 5
+ST|ST04261|Mat 10-20 yr pub util class 6
+ST|ST04262|Mat 10-20 yr pub util total
+ST|ST04332|Mat ov 20 yr pub util class 1
+ST|ST04333|Mat ov 20 yr pub util class 2
+ST|ST04334|Mat ov 20 yr pub util class 3
+ST|ST04335|Mat ov 20 yr pub util class 4
+ST|ST04336|Mat ov 20 yr pub util class 5
+ST|ST04337|Mat ov 20 yr pub util class 6
+ST|ST04338|Mat ov 20 yr pub util total
+ST|ST04408|Tot cr yr pub util class 1
+ST|ST04409|Tot cr yr pub util class 2
+ST|ST04410|Tot cr yr pub util class 3
+ST|ST04411|Tot cr yr pub util class 4
+ST|ST04412|Tot cr yr pub util class 5
+ST|ST04413|Tot cr yr pub util class 6
+ST|ST04414|Tot cr yr pub util total
+ST|ST04476|Pct cr yr pub util class 1
+ST|ST04477|Pct cr yr pub util class 2
+ST|ST04478|Pct cr yr pub util class 3
+ST|ST04479|Pct cr yr pub util class 4
+ST|ST04480|Pct cr yr pub util class 5
+ST|ST04481|Pct cr yr pub util class 6
+ST|ST04482|Pct cr yr pub util total
+ST|ST04539|Tot pr yr pub util class 1
+ST|ST04540|Tot pr yr pub util class 2
+ST|ST04541|Tot pr yr pub util class 3
+ST|ST04542|Tot pr yr pub util class 4
+ST|ST04543|Tot pr yr pub util class 5
+ST|ST04544|Tot pr yr pub util class 6
+ST|ST04545|Tot pr yr pub util total
+ST|ST04607|Pct pr yr pub util class 1
+ST|ST04608|Pct pr yr pub util class 2
+ST|ST04609|Pct pr yr pub util class 3
+ST|ST04610|Pct pr yr pub util class 4
+ST|ST04611|Pct pr yr pub util class 5
+ST|ST04612|Pct pr yr pub util class 6
+ST|ST04613|Pct pr yr pub util total
+ST|ST04670|Tot pub trad pub util class 1
+ST|ST04671|Tot pub trad pub util class 2
+ST|ST04672|Tot pub trad pub util class 3
+ST|ST04673|Tot pub trad pub util class 4
+ST|ST04674|Tot pub trad pub util class 5
+ST|ST04675|Tot pub trad pub util class 6
+ST|ST04676|Tot pub trad pub util total
+ST|ST04737|Tot priv plac pub util class 1
+ST|ST04738|Tot priv plac pub util class 2
+ST|ST04739|Tot priv plac pub util class 3
+ST|ST04740|Tot priv plac pub util class 4
+ST|ST04741|Tot priv plac pub util class 5
+ST|ST04742|Tot priv plac pub util class 6
+ST|ST04743|Tot priv plac pub util total
+ST|ST04049|Mat 1y or ls tot naic 1
+ST|ST04050|Mat 1y or ls tot naic 2
+ST|ST04051|Mat 1y or ls tot naic 3
+ST|ST04052|Mat 1y or ls tot naic 4
+ST|ST04053|Mat 1y or ls tot naic 5
+ST|ST04054|Mat 1y or ls tot naic 6
+ST|ST04055|Mat 1y or ls total
+ST|ST04056|Mat 1y or ls total % cy
+ST|ST04057|Mat 1y or ls tot py naic 1
+ST|ST04058|Mat 1y or ls tot py naic 2
+ST|ST04059|Mat 1y or ls tot py naic 3
+ST|ST04060|Mat 1y or ls tot py naic 4
+ST|ST04061|Mat 1y or ls tot py naic 5
+ST|ST04062|Mat 1y or ls tot py naic 6
+ST|ST04063|Mat 1y or ls tot py total
+ST|ST04064|Mat 1y or ls tot py % py
+ST|ST04065|Mat 1y or ls pub trad naic 1
+ST|ST04066|Mat 1y or ls pub trad naic 2
+ST|ST04067|Mat 1y or ls pub trad naic 3
+ST|ST04068|Mat 1y or ls pub trad naic 4
+ST|ST04069|Mat 1y or ls pub trad naic 5
+ST|ST04070|Mat 1y or ls pub trad naic 6
+ST|ST04071|Mat 1y or ls pub trad total
+ST|ST04072|Mat 1y or ls pub trad % tot pt
+ST|ST04073|Mat 1y or ls pub trad % tot cy
+ST|ST04074|Mat 1y or ls priv plac naic 1
+ST|ST04075|Mat 1y or ls priv plac naic 2
+ST|ST04076|Mat 1y or ls priv plac naic 3
+ST|ST04077|Mat 1y or ls priv plac naic 4
+ST|ST04078|Mat 1y or ls priv plac naic 5
+ST|ST04079|Mat 1y or ls priv plac naic 6
+ST|ST04080|Mat 1y or ls priv plac total
+ST|ST04081|Mat 1y or ls priv plac % tot pp
+ST|ST04082|Mat 1y or ls priv plac % tot cy
+ST|ST04125|Mat 1-5 yr tot naic 1
+ST|ST04126|Mat 1-5 yr tot naic 2
+ST|ST04127|Mat 1-5 yr tot naic 3
+ST|ST04128|Mat 1-5 yr tot naic 4
+ST|ST04129|Mat 1-5 yr tot naic 5
+ST|ST04130|Mat 1-5 yr tot naic 6
+ST|ST04131|Mat 1-5 yr total
+ST|ST04132|Mat 1-5 yr total % cy
+ST|ST04133|Mat 1-5 yr tot py naic 1
+ST|ST04134|Mat 1-5 yr tot py naic 2
+ST|ST04135|Mat 1-5 yr tot py naic 3
+ST|ST04136|Mat 1-5 yr tot py naic 4
+ST|ST04137|Mat 1-5 yr tot py naic 5
+ST|ST04138|Mat 1-5 yr tot py naic 6
+ST|ST04139|Mat 1-5 yr tot py total
+ST|ST04140|Mat 1-5 yr tot py % py
+ST|ST04141|Mat 1-5 yr pub trad naic 1
+ST|ST04142|Mat 1-5 yr pub trad naic 2
+ST|ST04143|Mat 1-5 yr pub trad naic 3
+ST|ST04144|Mat 1-5 yr pub trad naic 4
+ST|ST04145|Mat 1-5 yr pub trad naic 5
+ST|ST04146|Mat 1-5 yr pub trad naic 6
+ST|ST04147|Mat 1-5 yr pub trad total
+ST|ST04148|Mat 1-5 yr pub trad % tot pt
+ST|ST04149|Mat 1-5 yr pub trad % tot cy
+ST|ST04150|Mat 1-5 yr priv plac naic 1
+ST|ST04151|Mat 1-5 yr priv plac naic 2
+ST|ST04152|Mat 1-5 yr priv plac naic 3
+ST|ST04153|Mat 1-5 yr priv plac naic 4
+ST|ST04154|Mat 1-5 yr priv plac naic 5
+ST|ST04155|Mat 1-5 yr priv plac naic 6
+ST|ST04156|Mat 1-5 yr priv plac total
+ST|ST04157|Mat 1-5 yr priv plac % tot pp
+ST|ST04158|Mat 1-5 yr priv plac % tot cy
+ST|ST04201|Mat 5-10 yr tot naic 1
+ST|ST04202|Mat 5-10 yr tot naic 2
+ST|ST04203|Mat 5-10 yr tot naic 3
+ST|ST04204|Mat 5-10 yr tot naic 4
+ST|ST04205|Mat 5-10 yr tot naic 5
+ST|ST04206|Mat 5-10 yr tot naic 6
+ST|ST04207|Mat 5-10 yr total
+ST|ST04208|Mat 5-10 yr total % cy
+ST|ST04209|Mat 5-10 yr tot py naic 1
+ST|ST04210|Mat 5-10 yr tot py naic 2
+ST|ST04211|Mat 5-10 yr tot py naic 3
+ST|ST04212|Mat 5-10 yr tot py naic 4
+ST|ST04213|Mat 5-10 yr tot py naic 5
+ST|ST04214|Mat 5-10 yr tot py naic 6
+ST|ST04215|Mat 5-10 yr tot py total
+ST|ST04216|Mat 5-10 yr tot py % py
+ST|ST04217|Mat 5-10 yr pub trad naic 1
+ST|ST04218|Mat 5-10 yr pub trad naic 2
+ST|ST04219|Mat 5-10 yr pub trad naic 3
+ST|ST04220|Mat 5-10 yr pub trad naic 4
+ST|ST04221|Mat 5-10 yr pub trad naic 5
+ST|ST04222|Mat 5-10 yr pub trad naic 6
+ST|ST04223|Mat 5-10 yr pub trad total
+ST|ST04224|Mat 5-10 yr pub trad % tot pt
+ST|ST04225|Mat 5-10 yr pub trad % tot cy
+ST|ST04226|Mat 5-10 yr priv plac naic 1
+ST|ST04227|Mat 5-10 yr priv plac naic 2
+ST|ST04228|Mat 5-10 yr priv plac naic 3
+ST|ST04229|Mat 5-10 yr priv plac naic 4
+ST|ST04230|Mat 5-10 yr priv plac naic 5
+ST|ST04231|Mat 5-10 yr priv plac naic 6
+ST|ST04232|Mat 5-10 yr priv plac total
+ST|ST04233|Mat 5-10 yr priv plac % tot pp
+ST|ST04234|Mat 5-10 yr priv plac % tot cy
+ST|ST04277|Mat 10-20 yr tot naic 1
+ST|ST04278|Mat 10-20 yr tot naic 2
+ST|ST04279|Mat 10-20 yr tot naic 3
+ST|ST04280|Mat 10-20 yr tot naic 4
+ST|ST04281|Mat 10-20 yr tot naic 5
+ST|ST04282|Mat 10-20 yr tot naic 6
+ST|ST04283|Mat 10-20 yr total
+ST|ST04284|Mat 10-20 yr total % cy
+ST|ST04285|Mat 10-20 yr tot py naic 1
+ST|ST04286|Mat 10-20 yr tot py naic 2
+ST|ST04287|Mat 10-20 yr tot py naic 3
+ST|ST04288|Mat 10-20 yr tot py naic 4
+ST|ST04289|Mat 10-20 yr tot py naic 5
+ST|ST04290|Mat 10-20 yr tot py naic 6
+ST|ST04291|Mat 10-20 yr tot py total
+ST|ST04292|Mat 10-20 yr tot py % py
+ST|ST04293|Mat 10-20 yr pub trad naic 1
+ST|ST04294|Mat 10-20 yr pub trad naic 2
+ST|ST04295|Mat 10-20 yr pub trad naic 3
+ST|ST04296|Mat 10-20 yr pub trad naic 4
+ST|ST04297|Mat 10-20 yr pub trad naic 5
+ST|ST04298|Mat 10-20 yr pub trad naic 6
+ST|ST04299|Mat 10-20 yr pub trad total
+ST|ST04300|Mat 10-20 yr pub trad % tot pt
+ST|ST04301|Mat 10-20 yr pub trad % tot cy
+ST|ST04302|Mat 10-20 yr priv plac naic 1
+ST|ST04303|Mat 10-20 yr priv plac naic 2
+ST|ST04304|Mat 10-20 yr priv plac naic 3
+ST|ST04305|Mat 10-20 yr priv plac naic 4
+ST|ST04306|Mat 10-20 yr priv plac naic 5
+ST|ST04307|Mat 10-20 yr priv plac naic 6
+ST|ST04308|Mat 10-20 yr priv plac total
+ST|ST04309|Mat 10-20 yr priv plac % tot pp
+ST|ST04310|Mat 10-20 yr priv plac % tot cy
+ST|ST04353|Mat ov 20 yr tot naic 1
+ST|ST04354|Mat ov 20 yr tot naic 2
+ST|ST04355|Mat ov 20 yr tot naic 3
+ST|ST04356|Mat ov 20 yr tot naic 4
+ST|ST04357|Mat ov 20 yr tot naic 5
+ST|ST04358|Mat ov 20 yr tot naic 6
+ST|ST04359|Mat ov 20 yr total
+ST|ST04360|Mat ov 20 yr total % cy
+ST|ST04361|Mat ov 20 yr tot py naic 1
+ST|ST04362|Mat ov 20 yr tot py naic 2
+ST|ST04363|Mat ov 20 yr tot py naic 3
+ST|ST04364|Mat ov 20 yr tot py naic 4
+ST|ST04365|Mat ov 20 yr tot py naic 5
+ST|ST04366|Mat ov 20 yr tot py naic 6
+ST|ST04367|Mat ov 20 yr tot py total
+ST|ST04368|Mat ov 20 yr tot py % py
+ST|ST04369|Mat ov 20 yr pub trad naic 1
+ST|ST04370|Mat ov 20 yr pub trad naic 2
+ST|ST04371|Mat ov 20 yr pub trad naic 3
+ST|ST04372|Mat ov 20 yr pub trad naic 4
+ST|ST04373|Mat ov 20 yr pub trad naic 5
+ST|ST04374|Mat ov 20 yr pub trad naic 6
+ST|ST04375|Mat ov 20 yr pub trad total
+ST|ST04376|Mat ov 20 yr pub trad % tot pt
+ST|ST04377|Mat ov 20 yr pub trad % tot cy
+ST|ST04378|Mat ov 20 yr priv plac naic 1
+ST|ST04379|Mat ov 20 yr priv plac naic 2
+ST|ST04380|Mat ov 20 yr priv plac naic 3
+ST|ST04381|Mat ov 20 yr priv plac naic 4
+ST|ST04382|Mat ov 20 yr priv plac naic 5
+ST|ST04383|Mat ov 20 yr priv plac naic 6
+ST|ST04384|Mat ov 20 yr priv plac total
+ST|ST04385|Mat ov 20 yr priv plac % tot pp
+ST|ST04386|Mat ov 20 yr priv plac % tot cy
+ST|ST04429|Tot cr yr tot naic 1
+ST|ST04430|Tot cr yr tot naic 2
+ST|ST04431|Tot cr yr tot naic 3
+ST|ST04432|Tot cr yr tot naic 4
+ST|ST04433|Tot cr yr tot naic 5
+ST|ST04434|Tot cr yr tot naic 6
+ST|ST04435|Tot cr yr total
+ST|ST04436|Tot cr yr total % cy
+ST|ST04437|Tot cr yr pub trad naic 1
+ST|ST04438|Tot cr yr pub trad naic 2
+ST|ST04439|Tot cr yr pub trad naic 3
+ST|ST04440|Tot cr yr pub trad naic 4
+ST|ST04441|Tot cr yr pub trad naic 5
+ST|ST04442|Tot cr yr pub trad naic 6
+ST|ST04443|Tot cr yr pub trad total
+ST|ST04444|Tot cr yr pub trad % tot pt
+ST|ST04445|Tot cr yr pub trad % tot cy
+ST|ST04446|Tot cr yr priv plac naic 1
+ST|ST04447|Tot cr yr priv plac naic 2
+ST|ST04448|Tot cr yr priv plac naic 3
+ST|ST04449|Tot cr yr priv plac naic 4
+ST|ST04450|Tot cr yr priv plac naic 5
+ST|ST04451|Tot cr yr priv plac naic 6
+ST|ST04452|Tot cr yr priv plac total
+ST|ST04453|Tot cr yr priv plac % tot pp
+ST|ST04454|Tot cr yr priv plac % tot cy
+ST|ST04497|Pct cr yr tot naic 1
+ST|ST04498|Pct cr yr tot naic 2
+ST|ST04499|Pct cr yr tot naic 3
+ST|ST04500|Pct cr yr tot naic 4
+ST|ST04501|Pct cr yr tot naic 5
+ST|ST04502|Pct cr yr tot naic 6
+ST|ST04503|Pct cr yr total
+ST|ST04504|Pct cr yr pub trad naic 1
+ST|ST04505|Pct cr yr pub trad naic 2
+ST|ST04506|Pct cr yr pub trad naic 3
+ST|ST04507|Pct cr yr pub trad naic 4
+ST|ST04508|Pct cr yr pub trad naic 5
+ST|ST04509|Pct cr yr pub trad naic 6
+ST|ST04510|Pct cr yr pub trad total
+ST|ST04511|Pct cr yr priv plac naic 1
+ST|ST04512|Pct cr yr priv plac naic 2
+ST|ST04513|Pct cr yr priv plac naic 3
+ST|ST04514|Pct cr yr priv plac naic 4
+ST|ST04515|Pct cr yr priv plac naic 5
+ST|ST04516|Pct cr yr priv plac naic 6
+ST|ST04517|Pct cr yr priv plac total
+ST|ST04560|Tot pr yr tot py naic 1
+ST|ST04561|Tot pr yr tot py naic 2
+ST|ST04562|Tot pr yr tot py naic 3
+ST|ST04563|Tot pr yr tot py naic 4
+ST|ST04564|Tot pr yr tot py naic 5
+ST|ST04565|Tot pr yr tot py naic 6
+ST|ST04566|Tot pr yr tot py total
+ST|ST04567|Tot pr yr tot py % py
+ST|ST04568|Tot pr yr pub trad naic 1
+ST|ST04569|Tot pr yr pub trad naic 2
+ST|ST04570|Tot pr yr pub trad naic 3
+ST|ST04571|Tot pr yr pub trad naic 4
+ST|ST04572|Tot pr yr pub trad naic 5
+ST|ST04573|Tot pr yr pub trad naic 6
+ST|ST04574|Tot pr yr pub trad total
+ST|ST04577|Tot pr yr priv plac class 1
+ST|ST04578|Tot pr yr priv plac naic 2
+ST|ST04579|Tot pr yr priv plac naic 3
+ST|ST04580|Tot pr yr priv plac naic 4
+ST|ST04581|Tot pr yr priv plac naic 5
+ST|ST04582|Tot pr yr priv plac naic 6
+ST|ST04583|Tot pr yr priv plac naicl
+ST|ST04628|Pct pr yr tot py naic 1
+ST|ST04629|Pct pr yr tot py naic 2
+ST|ST04630|Pct pr yr tot py naic 3
+ST|ST04631|Pct pr yr tot py naic 4
+ST|ST04632|Pct pr yr tot py naic 5
+ST|ST04633|Pct pr yr tot py naic 6
+ST|ST04634|Pct pr yr tot py total
+ST|ST04635|Pct pr yr pub trad naic 1
+ST|ST04636|Pct pr yr pub trad naic 2
+ST|ST04637|Pct pr yr pub trad naic 3
+ST|ST04638|Pct pr yr pub trad naic 4
+ST|ST04639|Pct pr yr pub trad naic 5
+ST|ST04640|Pct pr yr pub trad naic 6
+ST|ST04641|Pct pr yr pub trad total
+ST|ST04642|Pct pr yr priv plac naic 1
+ST|ST04643|Pct pr yr priv plac naic 2
+ST|ST04644|Pct pr yr priv plac naic 3
+ST|ST04645|Pct pr yr priv plac naic 4
+ST|ST04646|Pct pr yr priv plac naic 5
+ST|ST04647|Pct pr yr priv plac naic 6
+ST|ST04648|Pct pr yr priv plac total
+ST|ST04691|Tot pub trad tot naic 1
+ST|ST04692|Tot pub trad tot naic 2
+ST|ST04693|Tot pub trad tot naic 3
+ST|ST04694|Tot pub trad tot naic 4
+ST|ST04695|Tot pub trad tot naic 5
+ST|ST04696|Tot pub trad tot naic 6
+ST|ST04697|Tot pub trad total
+ST|ST04698|Tot pub trad total % cy
+ST|ST04699|Tot pub trad tot py naic 1
+ST|ST04700|Tot pub trad tot py naic 2
+ST|ST04701|Tot pub trad tot py naic 3
+ST|ST04702|Tot pub trad tot py naic 4
+ST|ST04703|Tot pub trad tot py naic 5
+ST|ST04704|Tot pub trad tot py naic 6
+ST|ST04705|Tot pub trad tot py total
+ST|ST04706|Tot pub trad tot py % py
+ST|ST04707|Tot pub trad pub trad naic 1
+ST|ST04708|Tot pub trad pub trad naic 2
+ST|ST04709|Tot pub trad pub trad naic 3
+ST|ST04710|Tot pub trad pub trad naic 4
+ST|ST04711|Tot pub trad pub trad naic 5
+ST|ST04712|Tot pub trad pub trad naic 6
+ST|ST04713|Tot pub trad pub trad total
+ST|ST04714|Tot pub trad pub trad % tot pt
+ST|ST04715|Tot pub trad pub trad % tot cy
+ST|ST04758|Tot priv plac tot naic 1
+ST|ST04759|Tot priv plac tot naic 2
+ST|ST04760|Tot priv plac tot naic 3
+ST|ST04761|Tot priv plac tot naic 4
+ST|ST04762|Tot priv plac tot naic 5
+ST|ST04763|Tot priv plac tot naic 6
+ST|ST04764|Tot priv plac total
+ST|ST04765|Tot priv plac total % cy
+ST|ST04766|Tot priv plac tot py naic 1
+ST|ST04767|Tot priv plac tot py naic 2
+ST|ST04768|Tot priv plac tot py naic 3
+ST|ST04769|Tot priv plac tot py naic 4
+ST|ST04770|Tot priv plac tot py naic 5
+ST|ST04771|Tot priv plac tot py naic 6
+ST|ST04772|Tot priv plac tot py total
+ST|ST04773|Tot priv plac tot py % py
+ST|ST04774|Tot priv plac priv plac naic 1
+ST|ST04775|Tot priv plac priv plac naic 2
+ST|ST04776|Tot priv plac priv plac naic 3
+ST|ST04777|Tot priv plac priv plac naic 4
+ST|ST04778|Tot priv plac priv plac naic 5
+ST|ST04779|Tot priv plac priv plac naic 6
+ST|ST04780|Tot priv plac priv plac total
+ST|ST04781|Tot priv plac priv plac % tot pp
+ST|ST04782|Tot priv plac priv plac % tot cy
+ST|ST06137|Tot priv plac freely tradeable (n)
+ST|ST04783|Tot cy bonds w z designations (n)
+ST|ST04784|Tot py bonds w z designations (n)
+ST|ST08835|Tot cy bonds w z* designations (n)
+ST|ST08836|Tot py bonds w z* designations (n)
+ST|ST08837|Tot cy bonds w 5* designations (n)
+ST|ST08838|Tot py bonds w 5* designations (n)
+ST|ST08839|Tot cy bonds w 6* designations (n)
+ST|ST08840|Tot py bonds w 6* designations (n)
+ST|ST16216|Mat 1y or ls t cl1 inc non-rte (n)
+ST|ST16217|Mat 1y or ls t cl2 inc non-rte (n)
+ST|ST16218|Mat 1y or ls t cl3 inc non-rte (n)
+ST|ST16219|Mat 1y or ls t cl4 inc non-rte (n)
+ST|ST16220|Mat 1y or ls t cl5 inc non-rte (n)
+ST|ST16221|Mat 1y or ls t cl6 inc non-rte (n)
+ST|ST08301|Mat 1y or ls us gov issuer obligations
+ST|ST21859|Mat 1y or ls us gov residential mtg-bk secur
+ST|ST21860|Mat 1y or ls us gov commercial mtg-bk secur
+ST|ST21861|Mat 1y or ls us gov oth loan-bk struc secur
+ST|ST11736|Mat 1y or less us gov totals
+ST|ST18309|Mat 1y or less oth gov issuer obligations
+ST|ST21862|Mat 1y or ls oth gov residential mtg-bk secur
+ST|ST21863|Mat 1y or ls oth gov commercial mtg-bk secur
+ST|ST21864|Mat 1y or ls oth gov oth loan-bk struc secur
+ST|ST18315|Mat 1y or less oth gov totals
+ST|ST18316|Mat 1y or less us st ter issuer obligations
+ST|ST21865|Mat 1y or ls us st ter residential mtg-bk secur
+ST|ST21866|Mat 1y or ls us st ter commercial mtg-bk secur
+ST|ST21867|Mat 1y or ls us st ter oth loan-bk struc secur
+ST|ST18322|Mat 1y or less us st ter totals
+ST|ST18323|Mat 1y or less us pol sub issuer obligations
+ST|ST21868|Mat 1y or ls us pol sub residential mtg-bk secur
+ST|ST21869|Mat 1y or ls us pol sub commercial mtg-bk secur
+ST|ST21870|Mat 1y or ls us pol sub oth loan-bk struc secur
+ST|ST18329|Mat 1y or less us pol sub totals
+ST|ST18330|Mat 1y or less us sp rev issuer obligations
+ST|ST21871|Mat 1y or ls us sp rev residential mtg-bk secur
+ST|ST21872|Mat 1y or ls us sp rev commercial mtg-bk secur
+ST|ST21873|Mat 1y or ls us sp rev oth loan-bk struc secur
+ST|ST18336|Mat 1y or less us sp rev totals
+ST|ST18337|Mat 1y or less ind&misc issuer obligations
+ST|ST21874|Mat 1y or ls ind&misc residential mtg-bk secur
+ST|ST21875|Mat 1y or ls ind&misc commercial mtg-bk secur
+ST|ST21876|Mat 1y or ls ind&misc oth loan-bk struc secur
+ST|ST18343|Mat 1y or less ind&misc totals
+ST|ST18345|Mat 1y or ls hybrid secur issuer obligation
+ST|ST21877|Mat 1y or ls hybrid sec residential mtg-bk secur
+ST|ST21878|Mat 1y or ls hybrid sec commercial mtg-bk secur
+ST|ST21879|Mat 1y or ls hybrid sec oth loan-bk struc secur
+ST|ST18351|Mat 1y or less hybrid secur totals
+ST|ST06158|Mat 1y or ls aff issuer obligations
+ST|ST21880|Mat 1y or ls affl residential mtg-bk secur
+ST|ST21881|Mat 1y or ls affl commercial mtg-bk secur
+ST|ST21882|Mat 1y or ls affl oth loan-bk struc secur
+ST|ST11794|Mat 1y or ls aff totals
+ST|ST08323|Mat 1-5 yrs us gov issuer obligations
+ST|ST21895|Mat 1-5 yrs us gov residential mtg-bk secur
+ST|ST21896|Mat 1-5 yrs us gov commercial mtg-bk secur
+ST|ST21897|Mat 1-5 yrs us gov oth loan-bk struc secur
+ST|ST11741|Mat 1-5 yrs us gov totals
+ST|ST18352|Mat 1-5 yrs oth gov issuer obligations
+ST|ST21898|Mat 1-5 yrs oth gov residential mtg-bk secur
+ST|ST21899|Mat 1-5 yrs oth gov commercial mtg-bk secur
+ST|ST21900|Mat 1-5 yrs oth gov oth loan-bk struc secur
+ST|ST18358|Mat 1-5 yrs oth gov totals
+ST|ST18359|Mat 1-5 yrs us st ter issuer obligations
+ST|ST21901|Mat 1-5 yrs us st ter residential mtg-bk secur
+ST|ST21902|Mat 1-5 yrs us st ter commercial mtg-bk secur
+ST|ST21903|Mat 1-5 yrs us st ter oth loan-bk struc secur
+ST|ST18365|Mat 1-5 yrs us st ter totals
+ST|ST18366|Mat 1-5 yrs us pol sub issuer obligations
+ST|ST21904|Mat 1-5 yrs us pol sub residential mtg-bk secur
+ST|ST21905|Mat 1-5 yrs us pol sub commercial mtg-bk secur
+ST|ST21906|Mat 1-5 yrs us pol sub oth loan-bk struc secur
+ST|ST18372|Mat 1-5 yrs us pol sub totals
+ST|ST18373|Mat 1-5 yrs us sp rev issuer obligations
+ST|ST21907|Mat 1-5 yrs us sp rev residential mtg-bk secur
+ST|ST21908|Mat 1-5 yrs us sp rev commercial mtg-bk secur
+ST|ST21909|Mat 1-5 yrs us sp rev oth loan-bk struc secur
+ST|ST18379|Mat 1-5 yrs us sp rev totals
+ST|ST18380|Mat 1-5 yrs ind&misc issuer obligations
+ST|ST21910|Mat 1-5 yrs ind&misc residential mtg-bk secur
+ST|ST21911|Mat 1-5 yrs ind&misc commercial mtg-bk secur
+ST|ST21912|Mat 1-5 yrs ind&misc oth loan-bk struc secur
+ST|ST18386|Mat 1-5 yrs ind&misc totals
+ST|ST18388|Mat 1-5 yrs hybrid secur issuer obligation
+ST|ST21913|Mat 1-5 yrs hybrid sec residential mtg-bk secur
+ST|ST21914|Mat 1-5 yrs hybrid sec commercial mtg-bk secur
+ST|ST21915|Mat 1-5 yrs hybrid sec oth loan-bk struc secur
+ST|ST18394|Mat 1-5 yrs hybrid secur totals
+ST|ST06182|Mat 1-5 yrs aff issuer obligations
+ST|ST21916|Mat 1-5 yrs affl residential mtg-bk secur
+ST|ST21917|Mat 1-5 yrs affl commercial mtg-bk secur
+ST|ST21918|Mat 1-5 yrs affl oth loan-bk struc secur
+ST|ST11798|Mat 1-5 yrs aff totals
+ST|ST08345|Mat 5-10 yrs us gov issuer obligations
+ST|ST21931|Mat 5-10 yrs us gov residential mtg-bk secur
+ST|ST21932|Mat 5-10 yrs us gov commercial mtg-bk secur
+ST|ST21933|Mat 5-10 yrs us gov oth loan-bk struc secur
+ST|ST11746|Mat 5-10 yrs us gov totals
+ST|ST18395|Mat 5-10 yrs oth gov issuer obligations
+ST|ST21934|Mat 5-10 yrs oth gov residential mtg-bk secur
+ST|ST21935|Mat 5-10 yrs oth gov commercial mtg-bk secur
+ST|ST21936|Mat 5-10 yrs oth gov oth loan-bk struc secur
+ST|ST18401|Mat 5-10 yrs oth gov totals
+ST|ST18402|Mat 5-10 yrs us st ter issuer obligations
+ST|ST21937|Mat 5-10 yrs us st ter residential mtg-bk secur
+ST|ST21938|Mat 5-10 yrs us st ter commercial mtg-bk secur
+ST|ST21939|Mat 5-10 yrs us st ter oth loan-bk struc secur
+ST|ST18408|Mat 5-10 yrs us st ter totals
+ST|ST18409|Mat 5-10 yrs us pol sub issuer obligations
+ST|ST21940|Mat 5-10 yrs us pol sub residential mtg-bk secur
+ST|ST21941|Mat 5-10 yrs us pol sub commercial mtg-bk secur
+ST|ST21942|Mat 5-10 yrs us pol sub oth loan-bk struc secur
+ST|ST18415|Mat 5-10 yrs us pol sub totals
+ST|ST18416|Mat 5-10 yrs us sp rev issuer obligations
+ST|ST21943|Mat 5-10 yrs us sp rev residential mtg-bk secur
+ST|ST21944|Mat 5-10 yrs us sp rev commercial mtg-bk secur
+ST|ST21945|Mat 5-10 yrs us sp rev oth loan-bk struc secur
+ST|ST18422|Mat 5-10 yrs us sp rev totals
+ST|ST18423|Mat 5-10 yrs ind&misc issuer obligations
+ST|ST21946|Mat 5-10 yrs ind&misc residential mtg-bk secur
+ST|ST21947|Mat 5-10 yrs ind&misc commercial mtg-bk secur
+ST|ST21948|Mat 5-10 yrs ind&misc oth loan-bk struc secur
+ST|ST18429|Mat 5-10 yrs ind&misc totals
+ST|ST18431|Mat 5-10 yrs hybrid secur issuer obligation
+ST|ST21949|Mat 5-10 yrs hybrid sec residential mtg-bk secur
+ST|ST21950|Mat 5-10 yrs hybrid sec commercial mtg-bk secur
+ST|ST21951|Mat 5-10 yrs hybrid sec oth loan-bk struc secur
+ST|ST18437|Mat 5-10 yrs hybrid secur totals
+ST|ST06206|Mat 5-10 yrs aff issuer obligations
+ST|ST21952|Mat 5-10 yrs affl residential mtg-bk secur
+ST|ST21953|Mat 5-10 yrs affl commercial mtg-bk secur
+ST|ST21954|Mat 5-10 yrs affl oth loan-bk struc secur
+ST|ST11802|Mat 5-10 yrs aff totals
+ST|ST08367|Mat 10-20 yrs us gov issuer obligations
+ST|ST21967|Mat 10-20 yrs us gov residential mtg-bk secur
+ST|ST21968|Mat 10-20 yrs us gov commercial mtg-bk secur
+ST|ST21969|Mat 10-20 yrs us gov oth loan-bk struc secur
+ST|ST11751|Mat 10-20 yrs us gov totals
+ST|ST18438|Mat 10-20 yrs oth gov issuer obligations
+ST|ST21970|Mat 10-20 yrs oth gov residential mtg-bk secur
+ST|ST21971|Mat 10-20 yrs oth gov commercial mtg-bk secur
+ST|ST21972|Mat 10-20 yrs oth gov oth loan-bk struc secur
+ST|ST18444|Mat 10-20 yrs oth gov totals
+ST|ST18445|Mat 10-20 yrs us st ter issuer obligations
+ST|ST21973|Mat 10-20 yrs us st ter residential mtg-bk secur
+ST|ST21974|Mat 10-20 yrs us st ter commercial mtg-bk secur
+ST|ST21975|Mat 10-20 yrs us st ter oth loan-bk struc secur
+ST|ST18451|Mat 10-20 yrs us st ter totals
+ST|ST18452|Mat 10-20 yrs us pol sub issuer obligations
+ST|ST21976|Mat 10-20 yrs us pol sub residential mtg-bk secur
+ST|ST21977|Mat 10-20 yrs us pol sub commercial mtg-bk secur
+ST|ST21978|Mat 10-20 yrs us pol sub oth loan-bk struc secur
+ST|ST18458|Mat 10-20 yrs us pol sub totals
+ST|ST18459|Mat 10-20 yrs us sp rev issuer obligations
+ST|ST21979|Mat 10-20 yrs us sp rev residential mtg-bk secur
+ST|ST21980|Mat 10-20 yrs us sp rev commercial mtg-bk secur
+ST|ST21981|Mat 10-20 yrs us sp rev oth loan-bk struc secur
+ST|ST18465|Mat 10-20 yrs us sp rev totals
+ST|ST18466|Mat 10-20 yrs ind&misc issuer obligations
+ST|ST21982|Mat 10-20 yrs ind&misc residential mtg-bk secur
+ST|ST21983|Mat 10-20 yrs ind&misc commercial mtg-bk secur
+ST|ST21984|Mat 10-20 yrs ind&misc oth loan-bk struc secur
+ST|ST18472|Mat 10-20 yrs ind&misc totals
+ST|ST18474|Mat 10-20 yrs hybrid secur issuer obligation
+ST|ST21985|Mat 10-20 yrs hybrid sec residential mtg-bk secur
+ST|ST21986|Mat 10-20 yrs hybrid sec commercial mtg-bk secur
+ST|ST21987|Mat 10-20 yrs hybrid sec oth loan-bk struc secur
+ST|ST18480|Mat 10-20 yrs hybrid secur totals
+ST|ST06230|Mat 10-20 yrs aff issuer obligations
+ST|ST21988|Mat 10-20 yrs affl residential mtg-bk secur
+ST|ST21989|Mat 10-20 yrs affl commercial mtg-bk secur
+ST|ST21990|Mat 10-20 yrs affl oth loan-bk struc secur
+ST|ST11806|Mat 10-20 yrs aff totals
+ST|ST08389|Mat ov 20 yrs us gov issuer obligations
+ST|ST22003|Mat ov 20 yrs us gov residential mtg-bk secur
+ST|ST22004|Mat ov 20 yrs us gov commercial mtg-bk secur
+ST|ST22005|Mat ov 20 yrs us gov oth loan-bk struc secur
+ST|ST11756|Mat ov 20 yrs us gov totals
+ST|ST18481|Mat ov 20 yrs oth gov issuer obligations
+ST|ST22006|Mat ov 20 yrs oth gov residential mtg-bk secur
+ST|ST22007|Mat ov 20 yrs oth gov commercial mtg-bk secur
+ST|ST22008|Mat ov 20 yrs oth gov oth loan-bk struc secur
+ST|ST18487|Mat ov 20 yrs oth gov totals
+ST|ST18488|Mat ov 20 yrs us st ter issuer obligations
+ST|ST22009|Mat ov 20 yrs us st ter residential mtg-bk secur
+ST|ST22010|Mat ov 20 yrs us st ter commercial mtg-bk secur
+ST|ST22011|Mat ov 20 yrs us st ter oth loan-bk struc secur
+ST|ST18494|Mat ov 20 yrs us st ter totals
+ST|ST18495|Mat ov 20 yrs us pol sub issuer obligations
+ST|ST22012|Mat ov 20 yrs us pol sub residential mtg-bk secur
+ST|ST22013|Mat ov 20 yrs us pol sub commercial mtg-bk secur
+ST|ST22014|Mat ov 20 yrs us pol sub oth loan-bk struc secur
+ST|ST18501|Mat ov 20 yrs us pol sub totals
+ST|ST18502|Mat ov 20 yrs us sp rev issuer obligations
+ST|ST22015|Mat ov 20 yrs us sp rev residential mtg-bk secur
+ST|ST22016|Mat ov 20 yrs us sp rev commercial mtg-bk secur
+ST|ST22017|Mat ov 20 yrs us sp rev oth loan-bk struc secur
+ST|ST18508|Mat ov 20 yrs us sp rev totals
+ST|ST18509|Mat ov 20 yrs ind&misc issuer obligations
+ST|ST22018|Mat ov 20 yrs ind&misc residential mtg-bk secur
+ST|ST22019|Mat ov 20 yrs ind&misc commercial mtg-bk secur
+ST|ST22020|Mat ov 20 yrs ind&misc oth loan-bk struc secur
+ST|ST18515|Mat ov 20 yrs ind&misc totals
+ST|ST18517|Mat ov 20 yrs hybrid secur issuer obligation
+ST|ST22021|Mat ov 20 yrs hybrid sec residential mtg-bk secur
+ST|ST22022|Mat ov 20 yrs hybrid sec commercial mtg-bk secur
+ST|ST22023|Mat ov 20 yrs hybrid sec oth loan-bk struc secur
+ST|ST18523|Mat ov 20 yrs hybrid secur totals
+ST|ST06254|Mat ov 20 yrs aff issuer obligations
+ST|ST22024|Mat ov 20 yrs affl residential mtg-bk secur
+ST|ST22025|Mat ov 20 yrs affl commercial mtg-bk secur
+ST|ST22026|Mat ov 20 yrs affl oth loan-bk struc secur
+ST|ST11810|Mat ov 20 yrs aff totals
+ST|ST08411|Tot cy us gov issuer obligations
+ST|ST22039|Tot cy us gov residential mtg-bk secur
+ST|ST22040|Tot cy us gov commercial mtg-bk secur
+ST|ST22041|Tot cy us gov oth loan-bk struc secur
+ST|ST11761|Tot cy us gov totals
+ST|ST18524|Tot cy oth gov issuer obligations
+ST|ST22042|Tot cy oth gov residential mtg-bk secur
+ST|ST22043|Tot cy oth gov commercial mtg-bk secur
+ST|ST22044|Tot cy oth gov oth loan-bk struc secur
+ST|ST18530|Tot cy oth gov totals
+ST|ST18531|Tot cy us st ter issuer obligations
+ST|ST22045|Tot cy us st ter residential mtg-bk secur
+ST|ST22046|Tot cy us st ter commercial mtg-bk secur
+ST|ST22047|Tot cy us st ter oth loan-bk struc secur
+ST|ST18537|Tot cy us st ter totals
+ST|ST18538|Tot cy us pol sub issuer obligations
+ST|ST22048|Tot cy us pol sub residential mtg-bk secur
+ST|ST22049|Tot cy us pol sub commercial mtg-bk secur
+ST|ST22050|Tot cy us pol sub oth loan-bk struc secur
+ST|ST18544|Tot cy us pol sub totals
+ST|ST18545|Tot cy us sp rev issuer obligations
+ST|ST22051|Tot cy us sp rev residential mtg-bk secur
+ST|ST22052|Tot cy us sp rev commercial mtg-bk secur
+ST|ST22053|Tot cy us sp rev oth loan-bk struc secur
+ST|ST18551|Tot cy us sp rev totals
+ST|ST18552|Tot cy ind&misc issuer obligations
+ST|ST22054|Tot cy ind&misc residential mtg-bk secur
+ST|ST22055|Tot cy ind&misc commercial mtg-bk secur
+ST|ST22056|Tot cy ind&misc oth loan-bk struc secur
+ST|ST18558|Tot cy ind&misc totals
+ST|ST18560|Tot cy hybrid secur issuer obligation
+ST|ST22057|Tot cy hybrid sec residential mtg-bk secur
+ST|ST22058|Tot cy hybrid sec commercial mtg-bk secur
+ST|ST22059|Tot cy hybrid sec oth loan-bk struc secur
+ST|ST18566|Tot cy hybrid secur totals
+ST|ST06278|Tot cy aff issuer obligations
+ST|ST22060|Tot cy affl residential mtg-bk secur
+ST|ST22061|Tot cy affl commercial mtg-bk secur
+ST|ST22062|Tot cy affl oth loan-bk struc secur
+ST|ST11814|Tot cy aff totals
+ST|ST08433|Pct cy us gov issuer obligations
+ST|ST22072|Pct cy us gov residential mtg-bk secur
+ST|ST22073|Pct cy us gov commercial mtg-bk secur
+ST|ST22074|Pct cy us gov oth loan-bk struc secur
+ST|ST11766|Pct cy us gov totals
+ST|ST18567|Pct cy othr gov issuer obligations
+ST|ST22075|Pct cy othr gov residential mtg-bk secur
+ST|ST22076|Pct cy othr gov commercial mtg-bk secur
+ST|ST22077|Pct cy othr gov oth loan-bk struc secur
+ST|ST18573|Pct cy othr gov totals
+ST|ST18574|Pct cy us st ter issuer obligations
+ST|ST22078|Pct cy us st ter residential mtg-bk secur
+ST|ST22079|Pct cy us st ter commercial mtg-bk secur
+ST|ST22080|Pct cy us st ter oth loan-bk struc secur
+ST|ST18580|Pct cy us st ter totals
+ST|ST18581|Pct cy us pol sub issuer obligations
+ST|ST22081|Pct cy us pol sub residential mtg-bk secur
+ST|ST22082|Pct cy us pol sub commercial mtg-bk secur
+ST|ST22083|Pct cy us pol sub oth loan-bk struc secur
+ST|ST18587|Pct cy us pol sub totals
+ST|ST18588|Pct cy us sp rev issuer obligations
+ST|ST22084|Pct cy us sp rev residential mtg-bk secur
+ST|ST22085|Pct cy us sp rev commercial mtg-bk secur
+ST|ST22086|Pct cy us sp rev oth loan-bk struc secur
+ST|ST18594|Pct cy us sp rev totals
+ST|ST18595|Pct cy indst&misc issuer obligations
+ST|ST22087|Pct cy indst&misc residential mtg-bk secur
+ST|ST22088|Pct cy indst&misc commercial mtg-bk secur
+ST|ST22089|Pct cy indst&misc oth loan-bk struc secur
+ST|ST18601|Pct cy indst&misc totals
+ST|ST18603|Pct cy hybrid secur issuer obligation
+ST|ST22090|Pct cy hybrid secur residential mtg-bk secur
+ST|ST22091|Pct cy hybrid secur commercial mtg-bk secur
+ST|ST22092|Pct cy hybrid secur oth loan-bk struc secur
+ST|ST18609|Pct cy hybrid secur totals
+ST|ST06302|Pct cy aff issuer obligations
+ST|ST22093|Pct cy aff residential mtg-bk secur
+ST|ST22094|Pct cy aff commercial mtg-bk secur
+ST|ST22095|Pct cy aff oth loan-bk struc secur
+ST|ST11818|Pct cy aff totals
+ST|ST08455|Tot py us gov issuer obligations
+ST|ST22105|Tot py us gov residential mtg-bk secur
+ST|ST22106|Tot py us gov commercial mtg-bk secur
+ST|ST22107|Tot py us gov oth loan-bk struc secur
+ST|ST11771|Tot py us gov totals
+ST|ST18610|Tot py oth gov issuer obligations
+ST|ST22108|Tot py oth gov residential mtg-bk secur
+ST|ST22109|Tot py oth gov commercial mtg-bk secur
+ST|ST22110|Tot py oth gov oth loan-bk struc secur
+ST|ST18616|Tot py oth gov totals
+ST|ST18617|Tot py us st ter issuer obligations
+ST|ST22111|Tot py us st ter residential mtg-bk secur
+ST|ST22112|Tot py us st ter commercial mtg-bk secur
+ST|ST22113|Tot py us st ter oth loan-bk struc secur
+ST|ST18623|Tot py us st ter totals
+ST|ST18624|Tot py us pol sub issuer obligations
+ST|ST22114|Tot py us pol sub residential mtg-bk secur
+ST|ST22115|Tot py us pol sub commercial mtg-bk secur
+ST|ST22116|Tot py us pol sub oth loan-bk struc secur
+ST|ST18630|Tot py us pol sub totals
+ST|ST18631|Tot py us sp rev issuer obligations
+ST|ST22117|Tot py us sp rev residential mtg-bk secur
+ST|ST22118|Tot py us sp rev commercial mtg-bk secur
+ST|ST22119|Tot py us sp rev oth loan-bk struc secur
+ST|ST18637|Tot py us sp rev totals
+ST|ST18638|Tot py ind&misc issuer obligations
+ST|ST22120|Tot py ind&misc residential mtg-bk secur
+ST|ST22121|Tot py ind&misc commercial mtg-bk secur
+ST|ST22122|Tot py ind&misc oth loan-bk struc secur
+ST|ST18644|Tot py ind&misc totals
+ST|ST18646|Tot py hybrid secur issuer obligation
+ST|ST22123|Tot py hybrid sec residential mtg-bk secur
+ST|ST22124|Tot py hybrid sec commercial mtg-bk secur
+ST|ST22125|Tot py hybrid sec oth loan-bk struc secur
+ST|ST18652|Tot py hybrid secur totals
+ST|ST06326|Tot py aff issuer obligations
+ST|ST22126|Tot py affl residential mtg-bk secur
+ST|ST22127|Tot py affl commercial mtg-bk secur
+ST|ST22128|Tot py affl oth loan-bk struc secur
+ST|ST11822|Tot py aff totals
+ST|ST08477|Pct py us gov issuer obligations
+ST|ST22138|Pct py us gov issuer residential mtg-bk secur
+ST|ST22139|Pct py us gov issuer commercial mtg-bk secur
+ST|ST22140|Pct py us gov issuer oth loan-bk struc secur
+ST|ST11776|Pct py us gov totals
+ST|ST18653|Pct py othr gov issuer obligations
+ST|ST22141|Pct py othr gov residential mtg-bk secur
+ST|ST22142|Pct py othr gov commercial mtg-bk secur
+ST|ST22143|Pct py othr gov oth loan-bk struc secur
+ST|ST18659|Pct py othr gov totals
+ST|ST18660|Pct py us st ter issuer obligations
+ST|ST22144|Pct py us st ter residential mtg-bk secur
+ST|ST22145|Pct py us st ter commercial mtg-bk secur
+ST|ST22146|Pct py us st ter oth loan-bk struc secur
+ST|ST18666|Pct py us st ter totals
+ST|ST18667|Pct py us pol sub issuer obligations
+ST|ST22147|Pct py us pol sub residential mtg-bk secur
+ST|ST22148|Pct py us pol sub commercial mtg-bk secur
+ST|ST22149|Pct py us pol sub oth loan-bk struc secur
+ST|ST18673|Pct py us pol sub totals
+ST|ST18674|Pct py us sp rev issuer obligations
+ST|ST22150|Pct py us sp rev residential mtg-bk secur
+ST|ST22151|Pct py us sp rev commercial mtg-bk secur
+ST|ST22152|Pct py us sp rev oth loan-bk struc secur
+ST|ST18680|Pct py us sp rev totals
+ST|ST18681|Pct py indust&misc issuer obligations unafl
+ST|ST22153|Pct py indust&misc residential mtg-bk secur
+ST|ST22154|Pct py indust&misc commercial mtg-bk secur
+ST|ST22155|Pct py indust&misc oth loan-bk struc secur
+ST|ST18687|Pct py indust&misc totals unafl
+ST|ST18689|Pct py hybrid secur issuer obligation
+ST|ST22156|Pct py hybrid secur residential mtg-bk secur
+ST|ST22157|Pct py hybrid secur commercial mtg-bk secur
+ST|ST22158|Pct py hybrid secur oth loan-bk struc secur
+ST|ST18695|Pct py hybrid secur totals
+ST|ST06350|Pct py aff issuer obligations
+ST|ST22159|Pct py aff residential mtg-bk secur
+ST|ST22160|Pct py aff commercial mtg-bk secur
+ST|ST22161|Pct py aff oth loan-bk struc secur
+ST|ST11826|Pct py aff totals
+ST|ST08499|Tot pub trad us gov issuer obligations
+ST|ST22171|Tot pub trad us gov residential mtg-bk secur
+ST|ST22172|Tot pub trad us gov commercial mtg-bk secur
+ST|ST22173|Tot pub trad us gov oth loan-bk struc secur
+ST|ST11781|Tot pub trad us gov totals
+ST|ST18696|Tot pub trad other gov issuer obligations
+ST|ST22174|Tot pub trad oth gov residential mtg-bk secur
+ST|ST22175|Tot pub trad oth gov commercial mtg-bk secur
+ST|ST22176|Tot pub trad oth gov oth loan-bk struc secur
+ST|ST18702|Tot pub trad other gov totals
+ST|ST18703|Tot pub trad us st ter issuer obligations
+ST|ST22177|Tot pub trad us st ter residential mtg-bk secur
+ST|ST22178|Tot pub trad us st ter commercial mtg-bk secur
+ST|ST22179|Tot pub trad us st ter oth loan-bk struc secur
+ST|ST18709|Tot pub trad us st ter totals
+ST|ST18710|Tot pub trad us pol sub issuer obligations
+ST|ST22180|Tot pub trad us pol sub residential mtg-bk secur
+ST|ST22181|Tot pub trad us pol sub commercial mtg-bk secur
+ST|ST22182|Tot pub trad us pol sub oth loan-bk struc secur
+ST|ST18716|Tot pub trad us pol sub totals
+ST|ST18717|Tot pub trad us sp rev issuer obligations
+ST|ST22183|Tot pub trad us sp rev residential mtg-bk secur
+ST|ST22184|Tot pub trad us sp rev commercial mtg-bk secur
+ST|ST22185|Tot pub trad us sp rev oth loan-bk struc secur
+ST|ST18723|Tot pub trad us sp rev totals
+ST|ST18724|Tot pub trad indst&misc issuer obligations
+ST|ST22186|Tot pub trad ind&misc residential mtg-bk secur
+ST|ST22187|Tot pub trad ind&misc commercial mtg-bk secur
+ST|ST22188|Tot pub trad ind&misc oth loan-bk struc secur
+ST|ST18730|Tot pub trad indst&misc total
+ST|ST18732|Tot pub trad hybrid secur issuer obligation st
+ST|ST22189|Tot pub trad hybrid sec residential mtg-bk secur
+ST|ST22190|Tot pub trad hybrid sec commercial mtg-bk secur
+ST|ST22191|Tot pub trad hybrid sec oth loan-bk struc secur
+ST|ST18738|Tot pub trad hybrid secur totals
+ST|ST06374|Tot pub trad aff issuer obligations
+ST|ST22192|Tot pub trad affl residential mtg-bk secur
+ST|ST22193|Tot pub trad affl commercial mtg-bk secur
+ST|ST22194|Tot pub trad affl oth loan-bk struc secur
+ST|ST11830|Tot pub trad aff totals
+ST|ST08521|Tot priv plac us gov issuer obligations
+ST|ST22204|Tot priv plac us gov residential mtg-bk secur
+ST|ST22205|Tot priv plac us gov commercial mtg-bk secur
+ST|ST22206|Tot priv plac us gov oth loan-bk struc secur
+ST|ST11786|Tot priv plac us gov totals
+ST|ST18739|Tot priv placed oth gov issuer obligations
+ST|ST22207|Tot priv plac oth gov residential mtg-bk secur
+ST|ST22208|Tot priv plac oth gov commercial mtg-bk secur
+ST|ST22209|Tot priv plac oth gov oth loan-bk struc secur
+ST|ST18745|Tot priv placed oth gov totals
+ST|ST18746|Tot priv placed us st ter issuer obligations
+ST|ST22210|Tot priv plac us st ter residential mtg-bk secur
+ST|ST22211|Tot priv plac us st ter commercial mtg-bk secur
+ST|ST22212|Tot priv plac us st ter oth loan-bk struc secur
+ST|ST18752|Tot priv placed us st ter totals
+ST|ST18753|Tot priv placed us pol sub issuer obligations
+ST|ST22213|Tot priv plac us pol sub residential mtg-bk secur
+ST|ST22214|Tot priv plac us pol sub commercial mtg-bk secur
+ST|ST22215|Tot priv plac us pol sub oth loan-bk struc secur
+ST|ST18759|Tot priv placed us pol sub totals
+ST|ST18760|Tot priv placed us sp rev issuer obligations
+ST|ST22216|Tot priv plac us sp rev residential mtg-bk secur
+ST|ST22217|Tot priv plac us sp rev commercial mtg-bk secur
+ST|ST22218|Tot priv plac us sp rev oth loan-bk struc secur
+ST|ST18766|Tot priv placed us sp rev totals
+ST|ST18767|Tot priv placed ind&misc issuer obligations
+ST|ST22219|Tot priv plac ind&misc residential mtg-bk secur
+ST|ST22220|Tot priv plac ind&misc commercial mtg-bk secur
+ST|ST22221|Tot priv plac ind&misc oth loan-bk struc secur
+ST|ST18773|Tot priv placed ind&misc totals
+ST|ST18775|Tot priv placed hybrid secur issuer obligation
+ST|ST22222|Tot priv plac hybrid sec residential mtg-bk secur
+ST|ST22223|Tot priv plac hybrid sec commercial mtg-bk secur
+ST|ST22224|Tot priv plac hybrid sec oth loan-bk struc secur
+ST|ST18781|Tot priv placed hybrid secur totals
+ST|ST06398|Tot priv plac aff issuer obligations
+ST|ST22225|Tot priv plac affl residential mtg-bk secur
+ST|ST22226|Tot priv plac affl commercial mtg-bk secur
+ST|ST22227|Tot priv plac affl oth loan-bk struc secur
+ST|ST11834|Tot priv plac aff totals
+ST|ST08302|Mat 1y or ls us gov single class
+ST|ST18310|Mat 1y or less oth gov single class
+ST|ST18311|Mat 1y or less oth gov res defined
+ST|ST18312|Mat 1y or less oth gov res other
+ST|ST18313|Mat 1y or less oth gov comm defined
+ST|ST18314|Mat 1y or less oth gov comm other
+ST|ST18317|Mat 1y or less us st ter single class
+ST|ST18318|Mat 1y or less us st ter res defined
+ST|ST18319|Mat 1y or less us st ter res other
+ST|ST18320|Mat 1y or less us st ter comm defined
+ST|ST18321|Mat 1y or less us st ter comm other
+ST|ST18324|Mat 1y or less us pol sub single class
+ST|ST18325|Mat 1y or less us pol sub res defined
+ST|ST18326|Mat 1y or less us pol sub res other
+ST|ST18327|Mat 1y or less us pol sub comm defined
+ST|ST18328|Mat 1y or less us pol sub comm other
+ST|ST18331|Mat 1y or less us sp rev single class
+ST|ST18332|Mat 1y or less us sp rev res defined
+ST|ST18333|Mat 1y or less us sp rev res other
+ST|ST18334|Mat 1y or less us sp rev comm defined
+ST|ST18335|Mat 1y or less us sp rev comm other
+ST|ST18338|Mat 1y or less ind&misc single class
+ST|ST18339|Mat 1y or less indust res defined
+ST|ST18340|Mat 1y or less indust res other
+ST|ST18341|Mat 1y or less indust comm defined
+ST|ST18342|Mat 1y or less indust comm other
+ST|ST08319|Mat 1y or ls cr loan issuer oblgs
+ST|ST18344|Mat 1y or less cr loans single cl mtg bckd
+ST|ST11793|Mat 1y or ls cr loan totals
+ST|ST18346|Mat 1y or less hybrid sec sngl cl mtg back-ast
+ST|ST18347|Mat 1y or less hybrid sec defined multi-cl resi
+ST|ST18348|Mat 1y or less hybrid sec other multi-cl resid
+ST|ST18349|Mat 1y or less hybrid sec defined multi-cl comm
+ST|ST18350|Mat 1y or less hybrid sec other multi-cl comm
+ST|ST06159|Mat 1y or ls aff single class
+ST|ST08865|Mat 1y or ls aff res defined
+ST|ST08866|Mat 1y or ls aff res other
+ST|ST08867|Mat 1y or ls aff comm defined
+ST|ST08868|Mat 1y or ls aff comm other
+ST|ST08324|Mat 1-5 yr us gov single class
+ST|ST18353|Mat 1-5 yrs oth gov single class
+ST|ST18354|Mat 1-5 yrs oth gov res defined
+ST|ST18355|Mat 1-5 yrs oth gov res other
+ST|ST18356|Mat 1-5 yrs oth gov comm defined
+ST|ST18357|Mat 1-5 yrs oth gov comm other
+ST|ST18360|Mat 1-5 yrs us st ter single class
+ST|ST18361|Mat 1-5 yrs us st ter res defined
+ST|ST18362|Mat 1-5 yrs us st ter res other
+ST|ST18363|Mat 1-5 yrs us st ter comm defined
+ST|ST18364|Mat 1-5 yrs us st ter comm other
+ST|ST18367|Mat 1-5 yrs us pol sub single class
+ST|ST18368|Mat 1-5 yrs us pol sub res defined
+ST|ST18369|Mat 1-5 yrs us pol sub res other
+ST|ST18370|Mat 1-5 yrs us pol sub comm defined
+ST|ST18371|Mat 1-5 yrs us pol sub comm other
+ST|ST18374|Mat 1-5 yrs us sp rev single class
+ST|ST18375|Mat 1-5 yrs us sp rev res defined
+ST|ST18376|Mat 1-5 yrs us sp rev res other
+ST|ST18377|Mat 1-5 yrs us sp rev comm defined
+ST|ST18378|Mat 1-5 yrs us sp rev comm other
+ST|ST18381|Mat 1-5 yrs ind&misc single class
+ST|ST18382|Mat 1-5 yrs indust res defined
+ST|ST18383|Mat 1-5 yrs indust res other
+ST|ST18384|Mat 1-5 yrs indust comm defined
+ST|ST18385|Mat 1-5 yrs indust comm other
+ST|ST08341|Mat 1-5 yr cr loan issuer oblgs
+ST|ST18387|Mat 1-5 yrs cr loan sngle cl mtg bckd
+ST|ST11797|Mat 1-5 yr cr loan totals
+ST|ST18389|Mat 1-5 yrs hybrid secur sngl cl mtg back ast
+ST|ST18390|Mat 1-5 yrs hybrid secur defined multi-cl res
+ST|ST18391|Mat 1-5 yrs hybrid secur other multi-cl resid
+ST|ST18392|Mat 1-5 yrs hybrid secur defined multi-cl com
+ST|ST18393|Mat 1-5 yrs hybrid secur other multi-cl comm
+ST|ST06183|Mat 1-5 yr aff single class
+ST|ST08909|Mat 1-5 yr aff res defined
+ST|ST08910|Mat 1-5 yr aff res other
+ST|ST08911|Mat 1-5 yr aff comm defined
+ST|ST08912|Mat 1-5 yr aff comm other
+ST|ST08346|Mat 5-10 yr us gov single class
+ST|ST18396|Mat 5-10 yrs oth gov single class
+ST|ST18397|Mat 5-10 yrs oth gov res defined
+ST|ST18398|Mat 5-10 yrs oth gov res other
+ST|ST18399|Mat 5-10 yrs oth gov comm defined
+ST|ST18400|Mat 5-10 yrs oth gov comm other
+ST|ST18403|Mat 5-10 yrs us st ter single class
+ST|ST18404|Mat 5-10 yrs us st ter res defined
+ST|ST18405|Mat 5-10 yrs us st ter res other
+ST|ST18406|Mat 5-10 yrs us st ter comm defined
+ST|ST18407|Mat 5-10 yrs us st ter comm other
+ST|ST18410|Mat 5-10 yrs us pol sub single class
+ST|ST18411|Mat 5-10 yrs us pol sub res defined
+ST|ST18412|Mat 5-10 yrs us pol sub res other
+ST|ST18413|Mat 5-10 yrs us pol sub comm defined
+ST|ST18414|Mat 5-10 yrs us pol sub comm other
+ST|ST18417|Mat 5-10 yrs us sp rev single class
+ST|ST18418|Mat 5-10 yrs us sp rev res defined
+ST|ST18419|Mat 5-10 yrs us sp rev res other
+ST|ST18420|Mat 5-10 yrs us sp rev comm defined
+ST|ST18421|Mat 5-10 yrs us sp rev comm other
+ST|ST18424|Mat 5-10 yrs ind&misc single class
+ST|ST18425|Mat 5-10 yrs indust res defined
+ST|ST18426|Mat 5-10 yrs indust res other
+ST|ST18427|Mat 5-10 yrs indust comm defined
+ST|ST18428|Mat 5-10 yrs indust comm other
+ST|ST08363|Mat 5-10 yr cr loan issuer oblgs
+ST|ST18430|Mat 5-10 yrs cr loan sngl cl mtg back
+ST|ST11801|Mat 5-10 yr cr loan totals
+ST|ST18432|Mat 5-10 yrs hybrid secur sngl cl mtg back ast
+ST|ST18433|Mat 5-10 yrs hybrid secur defined multi-cl resi
+ST|ST18434|Mat 5-10 yrs hybrid secur other multi-cl resid
+ST|ST18435|Mat 5-10 yrs hybrid secur defined multi-cl comm
+ST|ST18436|Mat 5-10 yrs hybrid secur other multi-cl comm
+ST|ST06207|Mat 5-10 yr aff single class
+ST|ST08953|Mat 5-10 yr aff res defined
+ST|ST08954|Mat 5-10 yr aff res other
+ST|ST08955|Mat 5-10 yr aff comm defined
+ST|ST08956|Mat 5-10 yr aff comm other
+ST|ST08368|Mat 10-20 yr us gov single class
+ST|ST18439|Mat 10-20 yrs oth gov single class
+ST|ST18440|Mat 10-20 yrs oth gov res defined
+ST|ST18441|Mat 10-20 yrs oth gov res other
+ST|ST18442|Mat 10-20 yrs oth gov comm defined
+ST|ST18443|Mat 10-20 yrs oth gov comm other
+ST|ST18446|Mat 10-20 yrs us st ter single class
+ST|ST18447|Mat 10-20 yrs us st ter res defined
+ST|ST18448|Mat 10-20 yrs us st ter res other
+ST|ST18449|Mat 10-20 yrs us st ter comm defined
+ST|ST18450|Mat 10-20 yrs us st ter comm other
+ST|ST18453|Mat 10-20 yrs us pol sub single class
+ST|ST18454|Mat 10-20 yrs us pol sub res defined
+ST|ST18455|Mat 10-20 yrs us pol sub res other
+ST|ST18456|Mat 10-20 yrs us pol sub comm defined
+ST|ST18457|Mat 10-20 yrs us pol sub comm other
+ST|ST18460|Mat 10-20 yrs us sp rev single class
+ST|ST18461|Mat 10-20 yrs us sp rev res defined
+ST|ST18462|Mat 10-20 yrs us sp rev res other
+ST|ST18463|Mat 10-20 yrs us sp rev comm defined
+ST|ST18464|Mat 10-20 yrs us sp rev comm other
+ST|ST18467|Mat 10-20 yrs ind&misc single class
+ST|ST18468|Mat 10-20 yrs indust res defined
+ST|ST18469|Mat 10-20 yrs indust res other
+ST|ST18470|Mat 10-20 yrs indust comm defined
+ST|ST18471|Mat 10-20 yrs indust comm other
+ST|ST08385|Mat 10-20 yr cr loan issuer oblgs
+ST|ST18473|Mat 10-20 yrs cr loan sngl cl mtg back ast
+ST|ST11805|Mat 10-20 yr cr loan totals
+ST|ST18475|Mat 10-20 yrs hybrid secur sngl cl mtg back ast
+ST|ST18476|Mat 10-20 yrs hybrid secur defined multi-cl resi
+ST|ST18477|Mat 10-20 yrs hybrid secur other multi-cl resid
+ST|ST18478|Mat 10-20 yrs hybrid secur defined multi-cl comm
+ST|ST18479|Mat 10-20 yrs hybrid secur other multi-cl comm
+ST|ST06231|Mat 10-20 yr aff single class
+ST|ST08997|Mat 10-20 yr aff res defined
+ST|ST08998|Mat 10-20 yr aff res other
+ST|ST08999|Mat 10-20 yr aff comm defined
+ST|ST09000|Mat 10-20 yr aff comm other
+ST|ST08390|Mat ov 20 yr us gov single class
+ST|ST18482|Mat ov 20 yrs oth gov single class
+ST|ST18483|Mat ov 20 yrs oth gov res defined
+ST|ST18484|Mat ov 20 yrs oth gov res other
+ST|ST18485|Mat ov 20 yrs oth gov comm defined
+ST|ST18486|Mat ov 20 yrs oth gov comm other
+ST|ST18489|Mat ov 20 yrs us st ter single class
+ST|ST18490|Mat ov 20 yrs us st ter res defined
+ST|ST18491|Mat ov 20 yrs us st ter res other
+ST|ST18492|Mat ov 20 yrs us st ter comm defined
+ST|ST18493|Mat ov 20 yrs us st ter comm other
+ST|ST18496|Mat ov 20 yrs us pol sub single class
+ST|ST18497|Mat ov 20 yrs us pol sub res defined
+ST|ST18498|Mat ov 20 yrs us pol sub res other
+ST|ST18499|Mat ov 20 yrs us pol sub comm defined
+ST|ST18500|Mat ov 20 yrs us pol sub comm other
+ST|ST18503|Mat ov 20 yrs us sp rev single class
+ST|ST18504|Mat ov 20 yrs us sp rev res defined
+ST|ST18505|Mat ov 20 yrs us sp rev res other
+ST|ST18506|Mat ov 20 yrs us sp rev comm defined
+ST|ST18507|Mat ov 20 yrs us sp rev comm other
+ST|ST18510|Mat ov 20 yrs ind&misc single class
+ST|ST18511|Mat ov 20 yrs indust res defined
+ST|ST18512|Mat ov 20 yrs indust res other
+ST|ST18513|Mat ov 20 yrs indust comm defined
+ST|ST18514|Mat ov 20 yrs indust comm other
+ST|ST08407|Mat ov 20 yr cr loan issuer oblgs
+ST|ST18516|Mat ov 20 yrs cr loan sngl cl mtg back-ast
+ST|ST11809|Mat ov 20 yr cr loan totals
+ST|ST18518|Mat ov 20 yrs hybrid secur sngl cl mtg back ast
+ST|ST18519|Mat ov 20 yrs hybrid secur defined multi-cl resi
+ST|ST18520|Mat ov 20 yrs hybrid secur other multi-cl resid
+ST|ST18521|Mat ov 20 yrs hybrid secur defined multi-cl comm
+ST|ST18522|Mat ov 20 yrs hybrid secur other multi-cl comm
+ST|ST06255|Mat ov 20 yr aff single class
+ST|ST09041|Mat ov 20 yr aff res defined
+ST|ST09042|Mat ov 20 yr aff res other
+ST|ST09043|Mat ov 20 yr aff comm defined
+ST|ST09044|Mat ov 20 yr aff comm other
+ST|ST08412|Tot cr yr us gov single class
+ST|ST18525|Tot cr yrs oth gov single class
+ST|ST18526|Tot cr yrs oth gov res defined
+ST|ST18527|Tot cr yrs oth gov res other
+ST|ST18528|Tot cr yrs oth gov comm defined
+ST|ST18529|Tot cr yrs oth gov comm other
+ST|ST18532|Tot cr yrs us st ter single class
+ST|ST18533|Tot cr yrs us st ter res defined
+ST|ST18534|Tot cr yrs us st ter res other
+ST|ST18535|Tot cr yrs us st ter comm defined
+ST|ST18536|Tot cr yrs us st ter comm other
+ST|ST18539|Tot cr yrs us pol sub single class
+ST|ST18540|Tot cr yrs us pol sub res defined
+ST|ST18541|Tot cr yrs us pol sub res other
+ST|ST18542|Tot cr yrs us pol sub comm defined
+ST|ST18543|Tot cr yrs us pol sub comm other
+ST|ST18546|Tot cr yrs us sp rev single class
+ST|ST18547|Tot cr yrs us sp rev res defined
+ST|ST18548|Tot cr yrs us sp rev res other
+ST|ST18549|Tot cr yrs us sp rev comm defined
+ST|ST18550|Tot cr yrs us sp rev comm other
+ST|ST18553|Tot cr yrs ind&misc single class
+ST|ST18554|Tot cr yrs indust res defined
+ST|ST18555|Tot cr yrs indust res other
+ST|ST18556|Tot cr yrs indust comm defined
+ST|ST18557|Tot cr yrs indust comm other
+ST|ST08429|Tot cr yr cr loan issuer oblgs
+ST|ST18559|Tot cr yrs cr loan sngl cl mtg back-ast
+ST|ST11813|Tot cr yr cr loan totals
+ST|ST18561|Tot cr yrs hybrid secur sngl cl mtg back ast
+ST|ST18562|Tot cr yrs hybrid secur defined multi-cl resi
+ST|ST18563|Tot cr yrs hybrid secur other multi-cl resid
+ST|ST18564|Tot cr yrs hybrid secur defined multi-cl comm
+ST|ST18565|Tot cr yrs hybrid secur other multi-cl comm
+ST|ST06279|Tot cr yr aff single class
+ST|ST09085|Tot cr yr aff res defined
+ST|ST09086|Tot cr yr aff res other
+ST|ST09087|Tot cr yr aff comm defined
+ST|ST09088|Tot cr yr aff comm other
+ST|ST08434|Pct cr yr us gov single class
+ST|ST18568|Pct cr yr othr gov single class
+ST|ST18569|Pct cr yr othr gov res defined
+ST|ST18570|Pct cr yr othr gov res other
+ST|ST18571|Pct cr yr othr gov comm defined
+ST|ST18572|Pct cr yr othr gov comm other
+ST|ST18575|Pct cr yr us st ter single class
+ST|ST18576|Pct cr yr us st ter res defined
+ST|ST18577|Pct cr yr us st ter res other
+ST|ST18578|Pct cr yr us st ter comm defined
+ST|ST18579|Pct cr yr us st ter comm other
+ST|ST18582|Pct cr yr us pol sub single class
+ST|ST18583|Pct cr yr us pol sub res defined
+ST|ST18584|Pct cr yr us pol sub res other
+ST|ST18585|Pct cr yr us pol sub comm defined
+ST|ST18586|Pct cr yr us pol sub comm other
+ST|ST18589|Pct cr yr us sp rev single class
+ST|ST18590|Pct cr yr us sp rev res defined
+ST|ST18591|Pct cr yr us sp rev res other
+ST|ST18592|Pct cr yr us sp rev comm defined
+ST|ST18593|Pct cr yr us sp rev comm other
+ST|ST18596|Pct cr yr indst&misc single class
+ST|ST18597|Pct cr yr indst&misc res defined
+ST|ST18598|Pct cr yr indst&misc res other
+ST|ST18599|Pct cr yr indst&misc comm defined
+ST|ST18600|Pct cr yr indst&misc comm other
+ST|ST08451|Pct cr yr cr loan issuer oblgs
+ST|ST18602|Pct cr yr cred tenant loans sngl cl mtg back-ast
+ST|ST11817|Pct cr yr cr loan totals
+ST|ST18604|Pct cr yr hybrid secur sngl cl mtg back ast
+ST|ST18605|Pct cr yr hybrid secur defined multi-cl resi
+ST|ST18606|Pct cr yr hybrid secur other multi-cl resid
+ST|ST18607|Pct cr yr hybrid secur defined multi-cl comm
+ST|ST18608|Pct cr yr hybrid secur other multi-cl comm
+ST|ST06303|Pct cr yr aff single class
+ST|ST09125|Pct cr yr aff res defined
+ST|ST09126|Pct cr yr aff res other
+ST|ST09127|Pct cr yr aff comm defined
+ST|ST09128|Pct cr yr aff comm other
+ST|ST08456|Tot pr yr us gov single class
+ST|ST18611|Tot pr yrs oth gov single class
+ST|ST18612|Tot pr yrs oth gov res defined
+ST|ST18613|Tot pr yrs oth gov res other
+ST|ST18614|Tot pr yrs oth gov comm defined
+ST|ST18615|Tot pr yrs oth gov comm other
+ST|ST18618|Tot pr yrs us st ter single class
+ST|ST18619|Tot pr yrs us st ter res defined
+ST|ST18620|Tot pr yrs us st ter res other
+ST|ST18621|Tot pr yrs us st ter comm defined
+ST|ST18622|Tot pr yrs us st ter comm other
+ST|ST18625|Tot pr yrs us pol sub single class
+ST|ST18626|Tot pr yrs us pol sub res defined
+ST|ST18627|Tot pr yrs us pol sub res other
+ST|ST18628|Tot pr yrs us pol sub comm defined
+ST|ST18629|Tot pr yrs us pol sub comm other
+ST|ST18632|Tot pr yrs us sp rev single class
+ST|ST18633|Tot pr yrs us sp rev res defined
+ST|ST18634|Tot pr yrs us sp rev res other
+ST|ST18635|Tot pr yrs us sp rev comm defined
+ST|ST18636|Tot pr yrs us sp rev comm other
+ST|ST18639|Tot pr yrs ind&misc single class
+ST|ST18640|Tot pr yrs indust res defined
+ST|ST18641|Tot pr yrs indust res other
+ST|ST18642|Tot pr yrs indust comm defined
+ST|ST18643|Tot pr yrs indust comm other
+ST|ST08473|Tot pr yr cr loan issuer oblgs
+ST|ST18645|Tot pr yrs cr loanns sngl cl mtg back-ast
+ST|ST11821|Tot pr yr cr loan totals
+ST|ST18647|Tot pr yrs hybrid secur sngl cl mtg back ast
+ST|ST18648|Tot pr yrs hybrid secur defined multi-cl resi
+ST|ST18649|Tot pr yrs hybrid secur other multi-cl resid
+ST|ST18650|Tot pr yrs hybrid secur defined multi-cl comm
+ST|ST18651|Tot pr yrs hybrid secur other multi-cl comm
+ST|ST06327|Tot pr yr aff single class
+ST|ST09165|Tot pr yr aff res defined
+ST|ST09166|Tot pr yr aff res other
+ST|ST09167|Tot pr yr aff comm defined
+ST|ST09168|Tot pr yr aff comm other
+ST|ST08478|Pct pr yr us gov single class
+ST|ST18654|Pct pr yr othr gov single class
+ST|ST18655|Pct pr yr othr gov res defined
+ST|ST18656|Pct pr yr othr gov res other
+ST|ST18657|Pct pr yr othr gov comm defined
+ST|ST18658|Pct pr yr othr gov comm other
+ST|ST18661|Pct pr yr us st ter single class
+ST|ST18662|Pct pr yr us st ter res defined
+ST|ST18663|Pct pr yr us st ter res other
+ST|ST18664|Pct pr yr us st ter comm defined
+ST|ST18665|Pct pr yr us st ter comm other
+ST|ST18668|Pct pr yr us pol sub single class
+ST|ST18669|Pct pr yr us pol sub res defined
+ST|ST18670|Pct pr yr us pol sub res other
+ST|ST18671|Pct pr yr us pol sub comm defined
+ST|ST18672|Pct pr yr us pol sub comm other
+ST|ST18675|Pct pr yr us sp rev single class
+ST|ST18676|Pct pr yr us sp rev res defined
+ST|ST18677|Pct pr yr us sp rev res other
+ST|ST18678|Pct pr yr us sp rev comm defined
+ST|ST18679|Pct pr yr us sp rev comm other
+ST|ST18682|Pct pr yr indust&misc single class unafl
+ST|ST18683|Pct pr yr indust&misc res defined unafl
+ST|ST18684|Pct pr yr indust&misc res other unafl
+ST|ST18685|Pct pr yr indust&misc comm defined unafl
+ST|ST18686|Pct pr yr indust&misc comm other unafl
+ST|ST08495|Pct pr yr cr loan issuer oblgs
+ST|ST18688|Pct pr yr cred tenant loans sngl cl mtg back-ast
+ST|ST11825|Pct pr yr cr loan totals
+ST|ST18690|Pct pr yr hybrid secur sngl cl mtg back ast
+ST|ST18691|Pct pr yr hybrid secur defined multi-cl resi
+ST|ST18692|Pct pr yr hybrid secur other multi-cl resid
+ST|ST18693|Pct pr yr hybrid secur defined multi-cl comm
+ST|ST18694|Pct pr yr hybrid secur other multi-cl comm
+ST|ST06351|Pct pr yr aff single class
+ST|ST09205|Pct pr yr aff res defined
+ST|ST09206|Pct pr yr aff res other
+ST|ST09207|Pct pr yr aff comm defined
+ST|ST09208|Pct pr yr aff comm other
+ST|ST08500|Tot pub trad us gov single class
+ST|ST18697|Tot pub trad other gov single class
+ST|ST18698|Tot pub trad other gov res defined
+ST|ST18699|Tot pub trad other gov res other
+ST|ST18700|Tot pub trad other gov comm defined
+ST|ST18701|Tot pub trad other gov comm other
+ST|ST18704|Tot pub trad us st ter single class
+ST|ST18705|Tot pub trad us st ter res defined
+ST|ST18706|Tot pub trad us st ter res otherer
+ST|ST18707|Tot pub trad us st ter comm defined
+ST|ST18708|Tot pub trad us st ter comm otherer
+ST|ST18711|Tot pub trad us pol sub single class
+ST|ST18712|Tot pub trad us pol sub res defined
+ST|ST18713|Tot pub trad us pol sub res otherer
+ST|ST18714|Tot pub trad us pol sub comm defined
+ST|ST18715|Tot pub trad us pol sub comm otherer
+ST|ST18718|Tot pub trad us sp rev single class
+ST|ST18719|Tot pub trad us sp rev res defined
+ST|ST18720|Tot pub trad us sp rev res otherer
+ST|ST18721|Tot pub trad us sp rev comm defined
+ST|ST18722|Tot pub trad us sp rev comm otherer
+ST|ST18725|Tot pub trad indst&miscsingle class
+ST|ST18726|Tot pub trad indst&misc res defined
+ST|ST18727|Tot pub trad indst&misc res other
+ST|ST18728|Tot pub trad indst&misc comm defined
+ST|ST18729|Tot pub trad indst&misc comm other
+ST|ST08517|Tot pub trad credit tenant loans issuer oblig
+ST|ST18731|Tot pub trad cr ten lns single class mtg bk sec
+ST|ST11829|Tot pub trad credit tenant loans totals
+ST|ST18733|Tot pub trad hybrid secur sing cl mtg bk sec
+ST|ST18734|Tot pub trad hybrid secur defined multi-cl res
+ST|ST18735|Tot pub trad hybrid secur other multi-cl resident
+ST|ST18736|Tot pub trad hybrid secur defined multi-cl comm
+ST|ST18737|Tot pub trad hybrid secur other multi-cl comm
+ST|ST06375|Tot pub trad aff single class mtg-bk securities
+ST|ST09245|Tot pub trad aff res multi-class res defined
+ST|ST09246|Tot pub trad aff res multi-class res other
+ST|ST09247|Tot pub trad aff comm multi-class res defined
+ST|ST09248|Tot pub trad aff comm multi-class res other
+ST|ST08522|Tot priv plac us gov single class
+ST|ST18740|Tot priv placed oth gov single class
+ST|ST18741|Tot priv placed oth gov res defined
+ST|ST18742|Tot priv placed oth gov res other
+ST|ST18743|Tot priv placed oth gov comm defined
+ST|ST18744|Tot priv placed oth gov comm other
+ST|ST18747|Tot priv placed us st ter single class
+ST|ST18748|Tot priv placed us st ter res defined
+ST|ST18749|Tot priv placed us st ter res other
+ST|ST18750|Tot priv placed us st ter comm defined
+ST|ST18751|Tot priv placed us st ter comm other
+ST|ST18754|Tot priv placed us pol sub single class
+ST|ST18755|Tot priv placed us pol sub res defined
+ST|ST18756|Tot priv placed us pol sub res other
+ST|ST18757|Tot priv placed us pol sub comm defined
+ST|ST18758|Tot priv placed us pol sub comm other
+ST|ST18761|Tot priv placed us sp rev single class
+ST|ST18762|Tot priv placed us sp rev res defined
+ST|ST18763|Tot priv placed us sp rev res other
+ST|ST18764|Tot priv placed us sp rev comm defined
+ST|ST18765|Tot priv placed us sp rev comm other
+ST|ST18768|Tot priv placed ind&misc single class
+ST|ST18769|Tot priv placed indust res defined
+ST|ST18770|Tot priv placed indust res other
+ST|ST18771|Tot priv placed indust comm defined
+ST|ST18772|Tot priv placed indust comm other
+ST|ST08539|Tot priv plac cr loan issuer oblgs
+ST|ST18774|Tot priv placed cr loan sngle cl mtg-bckd
+ST|ST11833|Tot priv plac cr loan totals
+ST|ST18776|Tot priv placed hybrid secur sngl cl mtg back ast
+ST|ST18777|Tot priv placed hybrid secur defined multi-cl resi
+ST|ST18778|Tot priv placed hybrid secur other multi-cl resid
+ST|ST18779|Tot priv placed hybrid secur defined multi-cl comm
+ST|ST18780|Tot priv placed hybrid secur other multi-cl comm
+ST|ST06399|Tot priv plac aff single class
+ST|ST09285|Tot priv plac aff res defined
+ST|ST09286|Tot priv plac aff res other
+ST|ST09287|Tot priv plac aff comm defined
+ST|ST09288|Tot priv plac aff comm other
+ST|ST06402|Mat 1y or ls tot issuer obligations
+ST|ST21883|Mat 1y or ls tot residential mtg-bk secur
+ST|ST21884|Mat 1y or ls tot commercial mtg-bk secur
+ST|ST21885|Mat 1y or ls tot oth loan-bk struc secur
+ST|ST11835|Mat 1y or ls tot totals
+ST|ST11836|Mat 1y or ls totals as % of cy
+ST|ST06406|Mat 1y or ls tot py issuer obligations
+ST|ST21886|Mat 1y or ls tot py residential mtg-bk secur
+ST|ST21887|Mat 1y or ls tot py commercial mtg-bk secur
+ST|ST21888|Mat 1y or ls tot py oth loan-bk struc secur
+ST|ST11837|Mat 1y or ls tot py totals
+ST|ST11838|Mat 1y or ls tot as % of py total
+ST|ST06410|Mat 1y or ls pub trad issuer obligations
+ST|ST21889|Mat 1y or ls pub trad residential mtg-bk secur
+ST|ST21890|Mat 1y or ls pub trad commercial mtg-bk secur
+ST|ST21891|Mat 1y or ls pub trad oth loan-bk struc secur
+ST|ST11839|Mat 1y or ls pub trad totals
+ST|ST11840|Mat 1y or ls pub trad tot % tot cy
+ST|ST11841|Mat 1y or ls pub trad tot % bnd cy
+ST|ST06414|Mat 1y or ls priv plac issuer obligations
+ST|ST21892|Mat 1y or ls priv plac residential mtg-bk secur
+ST|ST21893|Mat 1y or ls priv plac commercial mtg-bk secur
+ST|ST21894|Mat 1y or ls priv plac oth loan-bk struc secur
+ST|ST11842|Mat 1y or ls priv plac totals
+ST|ST11843|Mat 1y or ls priv plac tot % tot cy
+ST|ST11844|Mat 1y or ls priv plac tot % bnd cy
+ST|ST06418|Mat 1-5 yrs tot issuer obligations
+ST|ST21919|Mat 1-5 yrs tot residential mtg-bk secur
+ST|ST21920|Mat 1-5 yrs tot commercial mtg-bk secur
+ST|ST21921|Mat 1-5 yrs tot oth loan-bk struc secur
+ST|ST11845|Mat 1-5 yrs tot totals
+ST|ST11846|Mat 1-5 yrs totals as % of cy
+ST|ST06422|Mat 1-5 yrs tot py issuer obligations
+ST|ST21922|Mat 1-5 yrs tot py residential mtg-bk secur
+ST|ST21923|Mat 1-5 yrs tot py commercial mtg-bk secur
+ST|ST21924|Mat 1-5 yrs tot py oth loan-bk struc secur
+ST|ST11847|Mat 1-5 yrs tot py totals
+ST|ST11848|Mat 1-5 yrs tot as % of py total
+ST|ST06426|Mat 1-5 yrs pub trad issuer obligations
+ST|ST21925|Mat 1-5 yrs pub trad residential mtg-bk secur
+ST|ST21926|Mat 1-5 yrs pub trad commercial mtg-bk secur
+ST|ST21927|Mat 1-5 yrs pub trad oth loan-bk struc secur
+ST|ST11849|Mat 1-5 yrs pub trad totals
+ST|ST11850|Mat 1-5 yrs pub trad tot % tot cy
+ST|ST11851|Mat 1-5 yrs pub trad tot % bnd cy
+ST|ST06430|Mat 1-5 yrs priv plac issuer obligations
+ST|ST21928|Mat 1-5 yrs priv plac residential mtg-bk secur
+ST|ST21929|Mat 1-5 yrs priv plac commercial mtg-bk secur
+ST|ST21930|Mat 1-5 yrs priv plac oth loan-bk struc secur
+ST|ST11852|Mat 1-5 yrs priv plac totals
+ST|ST11853|Mat 1-5 yrs priv plac tot % tot cy
+ST|ST11854|Mat 1-5 yrs priv plac tot % bnd cy
+ST|ST06434|Mat 5-10 yrs tot issuer obligations
+ST|ST21955|Mat 5-10 yrs tot residential mtg-bk secur
+ST|ST21956|Mat 5-10 yrs tot commercial mtg-bk secur
+ST|ST21957|Mat 5-10 yrs tot oth loan-bk struc secur
+ST|ST11855|Mat 5-10 yrs tot totals
+ST|ST11856|Mat 5-10 yrs totals as % of cy
+ST|ST06438|Mat 5-10 yrs tot py issuer obligations
+ST|ST21958|Mat 5-10 yrs tot py residential mtg-bk secur
+ST|ST21959|Mat 5-10 yrs tot py commercial mtg-bk secur
+ST|ST21960|Mat 5-10 yrs tot py oth loan-bk struc secur
+ST|ST11857|Mat 5-10 yrs tot py totals
+ST|ST11858|Mat 5-10 yrs tot as % of py total
+ST|ST06442|Mat 5-10 yrs pub trad issuer obligations
+ST|ST21961|Mat 5-10 yrs pub trad residential mtg-bk secur
+ST|ST21962|Mat 5-10 yrs pub trad commercial mtg-bk secur
+ST|ST21963|Mat 5-10 yrs pub trad oth loan-bk struc secur
+ST|ST11859|Mat 5-10 yrs pub trad totals
+ST|ST11860|Mat 5-10 yrs pub trad tot % tot cy
+ST|ST11861|Mat 5-10 yrs pub trad tot % bnd cy
+ST|ST06446|Mat 5-10 yrs priv plac issuer obligations
+ST|ST21964|Mat 5-10 yrs priv plac residential mtg-bk secur
+ST|ST21965|Mat 5-10 yrs priv plac commercial mtg-bk secur
+ST|ST21966|Mat 5-10 yrs priv plac oth loan-bk struc secur
+ST|ST11862|Mat 5-10 yrs priv plac totals
+ST|ST11863|Mat 5-10 yrs priv plac tot % tot cy
+ST|ST11864|Mat 5-10 yrs priv plac tot % bnd cy
+ST|ST06450|Mat 10-20 yrs tot issuer obligations
+ST|ST21991|Mat 10-20 yrs tot residential mtg-bk secur
+ST|ST21992|Mat 10-20 yrs tot commercial mtg-bk secur
+ST|ST21993|Mat 10-20 yrs tot oth loan-bk struc secur
+ST|ST11865|Mat 10-20 yrs tot totals
+ST|ST11866|Mat 10-20 yrs totals as % of cy
+ST|ST06454|Mat 10-20 yrs tot py issuer obligations
+ST|ST21994|Mat 10-20 yrs tot py residential mtg-bk secur
+ST|ST21995|Mat 10-20 yrs tot py commercial mtg-bk secur
+ST|ST21996|Mat 10-20 yrs tot py oth loan-bk struc secur
+ST|ST11867|Mat 10-20 yrs tot py totals
+ST|ST11868|Mat 10-20 yrs tot as % of py total
+ST|ST06458|Mat 10-20 yrs pub trad issuer obligations
+ST|ST21997|Mat 10-20 yrs pub trad residential mtg-bk secur
+ST|ST21998|Mat 10-20 yrs pub trad commercial mtg-bk secur
+ST|ST21999|Mat 10-20 yrs pub trad oth loan-bk struc secur
+ST|ST11869|Mat 10-20 yrs pub trad totals
+ST|ST11870|Mat 10-20 yrs pub trad tot % tot cy
+ST|ST11871|Mat 10-20 yrs pub trad tot % bnd cy
+ST|ST06462|Mat 10-20 yrs priv plac issuer obligations
+ST|ST22000|Mat 10-20 yrs priv plac residential mtg-bk secur
+ST|ST22001|Mat 10-20 yrs priv plac commercial mtg-bk secur
+ST|ST22002|Mat 10-20 yrs priv plac oth loan-bk struc secur
+ST|ST11872|Mat 10-20 yrs priv plac totals
+ST|ST11873|Mat 10-20 yrs priv plac tot % tot cy
+ST|ST11874|Mat 10-20 yrs priv plac tot % bnd cy
+ST|ST06466|Mat ov 20 yrs tot issuer obligations
+ST|ST22027|Mat ov 20 yrs tot residential mtg-bk secur
+ST|ST22028|Mat ov 20 yrs tot commercial mtg-bk secur
+ST|ST22029|Mat ov 20 yrs tot oth loan-bk struc secur
+ST|ST11875|Mat ov 20 yrs tot totals
+ST|ST11876|Mat ov 20 yrs totals as % of cy
+ST|ST06470|Mat ov 20 yrs tot py issuer obligations
+ST|ST22030|Mat ov 20 yrs tot py residential mtg-bk secur
+ST|ST22031|Mat ov 20 yrs tot py commercial mtg-bk secur
+ST|ST22032|Mat ov 20 yrs tot py oth loan-bk struc secur
+ST|ST11877|Mat ov 20 yrs tot py totals
+ST|ST11878|Mat ov 20 yrs tot as % of py total
+ST|ST06474|Mat ov 20 yrs pub trad issuer obligations
+ST|ST22033|Mat ov 20 yrs pub trad residential mtg-bk secur
+ST|ST22034|Mat ov 20 yrs pub trad commercial mtg-bk secur
+ST|ST22035|Mat ov 20 yrs pub trad oth loan-bk struc secur
+ST|ST11879|Mat ov 20 yrs pub trad totals
+ST|ST11880|Mat ov 20 yrs pub trad tot % tot cy
+ST|ST11881|Mat ov 20 yrs pub trad tot % bnd cy
+ST|ST06478|Mat ov 20 yrs priv plac issuer obligations
+ST|ST22036|Mat ov 20 yrs priv plac residential mtg-bk secur
+ST|ST22037|Mat ov 20 yrs priv plac commercial mtg-bk secur
+ST|ST22038|Mat ov 20 yrs priv plac oth loan-bk struc secur
+ST|ST11882|Mat ov 20 yrs priv plac totals
+ST|ST11883|Mat ov 20 yrs priv plac tot % tot cy
+ST|ST11884|Mat ov 20 yrs priv plac tot % bnd cy
+ST|ST06482|Tot cy tot issuer obligations
+ST|ST22063|Tot cy tot residential mtg-bk secur
+ST|ST22064|Tot cy tot commercial mtg-bk secur
+ST|ST22065|Tot cy tot oth loan-bk struc secur
+ST|ST11885|Tot cy tot totals
+ST|ST11886|Tot cy totals as % of cy
+ST|ST06486|Tot cy pub trad issuer obligations
+ST|ST22066|Tot cy pub trad residential mtg-bk secur
+ST|ST22067|Tot cy pub trad commercial mtg-bk secur
+ST|ST22068|Tot cy pub trad oth loan-bk struc secur
+ST|ST11887|Tot cy pub trad totals
+ST|ST11888|Tot cy pub trad tot % tot cy
+ST|ST11889|Tot cy pub trad tot % bnd cy
+ST|ST06490|Tot cy priv plac issuer obligations
+ST|ST22069|Tot cy priv plac residential mtg-bk secur
+ST|ST22070|Tot cy priv plac commercial mtg-bk secur
+ST|ST22071|Tot cy priv plac oth loan-bk struc secur
+ST|ST11890|Tot cy priv plac totals
+ST|ST11891|Tot cy priv plac tot % tot cy
+ST|ST11892|Tot cy priv plac tot % bnd cy
+ST|ST06494|Pct cy tot issuer obligations
+ST|ST22096|Pct cy tot residential mtg-bk secur
+ST|ST22097|Pct cy tot commercial mtg-bk secur
+ST|ST22098|Pct cy tot oth loan-bk struc secur
+ST|ST11893|Pct cy tot totals
+ST|ST06498|Pct cy pub trad issuer obligations
+ST|ST22099|Pct cy pub trad residential mtg-bk secur
+ST|ST22100|Pct cy pub trad commercial mtg-bk secur
+ST|ST22101|Pct cy pub trad oth loan-bk struc secur
+ST|ST11894|Pct cy pub trad totals
+ST|ST06502|Pct cy priv plac issuer obligations
+ST|ST22102|Pct cy priv plac residential mtg-bk secur
+ST|ST22103|Pct cy priv plac commercial mtg-bk secur
+ST|ST22104|Pct cy priv plac oth loan-bk struc secur
+ST|ST11895|Pct cy priv plac totals
+ST|ST06506|Tot py tot py issuer obligations
+ST|ST22129|Tot py tot py residential mtg-bk secur
+ST|ST22130|Tot py tot py commercial mtg-bk secur
+ST|ST22131|Tot py tot py oth loan-bk struc secur
+ST|ST11896|Tot py tot py totals
+ST|ST11897|Tot py tot as % of py total
+ST|ST06510|Tot py pub trad issuer obligations
+ST|ST22132|Tot py pub trad residential mtg-bk secur
+ST|ST22133|Tot py pub trad commercial mtg-bk secur
+ST|ST22134|Tot py pub trad oth loan-bk struc secur
+ST|ST11898|Tot py pub trad totals
+ST|ST06514|Tot py priv plac issuer obligations
+ST|ST22135|Tot py priv plac residential mtg-bk secur
+ST|ST22136|Tot py priv plac commercial mtg-bk secur
+ST|ST22137|Tot py priv plac oth loan-bk struc secur
+ST|ST11899|Tot py priv plac totals
+ST|ST06518|Pct py tot py issuer obligations
+ST|ST22162|Pct py tot py residential mtg-bk secur
+ST|ST22163|Pct py tot py commercial mtg-bk secur
+ST|ST22164|Pct py tot py oth loan-bk struc secur
+ST|ST11900|Pct py tot py totals
+ST|ST06522|Pct py pub trad issuer obligations
+ST|ST22165|Pct py pub trad residential mtg-bk secur
+ST|ST22166|Pct py pub trad commercial mtg-bk secur
+ST|ST22167|Pct py pub trad oth loan-bk struc secur
+ST|ST11901|Pct py pub trad totals
+ST|ST06526|Pct py priv plac issuer obligations
+ST|ST22168|Pct py priv plac residential mtg-bk secur
+ST|ST22169|Pct py priv plac commercial mtg-bk secur
+ST|ST22170|Pct py priv plac oth loan-bk struc secur
+ST|ST11902|Pct py priv plac totals
+ST|ST06530|Tot pub trad tot issuer obligations
+ST|ST22195|Tot pub trad tot residential mtg-bk secur
+ST|ST22196|Tot pub trad tot commercial mtg-bk secur
+ST|ST22197|Tot pub trad tot oth loan-bk struc secur
+ST|ST11903|Tot pub trad tot totals
+ST|ST11904|Tot pub trad totals as % of cy
+ST|ST06534|Tot pub trad tot py issuer obligations
+ST|ST22198|Tot pub trad tot py residential mtg-bk secur
+ST|ST22199|Tot pub trad tot py commercial mtg-bk secur
+ST|ST22200|Tot pub trad tot py oth loan-bk struc secur
+ST|ST11905|Tot pub trad tot py totals
+ST|ST11906|Tot pub trad tot as % of py total
+ST|ST06538|Tot pub trad pub trad issuer obligations
+ST|ST22201|Tot pub trad pub trad residential mtg-bk secur
+ST|ST22202|Tot pub trad pub trad commercial mtg-bk secur
+ST|ST22203|Tot pub trad pub trad oth loan-bk struc secur
+ST|ST11907|Tot pub trad pub trad totals
+ST|ST11908|Tot pub trad pub trad tot % tot cy
+ST|ST11909|Tot pub trad pub trad tot % bnd cy
+ST|ST06542|Tot priv plac tot issuer obligations
+ST|ST22228|Tot priv plac tot residential mtg-bk secur
+ST|ST22229|Tot priv plac tot commercial mtg-bk secur
+ST|ST22230|Tot priv plac tot oth loan-bk struc secur
+ST|ST11910|Tot priv plac tot totals
+ST|ST11911|Tot priv plac totals as % of cy
+ST|ST06546|Tot priv plac tot py issuer obligations
+ST|ST22231|Tot priv plac tot py residential mtg-bk secur
+ST|ST22232|Tot priv plac tot py commercial mtg-bk secur
+ST|ST22233|Tot priv plac tot py oth loan-bk struc secur
+ST|ST11912|Tot priv plac tot py totals
+ST|ST11913|Tot priv plac tot as % of py total
+ST|ST06550|Tot priv plac priv plc issuer obligations
+ST|ST22234|Tot priv plac priv plac residential mtg-bk secur
+ST|ST22235|Tot priv plac priv plac commercial mtg-bk secur
+ST|ST22236|Tot priv plac priv plac oth loan-bk struc secur
+ST|ST11914|Tot priv plac priv plc totals
+ST|ST11915|Tot priv plac priv plc tot % tot cy
+ST|ST11916|Tot priv plac priv plc tot % bnd cy
+ST|ST06403|Mat 1y or ls tot single class
+ST|ST08869|Mat 1y or ls tot res defined
+ST|ST08870|Mat 1y or ls tot res other
+ST|ST08871|Mat 1y or ls tot comm defined
+ST|ST08872|Mat 1y or ls tot comm other
+ST|ST06407|Mat 1y or ls tot py single class
+ST|ST08873|Mat 1y or ls tot py res defined
+ST|ST08874|Mat 1y or ls tot py res other
+ST|ST08875|Mat 1y or ls tot py comm defined
+ST|ST08876|Mat 1y or ls tot py comm other
+ST|ST06411|Mat 1y or ls pub trad single class
+ST|ST08877|Mat 1y or ls pub trad res defined
+ST|ST08878|Mat 1y or ls pub trad res other
+ST|ST08879|Mat 1y or ls pub trad comm defined
+ST|ST08880|Mat 1y or ls pub trad comm other
+ST|ST06415|Mat 1y or ls priv plac single class
+ST|ST08881|Mat 1y or ls priv plac res defined
+ST|ST08882|Mat 1y or ls priv plac res other
+ST|ST08883|Mat 1y or ls priv plac comm defined
+ST|ST08884|Mat 1y or ls priv plac comm other
+ST|ST06419|Mat 1-5 yr tot single class
+ST|ST08913|Mat 1-5 yr tot res defined
+ST|ST08914|Mat 1-5 yr tot res other
+ST|ST08915|Mat 1-5 yr tot comm defined
+ST|ST08916|Mat 1-5 yr tot comm other
+ST|ST06423|Mat 1-5 yr tot py single class
+ST|ST08917|Mat 1-5 yr tot py res defined
+ST|ST08918|Mat 1-5 yr tot py res other
+ST|ST08919|Mat 1-5 yr tot py comm defined
+ST|ST08920|Mat 1-5 yr tot py comm other
+ST|ST06427|Mat 1-5 yr pub trad single class
+ST|ST08921|Mat 1-5 yr pub trad res defined
+ST|ST08922|Mat 1-5 yr pub trad res other
+ST|ST08923|Mat 1-5 yr pub trad comm defined
+ST|ST08924|Mat 1-5 yr pub trad comm other
+ST|ST06431|Mat 1-5 yr priv plac single class
+ST|ST08925|Mat 1-5 yr priv plac res defined
+ST|ST08926|Mat 1-5 yr priv plac res other
+ST|ST08927|Mat 1-5 yr priv plac comm defined
+ST|ST08928|Mat 1-5 yr priv plac comm other
+ST|ST06435|Mat 5-10 yr tot single class
+ST|ST08957|Mat 5-10 yr tot res defined
+ST|ST08958|Mat 5-10 yr tot res other
+ST|ST08959|Mat 5-10 yr tot comm defined
+ST|ST08960|Mat 5-10 yr tot comm other
+ST|ST06439|Mat 5-10 yr tot py single class
+ST|ST08961|Mat 5-10 yr tot py res defined
+ST|ST08962|Mat 5-10 yr tot py res other
+ST|ST08963|Mat 5-10 yr tot py comm defined
+ST|ST08964|Mat 5-10 yr tot py comm other
+ST|ST06443|Mat 5-10 yr pub trad single class
+ST|ST08965|Mat 5-10 yr pub trad res defined
+ST|ST08966|Mat 5-10 yr pub trad res other
+ST|ST08967|Mat 5-10 yr pub trad comm defined
+ST|ST08968|Mat 5-10 yr pub trad comm other
+ST|ST06447|Mat 5-10 yr priv plac single class
+ST|ST08969|Mat 5-10 yr priv plac res defined
+ST|ST08970|Mat 5-10 yr priv plac res other
+ST|ST08971|Mat 5-10 yr priv plac comm defined
+ST|ST08972|Mat 5-10 yr priv plac comm other
+ST|ST06451|Mat 10-20 yr tot single class
+ST|ST09001|Mat 10-20 yr tot res defined
+ST|ST09002|Mat 10-20 yr tot res other
+ST|ST09003|Mat 10-20 yr tot comm defined
+ST|ST09004|Mat 10-20 yr tot comm other
+ST|ST06455|Mat 10-20 yr tot py single class
+ST|ST09005|Mat 10-20 yr tot py res defined
+ST|ST09006|Mat 10-20 yr tot py res other
+ST|ST09007|Mat 10-20 yr tot py comm defined
+ST|ST09008|Mat 10-20 yr tot py comm other
+ST|ST06459|Mat 10-20 yr pub trad single class
+ST|ST09009|Mat 10-20 yr pub trad res defined
+ST|ST09010|Mat 10-20 yr pub trad res other
+ST|ST09011|Mat 10-20 yr pub trad comm defined
+ST|ST09012|Mat 10-20 yr pub trad comm other
+ST|ST06463|Mat 10-20 yr priv plac single class
+ST|ST09013|Mat 10-20 yr priv plac res defined
+ST|ST09014|Mat 10-20 yr priv plac res other
+ST|ST09015|Mat 10-20 yr priv plac comm defined
+ST|ST09016|Mat 10-20 yr priv plac comm other
+ST|ST06467|Mat ov 20 yr tot single class
+ST|ST09045|Mat ov 20 yr tot res defined
+ST|ST09046|Mat ov 20 yr tot res other
+ST|ST09047|Mat ov 20 yr tot comm defined
+ST|ST09048|Mat ov 20 yr tot comm other
+ST|ST06471|Mat ov 20 yr tot py single class
+ST|ST09049|Mat ov 20 yr tot py res defined
+ST|ST09050|Mat ov 20 yr tot py res other
+ST|ST09051|Mat ov 20 yr tot py comm defined
+ST|ST09052|Mat ov 20 yr tot py comm other
+ST|ST06475|Mat ov 20 yr pub trad single class
+ST|ST09053|Mat ov 20 yr pub trad res defined
+ST|ST09054|Mat ov 20 yr pub trad res other
+ST|ST09055|Mat ov 20 yr pub trad comm defined
+ST|ST09056|Mat ov 20 yr pub trad comm other
+ST|ST06479|Mat ov 20 yr priv plac single class
+ST|ST09057|Mat ov 20 yr priv plac res defined
+ST|ST09058|Mat ov 20 yr priv plac res other
+ST|ST09059|Mat ov 20 yr priv plac comm defined
+ST|ST09060|Mat ov 20 yr priv plac comm other
+ST|ST06483|Tot cr yr tot single class
+ST|ST09089|Tot cr yr tot res defined
+ST|ST09090|Tot cr yr tot res other
+ST|ST09091|Tot cr yr tot comm defined
+ST|ST09092|Tot cr yr tot comm other
+ST|ST06487|Tot cr yr pub trad single class
+ST|ST09093|Tot cr yr pub trad res defined
+ST|ST09094|Tot cr yr pub trad res other
+ST|ST09095|Tot cr yr pub trad comm defined
+ST|ST09096|Tot cr yr pub trad comm other
+ST|ST06491|Tot cr yr priv plac single class
+ST|ST09097|Tot cr yr priv plac res defined
+ST|ST09098|Tot cr yr priv plac res other
+ST|ST09099|Tot cr yr priv plac comm defined
+ST|ST09100|Tot cr yr priv plac comm other
+ST|ST06495|Pct cr yr tot single class
+ST|ST09129|Pct cr yr tot res defined
+ST|ST09130|Pct cr yr tot res other
+ST|ST09131|Pct cr yr tot comm defined
+ST|ST09132|Pct cr yr tot comm other
+ST|ST06499|Pct cr yr pub trad single class
+ST|ST09133|Pct cr yr pub trad res defined
+ST|ST09134|Pct cr yr pub trad res other
+ST|ST09135|Pct cr yr pub trad comm defined
+ST|ST09136|Pct cr yr pub trad comm other
+ST|ST06503|Pct cr yr priv plac single class
+ST|ST09137|Pct cr yr priv plac res defined
+ST|ST09138|Pct cr yr priv plac res other
+ST|ST09139|Pct cr yr priv plac comm defined
+ST|ST09140|Pct cr yr priv plac comm other
+ST|ST06507|Tot pr yr tot py single class
+ST|ST09169|Tot pr yr tot py res defined
+ST|ST09170|Tot pr yr tot py res other
+ST|ST09171|Tot pr yr tot py comm defined
+ST|ST09172|Tot pr yr tot py comm other
+ST|ST06511|Tot pr yr pub trad single class
+ST|ST09173|Tot pr yr pub trad res defined
+ST|ST09174|Tot pr yr pub trad res other
+ST|ST09175|Tot pr yr pub trad comm defined
+ST|ST09176|Tot pr yr pub trad comm other
+ST|ST06515|Tot pr yr priv plac single class
+ST|ST09177|Tot pr yr priv plac res defined
+ST|ST09178|Tot pr yr priv plac res other
+ST|ST09179|Tot pr yr priv plac comm defined
+ST|ST09180|Tot pr yr priv plac comm other
+ST|ST06519|Pct pr yr tot py single class
+ST|ST09209|Pct pr yr tot py res defined
+ST|ST09210|Pct pr yr tot py res other
+ST|ST09211|Pct pr yr tot py comm defined
+ST|ST09212|Pct pr yr tot py comm other
+ST|ST06523|Pct pr yr pub trad single class
+ST|ST09213|Pct pr yr pub trad res defined
+ST|ST09214|Pct pr yr pub trad res other
+ST|ST09215|Pct pr yr pub trad comm defined
+ST|ST09216|Pct pr yr pub trad comm other
+ST|ST06527|Pct pr yr priv plac single class
+ST|ST09217|Pct pr yr priv plac res defined
+ST|ST09218|Pct pr yr priv plac res other
+ST|ST09219|Pct pr yr priv plac comm defined
+ST|ST09220|Pct pr yr priv plac comm other
+ST|ST06531|Tot pub trad tot single class
+ST|ST09249|Tot pub trad tot res defined
+ST|ST09250|Tot pub trad tot res other
+ST|ST09251|Tot pub trad tot comm defined
+ST|ST09252|Tot pub trad tot comm other
+ST|ST06535|Tot pub trad tot py single class
+ST|ST09253|Tot pub trad tot py res defined
+ST|ST09254|Tot pub trad tot py res other
+ST|ST09255|Tot pub trad tot py comm defined
+ST|ST09256|Tot pub trad tot py comm other
+ST|ST06539|Tot pub trad pub trad single class
+ST|ST09257|Tot pub trad pub trad res defined
+ST|ST09258|Tot pub trad pub trad res other
+ST|ST09259|Tot pub trad pub trad comm defined
+ST|ST09260|Tot pub trad pub trad comm other
+ST|ST06543|Tot priv plac tot single class
+ST|ST09289|Tot priv plac tot res defined
+ST|ST09290|Tot priv plac tot res other
+ST|ST09291|Tot priv plac tot comm defined
+ST|ST09292|Tot priv plac tot comm other
+ST|ST06547|Tot priv plac tot py single class
+ST|ST09293|Tot priv plac tot py res defined
+ST|ST09294|Tot priv plac tot py res other
+ST|ST09295|Tot priv plac tot py comm defined
+ST|ST09296|Tot priv plac tot py comm other
+ST|ST06551|Tot priv plac priv plc single class
+ST|ST09297|Tot priv plac priv plc res defined
+ST|ST09298|Tot priv plac priv plc res other
+ST|ST09299|Tot priv plac priv plc comm defined
+ST|ST09300|Tot priv plac priv plc comm other
+ST|ST06150|Mat 1y or ls pub util issuer oblgs
+ST|ST06151|Mat 1y or ls pub util single class
+ST|ST08857|Mat 1y or ls pub util res defined
+ST|ST08858|Mat 1y or ls pub util res other
+ST|ST08859|Mat 1y or ls pub util comm defined
+ST|ST08860|Mat 1y or ls pub util comm other
+ST|ST11791|Mat 1y or ls pub util totals
+ST|ST06174|Mat 1-5 yr pub util issuer oblgs
+ST|ST06175|Mat 1-5 yr pub util single class
+ST|ST08901|Mat 1-5 yr pub util res defined
+ST|ST08902|Mat 1-5 yr pub util res other
+ST|ST08903|Mat 1-5 yr pub util comm defined
+ST|ST08904|Mat 1-5 yr pub util comm other
+ST|ST11795|Mat 1-5 yr pub util totals
+ST|ST06198|Mat 5-10 yr pub util issuer oblgs
+ST|ST06199|Mat 5-10 yr pub util single class
+ST|ST08945|Mat 5-10 yr pub util res defined
+ST|ST08946|Mat 5-10 yr pub util res other
+ST|ST08947|Mat 5-10 yr pub util comm defined
+ST|ST08948|Mat 5-10 yr pub util comm other
+ST|ST11799|Mat 5-10 yr pub util totals
+ST|ST06222|Mat 10-20 yr pub util issuer oblgs
+ST|ST06223|Mat 10-20 yr pub util single class
+ST|ST08989|Mat 10-20 yr pub util res defined
+ST|ST08990|Mat 10-20 yr pub util res other
+ST|ST08991|Mat 10-20 yr pub util comm defined
+ST|ST08992|Mat 10-20 yr pub util comm other
+ST|ST11803|Mat 10-20 yr pub util totals
+ST|ST06246|Mat ov 20 yr pub util issuer oblgs
+ST|ST06247|Mat ov 20 yr pub util single class
+ST|ST09033|Mat ov 20 yr pub util res defined
+ST|ST09034|Mat ov 20 yr pub util res other
+ST|ST09035|Mat ov 20 yr pub util comm defined
+ST|ST09036|Mat ov 20 yr pub util comm other
+ST|ST11807|Mat ov 20 yr pub util totals
+ST|ST06270|Tot cr yr pub util issuer oblgs
+ST|ST06271|Tot cr yr pub util single class
+ST|ST09077|Tot cr yr pub util res defined
+ST|ST09078|Tot cr yr pub util res other
+ST|ST09079|Tot cr yr pub util comm defined
+ST|ST09080|Tot cr yr pub util comm other
+ST|ST11811|Tot cr yr pub util totals
+ST|ST06294|Pct cr yr pub util issuer oblgs
+ST|ST06295|Pct cr yr pub util single class
+ST|ST09117|Pct cr yr pub util res defined
+ST|ST09118|Pct cr yr pub util res other
+ST|ST09119|Pct cr yr pub util comm defined
+ST|ST09120|Pct cr yr pub util comm other
+ST|ST11815|Pct cr yr pub util totals
+ST|ST06342|Pct pr yr pub util issuer oblgs
+ST|ST06343|Pct pr yr pub util single class
+ST|ST09197|Pct pr yr pub util res defined
+ST|ST09198|Pct pr yr pub util res other
+ST|ST09199|Pct pr yr pub util comm defined
+ST|ST09200|Pct pr yr pub util comm other
+ST|ST11823|Pct pr yr pub util totals
+ST|ST06318|Tot pr yr pub util issuer oblgs
+ST|ST06319|Tot pr yr pub util single class
+ST|ST09157|Tot pr yr pub util res defined
+ST|ST09158|Tot pr yr pub util res other
+ST|ST09159|Tot pr yr pub util comm defined
+ST|ST09160|Tot pr yr pub util comm other
+ST|ST11819|Tot pr yr pub util totals
+ST|ST06366|Tot pub trad pub util issuer oblgs
+ST|ST06367|Tot pub trad pub util single class
+ST|ST09237|Tot pub trad pub util res defined
+ST|ST09238|Tot pub trad pub util res other
+ST|ST09239|Tot pub trad pub util comm defined
+ST|ST09240|Tot pub trad pub util comm other
+ST|ST11827|Tot pub trad pub util totals
+ST|ST06390|Tot priv plac pub util issuer oblgs
+ST|ST06391|Tot priv plac pub util single class
+ST|ST09277|Tot priv plac pub util res defined
+ST|ST09278|Tot priv plac pub util res other
+ST|ST09279|Tot priv plac pub util comm defined
+ST|ST09280|Tot priv plac pub util comm other
+ST|ST11831|Tot priv plac pub util totals

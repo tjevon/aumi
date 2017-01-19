@@ -1,0 +1,23 @@
+; BESTLINK
+; 2
+; 20
+JB|JB00018|Issuer name
+JB|JB00019|Issuer number
+JB|JB00020|Issue suffix
+JB|JB00021|Issue description
+JB|JB00022|Private placement indicator
+JB|JB00023|Classification
+JB|JB00024|Location
+JB|JB00025|Rate
+JB|JB00026|Series
+JB|JB00027|Maturity year
+JB|JB00028|Market sector
+JB|JB00029|Pool number
+JB|JB00030|Foreign code
+JB|JB00031|Naic designation
+JB|JB00032|Actual cost
+JB|JB00033|Par value
+JB|JB00034|Date acquired
+JB|JB00035|Industry type
+JB|JB00036|Statement as-of-date
+JB|JB00037|Legal entity identifier

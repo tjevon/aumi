@@ -1,0 +1,94 @@
+; BESTLINK
+; 2
+; 91
+ST|ST00048|Agg resrve for life contr (tot) (i)
+ST|ST00060|Less $     coup & sim benefit (i)
+ST|ST06793|Incl coup & sim ben modco rsrve (i)
+ST|ST06794|Aggr a&h reserves incl modco (i)
+ST|ST10046|D-t cont liab inc modco rsrve (i)
+ST|ST00049|Phldr divs due & unpd (i)
+ST|ST00061|Phldr cpns due & unpd (i)
+ST|ST10047|Apport divs including modco (i)
+ST|ST10048|Non-apport divs including modco (i)
+ST|ST10049|Coupons including modco (i)
+ST|ST00050|Discount on prems recd in adv (i)
+ST|ST00062|A&h prems recd in adv (i)
+ST|ST05859|A&h exper rtg refund (i)
+ST|ST21578|Accident and health experience rating refunds
+ST|ST00084|Pyble including $      assumed (i)
+ST|ST08634|Pyble including $       ceded (i)
+ST|ST00054|Life & annuity contracts (i)
+ST|ST00063|Accident and health (i)
+ST|ST08635|Deposit-type contract funds (i)
+ST|ST07424|Incl accrued exp allow recog rsv(i)
+ST|ST00055|Incl $   on rlzd cap gn(loss) (i)
+ST|ST00056|Agents credit balances (i)
+ST|ST00057|Borrowed money (i)
+ST|ST00064|Interest on borrowed money (i)
+ST|ST22413|Reinsurance in certified cos (i)
+ST|ST22414|Funds under reins treaties w/ certified reins (i)
+ST|ST07506|Capital notes (i)
+ST|ST07507|Interest thereon (i)
+ST|ST00058|Treas stock - shares common (i)
+ST|ST00065|Treas stock - value incl in comm(i)
+ST|ST00059|Treas stock - shares preferred (i)
+ST|ST00066|Treas stock - value incl in prfd(i)
+ST|ST07425|Incl in s/a stmt (i)
+ST|ST00067|Aggregate reserves for life contr
+ST|ST00068|Aggregate reserves for a & h contr
+ST|ST10045|Liab for deposit-type contracts
+ST|ST00070|Contract claims: life
+ST|ST00071|Contract claims: accident & health
+ST|ST00073|Phldr divs & cpns due & unpd
+ST|ST00074|Prov for phldr div app for payment
+ST|ST00075|Prov for phldr div not apportioned
+ST|ST00076|Prov for phldr cpns & similar ben
+ST|ST00077|Amt prov held for def div pol
+ST|ST00078|Prem & ann cnsd recd in adv
+ST|ST00082|Surrender values on cancelled contr
+ST|ST00083|Provision for experience rating ref
+ST|ST08633|Oth amts payable on reinsurance
+ST|ST00085|Interest maint reserve(as of 12/31)
+ST|ST00086|Agents commissions due or accrued
+ST|ST00087|Comm & exp allow pybl on rein asm
+ST|ST00088|General expenses due or accrued
+ST|ST00091|Trans to sep acct due or acc (net)
+ST|ST00092|Taxes licenses & fees due or accr
+ST|ST12178|Curr fed & fit incl rlzd cap gains
+ST|ST10050|Net deferred tax liability
+ST|ST00095|Unearned investment income
+ST|ST00096|Amts withheld or retained by co
+ST|ST00097|Amts held for agents' account
+ST|ST00098|Remittances & items not allocated
+ST|ST00099|Net adj liab due frgn exch rates
+ST|ST00100|Liab for ben empl & agts n incl abv
+ST|ST00101|Borrowed money & interest thereon
+ST|ST00102|Dividends to stkhld decl & unpd
+ST|ST00103|Asset valuation reserve
+ST|ST00104|Rein in unauthorized & certified companis
+ST|ST00105|Funds held reins treaties unauth & certified
+ST|ST00106|Payable to parent, subsid & affil
+ST|ST00107|Drafts outstanding
+ST|ST00108|Liab amts held under unins plans
+ST|ST06796|Funds held under coinsurance
+ST|ST19576|Derivatives
+ST|ST07508|Payable for securities
+ST|ST19577|Payable for securities lending
+ST|ST07509|Capital notes and interest thereon
+ST|ST00109|Agg wr-ins for liabilities
+ST|ST00110|Total liab excl separate accts bus
+ST|ST00113|Liab from sep accounts statement
+ST|ST00114|Total liabilities
+ST|ST00115|Common capital stock
+ST|ST00116|Preferred capital stock
+ST|ST15858|Agg w-i oth than special surp funds
+ST|ST06559|Surplus notes
+ST|ST00117|Gross paid in & contributed surp
+ST|ST15859|Agg wr-ins for special surplus fund
+ST|ST00119|Unassigned funds (surplus)
+ST|ST00120|Treasury stock at cost - common
+ST|ST00121|Treasury stock at cost - preferred
+ST|ST00122|Surplus
+ST|ST00123|Total capital & surplus
+ST|ST00124|Total liabilities capital & surplus
+ST|ST00118|Agg wr-ins for surplus funds

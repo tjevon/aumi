@@ -1,0 +1,104 @@
+; BESTLINK
+; 2
+; 101
+HS|HS00112|Claims unpaid less reins ceded (i)
+HS|HS14138|Liab for med loss ratio rebate per phsa (i)
+HS|HS00113|Fed & foreign inc tax pay (i)
+HS|HS00115|Borrowed money including (i)
+HS|HS00116|And interest thereon (i)
+HS|HS00117|Including current (i)
+HS|HS00118|Funds held under reins treaties (i)
+HS|HS00119|Authorized reinsurers (i)
+HS|HS14896|Funds held under reins treaties cert reins (i)
+HS|HS14897|Reinsurance in certified companies (i)
+HS|HS00120|Agg write-in for other liab (i)
+HS|HS00121|Less treas stock common (i)
+HS|HS00122|Value incl in comm capital stock(i)
+HS|HS00123|Less treas stock preferred (i)
+HS|HS00124|Value incl in prf capital stock (i)
+HS|HS00125|Liab cover claims unpaid
+HS|HS00126|Liab cover accrued med incent pool
+HS|HS00127|Liab cover unpaid claims adj expen
+HS|HS07561|Liab cover agg hlth policy reserves
+HS|HS06152|Liab cover agg life policy reserves
+HS|HS06153|Liab cover p\c unearn pol reserves
+HS|HS00129|Liab cover agg claim reserves
+HS|HS00130|Liab cover prems recd in adv
+HS|HS00131|Liab cover gen expens due or accr
+HS|HS06154|Liab cover fed & fit payable
+HS|HS06155|Liab cover net deferred tax liablty
+HS|HS06156|Liab cover ceded reins prem payable
+HS|HS00133|Liab cover amts withheld or retain
+HS|HS06157|Liab cover remit & item not allowed
+HS|HS00134|Liab cover borr money & interest
+HS|HS00135|Liab cover amts due to p s & a
+HS|HS12697|Liab cover derivatives
+HS|HS00136|Liab cover payable for securities
+HS|HS12698|Liab cover payable for securities lending
+HS|HS00137|Liab cover funds hld und reins trea
+HS|HS00138|Liab cover reins in unauth cos
+HS|HS00139|Liab cover net adj in asts & liab
+HS|HS00140|Liab cover liab amts hld unins plan
+HS|HS00141|Liab cover agg wr-in for oth liabs
+HS|HS00142|Liab cover total liabilities
+HS|HS00143|Liab uncov claims unpaid
+HS|HS00144|Liab uncov accrued med incent pool
+HS|HS00145|Liab uncov unpaid claims adj expen
+HS|HS07562|Liab uncov agg hlth policy reserves
+HS|HS06158|Liab uncover agg life policy reserv
+HS|HS06159|Liab uncover p\c unearn pol reserve
+HS|HS00147|Liab uncov agg claim reserves
+HS|HS00148|Liab uncov prems recd in adv
+HS|HS00149|Liab uncov gen expens due or accr
+HS|HS06160|Liab uncover fed & fit payable
+HS|HS06161|Liab uncover net deferred tax liabl
+HS|HS06162|Liab uncover ceded reins prem paybl
+HS|HS00151|Liab uncov amts withheld or retain
+HS|HS06163|Liab uncover remit & item not allow
+HS|HS00152|Liab uncov borr money & interest
+HS|HS00153|Liab uncov amts due to p s & a
+HS|HS12699|Liab uncov derivatives
+HS|HS00154|Liab uncov payable for securities
+HS|HS12700|Liab uncov payable for securities lending
+HS|HS00155|Liab uncov funds hld und reins trea
+HS|HS00156|Liab uncov reins in unauth cos
+HS|HS00157|Liab uncov net adj in asts & liab
+HS|HS00158|Liab uncov liab amts hld unins plan
+HS|HS00159|Liab uncov agg wr-in for oth liabs
+HS|HS00160|Liab uncov total liabilities
+HS|HS00161|Liab tot claims unpaid
+HS|HS00162|Liab tot accr med incent pool & bon
+HS|HS00163|Liab tot unp claims adj expenses
+HS|HS07563|Liab tot agg hlth policy reserves
+HS|HS06164|Liab tot agg life policy reserves
+HS|HS06165|Liab tot p\c unearn pol reserves
+HS|HS00165|Liab tot agg claim reserves
+HS|HS00166|Liab tot prems recd in advance
+HS|HS00167|Liab tot gen expens due or accrued
+HS|HS06166|Liab tot fed & fit payable
+HS|HS00114|Liab tot net defer tax liab
+HS|HS06167|Liab tot ceded reins prem payable
+HS|HS00169|Liab tot amts wheld or retained
+HS|HS06168|Liab tot remit & item not allowed
+HS|HS00170|Liab tot borr money & int thereon
+HS|HS00171|Liab tot amt due to p s & a
+HS|HS12701|Liab tot derivatives
+HS|HS00172|Liab tot payable for securities
+HS|HS12702|Liab tot payable for securities lending
+HS|HS00173|Liab tot fund held und reins treat
+HS|HS00174|Liab tot reins in unauth companies
+HS|HS00175|Liab tot net adj in asts & liab
+HS|HS00176|Liab tot lia for amts hld unins pln
+HS|HS00177|Liab tot agg wr-in for other liab
+HS|HS00178|Liab tot total liabilities
+HS|HS07858|Curr total agg wr-in for spc splus
+HS|HS00179|Liab tot common cap stock
+HS|HS00180|Liab tot pref cap stock
+HS|HS00181|Liab tot gross pd in & contr surp
+HS|HS00182|Liab tot surplus notes
+HS|HS00183|Liab tot agg wr-in oth th spec sur
+HS|HS00184|Liab tot unassign funds (surp)
+HS|HS00185|Liab tot less tr stk at cost comm
+HS|HS00186|Liab tot less tr stk at cost pref
+HS|HS00187|Total capital and surplus
+HS|HS00188|Liab tot total liab, cap & surp

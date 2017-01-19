@@ -1,0 +1,42 @@
+; BESTLINK
+; 2
+; 39
+HS|HS06174|($     net tax on cap gain\loss)(i)
+HS|HS00263|Cash prem & rev coll net of reinsur
+HS|HS00268|Cash net investment income
+HS|HS06175|Cash miscellaneous income
+HS|HS06176|Cash total income
+HS|HS06177|Cash beneft & loss related payments
+HS|HS06178|Cash net trans s, s & pc accounts
+HS|HS06179|Cash comm, exp pd & agg w-i deduct
+HS|HS06180|Cash dividends paid to policyholder
+HS|HS00270|Cash fed & foreign inc tax recov
+HS|HS06181|Cash total expenses
+HS|HS00271|Cash net cash from operations
+HS|HS00272|Cash fr invest bonds
+HS|HS00273|Cash fr invest stocks
+HS|HS00274|Cash fr invest mortgage loans
+HS|HS00275|Cash fr invest real estate
+HS|HS00276|Cash fr invest other invested asts
+HS|HS00277|Cash fr invest nt gain on c&st inv
+HS|HS00278|Cash fr invest misc proceeds
+HS|HS00279|Cash fr invest total inv proceeds
+HS|HS00280|Cash cost of inv acq bonds
+HS|HS00281|Cash cost of inv acq stocks
+HS|HS00282|Cash cost of inv acq mortgage loans
+HS|HS00283|Cash cost of inv acq real estate
+HS|HS00284|Cash cost of inv acq other in asts
+HS|HS00285|Cash cost of inv acq misc apps
+HS|HS00286|Cash cost of inv acq tot inv acquir
+HS|HS06182|Cash net inc\dec in loans & notes
+HS|HS00287|Cash net cash from investments
+HS|HS06183|Cash csh prov\app surp & cap notes
+HS|HS06184|Cash csh prov\app c & s less stock
+HS|HS00290|Cash csh provided borr fnds
+HS|HS06185|Cash csh prov\app net dep on liabs
+HS|HS00293|Cash csh applied div to stockhldrs
+HS|HS06186|Cash other cash provided (applied)
+HS|HS00298|Cash net cash fr financ & misc src
+HS|HS00299|Cash net chg in csh & short-trm inv
+HS|HS00300|Cash c&sti beginning of period
+HS|HS00301|Cash c&sti end of period

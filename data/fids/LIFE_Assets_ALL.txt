@@ -1,0 +1,127 @@
+; BESTLINK
+; 2
+; 124
+ST|ST00012|Encumb on real est occ by co (i)
+ST|ST10042|Encumb on real est held inc (i)
+ST|ST10043|Encumb on real est held sale (i)
+ST|ST00026|Cash, ($     sched e, pt 1) (i)
+ST|ST12174|Cash equivs ($    sched e, pt 2)(i)
+ST|ST00027|Short-term invest (sched da) (i)
+ST|ST00024|Incl $    premium notes (i)
+ST|ST12815|$      charged off (i)
+ST|ST12175|Incl $    earn\unbilled premiums(i)
+ST|ST27967|$   contracts subj to redetermination (i)
+ST|ST12176|Health care delivery assets (i)
+ST|ST12177|Health care ($      ) (i)
+ST|ST10002|Asts bonds
+ST|ST10003|Asts preferred stocks
+ST|ST10004|Asts common stocks
+ST|ST10005|Asts mtg first liens
+ST|ST10006|Asts mtg other than frst liens
+ST|ST10007|Asts rl est occ by co l encum
+ST|ST10008|Asts rl est held prod of income
+ST|ST10009|Asts rl est held for sale
+ST|ST10012|Asts cash, equivs & shrt trm inv
+ST|ST10010|Asts contract loans
+ST|ST19570|Asts derivatives
+ST|ST10013|Asts other invested assets
+ST|ST10014|Asts receivables for securities
+ST|ST19571|Asts secur lend reinvest collateral assets
+ST|ST10015|Asts agg wr-ins for inv asset
+ST|ST10016|Asts subtot cash & invested ast
+ST|ST12812|Asts title plants less $ chrge off
+ST|ST10026|Asts invest inc due & accrued
+ST|ST12151|Asts uncollected prems & agents bal
+ST|ST12152|Asts prem, bal, install not yet due
+ST|ST12153|Asts accrued retrospective premiums
+ST|ST10017|Asts rein ced amts recoverabl
+ST|ST12154|Asts funds held\deposit w/ rein cos
+ST|ST10020|Asts oth amts rcvble under reins
+ST|ST10029|Asts amts rcvbl unins a&h plans
+ST|ST12155|Asts curr fed & fit recoverbl & int
+ST|ST12156|Asts net deferred tax asset
+ST|ST10023|Asts guaranty fnds rcvble on dep
+ST|ST10021|Asts edp equipment
+ST|ST12157|Asts furniture and equipment
+ST|ST10027|Asts net adj asts frgn exch rt
+ST|ST10028|Asts rcvble fr parent sub & aff
+ST|ST12158|Asts healthcare & other receivables
+ST|ST10032|Asts agg wr-ins ot than inv asst
+ST|ST10033|Asts tot asts excl sep & seg acct
+ST|ST10034|Asts from sep, seg, prot cell accts
+ST|ST10035|Asts total admitted assets
+ST|ST07390|N-adm bonds
+ST|ST07391|N-adm preferred stocks
+ST|ST07392|N-adm common stocks
+ST|ST07393|N-adm mtg first liens
+ST|ST07394|N-adm mtg other than frst liens
+ST|ST07395|N-adm rl est occ by co l encum
+ST|ST10036|N-adm rl est held prod of income
+ST|ST10037|N-adm rl est held for sale
+ST|ST07401|N-adm cash, equivs & shrt trm inv
+ST|ST07398|N-adm contract loans
+ST|ST19572|N-adm derivatives
+ST|ST07402|N-adm other invested assets
+ST|ST07500|N-adm receivables for securities
+ST|ST19573|N-adm secur lend reinvest collateral asset
+ST|ST07403|N-adm agg wr-ins for inv asset
+ST|ST07404|N-adm subtot cash & invested ast
+ST|ST12813|N-adm title plants less $ chrge off
+ST|ST07412|N-adm invest inc due & accrued
+ST|ST12159|N-adm uncollected prems &agents bal
+ST|ST12160|N-adm prem, bal, install not yet du
+ST|ST12161|N-adm accrued retrospective premium
+ST|ST07405|N-adm rein ced amts recoverabl
+ST|ST07501|N-adm oth amts rcvble under reins
+ST|ST12162|N-adm funds held\deposit w/ rein co
+ST|ST07415|N-adm amts rcvbl unins a&h plans
+ST|ST12163|N-adm curr fed & fit recovrbl & int
+ST|ST12164|N-adm net deferred tax asset
+ST|ST07502|N-adm guaranty fnds rcvble on dep
+ST|ST07408|N-adm edp equipment
+ST|ST12165|N-adm furniture and equipment
+ST|ST07413|N-adm net adj asts frgn exch rt
+ST|ST07414|N-adm rcvble fr parent sub & aff
+ST|ST12166|N-adm healthcare & other receivable
+ST|ST07417|N-adm agg wr-ins ot than inv asst
+ST|ST02699|N-adm tot asts excl sep & seg acct
+ST|ST07418|N-adm from sep, seg, prot cell acct
+ST|ST07419|N-adm total admitted assets
+ST|ST00016|Net bonds
+ST|ST00017|Net preferred stocks
+ST|ST00018|Net common stocks
+ST|ST07420|Net mtg first liens
+ST|ST07421|Net mtg other than frst liens
+ST|ST00020|Net real estate occ by co l encumb
+ST|ST10039|Net rl est held prod of income
+ST|ST10040|Net rl est held for sale
+ST|ST07422|Net cash, equivs & shrt trm inv
+ST|ST00023|Net contract loans
+ST|ST19574|Net derivatives
+ST|ST00028|Net other invested assets
+ST|ST07503|Net receivables for securities
+ST|ST19575|Net secur lend reinvest collateral asset
+ST|ST00029|Net agg wr-ins for inv assets
+ST|ST00030|Net subtot cash & invested ast
+ST|ST12814|Net title plants less $ chrge off
+ST|ST00038|Net investment income due & accrued
+ST|ST12167|Net uncollected prems & agents bal
+ST|ST12168|Net prem, bal, install not yet due
+ST|ST12169|Net accrued retrospective premiums
+ST|ST00031|Net rein ced amts recoverable
+ST|ST12170|Net funds held\deposit w/ rein cos
+ST|ST07504|Net oth amts rcvble under reins
+ST|ST00041|Net amts rcvbl unins a&h plan
+ST|ST12171|Net curr fed & fit recoverbl & int
+ST|ST10044|Net net deferred tax asset
+ST|ST07505|Net guaranty fnds rcvble on dep
+ST|ST00034|Net edp equipment
+ST|ST12172|Net furniture and equipment
+ST|ST00039|Net adj asts due frgn exch rates
+ST|ST00040|Net rcvble fr parent subsid & aff
+ST|ST12173|Net healthcare & other receivables
+ST|ST00042|Net agg wr-ins oth than inv assets
+ST|ST00043|Net tot asts excl sep & seg acct
+ST|ST00046|Net from sep, seg, prot cell accts
+ST|ST00047|Net total admitted assets
+ST|ST27968|$   accrued retrospectve prems (i)

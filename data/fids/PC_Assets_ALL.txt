@@ -1,0 +1,133 @@
+; BESTLINK
+; 2
+; 130
+SF|SF00018|Encumb on prop occupied by comp (i)
+SF|SF06021|Encumb on prop for prod of inc (i)
+SF|SF06022|Encumb on prop held for sale (i)
+SF|SF00021|Cash (i)
+SF|SF07647|Cash equivalents (i)
+SF|SF00022|Short-term investments (i)
+SF|SF07648|Premium notes on contract loans (i)
+SF|SF07876|Amount charged off title plants (i)
+SF|SF04494|Bal def not due - earn unbilled (i)
+SF|SF27438|Accrued retrospective premiums
+SF|SF27439|And contracts subj to redetermination (i)
+SF|SF07649|Health care deliv ast-furn & eq (i)
+SF|SF07650|Health care amount receivable (i)
+SF|SF05980|Asset - bonds
+SF|SF05981|Asset - preferred stocks
+SF|SF05982|Asset - common stocks
+SF|SF05983|Asset - mort loans-first liens
+SF|SF05984|Asset - mort loans-other than first
+SF|SF05985|Asset - properties occupied by comp
+SF|SF05986|Asset - prop for prod of income
+SF|SF05987|Asset - properties held for sale
+SF|SF05988|Asset - cash,equiv & s-term invest
+SF|SF07630|Asset - contract lns incl prem note
+SF|SF13836|Asset - derivatives( schedule db )
+SF|SF05989|Asset - other invested assets
+SF|SF05990|Asset - receivable for securities
+SF|SF13837|Asset - sec lend reinvest assets ( schedule dl )
+SF|SF05991|Asset - agg w/i for invested assets
+SF|SF05992|Asset - subtotals-cash & inv assets
+SF|SF07877|Asset - title plants
+SF|SF06003|Asset - investment income due & accru
+SF|SF05993|Asset - uncoll prem/agt bal in coll
+SF|SF05994|Asset - defer prem/agt bal not due
+SF|SF05995|Asset - accrued retrospective prems
+SF|SF05999|Asset - amount recov from reinsurer
+SF|SF05996|Asset - funds held or dep-rein co
+SF|SF07631|Asset - oth amt rec und reins contr
+SF|SF06007|Asset - amts rec rel to unins plans
+SF|SF07632|Asset - cy fed & frgn inc tax rec & int
+SF|SF07633|Asset - net deferred tax asset
+SF|SF06001|Asset - guar funds rec or on dep
+SF|SF06002|Asset - edp equipment & software
+SF|SF07634|Asset - furn & eq incl hlth care asst
+SF|SF06004|Asset - net adjust foreign exchange
+SF|SF06005|Asset - receivable from par/sub/aff
+SF|SF07635|Asset - health care & oth amts rec
+SF|SF06009|Asset - agg w/i for oth thn inv ast
+SF|SF06671|Asset - tot ast excl sep,seg & prot
+SF|SF06672|Asset - from sep,seg&prot cell acct
+SF|SF06010|Asset - total assets
+SF|SF06011|Asset - future inv inc on ls rsv(w)
+SF|SF06012|Asset - other miscellaneous ast (w)
+SF|SF04733|N-adm - bonds
+SF|SF04734|N-adm - preferred stocks
+SF|SF04735|N-adm - common stocks
+SF|SF04736|N-adm - mort loans-first liens
+SF|SF04737|N-adm - mort loans-other than first
+SF|SF04738|N-adm - properties occupied by comp
+SF|SF06013|N-adm - prop for prod of income
+SF|SF06014|N-adm - properties held for sale
+SF|SF04741|N-adm - cash,equiv & s-term invest
+SF|SF07636|N-adm - contract lns incl prem note
+SF|SF13838|N-adm - derivatives( schedule db )
+SF|SF04742|N-adm - other invested assets
+SF|SF04794|N-adm - receivable for securities
+SF|SF13839|N-adm - sec lend reinvest assets ( schedule dl )
+SF|SF04743|N-adm - agg w/i for invested assets
+SF|SF04744|N-adm - subtotals-cash & inv assets
+SF|SF07878|N-adm - title plants
+SF|SF04753|N-adm - investment income due&accru
+SF|SF04745|N-adm - uncoll prem/agt bal in coll
+SF|SF04746|N-adm - defer prem/agt bal not due
+SF|SF04747|N-adm - accrued retrospective prems
+SF|SF04750|N-adm - amount recov from reinsurer
+SF|SF04748|N-adm - funds held or dep-rein co
+SF|SF07637|N-adm - oth amt rec und reins contr
+SF|SF04756|N-adm - amts rec rel to unins plans
+SF|SF07638|N-adm - cy fed&frgn inc tax rec&int
+SF|SF07639|N-adm - net deferred tax asset
+SF|SF04795|N-adm - guar funds rec or on dep
+SF|SF04752|N-adm - edp equipment & software
+SF|SF07640|N-adm - furn&eq incl hlth care asst
+SF|SF06016|N-adm - net adjust foreign exchange
+SF|SF04754|N-adm - receivable from par/sub/aff
+SF|SF07641|N-adm - health care & oth amts rec
+SF|SF04758|N-adm - agg w/i for oth thn inv ast
+SF|SF06674|N-adm - tot ast excl sep,seg & prot
+SF|SF06675|N-adm - from sep,seg &prot cell acct
+SF|SF01467|N-adm - total assets
+SF|SF04760|N-adm - future inv inc on ls rsv(w)
+SF|SF04761|N-adm - other miscellaneous ast (w)
+SF|SF00011|Net - bonds
+SF|SF00013|Net - preferred stocks
+SF|SF00014|Net - common stocks
+SF|SF04762|Net - mort loans-first liens
+SF|SF04763|Net - mort loans-other than first
+SF|SF00016|Net - properties occupied by comp
+SF|SF06017|Net - prop for prod of income
+SF|SF06018|Net - properties held for sale
+SF|SF04764|Net - cash,equiv & s-term invest
+SF|SF07642|Net - contract loans incl prem note
+SF|SF13840|Net - derivatives( schedule db )
+SF|SF00023|Net - other invested assets
+SF|SF04796|Net - receivable for securities
+SF|SF13841|Net - sec lend reinvest assets ( schedule dl )
+SF|SF00024|Net - agg w/i for invested assets
+SF|SF00025|Net - subtotals-cash & inv assets
+SF|SF07879|Net - title plants
+SF|SF00034|Net - investment income due&accrued
+SF|SF00026|Net - uncoll prem/agent bal in coll
+SF|SF00027|Net - defer prem/agent bal not due
+SF|SF00028|Net - accrued retrospective prems
+SF|SF00031|Net - amount recov from reinsurers
+SF|SF00029|Net - funds held or dep-rein co
+SF|SF07643|Net - other amt rec und reins contr
+SF|SF00037|Net - amts rec rel to unins plans
+SF|SF07644|Net - cy fed&frgn inc tax recov&int
+SF|SF06023|Net - net deferred tax asset
+SF|SF04797|Net - guaranty funds rec or on dep
+SF|SF00033|Net - edp equipment & software
+SF|SF07645|Net - furn & eq incl hlth care asst
+SF|SF06020|Net - net adjust foreign exchange
+SF|SF00035|Net - receivable from par/sub/aff
+SF|SF07646|Net - health care & oth amts receiv
+SF|SF00038|Net - agg w/i for oth thn inv ast
+SF|SF06677|Net - tot ast excl sep,seg & prot
+SF|SF06678|Net - from sep,seg & prot cell acct
+SF|SF00039|Net - total assets
+SF|SF00040|Net - future inv inc on ls rsv (w)
+SF|SF00041|Net - other miscellaneous ast (w)

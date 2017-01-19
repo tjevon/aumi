@@ -1,0 +1,127 @@
+; BESTLINK
+; 2
+; 124
+HS|HS00024|Assets real est held co (i)
+HS|HS00025|Assets real est held pr (i)
+HS|HS00026|Assets real est hld sale (i)
+HS|HS00027|Assets cash sch e pt 1 (i)
+HS|HS06116|Assets cash equiv sch e pt 2 (i)
+HS|HS00028|Assets short-trm inv sch da (i)
+HS|HS06117|(including $     premium notes) (i)
+HS|HS07854|Assets title plants (i)
+HS|HS06118|(including $     unbilled prem) (i)
+HS|HS18836|Accrued retrospective premiums (i)
+HS|HS18837|Contracts subj to redetermination (i)
+HS|HS00030|Health care delivery assets (i)
+HS|HS06119|Health care ($     ) (i)
+HS|HS00031|Cur yr asts bonds
+HS|HS00032|Cur yr asts preferred stocks
+HS|HS00033|Cur yr asts common stocks
+HS|HS00034|Cur yr asts mtg ln real est frst ln
+HS|HS00035|Cur yr asts mtg ln rl est other
+HS|HS00036|Cur yr asts real est held by co
+HS|HS00037|Cur yr asts real est held productn
+HS|HS00038|Cur yr asts real est held for sale
+HS|HS00039|Cur yr asts cash,equiv shrt trm inv
+HS|HS06120|Cur yr asts contract loans
+HS|HS12691|Cur yr asts derivatives
+HS|HS00040|Cur yr asts other long term invest
+HS|HS00041|Cur yr asts receiv for security
+HS|HS12692|Cur yr asts secur lend reinvest collateral assets
+HS|HS00042|Cur yr asts agg write-in inv asts
+HS|HS00043|Cur yr asts subtotals c & i a
+HS|HS07855|Cur yr asts title plants
+HS|HS00048|Cur yr asts inves inc due & accrued
+HS|HS06121|Cur yr asts prem & bal course coll
+HS|HS06122|Cur yr asts prem, bal & install def
+HS|HS06123|Cur yr asts accrued retro premiums
+HS|HS00046|Cur yr asts amts recov fr reinsurer
+HS|HS06124|Cur yr asts fnd held\dep w\ rein co
+HS|HS06125|Cur yr asts oth amt rec und rein co
+HS|HS00050|Cur yr asts amts rec uninsured a&hp
+HS|HS06126|Cur yr asts fed & fit recoverable
+HS|HS06127|Cur yr asts net deferred tax asset
+HS|HS06128|Cur yr asts guar funds recvbl\dep
+HS|HS00054|Cur yr asts electron data process
+HS|HS00051|Cur yr asts amts furn & equip
+HS|HS00047|Cur yr asts net adj ast & liab exch
+HS|HS00049|Cur yr asts amts due fr p s & a
+HS|HS00045|Cur yr asts hlth care receivables
+HS|HS00056|Cur yr asts agg wi oth than inv ast
+HS|HS06129|Cur yr asts tot ast excl s, s & pc
+HS|HS06130|Cur yr asts frm sep, seg & pc accts
+HS|HS00057|Cur yr asts total assets
+HS|HS00058|Nonadmit asts bonds
+HS|HS00059|Nonadmit asts preferred stocks
+HS|HS00060|Nonadmit asts common stocks
+HS|HS00061|Nonadmit asts mtg loan frst lein
+HS|HS00062|Nonadmit asts mtg loan oth frst ln
+HS|HS00063|Nonadmit asts real est prop occup
+HS|HS00064|Nonadmit asts real est prop held
+HS|HS00065|Nonadmit asts real est prop sale
+HS|HS00066|Nonadmit asts cash,equiv shrt trm
+HS|HS06131|Nonadmit asts contract loans
+HS|HS12693|Nonadmit asts derivatives
+HS|HS00067|Nonadmit asts oth lng term inv asts
+HS|HS00068|Nonadmit asts receiv for securities
+HS|HS12694|Nonadmit asts secur lend reinvest collateral asset
+HS|HS00069|Nonadmit asts agg write-in inv asts
+HS|HS00070|Nonadmit asts subtot csh inv asts
+HS|HS07856|Nonadmit asts title plants
+HS|HS00075|Nonadmit asts inv inc due & accrue
+HS|HS06132|Nonadmit asts prem & bal course col
+HS|HS06133|Nonadmit asts prem, bal & install d
+HS|HS06134|Nonadmit asts accrued retro premium
+HS|HS00073|Nonadmit asts amts recov reinsurer
+HS|HS06135|Nonadmit asts fnd held\dep w\ rein
+HS|HS06136|Nonadmit asts oth amt rec und rein
+HS|HS00077|Nonadmit asts amts rec unins a&h pl
+HS|HS06137|Nonadmit asts fed & fit recoverable
+HS|HS06138|Nonadmit asts net deferred tax ast
+HS|HS06139|Nonadmit asts guar funds recvbl\dep
+HS|HS00081|Nonadmit asts elect dat proc equip
+HS|HS00078|Nonadmit asts furnit & equip
+HS|HS00074|Nonadmit asts net adj in ast & liab
+HS|HS00076|Nonadmit asts amts due fr p s & a
+HS|HS00072|Nonadmit asts hlth care receivabl
+HS|HS00083|Nonadmit asts agg write in other
+HS|HS06140|Nonadmit asts tot ast excl s,s & pc
+HS|HS06141|Nonadmit asts frm sep, seg & pc acc
+HS|HS00084|Nonadmit asts total assets
+HS|HS00085|Netadmit asts bonds
+HS|HS00086|Netadmit preferred stocks
+HS|HS00087|Netadmit common stocks
+HS|HS00088|Netadmit mtg loan on r e frst lein
+HS|HS00089|Netadmit mtg loan on r e other
+HS|HS00090|Netadmit real est prop occ by co
+HS|HS00091|Netadmit real est prop held prod
+HS|HS00092|Netadmit real est prop held sale
+HS|HS00093|Netadmit cash,equiv shrt trm inv
+HS|HS06142|Netadmit asts contract loans
+HS|HS12695|Netadmit asts derivatives
+HS|HS00094|Netadmit other long trm inv asts
+HS|HS00095|Netadmit receivable for security
+HS|HS12696|Netadmit asts secur lend reinvest collateral asset
+HS|HS00096|Netadmit agg write-in inv asts
+HS|HS00097|Netadmit subt c & i a
+HS|HS07857|Netadmit title plants
+HS|HS00102|Netadmit invest income due & accrue
+HS|HS06143|Netadmit asts prem & bal course col
+HS|HS06144|Netadmit asts prem, bal & install d
+HS|HS06145|Netadmit asts accrued retro premium
+HS|HS00100|Netadmit amts recov fr reinsurers
+HS|HS06146|Netadmit asts fnd held\dep w\ rein
+HS|HS06147|Netadmit asts oth amt rec und rein
+HS|HS00104|Netadmit amt rec unins a & h plans
+HS|HS06148|Netadmit asts fed & fit recoverable
+HS|HS00029|Netadmit net deferred tax asset
+HS|HS06149|Netadmit asts guar funds recvbl\dep
+HS|HS00108|Netadmit elec data process equip
+HS|HS00105|Netadmit furn & equip
+HS|HS00101|Netadmit net adj a&l due for exch
+HS|HS00103|Netadmit amt due fr p s & a
+HS|HS00099|Netadmit health care receivables
+HS|HS00110|Netadmit agg write-in other
+HS|HS06150|Netadmit asts tot ast excl s,s & pc
+HS|HS06151|Netadmit asts frm sep, seg & pc acc
+HS|HS00111|Netadmit total assets
