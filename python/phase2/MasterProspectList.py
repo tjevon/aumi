@@ -13,9 +13,9 @@ logger = logging.getLogger('twolane')
 
 class MasterProspectList:
     """Class containing all PC, Life and Health classes,,, pretty much all the data"""
-    def __init__(self, template_wb):
+    def __init__(self, template_obj):
         self.file_dict = None
-        self.template_wb = template_wb
+        self.template_obj = template_obj
         self.business_types = {}
         pass
 
@@ -70,7 +70,7 @@ class MasterProspectList:
             if entity_id == pc_tag:
                 self.business_types[entity_id] = pc.PcBusinessType()
                 self.business_types[entity_id].process_csvs( csv_data_dir, file_dict[entity_id])
-                self.business_types[entity_id].construct_data_cubes(self.template_wb)
+                self.business_types[entity_id].construct_data_cubes(self.template_obj)
             # elif entity_id == life_tag:
             #     self.business_types[entity_id] = life.LifeBusinessType()
             #     self.business_types[entity_id].process_csvs( csv_data_dir, file_dict[entity_id])
