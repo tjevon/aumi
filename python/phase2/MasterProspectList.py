@@ -27,24 +27,7 @@ class MasterProspectList:
         file_names = []
         for file in files:
             logger.info("file: %s", file)
-            if file.find(Assets_files) != -1:
-                file_names.append(file)
-            elif file.find(CashFlow_files) != -1:
-                file_names.append(file)
-            elif file.find(E07_files) != -1:
-                file_names.append(file)
-            elif file.find(E10_files) != -1:
-                file_names.append(file)
-            elif file.find(LiabSurp_files) != -1:
-                file_names.append(file)
-            elif file.find(SI01_files) != -1:
-                file_names.append(file)
-            elif file.find(SI05_07_files) != -1:
-                file_names.append(file)
-            elif file.find(SI08_09_files) != -1:
-                file_names.append(file)
-            elif file.find(SoI_files) != -1:
-                file_names.append(file)
+            file_names.append(file)
         logger.info("Leave")
         return file_names
 
@@ -55,6 +38,8 @@ class MasterProspectList:
 
         for file in file_names:
             idx = file.find('_')
+            if idx == -1:
+                continue
             entity_id = file[:idx]
             if entity_id in file_dict:
                 file_dict[entity_id].append(file)
@@ -67,21 +52,28 @@ class MasterProspectList:
         csv_data_dir = data_dir + "\\data"
         file_dict = self.get_file_dict(csv_data_dir)
         for entity_id in file_dict:
-            if entity_id == pc_tag:
+            if entity_id == PC_tag:
                 self.business_types[entity_id] = pc.PcBusinessType()
                 self.business_types[entity_id].process_csvs( csv_data_dir, file_dict[entity_id])
                 self.business_types[entity_id].construct_data_cubes(self.template_obj)
-            # elif entity_id == life_tag:
-            #     self.business_types[entity_id] = life.LifeBusinessType()
-            #     self.business_types[entity_id].process_csvs( csv_data_dir, file_dict[entity_id])
-            # elif entity_id == health_tag:
-            #     self.business_types[entity_id] = health.HealthBusinessType()
-            #     self.business_types[entity_id].process_csvs( csv_data_dir, file_dict[entity_id])
-            # #        build_4_sheets(xl_wb, entity_id)
+            elif entity_id == LIFE_tag:
+                self.business_types[entity_id] = life.LifeBusinessType()
+                self.business_types[entity_id].process_csvs( csv_data_dir, file_dict[entity_id])
+                self.business_types[entity_id].construct_data_cubes(self.template_obj)
+            elif entity_id == HEALTH_tag:
+                self.business_types[entity_id] = health.HealthBusinessType()
+                self.business_types[entity_id].process_csvs( csv_data_dir, file_dict[entity_id])
+                self.business_types[entity_id].construct_data_cubes(self.template_obj)
         pass
 
     def get_pc_companies(self):
-        return set(self.business_types[pc_tag].companies)
+        return set(self.business_types[PC_tag].companies)
+
+    def get_life_companies(self):
+        return set(self.business_types[LIFE_tag].companies)
+
+    def get_companies(self, tag):
+        return set(self.business_types[tag].companies)
 
     def get_data_from_db(self):
         pass

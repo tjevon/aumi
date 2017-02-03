@@ -1,35 +1,45 @@
-# partial filenames for acquiring data
-Assets_files    = "Assets_ALL"
-CashFlow_files  = "CashFlow_ALL"
-E07_files       = "E07_ALL"
-E10_files       = "E10_ALL"
-LiabSurp_files  = "LiabSurp_ALL"
-SI05_07_files   = "SI05_07_ALL"
-SI08_09_files   = "SI08_09_ALL"
-SoI_files       = "SoI_ALL"
-
-# template for creating tearsheet
-SI01_tag = "SI01"
-E07_tag = "E07"
-Assets_tag = "Assets"
-SoI_tag = "SoI"
+# tag - used to locate filenames and template worksheets
+SI01_tag     = "SI01"
+E07_tag      = "E07"
+E10_tag      = "E10"
+Liab1_tag    = "Liab1"
+Liab2_tag    = "Liab2"
+Liab3_tag    = "Liab3"
+SI05_07_tag  = "SI05_07"
+SI08_09_tag  = "SI08_09"
+Assets_tag   = "Assets"
+SoI_tag      = "SoI"
+SoO_tag      = "SoO"
+SoR_tag      = "SoR"
+IRIS1_tag    = "IRIS1"
+IRIS2_tag    = "IRIS2"
 CashFlow_tag = "CashFlow"
 
-SI01_files      = SI01_tag + "_ALL"
+PC_tag      = "PC"
+LIFE_tag    = "LIFE"
+HEALTH_tag  = "HEALTH"
 
-COMMON_TEMPLATE_SHEETS = [E07_tag, SI01_tag, Assets_tag, CashFlow_tag]
-PC_TEMPLATE_SHEETS = [SoI_tag]
-#TEMPLATE_ROW_LABELS_E07 = 'B7:B54'
-E07_idx = 0
-SI01_idx = 1
-#Assets_idx = 2
+CALC_COL = 'E'
 
-template_locations = ""
-template_filename = "TearSheet_Template.xlsx"
+COMMON_TEMPLATE_TAGS = [Assets_tag, CashFlow_tag, SI01_tag, SI05_07_tag, E07_tag]
+PC_TEMPLATE_TAGS = [SoI_tag, IRIS2_tag]
+LIFE_TEMPLATE_TAGS = [SoO_tag, IRIS1_tag]
+HEALTH_TEMPLATE_TAGS = [SoR_tag]
 
-target_filename = "TearSheet_Output.xlsx"
-target_sheet = "TS"
+PERCENT_FORMATS = [IRIS1_tag, IRIS2_tag]
 
-pc_tag = "PC"
-life_tag = "LIFE"
-health_tag = "HEALTH"
+TEMPLATE_FILENAME = "TearSheet_Template.xlsx"
+
+TARGET_FILENAME = "TearSheet_Output.xlsx"
+TARGET_SHEET = "TS"
+
+def sum(list, fid_collection_dict, cube_dict):
+    fid1 = fid_collection_dict[list[0]][0]
+    slice = cube_dict[fid1].copy()
+    for row in list[1:]:
+        fid2 = fid_collection_dict[row][0]
+        slice2 = cube_dict[fid2]
+        slice += slice2
+    return slice
+
+func_dict = {"=AI_SUM": sum }

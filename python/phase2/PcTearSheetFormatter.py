@@ -17,6 +17,12 @@ class PcTearSheetFormatter(TearSheetFormatter):
         super(PcTearSheetFormatter, self).__init__(template_obj, target_wb, pandas_xl_writer)
         pass
 
+    def create_tearsheets(self, companies, mpl, line_no):
+        for co in companies:
+            for tag in PC_TEMPLATE_TAGS:
+                line_no = self.format_section(co, mpl, tag, line_no)
+            super(PcTearSheetFormatter, self).create_tearsheets(co, mpl, line_no)
+
     # concrete methods
     def get_business_type(self,mpl):
-        return mpl.business_types[pc_tag]
+        return mpl.business_types[PC_tag]

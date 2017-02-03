@@ -5,25 +5,12 @@ import logging
 from AMB_defines import *
 
 logger = logging.getLogger('twolane')
-
 class BusinessType(object):
     """Base class for PC, Life, Health"""
     def __init__(self):
-        self.Assets_raw_df = None
-        self.CashFlow_raw_df     = None
-        self.E07_raw_df = None
-        self.E10_raw_df = None
-        self.SI01_raw_df    = None
-        self.SI05_07_raw_df  = None
+        self.BIG_raw_df = None
 
-        self.Assets_cube = None
-        self.CashFlow_cube = None
-        self.E07_cube    = None
-        self.E10_cube    = None
-        self.SI01_cube    = None
-        self.SI05_07_cube    = None
-
-        self.data_cubes = {}
+        self.cube_dict = {}
 
         self.years = []
         self.companies = set()
@@ -31,24 +18,24 @@ class BusinessType(object):
 
     def load_df(self, csv_filename):
         logger.info("Enter: %s", csv_filename)
+        # read first 2 lines, determine what years are in play
         the_df = pd.read_csv(csv_filename, header=0, index_col=0, nrows=2, dtype='unicode')
         self.get_years(the_df)
 
-        # should read df with field # for column lable and group # for row label
+        # read df with fid for column label and group/company # for row label
         the_df = pd.read_csv(csv_filename, header=3, index_col=0, dtype='unicode')
         the_df = the_df.drop(['AMB#'])
         the_df = the_df.drop('Unnamed: 1', 1)
         the_df = the_df.drop('Unnamed: 2', 1)
         for i in the_df.index:
-            if (i.find("Unnamed") != -1) or (i.find(".") != -1) or (i.find("AMB#") != -1):
-                continue
             if pd.notnull(i):
                 self.companies.add(i)
+
+        # doubtful that this exists any longer but just in case
         for i in the_df.columns:
             if i.find('Calc') != -1:
                 the_df[i].replace(regex=True,inplace=True,to_replace=r'%',value=r'')
 
-        # try placing this above the for and eliminating if/continue
         the_df = the_df.astype(float)
         logger.info("Leave")
         return the_df
@@ -58,68 +45,74 @@ class BusinessType(object):
 
         return_file_names = []
         for file_name in file_names:
-            csv_filename = data_dir + "\\" + file_name
-            the_df = self.load_df(csv_filename)
-
-            if file_name.find(Assets_files) != -1:
-                self.Assets_raw_df = the_df
-            elif file_name.find(CashFlow_files) != -1:
-                self.CashFlow_raw_df = the_df
-            elif file_name.find(E07_files) != -1:
-                self.E07_raw_df = the_df
-            elif file_name.find(E10_files) != -1:
-                self.E10_raw_df = the_df
-            elif file_name.find(SI01_files) != -1:
-                self.SI01_raw_df = the_df
-            elif file_name.find(SI05_07_files) != -1:
-                self.SI05_07_raw_df = the_df
+            if any(s in file_name for s in COMMON_TEMPLATE_TAGS):
+                csv_filename = data_dir + "\\" + file_name
+                the_df = self.load_df(csv_filename)
+                # TODO: should we check to make sure fids don't already exist?
+                try:
+                    self.BIG_raw_df = pd.concat([self.BIG_raw_df, the_df], axis=1)
+                except NameError:
+                    self.BIG_raw_df = the_df
             else:
                 return_file_names.append(file_name)
         logger.info("Leave")
         return return_file_names
 
-    def construct_data_cubes(self, template_wb, sheet_list):
+    def construct_select_data_cubes(self, template_wb, sheet_list):
         for sheet in sheet_list:
-            cube_dict = {}
-            my_template_sheet = template_wb.xl_wb.sheets(sheet)
-            my_fids = my_template_sheet.range(self.get_template_column(sheet)).options(ndim=2).value
-            fid_collection = self.create_fid_collection(my_fids, self.years)
-            the_df = None
+            df_dict = {}
+            fid_dict = template_wb.get_full_fid_list(sheet,self)[1]
+            fid_collection_dict = self.create_fid_collection(fid_dict, self.years)
             df_return = self.get_approp_df(sheet)
             if df_return[0] == False:
-                logger.error("No df available in base class for sheet: %s", sheet)
-                df_return = self.get_derived_df(sheet)
-                if df_return[0] == False:
-                    logger.error("No df available in derived class for sheet: %s", sheet)
-                    continue
+                logger.error("No df available in derived class for sheet: %s", sheet)
+                continue
             the_df = df_return[1]
-            for fids in fid_collection:
+            comp_dict = {}
+            for key, fids in fid_collection_dict.iteritems():
                 if fids[0] == '' or fids[0] == 'XXX':
+                    continue
+                if fids[0].find('AI') != -1:
+                    comp_dict[key] = fids
                     continue
                 cube_slice_df = the_df[fids]
                 tmp_slice = cube_slice_df[cube_slice_df.columns[::-1]]
+#                tmp_slice = cube_slice_df
                 tmp_slice.columns = self.years
-                cube_dict[fids[0]] = tmp_slice
-                pass
-            the_cube = pd.Panel(cube_dict)
-            if self.set_approp_cube(sheet, the_cube) == False:
-                self.set_derived_cube(sheet, the_cube)
-            pass
-        pass
+                df_dict[fids[0]] = tmp_slice
+            self.do_calculations(comp_dict, template_wb, sheet, fid_collection_dict, df_dict)
+            the_cube = pd.Panel(df_dict)
+            self.cube_dict[sheet] = the_cube
 
-    def create_fid_collection(self, fids, years):
+    def do_calculations(self,comp_dict, template_wb, sheet, fid_collection_dict, cube_dict):
+        for key, fids in comp_dict.iteritems():
+            cell = key.replace('A',CALC_COL)
+            my_formula = template_wb.get_formula(sheet,cell)
+            func_idx = my_formula.find('(')
+            args_idx = my_formula.find(')')
+            func_key = my_formula[:func_idx]
+            args_str = my_formula[func_idx+1:args_idx]
+            args = args_str.split(",")
+            slice = func_dict[func_key](args, fid_collection_dict, cube_dict)
+            cube_dict[fids[0]] = slice
+            pass
+
+    def create_fid_collection(self, fid_dict, years):
         num_years = len(years)
-        fid_collection = [["" for x in range(num_years)] for y in range(len(fids))]
-        for fid, row in zip(fids, range(len(fids))):
-            tmp = fid[0]
+        fid_collection_dict = {}
+        for key, fid in fid_dict.iteritems():
+            next_entry = ["" for x in range(num_years)]
+            tmp = fid
             if tmp == None or tmp == u'' or tmp == u' ':
+                fid_collection_dict[key] = next_entry
                 continue
             for col in range(num_years):
                 if col == 0:
-                    fid_collection[row][col] = fid[0]
+                    next_entry[col] = fid
                 else:
-                    fid_collection[row][col] = fid[0] + "." + str(col)
-        return fid_collection
+                    next_entry[col] = fid + "." + str(col)
+                fid_collection_dict[key] = next_entry
+        return fid_collection_dict
 
     def get_years(self,the_df):
         tmp_years = []
@@ -136,19 +129,14 @@ class BusinessType(object):
 
     def get_approp_df(self, sheet):
         the_df = None
-        valid = True
-        if sheet == "E07":
-            the_df = self.E07_raw_df
-        elif sheet == SI01_tag:
-            the_df = self.SI01_raw_df
-        elif sheet == "Assets":
-            the_df = self.Assets_raw_df
-        elif sheet == "CashFlow":
-            the_df = self.CashFlow_raw_df
+        df_return = (False, None)
+        if any(s in sheet for s in COMMON_TEMPLATE_TAGS):
+            the_df = self.BIG_raw_df
+            df_return = (True, the_df)
         else:
-            valid = False
-            logger.error("No sheet available in base class: %s", sheet)
-        return (valid, the_df)
+            logger.error("No df available in base class for sheet: %s", sheet)
+            df_return = self.get_derived_df(sheet)
+        return df_return
 
     def get_derived_df(self, sheet):
         the_df = None
@@ -158,25 +146,8 @@ class BusinessType(object):
     def set_derived_cube(self, sheet, the_cube):
         return False
 
-    def set_approp_cube(self, tag, the_cube):
-        rv = True
-        self.data_cubes[tag] = the_cube
-
-        if tag == "E07":
-            self.E07_cube = the_cube
-        elif tag == SI01_tag:
-            self.SI01_cube = the_cube
-        elif tag == "Assets":
-            self.Assets_cube = the_cube
-        elif tag == "CashFlow":
-            self.CashFlow_cube = the_cube
-        else:
-            logger.error("No cube for: %s", tag)
-            self.set_derived_cube(tag, the_cube)
-            rv = False
-        return rv
-    def get_df(self, co, tag):
-        data_df = self.data_cubes[tag].major_xs(co).transpose()
+    def get_df_including_pcts(self, co, tag):
+        data_df = self.cube_dict[tag].major_xs(co).transpose()
         pct_df = data_df.pct_change(axis=1)
         pct_df = pct_df.drop(pct_df.columns[0],1)
         pct_labels = []
@@ -187,9 +158,11 @@ class BusinessType(object):
         pct_df.columns = pct_labels[0:len(pct_labels)-1]
         data_df.columns = data_labels
         the_df = pd.concat([data_df, pct_df], axis=1)
-        the_df = the_df.reindex_axis(sorted(the_df.columns), axis=1)
+        the_df = the_df.reindex_axis(sorted(the_df.columns,reverse=False), axis=1)
         return the_df
 
     def get_template_column(self,sheet):
         pass
 
+    def get_bt_tag(self):
+        return None

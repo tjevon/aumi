@@ -8,58 +8,39 @@ class PcBusinessType(BusinessType):
     """Class containing all PC companies and their data"""
     def __init__(self):
         super(PcBusinessType, self).__init__()
-        self.SoI_raw_df = None
-        pass
+        self.PC_raw_df = None
+        return
 
     def process_csvs(self, data_dir, file_names):
         remaining_file_names = super(PcBusinessType, self).process_csvs(data_dir, file_names)
         self.handle_remaining_csvs(data_dir, remaining_file_names)
+        return
 
     def handle_remaining_csvs(self,data_dir, file_names):
         for file_name in file_names:
-            csv_filename = data_dir + "\\" + file_name
-            if file_name.find(SoI_files) != -1:
-                self.SoI_raw_df = self.load_df(csv_filename)
+            if any(s in file_name for s in PC_TEMPLATE_TAGS):
+                csv_filename = data_dir + "\\" + file_name
+                the_df = self.load_df(csv_filename)
+                # TODO: should we check to make sure fids don't already exist?
+                try:
+                    self.PC_raw_df = pd.concat([self.PC_raw_df, the_df], axis=1)
+                except NameError:
+                    self.PC_raw_df = the_df
+            else:
+                logger.info("Filename %s not part of COMMON or PC", file_name)
         logger.info("Leave")
-        pass
+        return
 
     def construct_data_cubes(self, template_wb):
-        remaining_file_names = super(PcBusinessType, self).construct_data_cubes(template_wb, COMMON_TEMPLATE_SHEETS)
-        remaining_file_names = super(PcBusinessType, self).construct_data_cubes(template_wb, PC_TEMPLATE_SHEETS)
-        pass
+        remaining_file_names = self.construct_select_data_cubes(template_wb, COMMON_TEMPLATE_TAGS)
+        remaining_file_names = self.construct_select_data_cubes(template_wb, PC_TEMPLATE_TAGS)
+        return
 
-    def get_template_column(self, tag):
-        # TODO: clean this up
-        if tag == "E07":
-            return 'C7:C54'
-        elif tag == "SI01":
-            return 'B5:B67'
-        elif tag == "Assets":
-            return 'B2:B58'
-        elif tag == "SoI":
-            return 'B3:B70'
-        elif tag == "CashFlow":
-            return 'B6:B50'
-        else:
-            logger.error("Looking for unknown tag: %s", tag)
-            return 'A1'
+    def get_bt_tag(self):
+        return PC_tag
 
     def get_derived_df(self, sheet):
         the_df = None
         valid = True
-        if sheet == "SoI":
-            the_df = self.SoI_raw_df
-        else:
-            valid = False
-            logger.error("No sheet available in base class: %s", sheet)
+        the_df = self.PC_raw_df
         return (valid, the_df)
-
-    def set_derived_cube(self, sheet, the_cube):
-        rv = True
-        if sheet == "SoI":
-            self.SoI_cube = the_cube
-        else:
-            logger.error("No cube for: %s", sheet)
-            rv = False
-        return rv
-

@@ -15,75 +15,43 @@ from AMB_defines import *
 logger = logging.getLogger('twolane')
 
 class TearSheetFormatter(object):
-    # TODO: put template stuff in template
-    template_row_labels = {
-        SI01_tag:'A4:A67',
-        E07_tag:'B7:B54',
-        Assets_tag: 'A2:A58',
-        CashFlow_tag: 'A6:A57'
-    }
-    target_col_labels = {
-        SI01_tag:'B3',
-        E07_tag:'B69',
-        Assets_tag: 'B119',
-        CashFlow_tag: 'B180'
-    }
-    target_row_labels = {
-        SI01_tag:'A4',
-        E07_tag:'A70',
-        Assets_tag: 'A120',
-        CashFlow_tag: 'A181'
-    }
-    target_data_labels = {
-        SI01_tag:'B5',
-        E07_tag:'B70',
-        Assets_tag: 'B120',
-        CashFlow_tag: 'B181'
-    }
-
-    pandas_target_data_labels = {
-        SI01_tag:('B',5),
-        E07_tag:('B',70),
-        Assets_tag: ('B',120),
-        CashFlow_tag: ('B',181)
-    }
-
     def __init__(self, template_obj, target_wb, pandas_xl_writer):
         self.template_obj = template_obj
         self.target_wb = target_wb
         self.pandas_xl_writer = pandas_xl_writer
         pass
 
-    def create_tearsheets(self, companies, mpl):
-        for co in companies:
-            self.format_section(co, mpl, SI01_tag)
-            self.format_section(co, mpl, E07_tag)
-            self.format_section(co, mpl, Assets_tag)
-            self.format_section(co, mpl, CashFlow_tag)
-        pass
+    def create_tearsheets(self, co, mpl, line_no):
+        for tag in COMMON_TEMPLATE_TAGS:
+            line_no = self.format_section(co, mpl, tag, line_no)
+        return line_no
 
-
-    def format_section(self, co, mpl, tag):
+    def format_section(self, co, mpl, tag, line_no):
         logger.info("Enter")
         my_bt = self.get_business_type(mpl)
 
-        my_template_sheet = self.template_obj.get_template_sheet(tag)
-        row_headings = my_template_sheet.range(self.template_row_labels[tag]).options(ndim=2).value
-        self.copy_labels(row_headings, co, self.target_row_labels[tag])
-
+        my_cell = ('B', line_no )
         num_years = len(my_bt.years)
-        num_cols = (num_years - 1) + num_years + 2
+        num_cols = (num_years - 1) + num_years + 1
         column_heading = self.get_column_headings(my_bt.years, num_cols)
-        self.copy_labels(column_heading, co, self.target_col_labels[tag])
+        self.copy_labels(column_heading, co, my_cell)
 
-        template_fids = my_template_sheet.range(my_bt.get_template_column(tag)).options(transpose=True).value
-        just_fids = filter(lambda a: a != None or a != 'XXX', template_fids)
-        my_df = my_bt.get_df(co, tag)
+        my_cell = ('A', line_no + 1 )
+        row_labels = self.template_obj.get_row_labels(tag, my_bt.get_bt_tag())
+        self.copy_labels(row_labels, co, my_cell)
 
+
+        template_fids_with_spaces = self.template_obj.get_display_fid_list(tag, my_bt)
+        just_fids = filter(lambda a: a != None, template_fids_with_spaces)
+        just_fids = filter(lambda a: a != 'XXX', just_fids)
+
+        my_df = my_bt.get_df_including_pcts(co, tag)
         my_df = my_df.reindex(just_fids)
-        l_df = self.setup_df_data(template_fids, my_df)
-        self.copy_df_data(l_df, co, self.pandas_target_data_labels[tag])
-        pass
+
+        my_cell = ('B', line_no + 1 )
+        l_df = self.setup_df_data(template_fids_with_spaces, my_df)
+        self.copy_df_data(l_df, co, my_cell, tag)
+        return len(l_df.index) + line_no + 5
 
     def setup_df_data(self, fids, df):
         l_blank_row = ["" for x in range(len(df.columns))]
@@ -101,15 +69,13 @@ class TearSheetFormatter(object):
             pass
         return l_df
 
-#    def get_row_labels(self, tag):
-#        pass
-
     def get_column_headings(self, years, num_cols):
         column_heading = []
         col_idx = 0
         year_idx = 0
         num_years = len(years)
-        while col_idx < num_cols-2 and year_idx < num_years:
+        years = sorted(years,reverse=False)
+        while col_idx < num_cols-1 and year_idx < num_years:
             if (col_idx % 2) == 0:
                 column_heading.append(years[year_idx])
                 year_idx += 1
@@ -120,39 +86,43 @@ class TearSheetFormatter(object):
 
         tmp_str = "%d Yr %% Chg" % (num_years - 1)
         column_heading.append(tmp_str)
-        tmp_str = "Annualized % Chg"
-        column_heading.append(tmp_str)
         return column_heading
 
     def get_business_type(self,mpl):
         ### pure virtual ###
         pass
 
-    def copy_labels(self, values, co, target_range):
-        my_target_sheet = co + "_" + target_sheet
+    def copy_labels(self, values, co, cell_info):
+        my_cell = cell_info[0] + str(cell_info[1])
+        my_target_sheet = co + "_" + TARGET_SHEET
         my_target_sheet = self.target_wb.sheets(my_target_sheet)
-        my_target_sheet.range(target_range).value = values
-        my_target_sheet.autofit()
+        my_target_sheet.range(my_cell).value = values
+        my_target_sheet.range('A1:A500').autofit()
+        return
 
-    def copy_df_data(self, df, co, tag):
-        my_target_sheet = co + "_" + target_sheet
+    def copy_df_data(self, df, co, cell_info, tag):
+        my_target_sheet = co + "_" + TARGET_SHEET
         my_target_sheet = self.target_wb.sheets(my_target_sheet)
         df = df.replace([np.inf,-np.inf],np.nan)
-        cell = tag[0] + str(tag[1])
-        my_target_sheet.range(cell).options(dropna=False, index=False, header=False).value = df
+        my_cell = cell_info[0] + str(cell_info[1])
+        my_target_sheet.range(my_cell).options(dropna=False, index=False, header=False).value = df
         height = len(df.index)
-        top = tag[1]
-        bottom = tag[1] + height
-        #        col = chr(ord(tag[0])+1)
-        col = tag[0]
+        top = cell_info[1]
+        bottom = cell_info[1] + height
+        #        col = chr(ord(cell_info[0])+1)
+        col = cell_info[0]
         for i in range(len(df.columns)):
             l_cell = col + str(top)
             r_cell = col + str(bottom)
             xl_range = l_cell + ":" + r_cell
             if i % 2 == 0:
-                my_target_sheet.range(xl_range).number_format = '$0'
+                if tag in PERCENT_FORMATS:
+                    my_target_sheet.range(xl_range).number_format = '0.0'
+                else:
+                    my_target_sheet.range(xl_range).number_format = '$0'
             else:
                 my_target_sheet.range(xl_range).number_format = '0.00%'
             my_target_sheet.range(xl_range).column_width = 10
             col = chr(ord(col)+1)
+        return
 

@@ -26,14 +26,14 @@ class TearSheetGenerator:
         self.get_target_workbook(data_dir)
 
         self.pc_formatter = PcTearSheetFormatter(self.template_obj, self.target_wb, self.pandas_xl_write)
-#        self.life_formatter = LifeTearSheetFormatter(self.template_wb, self.target_wb)
-#        self.health_formatter = HealthTearSheetFormatter(self.template_wb, self.target_wb)
+        self.life_formatter = LifeTearSheetFormatter(self.template_obj, self.target_wb, self.pandas_xl_write)
+        self.health_formatter = HealthTearSheetFormatter(self.template_obj, self.target_wb, self.pandas_xl_write)
 
         logger.debug("Leave")
 
     def get_target_workbook(self, data_dir):
         output_data_dir = data_dir + "\\output"
-        workbook_file = output_data_dir + "\\" + target_filename
+        workbook_file = output_data_dir + "\\" + TARGET_FILENAME
         try:
             self.target_wb = xw.Book(workbook_file)
             pass
@@ -47,27 +47,51 @@ class TearSheetGenerator:
         except:
             logger.error("Pandas ExcelWriter error: %s", workbook_file)
             pass
+        available_sheets = []
+        for i in self.target_wb.sheets:
+            i.clear_contents()
+
 
     def add_xlsheets(self, companies):
         available_sheets = []
         for i in self.target_wb.sheets:
             logger.debug(i.name)
-            i.clear_contents()
+            #            i.clear_contents()
             available_sheets.append(i.name)
         logger.debug("Have Sheets:")
 
         for co in companies:
-            co_sheet = co + "_" + target_sheet
+            co_sheet = co + "_" + TARGET_SHEET
             if co_sheet not in available_sheets:
                 self.target_wb.sheets.add(co_sheet)
 
-    def build_pc_tearsheets(self, companies, mpl):
+    def build_pc_tearsheets(self, companies, mpl, line_no):
         logger.debug("Enter: num companies = %d", len(companies))
         self.add_xlsheets(companies)
-        self.pc_formatter.create_tearsheets(companies, mpl)
+        self.pc_formatter.create_tearsheets(companies, mpl, line_no)
         logger.debug("Leave")
         pass
 
-    def build_tearsheets(self, companies, mpl):
-        self.build_pc_tearsheets(companies, mpl)
+    def build_life_tearsheets(self, companies, mpl, line_no):
+        logger.debug("Enter: num companies = %d", len(companies))
+        self.add_xlsheets(companies)
+        self.life_formatter.create_tearsheets(companies, mpl, line_no)
+        logger.debug("Leave")
+        pass
+
+    def build_health_tearsheets(self, companies, mpl, line_no):
+        logger.debug("Enter: num companies = %d", len(companies))
+        self.add_xlsheets(companies)
+        self.health_formatter.create_tearsheets(companies, mpl, line_no)
+        logger.debug("Leave")
+        pass
+
+    def build_tearsheets(self, comp_dict, mpl):
+        line_no = 4
+        if len(comp_dict[PC_tag]) > 0:
+            self.build_pc_tearsheets(comp_dict[PC_tag], mpl, line_no)
+        if len(comp_dict[LIFE_tag]) > 0:
+            self.build_life_tearsheets(comp_dict[LIFE_tag], mpl, line_no)
+        if len(comp_dict[HEALTH_tag]) > 0:
+            self.build_health_tearsheets(comp_dict[HEALTH_tag], mpl, line_no)
         pass

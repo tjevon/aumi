@@ -23,9 +23,9 @@ def construct_tearsheet_generator(template_obj):
     return the_gen
 
 def get_arbitrary_subset(companies):
+    """ Testing purposes only """
     tmp_set = set()
-#    for i in range(0,len(companies)):
-    for i in range(0,5):
+    for i in range(0,1):
         tmp_set.add(companies.pop())
     return tmp_set
 
@@ -41,10 +41,18 @@ if __name__ == '__main__':
     my_mpl = construct_mpl(my_template_obj)
 
     # for testing tearsheet creation only,,, create small set of companies to print
-    tmp_set = get_arbitrary_subset(my_mpl.get_pc_companies())
+    comp_dict = {}
+    tmp_set = get_arbitrary_subset(my_mpl.get_companies(LIFE_tag))
+    comp_dict[LIFE_tag] = tmp_set
+
+    tmp_set = get_arbitrary_subset(my_mpl.get_companies(PC_tag))
+    comp_dict[PC_tag] = tmp_set
+
+    tmp_set = get_arbitrary_subset(my_mpl.get_companies(HEALTH_tag))
+    comp_dict[HEALTH_tag] = tmp_set
 
     my_gen = construct_tearsheet_generator(my_template_obj)
-    my_gen.build_tearsheets(tmp_set, my_mpl)
+    my_gen.build_tearsheets(comp_dict, my_mpl)
 
     logger.debug("Leave")
 

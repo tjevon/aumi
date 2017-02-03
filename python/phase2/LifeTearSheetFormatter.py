@@ -13,9 +13,15 @@ from TearSheetFormatter import *
 logger = logging.getLogger('twolane')
 
 class LifeTearSheetFormatter(TearSheetFormatter):
-    def __init__(self, template_wb, target_wb):
-        super(LifeTearSheetFormatter, self).__init__(template_wb, target_wb)
+    def __init__(self, template_obj, target_wb, pandas_xl_writer):
+        super(LifeTearSheetFormatter, self).__init__(template_obj, target_wb, pandas_xl_writer)
         pass
 
+    def create_tearsheets(self, companies, mpl, line_no):
+        for co in companies:
+            for tag in LIFE_TEMPLATE_TAGS:
+                line_no = self.format_section(co, mpl, tag, line_no)
+            super(LifeTearSheetFormatter, self).create_tearsheets(co, mpl, line_no)
+
     def get_business_type(self,mpl):
-        return mpl.business_types[life_tag]
+        return mpl.business_types[LIFE_tag]
