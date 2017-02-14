@@ -1,101 +1,108 @@
 from __future__ import print_function
-import pandas as pd
 
 import logging
 from AMB_defines import *
 
 logger = logging.getLogger('twolane')
+
+
+class Section(object):
+    def __init__(self, tag, fid_collection_dict, comp_dict_ai, comp_dict_bi, comp_dict_ci):
+        self.tag = tag
+        self.fid_collection_dict = fid_collection_dict
+        self.comp_dict_ai = comp_dict_ai
+        self.comp_dict_bi = comp_dict_bi
+        self.comp_dict_ci = comp_dict_ci
+    pass
+
+
 class BusinessType(object):
     """Base class for PC, Life, Health"""
     def __init__(self):
-        self.BIG_raw_df = None
-
-        self.cube_dict = {}
-
+        self.section_map = {}
         self.years = []
         self.companies = set()
+        self.raw_df = None
+        self.data_cube = None
         pass
 
     def load_df(self, csv_filename):
         logger.info("Enter: %s", csv_filename)
         # read first 2 lines, determine what years are in play
-        the_df = pd.read_csv(csv_filename, header=0, index_col=0, nrows=2, dtype='unicode')
-        self.get_years(the_df)
+        rv_df = pd.read_csv(csv_filename, header=0, index_col=0, nrows=2, dtype='unicode')
+        self.get_years(rv_df)
 
         # read df with fid for column label and group/company # for row label
-        the_df = pd.read_csv(csv_filename, header=3, index_col=0, dtype='unicode')
-        the_df = the_df.drop(['AMB#'])
-        the_df = the_df.drop('Unnamed: 1', 1)
-        the_df = the_df.drop('Unnamed: 2', 1)
-        for i in the_df.index:
+        rv_df = pd.read_csv(csv_filename, header=3, index_col=0, dtype='unicode')
+        rv_df = rv_df.drop(['AMB#'])
+        rv_df = rv_df.drop('Unnamed: 1', 1)
+        rv_df = rv_df.drop('Unnamed: 2', 1)
+        for i in rv_df.index:
             if pd.notnull(i):
                 self.companies.add(i)
 
         # doubtful that this exists any longer but just in case
-        for i in the_df.columns:
+        for i in rv_df.columns:
             if i.find('Calc') != -1:
-                the_df[i].replace(regex=True,inplace=True,to_replace=r'%',value=r'')
+                rv_df[i].replace(regex=True, inplace=True, to_replace=r'%', value=r'')
 
-        the_df = the_df.astype(float)
+        rv_df = rv_df.astype(float)
         logger.info("Leave")
-        return the_df
+        return rv_df
 
-    def process_csvs( self, data_dir, file_names ):
+    def convert_csvs_to_raw_df(self, data_dir, file_names):
         logger.info("Enter")
-
         return_file_names = []
-        for file_name in file_names:
-            if any(s in file_name for s in COMMON_TEMPLATE_TAGS):
-                csv_filename = data_dir + "\\" + file_name
-                the_df = self.load_df(csv_filename)
+        for name in file_names:
+            if any(s in name for s in COMMON_TEMPLATE_TAGS):
+                csv_filename = data_dir + "\\" + name
+                df = self.load_df(csv_filename)
                 # TODO: should we check to make sure fids don't already exist?
                 try:
-                    self.BIG_raw_df = pd.concat([self.BIG_raw_df, the_df], axis=1)
+                    self.raw_df = pd.concat([self.raw_df, df], axis=1)
                 except NameError:
-                    self.BIG_raw_df = the_df
+                    self.raw_df = df
             else:
-                return_file_names.append(file_name)
+                return_file_names.append(name)
         logger.info("Leave")
         return return_file_names
 
-    def construct_select_data_cubes(self, template_wb, sheet_list):
-        for sheet in sheet_list:
+    def construct_my_data_cube(self, template_wb, tag_list):
+        logger.info("Enter")
+        for tag in tag_list:
+            comp_dict_ai = {}
+            comp_dict_bi = {}
+            comp_dict_ci = {}
             df_dict = {}
-            fid_dict = template_wb.get_full_fid_list(sheet,self)[1]
+            fid_dict = template_wb.get_full_fid_list(tag, self)[1]
             fid_collection_dict = self.create_fid_collection(fid_dict, self.years)
-            df_return = self.get_approp_df(sheet)
-            if df_return[0] == False:
-                logger.error("No df available in derived class for sheet: %s", sheet)
-                continue
-            the_df = df_return[1]
-            comp_dict = {}
             for key, fids in fid_collection_dict.iteritems():
                 if fids[0] == '' or fids[0] == 'XXX':
                     continue
                 if fids[0].find('AI') != -1:
-                    comp_dict[key] = fids
+                    comp_dict_ai[key] = fids
                     continue
-                cube_slice_df = the_df[fids]
-                tmp_slice = cube_slice_df[cube_slice_df.columns[::-1]]
-#                tmp_slice = cube_slice_df
-                tmp_slice.columns = self.years
-                df_dict[fids[0]] = tmp_slice
-            self.do_calculations(comp_dict, template_wb, sheet, fid_collection_dict, df_dict)
-            the_cube = pd.Panel(df_dict)
-            self.cube_dict[sheet] = the_cube
-
-    def do_calculations(self,comp_dict, template_wb, sheet, fid_collection_dict, cube_dict):
-        for key, fids in comp_dict.iteritems():
-            cell = key.replace('A',CALC_COL)
-            my_formula = template_wb.get_formula(sheet,cell)
-            func_idx = my_formula.find('(')
-            args_idx = my_formula.find(')')
-            func_key = my_formula[:func_idx]
-            args_str = my_formula[func_idx+1:args_idx]
-            args = args_str.split(",")
-            slice = func_dict[func_key](args, fid_collection_dict, cube_dict)
-            cube_dict[fids[0]] = slice
-            pass
+                if fids[0].find('BI') != -1:
+                    comp_dict_bi[key] = fids
+                    continue
+                if fids[0].find('CI') != -1:
+                    comp_dict_ci[key] = fids
+                    continue
+                cube_slice_df = self.raw_df[fids]
+                cube_slice_df.columns = self.years
+                df_dict[fids[0]] = cube_slice_df
+            cube = pd.Panel(df_dict)
+            section = Section(tag, fid_collection_dict, comp_dict_ai, comp_dict_bi, comp_dict_ci)
+            self.section_map[tag] = section
+            if self.data_cube is None:
+                self.data_cube = cube.copy()
+            else:
+                cube_list = [self.data_cube, cube]
+                self.data_cube = pd.concat(cube_list, axis=0)
+        self.data_cube = do_all_calculations(template_wb, self.section_map, self.data_cube)
+        self.data_cube = self.calc_pct_change(self.data_cube)
+        logger.info("Leave")
+        return
 
     def create_fid_collection(self, fid_dict, years):
         num_years = len(years)
@@ -103,7 +110,7 @@ class BusinessType(object):
         for key, fid in fid_dict.iteritems():
             next_entry = ["" for x in range(num_years)]
             tmp = fid
-            if tmp == None or tmp == u'' or tmp == u' ':
+            if tmp is None or tmp == u'' or tmp == u' ':
                 fid_collection_dict[key] = next_entry
                 continue
             for col in range(num_years):
@@ -114,55 +121,59 @@ class BusinessType(object):
                 fid_collection_dict[key] = next_entry
         return fid_collection_dict
 
-    def get_years(self,the_df):
+    def calc_pct_change(self, cube):
+        df_dict = {}
+        for co in self.companies:
+            company_df = cube.major_xs(co).transpose()
+            company_df = company_df[company_df.columns[::-1]]  # reverse
+            pct_df = company_df.pct_change(axis=1)
+            pct_df = pct_df.drop(pct_df.columns[0], 1)  # drop nan's
+
+            period = len(self.years) - 1
+            pct_n_yr_df = company_df.pct_change(axis=1, periods=period)
+            pct_n_yr_df = pct_n_yr_df.drop(pct_n_yr_df.columns[0:period], 1)  # drop nan's
+
+            increasing_years = list(reversed(self.years))
+            pct_labels = []
+            for idx in range(0, len(self.years)-1):
+                pct_labels.append(str(increasing_years[idx+1]) + "." + str(increasing_years[idx]))
+
+            pct_labels.append(str(increasing_years[-1]) + ".1")
+            n_yr_label = str(str(increasing_years[-1]) + "." +
+                             str(increasing_years[0]))
+
+            pct_df.columns = pct_labels[0:len(pct_labels)-1]
+            pct_df = pct_df[pct_df.columns[::-1]]  # reverse
+
+            pct_n_yr_df.columns = [n_yr_label]
+            pct_df = pd.concat([pct_df, pct_n_yr_df], axis=1)
+
+            company_df = company_df[company_df.columns[::-1]]  # reverse
+            df = pd.concat([company_df, pct_df], axis=1)
+            df_dict[co] = df
+            pass
+        rv_cube = pd.Panel(df_dict)
+        rv_cube = rv_cube.swapaxes(0, 1)
+        return rv_cube
+
+    def get_df_including_pcts(self, co, fids):
+        rv_df = self.data_cube.major_xs(co).transpose()
+        rv_df = rv_df.loc[fids, :]
+        rv_df = rv_df.reindex(fids)
+        return rv_df
+
+    def get_template_column(self, tag):
+        pass
+
+    def get_years(self, df):
         tmp_years = []
-        for i in the_df.iloc[1]:
+        for i in df.iloc[1]:
             if pd.notnull(i):
                 tmp_years.append(int(i))
-        tmp_sorted_years = sorted(set(tmp_years))
+        tmp_sorted_years = sorted(set(tmp_years), reverse=True)
         if len(self.years) == 0:
             self.years = tmp_sorted_years
-        elif self.years != tmp_sorted_years:
-            logging.fatal("Problem with Years: %s vs %s", self.years, tmp_sorted_years)
-            exit()
         return
-
-    def get_approp_df(self, sheet):
-        the_df = None
-        df_return = (False, None)
-        if any(s in sheet for s in COMMON_TEMPLATE_TAGS):
-            the_df = self.BIG_raw_df
-            df_return = (True, the_df)
-        else:
-            logger.error("No df available in base class for sheet: %s", sheet)
-            df_return = self.get_derived_df(sheet)
-        return df_return
-
-    def get_derived_df(self, sheet):
-        the_df = None
-        valid = False
-        return (valid, the_df)
-
-    def set_derived_cube(self, sheet, the_cube):
-        return False
-
-    def get_df_including_pcts(self, co, tag):
-        data_df = self.cube_dict[tag].major_xs(co).transpose()
-        pct_df = data_df.pct_change(axis=1)
-        pct_df = pct_df.drop(pct_df.columns[0],1)
-        pct_labels = []
-        data_labels = []
-        for col in data_df.columns:
-            pct_labels.append(str(col) + ".1")
-            data_labels.append(str(col))
-        pct_df.columns = pct_labels[0:len(pct_labels)-1]
-        data_df.columns = data_labels
-        the_df = pd.concat([data_df, pct_df], axis=1)
-        the_df = the_df.reindex_axis(sorted(the_df.columns,reverse=False), axis=1)
-        return the_df
-
-    def get_template_column(self,sheet):
-        pass
 
     def get_bt_tag(self):
         return None

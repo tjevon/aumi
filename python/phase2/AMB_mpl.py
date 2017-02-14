@@ -9,25 +9,23 @@ from infra.cmdline_logging import parse, setup_default_options, setup_logging
 data_dir = os.getenv('DATAPATH', './')
 log_dir = os.getenv('LOGPATH', './')
 
-def construct_mpl(template_obj):
+def construct_mpl(template_obj, data_dir):
     logger.debug("Enter")
-    the_mpl = MasterProspectList(template_obj)
-    the_mpl.get_data_from_files(data_dir)
+    rv_mpl = MasterProspectList(template_obj, data_dir)
     logger.debug("Leave")
-    return the_mpl
+    return rv_mpl
 
 def construct_tearsheet_generator(template_obj):
     logger.debug("Enter")
-    the_gen = TearSheetGenerator(data_dir, template_obj)
+    rv_gen = TearSheetGenerator(data_dir, template_obj)
     logger.debug("Leave")
-    return the_gen
+    return rv_gen
 
-def get_arbitrary_subset(companies):
-    """ Testing purposes only """
-    tmp_set = set()
-    for i in range(0,1):
-        tmp_set.add(companies.pop())
-    return tmp_set
+def construct_template_object(data_dir):
+    logger.debug("Enter")
+    rv_template_obj = TemplateWorkBook(data_dir)
+    logger.debug("Leave")
+    return rv_template_obj
 
 # Called by main
 ################################################################################
@@ -37,22 +35,19 @@ if __name__ == '__main__':
     options = parse(parser)
     logger = setup_logging("AMB_mpl.log", options.logger_level)
 
-    my_template_obj = TemplateWorkBook(data_dir)
-    my_mpl = construct_mpl(my_template_obj)
+    template_obj = construct_template_object(data_dir)
+    mpl = construct_mpl(template_obj, data_dir)
 
-    # for testing tearsheet creation only,,, create small set of companies to print
-    comp_dict = {}
-    tmp_set = get_arbitrary_subset(my_mpl.get_companies(LIFE_tag))
-    comp_dict[LIFE_tag] = tmp_set
+    company_dict = {}
 
-    tmp_set = get_arbitrary_subset(my_mpl.get_companies(PC_tag))
-    comp_dict[PC_tag] = tmp_set
+    mpl.build_trio_scorecard()
+    company_dict[PC_tag] = mpl.get_candidates(PC_tag)
+    company_dict[LIFE_tag] = mpl.get_candidates(LIFE_tag)
+    company_dict[HEALTH_tag] = mpl.get_candidates(HEALTH_tag)
 
-    tmp_set = get_arbitrary_subset(my_mpl.get_companies(HEALTH_tag))
-    comp_dict[HEALTH_tag] = tmp_set
-
-    my_gen = construct_tearsheet_generator(my_template_obj)
-    my_gen.build_tearsheets(comp_dict, my_mpl)
+    ### build tearsheets for top candidates
+    gen = construct_tearsheet_generator(template_obj)
+    gen.build_tearsheets(company_dict, mpl)
 
     logger.debug("Leave")
 

@@ -15,16 +15,20 @@ logger = logging.getLogger('twolane')
 class TemplateWorkBook(object):
 
     template_row_labels = {
-        E07_tag:('A',7,54),
-        SI01_tag:('A',4,67),
-        Assets_tag: ('A',2,58),
-        CashFlow_tag: ('A',6,57),
-        SI05_07_tag: ('A',3,82),
-        SoO_tag: ('A',3,87),
-        SoI_tag: ('A',3,70),
-        SoR_tag: ('A',4,90),
-        IRIS1_tag: ('A',4,28),
-        IRIS2_tag: ('A',4,30)
+        SI01_tag:('A',3,143),
+        E07_tag:('A',3,51),
+        Assets_tag: ('A',3,60),
+        CashFlow_tag: ('A',3,48),
+        SI05_07_tag: ('A',3,83),
+        SoI_tag: ('A',3,61),
+        SoO_tag: ('A',3,70),
+        SoR_tag: ('A',3,62),
+        IRIS1_tag: ('A',3,30),
+        IRIS2_tag: ('A',3,28),
+        Liab1_tag: ('A',3,52),
+        Liab2_tag: ('A',3,67),
+        Liab3_tag: ('A',3,41),
+        CR_tag: ('A',3,4)
     }
 
     # fid located in first column, display filter in second
@@ -52,17 +56,18 @@ class TemplateWorkBook(object):
                 logger.fatal("Template %s does not contain %s", workbook_file, sheet_name)
                 exit()
         return template_wb
-    def get_formula(self,sheet,cell):
-        my_template_sheet = self.get_template_sheet(sheet)
-        formula = my_template_sheet.range(cell).formula
-        return formula
 
     def get_template_sheet(self, tag):
-        the_template_sheet = self.xl_wb.sheets(tag)
-        return the_template_sheet
+        rv_template_sheet = self.xl_wb.sheets(tag)
+        return rv_template_sheet
+
+    def get_formula(self,sheet,cell):
+        template_sheet = self.get_template_sheet(sheet)
+        formula = template_sheet.range(cell).formula
+        return formula
 
     def get_full_fid_list(self, tag, bt):
-        my_template_sheet = self.get_template_sheet(tag)
+        template_sheet = self.get_template_sheet(tag)
         range_info = self.template_row_labels[tag]
 
         A_cols = []
@@ -70,32 +75,39 @@ class TemplateWorkBook(object):
             A_cols.append(range_info[0] + str(i))
 
         fid_col = self.template_BT_cols[bt.get_bt_tag()][0]
-        cells = fid_col + str(range_info[1]) + ':' + fid_col + str(range_info[2])
-        fid_list = my_template_sheet.range(cells).options(transpose=True).value
+        cells = fid_col + str(range_info[1]+1) + ':' + fid_col + str(range_info[2])
+        fid_list = template_sheet.range(cells).options(transpose=True).value
 
-        fid_dict = dict(zip(A_cols, fid_list))
-        return (fid_list, fid_dict)
+        fid_dict = {}
+        if type(fid_list) is list:
+            fid_dict = dict(zip(A_cols[1:], fid_list))
+            return (fid_list, fid_dict)
+        else:
+            tmp_fid_list = []
+            tmp_fid_list.append(fid_list)
+            fid_dict[A_cols[1]] = fid_list
+            return (tmp_fid_list, fid_dict)
 
     def get_display_fid_list(self, tag, bt):
         fid_list = self.get_full_fid_list(tag,bt)[0]
-        rv = self.filter_list(tag, bt.get_bt_tag(), fid_list)
+        rv = self.filter_list(tag, bt.get_bt_tag(), fid_list, 1)
         return rv
 
     def get_row_labels(self, tag, bt_tag):
-        my_template_sheet = self.get_template_sheet(tag)
+        template_sheet = self.get_template_sheet(tag)
         range_info = self.template_row_labels[tag]
         cells = range_info[0] + str(range_info[1]) + ':' + range_info[0] + str(range_info[2])
-        row_labels = my_template_sheet.range(cells).options(ndim=2).value
+        row_labels = template_sheet.range(cells).options(ndim=2).value
 
-        row_labels = self.filter_list(tag, bt_tag, row_labels)
+        row_labels = self.filter_list(tag, bt_tag, row_labels, 0)
         return row_labels
 
-    def filter_list(self,tag, bt_tag, to_filter):
-        my_template_sheet = self.get_template_sheet(tag)
+    def filter_list(self,tag, bt_tag, to_filter, offset):
+        template_sheet = self.get_template_sheet(tag)
         range_info = self.template_row_labels[tag]
         display_filter_col = self.template_BT_cols[bt_tag][1]
-        cells = display_filter_col + str(range_info[1]) + ':' + display_filter_col + str(range_info[2])
-        filters = my_template_sheet.range(cells).options(ndim=2).value
+        cells = display_filter_col + str(range_info[1]+offset) + ':' + display_filter_col + str(range_info[2])
+        filters = template_sheet.range(cells).options(ndim=2).value
         rv = []
         for filter, x in zip(filters, range(len(filters))):
             if filter[0] == 1:

@@ -18,7 +18,9 @@ class HealthTearSheetFormatter(TearSheetFormatter):
         pass
 
     def create_tearsheets(self, companies, mpl, line_no):
+        initial_line = line_no
         for co in companies:
+            line_no = initial_line
             for tag in HEALTH_TEMPLATE_TAGS:
                 line_no = self.format_section(co, mpl, tag, line_no)
             super(HealthTearSheetFormatter, self).create_tearsheets(co, mpl, line_no)

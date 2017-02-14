@@ -1,14 +1,6 @@
 from __future__ import print_function
-import os
-
-import xlwings as xw
-
-import PcBusinessType as pc
-import LifeBusinessType as life
-import HealthBusinessType as health
 
 import logging
-import pandas as pd
 import numpy as np
 from AMB_defines import *
 
@@ -26,55 +18,14 @@ class TearSheetFormatter(object):
             line_no = self.format_section(co, mpl, tag, line_no)
         return line_no
 
-    def format_section(self, co, mpl, tag, line_no):
-        logger.info("Enter")
-        my_bt = self.get_business_type(mpl)
-
-        my_cell = ('B', line_no )
-        num_years = len(my_bt.years)
-        num_cols = (num_years - 1) + num_years + 1
-        column_heading = self.get_column_headings(my_bt.years, num_cols)
-        self.copy_labels(column_heading, co, my_cell)
-
-        my_cell = ('A', line_no + 1 )
-        row_labels = self.template_obj.get_row_labels(tag, my_bt.get_bt_tag())
-        self.copy_labels(row_labels, co, my_cell)
-
-
-        template_fids_with_spaces = self.template_obj.get_display_fid_list(tag, my_bt)
-        just_fids = filter(lambda a: a != None, template_fids_with_spaces)
-        just_fids = filter(lambda a: a != 'XXX', just_fids)
-
-        my_df = my_bt.get_df_including_pcts(co, tag)
-        my_df = my_df.reindex(just_fids)
-
-        my_cell = ('B', line_no + 1 )
-        l_df = self.setup_df_data(template_fids_with_spaces, my_df)
-        self.copy_df_data(l_df, co, my_cell, tag)
-        return len(l_df.index) + line_no + 5
-
-    def setup_df_data(self, fids, df):
-        l_blank_row = ["" for x in range(len(df.columns))]
-        l_tup = tuple(l_blank_row)
-        l_blank_row_df = pd.DataFrame([l_tup], columns=df.columns)
-        l_df = pd.DataFrame(columns=df.columns)
-        mat_line = 0
-        df_add_blank_row_list = [l_df, l_blank_row_df]
-        for row in fids:
-            if row == None or row == 'XXX' or row == '' or row == ' ':
-                l_df = pd.concat([l_df, l_blank_row_df])
-                continue
-            l_df = pd.concat([l_df, df[mat_line:mat_line+1]])
-            mat_line += 1
-            pass
-        return l_df
-
-    def get_column_headings(self, years, num_cols):
+    def build_column_labels(self, years):
         column_heading = []
+        num_years = len(years)
+        num_cols = (num_years - 1) + num_years + 1
         col_idx = 0
         year_idx = 0
         num_years = len(years)
-        years = sorted(years,reverse=False)
+        years = sorted(years, reverse=True)
         while col_idx < num_cols-1 and year_idx < num_years:
             if (col_idx % 2) == 0:
                 column_heading.append(years[year_idx])
@@ -88,41 +39,88 @@ class TearSheetFormatter(object):
         column_heading.append(tmp_str)
         return column_heading
 
-    def get_business_type(self,mpl):
-        ### pure virtual ###
-        pass
+    def build_row_labels(self, tag, bus_type_tag):
+        row_labels = self.template_obj.get_row_labels(tag, bus_type_tag)
+        return row_labels
 
-    def copy_labels(self, values, co, cell_info):
-        my_cell = cell_info[0] + str(cell_info[1])
-        my_target_sheet = co + "_" + TARGET_SHEET
-        my_target_sheet = self.target_wb.sheets(my_target_sheet)
-        my_target_sheet.range(my_cell).value = values
-        my_target_sheet.range('A1:A500').autofit()
+    def build_df_for_display(self, co, tag, bus_type):
+        template_fids_with_spaces = self.template_obj.get_display_fid_list(tag, bus_type)
+        just_fids = filter(lambda a: a is not None, template_fids_with_spaces)
+        just_fids = filter(lambda a: a != 'XXX', just_fids)
+
+        df = bus_type.get_df_including_pcts(co, just_fids)
+        l1 = df.columns[0:4]
+        l2 = df.columns[4:]
+        cols = [val for pair in zip(l1, l2) for val in pair]
+        df = df.reindex(columns=cols)
+
+        blank_row = ["" for x in range(len(df.columns))]
+        tup = tuple(blank_row)
+        blank_row_df = pd.DataFrame([tup], columns=df.columns)
+        rv_df = pd.DataFrame(columns=df.columns)
+        mat_line = 0
+        for row in template_fids_with_spaces:
+            if row is None or row == 'XXX' or row == '' or row == ' ':
+                rv_df = pd.concat([rv_df, blank_row_df])
+                continue
+            rv_df = pd.concat([rv_df, df[mat_line:mat_line+1]])
+            mat_line += 1
+            pass
+        return rv_df
+
+    def format_section(self, co, mpl, tag, line_no):
+        logger.info("Enter")
+        bus_type = self.get_business_type(mpl)
+
+        cell = ('B', line_no)
+        column_labels = self.build_column_labels(bus_type.years)
+        self.copy_labels_to_xlsheet(column_labels, co, cell)
+
+        cell = ('A', line_no)
+        row_labels = self.build_row_labels(tag, bus_type.get_bt_tag())
+        self.copy_labels_to_xlsheet(row_labels, co, cell)
+
+        cell = ('B', line_no + 1)
+        df = self.build_df_for_display(co, tag, bus_type)
+        self.copy_df_to_xlsheet(df, co, cell, tag)
+
+        logger.info("Leave")
+        return df.shape[0] + line_no + 3
+
+    def copy_labels_to_xlsheet(self, values, co, cell_info):
+        cell = cell_info[0] + str(cell_info[1])
+        target_sheet = co + "_" + TARGET_SHEET
+        target_sheet = self.target_wb.sheets(target_sheet)
+        target_sheet.range(cell).value = values
+        target_sheet.range('A1:A500').autofit()
         return
 
-    def copy_df_data(self, df, co, cell_info, tag):
-        my_target_sheet = co + "_" + TARGET_SHEET
-        my_target_sheet = self.target_wb.sheets(my_target_sheet)
+    def copy_df_to_xlsheet(self, df, co, cell_info, tag):
+        target_sheet = co + "_" + TARGET_SHEET
+        target_sheet = self.target_wb.sheets(target_sheet)
         df = df.replace([np.inf,-np.inf],np.nan)
-        my_cell = cell_info[0] + str(cell_info[1])
-        my_target_sheet.range(my_cell).options(dropna=False, index=False, header=False).value = df
+        cell = cell_info[0] + str(cell_info[1])
+        target_sheet.range(cell).options(dropna=False, index=False, header=False).value = df
         height = len(df.index)
         top = cell_info[1]
         bottom = cell_info[1] + height
         #        col = chr(ord(cell_info[0])+1)
         col = cell_info[0]
         for i in range(len(df.columns)):
-            l_cell = col + str(top)
-            r_cell = col + str(bottom)
-            xl_range = l_cell + ":" + r_cell
+            left_cell = col + str(top)
+            right_cell = col + str(bottom)
+            xl_range = left_cell + ":" + right_cell
             if i % 2 == 0:
                 if tag in PERCENT_FORMATS:
-                    my_target_sheet.range(xl_range).number_format = '0.0'
+                    target_sheet.range(xl_range).number_format = '0.0'
                 else:
-                    my_target_sheet.range(xl_range).number_format = '$0'
+                    target_sheet.range(xl_range).number_format = '$0'
             else:
-                my_target_sheet.range(xl_range).number_format = '0.00%'
-            my_target_sheet.range(xl_range).column_width = 10
+                target_sheet.range(xl_range).number_format = '0.00%'
+            target_sheet.range(xl_range).column_width = 10
             col = chr(ord(col)+1)
         return
 
+    def get_business_type(self,mpl):
+        ### pure virtual ###
+        pass

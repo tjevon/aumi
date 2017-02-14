@@ -86,12 +86,12 @@ class TearSheetGenerator:
         logger.debug("Leave")
         pass
 
-    def build_tearsheets(self, comp_dict, mpl):
+    def build_tearsheets(self, company_dict, mpl):
         line_no = 4
-        if len(comp_dict[PC_tag]) > 0:
-            self.build_pc_tearsheets(comp_dict[PC_tag], mpl, line_no)
-        if len(comp_dict[LIFE_tag]) > 0:
-            self.build_life_tearsheets(comp_dict[LIFE_tag], mpl, line_no)
-        if len(comp_dict[HEALTH_tag]) > 0:
-            self.build_health_tearsheets(comp_dict[HEALTH_tag], mpl, line_no)
+        if company_dict[PC_tag] != None:
+            self.build_pc_tearsheets(company_dict[PC_tag], mpl, line_no)
+        if company_dict[LIFE_tag] != None:
+            self.build_life_tearsheets(company_dict[LIFE_tag], mpl, line_no)
+        if company_dict[HEALTH_tag] != None:
+            self.build_health_tearsheets(company_dict[HEALTH_tag], mpl, line_no)
         pass
