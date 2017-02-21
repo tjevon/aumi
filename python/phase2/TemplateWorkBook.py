@@ -15,12 +15,12 @@ logger = logging.getLogger('twolane')
 class TemplateWorkBook(object):
 
     template_row_labels = {
-        SI01_tag:('A',3,143),
+        SI01_tag:('A',3,154),
         E07_tag:('A',3,51),
         Assets_tag: ('A',3,60),
         CashFlow_tag: ('A',3,48),
         SI05_07_tag: ('A',3,83),
-        SoI_tag: ('A',3,61),
+        SoI_tag: ('A',3,75),
         SoO_tag: ('A',3,70),
         SoR_tag: ('A',3,62),
         IRIS1_tag: ('A',3,30),

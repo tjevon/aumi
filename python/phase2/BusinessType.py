@@ -24,6 +24,9 @@ class BusinessType(object):
         self.companies = set()
         self.raw_df = None
         self.data_cube = None
+
+        self.raw_Q_df = None
+        self.data_Q_cube = None
         pass
 
     def load_df(self, csv_filename):
@@ -49,6 +52,23 @@ class BusinessType(object):
         rv_df = rv_df.astype(float)
         logger.info("Leave")
         return rv_df
+
+    def convert_csvs_to_raw_df(self, data_dir, file_names):
+        logger.info("Enter")
+        return_file_names = []
+        for name in file_names:
+            if any(s in name for s in COMMON_TEMPLATE_TAGS):
+                csv_filename = data_dir + "\\" + name
+                df = self.load_df(csv_filename)
+                # TODO: should we check to make sure fids don't already exist?
+                try:
+                    self.raw_df = pd.concat([self.raw_df, df], axis=1)
+                except NameError:
+                    self.raw_df = df
+            else:
+                return_file_names.append(name)
+        logger.info("Leave")
+        return return_file_names
 
     def convert_csvs_to_raw_df(self, data_dir, file_names):
         logger.info("Enter")
@@ -155,6 +175,10 @@ class BusinessType(object):
         rv_cube = pd.Panel(df_dict)
         rv_cube = rv_cube.swapaxes(0, 1)
         return rv_cube
+
+    def get_specialty_cube(self, fids):
+        cube = self.data_cube[fids]
+        return cube
 
     def get_df_including_pcts(self, co, fids):
         rv_df = self.data_cube.major_xs(co).transpose()

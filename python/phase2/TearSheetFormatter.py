@@ -49,8 +49,9 @@ class TearSheetFormatter(object):
         just_fids = filter(lambda a: a != 'XXX', just_fids)
 
         df = bus_type.get_df_including_pcts(co, just_fids)
-        l1 = df.columns[0:4]
-        l2 = df.columns[4:]
+        split_idx = len(bus_type.years)
+        l1 = df.columns[0:split_idx]
+        l2 = df.columns[split_idx:]
         cols = [val for pair in zip(l1, l2) for val in pair]
         df = df.reindex(columns=cols)
 
@@ -89,14 +90,16 @@ class TearSheetFormatter(object):
 
     def copy_labels_to_xlsheet(self, values, co, cell_info):
         cell = cell_info[0] + str(cell_info[1])
-        target_sheet = co + "_" + TARGET_SHEET
+        target_sheet = co
+#        target_sheet = co + "_" + TARGET_SHEET
         target_sheet = self.target_wb.sheets(target_sheet)
         target_sheet.range(cell).value = values
         target_sheet.range('A1:A500').autofit()
         return
 
     def copy_df_to_xlsheet(self, df, co, cell_info, tag):
-        target_sheet = co + "_" + TARGET_SHEET
+        target_sheet = co
+#        target_sheet = co + "_" + TARGET_SHEET
         target_sheet = self.target_wb.sheets(target_sheet)
         df = df.replace([np.inf,-np.inf],np.nan)
         cell = cell_info[0] + str(cell_info[1])

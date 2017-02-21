@@ -1,4 +1,7 @@
 import pandas as pd
+import logging
+
+logger = logging.getLogger('twolane')
 
 # tag - used to locate filenames and template worksheets
 SI01_tag     = "SI01"
@@ -22,12 +25,21 @@ PC_tag      = "PC"
 LIFE_tag    = "LIFE"
 HEALTH_tag  = "HEALTH"
 
+BUSINESS_TYPES = [PC_tag, LIFE_tag, HEALTH_tag]
+
 CALC_COL = 'E'
 
 COMMON_TEMPLATE_TAGS = [Assets_tag, CashFlow_tag, SI01_tag, SI05_07_tag, E07_tag, CR_tag]
 PC_TEMPLATE_TAGS = [SoI_tag, IRIS1_tag]
 LIFE_TEMPLATE_TAGS = [SoO_tag, IRIS2_tag, Liab2_tag]
 HEALTH_TEMPLATE_TAGS = [SoR_tag, Liab3_tag]
+
+COMMON_QUARTERLY_TAGS = [Assets_tag, CashFlow_tag]
+PC_QUARTERLY_TAGS = [SoI_tag]
+
+BUSINESS_TYPE_TAGS = {PC_tag:PC_TEMPLATE_TAGS+COMMON_TEMPLATE_TAGS,
+                      LIFE_tag:LIFE_TEMPLATE_TAGS+COMMON_TEMPLATE_TAGS,
+                      HEALTH_tag:HEALTH_TEMPLATE_TAGS+COMMON_TEMPLATE_TAGS}
 
 PERCENT_FORMATS = [IRIS1_tag, IRIS2_tag]
 
@@ -48,10 +60,10 @@ def do_all_calculations(template_wb, section_map, cube):
 
     for calculation_level in dependency_ordered_list:
         for calc in calculation_level:
-            cube = do_calculation(calc, template_wb, cube)
+            cube = do_calculation(calc, template_wb, cube, section_map)
     return cube
 
-def do_calculation(calc, template_wb, cube):
+def do_calculation(calc, template_wb, cube, section_map):
     df_dict = {}
     tag = calc[0]
     comp_dict = calc[1]
@@ -64,10 +76,10 @@ def do_calculation(calc, template_wb, cube):
         func_key = formula[:func_idx]
         args_str = formula[func_idx + 1:args_idx]
         args = args_str.split(",")
-        fid1 = fid_collection_dict[args[0]][0]
+        fid1 = lookup_fid(section_map, fid_collection_dict, args[0])
         slice1 = cube[fid1]
         for row in args[1:]:
-            fid2 = fid_collection_dict[row][0]
+            fid2 = lookup_fid(section_map, fid_collection_dict, row)
             slice2 = cube[fid2]
             slice1 = func_dict[func_key](slice1, slice2)
         df_dict[fids[0]] = slice1
@@ -76,6 +88,17 @@ def do_calculation(calc, template_wb, cube):
     cube = pd.concat(cube_list, axis=0)
     return cube
 
+def lookup_fid(section_map, fid_collection_dict, arg):
+    sht_idx = arg.find('!')
+    if sht_idx == -1:
+        fid = fid_collection_dict[arg][0]
+    else:
+        tag = arg[:sht_idx]
+        tag = tag.replace("'","")
+        tmp_arg = arg[sht_idx+1:]
+        section_fid_collection_dict = section_map[tag].fid_collection_dict
+        fid = section_fid_collection_dict[tmp_arg][0]
+    return fid
 
 def slice_sum(slice1, slice2):
     rv_slice = slice1 + slice2

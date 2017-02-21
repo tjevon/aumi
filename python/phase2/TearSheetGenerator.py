@@ -51,19 +51,23 @@ class TearSheetGenerator:
         for i in self.target_wb.sheets:
             i.clear_contents()
 
+    def get_target_worksheet(self, sheet_name):
+        target_sheet = self.target_wb.sheets(sheet_name)
+        return target_sheet
 
-    def add_xlsheets(self, companies):
+    def add_xlsheets(self, sheet_list):
         available_sheets = []
         for i in self.target_wb.sheets:
             logger.debug(i.name)
-            #            i.clear_contents()
+#            i.clear_contents()
             available_sheets.append(i.name)
         logger.debug("Have Sheets:")
 
-        for co in companies:
-            co_sheet = co + "_" + TARGET_SHEET
-            if co_sheet not in available_sheets:
-                self.target_wb.sheets.add(co_sheet)
+        for entry in sheet_list:
+#            entry_sheet = entry + "_" + TARGET_SHEET
+            entry_sheet = entry
+            if entry_sheet not in available_sheets:
+                self.target_wb.sheets.add(entry_sheet)
 
     def build_pc_tearsheets(self, companies, mpl, line_no):
         logger.debug("Enter: num companies = %d", len(companies))
