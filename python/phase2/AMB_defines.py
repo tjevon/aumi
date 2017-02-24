@@ -26,8 +26,10 @@ LIFE_tag    = "LIFE"
 HEALTH_tag  = "HEALTH"
 
 BUSINESS_TYPES = [PC_tag, LIFE_tag, HEALTH_tag]
-
-CALC_COL = 'E'
+YEARLY_IDX = 0
+QUARTERLY_IDX = 1
+DISPLAY_IDX = 2
+CALC_COL = 'H'
 
 COMMON_TEMPLATE_TAGS = [Assets_tag, CashFlow_tag, SI01_tag, SI05_07_tag, E07_tag, CR_tag]
 PC_TEMPLATE_TAGS = [SoI_tag, IRIS1_tag]
@@ -36,6 +38,7 @@ HEALTH_TEMPLATE_TAGS = [SoR_tag, Liab3_tag]
 
 COMMON_QUARTERLY_TAGS = [Assets_tag, CashFlow_tag]
 PC_QUARTERLY_TAGS = [SoI_tag]
+LIFE_QUARTERLY_TAGS = [SoO_tag]
 
 BUSINESS_TYPE_TAGS = {PC_tag:PC_TEMPLATE_TAGS+COMMON_TEMPLATE_TAGS,
                       LIFE_tag:LIFE_TEMPLATE_TAGS+COMMON_TEMPLATE_TAGS,
@@ -67,6 +70,7 @@ def do_calculation(calc, template_wb, cube, section_map):
     df_dict = {}
     tag = calc[0]
     comp_dict = calc[1]
+    giveup = False
     fid_collection_dict = calc[2]
     for key, fids in comp_dict.iteritems():
         cell = key.replace('A', CALC_COL)
@@ -77,11 +81,19 @@ def do_calculation(calc, template_wb, cube, section_map):
         args_str = formula[func_idx + 1:args_idx]
         args = args_str.split(",")
         fid1 = lookup_fid(section_map, fid_collection_dict, args[0])
+        if fid1 is None:
+            continue
         slice1 = cube[fid1]
         for row in args[1:]:
             fid2 = lookup_fid(section_map, fid_collection_dict, row)
+            if fid2 is None:
+                giveup = True
+                break
             slice2 = cube[fid2]
             slice1 = func_dict[func_key](slice1, slice2)
+        if giveup == True:
+            giveup = False
+            continue
         df_dict[fids[0]] = slice1
     tmp_cube = pd.Panel(df_dict)
     cube_list = [cube, tmp_cube]
@@ -90,14 +102,16 @@ def do_calculation(calc, template_wb, cube, section_map):
 
 def lookup_fid(section_map, fid_collection_dict, arg):
     sht_idx = arg.find('!')
+    fid = None
     if sht_idx == -1:
         fid = fid_collection_dict[arg][0]
     else:
         tag = arg[:sht_idx]
         tag = tag.replace("'","")
         tmp_arg = arg[sht_idx+1:]
-        section_fid_collection_dict = section_map[tag].fid_collection_dict
-        fid = section_fid_collection_dict[tmp_arg][0]
+        if tag in section_map:
+            section_fid_collection_dict = section_map[tag].fid_collection_dict
+            fid = section_fid_collection_dict[tmp_arg][0]
     return fid
 
 def slice_sum(slice1, slice2):

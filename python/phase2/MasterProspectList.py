@@ -1,13 +1,10 @@
 from __future__ import print_function
 import os
 
-import PcBusinessType as pc
-import LifeBusinessType as life
-import HealthBusinessType as health
-import TearSheetGenerator as tsg
+from BusinessType import *
 
 import matplotlib.pyplot as plt
-from matplotlib.font_manager import FontProperties
+#from matplotlib.font_manager import FontProperties
 
 import logging
 from AMB_defines import *
@@ -21,7 +18,7 @@ class MasterProspectList:
         self.file_dict = None
         self.template_obj = template_obj
         self.target_obj = target_obj
-        self.business_types = {PC_tag:None, LIFE_tag:None, HEALTH_tag:None}
+        self.business_types = {PC_tag:{}, LIFE_tag:{}, HEALTH_tag:{}}
         self.build_business_types(data_dir)
         pass
 
@@ -55,26 +52,30 @@ class MasterProspectList:
         return file_dict
 
     def build_business_types(self, data_dir):
-        csv_data_dir = data_dir + "\\10_year_data"
-        file_dict = self.get_file_dict(csv_data_dir)
-        for entity_id in file_dict:
-            if entity_id == PC_tag:
-                self.business_types[entity_id] = pc.PcBusinessType()
-            elif entity_id == LIFE_tag:
-                self.business_types[entity_id] = life.LifeBusinessType()
-            elif entity_id == HEALTH_tag:
-                self.business_types[entity_id] = health.HealthBusinessType()
-            else:
-                continue
-            self.business_types[entity_id].convert_csvs_to_raw_df(csv_data_dir, file_dict[entity_id])
-            self.business_types[entity_id].construct_data_cube(self.template_obj)
-        pass
+        yearly_csv_data_dir = data_dir + "\\10_year_data"
+        file_dict = self.get_file_dict(yearly_csv_data_dir)
+        if PC_tag in file_dict:
+            self.business_types[PC_tag][YEARLY_IDX] = BusinessType(PC_tag, YEARLY_IDX, COMMON_TEMPLATE_TAGS, PC_TEMPLATE_TAGS)
+            self.business_types[PC_tag][YEARLY_IDX].construct_data_cube(yearly_csv_data_dir, file_dict[PC_tag], self.template_obj)
+        if LIFE_tag in file_dict:
+            self.business_types[LIFE_tag][YEARLY_IDX] = BusinessType(LIFE_tag, YEARLY_IDX, COMMON_TEMPLATE_TAGS, LIFE_TEMPLATE_TAGS)
+            self.business_types[LIFE_tag][YEARLY_IDX].construct_data_cube(yearly_csv_data_dir, file_dict[LIFE_tag], self.template_obj)
+        if HEALTH_tag in file_dict:
+            self.business_types[HEALTH_tag][YEARLY_IDX] = BusinessType(HEALTH_tag, YEARLY_IDX, COMMON_TEMPLATE_TAGS, HEALTH_TEMPLATE_TAGS)
+            self.business_types[HEALTH_tag][YEARLY_IDX].construct_data_cube(yearly_csv_data_dir, file_dict[HEALTH_tag], self.template_obj)
 
-    def get_companies(self, tag):
-        if self.business_types[tag] is not None:
-            return set(self.business_types[tag].companies)
-        else:
-            return None
+        quarterly_csv_data_dir = data_dir + "\\2016_Q"
+        file_dict = self.get_file_dict(quarterly_csv_data_dir)
+        if PC_tag in file_dict:
+            self.business_types[PC_tag][QUARTERLY_IDX] = BusinessType(PC_tag, QUARTERLY_IDX, COMMON_QUARTERLY_TAGS, PC_QUARTERLY_TAGS)
+            self.business_types[PC_tag][QUARTERLY_IDX].construct_data_cube(quarterly_csv_data_dir, file_dict[PC_tag], self.template_obj)
+        if LIFE_tag in file_dict:
+            self.business_types[LIFE_tag][QUARTERLY_IDX] = BusinessType(LIFE_tag, QUARTERLY_IDX, COMMON_QUARTERLY_TAGS, LIFE_QUARTERLY_TAGS)
+            self.business_types[LIFE_tag][QUARTERLY_IDX].construct_data_cube(quarterly_csv_data_dir, file_dict[LIFE_tag], self.template_obj)
+        if HEALTH_tag in file_dict:
+            self.business_types[HEALTH_tag][QUARTERLY_IDX] = BusinessType(HEALTH_tag, QUARTERLY_IDX, COMMON_QUARTERLY_TAGS, HEALTH_QUARTERLY_TAGS)
+            self.business_types[HEALTH_tag][QUARTERLY_IDX].construct_data_cube(quarterly_csv_data_dir, file_dict[HEALTH_tag], self.template_obj)
+        return
 
     def build_specialty_cube(self):
         fids_for_cube = []
@@ -89,8 +90,8 @@ class MasterProspectList:
                 just_fids = filter(lambda a: a != 'XXX', just_fids)
                 fids_for_cube += just_fids
             cube = bt.data_cube[fids_for_cube]
-            years = bt.years[::-1]
-            cube = cube.loc[:,:,years]
+            periods = bt.periods[::-1]
+            cube = cube.loc[:,:,periods]
             output_filename = "%s.csv" % bus_type
             for key in cube.minor_axis:
                 df = cube.minor_xs(key)
@@ -103,29 +104,30 @@ class MasterProspectList:
     def build_trio_scorecard(self):
         logger.info("Enter")
         plot_sheets = [PC_tag, LIFE_tag, HEALTH_tag ]
-        self.target_obj.add_xlsheets(plot_sheets)
+        self.target_obj.add_xlsheets(plot_sheets,YEARLY_IDX)
 
         work_sheet = self.target_obj.get_target_worksheet(PC_tag)
-        bus_type = self.business_types[PC_tag]
+        bus_type = self.business_types[PC_tag][YEARLY_IDX]
         cube = bus_type.data_cube
 
-        years_of_interest = bus_type.years[::-1]
+        tmp_list = bus_type.periods[::-1]
+        periods_of_interest = [int(i) for i in tmp_list]
 
         inv_assets_fid = 'SF00025'  # dollar value of invested assets and cash
 
-        # create df that contains invested assets for all companies for all years we care about
-        inv_assets_df = cube[inv_assets_fid][years_of_interest]
+        # create df that contains invested assets for all companies for all periods we care about
+        inv_assets_df = cube[inv_assets_fid][tmp_list]
         # create df that contains only companies with between 2 and 3 billion dollars
         filter_level = 20
         filter_num = filter_level * 1000000
-        filter_df = inv_assets_df.loc[inv_assets_df[2015] > filter_num]
+        filter_df = inv_assets_df.loc[inv_assets_df['2015'] > filter_num]
 #        filter_df = filter_df.loc[inv_assets_df[2015] < 10000000]
 
         equity_fid = 'BI0001'  # percent of bonds / invested assets and cash
-        equity_df = cube[equity_fid][years_of_interest]
+        equity_df = cube[equity_fid][tmp_list]
 
         bonds_fid = 'AI0020'  # percent of bonds / invested assets and cash
-        bonds_df = cube[bonds_fid][years_of_interest]
+        bonds_df = cube[bonds_fid][tmp_list]
 
         # create df that contains percent bond/inv assets with only companies with 2-3 billion in invested assets
 
@@ -145,7 +147,7 @@ class MasterProspectList:
         fig = plt.figure()
         plt.plot(bonds_df)
         plt.title(title_str)
-        plt.axis([years_of_interest[0], years_of_interest[-1], 0.0, 1.0])
+        plt.axis([periods_of_interest[0], periods_of_interest[-1], 0.0, 1.0])
         plt.ylabel('Percent')
         plt.xlabel('Years')
 
@@ -159,7 +161,7 @@ class MasterProspectList:
         fig = plt.figure()
         plt.plot(equity_df)
         plt.title(title_str)
-        plt.axis([years_of_interest[0], years_of_interest[-1], 0.0, 1.0])
+        plt.axis([periods_of_interest[0], periods_of_interest[-1], 0.0, 1.0])
         plt.ylabel('Percent')
         plt.xlabel('Years')
 
@@ -179,7 +181,7 @@ class MasterProspectList:
         # fig = plt.figure()
         # plt.plot(df_median)
         # plt.title(title_str)
-        # plt.axis([years_of_interest[0], years_of_interest[-1], 0.0, 1.0])
+        # plt.axis([periods_of_interest[0], periods_of_interest[-1], 0.0, 1.0])
         # plt.ylabel('Percent')
         # plt.xlabel('Years')
         #
@@ -193,7 +195,7 @@ class MasterProspectList:
         # fig = plt.figure()
         # plt.plot(df_mean)
         # plt.title(title_str)
-        # plt.axis([years_of_interest[0], years_of_interest[-1], 0.0, 1.0])
+        # plt.axis([periods_of_interest[0], periods_of_interest[-1], 0.0, 1.0])
         # plt.ylabel('Percent')
         # plt.xlabel('Years')
         #
@@ -216,13 +218,13 @@ class MasterProspectList:
             company_id = co
             company_df = cube.major_xs(company_id)[asset_interest_list].transpose()
 #            company_df = company_df[company_df.columns[::-1]]
-            company_df = company_df[years_of_interest].transpose()
+            company_df = company_df[tmp_list].transpose()
 
             title_str = "Asset Allocation (%s)" % co
             fig = plt.figure()
             plt.plot(company_df)
             plt.title(title_str)
-            plt.axis([years_of_interest[0], years_of_interest[-1], 0.0, 1.0])
+            plt.axis([periods_of_interest[0], periods_of_interest[-1], 0.0, 1.0])
             plt.ylabel('Percent')
             plt.xlabel('Years')
 
@@ -237,8 +239,14 @@ class MasterProspectList:
         logger.info("Leave")
         return
 
-    def get_candidates(self, tag):
-        companies = self.get_companies(tag)
+    def get_companies(self, tag, y_or_q):
+        if self.business_types[tag][y_or_q] is not None:
+            return set(self.business_types[tag][y_or_q].companies)
+        else:
+            return None
+
+    def get_candidates(self, tag, y_or_q):
+        companies = self.get_companies(tag, y_or_q)
         if companies is None:
             return None
         else:

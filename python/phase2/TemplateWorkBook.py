@@ -3,11 +3,6 @@ import os
 
 import xlwings as xw
 
-import PcBusinessType as pc
-import LifeBusinessType as life
-import HealthBusinessType as health
-
-import logging
 from AMB_defines import *
 
 logger = logging.getLogger('twolane')
@@ -20,7 +15,7 @@ class TemplateWorkBook(object):
         Assets_tag: ('A',3,60),
         CashFlow_tag: ('A',3,48),
         SI05_07_tag: ('A',3,83),
-        SoI_tag: ('A',3,75),
+        SoI_tag: ('A',3,79),
         SoO_tag: ('A',3,70),
         SoR_tag: ('A',3,62),
         IRIS1_tag: ('A',3,30),
@@ -33,9 +28,9 @@ class TemplateWorkBook(object):
 
     # fid located in first column, display filter in second
     template_BT_cols = {
-        PC_tag: ('B','I'),
-        LIFE_tag:('C','J'),
-        HEALTH_tag:('D','K')
+        PC_tag: ('B', 'C', 'L'),
+        LIFE_tag:('D', 'E', 'M'),
+        HEALTH_tag:('F', 'G', 'N')
     }
 
     def __init__(self, data_dir):
@@ -51,7 +46,7 @@ class TemplateWorkBook(object):
             available_sheets.append(i.name)
         logger.debug("Have Sheets:")
 
-        for sheet_name in COMMON_TEMPLATE_TAGS:
+        for sheet_name in COMMON_TEMPLATE_TAGS + PC_TEMPLATE_TAGS + LIFE_TEMPLATE_TAGS + HEALTH_TEMPLATE_TAGS:
             if sheet_name not in available_sheets:
                 logger.fatal("Template %s does not contain %s", workbook_file, sheet_name)
                 exit()
@@ -66,7 +61,7 @@ class TemplateWorkBook(object):
         formula = template_sheet.range(cell).formula
         return formula
 
-    def get_full_fid_list(self, tag, bt):
+    def get_full_fid_list(self, tag, bt, y_or_q=YEARLY_IDX):
         template_sheet = self.get_template_sheet(tag)
         range_info = self.template_row_labels[tag]
 
@@ -74,7 +69,7 @@ class TemplateWorkBook(object):
         for i in range(range_info[1], range_info[2]+1):
             A_cols.append(range_info[0] + str(i))
 
-        fid_col = self.template_BT_cols[bt.get_bt_tag()][0]
+        fid_col = self.template_BT_cols[bt.get_bt_tag()][y_or_q]
         cells = fid_col + str(range_info[1]+1) + ':' + fid_col + str(range_info[2])
         fid_list = template_sheet.range(cells).options(transpose=True).value
 
@@ -88,8 +83,8 @@ class TemplateWorkBook(object):
             fid_dict[A_cols[1]] = fid_list
             return (tmp_fid_list, fid_dict)
 
-    def get_display_fid_list(self, tag, bt):
-        fid_list = self.get_full_fid_list(tag,bt)[0]
+    def get_display_fid_list(self, tag, bt,y_or_q):
+        fid_list = self.get_full_fid_list(tag,bt,y_or_q)[0]
         rv = self.filter_list(tag, bt.get_bt_tag(), fid_list, 1)
         return rv
 
@@ -105,7 +100,7 @@ class TemplateWorkBook(object):
     def filter_list(self,tag, bt_tag, to_filter, offset):
         template_sheet = self.get_template_sheet(tag)
         range_info = self.template_row_labels[tag]
-        display_filter_col = self.template_BT_cols[bt_tag][1]
+        display_filter_col = self.template_BT_cols[bt_tag][DISPLAY_IDX]
         cells = display_filter_col + str(range_info[1]+offset) + ':' + display_filter_col + str(range_info[2])
         filters = template_sheet.range(cells).options(ndim=2).value
         rv = []

@@ -41,14 +41,18 @@ if __name__ == '__main__':
 
     company_dict = {}
 
-#    mpl.build_trio_scorecard()
+    mpl.build_trio_scorecard()
 #    mpl.build_specialty_cube()
-    company_dict[PC_tag] = mpl.get_candidates(PC_tag)
-    company_dict[LIFE_tag] = mpl.get_candidates(LIFE_tag)
-    company_dict[HEALTH_tag] = mpl.get_candidates(HEALTH_tag)
+    company_dict[PC_tag] = mpl.get_candidates(PC_tag, YEARLY_IDX)
+    company_dict[LIFE_tag] = mpl.get_candidates(LIFE_tag, YEARLY_IDX)
+    company_dict[HEALTH_tag] = mpl.get_candidates(HEALTH_tag, YEARLY_IDX)
 
     ### build tearsheets for top candidates
-    target_obj.build_tearsheets(company_dict, mpl)
+    target_obj.build_tearsheets(company_dict, mpl, YEARLY_IDX)
+
+    quarterly_dict = {}
+    quarterly_dict[PC_tag] = mpl.get_candidates(PC_tag, QUARTERLY_IDX)
+    target_obj.build_tearsheets(quarterly_dict, mpl, QUARTERLY_IDX)
 
     logger.debug("Leave")
 

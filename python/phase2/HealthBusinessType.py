@@ -10,14 +10,12 @@ class HealthBusinessType(BusinessType):
     def __init__(self):
         logger.info("Enter")
         super(HealthBusinessType, self).__init__()
-        self.raw_df = None
-        self.data_cube = None
         logger.info("Leave")
         return
 
-    def convert_csvs_to_raw_df(self, data_dir, file_names):
+    def convert_csvs_to_raw_df(self, data_dir, file_names, common_tag_list, health_tag_list):
         logger.info("Enter")
-        remaining_file_names = super(HealthBusinessType, self).convert_csvs_to_raw_df(data_dir, file_names)
+        remaining_file_names = self.convert_common_csvs_to_raw_df(data_dir, file_names, common_tag_list)
         self.handle_remaining_files(data_dir, remaining_file_names)
         logger.info("Leave")
         return
@@ -38,8 +36,9 @@ class HealthBusinessType(BusinessType):
         logger.info("Leave")
         return
 
-    def construct_data_cube(self, template_wb):
-        self.construct_my_data_cube(template_wb, COMMON_TEMPLATE_TAGS + HEALTH_TEMPLATE_TAGS)
+    def construct_data_cube(self, data_dir, file_names, template_wb):
+        self.convert_csvs_to_raw_df(data_dir, file_names, COMMON_TEMPLATE_TAGS, HEALTH_TEMPLATE_TAGS)
+        self.construct_my_data_cube(template_wb, COMMON_TEMPLATE_TAGS + HEALTH_TEMPLATE_TAGS, YEARLY_FID_IDX)
         return
 
     def get_bt_tag(self):
