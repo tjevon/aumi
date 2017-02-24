@@ -39,10 +39,11 @@ HEALTH_TEMPLATE_TAGS = [SoR_tag, Liab3_tag]
 COMMON_QUARTERLY_TAGS = [Assets_tag, CashFlow_tag]
 PC_QUARTERLY_TAGS = [SoI_tag]
 LIFE_QUARTERLY_TAGS = [SoO_tag]
+HEALTH_QUARTERLY_TAGS = [SoR_tag]
 
-BUSINESS_TYPE_TAGS = {PC_tag:PC_TEMPLATE_TAGS+COMMON_TEMPLATE_TAGS,
-                      LIFE_tag:LIFE_TEMPLATE_TAGS+COMMON_TEMPLATE_TAGS,
-                      HEALTH_tag:HEALTH_TEMPLATE_TAGS+COMMON_TEMPLATE_TAGS}
+BUSINESS_TYPE_TAGS = {PC_tag: PC_TEMPLATE_TAGS+COMMON_TEMPLATE_TAGS,
+                      LIFE_tag: LIFE_TEMPLATE_TAGS+COMMON_TEMPLATE_TAGS,
+                      HEALTH_tag: HEALTH_TEMPLATE_TAGS+COMMON_TEMPLATE_TAGS}
 
 PERCENT_FORMATS = [IRIS1_tag, IRIS2_tag]
 
@@ -50,6 +51,7 @@ TEMPLATE_FILENAME = "TearSheet_Template.xlsx"
 
 TARGET_FILENAME = "TearSheet_Output.xlsx"
 TARGET_SHEET = "TS"
+
 
 def do_all_calculations(template_wb, section_map, cube):
     ai_info = []
@@ -65,6 +67,7 @@ def do_all_calculations(template_wb, section_map, cube):
         for calc in calculation_level:
             cube = do_calculation(calc, template_wb, cube, section_map)
     return cube
+
 
 def do_calculation(calc, template_wb, cube, section_map):
     df_dict = {}
@@ -91,7 +94,7 @@ def do_calculation(calc, template_wb, cube, section_map):
                 break
             slice2 = cube[fid2]
             slice1 = func_dict[func_key](slice1, slice2)
-        if giveup == True:
+        if giveup:
             giveup = False
             continue
         df_dict[fids[0]] = slice1
@@ -100,6 +103,7 @@ def do_calculation(calc, template_wb, cube, section_map):
     cube = pd.concat(cube_list, axis=0)
     return cube
 
+
 def lookup_fid(section_map, fid_collection_dict, arg):
     sht_idx = arg.find('!')
     fid = None
@@ -107,24 +111,28 @@ def lookup_fid(section_map, fid_collection_dict, arg):
         fid = fid_collection_dict[arg][0]
     else:
         tag = arg[:sht_idx]
-        tag = tag.replace("'","")
+        tag = tag.replace("'", "")
         tmp_arg = arg[sht_idx+1:]
         if tag in section_map:
             section_fid_collection_dict = section_map[tag].fid_collection_dict
             fid = section_fid_collection_dict[tmp_arg][0]
     return fid
 
+
 def slice_sum(slice1, slice2):
     rv_slice = slice1 + slice2
     return rv_slice
+
 
 def slice_diff(slice1, slice2):
     rv_slice = slice1 - slice2
     return rv_slice
 
+
 def slice_div(slice1, slice2):
     rv_slice = slice1 / slice2
     return rv_slice
+
 
 def slice_mult(slice1, slice2):
     rv_slice = slice1 * slice2

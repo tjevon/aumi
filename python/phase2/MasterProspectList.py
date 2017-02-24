@@ -4,9 +4,7 @@ import os
 from BusinessType import *
 
 import matplotlib.pyplot as plt
-#from matplotlib.font_manager import FontProperties
 
-import logging
 from AMB_defines import *
 
 logger = logging.getLogger('twolane')
@@ -18,11 +16,12 @@ class MasterProspectList:
         self.file_dict = None
         self.template_obj = template_obj
         self.target_obj = target_obj
-        self.business_types = {PC_tag:{}, LIFE_tag:{}, HEALTH_tag:{}}
+        self.business_types = {PC_tag: {}, LIFE_tag: {}, HEALTH_tag: {}}
         self.build_business_types(data_dir)
         pass
 
-    def get_filenames(self, data_dir):
+    @staticmethod
+    def get_filenames(data_dir):
         logger.info("Enter")
         logger.info("DATAPATH: %s", data_dir)
 
@@ -55,32 +54,55 @@ class MasterProspectList:
         yearly_csv_data_dir = data_dir + "\\10_year_data"
         file_dict = self.get_file_dict(yearly_csv_data_dir)
         if PC_tag in file_dict:
-            self.business_types[PC_tag][YEARLY_IDX] = BusinessType(PC_tag, YEARLY_IDX, COMMON_TEMPLATE_TAGS, PC_TEMPLATE_TAGS)
-            self.business_types[PC_tag][YEARLY_IDX].construct_data_cube(yearly_csv_data_dir, file_dict[PC_tag], self.template_obj)
+            self.business_types[PC_tag][YEARLY_IDX] = BusinessType(PC_tag, YEARLY_IDX,
+                                                                   COMMON_TEMPLATE_TAGS,
+                                                                   PC_TEMPLATE_TAGS)
+            self.business_types[PC_tag][YEARLY_IDX].construct_data_cube(yearly_csv_data_dir,
+                                                                        file_dict[PC_tag],
+                                                                        self.template_obj)
         if LIFE_tag in file_dict:
-            self.business_types[LIFE_tag][YEARLY_IDX] = BusinessType(LIFE_tag, YEARLY_IDX, COMMON_TEMPLATE_TAGS, LIFE_TEMPLATE_TAGS)
-            self.business_types[LIFE_tag][YEARLY_IDX].construct_data_cube(yearly_csv_data_dir, file_dict[LIFE_tag], self.template_obj)
+            self.business_types[LIFE_tag][YEARLY_IDX] = BusinessType(LIFE_tag, YEARLY_IDX,
+                                                                     COMMON_TEMPLATE_TAGS,
+                                                                     LIFE_TEMPLATE_TAGS)
+            self.business_types[LIFE_tag][YEARLY_IDX].construct_data_cube(yearly_csv_data_dir,
+                                                                          file_dict[LIFE_tag],
+                                                                          self.template_obj)
         if HEALTH_tag in file_dict:
-            self.business_types[HEALTH_tag][YEARLY_IDX] = BusinessType(HEALTH_tag, YEARLY_IDX, COMMON_TEMPLATE_TAGS, HEALTH_TEMPLATE_TAGS)
-            self.business_types[HEALTH_tag][YEARLY_IDX].construct_data_cube(yearly_csv_data_dir, file_dict[HEALTH_tag], self.template_obj)
+            self.business_types[HEALTH_tag][YEARLY_IDX] = BusinessType(HEALTH_tag, YEARLY_IDX,
+                                                                       COMMON_TEMPLATE_TAGS,
+                                                                       HEALTH_TEMPLATE_TAGS)
+            self.business_types[HEALTH_tag][YEARLY_IDX].construct_data_cube(yearly_csv_data_dir,
+                                                                            file_dict[HEALTH_tag],
+                                                                            self.template_obj)
 
         quarterly_csv_data_dir = data_dir + "\\2016_Q"
         file_dict = self.get_file_dict(quarterly_csv_data_dir)
         if PC_tag in file_dict:
-            self.business_types[PC_tag][QUARTERLY_IDX] = BusinessType(PC_tag, QUARTERLY_IDX, COMMON_QUARTERLY_TAGS, PC_QUARTERLY_TAGS)
-            self.business_types[PC_tag][QUARTERLY_IDX].construct_data_cube(quarterly_csv_data_dir, file_dict[PC_tag], self.template_obj)
+            self.business_types[PC_tag][QUARTERLY_IDX] = BusinessType(PC_tag, QUARTERLY_IDX,
+                                                                      COMMON_QUARTERLY_TAGS,
+                                                                      PC_QUARTERLY_TAGS)
+            self.business_types[PC_tag][QUARTERLY_IDX].construct_data_cube(quarterly_csv_data_dir,
+                                                                           file_dict[PC_tag],
+                                                                           self.template_obj)
         if LIFE_tag in file_dict:
-            self.business_types[LIFE_tag][QUARTERLY_IDX] = BusinessType(LIFE_tag, QUARTERLY_IDX, COMMON_QUARTERLY_TAGS, LIFE_QUARTERLY_TAGS)
-            self.business_types[LIFE_tag][QUARTERLY_IDX].construct_data_cube(quarterly_csv_data_dir, file_dict[LIFE_tag], self.template_obj)
+            self.business_types[LIFE_tag][QUARTERLY_IDX] = BusinessType(LIFE_tag, QUARTERLY_IDX,
+                                                                        COMMON_QUARTERLY_TAGS,
+                                                                        LIFE_QUARTERLY_TAGS)
+            self.business_types[LIFE_tag][QUARTERLY_IDX].construct_data_cube(quarterly_csv_data_dir,
+                                                                             file_dict[LIFE_tag],
+                                                                             self.template_obj)
         if HEALTH_tag in file_dict:
-            self.business_types[HEALTH_tag][QUARTERLY_IDX] = BusinessType(HEALTH_tag, QUARTERLY_IDX, COMMON_QUARTERLY_TAGS, HEALTH_QUARTERLY_TAGS)
-            self.business_types[HEALTH_tag][QUARTERLY_IDX].construct_data_cube(quarterly_csv_data_dir, file_dict[HEALTH_tag], self.template_obj)
+            self.business_types[HEALTH_tag][QUARTERLY_IDX] = BusinessType(HEALTH_tag, QUARTERLY_IDX,
+                                                                          COMMON_QUARTERLY_TAGS,
+                                                                          HEALTH_QUARTERLY_TAGS)
+            self.business_types[HEALTH_tag][QUARTERLY_IDX].construct_data_cube(
+                quarterly_csv_data_dir, file_dict[HEALTH_tag], self.template_obj)
         return
 
     def build_specialty_cube(self):
         fids_for_cube = []
         for bus_type in BUSINESS_TYPES:
-            bt = self.business_types[bus_type]
+            bt = self.business_types[bus_type]  # type: BusinessType
             if bt is None:
                 continue
             section_tags = BUSINESS_TYPE_TAGS[bus_type]
@@ -91,23 +113,20 @@ class MasterProspectList:
                 fids_for_cube += just_fids
             cube = bt.data_cube[fids_for_cube]
             periods = bt.periods[::-1]
-            cube = cube.loc[:,:,periods]
+            cube = cube.loc[:, :, periods]
             output_filename = "%s.csv" % bus_type
             for key in cube.minor_axis:
                 df = cube.minor_xs(key)
                 df.to_csv(output_filename, mode='a', encoding='utf-8')
-
-                pass
-
-            pass
+        return
 
     def build_trio_scorecard(self):
         logger.info("Enter")
-        plot_sheets = [PC_tag, LIFE_tag, HEALTH_tag ]
-        self.target_obj.add_xlsheets(plot_sheets,YEARLY_IDX)
+        plot_sheets = [PC_tag, LIFE_tag, HEALTH_tag]
+        self.target_obj.add_xlsheets(plot_sheets, YEARLY_IDX)
 
         work_sheet = self.target_obj.get_target_worksheet(PC_tag)
-        bus_type = self.business_types[PC_tag][YEARLY_IDX]
+        bus_type = self.business_types[PC_tag][YEARLY_IDX]  # type: BusinessType
         cube = bus_type.data_cube
 
         tmp_list = bus_type.periods[::-1]
@@ -140,8 +159,8 @@ class MasterProspectList:
         bonds_df = bonds_df.transpose()
 
         # calc median and mean for all companies
-        median = bonds_df.median()
-        mean = bonds_df.mean()
+#        median = bonds_df.median()
+#        mean = bonds_df.mean()
 
         title_str = "Bonds/Invested Assets (%d billion < Companies)" % filter_level
         fig = plt.figure()
@@ -205,13 +224,15 @@ class MasterProspectList:
         # equity_plot.height = 200
         # equity_plot.width = 300
 
-        interest_list = ['SF14450', 'AI04020', 'SF14453', 'AI04021', 'AI04022', 'AI04023', 'AI04024', 'SF14467', 'AI04025', 'AI04026', 'AI04027', 'AI04028', 'AI04029', 'AI04030' ]
+        interest_list = ['SF14450', 'AI04020', 'SF14453', 'AI04021', 'AI04022', 'AI04023',
+                         'AI04024', 'SF14467', 'AI04025', 'AI04026', 'AI04027', 'AI04028',
+                         'AI04029', 'AI04030']
         asset_interest_list = ['AI0020', 'BI0001', 'BI0002', 'BI0003', 'BI0004', 'BI0005',
-                                'BI0006', 'BI0007', 'BI0008', 'BI0009', 'BI0010' ]
+                               'BI0006', 'BI0007', 'BI0008', 'BI0009', 'BI0010']
 
         sht_top = 0
         sht_left = 50
-        for count, co in zip(range(0,len(bonds_df.columns)),bonds_df.columns):
+        for count, co in zip(range(0, len(bonds_df.columns)), bonds_df.columns):
             if (count % 5) == 0:
                 sht_top += 200
                 sht_left = 50
@@ -253,7 +274,8 @@ class MasterProspectList:
             return self.get_arbitrary_subset(companies)
 #            return None
 
-    def get_arbitrary_subset(self, companies):
+    @staticmethod
+    def get_arbitrary_subset(companies):
         """ Testing purposes only """
         tmp_set = set()
         for i in range(0, 1):

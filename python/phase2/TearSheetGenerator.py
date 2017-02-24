@@ -1,11 +1,7 @@
 from __future__ import print_function
-import os
 
 import xlwings as xw
 
-
-import logging
-from AMB_defines import *
 from TearSheetFormatter import *
 
 logger = logging.getLogger('twolane')
@@ -35,7 +31,7 @@ class TearSheetGenerator:
             self.target_wb = xw.books.add()
             self.target_wb.save(workbook_file)
         try:
-#            self.pandas_xl_write =  pd.ExcelWriter(workbook_file,engine='xlsxwriter')
+            # self.pandas_xl_write =  pd.ExcelWriter(workbook_file,engine='xlsxwriter')
             pass
         except:
             logger.error("Pandas ExcelWriter error: %s", workbook_file)

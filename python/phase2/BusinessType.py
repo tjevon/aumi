@@ -1,6 +1,5 @@
 from __future__ import print_function
 
-import logging
 from AMB_defines import *
 
 logger = logging.getLogger('twolane')
@@ -89,7 +88,7 @@ class BusinessType(object):
             comp_dict_ci = {}
             df_dict = {}
             fid_dict = template_wb.get_full_fid_list(tag, self, y_or_q)[1]
-            fid_collection_dict = self.create_fid_collection(fid_dict, self.periods, y_or_q)
+            fid_collection_dict = self.create_fid_collection(fid_dict, self.periods)
             for key, fids in fid_collection_dict.iteritems():
                 if fids[0] == '' or fids[0] == 'XXX':
                     continue
@@ -119,7 +118,8 @@ class BusinessType(object):
         logger.info("Leave")
         return
 
-    def create_fid_collection(self, fid_dict, periods, y_or_q):
+    @staticmethod
+    def create_fid_collection(fid_dict, periods):
         num_periods = len(periods)
         fid_collection_dict = {}
         for key, fid in fid_dict.iteritems():
@@ -186,9 +186,7 @@ class BusinessType(object):
         for i in df.iloc[1]:
             if pd.notnull(i):
                 tmp_periods.append(i)
-        #tmp_sorted_periods = sorted(set(tmp_periods), reverse=True)
         tmp_sorted_periods = tmp_periods
         if len(self.periods) == 0:
             self.periods = tmp_sorted_periods
         return
-

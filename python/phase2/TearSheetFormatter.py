@@ -1,12 +1,12 @@
 from __future__ import print_function
 
-import logging
 import numpy as np
 import itertools
 import string
 from AMB_defines import *
 
 logger = logging.getLogger('twolane')
+
 
 class TearSheetFormatter(object):
     def __init__(self, template_obj, target_wb, pandas_xl_writer):
@@ -25,7 +25,8 @@ class TearSheetFormatter(object):
                 line_no = self.format_section(co, bt_tag, mpl, tag, line_no, y_or_q)
         return line_no
 
-    def build_column_labels(self, periods):
+    @staticmethod
+    def build_column_labels(periods):
         column_heading = []
         num_periods = len(periods)
         num_cols = (num_periods - 1) + num_periods + 1
@@ -107,7 +108,7 @@ class TearSheetFormatter(object):
     def copy_df_to_xlsheet(self, df, co, cell_info, tag):
         target_sheet = co
         target_sheet = self.target_wb.sheets(target_sheet)
-        df = df.replace([np.inf,-np.inf],np.nan)
+        df = df.replace([np.inf, -np.inf], np.nan)
         cell = cell_info[0] + str(cell_info[1])
         target_sheet.range(cell).options(dropna=False, index=False, header=False).value = df
         height = len(df.index)
@@ -133,5 +134,6 @@ class TearSheetFormatter(object):
             target_sheet.range(xl_range).column_width = 10
         return
 
-    def get_business_type(self,mpl, bt_tag, y_or_q):
+    @staticmethod
+    def get_business_type(mpl, bt_tag, y_or_q):
         return mpl.business_types[bt_tag][y_or_q]
