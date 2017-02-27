@@ -120,18 +120,20 @@ class TearSheetFormatter(object):
                    itertools.product(string.ascii_uppercase, repeat=length)]
         col_idx = strings.index(col)
         strings = strings[col_idx:]
-        for i, c in zip(range(len(df.columns)), strings):
-            left_cell = c + str(top)
-            right_cell = c + str(bottom)
-            xl_range = left_cell + ":" + right_cell
-            if i % 2 == 0:
-                if tag in PERCENT_FORMATS:
-                    target_sheet.range(xl_range).number_format = '0.0'
-                else:
-                    target_sheet.range(xl_range).number_format = '$0'
-            else:
-                target_sheet.range(xl_range).number_format = '0.00%'
-            target_sheet.range(xl_range).column_width = 10
+#         for i, c in zip(range(len(df.columns)), strings):
+#             left_cell = c + str(top)
+#             right_cell = c + str(bottom)
+#             xl_range = left_cell + ":" + right_cell
+#             if i % 2 == 0:
+#                 target_sheet.range(xl_range).number_format = '0.00'
+#                 pass
+# #                if tag in PERCENT_FORMATS:
+#             #                    target_sheet.range(xl_range).number_format = '0.0'
+# #                else:
+# #                    target_sheet.range(xl_range).number_format = '$0'
+#             else:
+#                 target_sheet.range(xl_range).number_format = '0.00%'
+#             target_sheet.range(xl_range).column_width = 10
         return
 
     @staticmethod

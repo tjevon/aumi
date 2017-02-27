@@ -278,7 +278,7 @@ class MasterProspectList:
     def get_arbitrary_subset(companies):
         """ Testing purposes only """
         tmp_set = set()
-        for i in range(0, 1):
+        for i in range(0, 2):
             tmp_set.add(companies.pop())
         return tmp_set
 

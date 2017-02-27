@@ -33,8 +33,8 @@ CALC_COL = 'H'
 
 COMMON_TEMPLATE_TAGS = [Assets_tag, CashFlow_tag, SI01_tag, SI05_07_tag, E07_tag, CR_tag]
 PC_TEMPLATE_TAGS = [SoI_tag, IRIS1_tag]
-LIFE_TEMPLATE_TAGS = [SoO_tag, IRIS2_tag, Liab2_tag]
-HEALTH_TEMPLATE_TAGS = [SoR_tag, Liab3_tag]
+LIFE_TEMPLATE_TAGS = [SoO_tag, IRIS2_tag]
+HEALTH_TEMPLATE_TAGS = [SoR_tag]
 
 COMMON_QUARTERLY_TAGS = [Assets_tag, CashFlow_tag]
 PC_QUARTERLY_TAGS = [SoI_tag]
@@ -78,6 +78,7 @@ def do_calculation(calc, template_wb, cube, section_map):
     for key, fids in comp_dict.iteritems():
         cell = key.replace('A', CALC_COL)
         formula = template_wb.get_formula(tag, cell)
+        formula = formula.replace('$','')
         func_idx = formula.find('(')
         args_idx = formula.rfind(')')
         func_key = formula[:func_idx]
