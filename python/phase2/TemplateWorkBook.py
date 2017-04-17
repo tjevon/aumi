@@ -9,10 +9,11 @@ logger = logging.getLogger('twolane')
 
 class TemplateWorkBook(object):
 
-    template_row_labels = {
+    template_section_ranges = {
         SI01_tag: ('A', 3, 154),
-        E07_tag: ('A',  3, 51),
-        Assets_tag: ('A', 3, 60),
+        E07_tag: ('A',  3, 50),
+        E10_tag: ('A',  3, 83),
+        Assets_tag: ('A', 3, 81),
         CashFlow_tag: ('A', 3, 48),
         SI05_07_tag: ('A', 3, 83),
         SoI_tag: ('A', 3, 79),
@@ -33,12 +34,14 @@ class TemplateWorkBook(object):
         HEALTH_tag: ('F', 'G', 'N')
     }
 
-    def __init__(self, data_dir):
-        self.xl_wb = self.get_template_workbook(data_dir)
+    QTRLY_PROJECTION_TYPE_COL = 'O'
+
+    def __init__(self):
+        self.xl_wb = self.get_template_workbook()
 
     @staticmethod
-    def get_template_workbook(data_dir):
-        template_data_dir = data_dir + "\\templates"
+    def get_template_workbook():
+        template_data_dir = DATA_DIR + TEMPLATE_DIR
         workbook_file = template_data_dir + "\\" + TEMPLATE_FILENAME
         template_wb = xw.Book(workbook_file)
         available_sheets = []
@@ -62,15 +65,15 @@ class TemplateWorkBook(object):
         formula = template_sheet.range(cell).formula
         return formula
 
-    def get_full_fid_list(self, tag, bt, y_or_q=YEARLY_IDX):
+    def get_full_fid_list(self, tag, bt_tag, y_or_q=YEARLY_IDX):
         template_sheet = self.get_template_sheet(tag)
-        range_info = self.template_row_labels[tag]
+        range_info = self.template_section_ranges[tag]
 
         a_cols = []
         for i in range(range_info[1], range_info[2]+1):
             a_cols.append(str(range_info[0]) + str(i))
 
-        fid_col = self.template_BT_cols[bt.get_bt_tag()][y_or_q]
+        fid_col = self.template_BT_cols[bt_tag][y_or_q]
         cells = fid_col + str(range_info[1]+1) + ':' + fid_col + str(range_info[2])
         fid_list = template_sheet.range(cells).options(transpose=True).value
 
@@ -84,29 +87,78 @@ class TemplateWorkBook(object):
             fid_dict[a_cols[1]] = fid_list
             return tmp_fid_list, fid_dict
 
-    def get_display_fid_list(self, tag, bt, y_or_q):
-        fid_list = self.get_full_fid_list(tag, bt, y_or_q)[0]
-        rv = self.filter_list(tag, bt.get_bt_tag(), fid_list, 1)
+    def get_display_fid_list(self, tag, bt_tag, y_or_q, which_filter=DISPLAY_SECTION):
+        fid_list = self.get_full_fid_list(tag, bt_tag, y_or_q)[0]
+        rv = self.filter_list(tag, bt_tag, fid_list, 1, which_filter)
+        return rv
+
+    def get_projection_info(self, tag, bt_tag, y_or_q, which):
+        fid_list = self.get_full_fid_list(tag, bt_tag, y_or_q)[0]
+        rv = self.filter_projection_detail(tag, bt_tag, fid_list, 1, which)
         return rv
 
     def get_row_labels(self, tag, bt_tag):
         template_sheet = self.get_template_sheet(tag)
-        range_info = self.template_row_labels[tag]
+        range_info = self.template_section_ranges[tag]
+
         cells = str(range_info[0]) + str(range_info[1]) + ':' + str(range_info[0]) + str(range_info[2])
         row_labels = template_sheet.range(cells).options(ndim=2).value
-
         row_labels = self.filter_list(tag, bt_tag, row_labels, 0)
-        return row_labels
 
-    def filter_list(self, tag, bt_tag, to_filter, offset):
+        cells = "I" + str(range_info[1])
+        row_label_column = template_sheet.range(cells).value
+        cells = "J" + str(range_info[1])
+        data_column = template_sheet.range(cells).value
+        cells = "K" + str(range_info[1])
+        row = template_sheet.range(cells).value
+        return row_labels, row_label_column, data_column, row
+
+    def filter_list(self, tag, bt_tag, to_filter, offset, which_filter=DO_NOT_DISPLAY):
         template_sheet = self.get_template_sheet(tag)
-        range_info = self.template_row_labels[tag]
+        range_info = self.template_section_ranges[tag]
         display_filter_col = self.template_BT_cols[bt_tag][DISPLAY_IDX]
-        cells = display_filter_col + str(range_info[1]+offset) + ':' + display_filter_col + str(range_info[2])
+        cells = display_filter_col + str(range_info[1]+offset) + ':' + \
+                display_filter_col + str(range_info[2])
         filters = template_sheet.range(cells).options(ndim=2).value
+        filters = [item for sublist in filters for item in sublist]
+        filters = [0 if x == None else x for x in filters]
+        filters = map(int, filters)
         rv = []
         for filter_cell, x in zip(filters, range(len(filters))):
-            if filter_cell[0] == 1:
-                continue
-            rv.append(to_filter[x])
+            if which_filter == DISPLAY_SECTION:
+                if filter_cell & DISPLAY_SECTION:
+                    rv.append(to_filter[x])
+            elif which_filter == DISPLAY_PROJECTION:
+                if filter_cell & DISPLAY_PROJECTION:
+                    rv.append(to_filter[x])
+            elif which_filter == CALCULATE_PROJECTION:
+                if filter_cell & CALCULATE_PROJECTION:
+                    rv.append(to_filter[x])
         return rv
+
+    def filter_projection_detail(self, tag, bt_tag, to_filter, offset, filter_type):
+        template_sheet = self.get_template_sheet(tag)
+        range_info = self.template_section_ranges[tag]
+
+        display_filter_col = self.template_BT_cols[bt_tag][DISPLAY_IDX]
+        filter_range = display_filter_col + str(range_info[1]+offset) + ':' + \
+                       display_filter_col + str(range_info[2])
+        filters = template_sheet.range(filter_range).options(ndim=2).value
+        filters = [item for sublist in filters for item in sublist]
+        filters = [0 if x == None else x for x in filters]
+        filters = map(int, filters)
+
+        proj_type_col = self.QTRLY_PROJECTION_TYPE_COL
+        proj_cat_range = proj_type_col + str(range_info[1]+offset) + ':' + \
+                       proj_type_col + str(range_info[2])
+        cats = template_sheet.range(proj_cat_range).options(ndim=2).value
+
+        proj_dict = {}
+        fid_list = []
+        for filter_cell, x in zip(filters, range(len(filters))):
+            if filter_cell & filter_type:
+                if to_filter[x] is not None:
+                    proj_dict[to_filter[x]] = cats[x][0]
+                    fid_list.append(to_filter[x])
+        return fid_list, proj_dict
+

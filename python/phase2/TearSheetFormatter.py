@@ -3,6 +3,7 @@ from __future__ import print_function
 import numpy as np
 import itertools
 import string
+import re
 from AMB_defines import *
 
 logger = logging.getLogger('twolane')
@@ -15,15 +16,9 @@ class TearSheetFormatter(object):
         self.pandas_xl_writer = pandas_xl_writer
         pass
 
-    def create_tearsheets(self, company_dict, bt_tag, mpl, line_no, y_or_q):
-        initial_line = line_no
-        for co in company_dict[bt_tag]:
-            line_no = initial_line
-            for tag in mpl.business_types[bt_tag][y_or_q].bt_tag_list:
-                line_no = self.format_section(co, bt_tag, mpl, tag, line_no, y_or_q)
-            for tag in mpl.business_types[bt_tag][y_or_q].common_tag_list:
-                line_no = self.format_section(co, bt_tag, mpl, tag, line_no, y_or_q)
-        return line_no
+    @staticmethod
+    def get_business_type(mpl, bt_tag, y_or_q):
+        return mpl.business_types[bt_tag].period_types[y_or_q]
 
     @staticmethod
     def build_column_labels(periods):
@@ -45,17 +40,65 @@ class TearSheetFormatter(object):
         column_heading.append(tmp_str)
         return column_heading
 
-    def build_row_labels(self, tag, bus_type_tag):
-        row_labels = self.template_obj.get_row_labels(tag, bus_type_tag)
-        return row_labels
+    def format_projections_section(self,co_num, co_name, bt_tag, mpl):
 
-    def build_df_for_display(self, co, tag, bus_type, y_or_q):
-        template_fids_with_spaces = self.template_obj.get_display_fid_list(tag, bus_type, y_or_q)
+        proj_info = self.template_obj.get_projection_info( E10_tag, bt_tag, YEARLY_IDX, DISPLAY_PROJECTION)
+        fids_with_spaces = proj_info[0]
+        just_fids = filter(lambda a: a is not None, fids_with_spaces)
+        just_fids = filter(lambda a: a != 'XXX', just_fids)
+
+        qtrly_proj_cube = mpl.qtrly_proj_dict[bt_tag]
+        full_qtrly_df = qtrly_proj_cube.major_xs(co_num).transpose()
+        full_yrly_df = mpl.yrly_proj_dict[bt_tag]
+        full_yrly_df = full_yrly_df.loc[co_num,:]
+
+        yrly_proj_df = full_yrly_df.loc[just_fids]
+        qtrly_proj_df = full_qtrly_df.loc[just_fids, :]
+        qtrly_proj_df = qtrly_proj_df.reindex(just_fids)
+
+        data_df = mpl.business_types[bt_tag].period_types[YEARLY_IDX].get_df_including_pcts(co_num, just_fids)
+        data_df = data_df.iloc[:,0:1]
+
+        sec_df = pd.concat([data_df, qtrly_proj_df, yrly_proj_df],axis=1)
+        self.copy_df_to_xlsheet(sec_df, co_name, ('E',39))
+
+        proj_info = self.template_obj.get_projection_info( E07_tag, bt_tag, YEARLY_IDX, DISPLAY_PROJECTION)
+        fids_with_spaces = proj_info[0]
+        just_fids = filter(lambda a: a is not None, fids_with_spaces)
+        just_fids = filter(lambda a: a != 'XXX', just_fids)
+
+        yrly_proj_df = full_yrly_df.loc[just_fids]
+        qtrly_proj_df = full_qtrly_df.loc[just_fids, :]
+        qtrly_proj_df = qtrly_proj_df.reindex(just_fids)
+
+        data_df = mpl.business_types[bt_tag].period_types[YEARLY_IDX].get_df_including_pcts(co_num, just_fids)
+        data_df = data_df.iloc[:,0:1]
+
+        sec_df = pd.concat([data_df, qtrly_proj_df, yrly_proj_df],axis=1)
+        self.copy_df_to_xlsheet(sec_df, co_name, ('E',58))
+        return sec_df
+
+        pass
+
+    def create_tearsheets(self, sheet_list, bt_tag, mpl, y_or_q):
+        for co_num, co_name in sheet_list.iteritems():
+            for tag in mpl.business_types[bt_tag].period_types[y_or_q].complete_tag_list:
+                self.format_section(co_num, co_name, bt_tag, mpl, tag, y_or_q)
+            self.format_projections_section(co_num, co_name, bt_tag, mpl)
+        return
+
+    def build_row_labels(self, tag, bus_type_tag):
+        label_info = self.template_obj.get_row_labels(tag, bus_type_tag)
+        return label_info
+
+    def build_df_for_display(self, co, tag, bus_type, y_or_q, which_filter=DO_NOT_DISPLAY):
+        template_fids_with_spaces = self.template_obj.get_display_fid_list(tag, bus_type.get_bt_tag(),
+                                                                           y_or_q, DISPLAY_SECTION)
         just_fids = filter(lambda a: a is not None, template_fids_with_spaces)
         just_fids = filter(lambda a: a != 'XXX', just_fids)
 
         df = bus_type.get_df_including_pcts(co, just_fids)
-        split_idx = len(bus_type.periods)
+        split_idx = len(bus_type.desired_periods)
         l1 = df.columns[0:split_idx]
         l2 = df.columns[split_idx:]
         cols = [val for pair in zip(l1, l2) for val in pair]
@@ -75,67 +118,53 @@ class TearSheetFormatter(object):
             pass
         return rv_df
 
-    def format_section(self, co, bt_tag, mpl, tag, line_no, y_or_q):
+    def format_section(self, co_num, co_name, bt_tag, mpl, tag, y_or_q):
         logger.info("Enter")
         bus_type = self.get_business_type(mpl, bt_tag, y_or_q)
-        page = co
+        page = co_name
         if y_or_q == QUARTERLY_IDX:
-            page = co + '_Q'
+            page = co_name + 'Q'
 
-        cell = ('B', line_no)
-        column_labels = self.build_column_labels(bus_type.periods)
+        label_info = self.build_row_labels(tag, bus_type.get_bt_tag())
+        column_labels = self.build_column_labels(bus_type.desired_periods)
+
+        row_labels = label_info[0]
+        row_label_col = label_info[1]
+        if row_label_col == None:
+            return
+        data_column = label_info[2]
+        row = int(label_info[3])
+
+        cell = (data_column, row)
         self.copy_labels_to_xlsheet(column_labels, page, cell)
 
-        cell = ('A', line_no)
-        row_labels = self.build_row_labels(tag, bus_type.get_bt_tag())
+        cell = (row_label_col, row)
         self.copy_labels_to_xlsheet(row_labels, page, cell)
 
-        cell = ('B', line_no + 1)
-        df = self.build_df_for_display(co, tag, bus_type, y_or_q)
-        self.copy_df_to_xlsheet(df, page, cell, tag)
+        df = self.build_df_for_display(co_num, tag, bus_type, y_or_q)
+
+        cell = (data_column, row+1)
+        self.copy_df_to_xlsheet(df, page, cell)
 
         logger.info("Leave")
-        return df.shape[0] + line_no + 3
+        return
 
     def copy_labels_to_xlsheet(self, values, co, cell_info):
         cell = cell_info[0] + str(cell_info[1])
-        target_sheet = co
+        target_sheet = co[:30] if len(co) > 30 else co
+        target_sheet = target_sheet.translate(None,"".join(BAD_CHAR))
         target_sheet = self.target_wb.sheets(target_sheet)
         target_sheet.range(cell).value = values
-        target_sheet.range('A1:A500').autofit()
+#        target_sheet.range('A1:A500').autofit()
         return
 
-    def copy_df_to_xlsheet(self, df, co, cell_info, tag):
-        target_sheet = co
+    def copy_df_to_xlsheet(self, df, co, cell_info):
+        target_sheet = co[:30] if len(co) > 30 else co
+        target_sheet = target_sheet.translate(None,"".join(BAD_CHAR))
         target_sheet = self.target_wb.sheets(target_sheet)
         df = df.replace([np.inf, -np.inf], np.nan)
         cell = cell_info[0] + str(cell_info[1])
         target_sheet.range(cell).options(dropna=False, index=False, header=False).value = df
-        height = len(df.index)
-        top = cell_info[1]
-        bottom = cell_info[1] + height
-        #        col = chr(ord(cell_info[0])+1)
-        col = cell_info[0]
-        strings = [''.join(letters) for length in xrange(1, 3) for letters in
-                   itertools.product(string.ascii_uppercase, repeat=length)]
-        col_idx = strings.index(col)
-        strings = strings[col_idx:]
-#         for i, c in zip(range(len(df.columns)), strings):
-#             left_cell = c + str(top)
-#             right_cell = c + str(bottom)
-#             xl_range = left_cell + ":" + right_cell
-#             if i % 2 == 0:
-#                 target_sheet.range(xl_range).number_format = '0.00'
-#                 pass
-# #                if tag in PERCENT_FORMATS:
-#             #                    target_sheet.range(xl_range).number_format = '0.0'
-# #                else:
-# #                    target_sheet.range(xl_range).number_format = '$0'
-#             else:
-#                 target_sheet.range(xl_range).number_format = '0.00%'
-#             target_sheet.range(xl_range).column_width = 10
         return
 
-    @staticmethod
-    def get_business_type(mpl, bt_tag, y_or_q):
-        return mpl.business_types[bt_tag][y_or_q]
+
