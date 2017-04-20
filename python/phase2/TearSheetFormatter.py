@@ -40,6 +40,48 @@ class TearSheetFormatter(object):
         column_heading.append(tmp_str)
         return column_heading
 
+    def format_header_section(self,co_num, co_name, bt_tag, mpl):
+        ADDRESS_FID =   'CO00030'
+        ADDRESS2_FID =  'CO00031'
+        CITY_FID =      'CO00033'
+        STATE_FID =     'CO00034'
+        ZIP_FID =       'CO00035'
+        PHONE_FID =     'CO00020'
+        FAX_FID =       'CO00022'
+        WEBSITE_FID =   'CO00117'
+        FAX_FID =       'CO00022'
+
+        CIO_FID =       'CO00329'
+        CFO_FID =       'CO00327'
+        CEO_FID =       'CO00326'
+
+        CIO_EMAIL_FID = 'CO00330'
+        CFO_EMAIL_FID = 'CO00331'
+        CEO_EMAIL_FID = 'CO00332'
+
+        BUSINESS_FOCUS_FID = 'CO00179'
+        target_sheet = co_name[:30] if len(co_name) > 30 else co_name
+        target_sheet = target_sheet.translate(None, "".join(BAD_CHAR))
+        target_sheet = self.target_wb.sheets(target_sheet)
+
+        comp_df = mpl.business_types[bt_tag].company_info_df.loc[co_num,:]
+        address = comp_df[ADDRESS_FID] + ' ' + comp_df[CITY_FID] + ', ' + comp_df[STATE_FID] + ' ' + comp_df[ZIP_FID]
+
+        target_sheet.range('B4').value = address
+        target_sheet.range('B5').value = comp_df[PHONE_FID]
+        target_sheet.range('B6').value = comp_df[WEBSITE_FID]
+        target_sheet.range('B7').value = comp_df[FAX_FID]
+
+        target_sheet.range('F4').value = comp_df[CEO_FID]
+        target_sheet.range('F5').value = comp_df[CFO_FID]
+        target_sheet.range('F6').value = comp_df[CIO_FID]
+        target_sheet.range('F7').value = comp_df[BUSINESS_FOCUS_FID]
+
+        target_sheet.range('J4').value = comp_df[CEO_EMAIL_FID]
+        target_sheet.range('J5').value = comp_df[CFO_EMAIL_FID]
+        target_sheet.range('J6').value = comp_df[CIO_EMAIL_FID]
+        return
+
     def format_projections_section(self,co_num, co_name, bt_tag, mpl):
 
         proj_info = self.template_obj.get_projection_info( E10_tag, bt_tag, YEARLY_IDX, DISPLAY_PROJECTION)
@@ -85,6 +127,7 @@ class TearSheetFormatter(object):
             for tag in mpl.business_types[bt_tag].period_types[y_or_q].complete_tag_list:
                 self.format_section(co_num, co_name, bt_tag, mpl, tag, y_or_q)
             self.format_projections_section(co_num, co_name, bt_tag, mpl)
+            self.format_header_section(co_num, co_name, bt_tag, mpl)
         return
 
     def build_row_labels(self, tag, bus_type_tag):

@@ -12,7 +12,7 @@ class TemplateWorkBook(object):
     template_section_ranges = {
         SI01_tag: ('A', 3, 154),
         E07_tag: ('A',  3, 50),
-        E10_tag: ('A',  3, 83),
+        E10_tag: ('A',  3, 90),
         Assets_tag: ('A', 3, 81),
         CashFlow_tag: ('A', 3, 48),
         SI05_07_tag: ('A', 3, 83),

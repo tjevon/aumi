@@ -31,17 +31,69 @@ class MasterProspectList:
         #        for i in range(0, len(companies)):
         count = 0
         for key, data in companies.iteritems():
-            if count >= 1:
-                break
+#            if count >= 1:
+#                break
             tmp_dict[key] = data
             count += 1
         return tmp_dict
 
     def build_business_types(self):
         self.business_types[PC_tag] = BusinessType(PC_tag, self.template_obj)
-        #self.business_types[LIFE_tag] = BusinessType(LIFE_tag, self.template_obj)
-        #self.business_types[HEALTH_tag] = BusinessType(HEALTH_tag, self.template_obj)
+        self.business_types[LIFE_tag] = BusinessType(LIFE_tag, self.template_obj)
+        self.business_types[HEALTH_tag] = BusinessType(HEALTH_tag, self.template_obj)
         return
+
+    def single_exp_smooth(self, tmp_cube, a, period_dim):
+        proj_df = None
+        for fid, df in tmp_cube.iteritems():
+            df2 = df.iloc[:,0:period_dim]
+            df3 = df2[df2.columns[::-1]]
+            proj = df3.ewm(alpha=a, axis=1)
+            df4 = proj.mean()
+            df5 = df4[df4.columns[::-1]]
+            df2_p = df2.iloc[:,0:1] * a
+            df5_p = df5.iloc[:,0:1] * (1.0 - a)
+            df6 = df2_p + df5_p
+            df7 = df6 - df2.iloc[:,0:1]
+            df7.columns = [fid]
+            proj_df = pd.concat([proj_df, df7], axis=1)
+        return proj_df
+
+    def double_exp_smooth(self, tmp_cube, period_dim):
+        a = 0.7
+        g = 0.7
+        proj_df = None
+        # for each fid
+        for fid, df in tmp_cube.iteritems():
+            df2 = df.iloc[:,0:period_dim]
+            df3 = df2[df2.columns[::-1]]
+
+            df_D = df3.copy(deep=True)
+            df_S = df3.copy(deep=True)
+            df_b = df3.copy(deep=True)
+            df_b.iloc[:,0] = df_b.iloc[:,1] - df_b.iloc[:,0]
+
+            for i in range(df2.shape[1]):
+                if i > 0:
+                    S_prev = df_S.iloc[:,i-1]
+                    b_prev = df_b.iloc[:,i-1]
+
+                    df_S.iloc[:,i] = a * df3.iloc[:,i] + (1.0 - a) * (S_prev + b_prev)
+                    df_b.iloc[:,i] = g * (df_S.iloc[:,i] - S_prev) + (1.0 - g) * b_prev
+
+                    if i > 1:
+                        df_D.iloc[:,i] = df_S.iloc[:,i] + df_b.iloc[:,i]
+            df_D = df_D[df_D.columns[::-1]]
+            df_St = df_D.iloc[:,0:1] - df2.iloc[:,0:1]
+            df_St.columns = [fid]
+            proj_df = pd.concat([proj_df, df_St], axis=1)
+        return proj_df
+
+    def previous_yr_pct(self, tmp_cube, most_recent_year, most_recent_pct):
+        dollar_df = tmp_cube.minor_xs(most_recent_year)
+        pct_df = tmp_cube.minor_xs(most_recent_pct)
+        yrly_proj = dollar_df * pct_df
+        return yrly_proj
 
     def build_projections_cube(self):
         logger.error("Enter")
@@ -91,11 +143,26 @@ class MasterProspectList:
             qtrly_cube = qtrly_cube[:,:,0:4]
 
             # TODO: highly suspect in future
+            most_recent_year = '2016'
+            prev_year = int(most_recent_year) - 1
+            most_recent_pct = most_recent_year + '.' + str(prev_year)
+            most_distant_year = '2013'
+            mult_yr_pct = most_recent_year + '.' + most_distant_year
             tmp_cube = yrly_cube[proj_fid_list]
-            dollar_df = tmp_cube.minor_xs('2016')
-            pct_df = tmp_cube.minor_xs('2016.2015')
-            yrly_proj = dollar_df * pct_df
+            a = 0.9
+            period_dim = tmp_cube.shape[2]/2
+            proj_dict = {}
+            yrly_proj = None
+#            yrly_proj = self.single_exp_smooth(tmp_cube, a, period_dim)
+            yrly_proj = self.double_exp_smooth(tmp_cube, period_dim)
+
+#            yrly_proj = self.previous_yr_pct(tmp_cube, most_recent_year, most_recent_pct)
+
             self.yrly_proj_dict[bt_tag] = yrly_proj
+
+#            multi_yr_pct_df = tmp_cube.minor_xs(mult_yr_pct)
+#            weight_factor = 0.90
+#            yrly_proj = (dollar_df * pct_df * weight_factor) + (dollar_df * multi_yr_pct_df * (1.0 - weight_factor))
 
 
             df_dict = {}
@@ -149,13 +216,22 @@ class MasterProspectList:
         for bt_tag, df in self.yrly_proj_dict.iteritems():
             try:
                 bt = self.business_types[bt_tag]
+                proj_fid_list = self.template_obj.get_display_fid_list(Assets_tag, bt_tag, YEARLY_IDX, CALCULATE_PROJECTION)
+                asset_cube = bt.period_types[YEARLY_IDX].data_cube[proj_fid_list]
+                asset_df = asset_cube.minor_xs('2016')
                 group_numbers = df.index.tolist()
+
                 group_names = bt.get_group_names(group_numbers)
                 group_names = [[i] for i in group_names]
+
+#                group_numbers = [[i] for i in group_numbers]
+                asset_df = asset_df.ix[group_numbers]
                 label_cell = 'A' + str(line_no)
-                data_cell = 'B' + str(line_no)
+                asset_cell = 'B' + str(line_no)
+                data_cell = 'G' + str(line_no)
                 sheet.range(label_cell).value = group_names
-                sheet.range(data_cell).options(index=False, header=False,).value = df
+                sheet.range(asset_cell).options(index=False, header=False,).value = asset_df
+                sheet.range(data_cell).options(index=False, header=False,).value = df.iloc[:,5:]
                 line_no += df.shape[0]
             except:
                 pass
