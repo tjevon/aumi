@@ -499,7 +499,7 @@ def create_tearsheets():
     global companies
 
 #    xl_wb = xw.Book.caller()
-    xl_wb = xw.Book(r'C:\Users\tjevon\Dropbox\code\sandbox\aumi\xl\TearSheet_py2.xlsm')
+    xl_wb = xw.Book(r'C:\Users\tjevon\Dropbox\code\sandbox\aumi\xl\TearSheet_py.xlsm')
 
     # findout what sheets are already open in the workbook
     available_sheets = []
