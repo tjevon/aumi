@@ -117,11 +117,10 @@ class TemplateWorkBook(object):
         template_sheet = self.get_template_sheet(tag)
         range_info = self.template_section_ranges[tag]
         display_filter_col = self.template_BT_cols[bt_tag][DISPLAY_IDX]
-        cells = display_filter_col + str(range_info[1]+offset) + ':' + \
-                display_filter_col + str(range_info[2])
+        cells = display_filter_col + str(range_info[1] + offset) + ':' + display_filter_col + str(range_info[2])
         filters = template_sheet.range(cells).options(ndim=2).value
         filters = [item for sublist in filters for item in sublist]
-        filters = [0 if x == None else x for x in filters]
+        filters = [0 if x is None else x for x in filters]
         filters = map(int, filters)
         rv = []
         for filter_cell, x in zip(filters, range(len(filters))):
@@ -141,16 +140,14 @@ class TemplateWorkBook(object):
         range_info = self.template_section_ranges[tag]
 
         display_filter_col = self.template_BT_cols[bt_tag][DISPLAY_IDX]
-        filter_range = display_filter_col + str(range_info[1]+offset) + ':' + \
-                       display_filter_col + str(range_info[2])
+        filter_range = display_filter_col + str(range_info[1]+offset) + ':' + display_filter_col + str(range_info[2])
         filters = template_sheet.range(filter_range).options(ndim=2).value
         filters = [item for sublist in filters for item in sublist]
-        filters = [0 if x == None else x for x in filters]
+        filters = [0 if x is None else x for x in filters]
         filters = map(int, filters)
 
         proj_type_col = self.QTRLY_PROJECTION_TYPE_COL
-        proj_cat_range = proj_type_col + str(range_info[1]+offset) + ':' + \
-                       proj_type_col + str(range_info[2])
+        proj_cat_range = proj_type_col + str(range_info[1]+offset) + ':' + proj_type_col + str(range_info[2])
         cats = template_sheet.range(proj_cat_range).options(ndim=2).value
 
         proj_dict = {}
@@ -161,4 +158,3 @@ class TemplateWorkBook(object):
                     proj_dict[to_filter[x]] = cats[x][0]
                     fid_list.append(to_filter[x])
         return fid_list, proj_dict
-

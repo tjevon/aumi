@@ -1,6 +1,5 @@
 from __future__ import print_function
-import os
-from AMB_defines import *
+import numpy as np
 from PeriodType import *
 from collections import defaultdict
 
@@ -11,7 +10,7 @@ class BusinessType(object):
     """Base class for PC, Life, Health"""
 
     def __init__(self, bt_tag, template_obj):
-        self.period_types = {YEARLY_IDX:None, QUARTERLY_IDX:None}
+        self.period_types = {YEARLY_IDX: None, QUARTERLY_IDX: None}
         self.bt_tag = bt_tag
         self.company_to_grp = {}
         self.group_to_company = defaultdict(list)
@@ -23,16 +22,17 @@ class BusinessType(object):
         self.period_types[QUARTERLY_IDX] = PeriodType(self, QUARTERLY_IDX, template_obj)
 
         return
-    def get_group_names(self,group_numbers):
+
+    def get_group_names(self, group_numbers):
         df = self.company_info_df.ix[group_numbers]
         group_names = df['CO00231'].tolist()
         return group_names
 
-    def get_company_info(self,y_or_q):
+    def get_company_info(self, y_or_q):
         amb_numbers = list(self.period_types[y_or_q].grp_unaf)
         df = self.company_info_df.ix[amb_numbers]
         group_info_list = df['CO00231'].tolist()
-        group_info_dict = dict(zip(amb_numbers,group_info_list))
+        group_info_dict = dict(zip(amb_numbers, group_info_list))
         return group_info_dict
 
     def build_company_to_grp(self):
@@ -80,22 +80,19 @@ class BusinessType(object):
 #        my_tuple_df = df[[amb_number, group_fid]].drop(['AMB#'])
         for idx, row in df_map.iterrows():
             self.company_to_grp[row[0]] = row[1]
-        for k,v in self.company_to_grp.iteritems():
+        for k, v in self.company_to_grp.items():
             if v == '000000':
                 self.group_to_company[k].append(k)
             else:
                 self.group_to_company[v].append(k)
 
 #        self.period_types[QUARTERLY_IDX].set_group_to_company(self.group_to_company)
-        df_map = None
-        df_grp = None
 
         return
 
     def get_bt_tag(self):
         return self.bt_tag
 
-    # def get_specialty_cube(self, fids):
-    #     cube = self.data_cube[fids]
-    #     return cube
-
+# def get_specialty_cube(self, fids):
+#     cube = self.data_cube[fids]
+#     return cube

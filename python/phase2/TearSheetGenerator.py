@@ -21,7 +21,7 @@ class TearSheetGenerator:
 
         logger.debug("Leave")
 
-    def get_target_workbook(self ):
+    def get_target_workbook(self):
         output_data_dir = DATA_DIR + OUTPUT_DIR
         workbook_file = output_data_dir + "\\" + TARGET_FILENAME
         try:
@@ -38,8 +38,6 @@ class TearSheetGenerator:
             logger.error("Pandas ExcelWriter error: %s", workbook_file)
             pass
         self.target_wb.app.calculation = 'manual'
-#        for i in self.target_wb.sheets:
-#            i.clear_contents()
 
     def get_target_worksheet(self, sheet_name):
         target_sheet = self.target_wb.sheets(sheet_name)
@@ -59,7 +57,7 @@ class TearSheetGenerator:
         for entry in sheet_list:
             logger.error("Tag %s Name %s", bt_tag, entry)
             entry_sheet = entry[:30] if len(entry) > 30 else entry
-            entry_sheet = entry_sheet.translate(None,"".join(BAD_CHAR))
+            entry_sheet = entry_sheet.translate(None, "".join(BAD_CHAR))
 
             if entry_sheet not in available_sheets:
                 if y_or_q == QUARTERLY_IDX:
@@ -75,7 +73,6 @@ class TearSheetGenerator:
                     self.target_wb.sheets(entry_sheet).range('A3').value = entry
 
     def build_tearsheets(self, company_dict, mpl, y_or_q):
-        line_no = 4
         if PC_tag in company_dict and company_dict[PC_tag] is not None:
             self.add_xlsheets(company_dict[PC_tag].values(), PC_tag, y_or_q)
             self.ts_formatter.create_tearsheets(company_dict[PC_tag], PC_tag, mpl, y_or_q)

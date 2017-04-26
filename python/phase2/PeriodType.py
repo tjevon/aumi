@@ -1,9 +1,5 @@
 from __future__ import print_function
-import os
 from AMB_defines import *
-import numpy as np
-import xlwings as xw
-
 
 logger = logging.getLogger('twolane')
 
@@ -18,8 +14,8 @@ class PeriodType(object):
         self.group_to_company = bt_obj.group_to_company
 
         if self.period_idx == YEARLY_IDX:
-#            self.desired_periods = ['2016', '2015', '2014', '2013', '2012', '2011',
-#                                    '2010', '2009', '2008', '2007', '2006']
+            # self.desired_periods = ['2016', '2015', '2014', '2013', '2012', '2011',
+            #                         '2010', '2009', '2008', '2007', '2006']
             self.desired_periods = ['2016', '2015', '2014', '2013']
         self.avail_periods = []
         self.grp_unaf = set()
@@ -32,7 +28,7 @@ class PeriodType(object):
             csv_data_dir = DATA_DIR + POSITIONS_DIR
             file_dict = PeriodType.get_file_dict(csv_data_dir)
             if self.bt_tag in file_dict:
-                self.position_cube = self.build_position_cube(csv_data_dir,file_dict[self.bt_tag])
+                self.position_cube = self.build_position_cube(csv_data_dir, file_dict[self.bt_tag])
 
         if self.period_idx == YEARLY_IDX:
             csv_data_dir = DATA_DIR + YEARLY_DIR
@@ -42,7 +38,7 @@ class PeriodType(object):
             return
         file_dict = self.get_file_dict(csv_data_dir)
         if self.bt_tag in file_dict:
-            self.construct_data_cube(csv_data_dir,file_dict[self.bt_tag], template_obj)
+            self.construct_data_cube(csv_data_dir, file_dict[self.bt_tag], template_obj)
         return
 
     @staticmethod
@@ -57,7 +53,7 @@ class PeriodType(object):
     def create_fid_collection(fid_dict, avail_periods):
         num_periods = len(avail_periods)
         fid_collection_dict = {}
-        for key, fid in fid_dict.iteritems():
+        for key, fid in fid_dict.items():
             next_entry = ["" for x in range(num_periods)]
             tmp = fid
             if tmp is None or tmp == u'' or tmp == u' ':
@@ -148,7 +144,7 @@ class PeriodType(object):
             df_dict = {}
             fid_dict = template_wb.get_full_fid_list(tag, self.get_bt_tag(), y_or_q)[1]
             fid_collection_dict = self.create_fid_collection(fid_dict, self.avail_periods)
-            for key, fids in fid_collection_dict.iteritems():
+            for key, fids in fid_collection_dict.items():
                 if fids[0] == '' or fids[0] == 'XXX':
                     continue
                 if fids[0].find('AI') != -1:
@@ -187,7 +183,8 @@ class PeriodType(object):
                 cube_list = [self.data_cube, cube]
                 self.data_cube = pd.concat(cube_list, axis=0)
         if y_or_q == YEARLY_IDX:
-            self.data_cube = do_all_calculations(template_wb, self.section_map, self.data_cube, self.position_cube, self.desired_periods)
+            self.data_cube = do_all_calculations(template_wb, self.section_map, self.data_cube,
+                                                 self.position_cube, self.desired_periods)
         self.data_cube = self.calc_pct_change(self.data_cube)
 
         self.raw_df = None
@@ -277,7 +274,7 @@ class PeriodType(object):
         df = df.loc[df[lineno] != '99999']
 
         empty_groups = 0
-        for grp, companies in self.group_to_company.iteritems():
+        for grp, companies in self.group_to_company.items():
             df_grp = df[df['AMB#'].isin(companies)]
             if df_grp.size == 0:
                 empty_groups += 1
@@ -286,10 +283,9 @@ class PeriodType(object):
             products_owned[grp] = df_grp
             pass
         logger.error("Empty group count %d: ", empty_groups)
-        df = None
         return products_owned
 
-    def order_file_list(self,file_list):
+    def order_file_list(self, file_list):
         ba_files = [x for x in file_list if x.find('_BA_') != -1]
         file_list = [x for x in file_list if x not in ba_files]
         bonds_owned_list = [x for x in file_list if x.find('Bonds_Owned') != -1]
@@ -298,12 +294,13 @@ class PeriodType(object):
         stocks_owned_list = stocks_owned_list[::-1]
         acq_list = [x for x in file_list if x.find('Acquired') != -1]
         disp_list = [x for x in file_list if x.find('Disposed') != -1]
-        if self.file_checks(bonds_owned_list, stocks_owned_list, acq_list, disp_list) == False:
+        if self.file_checks(bonds_owned_list, stocks_owned_list, acq_list, disp_list) is False:
             logger.fatal("Please check to make sure all needed files are available")
             exit()
         return [bonds_owned_list, stocks_owned_list, acq_list, disp_list]
 
-    def file_checks(self, bo_list, so_list, a_list, d_list):
+    @staticmethod
+    def file_checks(bo_list, so_list, a_list, d_list):
         bo_list = sorted(bo_list)
         so_list = sorted(so_list)
         a_list = sorted(a_list)
@@ -319,7 +316,7 @@ class PeriodType(object):
             logger.error("Number of Acquired files %d differs from Disposed files %d",
                          len(a_list), len(d_list))
             return False
-        for i in range(0,len(bo_list)):
+        for i in range(0, len(bo_list)):
             idx = bo_list[i].find('.csv')
             if idx == -1:
                 logger.error("Bonds Owned not a .csv file")
@@ -336,48 +333,11 @@ class PeriodType(object):
                 return False
         return True
 
-    def create_slice(self, b_df_dict, s_df_dict, year):
-        sub_total_dict = {}
-        pos_dict = {}
-        pos_df = None
-        high_level_sub_tot = [5,10,17,24,31,38,48,55]
-        count = 0
-        for grp, df_grp in b_df_dict.iteritems():
-            sub_df = df_grp.loc[df_grp['IB00050'].isin(['99999'])]
-            pos_df = df_grp.loc[~df_grp['IB00050'].isin(['99999'])]
-            sub_total_dict[grp] = sub_df
-            pos_dict[grp] = pos_df
-            sub_df = sub_df[['AMB#','IB00036','IB00049']].astype(int)
-            pos_df = pos_df[['AMB#','IB00036','IB00049']].astype(int)
-            gb1 = pos_df.groupby(by=['IB00049'])
-            gb2 = sub_df.groupby(by=['IB00049'])
-            gb1s = gb1['IB00036'].sum()
-            gb2s = gb2['IB00036'].sum()
-            #            gb1 = pos_df.groupby(by=['IB00049'])['IB00036'].sum()
-            #            gb2 = sub_df.groupby(by=['IB00049'])['IB00036'].sum()
-#            for i in range(1,53):
-#                gb1 = pos_df.loc(pos_df['IB00049'] == str(i))
-#                gb2 = sub_df.loc(sub_df['IB00049'] == str(i))
-#                gb1 = pos_df.groupby(by=['IB00049'])['IB00036'].sum()
-#                gb2 = sub_df.groupby(by=['IB00049'])['IB00036'].sum()
-#                i_chunck = pos_df[pos_df['IB00049'].isin([str(i)])]
-#                pos_tot = i_chunck
-#                count += 1
-            pass
-        return
-
     def build_position_cube(self, csv_data_dir, file_list):
-        qtrly_acq_slices = {}
         segment_list = self.order_file_list(file_list)
 
         year_dict = {}
-        bonds_owned_df = None
-        positions_acquired = {}
-        owned_count = None
-        acq_count = None
-        for b, s in zip(segment_list[0],segment_list[1]):
-            bonds_owned_dict = {}
-            stocks_owned_dict = {}
+        for b, s in zip(segment_list[0], segment_list[1]):
             if self.period_idx == YEARLY_IDX:
                 if b.find("EOY") == -1:
                     continue
@@ -385,32 +345,9 @@ class PeriodType(object):
             year = b[idx-4:idx]
 
             csv_filename = csv_data_dir + "\\" + b
-            bonds_owned_dict = self.build_df_dict(csv_filename,5, year, 'IB00019', 'IB00020','IB00050')
+            bonds_owned_dict = self.build_df_dict(csv_filename, 5, year, 'IB00019', 'IB00020', 'IB00050')
             csv_filename = csv_data_dir + "\\" + s
-            stocks_owned_dict = self.build_df_dict(csv_filename,6, year, 'IS00019', 'IS00020', 'IS00050') #            self.create_slice(bonds_owned_dict, stocks_owned_dict, year)
-            # wb = xw.Book()
-            # count = 0
-            # for co, positions in bonds_owned_dict.iteritems():
-            #     sht = wb.sheets.add(co + "_B")
-            #     sht.range('A1').value = positions
-            #     count += 1
-            #     if count > 5:
-            #         break
-            # count = 0
-            # for co, positions in stocks_owned_dict.iteritems():
-            #     sht = wb.sheets.add(co + "_S")
-            #     sht.range('A1').value = positions
-            #     count += 1
-            #     if count > 5:
-            #         break
+            stocks_owned_dict = self.build_df_dict(csv_filename, 6, year, 'IS00019', 'IS00020', 'IS00050')
             year_dict[year] = (bonds_owned_dict, stocks_owned_dict)
-
             pass
-#        for filename in segment_list[2]:
-#            csv_filename = csv_data_dir + "\\" + filename
-#            rv = self.build_df_dict(csv_filename,5, 'J700001','J700002')
-#            positions_acquired_df = rv[1]
-#            acq_count = set(positions_acquired_df['cusip'].unique().tolist())
-#            already_owned = acq_count & owned_count
-#            pass
         return year_dict

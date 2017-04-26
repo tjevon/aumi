@@ -1,12 +1,27 @@
 from __future__ import print_function
 
 import numpy as np
-import itertools
-import string
-import re
 from AMB_defines import *
 
 logger = logging.getLogger('twolane')
+
+ADDRESS_FID =   'CO00030'
+CITY_FID =      'CO00033'
+STATE_FID =     'CO00034'
+ZIP_FID =       'CO00035'
+PHONE_FID =     'CO00020'
+WEBSITE_FID =   'CO00117'
+FAX_FID =       'CO00022'
+
+CIO_FID =       'CO00329'
+CFO_FID =       'CO00327'
+CEO_FID =       'CO00326'
+
+CIO_EMAIL_FID = 'CO00330'
+CFO_EMAIL_FID = 'CO00331'
+CEO_EMAIL_FID = 'CO00332'
+
+BUSINESS_FOCUS_FID = 'CO00179'
 
 
 class TearSheetFormatter(object):
@@ -40,31 +55,12 @@ class TearSheetFormatter(object):
         column_heading.append(tmp_str)
         return column_heading
 
-    def format_header_section(self,co_num, co_name, bt_tag, mpl):
-        ADDRESS_FID =   'CO00030'
-        ADDRESS2_FID =  'CO00031'
-        CITY_FID =      'CO00033'
-        STATE_FID =     'CO00034'
-        ZIP_FID =       'CO00035'
-        PHONE_FID =     'CO00020'
-        FAX_FID =       'CO00022'
-        WEBSITE_FID =   'CO00117'
-        FAX_FID =       'CO00022'
-
-        CIO_FID =       'CO00329'
-        CFO_FID =       'CO00327'
-        CEO_FID =       'CO00326'
-
-        CIO_EMAIL_FID = 'CO00330'
-        CFO_EMAIL_FID = 'CO00331'
-        CEO_EMAIL_FID = 'CO00332'
-
-        BUSINESS_FOCUS_FID = 'CO00179'
+    def format_header_section(self, co_num, co_name, bt_tag, mpl):
         target_sheet = co_name[:30] if len(co_name) > 30 else co_name
         target_sheet = target_sheet.translate(None, "".join(BAD_CHAR))
         target_sheet = self.target_wb.sheets(target_sheet)
 
-        comp_df = mpl.business_types[bt_tag].company_info_df.loc[co_num,:]
+        comp_df = mpl.business_types[bt_tag].company_info_df.loc[co_num, :]
         address = comp_df[ADDRESS_FID] + ' ' + comp_df[CITY_FID] + ', ' + comp_df[STATE_FID] + ' ' + comp_df[ZIP_FID]
 
         target_sheet.range('B4').value = address
@@ -82,9 +78,9 @@ class TearSheetFormatter(object):
         target_sheet.range('J6').value = comp_df[CIO_EMAIL_FID]
         return
 
-    def format_projections_section(self,co_num, co_name, bt_tag, mpl):
+    def format_projections_section(self, co_num, co_name, bt_tag, mpl):
 
-        proj_info = self.template_obj.get_projection_info( E10_tag, bt_tag, YEARLY_IDX, DISPLAY_PROJECTION)
+        proj_info = self.template_obj.get_projection_info(E10_tag, bt_tag, YEARLY_IDX, DISPLAY_PROJECTION)
         fids_with_spaces = proj_info[0]
         just_fids = filter(lambda a: a is not None, fids_with_spaces)
         just_fids = filter(lambda a: a != 'XXX', just_fids)
@@ -92,19 +88,19 @@ class TearSheetFormatter(object):
         qtrly_proj_cube = mpl.qtrly_proj_dict[bt_tag]
         full_qtrly_df = qtrly_proj_cube.major_xs(co_num).transpose()
         full_yrly_df = mpl.yrly_proj_dict[bt_tag]
-        full_yrly_df = full_yrly_df.loc[co_num,:]
+        full_yrly_df = full_yrly_df.loc[co_num, :]
 
         yrly_proj_df = full_yrly_df.loc[just_fids]
         qtrly_proj_df = full_qtrly_df.loc[just_fids, :]
         qtrly_proj_df = qtrly_proj_df.reindex(just_fids)
 
         data_df = mpl.business_types[bt_tag].period_types[YEARLY_IDX].get_df_including_pcts(co_num, just_fids)
-        data_df = data_df.iloc[:,0:1]
+        data_df = data_df.iloc[:, 0:1]
 
-        sec_df = pd.concat([data_df, qtrly_proj_df, yrly_proj_df],axis=1)
-        self.copy_df_to_xlsheet(sec_df, co_name, ('E',39))
+        sec_df = pd.concat([data_df, qtrly_proj_df, yrly_proj_df], axis=1)
+        self.copy_df_to_xlsheet(sec_df, co_name, ('E', 39))
 
-        proj_info = self.template_obj.get_projection_info( E07_tag, bt_tag, YEARLY_IDX, DISPLAY_PROJECTION)
+        proj_info = self.template_obj.get_projection_info(E07_tag, bt_tag, YEARLY_IDX, DISPLAY_PROJECTION)
         fids_with_spaces = proj_info[0]
         just_fids = filter(lambda a: a is not None, fids_with_spaces)
         just_fids = filter(lambda a: a != 'XXX', just_fids)
@@ -114,16 +110,16 @@ class TearSheetFormatter(object):
         qtrly_proj_df = qtrly_proj_df.reindex(just_fids)
 
         data_df = mpl.business_types[bt_tag].period_types[YEARLY_IDX].get_df_including_pcts(co_num, just_fids)
-        data_df = data_df.iloc[:,0:1]
+        data_df = data_df.iloc[:, 0:1]
 
-        sec_df = pd.concat([data_df, qtrly_proj_df, yrly_proj_df],axis=1)
-        self.copy_df_to_xlsheet(sec_df, co_name, ('E',58))
+        sec_df = pd.concat([data_df, qtrly_proj_df, yrly_proj_df], axis=1)
+        self.copy_df_to_xlsheet(sec_df, co_name, ('E', 58))
         return sec_df
 
         pass
 
     def create_tearsheets(self, sheet_list, bt_tag, mpl, y_or_q):
-        for co_num, co_name in sheet_list.iteritems():
+        for co_num, co_name in sheet_list.items():
             for tag in mpl.business_types[bt_tag].period_types[y_or_q].complete_tag_list:
                 self.format_section(co_num, co_name, bt_tag, mpl, tag, y_or_q)
             self.format_projections_section(co_num, co_name, bt_tag, mpl)
@@ -134,7 +130,7 @@ class TearSheetFormatter(object):
         label_info = self.template_obj.get_row_labels(tag, bus_type_tag)
         return label_info
 
-    def build_df_for_display(self, co, tag, bus_type, y_or_q, which_filter=DO_NOT_DISPLAY):
+    def build_df_for_display(self, co, tag, bus_type, y_or_q):
         template_fids_with_spaces = self.template_obj.get_display_fid_list(tag, bus_type.get_bt_tag(),
                                                                            y_or_q, DISPLAY_SECTION)
         just_fids = filter(lambda a: a is not None, template_fids_with_spaces)
@@ -173,7 +169,7 @@ class TearSheetFormatter(object):
 
         row_labels = label_info[0]
         row_label_col = label_info[1]
-        if row_label_col == None:
+        if row_label_col is None:
             return
         data_column = label_info[2]
         row = int(label_info[3])
@@ -195,7 +191,7 @@ class TearSheetFormatter(object):
     def copy_labels_to_xlsheet(self, values, co, cell_info):
         cell = cell_info[0] + str(cell_info[1])
         target_sheet = co[:30] if len(co) > 30 else co
-        target_sheet = target_sheet.translate(None,"".join(BAD_CHAR))
+        target_sheet = target_sheet.translate(None, "".join(BAD_CHAR))
         target_sheet = self.target_wb.sheets(target_sheet)
         target_sheet.range(cell).value = values
 #        target_sheet.range('A1:A500').autofit()
@@ -203,11 +199,9 @@ class TearSheetFormatter(object):
 
     def copy_df_to_xlsheet(self, df, co, cell_info):
         target_sheet = co[:30] if len(co) > 30 else co
-        target_sheet = target_sheet.translate(None,"".join(BAD_CHAR))
+        target_sheet = target_sheet.translate(None, "".join(BAD_CHAR))
         target_sheet = self.target_wb.sheets(target_sheet)
         df = df.replace([np.inf, -np.inf], np.nan)
         cell = cell_info[0] + str(cell_info[1])
         target_sheet.range(cell).options(dropna=False, index=False, header=False).value = df
         return
-
-

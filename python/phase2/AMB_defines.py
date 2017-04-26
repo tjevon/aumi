@@ -30,7 +30,7 @@ LIFE_tag    = "LIFE"
 HEALTH_tag  = "HEALTH"
 
 STOCK_PRICE_FID = 'IS00037'
-BOND_PRICE_FID = 'IB00034'
+BOND_PRICE_FID  = 'IB00034'
 
 BUSINESS_TYPES = [PC_tag, LIFE_tag, HEALTH_tag]
 YEARLY_IDX = 0
@@ -43,8 +43,6 @@ COMMON_TEMPLATE_TAGS = [Assets_tag, E10_tag, E07_tag, CashFlow_tag, SI01_tag, SI
 PC_TEMPLATE_TAGS = [SoI_tag]
 LIFE_TEMPLATE_TAGS = [SoO_tag]
 HEALTH_TEMPLATE_TAGS = [SoR_tag]
-# PC_TEMPLATE_TAGS = [SoI_tag, IRIS1_tag ]
-# LIFE_TEMPLATE_TAGS = [SoO_tag, IRIS2_tag]
 
 COMMON_QUARTERLY_TAGS = [Assets_tag, CashFlow_tag]
 PC_QUARTERLY_TAGS = [SoI_tag]
@@ -52,23 +50,15 @@ LIFE_QUARTERLY_TAGS = [SoO_tag]
 HEALTH_QUARTERLY_TAGS = [SoR_tag]
 
 BUSINESS_TYPE_TAGS = {YEARLY_IDX: {PC_tag: COMMON_TEMPLATE_TAGS+PC_TEMPLATE_TAGS,
-                      LIFE_tag: COMMON_TEMPLATE_TAGS+LIFE_TEMPLATE_TAGS,
-                      HEALTH_tag: COMMON_TEMPLATE_TAGS+HEALTH_TEMPLATE_TAGS},
+                                   LIFE_tag: COMMON_TEMPLATE_TAGS+LIFE_TEMPLATE_TAGS,
+                                   HEALTH_tag: COMMON_TEMPLATE_TAGS+HEALTH_TEMPLATE_TAGS},
                       QUARTERLY_IDX: {PC_tag: PC_QUARTERLY_TAGS+COMMON_QUARTERLY_TAGS,
                                       LIFE_tag: LIFE_QUARTERLY_TAGS+COMMON_QUARTERLY_TAGS,
                                       HEALTH_tag: HEALTH_QUARTERLY_TAGS+COMMON_QUARTERLY_TAGS}}
 
 TS_TEMPLATES = {PC_tag: 'PC_Template', LIFE_tag: 'LIFE_template', HEALTH_tag: 'HEALTH_template'}
 
-PERCENT_FORMATS = [IRIS1_tag, IRIS2_tag]
-
 DATA_DIR = os.getenv('DATAPATH', './')
-
-# YEARLY_DIR = "AAA"
-# QTRLY_DIR = "AAA_Q"
-# COMPANY_MAP_DIR = "AAA_company_mapping"
-# COMPANY_INFO_DIR = "AAA_company_info"
-
 
 # YEARLY_DIR = "test_data"
 # QTRLY_DIR = "test_qtrly"
@@ -87,7 +77,6 @@ POSITIONS_DIR = "inv_unaf_af_0"
 TEMPLATE_DIR = "templates"
 OUTPUT_DIR = "output"
 
-
 TEMPLATE_FILENAME = "TearSheet_Template.xlsx"
 
 TARGET_FILENAME = "TearSheet_Output.xlsx"
@@ -99,13 +88,18 @@ DISPLAY_SECTION =       0x01
 DISPLAY_PROJECTION =    0x02
 CALCULATE_PROJECTION =  0x04
 
+MODEL_PREV_YEAR = 1
+MODEL_SGL_EXP = 2
+MODEL_DBL_EXP = 3
+
+
 def do_all_calculations(template_wb, section_map, data_cube, position_cube, desired_periods):
     ai_info = []
     bi_info = []
     ci_info = []
     vi_info = []
     zi_info = []
-    for tag, section in section_map.iteritems():
+    for tag, section in section_map.items():
         ai_info.append((tag, section.comp_dict_ai, section.fid_collection_dict))
         bi_info.append((tag, section.comp_dict_bi, section.fid_collection_dict))
         ci_info.append((tag, section.comp_dict_ci, section.fid_collection_dict))
@@ -125,18 +119,17 @@ def do_calculation(calc, template_wb, data_cube, section_map, position_cube, des
     comp_dict = calc[1]
     giveup = False
     fid_collection_dict = calc[2]
-    slice1 = None
-    for key, fids in comp_dict.iteritems():
+    for key, fids in comp_dict.items():
         cell = key.replace('A', CALC_COL)
         formula = template_wb.get_formula(tag, cell)
-        formula = formula.replace('$','')
+        formula = formula.replace('$', '')
         func_idx = formula.find('(')
         args_idx = formula.rfind(')')
         func_key = formula[:func_idx]
         args_str = formula[func_idx + 1:args_idx]
         args = args_str.split(",")
         if func_key == AI_SET:
-            slice1 = func_dict[func_key](args,data_cube)
+            slice1 = func_dict[func_key](args, data_cube)
         else:
             cell_info = args.pop(0)
             fid1 = lookup_fid(section_map, fid_collection_dict, cell_info)
@@ -145,7 +138,7 @@ def do_calculation(calc, template_wb, data_cube, section_map, position_cube, des
 
             slice1 = data_cube[fid1]
             if func_key in POSITION_CALCS:
-                slice1 = func_dict[func_key](tag, args, position_cube, slice1, desired_periods)
+                slice1 = func_dict[func_key](args, position_cube, slice1, desired_periods)
             elif func_key == AI_2YR_AVE:
                 slice1 = func_dict[func_key](slice1)
             elif func_key == AI_SET_DF:
@@ -183,24 +176,27 @@ def lookup_fid(section_map, fid_collection_dict, arg):
             fid = section_fid_collection_dict[tmp_arg][0]
     return fid
 
-def slice_set(args,cube):
+
+def slice_set(args, cube):
     tmp_1 = cube.axes[1]
     tmp_2 = cube.axes[2]
     rv_slice = pd.DataFrame(float(args[0]), index=tmp_1, columns=tmp_2)
     return rv_slice
 
+
 def two_year_ave(slice1):
     df = slice1
     df = df[df.columns[::-1]]  # reverse
-    df = df.rolling(2,axis=1)
+    df = df.rolling(2, axis=1)
     df = df.mean()
     rv_slice = df[df.columns[::-1]]  # reverse
-
     return rv_slice
+
 
 def slice_sum(slice1, slice2):
     rv_slice = slice1 + slice2
     return rv_slice
+
 
 def slice_set_df(slice1):
     rv_slice = slice1
@@ -221,8 +217,9 @@ def slice_mult(slice1, slice2):
     rv_slice = slice1 * slice2
     return rv_slice
 
-def bond_sum_help(tag, args, position_cube, desired_periods, naic_levels, region):
-    locale.setlocale(locale.LC_NUMERIC,'')
+
+def bond_sum_help(args, position_cube, desired_periods, naic_levels, region):
+    locale.setlocale(locale.LC_NUMERIC, '')
     df_list = []
     for period in desired_periods:
         if period in position_cube:
@@ -230,8 +227,8 @@ def bond_sum_help(tag, args, position_cube, desired_periods, naic_levels, region
             keys = list(bond_dict.keys())
             sum_list = []
             period_dict = {}
-            for grp, df in bond_dict.iteritems():
-                tmp_df = df
+            for grp, df in bond_dict.items():
+                tmp_df = df.copy(deep=True)
                 if region == 'US':
                     tmp_df = tmp_df.loc[df['IB00031'] == '...']
                 elif region == 'OTHER':
@@ -240,14 +237,14 @@ def bond_sum_help(tag, args, position_cube, desired_periods, naic_levels, region
                 tmp_df['naic_level'] = tmp_df['IB00033'].apply(lambda x: x[:1])
                 tmp_df = tmp_df.loc[tmp_df['naic_level'].isin(naic_levels)]
                 tmp_df[BOND_PRICE_FID] = tmp_df[BOND_PRICE_FID].apply(locale.atof)
-                sum = tmp_df[BOND_PRICE_FID].sum()/1000
-                sum_list.append(sum)
+                price_sum = tmp_df[BOND_PRICE_FID].sum()/1000
+                sum_list.append(price_sum)
             period_dict[period] = sum_list
             df = pd.DataFrame.from_dict(period_dict)
             df.index = keys
             df_list.append(df)
         else:
-            tmp_dict = {period:[0]}
+            tmp_dict = {period: [0]}
             df = pd.DataFrame.from_dict(tmp_dict)
             df.index = ['Empty']
             df_list.append(df)
@@ -255,43 +252,43 @@ def bond_sum_help(tag, args, position_cube, desired_periods, naic_levels, region
     df = pd.concat(df_list, axis=1)
     if 'Empty' in df.index:
         df = df.drop('Empty')
-    df.fillna(0,inplace=True)
+    df.fillna(0, inplace=True)
     df = df.astype(long)
     return df
 
+
 def bond_reflection(slice1, slice2):
     slice2 = slice2.loc[slice1.index]
-    slice3 = slice2.div(slice1,axis=0)
-    slice3 = slice3.iloc[:,0:2].mean(axis=1)
-    slice3 = slice1.iloc[:,2:4].mul(slice3,axis=0)
-    slice3 = pd.concat([slice2.iloc[:,0:2], slice3], axis=1)
+    slice3 = slice2.div(slice1, axis=0)
+    slice3 = slice3.iloc[:, 0:2].mean(axis=1)
+    slice3 = slice1.iloc[:, 2:4].mul(slice3, axis=0)
+    slice3 = pd.concat([slice2.iloc[:, 0:2], slice3], axis=1)
     return slice3
 
-def ig_sum(tag, args, position_cube, slice1, desired_periods):
+
+def ig_sum(args, position_cube, slice1, desired_periods):
     region = args.pop(0)
-    slice2 = bond_sum_help(tag,args,position_cube, desired_periods,['1','2'], region)
+    slice2 = bond_sum_help(args, position_cube, desired_periods, ['1', '2'], region)
     slice3 = bond_reflection(slice1, slice2)
     return slice3
 
-def hy_sum(tag, args, position_cube, slice1, desired_periods):
+
+def hy_sum(args, position_cube, slice1, desired_periods):
     region = args.pop(0)
-    slice2 = bond_sum_help(tag,args,position_cube, desired_periods,['3','4','5','6'], region)
+    slice2 = bond_sum_help(args, position_cube, desired_periods, ['3', '4', '5', '6'], region)
     slice3 = bond_reflection(slice1, slice2)
     return slice3
 
-#def equity_sum(tag, args, position_cube, data_cube, desired_periods):
-#    strings = []
-#    return equity_sum_help(tag, args, position_cube, data_cube, desired_periods, strings)
 
-def equity_etf_sum(tag, args, position_cube, slice1, desired_periods):
+def equity_etf_sum(args, position_cube, slice1, desired_periods):
     strings = [' ETF ', 'SPDR', 'PROSHARES', 'POWERSHARES', 'Exchange Traded F', 'EXCHANGE_TRADED F', 'ISHARE']
-    slice2 = equity_sum_help(tag, args, position_cube, desired_periods, strings)
+    slice2 = equity_sum_help(args, position_cube, desired_periods, strings)
     slice3 = bond_reflection(slice1, slice2)
     return slice3
 
 
-def equity_sum_help(tag, args, position_cube, desired_periods, strings):
-    locale.setlocale(locale.LC_NUMERIC,'')
+def equity_sum_help(args, position_cube, desired_periods, strings):
+    locale.setlocale(locale.LC_NUMERIC, '')
     df_list = []
     for period in desired_periods:
         if period in position_cube:
@@ -299,24 +296,24 @@ def equity_sum_help(tag, args, position_cube, desired_periods, strings):
             keys = list(stock_dict.keys())
             sum_list = []
             period_dict = {}
-            for grp, df in stock_dict.iteritems():
+            for grp, df in stock_dict.items():
                 tmp_df = df
                 tmp_df = tmp_df.loc[df['IS00049'].isin(args)]
                 if len(strings) > 0:
                     tmp_df = tmp_df[(tmp_df['IS00018'].apply(lambda x: any(y in x for y in strings))) |
-                                     (tmp_df['IS00021'].apply(lambda x: any(y in x for y in strings))) ]
+                                    (tmp_df['IS00021'].apply(lambda x: any(y in x for y in strings)))]
                 if tmp_df.size == 0:
-                    sum = 0
+                    price_sum = 0
                 else:
                     tmp_df[STOCK_PRICE_FID] = tmp_df[STOCK_PRICE_FID].apply(locale.atof)
-                    sum = tmp_df[STOCK_PRICE_FID].sum()/1000
-                sum_list.append(sum)
+                    price_sum = tmp_df[STOCK_PRICE_FID].sum()/1000
+                sum_list.append(price_sum)
             period_dict[period] = sum_list
             df = pd.DataFrame.from_dict(period_dict)
             df.index = keys
             df_list.append(df)
         else:
-            tmp_dict = {period:[0]}
+            tmp_dict = {period: [0]}
             df = pd.DataFrame.from_dict(tmp_dict)
             df.index = ['Empty']
             df_list.append(df)
@@ -324,9 +321,10 @@ def equity_sum_help(tag, args, position_cube, desired_periods, strings):
     df = pd.concat(df_list, axis=1)
     if 'Empty' in df.index:
         df = df.drop('Empty')
-    df.fillna(0,inplace=True)
+    df.fillna(0, inplace=True)
     df = df.astype(long)
     return df
+
 
 AI_SUM = "=AI_SUM"
 AI_DIFF = "=AI_DIFF"
@@ -352,12 +350,12 @@ func_dict = {
     AI_DIV: slice_div,
     AI_IG: ig_sum,
     AI_HY: hy_sum,
-#    AI_EQ: equity_sum,
     AI_EQ_ETF: equity_etf_sum,
     AI_SET: slice_set,
     AI_SET_DF: slice_set_df,
     AI_2YR_AVE: two_year_ave
      }
+
 
 class Section(object):
     def __init__(self, tag, fid_collection_dict, comp_dict_ai, comp_dict_bi, comp_dict_ci,
