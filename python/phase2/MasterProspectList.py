@@ -39,8 +39,8 @@ class MasterProspectList:
 
     def build_business_types(self):
         self.business_types[PC_tag] = BusinessType(PC_tag, self.template_obj)
-        self.business_types[LIFE_tag] = BusinessType(LIFE_tag, self.template_obj)
-        self.business_types[HEALTH_tag] = BusinessType(HEALTH_tag, self.template_obj)
+#        self.business_types[LIFE_tag] = BusinessType(LIFE_tag, self.template_obj)
+#        self.business_types[HEALTH_tag] = BusinessType(HEALTH_tag, self.template_obj)
         return
 
     def single_exp_smooth(self, tmp_cube, a, period_dim):
@@ -60,8 +60,8 @@ class MasterProspectList:
         return proj_df
 
     def double_exp_smooth(self, tmp_cube, period_dim):
-        a = 0.7
-        g = 0.7
+        a = 0.95
+        g = 0.9
         proj_df = None
         # for each fid
         for fid, df in tmp_cube.iteritems():

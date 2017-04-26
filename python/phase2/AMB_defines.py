@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 import logging
 import os
 import locale
@@ -30,6 +29,9 @@ PC_tag      = "PC"
 LIFE_tag    = "LIFE"
 HEALTH_tag  = "HEALTH"
 
+STOCK_PRICE_FID = 'IS00037'
+BOND_PRICE_FID = 'IB00034'
+
 BUSINESS_TYPES = [PC_tag, LIFE_tag, HEALTH_tag]
 YEARLY_IDX = 0
 QUARTERLY_IDX = 1
@@ -41,56 +43,45 @@ COMMON_TEMPLATE_TAGS = [Assets_tag, E10_tag, E07_tag, CashFlow_tag, SI01_tag, SI
 PC_TEMPLATE_TAGS = [SoI_tag]
 LIFE_TEMPLATE_TAGS = [SoO_tag]
 HEALTH_TEMPLATE_TAGS = [SoR_tag]
-#PC_TEMPLATE_TAGS = [SoI_tag, IRIS1_tag ]
-#LIFE_TEMPLATE_TAGS = [SoO_tag, IRIS2_tag]
+# PC_TEMPLATE_TAGS = [SoI_tag, IRIS1_tag ]
+# LIFE_TEMPLATE_TAGS = [SoO_tag, IRIS2_tag]
 
 COMMON_QUARTERLY_TAGS = [Assets_tag, CashFlow_tag]
 PC_QUARTERLY_TAGS = [SoI_tag]
 LIFE_QUARTERLY_TAGS = [SoO_tag]
 HEALTH_QUARTERLY_TAGS = [SoR_tag]
 
-BUSINESS_TYPE_TAGS = {YEARLY_IDX:{PC_tag: COMMON_TEMPLATE_TAGS+PC_TEMPLATE_TAGS,
+BUSINESS_TYPE_TAGS = {YEARLY_IDX: {PC_tag: COMMON_TEMPLATE_TAGS+PC_TEMPLATE_TAGS,
                       LIFE_tag: COMMON_TEMPLATE_TAGS+LIFE_TEMPLATE_TAGS,
                       HEALTH_tag: COMMON_TEMPLATE_TAGS+HEALTH_TEMPLATE_TAGS},
-                      QUARTERLY_IDX:{PC_tag: PC_QUARTERLY_TAGS+COMMON_QUARTERLY_TAGS,
-                                     LIFE_tag: LIFE_QUARTERLY_TAGS+COMMON_QUARTERLY_TAGS,
-                                     HEALTH_tag: HEALTH_QUARTERLY_TAGS+COMMON_QUARTERLY_TAGS}}
+                      QUARTERLY_IDX: {PC_tag: PC_QUARTERLY_TAGS+COMMON_QUARTERLY_TAGS,
+                                      LIFE_tag: LIFE_QUARTERLY_TAGS+COMMON_QUARTERLY_TAGS,
+                                      HEALTH_tag: HEALTH_QUARTERLY_TAGS+COMMON_QUARTERLY_TAGS}}
 
-TS_TEMPLATES = {PC_tag:'PC_Template', LIFE_tag:'LIFE_template', HEALTH_tag:'HEALTH_template'}
+TS_TEMPLATES = {PC_tag: 'PC_Template', LIFE_tag: 'LIFE_template', HEALTH_tag: 'HEALTH_template'}
 
 PERCENT_FORMATS = [IRIS1_tag, IRIS2_tag]
 
 DATA_DIR = os.getenv('DATAPATH', './')
 
-#YEARLY_DIR = "AAA"
-#QTRLY_DIR = "AAA_Q"
-#COMPANY_MAP_DIR = "AAA_company_mapping"
-#COMPANY_INFO_DIR = "AAA_company_info"
+# YEARLY_DIR = "AAA"
+# QTRLY_DIR = "AAA_Q"
+# COMPANY_MAP_DIR = "AAA_company_mapping"
+# COMPANY_INFO_DIR = "AAA_company_info"
 
-#YEARLY_DIR = "test_data"
-#QTRLY_DIR = "test_qtrly"
-#YEARLY_DIR = "tmp"
-#QTRLY_DIR = "tmp_Q"
-#COMPANY_INFO_DIR = "tmp_company_info"
-#COMPANY_MAP_DIR = "test_mapping"
-#COMPANY_INFO_DIR = "test_company_info"
-#COMPANY_INFO_DIR = "2013_2016_5_company_info"
-#POSITIONS_DIR = "2015_2016_investments"
 
-#YEARLY_DIR = "allstate_data"
-#QTRLY_DIR = "allstate_qtrly"
-#COMPANY_MAP_DIR = "allstate_mapping"
-
-#YEARLY_DIR = "2006_2016"
-#QTRLY_DIR = "2016_qtrly"
+# YEARLY_DIR = "test_data"
+# QTRLY_DIR = "test_qtrly"
+# COMPANY_MAP_DIR = "test_mapping"
+# COMPANY_INFO_DIR = "test_company_info"
 
 YEARLY_DIR = "2013_2016_5_data"
 QTRLY_DIR = "2013_2016_5Q_data"
 COMPANY_INFO_DIR = "2013_2016_5_company_info"
 COMPANY_MAP_DIR = "2013_2016_5_company_mapping"
 
-#COMPANY_INFO_DIR = "company_info"
-#COMPANY_MAP_DIR = "company_mapping"
+# COMPANY_INFO_DIR = "company_info"
+# COMPANY_MAP_DIR = "company_mapping"
 POSITIONS_DIR = "inv_unaf_af_0"
 
 TEMPLATE_DIR = "templates"
@@ -248,8 +239,8 @@ def bond_sum_help(tag, args, position_cube, desired_periods, naic_levels, region
                 tmp_df = tmp_df.loc[df['IB00049'].isin(args)]
                 tmp_df['naic_level'] = tmp_df['IB00033'].apply(lambda x: x[:1])
                 tmp_df = tmp_df.loc[tmp_df['naic_level'].isin(naic_levels)]
-                tmp_df['IB00034'] = tmp_df['IB00034'].apply(locale.atof)
-                sum = tmp_df['IB00034'].sum()/1000
+                tmp_df[BOND_PRICE_FID] = tmp_df[BOND_PRICE_FID].apply(locale.atof)
+                sum = tmp_df[BOND_PRICE_FID].sum()/1000
                 sum_list.append(sum)
             period_dict[period] = sum_list
             df = pd.DataFrame.from_dict(period_dict)
@@ -298,6 +289,7 @@ def equity_etf_sum(tag, args, position_cube, slice1, desired_periods):
     slice3 = bond_reflection(slice1, slice2)
     return slice3
 
+
 def equity_sum_help(tag, args, position_cube, desired_periods, strings):
     locale.setlocale(locale.LC_NUMERIC,'')
     df_list = []
@@ -316,8 +308,8 @@ def equity_sum_help(tag, args, position_cube, desired_periods, strings):
                 if tmp_df.size == 0:
                     sum = 0
                 else:
-                    tmp_df['IS00037'] = tmp_df['IS00037'].apply(locale.atof)
-                    sum = tmp_df['IS00037'].sum()/1000
+                    tmp_df[STOCK_PRICE_FID] = tmp_df[STOCK_PRICE_FID].apply(locale.atof)
+                    sum = tmp_df[STOCK_PRICE_FID].sum()/1000
                 sum_list.append(sum)
             period_dict[period] = sum_list
             df = pd.DataFrame.from_dict(period_dict)
