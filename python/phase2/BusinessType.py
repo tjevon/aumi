@@ -18,20 +18,43 @@ class BusinessType(object):
 
         self.build_company_to_grp()
 
-        self.period_types[YEARLY_IDX] = PeriodType(self, YEARLY_IDX, template_obj)
         self.period_types[QUARTERLY_IDX] = PeriodType(self, QUARTERLY_IDX, template_obj)
+        self.period_types[YEARLY_IDX] = PeriodType(self, YEARLY_IDX, template_obj)
 
         return
 
+    def get_groups_owning_cusips(self, cusip_list):
+        cusip_dict = {}
+        for y_or_q, pt in self.period_types.items():
+            for yr, pos_tup in pt.position_cube.items():
+                bonds_owned = pos_tup[0]
+                for grp, grp_df in bonds_owned.items():
+                    df = grp_df.loc[grp_df['cusip'].isin(cusip_list)]
+                    if df.size != 0:
+                        cusip_dict[grp] = df
+                stocks_owned = pos_tup[1]
+                for grp, grp_df in stocks_owned.items():
+                    df = grp_df.loc[grp_df['cusip'].isin(cusip_list)]
+                    if df.size != 0:
+                        cusip_dict[grp] = df
+                        logger.error("grp: %s located %d positions", grp, df.shape[0])
+        return cusip_dict
+
+    def get_group_info_df(self, group_numbers):
+        df = self.company_info_df.loc[group_numbers, :]
+        group_info_df = df.loc[:, [COMPANY_NAME_FID, COMPANY_CITY_FID, COMPANY_STATE_FID]]
+        return group_info_df
+
     def get_group_names(self, group_numbers):
-        df = self.company_info_df.ix[group_numbers]
-        group_names = df['CO00231'].tolist()
+        df = self.company_info_df.loc[group_numbers, :]
+        test = df.loc[:, [COMPANY_NAME_FID, COMPANY_CITY_FID, COMPANY_STATE_FID]]
+        group_names = df[COMPANY_NAME_FID].tolist()
         return group_names
 
     def get_company_info(self, y_or_q):
         amb_numbers = list(self.period_types[y_or_q].grp_unaf)
-        df = self.company_info_df.ix[amb_numbers]
-        group_info_list = df['CO00231'].tolist()
+        df = self.company_info_df.loc[amb_numbers, :]
+        group_info_list = df[COMPANY_NAME_FID].tolist()
         group_info_dict = dict(zip(amb_numbers, group_info_list))
         return group_info_dict
 
@@ -45,19 +68,16 @@ class BusinessType(object):
         if len(file_list) > 1:
             logger.error("file_list length > 1")
             return
-        amb_number = 'CO00002'
-        group_fid = 'CO00023'
-        parent_fid = 'CO00169'
-        ultimate_fid = 'CO00170'
+        csv_data_dir = DATA_DIR + COMPANY_MAP_DIR
         csv_filename = csv_data_dir + "\\" + file_list[0]
         df_map = pd.read_csv(csv_filename, header=2, index_col=0, dtype='unicode', thousands=",")
-        df_map = df_map[[amb_number, group_fid, parent_fid, ultimate_fid]].drop(['AMB#'])
-        df_map[group_fid] = np.where(df_map[group_fid] == '000000', df_map[amb_number], df_map[group_fid])
+        df_map = df_map[[AMB_NUMBER, GROUP_FID, PARENT_FID, ULTIMATE_FID]].drop(['AMB#'])
+        df_map[GROUP_FID] = np.where(df_map[GROUP_FID] == '000000', df_map[AMB_NUMBER], df_map[GROUP_FID])
 
-        df_map[amb_number] = df_map[amb_number].apply(lambda x: x.zfill(6))
-        df_map[group_fid] = df_map[group_fid].apply(lambda x: x.zfill(6))
-        df_map[parent_fid] = df_map[parent_fid].apply(lambda x: x.zfill(6))
-        df_map[ultimate_fid] = df_map[ultimate_fid].apply(lambda x: x.zfill(6))
+        df_map[AMB_NUMBER] = df_map[AMB_NUMBER].apply(lambda x: x.zfill(6))
+        df_map[GROUP_FID] = df_map[GROUP_FID].apply(lambda x: x.zfill(6))
+        df_map[PARENT_FID] = df_map[PARENT_FID].apply(lambda x: x.zfill(6))
+        df_map[ULTIMATE_FID] = df_map[ULTIMATE_FID].apply(lambda x: x.zfill(6))
 
         csv_data_dir = DATA_DIR + COMPANY_INFO_DIR
         file_dict = PeriodType.get_file_dict(csv_data_dir)
@@ -70,14 +90,14 @@ class BusinessType(object):
         new_index = self.company_info_df.index
         new_index = [str(x).zfill(6) for x in new_index]
         self.company_info_df = self.company_info_df.set_index([new_index])
-        self.company_info_df[amb_number] = self.company_info_df[amb_number].apply(lambda x: x.zfill(6))
-        self.company_info_df[group_fid] = self.company_info_df[group_fid].apply(lambda x: x.zfill(6))
-        self.company_info_df[parent_fid] = self.company_info_df[parent_fid].apply(lambda x: x.zfill(6))
-        self.company_info_df[ultimate_fid] = self.company_info_df[ultimate_fid].apply(lambda x: x.zfill(6))
+        self.company_info_df[AMB_NUMBER] = self.company_info_df[AMB_NUMBER].apply(lambda x: x.zfill(6))
+        self.company_info_df[GROUP_FID] = self.company_info_df[GROUP_FID].apply(lambda x: x.zfill(6))
+        self.company_info_df[PARENT_FID] = self.company_info_df[PARENT_FID].apply(lambda x: x.zfill(6))
+        self.company_info_df[ULTIMATE_FID] = self.company_info_df[ULTIMATE_FID].apply(lambda x: x.zfill(6))
 
-        df_map = df_map.loc[df_map[group_fid].isin(self.company_info_df.index)]
+        df_map = df_map.loc[df_map[GROUP_FID].isin(self.company_info_df.index)]
 
-#        my_tuple_df = df[[amb_number, group_fid]].drop(['AMB#'])
+#        my_tuple_df = df[[AMB_NUMBER, GROUP_FID]].drop(['AMB#'])
         for idx, row in df_map.iterrows():
             self.company_to_grp[row[0]] = row[1]
         for k, v in self.company_to_grp.items():
