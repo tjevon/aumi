@@ -9,7 +9,7 @@ logger = logging.getLogger('twolane')
 class BusinessType(object):
     """Base class for PC, Life, Health"""
 
-    def __init__(self, bt_tag, template_obj):
+    def __init__(self, bt_tag, template_obj, quarterly_arg):
         self.period_types = {YEARLY_IDX: None, QUARTERLY_IDX: None}
         self.bt_tag = bt_tag
         self.company_to_grp = {}
@@ -18,9 +18,49 @@ class BusinessType(object):
 
         self.build_company_to_grp()
 
-        self.period_types[QUARTERLY_IDX] = PeriodType(self, QUARTERLY_IDX, template_obj)
-        self.period_types[YEARLY_IDX] = PeriodType(self, YEARLY_IDX, template_obj)
+        self.period_types[QUARTERLY_IDX] = PeriodType(self, QUARTERLY_IDX, template_obj,
+                                                      quarterly_arg)
+        self.period_types[YEARLY_IDX] = PeriodType(self, YEARLY_IDX, template_obj,
+                                                   quarterly_arg)
+        if quarterly_arg != 'Annual':
+            self.compute_YTD(template_obj)
+        return
 
+    def compute_YTD(self,template_obj):
+        yearly_fid_list = template_obj.get_display_fid_list(Liquid_Assets_tag, self.bt_tag, YEARLY_IDX)
+
+        yearly_fid_list = template_obj.get_display_fid_list(Liquid_Assets_tag, self.bt_tag, YEARLY_IDX)
+        yearly_slice = self.period_types[YEARLY_IDX].data_cube.minor_xs(self.period_types[YEARLY_IDX].desired_periods[0])
+        yearly_liquid_assets_df = yearly_slice[yearly_fid_list]
+
+        qtrly_fid_list = template_obj.get_display_fid_list(Liquid_Assets_tag, self.bt_tag, QUARTERLY_IDX)
+        qtrly_slice = self.period_types[QUARTERLY_IDX].data_cube.minor_xs(self.period_types[QUARTERLY_IDX].desired_periods[0])
+        qtrly_liquid_assets_df = qtrly_slice[qtrly_fid_list]
+
+        yearly_liquid_assets_df.columns = qtrly_liquid_assets_df.columns
+
+        pct_label = self.period_types
+        qtrly_label = self.period_types[QUARTERLY_IDX].desired_periods[0]
+        yearly_label = self.period_types[YEARLY_IDX].desired_periods[0]
+        pct_label = qtrly_label + '.' + yearly_label
+        ordered_dates = [qtrly_label, yearly_label, pct_label]
+
+        df_dict = {}
+        df_dict[ordered_dates[0]] = qtrly_liquid_assets_df
+        df_dict[ordered_dates[1]] = yearly_liquid_assets_df
+
+        tmp_cube = pd.Panel(df_dict)
+        tmp_cube = tmp_cube.reindex(ordered_dates[0:2])
+        df_dict = {}
+        for co in tmp_cube.major_axis:
+            tmp_df = tmp_cube.major_xs(co)
+            pct_chg = tmp_df[ordered_dates[0]]/tmp_df[ordered_dates[1]]
+            tmp_df[pct_label] = pct_chg
+            df_dict[co] = tmp_df
+
+        tmp_cube = pd.Panel(df_dict)
+        tmp_cube = tmp_cube.swapaxes(0,1)
+        self.period_types[QUARTERLY_IDX].ytd_cube = tmp_cube
         return
 
     def get_groups_owning_cusips(self, cusip_list):

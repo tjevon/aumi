@@ -27,7 +27,8 @@ IRIS2_tag    = "IRIS2"
 CashFlow_tag = "CashFlow"
 CR_tag       = "CR"
 Liquid_Assets_tag = "Liquid_Assets"
-Liquid_Assets_Q_tag = "Liquid_Assets_Q"
+Liq_Acq_tag = "Liq_Acq"
+Liq_Disp_tag = "Liq_Disp"
 Asset_Alloc_tag = "Asset_Alloc"
 Real_Estate_tag = "Real_Estate"
 
@@ -35,18 +36,17 @@ PC_tag      = "PC"
 LIFE_tag    = "LIFE"
 HEALTH_tag  = "HEALTH"
 
+ETF_STRINGS = [' ETF ', 'SPDR', 'PROSHARES', 'POWERSHARES', 'Exchange Traded F', 'EXCHANGE_TRADED F', 'ISHARE']
 
 ANNUAL_BONDS_ISSUER_FID = 'IB00019'
 ANNUAL_BONDS_ISSUE_TYPE_FID = 'IB00020'
 ANNUAL_BONDS_PRIVATE_PLACEMENT_FID = 'IB00022'
 ANNUAL_BONDS_FOREIGN_CODE_FID = 'IB00031'
 ANNUAL_BONDS_NAIC_DESIGNATION_FID = 'IB00033'
-#ANNUAL_BONDS_PRICE_FID = 'IB00034'
 ANNUAL_BONDS_PRICE_FID = 'IB00038'
 ANNUAL_BONDS_STMT_LINE_FID = 'IB00050'
 ANNUAL_BONDS_STMT_SEC_FID = 'IB00049'
 
-#ANNUAL_STOCKS_PRICE_FID = 'IS00037'
 ANNUAL_STOCKS_PRICE_FID = 'IS00034'
 ANNUAL_STOCKS_ISSUER_NAME_FID = 'IS00018'
 ANNUAL_STOCKS_ISSUER_FID = 'IS00019'
@@ -57,16 +57,22 @@ ANNUAL_STOCKS_STMT_LINE_FID = 'IS00050'
 
 QUARTERLY_STK_BOND_ACQ_ISSUER_FID = 'J700001'
 QUARTERLY_STK_BOND_ACQ_ISSUE_TYPE_FID = 'J700002'
+QUARTERLY_STK_BOND_ACQ_ASSET_DESC_FID = 'J700003'
+QUARTERLY_STK_BOND_ACQ_FOREIGN_FID = 'J700004'
 QUARTERLY_STK_BOND_ACQ_INITIAL_COST_FID = 'J700008'
 QUARTERLY_STK_BOND_ACQ_ADDITIONAL_COST_FID = 'J700010'
 QUARTERLY_STK_BOND_ACQ_STMT_SEC_FID = 'SS00014'
 QUARTERLY_STK_BOND_ACQ_STMT_LINE_FID = 'J700015'
+QUARTERLY_STK_BOND_ACQ_NAIC_FID = 'J700011'
 
 QUARTERLY_STK_BOND_DISP_ISSUER_FID = 'J800001'
 QUARTERLY_STK_BOND_DISP_ISSUE_TYPE_FID = 'J800002'
+QUARTERLY_STK_BOND_DISP_ASSET_DESC_FID = 'J800003'
+QUARTERLY_STK_BOND_DISP_FOREIGN_FID = 'J800004'
 QUARTERLY_STK_BOND_DISP_CONSIDERATION_FID = 'J800008'
 QUARTERLY_STK_BOND_DISP_STMT_SEC_FID = 'SS00014'
 QUARTERLY_STK_BOND_DISP_STMT_LINE_FID = 'J800027'
+QUARTERLY_STK_BOND_DISP_NAIC_FID = 'J800023'
 
 QUARTERLY_BA_ACQ_ISSUER_FID = 'J500001'
 QUARTERLY_BA_ACQ_ISSUE_TYPE_FID = 'J500002'
@@ -91,8 +97,6 @@ COMPANY_NAME_FID = 'CO00231'
 COMPANY_CITY_FID = 'CO00033'
 COMPANY_STATE_FID = 'CO00034'
 
-
-
 BUSINESS_TYPES = [PC_tag, LIFE_tag, HEALTH_tag]
 
 YEARLY_IDX = 0
@@ -101,16 +105,32 @@ DISPLAY_IDX = 2
 MPL_IDX = 3
 IF_IDX = 4
 CALC_COL = 'H'
+CALC_Q_COL = 'I'
 
-#COMMON_TEMPLATE_TAGS = [Assets_tag, Liquid_Assets_tag, E07_tag, Real_Estate_tag, CashFlow_tag,
-COMMON_TEMPLATE_TAGS = [Assets_tag, Liquid_Assets_tag, BA_Acq_tag, BA_Disp_tag, E07_tag, Real_Estate_tag, CashFlow_tag,
-                        SI05_07_tag, E10_tag, Asset_Alloc_tag]
+
+COMMON_TEMPLATE_TAGS = []
+COMMON_QUARTERLY_TAGS = []
+
+ANNUAL = False
+
+if ANNUAL:
+    COMMON_TEMPLATE_TAGS = [Assets_tag, Liquid_Assets_tag, E07_tag, Real_Estate_tag,
+                            CashFlow_tag, SI05_07_tag, E10_tag, Asset_Alloc_tag]
+    COMMON_QUARTERLY_TAGS = [Assets_tag, Liquid_Assets_tag,  E07_tag, CashFlow_tag,
+                             Real_Estate_tag]
+else:
+    COMMON_TEMPLATE_TAGS = [Assets_tag, Liquid_Assets_tag, Liq_Acq_tag, Liq_Disp_tag,
+                            BA_Acq_tag, BA_Disp_tag, E07_tag, Real_Estate_tag,
+                            CashFlow_tag, SI05_07_tag, E10_tag, Asset_Alloc_tag]
+    COMMON_QUARTERLY_TAGS = [Assets_tag, Liquid_Assets_tag, Liq_Acq_tag, Liq_Disp_tag,
+                             BA_Acq_tag, BA_Disp_tag, E07_tag, CashFlow_tag,
+                             Real_Estate_tag]
+
+# Needed for Quarterly report
 PC_TEMPLATE_TAGS = [SoI_tag]
 LIFE_TEMPLATE_TAGS = [SoO_tag]
 HEALTH_TEMPLATE_TAGS = [SoR_tag]
 
-#COMMON_QUARTERLY_TAGS = [Assets_tag, Liquid_Assets_tag,  E07_tag, CashFlow_tag, Real_Estate_tag]
-COMMON_QUARTERLY_TAGS = [Assets_tag, Liquid_Assets_tag, BA_Acq_tag, BA_Disp_tag, E07_tag, CashFlow_tag, Real_Estate_tag]
 PC_QUARTERLY_TAGS = [SoI_tag]
 LIFE_QUARTERLY_TAGS = [SoO_tag]
 HEALTH_QUARTERLY_TAGS = [SoR_tag]
@@ -128,16 +148,12 @@ DATA_DIR = os.getenv('DATAPATH', './')
 XL_DIR = os.getenv('XLPATH', './')
 
 
-#YEARLY_DIR = "V1_Annual_data_0"
-#QTRLY_DIR = "V1_Quarterly_data_0"
-#COMPANY_INFO_DIR = "V1_company_info_0"
 YEARLY_DIR = "V1_Annual_data"
 QTRLY_DIR = "V2_Quarterly_data"
-COMPANY_INFO_DIR = "V1_company_info"
+COMPANY_INFO_DIR = "V2_company_info"
 
 COMPANY_MAP_DIR = "V3_company_mapping"
 POSITIONS_DIR = "V3_inv_unaf_af"
-#POSITIONS_DIR = "V1_inv_em_unaf_af"
 ETF_DIR = "ETF_cantor"
 
 
@@ -157,19 +173,17 @@ MODEL_PREV_YEAR = 1
 MODEL_SGL_EXP = 2
 MODEL_DBL_EXP = 3
 
-#ASSET_TYPE_STOCK = 1
-#ASSET_TYPE_BOND = 2
-#ASSET_TYPE_BA = 3
-
 ASSET_TYPE_STOCK = 0
 ASSET_TYPE_BOND = 1
 ASSET_TYPE_BA = 2
 ASSET_TYPE_BA_ACQ = 3
 ASSET_TYPE_BA_DISP = 4
+ASSET_TYPE_STK_BOND_ACQ = 5
+ASSET_TYPE_STK_BOND_DISP = 6
 
-cusip_list = []
+CUSIP_LIST = []
 def get_etf_cusips():
-    global cusip_list
+    global CUSIP_LIST
     csv_data_dir = DATA_DIR + ETF_DIR
     files = os.listdir(csv_data_dir)
     for filename in files:
@@ -179,7 +193,7 @@ def get_etf_cusips():
             full_filename = csv_data_dir + "\\" + filename
             rv_df = pd.read_csv(full_filename, header=0, index_col=0, dtype='unicode', thousands=",")
             rv_df['CUSIP8'] = rv_df['CUSIP'].str[:-1]
-            cusip_list = cusip_list + rv_df.loc[ :, 'CUSIP8'].tolist()
+            CUSIP_LIST = CUSIP_LIST + rv_df.loc[ :, 'CUSIP8'].tolist()
 
     return
 
@@ -215,7 +229,10 @@ def do_calculation(calc, template_wb, data_cube, section_map, position_dict, des
     giveup = False
     fid_collection_dict = calc[2]
     for key, fids in comp_dict.items():
-        cell = key.replace('A', CALC_COL)
+        if desired_periods[0].find('Q') != -1:
+            cell = key.replace('A', CALC_Q_COL)
+        else:
+            cell = key.replace('A', CALC_COL)
         formula = template_wb.get_formula(tag, cell)
         formula = formula.replace('$', '')
         func_idx = formula.find('(')
@@ -312,9 +329,6 @@ def slice_mult(slice1, slice2):
     rv_slice = slice1 * slice2
     return rv_slice
 
-
-
-
 def bond_reflection(slice1, slice2):
     slice2 = slice2.loc[slice1.index]
     slice3 = slice2.div(slice1, axis=0)
@@ -346,9 +360,9 @@ def hy_sum(args, position_dict, slice1, desired_periods):
     return slice3
 
 
+
 def equity_etf_sum(args, position_dict, slice1, desired_periods):
-    strings = [' ETF ', 'SPDR', 'PROSHARES', 'POWERSHARES', 'Exchange Traded F', 'EXCHANGE_TRADED F', 'ISHARE']
-    slice2 = asset_sum_help(args, ASSET_TYPE_STOCK, position_dict, desired_periods, strings, cusip_list)
+    slice2 = asset_sum_help(args, ASSET_TYPE_STOCK, position_dict, desired_periods, ETF_STRINGS, CUSIP_LIST)
     slice3 = bond_reflection(slice1, slice2)
     return slice3
 
@@ -368,6 +382,60 @@ def ba_sum(args, position_dict, slice1, desired_periods):
     slice2 = asset_sum_help(args, asset_type, position_dict, desired_periods, strings, strings)
     return slice2
 
+def liq_etf_sum(args, position_dict, slice1, desired_periods):
+    what = args[0]
+    if what == 'ACQ':
+        asset_type = ASSET_TYPE_STK_BOND_ACQ
+    elif what == 'DISP':
+        asset_type = ASSET_TYPE_STK_BOND_DISP
+    else:
+        logger.error("undefined asset_type %s", args[0])
+        return
+    slice2 = asset_sum_help(args, asset_type, position_dict, desired_periods, "ETF", CUSIP_LIST)
+    return slice2
+
+def liq_sum(args, position_dict, slice1, desired_periods):
+    what = args[0]
+    region = args[1]
+    if what == 'ACQ':
+        asset_type = ASSET_TYPE_STK_BOND_ACQ
+    elif what == 'DISP':
+        asset_type = ASSET_TYPE_STK_BOND_DISP
+    else:
+        logger.error("undefined asset_type %s", args[0])
+        return
+    slice2 = asset_sum_help(args, asset_type, position_dict, desired_periods,
+                            ['1','2','3','4','5','6'], region)
+    return slice2
+
+def liq_hy_sum(args, position_dict, slice1, desired_periods):
+    what = args[0]
+    region = args[1]
+    if what == 'ACQ':
+        asset_type = ASSET_TYPE_STK_BOND_ACQ
+    elif what == 'DISP':
+        asset_type = ASSET_TYPE_STK_BOND_DISP
+    else:
+        logger.error("undefined asset_type %s", args[0])
+        return
+    slice2 = asset_sum_help(args, asset_type, position_dict, desired_periods,
+                            ['3','4','5','6'], region)
+    return slice2
+
+def liq_ig_sum(args, position_dict, slice1, desired_periods):
+    what = args[0]
+    region = args[1]
+    if what == 'ACQ':
+        asset_type = ASSET_TYPE_STK_BOND_ACQ
+    elif what == 'DISP':
+        asset_type = ASSET_TYPE_STK_BOND_DISP
+    else:
+        logger.error("undefined asset_type %s", args[0])
+        return
+    slice2 = asset_sum_help(args, asset_type, position_dict, desired_periods,
+                            ['1','2'], region)
+    return slice2
+
 def asset_sum_help(args, asset_type, position_dict, desired_periods, strings1, strings2):
     locale.setlocale(locale.LC_NUMERIC, '')
     df_list = []
@@ -383,6 +451,10 @@ def asset_sum_help(args, asset_type, position_dict, desired_periods, strings1, s
                 asset_dict = position_dict[period][0]
             elif asset_type == ASSET_TYPE_BA_DISP:
                 asset_dict = position_dict[period][1]
+            elif asset_type == ASSET_TYPE_STK_BOND_ACQ:
+                asset_dict = position_dict[period][2]
+            elif asset_type == ASSET_TYPE_STK_BOND_DISP:
+                asset_dict = position_dict[period][3]
             elif asset_type == ASSET_TYPE_BA:
                 if args[0] == 'ACQ':
                     asset_dict = position_dict[period][0]
@@ -403,6 +475,10 @@ def asset_sum_help(args, asset_type, position_dict, desired_periods, strings1, s
                     price_sum = ba_sum_help(args, strings1, strings2, tmp_df)
                 elif asset_type == ASSET_TYPE_BA_DISP:
                     price_sum = ba_sum_help(args, strings1, strings2, tmp_df)
+                elif asset_type == ASSET_TYPE_STK_BOND_ACQ:
+                    price_sum = liq_sum_help(args, strings1, strings2, tmp_df)
+                elif asset_type == ASSET_TYPE_STK_BOND_DISP:
+                    price_sum = liq_sum_help(args, strings1, strings2, tmp_df)
                 sum_list.append(price_sum)
             period_dict[period] = sum_list
             df = pd.DataFrame.from_dict(period_dict)
@@ -448,13 +524,14 @@ def bond_sum_help(args, naic_levels, region, tmp_df):
     price_sum = tmp_df[ANNUAL_BONDS_PRICE_FID].sum() / 1000
     return price_sum
 
-def equity_sum_help(args, strings, cus_list, tmp_df):
+def equity_sum_help(args, strings, CUSIP_LIST, tmp_df):
     tmp_df = tmp_df.loc[tmp_df[ANNUAL_STOCKS_STMT_SEC_FID].isin(args)]
-    if len(cus_list) > 0:
-        tmp_df = tmp_df[tmp_df['cusip'].apply(lambda x: any(y in x for y in cus_list)) ]
+    if len(CUSIP_LIST) > 0:
+        tmp_df = tmp_df[tmp_df['cusip'].apply(lambda x: any(y in x for y in CUSIP_LIST)) ]
     elif len(strings) > 0:
-        tmp_df = tmp_df[(tmp_df[ANNUAL_STOCKS_ISSUER_NAME_FID].apply(lambda x: any(y in x for y in strings))) |
-                        (tmp_df[ANNUAL_STOCKS_ISSUER_DESC_FID].apply(lambda x: any(y in x for y in strings)))]
+        tmp_df = tmp_df[
+            (tmp_df[ANNUAL_STOCKS_ISSUER_NAME_FID].apply(lambda x: any(y in x for y in strings))) |
+            (tmp_df[ANNUAL_STOCKS_ISSUER_DESC_FID].apply(lambda x: any(y in x for y in strings)))]
     if tmp_df.size == 0:
         price_sum = 0
     else:
@@ -462,9 +539,9 @@ def equity_sum_help(args, strings, cus_list, tmp_df):
         price_sum = tmp_df[ANNUAL_STOCKS_PRICE_FID].sum()/1000
     return price_sum
 
-def ba_sum_help(args, strings, cus_list, tmp_df):
-    which = args[0]
-    if which == 'ACQ':
+def ba_sum_help(args, strings, CUSIP_LIST, tmp_df):
+    what = args[0]
+    if what == 'ACQ':
         stmt_sec_fid = QUARTERLY_BA_ACQ_STMT_SEC_FID
     else:
         stmt_sec_fid = QUARTERLY_BA_DISP_STMT_SEC_FID
@@ -473,7 +550,7 @@ def ba_sum_help(args, strings, cus_list, tmp_df):
     if tmp_df.size == 0:
         price_sum = 0
     else:
-        if which == 'ACQ':
+        if what == 'ACQ':
             tmp_df[QUARTERLY_BA_ACQ_INITIAL_COST_FID] = tmp_df[QUARTERLY_BA_ACQ_INITIAL_COST_FID].apply(locale.atof)
             tmp_df[QUARTERLY_BA_ACQ_ADDITIONAL_COST_FID] = tmp_df[QUARTERLY_BA_ACQ_ADDITIONAL_COST_FID].apply(locale.atof)
             price_sum = tmp_df[QUARTERLY_BA_ACQ_INITIAL_COST_FID].sum()/1000 + \
@@ -481,6 +558,54 @@ def ba_sum_help(args, strings, cus_list, tmp_df):
         else:
             tmp_df[QUARTERLY_BA_DISP_CONSIDERATION_FID] = tmp_df[QUARTERLY_BA_DISP_CONSIDERATION_FID].apply(locale.atof)
             price_sum = tmp_df[QUARTERLY_BA_DISP_CONSIDERATION_FID].sum()/1000
+    return price_sum
+
+def liq_sum_help(args, strings1, strings2, tmp_df):
+    what = args[0]
+    sections = args[2:]
+    if what == 'ACQ':
+        stmt_sec_fid = QUARTERLY_STK_BOND_ACQ_STMT_SEC_FID
+        naic_level_fid = QUARTERLY_STK_BOND_ACQ_NAIC_FID
+        foreign_fid = QUARTERLY_STK_BOND_ACQ_FOREIGN_FID
+        asset_desc_fid = QUARTERLY_STK_BOND_ACQ_ASSET_DESC_FID
+    else:
+        stmt_sec_fid = QUARTERLY_STK_BOND_DISP_STMT_SEC_FID
+        naic_level_fid = QUARTERLY_STK_BOND_DISP_NAIC_FID
+        foreign_fid = QUARTERLY_STK_BOND_DISP_FOREIGN_FID
+        asset_desc_fid = QUARTERLY_STK_BOND_DISP_ASSET_DESC_FID
+
+    if len(sections) > 0:
+        if sections[0] < '84':
+            naic_levels = strings1
+            region = strings2
+            if region == 'US':
+                tmp_df = tmp_df.loc[tmp_df[foreign_fid] == '...']
+            elif region == 'EM':
+                tmp_df = tmp_df.loc[tmp_df[foreign_fid] == 'EM']
+            elif region == 'OTHER':
+                tmp_df = tmp_df.loc[tmp_df[foreign_fid] != '...']
+                tmp_df = tmp_df.loc[tmp_df[foreign_fid] != 'EM']
+
+            tmp_df['naic_level'] = tmp_df[naic_level_fid].apply(lambda x: x[:1])
+            tmp_df = tmp_df.loc[tmp_df['naic_level'].isin(naic_levels)]
+        elif strings1 == "ETF":
+            if len(CUSIP_LIST) > 0:
+                tmp_df = tmp_df[tmp_df['cusip'].apply(lambda x: any(y in x for y in CUSIP_LIST))]
+            elif len(ETF_STRINGS) > 0:
+                tmp_df = tmp_df[ tmp_df[asset_desc_fid].apply(lambda x: any(y in x for y in ETF_STRINGS))]
+
+    tmp_df = tmp_df.loc[tmp_df[stmt_sec_fid].isin(sections)]
+    if tmp_df.size == 0:
+        price_sum = 0
+    else:
+        if what == 'ACQ':
+            tmp_df[QUARTERLY_STK_BOND_ACQ_INITIAL_COST_FID] = tmp_df[QUARTERLY_STK_BOND_ACQ_INITIAL_COST_FID].apply(locale.atof)
+            tmp_df[QUARTERLY_STK_BOND_ACQ_ADDITIONAL_COST_FID] = tmp_df[QUARTERLY_STK_BOND_ACQ_ADDITIONAL_COST_FID].apply(locale.atof)
+            price_sum = tmp_df[QUARTERLY_STK_BOND_ACQ_INITIAL_COST_FID].sum()/1000 + \
+                        tmp_df[QUARTERLY_STK_BOND_ACQ_ADDITIONAL_COST_FID].sum()/1000
+        else:
+            tmp_df[QUARTERLY_STK_BOND_DISP_CONSIDERATION_FID] = tmp_df[QUARTERLY_STK_BOND_DISP_CONSIDERATION_FID].apply(locale.atof)
+            price_sum = tmp_df[QUARTERLY_STK_BOND_DISP_CONSIDERATION_FID].sum()/1000
     return price_sum
 
 AI_SUM = "=AI_SUM"
@@ -494,14 +619,18 @@ AI_BOND_SUM = "=AI_BOND_SUM"
 
 AI_EQ = "=AI_EQ"
 AI_EQ_ETF = "=AI_EQ_ETF"
+AI_LIQ_ETF = "=AI_LIQ_ETF"
 
 AI_BA = "=AI_BA"
+AI_LIQ = "=AI_LIQ"
+AI_HY_LIQ = "=AI_HY_LIQ"
+AI_IG_LIQ = "=AI_IG_LIQ"
 
 AI_SET_DF = "=AI_SET_DF"
 AI_SET = "=AI_SET"
 AI_2YR_AVE = "=AI_2YR_AVE"
 
-POSITION_CALCS = [AI_EQ_ETF, AI_EQ, AI_HY, AI_IG, AI_BOND_SUM, AI_BA]
+POSITION_CALCS = [AI_LIQ_ETF, AI_EQ_ETF, AI_EQ, AI_HY, AI_IG, AI_BOND_SUM, AI_BA, AI_LIQ, AI_HY_LIQ, AI_IG_LIQ]
 
 func_dict = {
     AI_SUM: slice_sum,
@@ -512,6 +641,13 @@ func_dict = {
     AI_IG: ig_sum,
     AI_HY: hy_sum,
     AI_BA: ba_sum,
+    AI_LIQ: liq_sum,                # =AI_LIQ(Assets!$A$24,ACQ,ALL,1) =AI_LIQ(Assets!$A$24,ACQ,ALL,6)
+                                    # =AI_IG_LIQ(Assets!$A$24,ACQ,US,32) =AI_IG_LIQ(Assets!$A$24,ACQ,ALL,2,3,7,8,12,13,19,20,26,27,33,34,43,44)
+                                    # =AI_LIQ(Assets!$A$24,ACQ,ALL,90)
+                                    # =AI_LIQ_ETF(A44,ACQ,90)
+    AI_LIQ_ETF: liq_etf_sum,
+    AI_HY_LIQ: liq_hy_sum,
+    AI_IG_LIQ: liq_ig_sum,
     AI_EQ: equity_sum,
     AI_EQ_ETF: equity_etf_sum,
     AI_SET: slice_set,

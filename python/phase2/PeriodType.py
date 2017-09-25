@@ -7,8 +7,9 @@ logger = logging.getLogger('twolane')
 class PeriodType(object):
     """Base class for PC, Life, Health"""
 
-    def __init__(self, bt_obj, period_idx, template_obj):
+    def __init__(self, bt_obj, period_idx, template_obj, quarterly_arg):
         self.bt_tag = bt_obj.bt_tag
+        self.quarterly_arg = quarterly_arg
         self.period_idx = period_idx
         self.complete_tag_list = BUSINESS_TYPE_TAGS[self.period_idx][self.bt_tag]
         self.group_to_company = bt_obj.group_to_company
@@ -22,6 +23,7 @@ class PeriodType(object):
         self.section_map = {}
         self.raw_df = None
         self.data_cube = None
+        self.ytd_cube = None
         self.position_dict = {}
         self.asset_dict = {}
 
@@ -31,7 +33,7 @@ class PeriodType(object):
             if self.bt_tag in file_dict:
                 self.position_dict = self.build_annual_position_dict(csv_data_dir, file_dict[self.bt_tag])
 
-        if self.period_idx == QUARTERLY_IDX:
+        if self.period_idx == QUARTERLY_IDX and self.quarterly_arg != 'Annual':
             if self.bt_tag in file_dict:
                 self.position_dict = self.build_quarterly_position_dict(csv_data_dir, file_dict[self.bt_tag])
 
@@ -226,7 +228,7 @@ class PeriodType(object):
         if y_or_q == YEARLY_IDX:
             self.data_cube = do_all_calculations(template_wb, self.section_map, self.data_cube,
                                                  self.position_dict, self.desired_periods)
-        else:
+        elif self.quarterly_arg != 'Annual':
             self.data_cube = do_all_calculations(template_wb, self.section_map, self.data_cube,
                                                  self.position_dict, self.desired_periods)
         self.data_cube = self.calc_pct_change(self.data_cube)
@@ -281,6 +283,12 @@ class PeriodType(object):
         cube = self.data_cube[fids]
         return cube
 
+    def get_df_including_pcts_2(self, co, fids):
+        rv_df = self.ytd_cube.major_xs(co).transpose()
+        rv_df = rv_df.loc[fids, :]
+        rv_df = rv_df.reindex(fids)
+        return rv_df
+
     def get_df_including_pcts(self, co, fids):
         rv_df = self.data_cube.major_xs(co).transpose()
         rv_df = rv_df.loc[fids, :]
@@ -308,9 +316,13 @@ class PeriodType(object):
 
     def build_df_dict(self, csv_filename, start, year, issuer_code, issuer_type, lineno):
         products_owned = {}
-        df = pd.read_csv(csv_filename, header=start, dtype='unicode', thousands=",")
-        if start != 0:
-            df = df.ix[1:]
+        df = None
+        for filename in csv_filename:
+            tmp_df = pd.read_csv(filename, header=start, dtype='unicode', thousands=",")
+            if start != 0:
+                tmp_df = tmp_df.ix[1:]
+            df = pd.concat([df,tmp_df], axis=0)
+
         df = df.rename(columns={'Unnamed: 0': 'AMB#'})
         df = df.drop('Unnamed: 1', 1)
         df = df.drop('Unnamed: 2', 1)
@@ -330,7 +342,7 @@ class PeriodType(object):
             products_owned[grp] = df_grp
             pass
         if empty_groups > 0:
-            logger.error("Groups without positions: %d from %s ", empty_groups, csv_filename)
+            logger.error("Groups without positions: %d from %s ", empty_groups, csv_filename[0])
         return products_owned
 
     def order_file_list(self, file_list):
@@ -390,10 +402,10 @@ class PeriodType(object):
             year = b[idx-4:idx]
 
             csv_filename = csv_data_dir + "\\" + b
-            bonds_owned_dict = self.build_df_dict(csv_filename, 5, year,
+            bonds_owned_dict = self.build_df_dict([csv_filename], 5, year,
                                                   ANNUAL_BONDS_ISSUER_FID, ANNUAL_BONDS_ISSUE_TYPE_FID, ANNUAL_BONDS_STMT_LINE_FID)
             csv_filename = csv_data_dir + "\\" + s
-            stocks_owned_dict = self.build_df_dict(csv_filename, 6, year,
+            stocks_owned_dict = self.build_df_dict([csv_filename], 6, year,
                                                    ANNUAL_STOCKS_ISSUER_FID, ANNUAL_STOCKS_ISSUE_TYPE_FID, ANNUAL_STOCKS_STMT_LINE_FID)
             year_dict[year] = (bonds_owned_dict, stocks_owned_dict)
             pass
@@ -424,38 +436,59 @@ class PeriodType(object):
                 DISP_ISSUER_FID = QUARTERLY_STK_BOND_DISP_ISSUER_FID
                 DISP_ISSUE_TYPE_FID = QUARTERLY_STK_BOND_DISP_ISSUE_TYPE_FID
                 DISP_STMT_LINE_FID = QUARTERLY_STK_BOND_DISP_STMT_LINE_FID
+            else:
+                continue
 
+            pr_acq_dict = None
+            pr_disp_dict = None
+            acq_filenames = []
+            disp_filenames = []
+            effective_year_qtr = None
             while segment:
                 pr1 = segment.pop()
                 idx = pr1.find('_20')
                 year_qtr = pr1[idx+1:idx+8]
+                if effective_year_qtr < year_qtr:
+                    effective_year_qtr = year_qtr
                 pr_list = [x for x in segment if x.find(year_qtr) != -1]
                 if len(pr_list) != 1:
                     logger.error("%s has no partner", pr1)
                     break
                 pr2 = pr_list[0]
                 segment.remove(pr2)
-                pr_acq_dict = None
-                pr_disp_dict = None
+                tmp_acq_dict = None
+                tmp_disp_dict = None
                 for pr in [pr1,pr2]:
                     csv_filename = csv_data_dir + "\\" + pr
                     if pr.find('Acq') != -1:
-                        pr_acq_dict = self.build_df_dict(csv_filename, offset, year_qtr,
-                                                         ACQ_ISSUER_FID,
-                                                         ACQ_ISSUE_TYPE_FID,
-                                                         ACQ_STMT_LINE_FID)
+                        acq_filenames.append(csv_filename)
+#                        tmp_acq_dict = self.build_df_dict([csv_filename], offset, year_qtr,
+#                                                          ACQ_ISSUER_FID,
+#                                                          ACQ_ISSUE_TYPE_FID,
+#                                                          ACQ_STMT_LINE_FID)
                     elif pr.find('Disp') != -1:
-                        pr_disp_dict = self.build_df_dict(csv_filename, offset, year_qtr,
-                                                          DISP_ISSUER_FID,
-                                                          DISP_ISSUE_TYPE_FID,
-                                                          DISP_STMT_LINE_FID)
+                        disp_filenames.append(csv_filename)
+#                        tmp_disp_dict = self.build_df_dict([csv_filename], offset, year_qtr,
+#                                                           DISP_ISSUER_FID,
+#                                                           DISP_ISSUE_TYPE_FID,
+#                                                           DISP_STMT_LINE_FID)
 
-                tup_list[count] = (pr_acq_dict, pr_disp_dict)
+#                tup_list[count] = (tmp_acq_dict, tmp_disp_dict)
+            pr_acq_dict = self.build_df_dict(acq_filenames, offset, effective_year_qtr,
+                                             ACQ_ISSUER_FID,
+                                             ACQ_ISSUE_TYPE_FID,
+                                             ACQ_STMT_LINE_FID)
+            pr_disp_dict = self.build_df_dict(disp_filenames, offset, effective_year_qtr,
+                                               DISP_ISSUER_FID,
+                                               DISP_ISSUE_TYPE_FID,
+                                               DISP_STMT_LINE_FID)
+            tup_list[count] = (pr_acq_dict, pr_disp_dict)
+            logger.error("filenames")
         tmp_tup = ()
         for tup in tup_list:
             if tup == None:
                 continue
             tmp_tup = tmp_tup + tup
-        quarterly_dict[year_qtr] = tmp_tup
+        quarterly_dict[effective_year_qtr] = tmp_tup
         return quarterly_dict
 

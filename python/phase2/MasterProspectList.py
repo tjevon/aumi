@@ -3,6 +3,7 @@ from __future__ import print_function
 from BusinessType import *
 
 import copy
+import math
 from itertools import chain
 
 from AMB_defines import *
@@ -18,7 +19,7 @@ class MasterProspectList:
         self.template_obj = template_obj
         self.target_obj = target_obj
         self.business_types = {PC_tag: None, LIFE_tag: None, HEALTH_tag: None}
-        self.build_business_types()
+        self.build_business_types(self.quarterly_arg)
         self.yrly_proj_dict = {PC_tag: None, LIFE_tag: None, HEALTH_tag: None}
         self.qtrly_proj_dict = {PC_tag: None, LIFE_tag: None, HEALTH_tag: None}
         pass
@@ -27,24 +28,26 @@ class MasterProspectList:
     def get_arbitrary_subset(companies):
         """ Testing purposes only """
         tmp_dict = {}
-        MAX_ITEMS = 3
+        MAX_ITEMS = 1000
         count = 0
         for key, data in companies.items():
             if count > MAX_ITEMS-1:
                 break
+            if type(data) is float:
+                continue
             tmp_dict[key] = data
             count += 1
 
         return tmp_dict
 
-    def build_business_types(self):
+    def build_business_types(self, quarterly_arg):
         x = 1
         if x > 0:
-            self.business_types[PC_tag] = BusinessType(PC_tag, self.template_obj)
+            self.business_types[PC_tag] = BusinessType(PC_tag, self.template_obj, quarterly_arg)
         if x > 1:
-            self.business_types[LIFE_tag] = BusinessType(LIFE_tag, self.template_obj)
+            self.business_types[LIFE_tag] = BusinessType(LIFE_tag, self.template_obj, quarterly_arg)
         if x > 2:
-            self.business_types[HEALTH_tag] = BusinessType(HEALTH_tag, self.template_obj)
+            self.business_types[HEALTH_tag] = BusinessType(HEALTH_tag, self.template_obj, quarterly_arg)
         return
 
     @staticmethod

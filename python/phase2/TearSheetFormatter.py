@@ -85,9 +85,10 @@ class TearSheetFormatter(object):
         for co_num, co_name in sheet_list.items():
             for tag in mpl.business_types[bt_tag].period_types[y_or_q].complete_tag_list:
                 self.format_section(co_num, co_name, bt_tag, mpl, tag, y_or_q, debug)
-#            self.format_projections_section(co_num, co_name, bt_tag, Liquid_Assets_tag, mpl)
-#            self.format_projections_section(co_num, co_name, bt_tag, E07_tag, mpl)
-#            self.format_header_section(co_num, co_name, bt_tag, mpl)
+#            if y_or_q == YEARLY_IDX:
+                self.format_projections_section(co_num, co_name, bt_tag, Liquid_Assets_tag, mpl)
+                self.format_projections_section(co_num, co_name, bt_tag, E07_tag, mpl)
+                self.format_header_section(co_num, co_name, bt_tag, mpl)
             self.debug_row = DEBUG_START_LINE
         return
 
@@ -97,14 +98,14 @@ class TearSheetFormatter(object):
 
         return label_info
 
-    def build_df_for_display(self, co, tag, bus_type, y_or_q, debug=False):
-        template_fids_with_spaces = self.template_obj.get_projection_info(tag, bus_type.get_bt_tag(),
+    def build_df_for_display(self, co, tag, period_type, y_or_q, debug=False):
+        template_fids_with_spaces = self.template_obj.get_projection_info(tag, period_type.get_bt_tag(),
                                                                           y_or_q, DISPLAY_TS_SECTION, debug)[0]
         just_fids = filter(lambda a: a is not None, template_fids_with_spaces)
         just_fids = filter(lambda a: a != 'XXX', just_fids)
 
-        df = bus_type.get_df_including_pcts(co, just_fids)
-        split_idx = len(bus_type.desired_periods)
+        df = period_type.get_df_including_pcts(co, just_fids)
+        split_idx = len(period_type.desired_periods)
         l1 = df.columns[0:split_idx]
         l2 = df.columns[split_idx:]
         cols = [val for pair in zip(l1, l2) for val in pair]
@@ -124,25 +125,25 @@ class TearSheetFormatter(object):
             pass
         return rv_df
 
-    def build_df_for_quarterly_display(self, co, tag, bus_type, y_or_q, b_idx, sz, debug=False):
-        template_fids_with_spaces = self.template_obj.get_projection_info(tag, bus_type.get_bt_tag(),
+    def build_df_for_quarterly_display_2(self, co, tag, period_type, y_or_q, b_idx, sz, debug=False):
+
+        template_fids_with_spaces = self.template_obj.get_projection_info(tag, period_type.get_bt_tag(),
+                                                                          y_or_q, DISPLAY_TS_SECTION, debug)[0]
+        just_fids = filter(lambda a: a is not None, template_fids_with_spaces)
+        just_fids = filter(lambda a: a != 'XXX', just_fids)
+        df = period_type.get_df_including_pcts_2(co, just_fids)
+
+
+        return rv_df
+
+    def build_df_for_quarterly_display(self, co, tag, period_type, y_or_q, b_idx, sz, debug=False):
+        template_fids_with_spaces = self.template_obj.get_projection_info(tag, period_type.get_bt_tag(),
                                                                           y_or_q, DISPLAY_TS_SECTION, debug)[0]
         just_fids = filter(lambda a: a is not None, template_fids_with_spaces)
         just_fids = filter(lambda a: a != 'XXX', just_fids)
 
-        df = bus_type.get_df_including_pcts(co, just_fids)
-        split_idx = len(bus_type.desired_periods)
-        l1 = df.columns[0:1]
-        l2 = df.columns[split_idx:split_idx+1]
-
-#        b_idx = 1
-#        sz = 3
-#        l1 = df.columns[1:1+3]
-#        l2 = df.columns[split+1:split_idx+1+3]
-#        b_idx = 0
-#        sz = 1
-#        l1 = df.columns[0:0+1]
-#        l2 = df.columns[split_idx+0:split_idx+0+1]
+        df = period_type.get_df_including_pcts(co, just_fids)
+        split_idx = len(period_type.desired_periods)
 
         l1 = df.columns[b_idx:b_idx+sz]
         l2 = df.columns[split_idx+b_idx:split_idx+b_idx+sz]

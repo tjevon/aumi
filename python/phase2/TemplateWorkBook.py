@@ -18,8 +18,9 @@ class TemplateWorkBook(object):
         Assets_tag: ('A', 3, 87),
         CashFlow_tag: ('A', 3, 48),
         SI05_07_tag: ('A', 3, 106),
-        Liquid_Assets_tag: ('A', 3, 59),
-        Liquid_Assets_Q_tag: ('A', 3, 59),
+        Liquid_Assets_tag: ('A', 3, 60),
+        Liq_Acq_tag: ('A', 3, 60),
+        Liq_Disp_tag: ('A', 3, 60),
         Asset_Alloc_tag: ('A', 3, 78),
         SoI_tag: ('A', 3, 69),
         SoO_tag: ('A', 3, 70),
@@ -35,16 +36,16 @@ class TemplateWorkBook(object):
 
     # fid located in first column, display filter in second
     template_BT_cols = {
-        PC_tag: ('B', 'C', 'L'),
-        LIFE_tag: ('D', 'E', 'M'),
-        HEALTH_tag: ('F', 'G', 'N')
+        PC_tag: ('B', 'C', 'M'),
+        LIFE_tag: ('D', 'E', 'N'),
+        HEALTH_tag: ('F', 'G', 'O')
     }
 
-    SECTION_TARGET_ROW_LOCATION = "K"
-    SECTION_TARGET_COLUMN_LOCATION = "I"
-    SECTION_TARGET_DATA_LOCATION = "J"
+    SECTION_TARGET_COLUMN_LOCATION = "J"
+    SECTION_TARGET_DATA_LOCATION = "K"
+    SECTION_TARGET_ROW_LOCATION = "L"
 
-    QTRLY_PROJECTION_TYPE_COL = 'O'
+    QTRLY_PROJECTION_TYPE_COL = 'P'
 
     def __init__(self):
         self.xl_wb = self.get_template_workbook()
