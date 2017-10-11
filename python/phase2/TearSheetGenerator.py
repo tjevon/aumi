@@ -64,8 +64,8 @@ class TearSheetGenerator:
 
                 if y_or_q == QUARTERLY_IDX:
                     before = self.target_wb.sheets('Sheet1')
-                    self.template_obj.get_template_sheet(TS_TEMPLATES[bt_tag]).api.Copy(Before=before.api)
-                    self.target_wb.sheets(TS_TEMPLATES[bt_tag]).api.Name = entry_sheet
+                    self.template_obj.get_template_sheet(TS_TEMPLATES_Q[bt_tag]).api.Copy(Before=before.api)
+                    self.target_wb.sheets(TS_TEMPLATES_Q[bt_tag]).api.Name = entry_sheet
                     self.target_wb.sheets(entry_sheet).range('A3').value = entry
                 elif y_or_q == MPL_IDX:
                     before = self.target_wb.sheets('Sheet1')

@@ -1,103 +1,16 @@
 import pandas as pd
 import logging
-import os
+
 import locale
+from Fid_defines import *
+from Tag_defines import *
+from Dir_defines import *
 
 logger = logging.getLogger('twolane')
 
 BAD_CHAR = ["/", ":", "*", "[", "]", ":", "?"]
 
-# tag - used to locate filenames and template worksheets
-SI01_tag     = "SI01"
-E07_tag      = "E07"
-BA_Acq_tag   = "BA_Acq"
-BA_Disp_tag  = "BA_Disp"
-E10_tag      = "E10"
-Liab1_tag    = "Liab1"
-Liab2_tag    = "Liab2"
-Liab3_tag    = "Liab3"
-SI05_07_tag  = "SI05_07"
-SI08_09_tag  = "SI08_09"
-Assets_tag   = "Assets"
-SoI_tag      = "SoI"
-SoO_tag      = "SoO"
-SoR_tag      = "SoR"
-IRIS1_tag    = "IRIS1"
-IRIS2_tag    = "IRIS2"
-CashFlow_tag = "CashFlow"
-CR_tag       = "CR"
-Liquid_Assets_tag = "Liquid_Assets"
-Liq_Acq_tag = "Liq_Acq"
-Liq_Disp_tag = "Liq_Disp"
-Asset_Alloc_tag = "Asset_Alloc"
-Real_Estate_tag = "Real_Estate"
-
-PC_tag      = "PC"
-LIFE_tag    = "LIFE"
-HEALTH_tag  = "HEALTH"
-
 ETF_STRINGS = [' ETF ', 'SPDR', 'PROSHARES', 'POWERSHARES', 'Exchange Traded F', 'EXCHANGE_TRADED F', 'ISHARE']
-
-ANNUAL_BONDS_ISSUER_FID = 'IB00019'
-ANNUAL_BONDS_ISSUE_TYPE_FID = 'IB00020'
-ANNUAL_BONDS_PRIVATE_PLACEMENT_FID = 'IB00022'
-ANNUAL_BONDS_FOREIGN_CODE_FID = 'IB00031'
-ANNUAL_BONDS_NAIC_DESIGNATION_FID = 'IB00033'
-ANNUAL_BONDS_PRICE_FID = 'IB00038'
-ANNUAL_BONDS_STMT_LINE_FID = 'IB00050'
-ANNUAL_BONDS_STMT_SEC_FID = 'IB00049'
-
-ANNUAL_STOCKS_PRICE_FID = 'IS00034'
-ANNUAL_STOCKS_ISSUER_NAME_FID = 'IS00018'
-ANNUAL_STOCKS_ISSUER_FID = 'IS00019'
-ANNUAL_STOCKS_ISSUE_TYPE_FID = 'IS00020'
-ANNUAL_STOCKS_ISSUER_DESC_FID = 'IS00021'
-ANNUAL_STOCKS_STMT_SEC_FID = 'IS00049'
-ANNUAL_STOCKS_STMT_LINE_FID = 'IS00050'
-
-QUARTERLY_STK_BOND_ACQ_ISSUER_FID = 'J700001'
-QUARTERLY_STK_BOND_ACQ_ISSUE_TYPE_FID = 'J700002'
-QUARTERLY_STK_BOND_ACQ_ASSET_DESC_FID = 'J700003'
-QUARTERLY_STK_BOND_ACQ_FOREIGN_FID = 'J700004'
-QUARTERLY_STK_BOND_ACQ_INITIAL_COST_FID = 'J700008'
-QUARTERLY_STK_BOND_ACQ_ADDITIONAL_COST_FID = 'J700010'
-QUARTERLY_STK_BOND_ACQ_STMT_SEC_FID = 'SS00014'
-QUARTERLY_STK_BOND_ACQ_STMT_LINE_FID = 'J700015'
-QUARTERLY_STK_BOND_ACQ_NAIC_FID = 'J700011'
-
-QUARTERLY_STK_BOND_DISP_ISSUER_FID = 'J800001'
-QUARTERLY_STK_BOND_DISP_ISSUE_TYPE_FID = 'J800002'
-QUARTERLY_STK_BOND_DISP_ASSET_DESC_FID = 'J800003'
-QUARTERLY_STK_BOND_DISP_FOREIGN_FID = 'J800004'
-QUARTERLY_STK_BOND_DISP_CONSIDERATION_FID = 'J800008'
-QUARTERLY_STK_BOND_DISP_STMT_SEC_FID = 'SS00014'
-QUARTERLY_STK_BOND_DISP_STMT_LINE_FID = 'J800027'
-QUARTERLY_STK_BOND_DISP_NAIC_FID = 'J800023'
-
-QUARTERLY_BA_ACQ_ISSUER_FID = 'J500001'
-QUARTERLY_BA_ACQ_ISSUE_TYPE_FID = 'J500002'
-QUARTERLY_BA_ACQ_INITIAL_COST_FID = 'J500010'
-QUARTERLY_BA_ACQ_ADDITIONAL_COST_FID = 'J500011'
-QUARTERLY_BA_ACQ_STMT_SEC_FID = 'J500019'
-QUARTERLY_BA_ACQ_STMT_LINE_FID = 'J500020'
-
-QUARTERLY_BA_DISP_ISSUER_FID = 'J600001'
-QUARTERLY_BA_DISP_ISSUE_TYPE_FID = 'J600002'
-QUARTERLY_BA_DISP_CONSIDERATION_FID = 'J600017'
-QUARTERLY_BA_DISP_STMT_SEC_FID = 'J600026'
-QUARTERLY_BA_DISP_STMT_LINE_FID = 'J600027'
-
-QUARTERLY_BA_DISP_ADDITIONAL_COST_FID = 'J600011'
-
-AMB_NUMBER = 'CO00002'
-GROUP_FID = 'CO00023'
-PARENT_FID = 'CO00169'
-ULTIMATE_FID = 'CO00170'
-COMPANY_NAME_FID = 'CO00231'
-COMPANY_CITY_FID = 'CO00033'
-COMPANY_STATE_FID = 'CO00034'
-
-BUSINESS_TYPES = [PC_tag, LIFE_tag, HEALTH_tag]
 
 YEARLY_IDX = 0
 QUARTERLY_IDX = 1
@@ -107,34 +20,6 @@ IF_IDX = 4
 CALC_COL = 'H'
 CALC_Q_COL = 'I'
 
-
-COMMON_TEMPLATE_TAGS = []
-COMMON_QUARTERLY_TAGS = []
-
-ANNUAL = False
-
-if ANNUAL:
-    COMMON_TEMPLATE_TAGS = [Assets_tag, Liquid_Assets_tag, E07_tag, Real_Estate_tag,
-                            CashFlow_tag, SI05_07_tag, E10_tag, Asset_Alloc_tag]
-    COMMON_QUARTERLY_TAGS = [Assets_tag, Liquid_Assets_tag,  E07_tag, CashFlow_tag,
-                             Real_Estate_tag]
-else:
-    COMMON_TEMPLATE_TAGS = [Assets_tag, Liquid_Assets_tag, Liq_Acq_tag, Liq_Disp_tag,
-                            BA_Acq_tag, BA_Disp_tag, E07_tag, Real_Estate_tag,
-                            CashFlow_tag, SI05_07_tag, E10_tag, Asset_Alloc_tag]
-    COMMON_QUARTERLY_TAGS = [Assets_tag, Liquid_Assets_tag, Liq_Acq_tag, Liq_Disp_tag,
-                             BA_Acq_tag, BA_Disp_tag, E07_tag, CashFlow_tag,
-                             Real_Estate_tag]
-
-# Needed for Quarterly report
-PC_TEMPLATE_TAGS = [SoI_tag]
-LIFE_TEMPLATE_TAGS = [SoO_tag]
-HEALTH_TEMPLATE_TAGS = [SoR_tag]
-
-PC_QUARTERLY_TAGS = [SoI_tag]
-LIFE_QUARTERLY_TAGS = [SoO_tag]
-HEALTH_QUARTERLY_TAGS = [SoR_tag]
-
 BUSINESS_TYPE_TAGS = {YEARLY_IDX: {PC_tag: COMMON_TEMPLATE_TAGS+PC_TEMPLATE_TAGS,
                                    LIFE_tag: COMMON_TEMPLATE_TAGS+LIFE_TEMPLATE_TAGS,
                                    HEALTH_tag: COMMON_TEMPLATE_TAGS+HEALTH_TEMPLATE_TAGS},
@@ -142,26 +27,10 @@ BUSINESS_TYPE_TAGS = {YEARLY_IDX: {PC_tag: COMMON_TEMPLATE_TAGS+PC_TEMPLATE_TAGS
                                       LIFE_tag: LIFE_QUARTERLY_TAGS+COMMON_QUARTERLY_TAGS,
                                       HEALTH_tag: HEALTH_QUARTERLY_TAGS+COMMON_QUARTERLY_TAGS}}
 
-TS_TEMPLATES = {PC_tag: 'PC_Template', LIFE_tag: 'LIFE_template', HEALTH_tag: 'HEALTH_template'}
+BUSINESS_TYPES = [PC_tag, LIFE_tag, HEALTH_tag]
 
-DATA_DIR = os.getenv('DATAPATH', './')
-XL_DIR = os.getenv('XLPATH', './')
-
-
-YEARLY_DIR = "V1_Annual_data"
-QTRLY_DIR = "V2_Quarterly_data"
-COMPANY_INFO_DIR = "V2_company_info"
-
-COMPANY_MAP_DIR = "V3_company_mapping"
-POSITIONS_DIR = "V3_inv_unaf_af"
-ETF_DIR = "ETF_cantor"
-
-
-TEMPLATE_DIR = "templates"
-OUTPUT_DIR = "output"
-
-TEMPLATE_FILENAME = "TearSheet_Template.xlsx"
-TARGET_FILENAME = "TearSheet_Output.xlsx"
+TS_TEMPLATES = {PC_tag: 'PC_template', LIFE_tag: 'LIFE_template', HEALTH_tag: 'HEALTH_template'}
+TS_TEMPLATES_Q = {PC_tag: 'PC_template_Q', LIFE_tag: 'LIFE_template_Q', HEALTH_tag: 'HEALTH_template_Q'}
 
 DO_NOT_DISPLAY = 0x00
 DISPLAY_TS_SECTION = 0x01
@@ -197,14 +66,13 @@ def get_etf_cusips():
 
     return
 
-
-
 def do_all_calculations(template_wb, section_map, data_cube, position_dict, desired_periods):
     get_etf_cusips()
     ai_info = []
     bi_info = []
     ci_info = []
     di_info = []
+    ei_info = []
     vi_info = []
     zi_info = []
     for tag, section in section_map.items():
@@ -212,9 +80,11 @@ def do_all_calculations(template_wb, section_map, data_cube, position_dict, desi
         bi_info.append((tag, section.comp_dict_bi, section.fid_collection_dict))
         ci_info.append((tag, section.comp_dict_ci, section.fid_collection_dict))
         di_info.append((tag, section.comp_dict_di, section.fid_collection_dict))
+        ei_info.append((tag, section.comp_dict_ei, section.fid_collection_dict))
         vi_info.append((tag, section.comp_dict_vi, section.fid_collection_dict))
         zi_info.append((tag, section.comp_dict_zi, section.fid_collection_dict))
-    dependency_ordered_list = [vi_info, zi_info, ai_info, bi_info, ci_info, di_info]
+    dependency_ordered_list = [vi_info, zi_info, ai_info, bi_info, ci_info,
+                               di_info, ei_info]
 
     for calculation_level in dependency_ordered_list:
         for calc in calculation_level:
@@ -641,10 +511,7 @@ func_dict = {
     AI_IG: ig_sum,
     AI_HY: hy_sum,
     AI_BA: ba_sum,
-    AI_LIQ: liq_sum,                # =AI_LIQ(Assets!$A$24,ACQ,ALL,1) =AI_LIQ(Assets!$A$24,ACQ,ALL,6)
-                                    # =AI_IG_LIQ(Assets!$A$24,ACQ,US,32) =AI_IG_LIQ(Assets!$A$24,ACQ,ALL,2,3,7,8,12,13,19,20,26,27,33,34,43,44)
-                                    # =AI_LIQ(Assets!$A$24,ACQ,ALL,90)
-                                    # =AI_LIQ_ETF(A44,ACQ,90)
+    AI_LIQ: liq_sum,
     AI_LIQ_ETF: liq_etf_sum,
     AI_HY_LIQ: liq_hy_sum,
     AI_IG_LIQ: liq_ig_sum,
@@ -657,14 +524,16 @@ func_dict = {
 
 
 class Section(object):
-    def __init__(self, tag, fid_collection_dict, comp_dict_ai, comp_dict_bi, comp_dict_ci,
-                 comp_dict_di, comp_dict_vi, comp_dict_zi):
+    def __init__(self, tag, fid_collection_dict, comp_dict_ai, comp_dict_bi,
+                 comp_dict_ci, comp_dict_di, comp_dict_ei,
+                 comp_dict_vi, comp_dict_zi):
         self.tag = tag
         self.fid_collection_dict = fid_collection_dict
         self.comp_dict_ai = comp_dict_ai
         self.comp_dict_bi = comp_dict_bi
         self.comp_dict_ci = comp_dict_ci
         self.comp_dict_di = comp_dict_di
+        self.comp_dict_ei = comp_dict_ei
         self.comp_dict_vi = comp_dict_vi
         self.comp_dict_zi = comp_dict_zi
     pass

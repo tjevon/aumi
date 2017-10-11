@@ -174,6 +174,7 @@ class PeriodType(object):
             comp_dict_bi = {}
             comp_dict_ci = {}
             comp_dict_di = {}
+            comp_dict_ei = {}
             comp_dict_vi = {}
             comp_dict_zi = {}
             df_dict = {}
@@ -194,6 +195,9 @@ class PeriodType(object):
                 if fids[0].find('DI') != -1:
                     comp_dict_di[key] = fids
                     continue
+                if fids[0].find('EI') != -1:
+                    comp_dict_ei[key] = fids
+                    continue
                 if fids[0].find('ZI') != -1:
                     comp_dict_zi[key] = fids
                     continue
@@ -212,13 +216,13 @@ class PeriodType(object):
                 df_dict[fids[0]] = cube_slice_df
 
             comp_needed = len(comp_dict_ai) + len(comp_dict_bi) + len(comp_dict_ci) + len(comp_dict_di) + \
-                          len(comp_dict_vi) + len(comp_dict_zi)
+                          len(comp_dict_ei) + len(comp_dict_vi) + len(comp_dict_zi)
 
             if (len(df_dict) == 0) and (comp_needed == 0):
                 continue
             cube = pd.Panel(df_dict)
             section = Section(tag, fid_collection_dict, comp_dict_ai, comp_dict_bi, comp_dict_ci,
-                              comp_dict_di, comp_dict_vi, comp_dict_zi)
+                              comp_dict_di, comp_dict_ei, comp_dict_vi, comp_dict_zi)
             self.section_map[tag] = section
             if self.data_cube is None:
                 self.data_cube = cube.copy()
@@ -318,6 +322,7 @@ class PeriodType(object):
         products_owned = {}
         df = None
         for filename in csv_filename:
+            logger.error("Filename: %s", filename)
             tmp_df = pd.read_csv(filename, header=start, dtype='unicode', thousands=",")
             if start != 0:
                 tmp_df = tmp_df.ix[1:]

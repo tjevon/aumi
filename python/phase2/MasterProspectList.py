@@ -41,7 +41,7 @@ class MasterProspectList:
         return tmp_dict
 
     def build_business_types(self, quarterly_arg):
-        x = 1
+        x = 3
         if x > 0:
             self.business_types[PC_tag] = BusinessType(PC_tag, self.template_obj, quarterly_arg)
         if x > 1:
@@ -249,7 +249,7 @@ class MasterProspectList:
         logger.error("Leave")
         return
 
-    def build_mpl_sheet(self, sheet_name, section_tag):
+    def build_mpl_sheet(self, sheet_name, section_tag, y_or_q):
         projection_sheets = [sheet_name]
         self.target_obj.add_xlsheets(projection_sheets, '', MPL_IDX)
         sheet = self.target_obj.get_target_worksheet(projection_sheets[0])
@@ -260,6 +260,7 @@ class MasterProspectList:
                 proj_fid_list = self.template_obj.get_projection_info(Assets_tag, bt_tag,
                                                                        YEARLY_IDX,
                                                                        DISPLAY_MPL)[0]
+
                 asset_col_size = len(proj_fid_list)
                 proj_fid_list += self.template_obj.get_projection_info(section_tag, bt_tag,
                                                                        YEARLY_IDX,
@@ -279,9 +280,32 @@ class MasterProspectList:
                 group_info_df = bt.get_group_info_df(group_numbers)
 
                 cur_yr_df.columns = [str(c) + '_y' for c in cur_yr_df.columns]
-                tmp_columns = zip(cur_yr_df.columns[asset_col_size:], proj_df.columns[asset_col_size:])
-                tmp_columns = list(chain.from_iterable(tmp_columns))
-                tmp_df = pd.concat([cur_yr_df.iloc[:, asset_col_size:], proj_df.iloc[:, asset_col_size:]],axis=1)
+                if y_or_q == 'Annual':
+                    tmp_columns = zip(cur_yr_df.columns[asset_col_size:],
+                                      proj_df.columns[asset_col_size:])
+                    tmp_columns = list(chain.from_iterable(tmp_columns))
+                    tmp_df = pd.concat([cur_yr_df.iloc[:, asset_col_size:],
+                                        proj_df.iloc[:, asset_col_size:]],axis=1)
+
+                else:
+                    ytd_fid_list = self.template_obj.get_projection_info(section_tag, bt_tag,
+                                                                         QUARTERLY_IDX,
+                                                                         DISPLAY_MPL)[0]
+                    if section_tag == E07_tag:
+                        ytd_fid_list += self.template_obj.get_projection_info(Real_Estate_tag,
+                                                                           bt_tag, QUARTERLY_IDX,
+                                                                           DISPLAY_MPL)[0]
+
+                    ytd_data_cube = bt.period_types[QUARTERLY_IDX].ytd_cube[ytd_fid_list]
+                    ytd_df =ytd_data_cube.minor_xs('2017_Q2')
+                    ytd_df.columns = [str(c) + '_ytd' for c in ytd_df.columns]
+                    tmp_columns = zip(cur_yr_df.columns[asset_col_size:], ytd_df.columns,
+                                      proj_df.columns[asset_col_size:])
+                    tmp_columns = list(chain.from_iterable(tmp_columns))
+                    tmp_df = pd.concat([cur_yr_df.iloc[:, asset_col_size:],
+                                        proj_df.iloc[:, asset_col_size:]],axis=1)
+                    tmp_df = pd.concat([tmp_df, ytd_df], axis=1)
+
                 tmp_df = tmp_df[tmp_columns]
 
                 group_info_df["Industry Sector"] = bt_tag

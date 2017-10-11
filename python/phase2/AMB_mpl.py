@@ -49,8 +49,12 @@ if __name__ == '__main__':
     asset_mgr = "StoneHarbor"
 #    target_obj.build_cusip_ownership_sheet(asset_mgr, mpl)
     mpl.build_projections_cube()
-    mpl.build_mpl_sheet('Liq MPL', Liquid_Assets_tag)
-    mpl.build_mpl_sheet('Illiq MPL', E07_tag)
+    if quarterly == 'Annual':
+        mpl.build_mpl_sheet('Liq_MPL', Liquid_Assets_tag, quarterly)
+        mpl.build_mpl_sheet('Illiq_MPL', E07_tag, quarterly)
+    else:
+        mpl.build_mpl_sheet('Liq_MPL_Q', Liquid_Assets_tag, quarterly)
+        mpl.build_mpl_sheet('Illiq_MPL_Q', E07_tag, quarterly)
     mpl.build_industry_info_sheet('PC_Info', Asset_Alloc_tag, PC_tag)
     mpl.build_industry_info_sheet('LIFE Info', Asset_Alloc_tag, LIFE_tag)
     mpl.build_industry_info_sheet('HEALTH Info', Asset_Alloc_tag, HEALTH_tag)
